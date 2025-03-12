@@ -4,7 +4,6 @@ const TWO_YEARS = 1000 * 60 * 60 * 24 * 365 * 2;
 const bgImages = [
     "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=1920&q=80",
     "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1920&q=80",
-    "https://images.unsplash.com/photo-1518173946687-7b093b07772d?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "https://images.unsplash.com/photo-1475924156734-496f6cac6ec1?auto=format&fit=crop&w=1920&q=80",
     "https://images.unsplash.com/photo-1738760479351-b25b4e35106a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "https://images.unsplash.com/photo-1739361133037-77be66a4ea6a?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -21,7 +20,7 @@ const bgImages = [
     "https://images.unsplash.com/photo-1476610182048-b716b8518aae?q=80&w=1918&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
 ];
 
-const SWIPE_THRESHOLD = 50; // Minimum swipe distance in pixels
+const SWIPE_THRESHOLD = 150; // Minimum swipe distance in pixels
 
 let currentHymnIndex = 0; // Index of the currently selected hymn
 let currentSlideIndex = 0; // Index of the currently displayed slide
@@ -54,6 +53,7 @@ const audioSource = document.getElementById("audio-source"); // Source element f
 const audioPlayer = document.getElementById("hymn-audio"); // Audio player element
 const lineHeightDecreaseButton = document.getElementById("line-height-decrease");
 const lineHeightIncreaseButton = document.getElementById("line-height-increase");
+const completeCheckbox = document.getElementById('complete-checkbox');
 
 // Utility Functions
 function rgbToHex(rgb) {
@@ -84,6 +84,12 @@ function handleKeyPress(e) {
         case "ArrowLeft":
             previousSlide();
             break;
+        case "PageUp":
+            nextHymn();
+            break;
+        case "PageDown":
+            previousHymn();
+            break;
         case "Escape":
             exitPresentation();
             break;
@@ -94,10 +100,14 @@ function handleKeyPress(e) {
             decreaseFontSize();
             break;
         case "ArrowUp":
-            adjustLineHeight(0.1);
+            if (e.shiftKey) {
+                adjustLineHeight(0.1); // Shift + Seta para cima
+            }
             break;
         case "ArrowDown":
-            adjustLineHeight(-0.1);
+            if (e.shiftKey) {
+                adjustLineHeight(-0.1); // Shift + Seta para baixo
+            }
             break;
         case "r":
             if (e.altKey) {
@@ -130,6 +140,18 @@ function handleTouchEnd(e) {
     }
 }
 
+function handleTouchMove(e) {
+    if (!startX || !startY) return;
+
+    const diffX = e.touches[0].clientX - startX;
+    const diffY = e.touches[0].clientY - startY;
+
+    // Bloqueia apenas se movimento for predominantemente horizontal
+    if (Math.abs(diffX) > Math.abs(diffY)) {
+        e.preventDefault(); // Permite apenas bloqueio horizontal
+    }
+}
+
 // Main Functions
 function init() {
     const hymnTitles = hymns.map(hymn => hymn.title);
@@ -137,7 +159,7 @@ function init() {
         width: 360,
         selectFirst: false,
         matchContains: "word"
-    }).dblclick(function() {
+    }).dblclick(function () {
         $(this).val('');
         return false;
     });
@@ -147,9 +169,6 @@ function init() {
         if (selectedHymn) {
             currentHymnIndex = hymns.indexOf(selectedHymn);
             slides = createSlides(selectedHymn);
-
-            // TODO: rolagem do texto nao funciona dentro do elemento preview e full
-            // slides = createSlidesComplete(selectedHymn);
             currentSlideIndex = 0;
             updatePreview();
             loadHymnAudio(currentHymnIndex);
@@ -218,10 +237,21 @@ function init() {
     updatePreview();
     loadHymnAudio(currentHymnIndex);
     previewContainer.classList.remove("hidden");
+
+    completeCheckbox.addEventListener('change', changeCheckboxStateCompleto);
+}
+
+function changeCheckboxStateCompleto() {
+    if(completeCheckbox.checked) {
+        currentSlideIndex=0;
+        console.log(currentSlideIndex);
+    } 
+    updateSlides();
+    updatePreview();
 }
 
 function updateSlides() {
-    slides = createSlides(hymns[currentHymnIndex]);
+    slides = completeCheckbox.checked ? createSlidesComplete(hymns[currentHymnIndex]) : createSlides(hymns[currentHymnIndex]);
 }
 
 function updatePreview() {
@@ -265,6 +295,24 @@ function nextSlide() {
         updateSlideContent();
         updateCounter();
     }
+}
+
+function nextHymn() {
+    // Avança para o próximo hino com wrap-around
+    currentHymnIndex = (currentHymnIndex + 1) % hymns.length;
+    currentSlideIndex = 0; // Reinicia para o primeiro slide
+    updateSlides();
+    updatePreview();
+    loadHymnAudio(currentHymnIndex);
+}
+
+function previousHymn() {
+    // Retrocede para o hino anterior com wrap-around
+    currentHymnIndex = (currentHymnIndex - 1 + hymns.length) % hymns.length;
+    currentSlideIndex = 0; // Reinicia para o primeiro slide
+    updateSlides();
+    updatePreview();
+    loadHymnAudio(currentHymnIndex);
 }
 
 function startPresentation() {
@@ -343,7 +391,6 @@ async function loadHymnAudio(hymnNumber) {
     }
 
     hymnNumber = hymnNumber + 1;
-    console.log('Loading hymn audio for hymn:', hymnNumber);
     const audioElement = document.getElementById('hymn-audio');
     const sourceElement = document.getElementById('audio-source');
     const mp3Url = `https://raw.githubusercontent.com/ministerioquartoanjo/hinario/refs/heads/desenv/media/${String(hymnNumber).padStart(3, '0')}-piano.mp3`;
@@ -379,7 +426,6 @@ async function loadHymnAudio(hymnNumber) {
  * @returns {array} Array de slides com conteúdo do hino.
  */
 function createSlides(hymn) {
-    console.log('## Creating slides for hymn:', hymn);
     const slides = [];
     const verses = hymn.verses;
     const chorus = hymn.coro;
@@ -424,9 +470,6 @@ function createSlides(hymn) {
             finalSlides.push(slides[i + 1]);
         }
     }
-
-    console.log('Final slides:', finalSlides);
-
     return finalSlides;
 }
 
@@ -442,15 +485,15 @@ function createSlidesComplete(hymn) {
     // Process verses and chorus in correct order
     if (Array.isArray(hymn.verses[0])) {
         hymn.verses.forEach((verse) => {
-            completeHymnContent += `<div class='complete-verse'>${verse.join('<br>')}</div>`;
+            completeHymnContent += `<div class='complete-verse text-left'>${verse.join('<br>')}</div>`;
             if (hymn.coro) {
-                completeHymnContent += `<div class='complete-chorus'>${hymn.coro.join('<br>')}</div>`;
+                completeHymnContent += `<div class='complete-chorus text-left text-yellow-400'>${hymn.coro.join('<br>')}</div>`;
             }
         });
     } else {
-        completeHymnContent += `<div class='complete-verse'>${hymn.verses.join('<br>')}</div>`;
+        completeHymnContent += `<div class='complete-verse text-left'>${hymn.verses.join('<br>')}</div>`;
         if (hymn.coro) {
-            completeHymnContent += `<div class='complete-chorus'>${hymn.coro.join('<br>')}</div>`;
+            completeHymnContent += `<div class='complete-chorus text-left text-yellow-400'>${hymn.coro.join('<br>')}</div>`;
         }
     }
 
@@ -586,10 +629,6 @@ function updateVersion() {
 
 // Initialization
 document.addEventListener("DOMContentLoaded", init);
-// Initialize immediately in case DOM is already loaded
-if (document.readyState === "interactive" || document.readyState === "complete") {
-    init();
-}
 
 document.addEventListener('keydown', (event) => {
     if (event.key === 'Escape') {
@@ -608,6 +647,7 @@ const containers = document.querySelectorAll('#preview-container, #presentation-
 containers.forEach(container => {
     container.addEventListener('touchstart', handleTouchStart, { passive: true });
     container.addEventListener('touchend', handleTouchEnd, { passive: true });
+    container.addEventListener('touchmove', handleTouchMove, { passive: true });
 });
 
 async function checkIfAllMP3sAreCached() {
@@ -691,7 +731,7 @@ document.addEventListener('DOMContentLoaded', () => {
 document.addEventListener('DOMContentLoaded', () => {
     const clearButton = document.getElementById('clear-hymn');
     if (clearButton) {
-        clearButton.addEventListener('click', function(event) {
+        clearButton.addEventListener('click', function (event) {
             document.getElementById('hymn-select').value = '';
         });
     }
@@ -711,4 +751,52 @@ function decreaseFontSize() {
         updateFontSize();
         saveSettings(); // Save settings after changing font size
     }
+}
+
+// Implementação robusta com tratamento de erros
+function setupSwipeOLD(element) {
+    let startX = 0, startY = 0;
+
+    element.addEventListener('touchstart', e => {
+        startX = e.touches[0].clientX;
+        startY = e.touches[0].clientY; // Novo
+    }, { passive: true });
+
+    element.addEventListener('touchend', e => {
+        const diffX = e.changedTouches[0].clientX - startX;
+        const diffY = e.changedTouches[0].clientY - startY; // Novo
+
+        // Só considera swipe horizontal se for o movimento principal
+        if (Math.abs(diffX) > Math.abs(diffY) && Math.abs(diffX) > 50) {
+            diffX > 0 ? goToPrevPage() : goToNextPage();
+        }
+        startX = 0;
+        startY = 0; // Novo
+    }, { passive: true });
+}
+
+function setupSwipe(element) {
+    let startX1 = 0, startX2 = 0;
+    const threshold = 100; // Distância mínima para trocar de hino
+
+    element.addEventListener('touchstart', e => {
+        if (e.touches.length === 2) { // Dois dedos
+            startX1 = e.touches[0].clientX;
+            startX2 = e.touches[1].clientX;
+        }
+    }, { passive: true });
+
+    element.addEventListener('touchend', e => {
+        if (e.touches.length === 0 && startX1 && startX2) { // Terminou swipe com dois dedos
+            const avgStart = (startX1 + startX2) / 2;
+            const avgEnd = (e.changedTouches[0].clientX + e.changedTouches[1].clientX) / 2;
+            const diffX = avgEnd - avgStart;
+
+            if (Math.abs(diffX) > threshold) {
+                diffX > 0 ? previousHymn() : nextHymn();
+            }
+            startX1 = 0;
+            startX2 = 0;
+        }
+    }, { passive: true });
 }

@@ -1,7 +1,7 @@
 {
   "name": "Hinário MQA",
   "short_name": "Hinario",
-  "start_url": "/pwa/index.html",
+  "start_url": "/hinario/pwa/index.html",
   "background_color": "#ffffff",
   "display": "standalone",
   "icons": [

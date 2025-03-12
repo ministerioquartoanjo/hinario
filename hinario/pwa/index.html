@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="mobile-web-app-capable" content="yes">
-    <title>Apresentação de Hinos</title>
+    <title>Apresentação de Hinos MQA-AF</title>
     <link rel="manifest" crossorigin="use-credentials" href="manifest.json">
     <link href="styles.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Open+Sans&family=Lato&family=Montserrat&family=Poppins&family=Lora&family=Merriweather&family=Raleway&family=Oswald&family=Ubuntu&family=Dancing+Script&family=Playfair+Display&family=Source+Sans+Pro&family=Noto+Sans&display=swap" rel="stylesheet">
@@ -40,7 +40,7 @@
 
         <!-- Controls and Hymn Selection -->
         <div class="bg-white dark:bg-gray-800 p-4 rounded-lg shadow-lg w-full">
-            <h1 class="text-2xl text-orange-dark font-bold mb-4 text-center">Apresentação de Hinos <sup class="version" id="version">1.0.50</sup><i class="fas fa-info-circle ml-2 cursor-pointer" id="info-icon"></i></h1>
+            <h1 class="text-2xl text-orange-dark font-bold mb-4 text-center">Apresentação de Hinos <sup class="version" id="version">1.15.1</sup><i class="fas fa-info-circle ml-2 cursor-pointer" id="info-icon"></i></h1>
 
             <div class="flex flex-col md:flex-row gap-4 mb-4">
                 <div class="flex-1">
@@ -54,6 +54,10 @@
                 </div>
 
                 <div class="flex-1 flex items-end">
+                    <div class="checkbox-container mr-4">
+                        <input type="checkbox" id="complete-checkbox" class="mr-2">
+                        <label for="complete-checkbox" class="checkbox-label">Completo</label>
+                    </div>
                     <button id="start-button" class="w-full bg-orange-dark hover:bg-orange-600 text-white font-bold py-2 px-4 rounded-md transition-colors">
                         Iniciar Apresentação
                     </button>
@@ -172,7 +176,7 @@
                  id="fullscreen-bg-image">
 
             <div class="relative z-10 w-full h-full flex flex-col justify-center items-center p-8 bg-black bg-opacity-50">
-                <div id="fullscreen-content" class="slide-content text-4xl md:text-6xl font-bold text-center max-w-5xl">
+                <div id="fullscreen-content" class="slide-content text-4xl md:text-6xl font-bold text-center">
                     <!-- Fullscreen content will be populated here -->
                 </div>
             </div>
@@ -203,27 +207,39 @@
                 </button>
             </div>
             <div class="p-6 space-y-3 max-h-[60vh] overflow-y-auto">
-                <div><span class="font-bold">Deslize/Seta direita:</span> Avançar slide</div>
-                <div><span class="font-bold">Deslize/Seta esquerda:</span> Voltar slide</div>
-                <div><span class="font-bold">F:</span> Alternar fundo</div>
-                <div><span class="font-bold">+/-:</span> Aumentar/diminuir fonte</div>
-                <div><span class="font-bold">Seta cima/baixo:</span> Alterar altura da linha</div>
-                <div><span class="font-bold">Alt+R:</span> Resetar configurações</div>
+                <div class="mb-4">
+                    <h3 class="font-bold text-lg mb-2">Descrição do App</h3>
+                    <p>Este aplicativo permite a apresentação de hinos com funcionalidades avançadas, incluindo controle de slides, ajuste de fonte e altura da linha, alternância de fundo e muito mais. Ideal para uso em reuniões e apresentações.</p>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg mb-2">Atalhos e Funcionalidades</h3>
+                    <div><span class="font-bold">Deslize/Seta direita:</span> Avançar slide</div>
+                    <div><span class="font-bold">Deslize/Seta esquerda:</span> Voltar slide</div>
+                    <div><span class="font-bold">PageUp/PageDown:</span> Avança/Retrocede Hino</div>
+                    <div><span class="font-bold">F:</span> Alternar fundo</div>
+                    <div><span class="font-bold">+/-:</span> Aumentar/diminuir fonte</div>
+                    <div><span class="font-bold">Seta cima/baixo:</span> Alterar altura da linha</div>
+                    <div><span class="font-bold">Alt+R:</span> Resetar configurações</div>
+                    <div><span class="font-bold">Escape:</span> Fechar overlay</div>
+                </div>
             </div>
         </div>
     </div>
 
-    <script src="script.js"></script>
     <script>
-        if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('service-worker.js')
-                .then(registration => {
-                    console.log('ServiceWorker registration successful');
-                })
-                .catch(error => {
-                    console.error('ServiceWorker registration failed:', error);
-                });
-        }
+        const version = document.getElementById('version').textContent;
+        const script = document.createElement('script');
+        script.src = `script.js?v=${version}`;
+        script.onload = () => {
+            // Ensure other scripts run after this script is loaded
+            init();
+            if ('serviceWorker' in navigator) {
+                navigator.serviceWorker.register('service-worker.js')
+                    .then(() => console.log('Service Worker Registered'))
+                    .catch(err => console.error('Service Worker Registration Failed:', err));
+            }
+        };
+        document.body.appendChild(script);
     </script>
 </body>
 
