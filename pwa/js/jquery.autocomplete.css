@@ -1,0 +1,51 @@
+.ac_results {
+	padding: 0px;
+	border: 1px solid black;
+	background-color: white;
+	overflow: hidden;
+	z-index: 99999;	
+	font-family: 'Open Sans', sans-serif; /* Align font with app-slides1.html */
+	color: rgb(177, 187, 196); /* Align color with app-slides1.html */
+}
+
+.ac_results ul {
+	width: 100%;
+	list-style-position: outside;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	font-size: 24px !important; /* Adjusted for better readability */
+	line-height: 30px !important; /* Adjusted for better spacing */
+	color: black; /* Set text color for results */
+}
+
+.ac_results li {
+	margin: 0px;
+	padding: 4px 5px;
+	cursor: default;
+	display: block;
+	/* 
+	if width will be 100% horizontal scrollbar will apear 
+	when scroll mode will be used
+	*/
+	width: 100%;
+	font: menu;
+	/* 
+	it is very important, if line-height not setted or setted 
+	in relative units scroll will be broken in firefox
+	*/
+	overflow: hidden;
+}
+
+.ac_loading {
+	background: white url('indicator.gif') right center no-repeat;
+}
+
+.ac_odd {
+	background-color: #eee;
+}
+
+.ac_over {
+	background-color: #0A246A; /* Align background color */
+	color: white !important; /* Ensure text is readable */
+}

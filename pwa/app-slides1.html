@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apresentação de Hinos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'orange-dark': '#D35400',
+                    },
+                    boxShadow: {
+                        'custom': '0 4px 10px rgba(0, 0, 0, 0.5)',
+                    }
+                }
+            },
+            darkMode: 'class',
+        }
+    </script>
+    <style>
+        .slide-content {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            transition: opacity 0.5s ease;
+        }
+
+        .slide-container {
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+            border: 3px solid black;
+        }
+
+        .title-slide {
+            text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.9);
+        }
+
+        .author-slide {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        .chorus-slide {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        body {
+            transition: background-color 0.3s ease;
+        }
+
+        .dark .slide-container {
+            border-color: #444;
+        }
+
+        .version {
+            font-size: 0.45em !important; /* Adjust the size as needed */
+            color: rgb(177, 187, 196);
+        }
+
+        #info-icon {
+            color: #175691;
+            transition: opacity 0.2s;
+        }
+
+        #info-icon:hover {
+            opacity: 0.8;
+        }
+
+        #info-overlay {
+            backdrop-filter: blur(4px);
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        #info-overlay > div {
+            position: relative;
+            box-sizing: border-box;
+            display: block;
+            height: 296px;
+            max-width: 672px;
+            padding: 24px;
+            width: 672px;
+            text-size-adjust: 100%;
+            font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            font-feature-settings: normal;
+            font-variation-settings: normal;
+            line-height: 24px;
+            tab-size: 4;
+            background-color: rgb(31, 41, 55);
+            border: 0 solid rgb(229, 231, 235);
+            border-radius: 8px;
+            unicode-bidi: isolate;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .light #info-overlay > div {
+            background-color: rgb(255, 255, 255);
+        }
+
+        .dark #info-overlay > div {
+            --tw-bg-opacity: 1 !important;
+            background-color: rgb(31 41 55 / var(--tw-bg-opacity)) !important;
+        }
+
+        .text-sm {
+            color: #ffff
+        }
+
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Open+Sans&family=Lato&family=Montserrat&family=Poppins&family=Lora&family=Merriweather&family=Raleway&family=Oswald&family=Ubuntu&family=Dancing+Script&family=Playfair+Display&family=Source+Sans+Pro&family=Noto+Sans&display=swap" rel="stylesheet">
+    <link href="js/jquery.autocomplete.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery.autocomplete.js"></script>
+    <script src="hinos.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body class="min-h-screen bg-gray-100 dark:bg-gray-900 flex flex-col items-center p-4">
+    <div class="max-w-4xl w-full flex flex-col gap-4">
+        <!-- Controls and Hymn Selection -->
+        <div class="bg-white dark:bg-gray-800 p-4 rounded-lg shadow-lg w-full">
+            <h1 class="text-2xl text-orange-dark font-bold mb-4 text-center">Apresentação de Hinos <sup class="version" id="version">1.0.10</sup><i class="fas fa-info-circle ml-2 cursor-pointer" id="info-icon"></i></h1>
+
+            <div class="flex flex-col md:flex-row gap-4 mb-4">
+                <div class="flex-1">
+                    <label for="hymn-select" class="block text-gray-700 dark:text-gray-300 mb-1">Selecionar Hino:</label>
+                    <input id="hymn-select" class="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-md dark:bg-gray-700 dark:text-white" />
+                </div>
+
+                <div class="flex-1 flex items-end">
+                    <button id="start-button" class="w-full bg-orange-dark hover:bg-orange-600 text-white font-bold py-2 px-4 rounded-md transition-colors">
+                        Iniciar Apresentação
+                    </button>
+                </div>
+            </div>
+
+
+
+            <div class="flex justify-between">
+                <div>
+                    <label for="font-decrease" class="block text-gray-700 dark:text-gray-300 mb-1">Tamanho da Fonte:</label>
+                    <div class="flex items-center gap-2">
+                        <button id="font-decrease" class="px-3 py-1 bg-gray-200 dark:bg-gray-700 rounded-md">-</button>
+                        <button id="font-increase" class="px-3 py-1 bg-gray-200 dark:bg-gray-700 rounded-md">+</button>
+                        <span id="font-size-display" class="text-sm">1rem</span>
+                    </div>
+                </div>
+
+                <div>
+                    <label for="line-height" class="block text-gray-700 dark:text-gray-300 mb-1">Altura da Linha:</label>
+                    <input type="number" id="line-height" value="1" step="0.1" min="1" class="w-full border border-gray-300 dark:border-gray-600 rounded-md">
+                </div>
+
+                <div>
+                    <label for="bg-toggle" class="block text-gray-700 dark:text-gray-300 mb-1">Fundo:</label>
+                    <div class="flex gap-2">
+                        <button id="bg-slides-toggle" class="px-3 py-1 bg-gray-200 dark:bg-gray-700 rounded-md">Alternar</button>
+                    </div>
+                </div>
+
+                <div>
+                    <label for="font-color" class="block text-gray-700 dark:text-gray-300 mb-1">Cor da Fonte:</label>
+                    <input type="color" id="font-color" value="#FFFFFF" class="w-full border border-gray-300 dark:border-gray-600 rounded-md">
+                </div>
+
+                <div>
+                    <label for="font-selector" class="block text-gray-700 dark:text-gray-300 mb-1">Selecionar Fonte:</label>
+                    <select id="font-selector" class="w-full border border-gray-300 dark:border-gray-600 rounded-md">
+                        <option value="Arial">Arial</option>
+                        <option value="Courier New">Courier New</option>
+                        <option value="Georgia">Georgia</option>
+                        <option value="Times New Roman">Times New Roman</option>
+                        <option value="Verdana">Verdana</option>
+                        <option value="Roboto">Roboto</option>
+                        <option value="Open Sans">Open Sans</option>
+                        <option value="Lato">Lato</option>
+                        <option value="Montserrat">Montserrat</option>
+                        <option value="Poppins">Poppins</option>
+                        <option value="Lora">Lora</option>
+                        <option value="Merriweather">Merriweather</option>
+                        <option value="Raleway">Raleway</option>
+                        <option value="Oswald">Oswald</option>
+                        <option value="Ubuntu">Ubuntu</option>
+                        <option value="Dancing Script">Dancing Script</option>
+                        <option value="Playfair Display">Playfair Display</option>
+                        <option value="Source Sans Pro">Source Sans Pro</option>
+                        <option value="Noto Sans">Noto Sans</option>
+                    </select>
+                </div>
+            </div>
+
+            <audio id="hymn-audio" class="w-full mt-4" controls>
+                <source id="audio-source" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+
+        <!-- Preview -->
+        <div class="hidden" id="preview-container">
+            <div class="relative w-full h-[400px] md:h-[500px] overflow-hidden slide-container rounded-lg">
+                <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=1920&q=80"
+                     alt="Fundo da natureza"
+                     class="absolute w-full h-full object-cover"
+                     id="bg-image">
+
+                <div class="relative z-10 w-full h-full flex flex-col justify-center items-center p-4 bg-black bg-opacity-50">
+                    <div id="slide-content" class="slide-content text-3xl md:text-5xl font-bold text-center max-w-3xl" style="color: black;">
+                        <!-- Slide content will be populated here -->
+                    </div>
+
+                    <div class="absolute bottom-4 right-4 flex gap-2">
+                        <span id="slide-counter" class="bg-black bg-opacity-70 text-white px-3 py-1 rounded-md"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex justify-between mt-4">
+                <button id="prev-button" class="bg-orange-dark hover:bg-orange-600 text-white font-bold py-2 px-4 rounded-md transition-colors">
+                    Anterior
+                </button>
+                <button id="next-button" class="bg-orange-dark hover:bg-orange-600 text-white font-bold py-2 px-4 rounded-md transition-colors">
+                    Próximo
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Full Screen Presentation Mode -->
+    <div id="presentation-container" class="fixed inset-0 bg-black hidden z-50">
+        <div class="relative w-full h-full flex flex-col justify-center items-center">
+            <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=1920&q=80"
+                 alt="Fundo da natureza"
+                 class="absolute w-full h-full object-cover"
+                 id="fullscreen-bg-image">
+
+            <div class="relative z-10 w-full h-full flex flex-col justify-center items-center p-8 bg-black bg-opacity-50">
+                <div id="fullscreen-content" class="slide-content text-4xl md:text-6xl font-bold text-center max-w-5xl">
+                    <!-- Fullscreen content will be populated here -->
+                </div>
+            </div>
+
+            <div class="absolute bottom-4 right-4 z-20">
+                <span id="fullscreen-counter" class="bg-black bg-opacity-70 text-white px-3 py-1 rounded-md"></span>
+            </div>
+
+            <div class="absolute top-4 right-4 z-20">
+                <button id="close-fullscreen" class="bg-red-600 hover:bg-red-700 text-white font-bold p-2 rounded-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Info Overlay -->
+    <div id="info-overlay" class="fixed inset-0 bg-opacity-50 hidden z-50 flex items-center justify-center">
+        <div class="rounded-lg max-w-[672px] w-full" style="background-color: white !important;">
+            <div class="flex justify-between items-center px-4 py-2 rounded-t-lg">
+                <h2 class="font-bold">Atalhos e Funcionalidades</h2>
+                <button id="close-overlay" class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+            <div class="p-6 space-y-3 max-h-[60vh] overflow-y-auto">
+                <div><span class="font-bold">Espaço:</span> Avançar slide</div>
+                <div><span class="font-bold">Backspace:</span> Voltar slide</div>
+                <div><span class="font-bold">F:</span> Tela cheia</div>
+                <div><span class="font-bold">+/-:</span> Aumentar/diminuir fonte</div>
+                <div><span class="font-bold">C:</span> Alternar cor de fundo</div>
+                <div><span class="font-bold">L:</span> Alterar altura da linha</div>
+                <div><span class="font-bold">Alt+R:</span> Resetar configurações</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript for Hymn Presentation Application
+        // This script handles the functionality for the hymn selection, audio playback, and user settings.
+        // It includes features like:
+        // - Autocomplete for hymn titles
+        // - Audio player controls
+        // - Dynamic updates for font size, line height, background color, font color, and font family
+        // - Persistent settings storage using localStorage
+        // - Versioning system for tracking changes
+        // - Responsive design adjustments
+        // - Event listeners for user interactions
+
+        // Check for dark mode preference
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            document.documentElement.classList.add('dark');
+        }
+
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+            if (event.matches) {
+                document.documentElement.classList.add('dark');
+            } else {
+                document.documentElement.classList.remove('dark');
+            }
+        });
+
+        // Main state
+        let currentHymnIndex = 0; // Index of the currently selected hymn
+        let currentSlideIndex = 0; // Index of the currently displayed slide
+        let slides = []; // Array of slide content for the current hymn
+        let fontSize = 5; // Default font size multiplier
+        let bgImageIndex = 0; // Index of the current background image
+
+        // Background images
+        const bgImages = [
+            "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=1920&q=80",
+            "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1920&q=80",
+            "https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?auto=format&fit=crop&w=1920&q=80",
+            "https://images.unsplash.com/photo-1475924156734-496f6cac6ec1?auto=format&fit=crop&w=1920&q=80",
+            "https://images.unsplash.com/photo-1738760479351-b25b4e35106a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "https://images.unsplash.com/photo-1739361133037-77be66a4ea6a?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "https://images.unsplash.com/photo-1739054239615-02944e9c338b?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "https://plus.unsplash.com/premium_photo-1712685912272-96569030d1d7?q=80&w=2075&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        ];
+
+        // DOM Elements
+        const hymnSelect = document.getElementById("hymn-select"); // Input for selecting a hymn
+        const startButton = document.getElementById("start-button"); // Button to start the presentation
+        const prevButton = document.getElementById("prev-button"); // Button to go to the previous slide
+        const nextButton = document.getElementById("next-button"); // Button to go to the next slide
+        const slideContent = document.getElementById("slide-content"); // Element to display the current slide content
+        const slideCounter = document.getElementById("slide-counter"); // Element to display the current slide number
+        const previewContainer = document.getElementById("preview-container"); // Container for hymn preview
+        const presentationContainer = document.getElementById("presentation-container"); // Full-screen presentation container
+        const fullscreenContent = document.getElementById("fullscreen-content"); // Content displayed in full-screen mode
+        const fullscreenCounter = document.getElementById("fullscreen-counter"); // Slide counter in full-screen mode
+        const closeFullscreenButton = document.getElementById("close-fullscreen"); // Button to close full-screen mode
+        const fontIncreaseButton = document.getElementById("font-increase"); // Button to increase font size
+        const fontDecreaseButton = document.getElementById("font-decrease"); // Button to decrease font size
+        const bgToggleButton = document.getElementById("bg-slides-toggle"); // Button to toggle background
+        const bgImage = document.getElementById("bg-image"); // Background image for the presentation
+        const fullscreenBgImage = document.getElementById("fullscreen-bg-image"); // Background image in full-screen mode
+        const fontColorInput = document.getElementById("font-color"); // Input for selecting font color
+        const lineHeightInput = document.getElementById("line-height"); // Input for adjusting line height
+        const fontSelector = document.getElementById("font-selector"); // Selector for choosing font family
+        const audioSource = document.getElementById("audio-source"); // Source element for audio playback
+        const audioPlayer = document.getElementById("hymn-audio"); // Audio player element
+
+        // Initialize app
+        async function init() {
+            const hymnTitles = hymns.map(hymn => hymn.title);
+            $("#hymn-select").autocomplete(hymnTitles, {
+                width: 360,
+                selectFirst: false,
+                matchContains: "word"
+            }).dblclick(function() {
+                $(this).val('');
+                return false;
+            });
+
+            $("#hymn-select").result(function (event, data, formatted) {
+                const selectedHymn = hymns.find(hymn => hymn.title === formatted);
+                if (selectedHymn) {
+                    currentHymnIndex = hymns.indexOf(selectedHymn);
+                    slides = createSlides(selectedHymn);
+                    currentSlideIndex = 0;
+                    updatePreview();
+                    updateAudioPlayer(currentHymnIndex);
+                }
+            });
+
+            startButton.addEventListener("click", startPresentation);
+            prevButton.addEventListener("click", previousSlide);
+            nextButton.addEventListener("click", nextSlide);
+            closeFullscreenButton.addEventListener("click", () => {
+                if (!audioPlayer.paused) {
+                    audioPlayer.pause();
+                }
+                exitPresentation();
+            });
+
+            document.addEventListener("keydown", handleKeyPress);
+
+            fontIncreaseButton.addEventListener("click", () => {
+                if (fontSize < 8) {
+                    fontSize++;
+                    updateFontSize();
+                    saveSettings(); // Save settings after changing font size
+                }
+            });
+            fontDecreaseButton.addEventListener("click", () => {
+                if (fontSize > 3) {
+                    fontSize--;
+                    updateFontSize();
+                    saveSettings(); // Save settings after changing font size
+                }
+            });
+            bgToggleButton.addEventListener("click", updateBackground);
+            fontColorInput.addEventListener("input", updateFontColor);
+            lineHeightInput.addEventListener("input", updateLineHeight);
+            fontSelector.addEventListener("change", updateFontFamily);
+
+            // Set initial font color from localStorage or color picker
+            const slideContent = document.getElementById('slide-content');
+            const fullscreenContent = document.getElementById('fullscreen-content');
+
+            if (fontColorInput && slideContent && fullscreenContent) {
+                const savedColor = localStorage.getItem('fontColor');
+                const initialColor = savedColor || fontColorInput.value;
+                slideContent.style.color = initialColor;
+                fullscreenContent.style.color = initialColor;
+                fontColorInput.value = initialColor;
+            }
+
+            // Initialize with the first hymn
+            currentHymnIndex = 0;
+            updateSlides();
+            updatePreview();
+            previewContainer.classList.remove("hidden");
+        }
+
+        function updateSlides() {
+            slides = createSlides(hymns[currentHymnIndex]);
+        }
+
+        function updatePreview() {
+            updateSlides();
+            updateSlideContent();
+            updateCounter();
+        }
+
+        function updateSlideContent() {
+            if (slides.length === 0) return;
+
+            const content = slides[currentSlideIndex];
+            // Fade out and in for transition
+            slideContent.style.opacity = "0";
+            fullscreenContent.style.opacity = "0";
+
+            setTimeout(() => {
+                slideContent.innerHTML = content;
+                fullscreenContent.innerHTML = content;
+                slideContent.style.opacity = "1";
+                fullscreenContent.style.opacity = "1";
+            }, 300);
+        }
+
+        function updateCounter() {
+            slideCounter.textContent = `${currentSlideIndex + 1}/${slides.length}`;
+            fullscreenCounter.textContent = `${currentSlideIndex + 1}/${slides.length}`;
+        }
+
+        function previousSlide() {
+            if (currentSlideIndex > 0) {
+                currentSlideIndex--;
+                updateSlideContent();
+                updateCounter();
+            }
+        }
+
+        function nextSlide() {
+            if (currentSlideIndex < slides.length - 1) {
+                currentSlideIndex++;
+                updateSlideContent();
+                updateCounter();
+            }
+        }
+
+        function startPresentation() {
+            presentationContainer.classList.remove("hidden");
+            updateSlideContent();
+            updateCounter();
+            audioPlayer.play();
+        }
+
+        function exitPresentation() {
+            presentationContainer.classList.add("hidden");
+        }
+
+        function handleKeyPress(e) {
+            if (presentationContainer.classList.contains("hidden")) return;
+
+            switch (e.key) {
+                case "ArrowRight":
+                case "ArrowDown":
+                case " ":
+                    nextSlide();
+                    break;
+                case "ArrowLeft":
+                case "ArrowUp":
+                    previousSlide();
+                    break;
+                case "Escape":
+                    exitPresentation();
+                    break;
+                case "+":
+                    increaseFontSize();
+                    break;
+                case "-":
+                    decreaseFontSize();
+                    break;
+                case "r":
+                    if (e.altKey) {
+                        localStorage.removeItem(SETTINGS_KEY);
+                        location.reload();
+                    }
+                    break;
+            }
+        }
+
+        function increaseFontSize() {
+            if (fontSize < 8) {
+                fontSize++;
+                updateFontSize();
+                saveSettings(); // Save settings after changing font size
+            }
+        }
+
+        function decreaseFontSize() {
+            if (fontSize > 3) {
+                fontSize--;
+                updateFontSize();
+                saveSettings(); // Save settings after changing font size
+            }
+        }
+
+        function updateFontSize() {
+            slideContent.style.fontSize = `${fontSize * 0.5}rem`;
+            fullscreenContent.style.fontSize = `${fontSize * 0.7}rem`;
+            document.getElementById('font-size-display').textContent = `${fontSize * 0.5}rem`;
+        }
+
+        function updateBackground() {
+            const bgImage = document.getElementById('bg-image');
+            const fullscreenBgImage = document.getElementById('fullscreen-bg-image');
+            bgImageIndex = (bgImageIndex + 1) % bgImages.length;
+            bgImage.src = bgImages[bgImageIndex];
+            fullscreenBgImage.src = bgImages[bgImageIndex];
+
+            // Save settings including current background image
+            saveSettings();
+        }
+
+        function updateFontColor() {
+            console.log('updateFontColor called');
+            const fontColorInput = document.getElementById('font-color');
+            if (!fontColorInput) {
+                console.error('Font color input not found');
+                return;
+            }
+            const selectedColor = fontColorInput.value;
+            console.log('Current selected color:', selectedColor);
+            document.querySelectorAll('.slide-content, .slide-content .title-slide, .slide-content .author-slide, .slide-content .chorus-slide').forEach(el => {
+                el.style.color = selectedColor;
+            });
+            saveSettings();
+            console.log('Font color updated to:', selectedColor);
+        }
+
+        function updateLineHeight() {
+            const selectedLineHeight = lineHeightInput.value;
+            console.log('Updating line height to:', selectedLineHeight);
+            document.querySelectorAll('.slide-content, .slide-content .title-slide, .slide-content .author-slide, .slide-content .chorus-slide').forEach(el => {
+                if (el) {
+                    el.style.lineHeight = selectedLineHeight;
+                }
+            });
+            saveSettings();
+        }
+
+        function updateFontFamily() {
+            const selectedFont = fontSelector.value;
+            console.log('Updating font family to:', selectedFont);
+            document.querySelectorAll('.slide-content, .slide-content .title-slide, .slide-content .author-slide, .slide-content .chorus-slide').forEach(el => {
+                if (el) {
+                    el.style.fontFamily = selectedFont;
+                }
+            });
+            saveSettings();
+        }
+
+        function updateAudioPlayer(hymnIndex) {
+            const hymnNumber = String(hymnIndex + 1).padStart(3, '0');
+            audioSource.src = `https://github.com/ministerioquartoanjo/hinario/raw/refs/heads/desenv/media/${hymnNumber}-piano.mp3`;
+            audioPlayer.load();
+        }
+
+        // Função para salvar configurações em cookies
+        function setCookie(name, value, days) {
+            const expires = new Date(Date.now() + days * 864e5).toUTCString();
+            document.cookie = name + '=' + encodeURIComponent(value) + '; expires=' + expires + '; path=/';
+        }
+
+        function getCookie(name) {
+            return document.cookie.split('; ').reduce((r, c) => {
+                const [key, val] = c.split('=');
+                return key === name ? decodeURIComponent(val) : r;
+            }, '');
+        }
+
+        // Atualiza a cor da fonte com base nas seleções
+        document.addEventListener('DOMContentLoaded', () => {
+            document.getElementById('font-color').addEventListener('input', updateFontColor);
+            document.getElementById('line-height').addEventListener('input', updateLineHeight);
+            document.getElementById('font-selector').addEventListener('change', updateFontFamily);
+            loadSettings();
+        });
+
+        // Settings storage with debug
+        const SETTINGS_KEY = 'hymnSettings';
+        const TWO_YEARS = 1000 * 60 * 60 * 24 * 365 * 2;
+
+        function saveSettings() {
+            const bgImage = document.getElementById('bg-image');
+            const currentBgImage = bgImage.src;
+            const slideContent = document.querySelector('.slide-content');
+
+            const settings = {
+                fontSize: slideContent?.style.fontSize || '1rem',
+                lineHeight: slideContent?.style.lineHeight || '1.5',
+                bgColor: document.querySelector('.bg-container')?.style.backgroundColor || '',
+                fontColor: rgbToHex(slideContent?.style.color || '#FFFFFF'),
+                fontFamily: fontSelector.value || 'serif',
+                bgImage: currentBgImage,
+                expires: Date.now() + (30 * 24 * 60 * 60 * 1000) // 30 days
+            };
+
+            localStorage.setItem(SETTINGS_KEY, JSON.stringify(settings));
+            console.log('Saving settings:', settings);
+        }
+
+        function loadSettings() {
+            try {
+                const saved = localStorage.getItem(SETTINGS_KEY);
+                if (!saved) {
+                    console.log('No saved settings found');
+                    return;
+                }
+
+                const settings = JSON.parse(saved);
+                console.log('Loaded settings:', settings);
+
+                if (settings.expires < Date.now()) {
+                    console.log('Settings expired');
+                    localStorage.removeItem(SETTINGS_KEY);
+                    return;
+                }
+
+                // Apply font size
+                if (settings.fontSize) {
+                    document.querySelectorAll('.slide-content, .slide-content .title-slide, .slide-content .author-slide, .slide-content .chorus-slide').forEach(el => {
+                        el.style.fontSize = settings.fontSize;
+                    });
+                    document.getElementById('font-size-display').textContent = settings.fontSize;
+                }
+
+                // Apply line height
+                if (settings.lineHeight) {
+                    document.querySelectorAll('.slide-content, .slide-content .title-slide, .slide-content .author-slide, .slide-content .chorus-slide').forEach(el => {
+                        el.style.lineHeight = settings.lineHeight;
+                    });
+                    lineHeightInput.value = settings.lineHeight;
+                }
+
+                // Apply background color
+                if (settings.bgColor) {
+                    document.querySelectorAll('.bg-container').forEach(el => {
+                        el.style.backgroundColor = settings.bgColor;
+                    });
+                }
+
+                // Apply font color
+                if (settings.fontColor) {
+                    document.querySelectorAll('.slide-content, .slide-content .title-slide, .slide-content .author-slide, .slide-content .chorus-slide').forEach(el => {
+                        el.style.color = settings.fontColor;
+                    });
+                    fontColorInput.value = settings.fontColor;
+                }
+
+                // Apply font family
+                if (settings.fontFamily) {
+                    document.querySelectorAll('.slide-content, .slide-content .title-slide, .slide-content .author-slide, .slide-content .chorus-slide').forEach(el => {
+                        el.style.fontFamily = settings.fontFamily;
+                    });
+                    fontSelector.value = settings.fontFamily;
+                }
+
+                // Apply background image
+                if (settings.bgImage) {
+                    const bgImage = document.getElementById('bg-image');
+                    const fullscreenBgImage = document.getElementById('fullscreen-bg-image');
+                    bgImage.src = settings.bgImage;
+                    fullscreenBgImage.src = settings.bgImage;
+                    bgImage.style.display = 'block';
+                    fullscreenBgImage.style.display = 'block';
+                }
+
+                console.log('Applied settings:', settings);
+            } catch (error) {
+                console.error('Error loading settings:', error);
+            }
+        }
+
+        function updateVersion() {
+            const versionElement = document.getElementById('version');
+            const currentVersion = versionElement.innerText;
+            const newVersion = currentVersion.split('.');
+            newVersion[2] = parseInt(newVersion[2]) + 1; // Increment patch version
+            versionElement.innerText = newVersion.join('.');
+        }
+
+        // Start the app
+        document.addEventListener("DOMContentLoaded", init);
+        // Initialize immediately in case DOM is already loaded
+        if (document.readyState === "interactive" || document.readyState === "complete") {
+            init();
+        }
+
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'Escape') {
+                document.getElementById('info-overlay').classList.add('hidden');
+            }
+        });
+
+        document.getElementById('info-overlay').addEventListener('click', (event) => {
+            if (event.target === document.getElementById('info-overlay')) {
+                document.getElementById('info-overlay').classList.add('hidden');
+            }
+        });
+
+        // Add swipe functionality
+        let touchStartX = 0;
+        let touchEndX = 0;
+
+        function handleTouchStart(e) {
+            touchStartX = e.changedTouches[0].screenX;
+        }
+
+        function handleTouchEnd(e) {
+            touchEndX = e.changedTouches[0].screenX;
+            handleSwipe();
+        }
+
+        function handleSwipe() {
+            const swipeThreshold = 50; // Minimum swipe distance in pixels
+            const swipeDistance = touchEndX - touchStartX;
+
+            if (swipeDistance > swipeThreshold) {
+                previousSlide();
+            } else if (swipeDistance < -swipeThreshold) {
+                nextSlide();
+            }
+        }
+
+        // Add event listeners to slide containers
+        const slideContainers = document.querySelectorAll('#preview-container .slide-container, #presentation-container .slide-container');
+        slideContainers.forEach(container => {
+            container.addEventListener('touchstart', handleTouchStart, false);
+            container.addEventListener('touchend', handleTouchEnd, false);
+        });
+
+        function createSlides(hymn) {
+            const slides = [];
+            const verses = hymn.verses;
+            const chorus = hymn.coro;
+
+            // First slide is the title (in white) and author
+            slides.push(`<span class="title-slide text-white">${hymn.title}</span><br><span class="author-slide text-yellow-400">${hymn.author}</span>`);
+
+            // Process verses and add corresponding chorus after each
+            if (Array.isArray(verses[0])) {
+                verses.forEach((verse, verseIndex) => {
+                    // Add 2 lines per slide
+                    for (let i = 0; i < verse.length; i += 2) {
+                        const lines = verse.slice(i, i + 2);
+                        // Check if lines is an array before joining
+                        if (Array.isArray(lines)) {
+                            slides.push(`<span class="verse-slide">${lines.join('<br>')}</span>`);
+                        } else {
+                            console.error('Expected lines to be an array, but got:', lines);
+                        }
+                    }
+                    // Add corresponding chorus after the verse
+                    if (chorus && chorus[verseIndex]) {
+                        const currentChorus = chorus[verseIndex];
+                        for (let i = 0; i < currentChorus.length; i += 2) {
+                            const lines = currentChorus.slice(i, i + 2);
+                            // Check if lines is an array before joining
+                            if (Array.isArray(lines)) {
+                                slides.push(`<span class="chorus-slide text-yellow-400">${lines.join('<br>')}</span>`);
+                            } else {
+                                console.error('Expected lines to be an array, but got:', lines);
+                            }
+                        }
+                    }
+                });
+            } else {
+                for (let i = 0; i < verses.length; i += 2) {
+                    const lines = verses.slice(i, i + 2);
+                    // Check if lines is an array before joining
+                    if (Array.isArray(lines)) {
+                        slides.push(`<span class="verse-slide">${lines.join('<br>')}</span>`);
+                    } else {
+                        console.error('Expected lines to be an array, but got:', lines);
+                    }
+                }
+            }
+
+            // Limit to 2 lines per slide
+            const finalSlides = [];
+            for (let i = 0; i < slides.length; i += 2) {
+                finalSlides.push(slides[i]);
+                if (i + 1 < slides.length) {
+                    finalSlides.push(slides[i + 1]);
+                }
+            }
+
+            return finalSlides;
+        }
+
+        function rgbToHex(rgb) {
+            if (!rgb) return '#FFFFFF';
+            if (rgb.startsWith('#')) return rgb;
+
+            // Extract RGB values from rgb(r,g,b) string
+            const [r, g, b] = rgb.match(/\d+/g).map(Number);
+            return '#' + ((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1);
+        }
+
+        // Info overlay handling
+        const infoIcon = document.getElementById('info-icon');
+        const infoOverlay = document.getElementById('info-overlay');
+        const closeOverlay = document.getElementById('close-overlay');
+
+        if (infoIcon) {
+            infoIcon.addEventListener('click', () => {
+                infoOverlay.classList.remove('hidden');
+            });
+        }
+
+        if (closeOverlay) {
+            closeOverlay.addEventListener('click', () => {
+                infoOverlay.classList.add('hidden');
+            });
+        }
+
+        document.getElementById('close-overlay').addEventListener('click', () => {
+            document.getElementById('info-overlay').classList.add('hidden');
+        });
+    </script>
+</body>
+
+</html>
