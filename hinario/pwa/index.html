@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>Apresentação de Hinos MQA-AF</title>
+    <link rel="manifest" crossorigin="use-credentials" href="manifest.json">
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Open+Sans&family=Lato&family=Montserrat&family=Poppins&family=Lora&family=Merriweather&family=Raleway&family=Oswald&family=Ubuntu&family=Dancing+Script&family=Playfair+Display&family=Source+Sans+Pro&family=Noto+Sans&display=swap" rel="stylesheet">
+    <link href="js/jquery.autocomplete.css" rel="stylesheet" type="text/css" />
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.autocomplete.js"></script>
+    <script src="hinos.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />    
+    <link href="./dist/output.css" rel="stylesheet">
+</head>
+
+<body class="min-h-screen bg-gray-100 dark:bg-gray-900 flex flex-col items-center p-4">
+    <div class="max-w-4xl w-full flex flex-col gap-4">
+        <!-- Mobile Menu -->
+        <div class="mobile-menu hidden">
+            <div class="flex justify-around">
+                <button id="mobile-font-decrease" class="p-2">
+                    <i class="fas fa-font"></i> -
+                </button>
+                <button id="mobile-font-increase" class="p-2">
+                    <i class="fas fa-font"></i> +
+                </button>
+                <button id="mobile-settings" class="p-2">
+                    <i class="fas fa-cog"></i>
+                </button>
+                <button id="mobile-presentation" class="p-2">
+                    <i class="fas fa-expand"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Controls and Hymn Selection -->
+        <div class="bg-white dark:bg-gray-800 p-4 rounded-lg shadow-lg w-full">
+            <h1 class="text-2xl text-orange-dark font-bold mb-4 text-center">Apresentação de Hinos <sup class="version" id="version">1.15.2</sup><i class="fas fa-info-circle ml-2 cursor-pointer" id="info-icon"></i></h1>
+
+            <div class="flex flex-col md:flex-row gap-4 mb-4">
+                <div class="flex-1">
+                    <label for="hymn-select" class="block text-gray-700 dark:text-gray-300 mb-1">Selecionar Hino:</label>
+                    <div class="relative">
+                        <input id="hymn-select" class="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-md dark:bg-gray-700 dark:text-white" />
+                        <button id="clear-hymn" class="absolute right-2 top-1/2 transform -translate-y-1/2">
+                            <i class="fas fa-times text-gray-500"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="flex-1 flex items-end">
+                    <div class="checkbox-container mr-4">
+                        <input type="checkbox" id="complete-checkbox" class="mr-2">
+                        <label for="complete-checkbox" class="checkbox-label">Completo</label>
+                    </div>
+                    <button id="start-button" class="w-full bg-orange-dark hover:bg-orange-600 text-white font-bold py-2 px-4 rounded-md transition-colors">
+                        Iniciar Apresentação
+                    </button>
+                </div>
+            </div>
+
+            <div class="settings flex justify-between">
+                <div>
+                    <label for="font-decrease" class="block text-gray-700 dark:text-gray-300 mb-1">Tamanho da Fonte:</label>
+                    <div class="flex items-center gap-2">
+                        <button id="font-decrease" class="px-3 py-1 bg-gray-200 dark:bg-gray-700 rounded-md">-</button>
+                        <button id="font-increase" class="px-3 py-1 bg-gray-200 dark:bg-gray-700 rounded-md">+</button>
+                        <span id="font-size-display" class="text-sm">1rem</span>
+                    </div>
+                </div>
+
+                <div>
+                    <label for="line-height" class="block text-gray-700 dark:text-gray-300 mb-1">Altura da Linha:</label>
+                    <div class="flex items-center gap-2">
+                        <button id="line-height-decrease" class="px-3 py-1 bg-gray-200 dark:bg-gray-700 rounded-md">-</button>
+                        <button id="line-height-increase" class="px-3 py-1 bg-gray-200 dark:bg-gray-700 rounded-md">+</button>
+                        <span id="line-height-display" class="text-sm">1.0</span>
+                    </div>
+                </div>
+
+                <div>
+                    <label for="bg-toggle" class="block text-gray-700 dark:text-gray-300 mb-1">Fundo:</label>
+                    <div class="flex gap-2">
+                        <button id="bg-slides-toggle" class="px-3 py-1 bg-gray-200 dark:bg-gray-700 rounded-md">Alternar</button>
+                    </div>
+                </div>
+
+                <div>
+                    <label for="font-color" class="block text-gray-700 dark:text-gray-300 mb-1">Cor da Fonte:</label>
+                    <input type="color" id="font-color" value="#FFFFFF" class="w-full border border-gray-300 dark:border-gray-600 rounded-md">
+                </div>
+
+                <div>
+                    <label for="font-selector" class="block text-gray-700 dark:text-gray-300 mb-1">Selecionar Fonte:</label>
+                    <select id="font-selector" class="w-full border border-gray-300 dark:border-gray-600 rounded-md">
+                        <option value="Arial">Arial</option>
+                        <option value="Courier New">Courier New</option>
+                        <option value="Georgia">Georgia</option>
+                        <option value="Times New Roman">Times New Roman</option>
+                        <option value="Verdana">Verdana</option>
+                        <option value="Roboto">Roboto</option>
+                        <option value="Open Sans">Open Sans</option>
+                        <option value="Lato">Lato</option>
+                        <option value="Montserrat">Montserrat</option>
+                        <option value="Poppins">Poppins</option>
+                        <option value="Lora">Lora</option>
+                        <option value="Merriweather">Merriweather</option>
+                        <option value="Raleway">Raleway</option>
+                        <option value="Oswald">Oswald</option>
+                        <option value="Ubuntu">Ubuntu</option>
+                        <option value="Dancing Script">Dancing Script</option>
+                        <option value="Playfair Display">Playfair Display</option>
+                        <option value="Source Sans Pro">Source Sans Pro</option>
+                        <option value="Noto Sans">Noto Sans</option>
+                    </select>
+                </div>
+            </div>
+            <br>
+            <div class="flex items-center gap-4">
+                <button id="download-mp3s" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded flex items-center gap-2">
+                    <i class="fas fa-download"></i>
+                    Baixar Todos MP3s para o Dispositivo
+                </button>
+                <div id="download-progress" class="w-64 h-2 bg-gray-200 rounded hidden">
+                    <div id="progress-bar" class="h-full bg-blue-500 rounded" style="width: 0%;"></div>
+                </div>
+            </div>
+
+            <audio id="hymn-audio" class="w-full mt-4" controls>
+                <source id="audio-source" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+
+        <!-- Preview -->
+        <div class="hidden" id="preview-container">
+            <div class="relative w-full h-[400px] md:h-[500px] overflow-hidden slide-container rounded-lg">
+                <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=1920&q=80"
+                     alt="Fundo da natureza"
+                     class="absolute w-full h-full object-cover"
+                     id="bg-image">
+
+                <div class="relative z-10 w-full h-full flex flex-col justify-center items-center p-4 bg-black bg-opacity-50">
+                    <div id="slide-content" class="slide-content text-3xl md:text-5xl font-bold text-center max-w-3xl" style="color: black;">
+                        <!-- Slide content will be populated here -->
+                    </div>
+
+                    <div class="absolute bottom-4 right-4 flex gap-2">
+                        <span id="slide-counter" class="bg-black bg-opacity-70 text-white px-3 py-1 rounded-md"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex justify-between mt-4">
+                <button id="prev-button" class="bg-orange-dark hover:bg-orange-600 text-white font-bold py-2 px-4 rounded-md transition-colors">
+                    Anterior
+                </button>
+                <button id="next-button" class="bg-orange-dark hover:bg-orange-600 text-white font-bold py-2 px-4 rounded-md transition-colors">
+                    Próximo
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Full Screen Presentation Mode -->
+    <div id="presentation-container" class="fixed inset-0 bg-black hidden z-50">
+        <div class="relative w-full h-full flex flex-col justify-center items-center">
+            <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=1920&q=80"
+                 alt="Fundo da natureza"
+                 class="absolute w-full h-full object-cover"
+                 id="fullscreen-bg-image">
+
+            <div class="relative z-10 w-full h-full flex flex-col justify-center items-center p-8 bg-black bg-opacity-50">
+                <div id="fullscreen-content" class="slide-content text-4xl md:text-6xl font-bold text-center">
+                    <!-- Fullscreen content will be populated here -->
+                </div>
+            </div>
+
+            <div class="absolute bottom-4 right-4 z-20">
+                <span id="fullscreen-counter" class="bg-black bg-opacity-70 text-white px-3 py-1 rounded-md"></span>
+            </div>
+
+            <div class="absolute top-4 right-4 z-20">
+                <button id="close-fullscreen" class="bg-red-600 hover:bg-red-700 text-white font-bold p-2 rounded-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Info Overlay -->
+    <div id="info-overlay" class="fixed inset-0 bg-opacity-50 hidden z-50 flex items-center justify-center">
+        <div class="rounded-lg max-w-[672px] w-full" style="background-color: white !important;">
+            <div class="flex justify-between items-center px-4 py-2 rounded-t-lg">
+                <h2 class="font-bold">Atalhos e Funcionalidades</h2>
+                <button id="close-overlay" class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+            <div class="p-6 space-y-3 max-h-[60vh] overflow-y-auto">
+                <div class="mb-4">
+                    <h3 class="font-bold text-lg mb-2">Descrição do App</h3>
+                    <p>Este aplicativo permite a apresentação de hinos com funcionalidades avançadas, incluindo controle de slides, ajuste de fonte e altura da linha, alternância de fundo e muito mais. Ideal para uso em reuniões e apresentações.</p>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg mb-2">Atalhos e Funcionalidades</h3>
+                    <div><span class="font-bold">Deslize/Seta direita:</span> Avançar slide</div>
+                    <div><span class="font-bold">Deslize/Seta esquerda:</span> Voltar slide</div>
+                    <div><span class="font-bold">PageUp/PageDown:</span> Avança/Retrocede Hino</div>
+                    <div><span class="font-bold">F:</span> Alternar fundo</div>
+                    <div><span class="font-bold">+/-:</span> Aumentar/diminuir fonte</div>
+                    <div><span class="font-bold">Seta cima/baixo:</span> Alterar altura da linha</div>
+                    <div><span class="font-bold">Alt+R:</span> Resetar configurações</div>
+                    <div><span class="font-bold">Escape:</span> Fechar overlay</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const version = document.getElementById('version').textContent;
+        const script = document.createElement('script');
+        script.src = `script.js?v=${version}`;
+        script.onload = () => {
+            // Ensure other scripts run after this script is loaded
+            init();
+            if ('serviceWorker' in navigator) {
+                navigator.serviceWorker.register('service-worker.js')
+                    .then(() => console.log('Service Worker Registered'))
+                    .catch(err => console.error('Service Worker Registration Failed:', err));
+            }
+        };
+        document.body.appendChild(script);
+    </script>
+</body>
+
+</html>
