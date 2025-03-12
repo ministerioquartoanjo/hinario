@@ -1,45 +1,15 @@
-// JavaScript for Hymn Presentation Application
-// This script handles the functionality for the hymn selection, audio playback, and user settings.
-// It includes features like:
-// - Autocomplete for hymn titles
-// - Audio player controls
-// - Dynamic updates for font size, line height, background color, font color, and font family
-// - Persistent settings storage using localStorage
-// - Versioning system for tracking changes
-// - Responsive design adjustments
-// - Event listeners for user interactions
-
-// Check for dark mode preference
-if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-    document.documentElement.classList.add('dark');
-}
-
-window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
-    if (event.matches) {
-        document.documentElement.classList.add('dark');
-    } else {
-        document.documentElement.classList.remove('dark');
-    }
-});
-
-// Main state
-let currentHymnIndex = 0; // Index of the currently selected hymn
-let currentSlideIndex = 0; // Index of the currently displayed slide
-let slides = []; // Array of slide content for the current hymn
-let fontSize = 5; // Default font size multiplier
-let lineHeight = 1.0; // Default line height
-let bgImageIndex = 0; // Index of the current background image
-
-// Background images
+// Constants and Variables
+const SETTINGS_KEY = 'hymnSettings';
+const TWO_YEARS = 1000 * 60 * 60 * 24 * 365 * 2;
 const bgImages = [
     "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=1920&q=80",
     "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1920&q=80",
-    "https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?auto=format&fit=crop&w=1920&q=80",
+    "https://images.unsplash.com/photo-1518173946687-7b093b07772d?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "https://images.unsplash.com/photo-1475924156734-496f6cac6ec1?auto=format&fit=crop&w=1920&q=80",
     "https://images.unsplash.com/photo-1738760479351-b25b4e35106a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "https://images.unsplash.com/photo-1739361133037-77be66a4ea6a?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "https://images.unsplash.com/photo-1739054239615-02944e9c338b?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=1920&q=80",
+    "https://images.unsplash.com/photo-1476610182048-b716b8518aae?q=80&w=1918&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "https://images.unsplash.com/photo-1506260408121-e353d10b87c7?auto=format&fit=crop&w=1920&q=80",
     "https://images.unsplash.com/photo-1479030160180-b1860951d696?auto=format&fit=crop&w=1920&q=80",
     "https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=1920&q=80",
@@ -49,8 +19,16 @@ const bgImages = [
     "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=2073&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "https://images.unsplash.com/photo-1476610182048-b716b8518aae?q=80&w=1918&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-
 ];
+
+const SWIPE_THRESHOLD = 50; // Minimum swipe distance in pixels
+
+let currentHymnIndex = 0; // Index of the currently selected hymn
+let currentSlideIndex = 0; // Index of the currently displayed slide
+let slides = []; // Array of slide content for the current hymn
+let fontSize = 5; // Default font size multiplier
+let lineHeight = 1.0; // Default line height
+let bgImageIndex = 0; // Index of the current background image
 
 // DOM Elements
 const hymnSelect = document.getElementById("hymn-select"); // Input for selecting a hymn
@@ -77,8 +55,83 @@ const audioPlayer = document.getElementById("hymn-audio"); // Audio player eleme
 const lineHeightDecreaseButton = document.getElementById("line-height-decrease");
 const lineHeightIncreaseButton = document.getElementById("line-height-increase");
 
-// Initialize app
-async function init() {
+// Utility Functions
+function rgbToHex(rgb) {
+    if (!rgb) return '#FFFFFF';
+    if (rgb.startsWith('#')) return rgb;
+
+    // Extract RGB values from rgb(r,g,b) string
+    const [r, g, b] = rgb.match(/\d+/g).map(Number);
+    return '#' + ((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1);
+}
+
+function adjustLineHeight(increment) {
+    const selectedLineHeight = parseFloat(lineHeightInput.value);
+    let newLineHeight = selectedLineHeight + increment;
+    newLineHeight = Math.min(Math.max(newLineHeight, 0.8), 2);
+    lineHeightInput.value = newLineHeight.toFixed(1);
+    updateLineHeight();
+    saveSettings();
+}
+
+// Event Handlers
+function handleKeyPress(e) {
+    switch (e.key) {
+        case "ArrowRight":
+        case " ":
+            nextSlide();
+            break;
+        case "ArrowLeft":
+            previousSlide();
+            break;
+        case "Escape":
+            exitPresentation();
+            break;
+        case "+":
+            increaseFontSize();
+            break;
+        case "-":
+            decreaseFontSize();
+            break;
+        case "ArrowUp":
+            adjustLineHeight(0.1);
+            break;
+        case "ArrowDown":
+            adjustLineHeight(-0.1);
+            break;
+        case "r":
+            if (e.altKey) {
+                resetSettings();
+            }
+            break;
+        case "f":
+            updateBackground();
+            break;
+        case "Home":
+            goToFirstSlide();
+            break;
+    }
+}
+
+function handleTouchStart(e) {
+    touchStartX = e.touches[0].clientX;
+}
+
+function handleTouchEnd(e) {
+    touchEndX = e.changedTouches[0].clientX;
+    const swipeDistance = touchEndX - touchStartX;
+
+    if (Math.abs(swipeDistance) > SWIPE_THRESHOLD) {
+        if (swipeDistance > 0) {
+            previousSlide();
+        } else {
+            nextSlide();
+        }
+    }
+}
+
+// Main Functions
+function init() {
     const hymnTitles = hymns.map(hymn => hymn.title);
     $("#hymn-select").autocomplete(hymnTitles, {
         width: 360,
@@ -94,6 +147,9 @@ async function init() {
         if (selectedHymn) {
             currentHymnIndex = hymns.indexOf(selectedHymn);
             slides = createSlides(selectedHymn);
+
+            // TODO: rolagem do texto nao funciona dentro do elemento preview e full
+            // slides = createSlidesComplete(selectedHymn);
             currentSlideIndex = 0;
             updatePreview();
             loadHymnAudio(currentHymnIndex);
@@ -156,10 +212,11 @@ async function init() {
         fontColorInput.value = initialColor;
     }
 
-    // Initialize with the first hymn
-    currentHymnIndex = 0;
+    // Initialize with a random hymn de 0 ate hymns.length - 1
+    currentHymnIndex = Math.floor(Math.random() * hymns.length);
     updateSlides();
     updatePreview();
+    loadHymnAudio(currentHymnIndex);
     previewContainer.classList.remove("hidden");
 }
 
@@ -219,58 +276,6 @@ function startPresentation() {
 
 function exitPresentation() {
     presentationContainer.classList.add("hidden");
-}
-
-function handleKeyPress(e) {
-
-    switch (e.key) {
-        case "ArrowRight":
-        case " ":
-            nextSlide();
-            break;
-        case "ArrowLeft":
-            previousSlide();
-            break;
-        case "Escape":
-            exitPresentation();
-            break;
-        case "+":
-            increaseFontSize();
-            break;
-        case "-":
-            decreaseFontSize();
-            break;
-        case "ArrowUp":
-            adjustLineHeight(0.1);
-            break;
-        case "ArrowDown":
-            adjustLineHeight(-0.1);
-            break;
-        case "r":
-            if (e.altKey) {
-                resetSettings();
-            }
-            break;
-        case "f":
-            updateBackground();
-            break;
-    }
-}
-
-function increaseFontSize() {
-    if (fontSize < 8) {
-        fontSize++;
-        updateFontSize();
-        saveSettings(); // Save settings after changing font size
-    }
-}
-
-function decreaseFontSize() {
-    if (fontSize > 3) {
-        fontSize--;
-        updateFontSize();
-        saveSettings(); // Save settings after changing font size
-    }
 }
 
 function updateFontSize() {
@@ -368,42 +373,99 @@ async function loadHymnAudio(hymnNumber) {
     audioElement.load();
 }
 
-// Função para salvar configurações em cookies
-function setCookie(name, value, days) {
-    const expires = new Date(Date.now() + days * 864e5).toUTCString();
-    document.cookie = name + '=' + encodeURIComponent(value) + '; expires=' + expires + '; path=/';
-}
+/**
+ * Cria um array de slides para o hino informado.
+ * @param {object} hymn - Hino a ser processado.
+ * @returns {array} Array de slides com conteúdo do hino.
+ */
+function createSlides(hymn) {
+    console.log('## Creating slides for hymn:', hymn);
+    const slides = [];
+    const verses = hymn.verses;
+    const chorus = hymn.coro;
 
-function getCookie(name) {
-    return document.cookie.split('; ').reduce((r, c) => {
-        const [key, val] = c.split('=');
-        return key === name ? decodeURIComponent(val) : r;
-    }, '');
-}
+    // First slide is the title (in white) and author
+    slides.push(`<span class="title-slide">${hymn.title}</span><br><span class="author-slide text-yellow-400">${hymn.author}</span>`);
 
-// Atualiza a cor da fonte com base nas seleções
-document.addEventListener('DOMContentLoaded', () => {
-    clearHymn();
-    document.getElementById('font-color').addEventListener('input', updateFontColor);
-    //document.getElementById('line-height').addEventListener('input', updateLineHeight);
-    document.getElementById('font-selector').addEventListener('change', updateFontFamily);
-    loadSettings();
-});
-
-function clearHymn() {
-    const clearButton = document.getElementById('clear-hymn');
-    if (!clearButton) {
-        console.error('Botão clear-hymn não encontrado!');
-        return;
+    // Process verses and add corresponding chorus after each
+    if (Array.isArray(verses[0])) {
+        verses.forEach((verse) => {
+            // Add 2 lines per slide
+            for (let i = 0; i < verse.length; i += 2) {
+                const lines = verse.slice(i, i + 2);
+                slides.push(`<span class="verse-slide">${lines.join('<br>')}</span>`);
+            }
+            // Add chorus after the verse
+            if (chorus) {
+                for (let i = 0; i < chorus.length; i += 2) {
+                    const lines = chorus.slice(i, i + 2);
+                    slides.push(`<span class="chorus-slide text-yellow-400">${lines.join('<br>')}</span>`);
+                }
+            }
+        });
+    } else {
+        // Handle single verse scenario
+        const lines = verses;
+        slides.push(`<span class="verse-slide">${lines.join('<br>')}</span>`);
+        // Add chorus if available
+        if (chorus) {
+            for (let i = 0; i < chorus.length; i += 2) {
+                const lines = chorus.slice(i, i + 2);
+                slides.push(`<span class="chorus-slide">${lines.join('<br>')}</span>`);
+            }
+        }
     }
-    clearButton.addEventListener('click', () => {
-        document.getElementById('hymn-select').value = '';
-    });
-}
-// Settings storage with debug
-const SETTINGS_KEY = 'hymnSettings';
-const TWO_YEARS = 1000 * 60 * 60 * 24 * 365 * 2;
 
+    // Limit to 2 lines per slide
+    const finalSlides = [];
+    for (let i = 0; i < slides.length; i += 2) {
+        finalSlides.push(slides[i]);
+        if (i + 1 < slides.length) {
+            finalSlides.push(slides[i + 1]);
+        }
+    }
+
+    console.log('Final slides:', finalSlides);
+
+    return finalSlides;
+}
+
+const COMPLETE_HYMN_FONT_FACTOR = 0.8;
+
+function createSlidesComplete(hymn) {
+    // First slide uses existing logic
+    const firstSlide = createSlides(hymn)[0];
+
+    // Second slide shows complete hymn with scroll
+    let completeHymnContent = `<div style='font-size: ${COMPLETE_HYMN_FONT_FACTOR * 100}%; overflow-y: auto; height: 100%;'>`;
+
+    // Process verses and chorus in correct order
+    if (Array.isArray(hymn.verses[0])) {
+        hymn.verses.forEach((verse) => {
+            completeHymnContent += `<div class='complete-verse'>${verse.join('<br>')}</div>`;
+            if (hymn.coro) {
+                completeHymnContent += `<div class='complete-chorus'>${hymn.coro.join('<br>')}</div>`;
+            }
+        });
+    } else {
+        completeHymnContent += `<div class='complete-verse'>${hymn.verses.join('<br>')}</div>`;
+        if (hymn.coro) {
+            completeHymnContent += `<div class='complete-chorus'>${hymn.coro.join('<br>')}</div>`;
+        }
+    }
+
+    completeHymnContent += '</div>';
+
+    return [firstSlide, completeHymnContent];
+}
+
+function goToFirstSlide() {
+    currentSlideIndex = 0;
+    updateSlideContent();
+    updateCounter();
+}
+
+// Settings storage with debug
 function saveSettings() {
     const bgImage = document.getElementById('bg-image');
     const currentBgImage = bgImage.src;
@@ -522,7 +584,7 @@ function updateVersion() {
     versionElement.innerText = newVersion.join('.');
 }
 
-// Start the app
+// Initialization
 document.addEventListener("DOMContentLoaded", init);
 // Initialize immediately in case DOM is already loaded
 if (document.readyState === "interactive" || document.readyState === "complete") {
@@ -542,28 +604,6 @@ document.getElementById('info-overlay').addEventListener('click', (event) => {
 });
 
 // Add swipe functionality
-const SWIPE_THRESHOLD = 50; // Minimum swipe distance in pixels
-let touchStartX = 0;
-let touchEndX = 0;
-
-function handleTouchStart(e) {
-    touchStartX = e.touches[0].clientX;
-}
-
-function handleTouchEnd(e) {
-    touchEndX = e.changedTouches[0].clientX;
-    const swipeDistance = touchEndX - touchStartX;
-
-    if (Math.abs(swipeDistance) > SWIPE_THRESHOLD) {
-        if (swipeDistance > 0) {
-            previousSlide();
-        } else {
-            nextSlide();
-        }
-    }
-}
-
-// Add event listeners to specific containers
 const containers = document.querySelectorAll('#preview-container, #presentation-container');
 containers.forEach(container => {
     container.addEventListener('touchstart', handleTouchStart, { passive: true });
@@ -580,73 +620,6 @@ async function checkIfAllMP3sAreCached() {
         console.error('Cache check failed:', error);
         return false;
     }
-}
-
-function createSlides(hymn) {
-    const slides = [];
-    const verses = hymn.verses;
-    const chorus = hymn.coro;
-
-    // First slide is the title (in white) and author
-    slides.push(`<span class="title-slide">${hymn.title}</span><br><span class="author-slide">${hymn.author}</span>`);
-
-    // Process verses and add corresponding chorus after each
-    if (Array.isArray(verses[0])) {
-        verses.forEach((verse) => {
-            // Add 2 lines per slide
-            for (let i = 0; i < verse.length; i += 2) {
-                const lines = verse.slice(i, i + 2);
-                slides.push(`<span class="verse-slide">${lines.join('<br>')}</span>`);
-            }
-            // Add chorus after the verse
-            if (chorus) {
-                for (let i = 0; i < chorus.length; i += 2) {
-                    const lines = chorus.slice(i, i + 2);
-                    slides.push(`<span class="chorus-slide">${lines.join('<br>')}</span>`);
-                }
-            }
-        });
-    } else {
-        // Handle single verse scenario
-        const lines = verses;
-        slides.push(`<span class="verse-slide">${lines.join('<br>')}</span>`);
-        // Add chorus if available
-        if (chorus) {
-            for (let i = 0; i < chorus.length; i += 2) {
-                const lines = chorus.slice(i, i + 2);
-                slides.push(`<span class="chorus-slide">${lines.join('<br>')}</span>`);
-            }
-        }
-    }
-
-    // Limit to 2 lines per slide
-    const finalSlides = [];
-    for (let i = 0; i < slides.length; i += 2) {
-        finalSlides.push(slides[i]);
-        if (i + 1 < slides.length) {
-            finalSlides.push(slides[i + 1]);
-        }
-    }
-
-    return finalSlides;
-}
-
-function rgbToHex(rgb) {
-    if (!rgb) return '#FFFFFF';
-    if (rgb.startsWith('#')) return rgb;
-
-    // Extract RGB values from rgb(r,g,b) string
-    const [r, g, b] = rgb.match(/\d+/g).map(Number);
-    return '#' + ((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1);
-}
-
-function adjustLineHeight(increment) {
-    const selectedLineHeight = parseFloat(lineHeightInput.value);
-    let newLineHeight = selectedLineHeight + increment;
-    newLineHeight = Math.min(Math.max(newLineHeight, 0.8), 2);
-    lineHeightInput.value = newLineHeight.toFixed(1);
-    updateLineHeight();
-    saveSettings();
 }
 
 // Info overlay handling
@@ -712,11 +685,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Mobile menu buttons
-    document.getElementById('mobile-font-decrease').addEventListener('click', decreaseFontSize);
-    document.getElementById('mobile-font-increase').addEventListener('click', increaseFontSize);
-    document.getElementById('mobile-settings').addEventListener('click', () => {
-        // Open settings modal
-    });
     document.getElementById('mobile-presentation').addEventListener('click', startPresentation);
 });
 
@@ -728,3 +696,19 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
+function increaseFontSize() {
+    if (fontSize < 8) {
+        fontSize++;
+        updateFontSize();
+        saveSettings(); // Save settings after changing font size
+    }
+}
+
+function decreaseFontSize() {
+    if (fontSize > 3) {
+        fontSize--;
+        updateFontSize();
+        saveSettings(); // Save settings after changing font size
+    }
+}

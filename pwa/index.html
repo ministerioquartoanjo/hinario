@@ -8,14 +8,14 @@
     <meta name="mobile-web-app-capable" content="yes">
     <title>Apresentação de Hinos</title>
     <link rel="manifest" crossorigin="use-credentials" href="manifest.json">
-    <link href="./dist/output.css" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Open+Sans&family=Lato&family=Montserrat&family=Poppins&family=Lora&family=Merriweather&family=Raleway&family=Oswald&family=Ubuntu&family=Dancing+Script&family=Playfair+Display&family=Source+Sans+Pro&family=Noto+Sans&display=swap" rel="stylesheet">
     <link href="js/jquery.autocomplete.css" rel="stylesheet" type="text/css" />
     <script src="js/jquery.js"></script>
     <script src="js/jquery.autocomplete.js"></script>
     <script src="hinos.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />    
+    <link href="./dist/output.css" rel="stylesheet">
 </head>
 
 <body class="min-h-screen bg-gray-100 dark:bg-gray-900 flex flex-col items-center p-4">
@@ -40,7 +40,7 @@
 
         <!-- Controls and Hymn Selection -->
         <div class="bg-white dark:bg-gray-800 p-4 rounded-lg shadow-lg w-full">
-            <h1 class="text-2xl text-orange-dark font-bold mb-4 text-center">Apresentação de Hinos <sup class="version" id="version">1.0.30</sup><i class="fas fa-info-circle ml-2 cursor-pointer" id="info-icon"></i></h1>
+            <h1 class="text-2xl text-orange-dark font-bold mb-4 text-center">Apresentação de Hinos <sup class="version" id="version">1.0.50</sup><i class="fas fa-info-circle ml-2 cursor-pointer" id="info-icon"></i></h1>
 
             <div class="flex flex-col md:flex-row gap-4 mb-4">
                 <div class="flex-1">
@@ -49,9 +49,6 @@
                         <input id="hymn-select" class="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-md dark:bg-gray-700 dark:text-white" />
                         <button id="clear-hymn" class="absolute right-2 top-1/2 transform -translate-y-1/2">
                             <i class="fas fa-times text-gray-500"></i>
-                        </button>
-                        <button id="clear-hymn" class="text-gray-400 hover:text-gray-600 ml-2">
-                            <i class="fas fa-times"></i>
                         </button>
                     </div>
                 </div>
