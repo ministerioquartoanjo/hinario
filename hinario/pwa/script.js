@@ -28,6 +28,7 @@ let slides = []; // Array of slide content for the current hymn
 let fontSize = 5; // Default font size multiplier
 let lineHeight = 1.0; // Default line height
 let bgImageIndex = 0; // Index of the current background image
+let savedSlidePosition = 0; // Variável para armazenar a posição do slide
 
 // DOM Elements
 const hymnSelect = document.getElementById("hymn-select"); // Input for selecting a hymn
@@ -54,6 +55,7 @@ const audioPlayer = document.getElementById("hymn-audio"); // Audio player eleme
 const lineHeightDecreaseButton = document.getElementById("line-height-decrease");
 const lineHeightIncreaseButton = document.getElementById("line-height-increase");
 const completeCheckbox = document.getElementById('complete-checkbox');
+const slideshowIcon = document.getElementById("slideshow-icon");
 
 // Utility Functions
 function rgbToHex(rgb) {
@@ -116,6 +118,9 @@ function handleKeyPress(e) {
             break;
         case "f":
             updateBackground();
+            break;
+        case "c":
+            toggleCheckboxCompleto();
             break;
         case "Home":
             goToFirstSlide();
@@ -239,13 +244,27 @@ function init() {
     previewContainer.classList.remove("hidden");
 
     completeCheckbox.addEventListener('change', changeCheckboxStateCompleto);
+
+    slideshowIcon.addEventListener('click', startBackgroundSlideshow);
+
+    // Set random background image on startup
+    bgImageIndex = Math.floor(Math.random() * bgImages.length);
+    updateBackground();
+}
+
+// Fire event to change checkbox state
+function toggleCheckboxCompleto() {
+    completeCheckbox.checked = !completeCheckbox.checked;
+    changeCheckboxStateCompleto();
 }
 
 function changeCheckboxStateCompleto() {
     if(completeCheckbox.checked) {
+        savedSlidePosition = currentSlideIndex;
         currentSlideIndex=0;
-        console.log(currentSlideIndex);
-    } 
+    } else {
+        currentSlideIndex = savedSlidePosition;
+    }
     updateSlides();
     updatePreview();
 }
@@ -344,24 +363,20 @@ function updateBackground() {
 }
 
 function updateFontColor() {
-    console.log('updateFontColor called');
     const fontColorInput = document.getElementById('font-color');
     if (!fontColorInput) {
         console.error('Font color input not found');
         return;
     }
     const selectedColor = fontColorInput.value;
-    console.log('Current selected color:', selectedColor);
     document.querySelectorAll('.slide-content').forEach(el => {
         el.style.color = selectedColor;
     });
     saveSettings();
-    console.log('Font color updated to:', selectedColor);
 }
 
 function updateLineHeight() {
     const selectedLineHeight = lineHeight;
-    console.log('Updating line height to:', selectedLineHeight);
     document.querySelectorAll('.slide-content').forEach(el => {
         if (el) {
             el.style.lineHeight = selectedLineHeight;
@@ -373,7 +388,6 @@ function updateLineHeight() {
 
 function updateFontFamily() {
     const selectedFont = fontSelector.value;
-    console.log('Updating font family to:', selectedFont);
     document.querySelectorAll('.slide-content').forEach(el => {
         if (el) {
             el.style.fontFamily = selectedFont;
@@ -540,22 +554,18 @@ function saveSettings() {
     };
 
     localStorage.setItem(SETTINGS_KEY, JSON.stringify(settings));
-    console.log('Saving settings:', settings);
 }
 
 function loadSettings() {
     try {
         const saved = localStorage.getItem(SETTINGS_KEY);
         if (!saved) {
-            console.log('No saved settings found');
             return;
         }
 
         const settings = JSON.parse(saved);
-        console.log('Loaded settings:', settings);
 
         if (settings.expires < Date.now()) {
-            console.log('Settings expired');
             localStorage.removeItem(SETTINGS_KEY);
             return;
         }
@@ -608,15 +618,12 @@ function loadSettings() {
             bgImage.style.display = 'block';
             fullscreenBgImage.style.display = 'block';
         }
-
-        console.log('Applied settings:', settings);
     } catch (error) {
         console.error('Error loading settings:', error);
     }
 }
 
 function resetSettings() {
-    console.log('Configurações resetadas com sucesso!');
     localStorage.removeItem(SETTINGS_KEY);
 
     // Aplicar valores padrão
@@ -632,14 +639,6 @@ function resetSettings() {
     document.getElementById('font-selector').value = 'serif';
     document.getElementById('font-size-display').textContent = '1rem';
     document.getElementById('line-height-display').textContent = '1.0';
-}
-
-function updateVersion() {
-    const versionElement = document.getElementById('version');
-    const currentVersion = versionElement.innerText;
-    const newVersion = currentVersion.split('.');
-    newVersion[2] = parseInt(newVersion[2]) + 1; // Increment patch version
-    versionElement.innerText = newVersion.join('.');
 }
 
 // Initialization
@@ -792,4 +791,59 @@ function setupSwipe(element) {
             startX2 = 0;
         }
     }, { passive: true });
+}
+
+let slideshowInterval;
+
+function startBackgroundSlideshow() {
+    // Create fullscreen slideshow container
+    const slideshowContainer = document.createElement('div');
+    slideshowContainer.id = 'slideshow-container';
+    slideshowContainer.className = 'fixed inset-0 z-50 bg-black flex items-center justify-center';
+    
+    // Create close button
+    const closeButton = document.createElement('button');
+    closeButton.className = 'absolute top-4 right-4 text-white text-2xl z-50';
+    closeButton.innerHTML = '<i class="fas fa-times"></i>';
+    closeButton.addEventListener('click', stopBackgroundSlideshow);
+    
+    // Create image element
+    const slideshowImage = document.createElement('img');
+    slideshowImage.id = 'slideshow-image';
+    slideshowImage.className = 'max-w-full max-h-full object-contain';
+    
+    // Append elements
+    slideshowContainer.appendChild(closeButton);
+    slideshowContainer.appendChild(slideshowImage);
+    document.body.appendChild(slideshowContainer);
+    
+    // Start slideshow
+    changeSlideshowImage();
+    slideshowInterval = setInterval(changeSlideshowImage, 30000);
+    
+    // Keyboard controls
+    document.addEventListener('keydown', handleSlideshowKeyPress);
+}
+
+function changeSlideshowImage() {
+    const slideshowImage = document.getElementById('slideshow-image');
+    const randomIndex = Math.floor(Math.random() * bgImages.length);
+    slideshowImage.src = bgImages[randomIndex];
+}
+
+function stopBackgroundSlideshow() {
+    clearInterval(slideshowInterval);
+    const slideshowContainer = document.getElementById('slideshow-container');
+    if (slideshowContainer) {
+        document.removeEventListener('keydown', handleSlideshowKeyPress);
+        slideshowContainer.remove();
+    }
+}
+
+function handleSlideshowKeyPress(e) {
+    if (e.key === 'Escape') {
+        stopBackgroundSlideshow();
+    } else if (e.key === 'ArrowRight' || e.key === ' ') {
+        changeSlideshowImage();
+    }
 }

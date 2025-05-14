@@ -40,7 +40,7 @@
 
         <!-- Controls and Hymn Selection -->
         <div class="bg-white dark:bg-gray-800 p-4 rounded-lg shadow-lg w-full">
-            <h1 class="text-2xl text-orange-dark font-bold mb-4 text-center">Apresentação de Hinos <sup class="version" id="version">1.15.2</sup><i class="fas fa-info-circle ml-2 cursor-pointer" id="info-icon"></i></h1>
+            <h1 class="text-2xl text-orange-dark font-bold mb-4 text-center">Apresentação de Hinos <sup class="version" id="version">1.70.1</sup><i class="fas fa-info-circle ml-2 cursor-pointer" id="info-icon"></i><i class="fas fa-images ml-2 cursor-pointer" id="slideshow-icon" title="Mostrar slides de fundo"></i></h1>
 
             <div class="flex flex-col md:flex-row gap-4 mb-4">
                 <div class="flex-1">
@@ -175,8 +175,8 @@
                  class="absolute w-full h-full object-cover"
                  id="fullscreen-bg-image">
 
-            <div class="relative z-10 w-full h-full flex flex-col justify-center items-center p-8 bg-black bg-opacity-50">
-                <div id="fullscreen-content" class="slide-content text-4xl md:text-6xl font-bold text-center">
+            <div class="relative z-10 w-full h-full flex flex-col justify-center items-center p-2 md:p-3 bg-black bg-opacity-50">
+                <div id="fullscreen-content" class="slide-content text-4xl md:text-6xl font-bold text-center pb-1">
                     <!-- Fullscreen content will be populated here -->
                 </div>
             </div>
@@ -186,9 +186,9 @@
             </div>
 
             <div class="absolute top-4 right-4 z-20">
-                <button id="close-fullscreen" class="bg-red-600 hover:bg-red-700 text-white font-bold p-2 rounded-full">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                <button id="close-fullscreen" class="bg-red-600 hover:bg-red-700 text-white font-bold rounded-full absolute top-0 right-0 m-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-2 h-2 md:w-3 md:h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
                     </svg>
                 </button>
             </div>
@@ -202,7 +202,7 @@
                 <h2 class="font-bold">Atalhos e Funcionalidades</h2>
                 <button id="close-overlay" class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
                     </svg>
                 </button>
             </div>
@@ -216,7 +216,8 @@
                     <div><span class="font-bold">Deslize/Seta direita:</span> Avançar slide</div>
                     <div><span class="font-bold">Deslize/Seta esquerda:</span> Voltar slide</div>
                     <div><span class="font-bold">PageUp/PageDown:</span> Avança/Retrocede Hino</div>
-                    <div><span class="font-bold">F:</span> Alternar fundo</div>
+                    <div><span class="font-bold">f:</span> Alternar fundo</div>
+                    <div><span class="font-bold">c:</span> Intercala modo completo/normal</div>
                     <div><span class="font-bold">+/-:</span> Aumentar/diminuir fonte</div>
                     <div><span class="font-bold">Seta cima/baixo:</span> Alterar altura da linha</div>
                     <div><span class="font-bold">Alt+R:</span> Resetar configurações</div>
@@ -225,6 +226,15 @@
             </div>
         </div>
     </div>
+
+    <style>
+        .complete-verse, .complete-chorus {
+            margin-bottom: 0.125rem;
+        }
+        #bg-image, #fullscreen-bg-image {
+            opacity: 0.85;
+        }
+    </style>
 
     <script>
         const version = document.getElementById('version').textContent;
