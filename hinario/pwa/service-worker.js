@@ -6,42 +6,60 @@ const urlsToCache = [
     '/hinario/pwa/script.js',
     '/hinario/pwa/hinos.js',
     '/hinario/pwa/service-worker.js',
-
 ];
 
-self.addEventListener('install', function(event) {
+const EXPIRACAO_MS = 24 * 60 * 60 * 1000; // 1 dia
+
+self.addEventListener('install', (event) => {
     event.waitUntil(
-      caches.open(CACHE_NAME)
-        .then(function(cache) {
-          console.log('Opened cache');
-          return cache.addAll(urlsToCache)
-          .catch(function(error){ // Add catch clause to handle errors.
-            console.error("Error during caching", error); // Log detailed error information.
-            // Consider more complex logic like selectively caching only valid URLs.
-          });
-        })
+        caches.open(CACHE_NAME)
+            .then(async (cache) => {
+                console.log('Abrindo cache e salvando arquivos...');
+                await cache.addAll(urlsToCache);
+                await cache.put('timestamp', new Response(Date.now().toString()));
+            })
+            .catch(error => {
+                console.error("Erro durante o cache:", error);
+            })
     );
-  });
+});
 
 self.addEventListener('activate', (event) => {
     event.waitUntil(
-        caches.keys().then((cacheNames) => {
-            return Promise.all(
-                cacheNames.map((cacheName) => {
-                    if (cacheName !== CACHE_NAME) {
-                        return caches.delete(cacheName);
+        (async () => {
+            const keys = await caches.keys();
+            await Promise.all(
+                keys.map((key) => {
+                    if (key !== CACHE_NAME) {
+                        return caches.delete(key);
                     }
                 })
             );
-        })
+        })()
     );
 });
 
 self.addEventListener('fetch', (event) => {
     event.respondWith(
-        caches.match(event.request)
-            .then((response) => {
-                return response || fetch(event.request);
-            })
+        (async () => {
+            const cache = await caches.open(CACHE_NAME);
+            const timestampResponse = await cache.match('timestamp');
+
+            if (timestampResponse) {
+                const timestamp = Number(await timestampResponse.text());
+                const agora = Date.now();
+
+                if ((agora - timestamp) > EXPIRACAO_MS) {
+                    console.log('[SW] Cache expirado. Limpando...');
+                    await caches.delete(CACHE_NAME);
+                    const newCache = await caches.open(CACHE_NAME);
+                    await newCache.addAll(urlsToCache);
+                    await newCache.put('timestamp', new Response(Date.now().toString()));
+                }
+            }
+
+            const respostaCache = await cache.match(event.request);
+            return respostaCache || fetch(event.request);
+        })()
     );
 });
