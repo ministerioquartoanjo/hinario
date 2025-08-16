@@ -250,6 +250,9 @@ function init() {
     // Set random background image on startup
     bgImageIndex = Math.floor(Math.random() * bgImages.length);
     updateBackground();
+
+    // Initialize top drawer for settings
+    setupTopDrawer();
 }
 
 // Fire event to change checkbox state
@@ -750,6 +753,91 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
+// Top drawer toggle for Settings panel
+function setupTopDrawer() {
+    const drawer = document.getElementById('top-drawer');
+    const drawerContent = document.getElementById('top-drawer-content');
+    const handle = document.getElementById('drawer-handle');
+    const closeBtn = document.getElementById('drawer-close');
+    const settings = document.querySelector('.settings');
+    const settingsAnchor = document.getElementById('settings-anchor');
+
+    if (!drawer || !drawerContent || !handle || !settings || !settingsAnchor) return;
+
+    let isOpen = false;
+
+    // Start with settings inside the drawer (hidden)
+    if (settings.parentElement !== drawerContent) {
+        drawerContent.appendChild(settings);
+    }
+
+    function positionHandleBelowDrawer() {
+        const rect = drawer.getBoundingClientRect();
+        handle.style.top = `${rect.height}px`;
+        handle.classList.add('opened');
+    }
+
+    function positionHandleAtTop() {
+        handle.style.top = '0px';
+        handle.classList.remove('opened');
+    }
+
+    function setHandleIcon(up) {
+        const icon = handle.querySelector('i');
+        if (!icon) return;
+        icon.classList.remove('fa-chevron-down', 'fa-chevron-up');
+        icon.classList.add(up ? 'fa-chevron-up' : 'fa-chevron-down');
+    }
+
+    function openDrawer() {
+        if (isOpen) return;
+        if (settings.parentElement !== drawerContent) {
+            drawerContent.appendChild(settings);
+        }
+        drawer.classList.add('open');
+        setHandleIcon(true);
+        positionHandleBelowDrawer();
+        isOpen = true;
+    }
+
+    function closeDrawer() {
+        if (!isOpen) return;
+        drawer.classList.remove('open');
+        setHandleIcon(false);
+        positionHandleAtTop();
+        isOpen = false;
+    }
+
+    function toggleDrawer() {
+        isOpen ? closeDrawer() : openDrawer();
+    }
+
+    handle.addEventListener('click', toggleDrawer);
+    if (closeBtn) closeBtn.addEventListener('click', () => isOpen ? closeDrawer() : null);
+
+    // Optional: swipe down/up near top to open/close on touch devices
+    let touchStartY = 0;
+    window.addEventListener('touchstart', (e) => {
+        if (e.touches && e.touches.length) {
+            touchStartY = e.touches[0].clientY;
+        }
+    }, { passive: true });
+    window.addEventListener('touchend', (e) => {
+        const endY = (e.changedTouches && e.changedTouches[0]) ? e.changedTouches[0].clientY : 0;
+        const diff = endY - touchStartY;
+        if (!isOpen && touchStartY < 60 && diff > 30) {
+            openDrawer();
+        } else if (isOpen && diff < -30) {
+            closeDrawer();
+        }
+    }, { passive: true });
+
+    // Keep handle positioned under drawer while open on resize/orientation change
+    window.addEventListener('resize', () => {
+        if (isOpen) positionHandleBelowDrawer();
+    });
+}
 
 function increaseFontSize() {
     if (fontSize < 8) {

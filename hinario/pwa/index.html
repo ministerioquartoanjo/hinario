@@ -19,6 +19,13 @@
 </head>
 
 <body class="min-h-screen bg-gray-100 dark:bg-gray-900 flex flex-col items-center p-4">
+    <!-- Top Sliding Drawer Handle and Container -->
+    <div id="drawer-handle" class="drawer-handle fixed top-0 left-1/2 -translate-x-1/2 z-[60] flex items-center justify-center cursor-pointer select-none">
+        <i class="fas fa-chevron-down text-gray-200"></i>
+    </div>
+    <div id="top-drawer" class="top-drawer fixed left-0 right-0 z-[55]">
+        <div id="top-drawer-content" class="mx-auto max-w-4xl w-full"></div>
+    </div>
     <div class="max-w-4xl w-full flex flex-col gap-4">
         <!-- Mobile Menu -->
         <div class="mobile-menu hidden">
@@ -120,6 +127,7 @@
                     </select>
                 </div>
             </div>
+            <div id="settings-anchor"></div>
             <br>
             <div class="flex items-center gap-4">
                 <button id="download-mp3s" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded flex items-center gap-2">
