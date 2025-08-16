@@ -726,7 +726,96 @@ async function downloadMP3s() {
     }
 }
 
-document.getElementById('download-mp3s').addEventListener('click', downloadMP3s);
+// Wire hamburger menu actions
+(function setupHamburgerMenu(){
+    const menuIcon = document.getElementById('menu-icon');
+    const dropdown = document.getElementById('main-menu');
+    const downloadItem = document.getElementById('menu-download-mp3s');
+    const menuInfoItem = document.getElementById('menu-info');
+
+    if (!menuIcon || !dropdown) return;
+
+    function hideMenu(){
+        dropdown.classList.add('hidden');
+    }
+
+    function positionDropdown() {
+        const iconRect = menuIcon.getBoundingClientRect();
+        // Temporarily show to measure width if hidden
+        const wasHidden = dropdown.classList.contains('hidden');
+        if (wasHidden) {
+            dropdown.classList.remove('hidden');
+            dropdown.style.visibility = 'hidden';
+        }
+        const menuWidth = dropdown.offsetWidth;
+        const top = iconRect.bottom + 8 + window.scrollY;
+        const left = Math.max(8, iconRect.right - menuWidth + window.scrollX);
+        dropdown.style.top = `${top}px`;
+        dropdown.style.left = `${left}px`;
+        if (wasHidden) {
+            dropdown.style.visibility = '';
+            dropdown.classList.add('hidden');
+        }
+    }
+
+    function toggleMenu(e){
+        e.stopPropagation();
+        const willShow = dropdown.classList.contains('hidden');
+        if (willShow) positionDropdown();
+        dropdown.classList.toggle('hidden');
+    }
+
+    menuIcon.addEventListener('click', toggleMenu);
+
+    // Download action from menu item
+    if (downloadItem) {
+        downloadItem.addEventListener('click', (e) => {
+            e.stopPropagation();
+            if (typeof downloadMP3s === 'function') {
+                hideMenu();
+                downloadMP3s();
+            }
+        });
+    }
+
+    // Info overlay from menu item
+    if (menuInfoItem) {
+        const infoOverlay = document.getElementById('info-overlay');
+        menuInfoItem.addEventListener('click', (e) => {
+            e.stopPropagation();
+            if (infoOverlay) {
+                infoOverlay.classList.remove('hidden');
+            } else if (typeof infoIcon !== 'undefined' && infoIcon) {
+                // Fallback: simulate click on existing info icon
+                infoIcon.click();
+            }
+            hideMenu();
+        });
+    }
+
+    // Close on outside click
+    document.addEventListener('click', (e) => {
+        if (!dropdown.classList.contains('hidden')) {
+            const path = e.composedPath ? e.composedPath() : [];
+            if (!path.includes(dropdown) && !path.includes(menuIcon)) {
+                hideMenu();
+            }
+        }
+    });
+
+    // Close on Escape
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') hideMenu();
+    });
+
+    // Keep aligned on scroll/resize when visible
+    window.addEventListener('resize', () => {
+        if (!dropdown.classList.contains('hidden')) positionDropdown();
+    });
+    window.addEventListener('scroll', () => {
+        if (!dropdown.classList.contains('hidden')) positionDropdown();
+    }, { passive: true });
+})();
 
 // Mobile-specific event listeners
 document.addEventListener('DOMContentLoaded', () => {
