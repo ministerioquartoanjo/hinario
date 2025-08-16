@@ -184,30 +184,33 @@ function init() {
     prevButton.addEventListener("click", previousSlide);
     nextButton.addEventListener("click", nextSlide);
     closeFullscreenButton.addEventListener("click", () => {
-        if (!audioPlayer.paused) {
-            audioPlayer.pause();
-        }
         exitPresentation();
     });
 
     document.addEventListener("keydown", handleKeyPress);
 
-    fontIncreaseButton.addEventListener("click", () => {
-        // Allow up to 5rem (units 20 at 0.25rem per unit)
-        if (fontSize < 20) {
-            fontSize++;
-            updateFontSize();
-            saveSettings(); // Save settings after changing font size
-        }
-    });
-    fontDecreaseButton.addEventListener("click", () => {
-        // Allow down to 2rem (units 8 at 0.25rem per unit)
-        if (fontSize > 8) {
-            fontSize--;
-            updateFontSize();
-            saveSettings(); // Save settings after changing line height
-        }
-    });
+    const incBtn = document.getElementById('font-increase');
+    const decBtn = document.getElementById('font-decrease');
+    if (incBtn) {
+        incBtn.addEventListener("click", () => {
+            // Allow up to 5rem (units 20 at 0.25rem per unit)
+            if (fontSize < 20) {
+                fontSize++;
+                updateFontSize();
+                saveSettings(); // Save settings after changing font size
+            }
+        });
+    }
+    if (decBtn) {
+        decBtn.addEventListener("click", () => {
+            // Allow down to 1rem (units 4 at 0.25rem per unit)
+            if (fontSize > 4) {
+                fontSize--;
+                updateFontSize();
+                saveSettings(); // Save settings after changing line height
+            }
+        });
+    }
     bgToggleButton.addEventListener("click", updateBackground);
     fontColorInput.addEventListener("input", updateFontColor);
     lineHeightDecreaseButton.addEventListener("click", () => {
@@ -226,13 +229,21 @@ function init() {
     });
     fontSelector.addEventListener("change", updateFontFamily);
 
-    // Set default initial font size to 2rem (units=8 at 0.25rem per unit)
-    fontSize = 8;
-    updateFontSize();
+    // Load saved settings first so UI reflects persisted state
+    loadSettings();
 
-    // Set initial font color from localStorage or color picker
+    // Initialize font size state from current inline style or default to 2rem (units=8)
     const slideContent = document.getElementById('slide-content');
     const fullscreenContent = document.getElementById('fullscreen-content');
+    const currentFontSizeRem = slideContent?.style?.fontSize?.endsWith('rem')
+        ? parseFloat(slideContent.style.fontSize)
+        : NaN;
+    if (!isNaN(currentFontSizeRem)) {
+        fontSize = Math.round(currentFontSizeRem / 0.25); // convert back to units
+    } else {
+        fontSize = 8;
+        updateFontSize();
+    }
 
     if (fontColorInput && slideContent && fullscreenContent) {
         const savedColor = localStorage.getItem('fontColor');
@@ -242,8 +253,7 @@ function init() {
         fontColorInput.value = initialColor;
     }
 
-    // Load saved settings (overrides defaults when present)
-    loadSettings();
+    // Saved settings already applied above
 
     // Initialize with a random hymn de 0 ate hymns.length - 1
     currentHymnIndex = Math.floor(Math.random() * hymns.length);
@@ -354,15 +364,27 @@ function startPresentation() {
 }
 
 function exitPresentation() {
+    try {
+        if (audioPlayer && !audioPlayer.paused) {
+            audioPlayer.pause();
+        }
+        if (audioPlayer) {
+            audioPlayer.currentTime = 0;
+        }
+    } catch (e) {
+        // noop: best-effort stop
+    }
     presentationContainer.classList.add("hidden");
 }
 
 function updateFontSize() {
-    // Use 0.25rem increments instead of 0.5rem
-    // Keep fullscreen ~40% larger than preview (0.25 * 1.4 = 0.35)
-    slideContent.style.fontSize = `${fontSize * 0.25}rem`;
-    fullscreenContent.style.fontSize = `${fontSize * 0.35}rem`;
-    document.getElementById('font-size-display').textContent = `${fontSize * 0.25}rem`;
+    // Re-query targets to avoid stale refs
+    const preview = document.getElementById('slide-content');
+    const fullscreen = document.getElementById('fullscreen-content');
+    const display = document.getElementById('font-size-display');
+    if (preview) preview.style.fontSize = `${fontSize * 0.25}rem`;
+    if (fullscreen) fullscreen.style.fontSize = `${fontSize * 0.35}rem`;
+    if (display) display.textContent = `${fontSize * 0.25}rem`;
 }
 
 function updateBackground() {
@@ -845,14 +867,33 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('mobile-presentation').addEventListener('click', startPresentation);
 });
 
-document.addEventListener('DOMContentLoaded', () => {
-    const clearButton = document.getElementById('clear-hymn');
-    if (clearButton) {
-        clearButton.addEventListener('click', function (event) {
-            document.getElementById('hymn-select').value = '';
-        });
+function clearHymnInput() {
+    const input = document.getElementById('hymn-select');
+    if (!input) return;
+    input.value = '';
+    // Fire native events so any listeners react
+    input.dispatchEvent(new Event('input', { bubbles: true }));
+    input.dispatchEvent(new Event('change', { bubbles: true }));
+    // Notify jQuery autocomplete if present
+    if (typeof $ !== 'undefined' && $("#hymn-select").length) {
+        $("#hymn-select").val('');
+        // Simulate keyup with empty value to refresh plugin state
+        const e = jQuery.Event('keyup');
+        e.which = 8; // backspace
+        $("#hymn-select").trigger(e);
     }
-});
+    input.focus();
+}
+
+document.addEventListener('click', (event) => {
+    const target = event.target;
+    const btn = target.closest && target.closest('#clear-hymn');
+    if (btn) {
+        event.preventDefault();
+        event.stopPropagation();
+        clearHymnInput();
+    }
+}, true);
 
 // Top drawer toggle for Settings panel
 function setupTopDrawer() {

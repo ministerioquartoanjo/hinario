@@ -3,11 +3,14 @@
   "version": "1.0.0",
   "scripts": {
     "build": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --minify",
-    "dev": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+    "dev": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+    "predeploy": "npm run build && rm -rf deploy && mkdir -p deploy && cp -r index.html app-slides1.html service-worker.js manifest.json styles.css hinos.js script.js .htaccess icons js dist deploy/ && cp icons/icon-192x192.png deploy/favicon.ico",
+    "deploy:surge": "npm run predeploy && npx surge ./deploy"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.16",
     "postcss": "^8.4.31",
-    "tailwindcss": "^3.3.3"
+    "tailwindcss": "^3.3.3",
+    "gh-pages": "^6.2.0"
   }
 }

@@ -218,10 +218,8 @@ body {
     scrollbar-width: none; /* Firefox */
 }
 
-/* Fullscreen presentation sizing */
+/* Fullscreen presentation sizing (font-size controlled by JS) */
 #presentation-container #fullscreen-content {
-    /* Scale text with viewport (use vmin for better fit on both axes) */
-    font-size: clamp(1.5rem, 7vmin, 7rem) !important; /* override Tailwind text-4xl etc */
     line-height: 1.15;
     width: 100%;
     max-width: 92vw;
@@ -286,12 +284,12 @@ body {
 }
 
 .drawer-handle {
-    width: 72px;
-    height: 28px;
+    width: 36px; /* 50% of previous 72px */
+    height: 14px; /* 50% of previous 28px */
     background: rgba(0, 0, 0, 0.65);
     border: 1px solid rgba(255,255,255,0.25);
-    border-bottom-left-radius: 12px;
-    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 8px; /* slightly reduced */
+    border-bottom-right-radius: 8px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.3);
     color: #fff;
 }
@@ -302,6 +300,7 @@ body {
 
 .drawer-handle i {
     transition: transform 0.2s ease;
+    font-size: 0.75rem; /* smaller chevron to fit smaller handle */
 }
 
 .drawer-handle.opened i {

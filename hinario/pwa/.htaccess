@@ -1,0 +1,22 @@
+<IfModule mod_expires.c>
+  ExpiresActive On
+  # HTML sempre verificado, não cacheado por muito tempo
+  ExpiresByType text/html "access plus 0 seconds"
+  # CSS e JS por 1 dia
+  ExpiresByType text/css "access plus 1 day"
+  ExpiresByType application/javascript "access plus 1 day"
+  # Imagens por 7 dias
+  ExpiresByType image/png "access plus 7 days"
+  ExpiresByType image/jpeg "access plus 7 days"
+</IfModule>
+
+<IfModule mod_headers.c>
+  # Define diretivas de cache de forma explícita
+  <FilesMatch "\.(js|css)$">
+    Header set Cache-Control "max-age=86400, public"
+  </FilesMatch>
+
+  <FilesMatch "\.(html)$">
+    Header set Cache-Control "no-cache, no-store, must-revalidate"
+  </FilesMatch>
+</IfModule>
