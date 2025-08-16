@@ -193,17 +193,19 @@ function init() {
     document.addEventListener("keydown", handleKeyPress);
 
     fontIncreaseButton.addEventListener("click", () => {
-        if (fontSize < 8) {
+        // Allow up to 5rem (units 20 at 0.25rem per unit)
+        if (fontSize < 20) {
             fontSize++;
             updateFontSize();
             saveSettings(); // Save settings after changing font size
         }
     });
     fontDecreaseButton.addEventListener("click", () => {
-        if (fontSize > 3) {
+        // Allow down to 2rem (units 8 at 0.25rem per unit)
+        if (fontSize > 8) {
             fontSize--;
             updateFontSize();
-            saveSettings(); // Save settings after changing font size
+            saveSettings(); // Save settings after changing line height
         }
     });
     bgToggleButton.addEventListener("click", updateBackground);
@@ -224,6 +226,10 @@ function init() {
     });
     fontSelector.addEventListener("change", updateFontFamily);
 
+    // Set default initial font size to 2rem (units=8 at 0.25rem per unit)
+    fontSize = 8;
+    updateFontSize();
+
     // Set initial font color from localStorage or color picker
     const slideContent = document.getElementById('slide-content');
     const fullscreenContent = document.getElementById('fullscreen-content');
@@ -235,6 +241,9 @@ function init() {
         fullscreenContent.style.color = initialColor;
         fontColorInput.value = initialColor;
     }
+
+    // Load saved settings (overrides defaults when present)
+    loadSettings();
 
     // Initialize with a random hymn de 0 ate hymns.length - 1
     currentHymnIndex = Math.floor(Math.random() * hymns.length);
@@ -349,9 +358,11 @@ function exitPresentation() {
 }
 
 function updateFontSize() {
-    slideContent.style.fontSize = `${fontSize * 0.5}rem`;
-    fullscreenContent.style.fontSize = `${fontSize * 0.7}rem`;
-    document.getElementById('font-size-display').textContent = `${fontSize * 0.5}rem`;
+    // Use 0.25rem increments instead of 0.5rem
+    // Keep fullscreen ~40% larger than preview (0.25 * 1.4 = 0.35)
+    slideContent.style.fontSize = `${fontSize * 0.25}rem`;
+    fullscreenContent.style.fontSize = `${fontSize * 0.35}rem`;
+    document.getElementById('font-size-display').textContent = `${fontSize * 0.25}rem`;
 }
 
 function updateBackground() {
