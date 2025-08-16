@@ -64,8 +64,7 @@ const hymns = [
                 "A Ceia vimos celebrar,",
                 "De Cristo a morte anunciar,",
                 "E com humilde devoção",
-                "Render a Deus adoração.",
-
+                "Render a Deus adoração."
             ],
             [
                 "2. Até que volte o Salvador,",
@@ -73,8 +72,7 @@ const hymns = [
                 "Com viva fé e gratidão,",
                 "Participemos deste pão,",
                 "Obedientes a Jesus,",
-                "Lembrando assim a Sua cruz!",
-
+                "Lembrando assim a Sua cruz!"
             ],
             [
                 "3. Até que volte o Salvador,",
@@ -82,8 +80,7 @@ const hymns = [
                 "Seu nome queremos bendizer,",
                 "E mais e mais engrandecer,",
                 "O sangue que Ele derramou,",
-                "O sangue que nos resgatou!",
-
+                "O sangue que nos resgatou!"
             ],
             [
                 "4. Se duras são as provações,",
@@ -91,8 +88,7 @@ const hymns = [
                 "Se as lutas fazem-se sentir,",
                 "E custa-nos as resistir,",
                 "Não nos deixemos perturbar:",
-                "São só até Jesus voltar!",
-
+                "São só até Jesus voltar!"
             ],
             [
                 "5. Bem prontos para O receber,",
@@ -116,8 +112,7 @@ const hymns = [
                 "Do Senhor o ensinamento",
                 "Sempre ali perfeito está;",
                 "É tão rica em seus preceitos",
-                "E conselhos santos dá.",
-
+                "E conselhos santos dá."
             ],
             [
                 "2. Do Senhor os bons conselhos,",
@@ -179,8 +174,7 @@ const hymns = [
                 "A tua cruz vai levando,",
                 "Como Jesus perdoando.",
                 "Alegremente andando",
-                "Pra o lindo céu.",
-
+                "Pra o lindo céu."
             ],
             [
                 "3. Sê bom soldado de Cristo Jesus,",
@@ -190,8 +184,7 @@ const hymns = [
                 "Vai Seu amor proclamando,",
                 "Novas de paz, sim, levando.",
                 "Aos que estão aguardando",
-                "A salvação.",
-
+                "A salvação."
             ],
             [
                 "4. Quando, enfim, tu largares a cruz,",
@@ -213,20 +206,14 @@ const hymns = [
                 "1. Traziam as ofertas aos pés do Salvador;",
                 "E todo sacrifício mostrava ser de amor.",
                 "Nenhuma oferenda mostrava sem valor;",
-                "A todas aceitava o meigo Salvador.",
-
-                "Coro",
-                "Também Senhor eu quero trazer-te este dom,",
-                "Indigno, mas sincero;",
-                "O impuro coração.",
+                "A todas aceitava o meigo Salvador."
 
             ],
             [
                 "2. Ao longe, retraído, está um pecador;",
                 "Ao ver os donativos, sua alma sofre em dor.",
                 "Não tem nenhuma prenda pra dar ao Salvador!",
-                "Com olhos lacrimosos, súplica com fervor:",
-
+                "Com olhos lacrimosos, súplica com fervor:"
             ],
             [
                 "3.\"Ó Mestre\", exclama, aflito, \"eu sei quão mau eu sou;",
@@ -249,20 +236,18 @@ const hymns = [
                 "1. Quão cego outrora eu já vaguei",
                 "Distante do Senhor,",
                 "Que veio lá dos altos céus",
-                "Salvar o pecador.",
+                "Salvar o pecador."
             ], [
                 "2. Do grande amor sem-par ouvi,",
                 "O amor de meu Jesus,",
                 "Porém eu surdo então me fiz",
-                "E desprezei a luz.",
-
+                "E desprezei a luz."
             ],
             [
                 "3. Temor da morte eu já senti,",
                 "Pairando sobre mim;",
                 "Aos pés de Cristo então corri",
-                "E achei abrigo enfim.",
-
+                "E achei abrigo enfim."
             ],
             [
                 "4. Remido, ó Cristo, o coração",
@@ -316,7 +301,7 @@ const hymns = [
                 "E com ternura achou-me,",
                 "Caído, triste viu!",
                 "As chagas com amor curou,",
-                "E ao lar nos braços me levou.",
+                "E ao lar nos braços me levou."
             ],
             [
                 "2. Ferido, abandonado,",
@@ -324,8 +309,7 @@ const hymns = [
                 "E segredou-me:\"achei-te;",
                 "De agora em diante és meu\".",
                 "Tão meiga voz jamais ouvi,",
-                "Prazer maior jamais senti.",
-
+                "Prazer maior jamais senti."
             ],
             [
                 "3. Jesus mostrou-me as chagas",
@@ -333,8 +317,7 @@ const hymns = [
                 "Coroa, mas de espinhos,",
                 "A cruz que padeceu.",
                 "Que poderia em mim achar,",
-                "Pra tais afrontas suportar?",
-
+                "Pra tais afrontas suportar?"
             ],
             [
                 "4. Enquanto as horas passam,",
@@ -402,7 +385,7 @@ const hymns = [
                 "1. Achei Jesus, o Meu Salvador,",
                 "De amor fiel, veraz;",
                 "Não cessarei de Lhe dar louvor,",
-                "Pois tenho a Salvação e paz.",
+                "Pois tenho a Salvação e paz."
             ],
             [
                 "2. Vem me guardar Sua forte mão,",
@@ -443,7 +426,7 @@ const hymns = [
                 "Trabalhemos, pois, com zelo e com vigor,",
                 "Constrangidos pelo Seu imenso amor;",
                 "Trabalhemos pelo nosso Salvador;",
-                "Eis que a vida vai findar!",
+                "Eis que a vida vai findar!"
             ],
             [
                 "2. Eis conosco nosso insigne Capitão",
@@ -453,8 +436,7 @@ const hymns = [
                 "Eis avante! Nada temos que temer",
                 "Por Jesus, havemos sempre de vencer",
                 "Trabalhemos, pois até o amanhecer",
-                "E o trabalho aqui findar",
-
+                "E o trabalho aqui findar"
             ],
             [
                 "3. Revestidos da couraça de Jesus",
@@ -486,8 +468,7 @@ const hymns = [
                 "Os louvores do teu Cristo,",
                 "E Seu nome celebrar!",
                 "Prá remir-te, prá remir-te,",
-                "Sua vida Ele quis dar!",
-
+                "Sua vida Ele quis dar!"
             ],
             [
                 "2. Minha condição tão triste",
@@ -495,8 +476,7 @@ const hymns = [
                 "Que dos céus desceu à terra,",
                 "Para ser meu Redentor!",
                 "Oh! Quão grande! Oh! Quão grande!",
-                "E o amor de meu Senhor!",
-
+                "E o amor de meu Senhor!"
             ],
             [
                 "3. Condenado, justamente,",
@@ -504,8 +484,7 @@ const hymns = [
                 "Dessa pena p'ra livrar-me,",
                 "O perdão p'ra merecer?",
                 "O Seu sangue, o Seu sangue,",
-                "Quis Jesus por mim verter!",
-
+                "Quis Jesus por mim verter!"
             ],
             [
                 "4. Com meus crimes carregado,",
@@ -529,15 +508,13 @@ const hymns = [
                 "E não terá temor.  2. A fé que não me faz queixar",
                 "Se vem a correção,",
                 "E quando mais severa for,",
-                "Mais firma o coração.",
-
+                "Mais firma o coração."
             ],
             [
                 "3. A fé que sempre brilha mais",
                 "Em meio ao furacão,",
                 "Que no perigo sente paz,",
-                "Em densa escuridão.",
-
+                "Em densa escuridão."
             ],
             [
                 "4. Tão forte seja minha fé,",
@@ -554,15 +531,15 @@ const hymns = [
         "verses": [
             [
                 "1. Deus tem prometido a salvação dar,",
-                "A quem em Seu Filho Jesus confiar.",
+                "A quem em Seu Filho Jesus confiar."
             ],
             [
                 "2. Foi tal Seu amor, que me substituiu,",
-                "E sobre o Calvário, minh'alma remiu!",
+                "E sobre o Calvário, minh'alma remiu!"
             ],
             [
                 "3. Não posso jamais desse amor duvidar;",
-                "Não posso senão aos Seus pés me prostrar.",
+                "Não posso senão aos Seus pés me prostrar."
             ],
             [
                 "4. E, quando, na glória, eu vir meu bom Rei,",
@@ -613,7 +590,7 @@ const hymns = [
                 "Eis-nos no sangue lavados,",
                 "Com vestes que tão alvas são;",
                 "Nós pecadores remidos,",
-                "Que de Deus recebemos perdão.",
+                "Que de Deus recebemos perdão."
             ],
             [
                 "2. Quão espinhosa coroa,",
@@ -672,8 +649,7 @@ const hymns = [
                 "Amor, que por amor morreste!",
                 "Ah! Quanta dor não padeceste,",
                 "Meu coração prá conquistar,",
-                "E meu amor ganhar!",
-
+                "E meu amor ganhar!"
             ],
             [
                 "2. Amor, que com amor seguias",
@@ -694,8 +670,8 @@ const hymns = [
                 "4. Amor sublime que perduras,",
                 "Que em Tua graça me seguras,",
                 "Cercando a mim de mil venturas!",
-                "Aceita agora, ó Salvador,  O meu humilde amor!",
-
+                "Aceita agora, ó Salvador,",
+                "O meu humilde amor!"
             ]
         ]
     },
@@ -707,21 +683,19 @@ const hymns = [
                 "1. Oh, não tens ouvido do amor sem igual,",
                 "Do amor que teu Deus tem por ti?",
                 "O amor que O levou a Seu Filho entregar,",
-                "Prá os salvos levar para Si!",
+                "Prá os salvos levar para Si!"
             ],
             [
                 "2. Não foram os grandes que Cristo chamou,",
                 "Nem justos veio Ele salvar,",
                 "Mas pobres e fracos, culpados e maus",
-                "Mandou pelos servos buscar",
-
+                "Mandou pelos servos buscar"
             ],
             [
                 "3. O homem, porém, não podia chegar",
                 "À santa presença de Deus,",
                 "Porque os pecados de seu coração",
-                "Vedavam-lhe a entrada nos Céus",
-
+                "Vedavam-lhe a entrada nos Céus"
             ],
             [
                 "4. Mas pelo Seu sangue Jesus expiou",
@@ -750,8 +724,7 @@ const hymns = [
                 "2. Jamais virão os pecados vis",
                 "A penetrar nos portais de luz;",
                 "Será no centro do país",
-                "O trono eterno de Jesus.",
-
+                "O trono eterno de Jesus."
             ],
             [
                 "3. Ali fruir infindáveis paz,",
@@ -773,15 +746,13 @@ const hymns = [
                 "Imenso é Seu poder,",
                 "Que Terra e Céu criou;",
                 "Louvor minha alma vai render",
-                "Ao grande Eu Sou.",
-
+                "Ao grande Eu Sou."
             ],
             [
                 "2. Ao Deus de Abraão louvai. E, por mandado Seu.",
                 "Minha alma deixa a terra  E vai morar no Céu.",
                 "O mundo desprezei,  Seu lucro e seu louvor",
-                "E Deus por meu Senhor  Tomei, E protetor",
-
+                "E Deus por meu Senhor  Tomei, E protetor"
             ],
             [
                 "3. Meu guia Deus será;  Seu infinito amor",
@@ -812,15 +783,13 @@ const hymns = [
                 "1. Ao ver morrer na rude cruz,",
                 "Em dor e angústia meu Jesus;",
                 "Compreendendo ser um pecador,",
-                "E meu orgulho sem valor.",
-
+                "E meu orgulho sem valor."
             ],
             [
                 "2. As mãos, os pés e a fronte em dor",
                 "Derramam sangue por amor;",
                 "Oh! santa mão! Ferida mão!",
-                "Deseja dar-me salvação.",
-
+                "Deseja dar-me salvação."
             ],
             [
                 "3. Dou graças mil a meu Jesus;",
@@ -874,15 +843,13 @@ const hymns = [
                 "2. Assim como estou: sem mais demorar,",
                 "Minha alma do mal querendo limpar,",
                 "A ti, que de tudo me podes lavar:",
-                "Bendito Jesus, me chego a ti!",
-
+                "Bendito Jesus, me chego a ti!"
             ],
             [
                 "3. Assim como estou: em grande aflição.",
                 "Tão digno de morte e da perdição,",
                 "Rogando-te vida, com paz e perdão:",
-                "Bendito Jesus, me chego a ti!",
-
+                "Bendito Jesus, me chego a ti!"
             ],
             [
                 "4. Assim como estou: o Teu grande amor",
@@ -932,8 +899,7 @@ const hymns = [
                 "É feliz quem segue fielmente,",
                 "Nos caminhos santos do Senhor;",
                 "Na tribulação é paciente,",
-                "Esperando no seu Salvador.",
-
+                "Esperando no seu Salvador."
             ],
             [
                 "2. Os heróis da Bíblia Sagrada,",
@@ -943,7 +909,7 @@ const hymns = [
                 "E depois, saíram pelo mundo,",
                 "Como mensageiros do Senhor,",
                 "Com coragem e amor profundo,",
-                "Proclamando Cristo, o Salvador.",
+                "Proclamando Cristo, o Salvador."
             ],
             [
                 "3. Quem quiser de Deus ter a coroa,",
@@ -953,7 +919,7 @@ const hymns = [
                 "O Senhor tem dado aos Seus queridos,",
                 "Parte do Seu glorioso ser;",
                 "Quem no coração for mais ferido,",
-                "Mais daquela glória há de ter",
+                "Mais daquela glória há de ter"
             ],
             [
                 "4. Sim, confia tu, inteiramente;",
@@ -976,15 +942,14 @@ const hymns = [
                 "Bem junto à cruz doce paz desfrutar.",
                 "Sim ao Teu peito eu busco a paz.",
                 "Pois Teu amor divinal satisfaz!",
-                "Pois Teu amor divinal satisfaz!",
+                "Pois Teu amor divinal satisfaz!"
             ],
             [
                 "2. Não trago nada mais ao Senhor,",
                 "Só este meu coração pecador,",
                 "Mas te suplico em contrição,",
                 "Oh Salvador, dá-me paz e perdão!",
-                "Oh Salvador, dá-me paz e perdão!",
-
+                "Oh Salvador, dá-me paz e perdão!"
             ],
             [
                 "3. Sim, quero a Cristo junto estar,",
@@ -1009,7 +974,7 @@ const hymns = [
                 "2. Oh, talvez alguma vida possas alegrar",
                 "Com palavras cheias de calor,",
                 "Ou quem sabe algumas almas tristes alcançar",
-                "Com a mensagem do Senhor.",
+                "Com a mensagem do Senhor."
             ],
             [
                 "3. Mesmo que agitado seja aqui o teu viver,",
@@ -1039,15 +1004,13 @@ const hymns = [
                 "2. Ide as nações e depressa anunciai:",
                 "Breve Jesus voltará!",
                 "Gratos, alegres, as novas cantai:",
-                "Breve Jesus voltará!",
-
+                "Breve Jesus voltará!"
             ],
             [
                 "3. Montes e vales, o som ecoai:",
                 "Breve Jesus voltará!",
                 "Ondas do mar a canção entoai:",
-                "Breve Jesus voltará!",
-
+                "Breve Jesus voltará!"
             ],
             [
                 "4. Guerras e fome nos dão a entender:",
@@ -1057,7 +1020,7 @@ const hymns = [
             ]
         ],
         "coro": [
-            "Coro Breve virá! Breve virá!",
+            "Breve virá! Breve virá!",
             "Breve Jesus voltará."
         ]
     },
@@ -1069,14 +1032,13 @@ const hymns = [
                 "1. Cada vez mais puro faze o coração,",
                 "Mais e mais buscando Tua direção;",
                 "Sendo confiante sempre em Ti, Senhor;",
-                "Firme em Tua força, salvo em Teu amor.",
+                "Firme em Tua força, salvo em Teu amor."
             ],
             [
                 "2. Cada vez mais calmo ao cercar-me a dor,",
                 "Cheio de paciência onde quer que for;",
                 "Dá-me mais bondade, mais resignação",
-                "Aos divinos planos, sob a Tua mão.",
-
+                "Aos divinos planos, sob a Tua mão."
             ],
             [
                 "3. Cada vez mais santo, sempre mais leal,",
@@ -1099,8 +1061,7 @@ const hymns = [
                 "Ardil de Satanás,",
                 "A fim de o derrotar",
                 "Com Seu poder sem par.",
-                "E aos Seus provê descanso e paz.",
-
+                "E aos Seus provê descanso e paz."
             ],
             [
                 "2. Se a nós quiserem derrotar",
@@ -1111,8 +1072,7 @@ const hymns = [
                 "E vil acusador,",
                 "Jamais nos vencerá;",
                 "Pois foi vencido já",
-                "Ali na cruz do Salvador.",
-
+                "Ali na cruz do Salvador."
             ],
             [
                 "3. Poder o nosso nada faz;",
@@ -1141,8 +1101,7 @@ const hymns = [
                 "2. Chuvas de bênçãos teremos,",
                 "Vida de paz e perdão.",
                 "Os pecadores indignos,",
-                "Graça dos céus obterão.",
-
+                "Graça dos céus obterão."
             ],
             [
                 "3. Chuvas de bênçãos teremos,",
@@ -1172,21 +1131,18 @@ const hymns = [
                 "2. Com Tua mão, segura bem a minha,",
                 "E mais e mais unido a Ti, Jesus.",
                 "Ó traze-me, que nunca me desvie",
-                "De Ti, Senhor, a minha vida e luz!",
-
+                "De Ti, Senhor, a minha vida e luz!"
             ],
             [
                 "3. Com Tua mão, segura bem a minha,",
                 "E, pelo mundo, alegre seguirei:",
                 "Mesmo onde as sombras caem mais escuras",
-                "Teu rosto vendo, nada temerei.",
-
+                "Teu rosto vendo, nada temerei."
             ],
             [
                 "4. E, se chegar à beira desse rio,",
                 "Que Tu por mim quiseste atravessar,  Com Tua mão segura bem a minha,",
-                "E sobre a morte eu hei de triunfar.",
-
+                "E sobre a morte eu hei de triunfar."
             ],
             [
                 "5. Quando voltares esses céus rompendo,",
@@ -1246,15 +1202,13 @@ const hymns = [
                 "2. Tens acaso mágoas, duro é teu lidar?",
                 "É pesada cruz que tens de suportar?",
                 "Conta as muitas bênçãos, não duvidarás,",
-                "E cantando alegre os dias passarás.",
-
+                "E cantando alegre os dias passarás."
             ],
             [
                 "3. Quando vires outros com riquezas e bens,",
                 "Lembra que tesouros prometidos tens",
                 "Nunca os bens da terra poderão comprar,",
-                "A mansão celeste em que tu vais morar.",
-
+                "A mansão celeste em que tu vais morar."
             ],
             [
                 "4. Seja teu conflito fraco ou forte aqui,",
@@ -1285,8 +1239,7 @@ const hymns = [
                 "2. Eu posso envelhecer, nunca Jesus!",
                 "Eu posso empobrecer, nunca Jesus!",
                 "Tudo me suprirá, sempre me valerá,",
-                "Nada me faltará, tendo Jesus.",
-
+                "Nada me faltará, tendo Jesus."
             ],
             [
                 "3. Vai tudo aqui findar, menos Jesus!",
@@ -1310,15 +1263,13 @@ const hymns = [
                 "2. Eu ouvia falar dessa graça sem par,",
                 "Que do céu trouxe nosso Jesus;",
                 "Mas eu surdo me fiz, converter-me não quis,",
-                "Ao Senhor, que por mim morreu na cruz",
-
+                "Ao Senhor, que por mim morreu na cruz"
             ],
             [
                 "3. Mas um dia senti meu pecado e vi",
                 "Sobre mim a espada da lei;",
                 "Apressado fugi, em Jesus me escondi,",
-                "E abrigo seguro Nele achei",
-
+                "E abrigo seguro Nele achei"
             ],
             [
                 "4. Quão ditoso então, este meu coração,",
@@ -1351,15 +1302,14 @@ const hymns = [
                 "Direção e conforto sem par.",
                 "Nem tristeza nem dor,",
                 "Nem a prova maior",
-                "Poderão nossa fé abalar.",
+                "Poderão nossa fé abalar."
             ],
             [
                 "3. Inefável prazer É Jesus conhecer,",
                 "É ser crente zeloso e leal,",
                 "Sua voz sempre ouvir,",
                 "Suas ordens cumprir,",
-                "É ter bênçãos constantes e real.",
-
+                "É ter bênçãos constantes e real."
             ],
             [
                 "4. Resoluto, Senhor,",
@@ -1367,7 +1317,7 @@ const hymns = [
                 "Os teus passos queremos seguir,",
                 "Teus preceitos guardar,",
                 "O Teu nome exaltar,",
-                "Sempre a Tua presença sentir",
+                "Sempre a Tua presença sentir"
             ]
         ],
         "coro": [
@@ -1385,12 +1335,13 @@ const hymns = [
                 "1. Jesus Cristo à porta está:",
                 "Bate sempre para entrar.",
                 "Se ouvires, abre já!",
-                "Abre o coração!  Coro",
-                "Abre o coração!",
-                "Abre o coração!  2. Jesus bate ainda lá",
+                "Abre o coração!"
+            ],
+            [
+                "2. Jesus bate ainda lá",
                 "E, se não abrires já,",
                 "Ele triste voltará;",
-                "Abre o coração!",
+                "Abre o coração!"
             ],
             [
                 "3. Jesus bate, abre já,",
@@ -1415,8 +1366,7 @@ const hymns = [
                 "Só Ele me conduz.",
                 "Quando está triste o coração,",
                 "Ele me dá consolação;",
-                "Consolação  Ao coração Dá Jesus",
-
+                "Consolação  Ao coração Dá Jesus"
             ],
             [
                 "2. Cristo é tudo pra mim,",
@@ -1427,8 +1377,7 @@ const hymns = [
                 "Provando assim o seu amor,",
                 "O grande amor,",
                 "Do meu Senhor,",
-                "De Jesus.",
-
+                "De Jesus."
             ],
             [
                 "3. Cristo é tudo pra mim,",
@@ -1439,7 +1388,7 @@ const hymns = [
                 "Por toda vida servirei",
                 "Eu servirei.",
                 "Ao meu bom Rei,",
-                "A Jesus.",
+                "A Jesus."
             ],
             [
                 "4. Cristo é tudo para mim,",
@@ -1564,8 +1513,7 @@ const hymns = [
                 "‘Scolham os outros o mundo prá si:",
                 "Busquem riquezas, delícias aqui;",
                 "Eu escolherei, ó Jesus, sempre a Ti!",
-                "Cristo prá mim! Cristo prá mim!",
-
+                "Cristo prá mim! Cristo prá mim!"
             ],
             [
                 "2. Quer na aflição, na doença ou na dor:",
@@ -1575,8 +1523,7 @@ const hymns = [
                 "Sempre ao meu lado pra me socorrer,",
                 "Com Seu amor, sim, e com Seu poder;",
                 "Em cada transe pronto a me valer;",
-                "Cristo p'ra mim! Cristo p'ra mim!",
-
+                "Cristo p'ra mim! Cristo p'ra mim!"
             ],
             [
                 "3. No dia amargo da perseguição:",
@@ -1586,8 +1533,7 @@ const hymns = [
                 "Ele, o pecado e o mundo venceu",
                 "Quando, por mim, no Calvário morreu;",
                 "E da vitória a certeza me deu;",
-                "Cristo p'ra mim! Cristo p'ra mim!",
-
+                "Cristo p'ra mim! Cristo p'ra mim!"
             ],
             [
                 "4. E se no vale da morte eu entrar,",
@@ -1615,8 +1561,7 @@ const hymns = [
                 "2. Cristo salva o pecador",
                 "E concede-lhe perdão.",
                 "Aceitai o bom Senhor,",
-                "Aceitai de coração.",
-
+                "Aceitai de coração."
             ],
             [
                 "3. Vinde todos, e achareis",
@@ -1646,8 +1591,7 @@ const hymns = [
                 "2. A Pedra mui preciosa que Deus providenciou,",
                 "Sustenta pedras vivas que a graça trabalhou;",
                 "Sejamos sempre unidos, vivendo em plena luz,",
-                "E a glória desta Igreja será do Rei Jesus.",
-
+                "E a glória desta Igreja será do Rei Jesus."
             ],
             [
                 "3. Em meio às duras lutas que deve confrontar,",
@@ -1671,8 +1615,7 @@ const hymns = [
                 "2. Dá-me a Bíblia, dela eu preciso,",
                 "Pois do pecado há de me livrar;",
                 "Suas palavras têm poder e alento",
-                "Que minha alma podem renovar.",
-
+                "Que minha alma podem renovar."
             ],
             [
                 "3. Dá-me a Bíblia, que meu guia seja;",
@@ -1700,8 +1643,7 @@ const hymns = [
                 "Teu reino só buscando,",
                 "As nossas vidas, nosso amor,",
                 "A Ti trazemos, Salvador,",
-                "Cantando: Aleluia!",
-
+                "Cantando: Aleluia!"
             ],
             [
                 "2. Viver por Ti, em Ti morrer,",
@@ -1720,8 +1662,7 @@ const hymns = [
                 "Nos dás, Senhor bondoso,",
                 "Amém! Dizemos com fervor,",
                 "E, pelo Teu imenso amor,",
-                "Clamamos:\"Aleluia!\"",
-
+                "Clamamos:\"Aleluia!\""
             ],
             [
                 "4. Sim, constrangidos pelo amor,",
@@ -1730,8 +1671,7 @@ const hymns = [
                 "Eis o que ambicionamos,",
                 "Seguindo sempre a Tua lei,",
                 "A Ti, leais, bendito Rei,",
-                "Cantamos:\"Aleluia!\"",
-
+                "Cantamos:\"Aleluia!\""
             ],
             [
                 "5. Nem o labor será em vão,",
@@ -1858,19 +1798,19 @@ const hymns = [
                 "1. Se estás cansado e abatido,",
                 "Dize-o a Cristo; dize-o a Cristo.",
                 "Se te sentes débil, confundido,",
-                "Dize-o a teu Salvador.",
+                "Dize-o a teu Salvador."
             ],
             [
                 "2. Quando estás de tentação cercado,",
                 "Olha p'ra Cristo; olha p'ra Cristo;",
                 "Quando rugem hostes do pecado,",
-                "Olha p'ra teu Salvador.",
+                "Olha p'ra teu Salvador."
             ],
             [
                 "3. Se saíram outros já da senda,",
                 "Segue a Cristo; segue a Cristo;",
                 "Se aumenta em torno a contenda,",
-                "Segue a teu Salvador.",
+                "Segue a teu Salvador."
             ],
             [
                 "4. Ao chegares ao fim da jornada,",
@@ -1894,14 +1834,25 @@ const hymns = [
                 "1. Eis multidões, em trevas tão medonhas,",
                 "Vivem perdidas, sem o Salvador!",
                 "Quem lhes irá as novas proclamando",
-                "Que Deus, em Cristo, salva o pecador?",
+                "Que Deus, em Cristo, salva o pecador?"
             ],
             [
                 "2. Portas abertas, eis por todo mundo;",
-                "Tempos de ceifas agora aproveitai. Servos de Cristo, uni as vossas forças, Da escravidão os povos libertai.  3. “Oh vinde a mim!” A voz divina clama. Ide, clamai em nome de Jesus, Que pra salvar-nos do castigo eterno, Seu sangue derramou por nós na cruz."
+                "Tempos de ceifas agora aproveitai.",
+                "Servos de Cristo, uni as vossas forças,",
+                "Da escravidão os povos libertai."
             ],
             [
-                "4. Ó Deus, apressa o dia glorioso Em que os remidos todos unirão E em grande coro, santo jubiloso, Pra todo sempre gloria a ti darão."
+                "3. “Oh vinde a mim!” A voz divina clama.",
+                 "Ide, clamai em nome de Jesus,",
+                 "Que pra salvar-nos do castigo eterno,",
+                 "Seu sangue derramou por nós na cruz."
+            ],
+            [
+                "4. Ó Deus, apressa o dia glorioso ",
+                "Em que os remidos todos unirão ",
+                "E em grande coro, santo jubiloso, ",
+                "Pra todo sempre gloria a ti darão."
             ]
         ],
         "coro": [
@@ -1927,8 +1878,7 @@ const hymns = [
                 "2. Maravilhas de amor te fará o Senhor",
                 "Atendendo à oração que aceitar",
                 "Seu imenso poder, te virá socorrer",
-                "Quando tudo deixares no altar!",
-
+                "Quando tudo deixares no altar!"
             ],
             [
                 "3. Se orares, porém, sem o teu coração",
@@ -1963,8 +1913,7 @@ const hymns = [
                 "2. Os passos teus seguir  Eu quero sim,",
                 "Prá te servir e amar  Até o fim.",
                 "Eis o meu desejar,  Meu ideal maior,",
-                "Contigo andar  Ó Salvador.",
-
+                "Contigo andar  Ó Salvador."
             ],
             [
                 "3. Em meu interior  Vem tu brilhar.",
@@ -1983,7 +1932,7 @@ const hymns = [
     },
     {
         "title": "58 - Eu Quero Fazer o que Queres, Senhor",
-        "author": "Mary Browwn, esrofe 1 Charles Edwin Prior, estrofes 2 e 3 Carrie Esther Rounsefell",
+        "author": "Mary Browwn, estrofe 1 Charles Edwin Prior, estrofes 2 e 3 Carrie Esther Rounsefell",
         "verses": [
             [
                 "1. Nem sempre será prá o lugar que eu quiser",
@@ -1993,7 +1942,7 @@ const hymns = [
                 "E se por caminhos que nunca segui,",
                 "A tua chamada eu ouvi;",
                 "Feliz certo irei dirigido por Ti,",
-                "A Tua vontade cumprir.",
+                "A Tua vontade cumprir."
             ],
             [
                 "2. Há tantas palavras de amor e perdão",
@@ -2072,8 +2021,7 @@ const hymns = [
                 "2. Vinde conosco vos unir, na guerra contra o mal;",
                 "E com nosso Salvador, em marcha triunfal,",
                 "A todos proclamar, Sua graça e Seu poder.",
-                "Seu sangue derramou p'ra nos salvar!",
-
+                "Seu sangue derramou p'ra nos salvar!"
             ],
             [
                 "3. O Capitão da salvação é Cristo, o Salvador;",
@@ -2104,15 +2052,13 @@ const hymns = [
                 "2. Pois, quando vi Jesus por mim,",
                 "Sofrendo sobre a cruz,",
                 "O meu coração, sem hesitação,",
-                "Recebeu o amor e a luz.",
-
+                "Recebeu o amor e a luz."
             ],
             [
                 "3. Com lágrimas, pedi perdão,",
                 "E dor, também senti;",
                 "Veio, então, Jesus, e a mim falou:",
-                "\"Foi por ti que Eu morri\".",
-
+                "\"Foi por ti que Eu morri\"."
             ],
             [
                 "4. Eu sei que Deus, no Filho Seu,",
@@ -2143,15 +2089,13 @@ const hymns = [
                 "2. Muito longe já O avisto,",
                 "Vejo como por um véu,",
                 "Mas desejo em breve vê-Lo",
-                "Face a face lá no Céu!",
-
+                "Face a face lá no Céu!"
             ],
             [
                 "3. Oh! que encanto estar com Cristo,",
                 "Onde já não há mais dor!",
                 "Livre de qualquer perigo,",
-                "Desfrutando Seu amor!",
-
+                "Desfrutando Seu amor!"
             ],
             [
                 "4. Face a face, que alegria",
@@ -2222,22 +2166,19 @@ const hymns = [
                 "1. Almejo a fé que forte é",
                 "Diante do terror;",
                 "Que, calma, não recuará",
-                "Do mundo aterrador.",
-
+                "Do mundo aterrador."
             ],
             [
                 "2. A fé que não me faz queixar",
                 "Na dor da correção,",
                 "Mas quanto o fogo mais arder,",
-                "Mais firma o coração.",
-
+                "Mais firma o coração."
             ],
             [
                 "3. A fé que sempre brilha mais",
                 "No negro furacão,",
                 "Que no perigo sente paz,",
-                "Audaz na escuridão.",
-
+                "Audaz na escuridão."
             ],
             [
                 "4. Ó Deus, me dá tamanha fé,",
@@ -2295,8 +2236,7 @@ const hymns = [
                 "2. Sob a bandeira que pra nós é o santo amor de Deus,",
                 "Trilhemos o caminho aqui, que leva para os Céus.",
                 "Os santos crentes, pela fé, vencerão Satanás.",
-                "A nossa fé vitória é, e a todos traz a paz.",
-
+                "A nossa fé vitória é, e a todos traz a paz."
             ],
             [
                 "3. Aquele que viver na fé, justiça alcançará;",
@@ -2345,7 +2285,7 @@ const hymns = [
                 "1. Firme nas promessas do meu Salvador,",
                 "Cantarei louvores ao meu Criador.",
                 "Sempre permaneço pelo Seu amor,",
-                "Firme nas promessas de Jesus.",
+                "Firme nas promessas de Jesus."
             ],
             [
                 "2. Firme nas promessas que não vão falhar,",
@@ -2376,15 +2316,13 @@ const hymns = [
                 "1. Fortalece Tua igreja, ó bendito Salvador;",
                 "Aquecendo nossas almas no divino, santo amor.",
                 "Vem, derrama sobre todos toda a graça de Jesus,",
-                "Dando as bênçãos da verdade que nos mostram Tua luz.",
-
+                "Dando as bênçãos da verdade que nos mostram Tua luz."
             ],
             [
                 "2. Pai, contempla Tua igreja, vem estende Tua mão.",
                 "Dá-lhe a graça insondável da divina redenção,",
                 "Antes que ela desfaleça, e se torne sem vigor;",
-                "Vivifica, vivifica nossas almas, ó Senhor.",
-
+                "Vivifica, vivifica nossas almas, ó Senhor."
             ],
             [
                 "3. Santifica Tua igreja pela graça divinal;",
@@ -2407,8 +2345,7 @@ const hymns = [
                 "Oh, ensina o novo canto",
                 "Dos remidos lá dos Céus;",
                 "Aos Teus servos povo santo",
-                "Prá louvarmos-Te bom Deus.",
-
+                "Prá louvarmos-Te bom Deus."
             ],
             [
                 "2. Ao Senhor eu agradeço",
@@ -2460,8 +2397,7 @@ const hymns = [
                 "2. Que maravilha! Jesus me amou,",
                 "Tudo de graça me perdoou;",
                 "Quebrou meus laços e me livrou;",
-                "Glória ao Salvador!",
-
+                "Glória ao Salvador!"
             ],
             [
                 "3. Junto à cruz, inda há lugar,",
@@ -2472,7 +2408,7 @@ const hymns = [
             ]
         ],
         "coro": [
-            "Coro  Glória ao Salvador! (2x)",
+            "Glória ao Salvador! (2x)",
             "Agora sei que Ele me salvou",
             "Glória ao Salvador!"
         ]
@@ -2491,15 +2427,13 @@ const hymns = [
                 "2. C'os meus pecados carregou,",
                 "Glória! Glória ao meu Jesus!",
                 "E sobre a cruz me resgatou.",
-                "Glória! Glória ao meu Jesus!",
-
+                "Glória! Glória ao meu Jesus!"
             ],
             [
                 "3. Eu sei que perdoado estou,",
                 "Glória! Glória ao meu Jesus!",
                 "E, com certeza, ao Céu eu vou!",
-                "Glória! Glória ao meu Jesus!",
-
+                "Glória! Glória ao meu Jesus!"
             ],
             [
                 "4. E, quando a guerra aqui findar,",
@@ -2569,8 +2503,7 @@ const hymns = [
                 "2. Seu pendão glorioso vamos defender,",
                 "Hostes inimigas sempre combater;",
                 "Nosso general por certo irá vencer.",
-                "Seguiremos a Jesus.",
-
+                "Seguiremos a Jesus."
             ],
             [
                 "3. Na feroz batalha temos proteção,",
@@ -2606,8 +2539,7 @@ const hymns = [
                 "Faz-me aproveitá-las bem.",
                 "Sê o fogo, sê a nuvem,",
                 "Sê libertador também,",
-                "Sê libertador também.",
-
+                "Sê libertador também."
             ],
             [
                 "3. É chegando ao fim da estrada,",
@@ -2682,15 +2614,13 @@ const hymns = [
                 "2. Para cada crente, o Mestre preparou",
                 "Um trabalho certo, quando o resgatou,",
                 "O trabalho a que Jesus te chama aqui.",
-                "Como será feito, se não for por ti?",
-
+                "Como será feito, se não for por ti?"
             ],
             [
                 "3. Pode ser humilde, mas se for p'ra Deus,",
                 "Ele é contemplado lá dos altos Céus.",
                 "E o esforço feito não será em vão",
-                "Se tiver de Cristo, plena aprovação!",
-
+                "Se tiver de Cristo, plena aprovação!"
             ],
             [
                 "4. Quantos há perdidos, sem a salvação!",
@@ -2721,21 +2651,19 @@ const hymns = [
                 "2. Queres os vícios abandonar?",
                 "No sangue há poder, sim, há poder;",
                 "Confia em Cristo para te curar;",
-                "Seu sangue tem este poder!",
-
+                "Seu sangue tem este poder!"
             ],
             [
                 "3. Oh! Paralítico, queres andar?",
                 "No sangue há poder, sim, há poder;",
                 "Para fazer-te também caminhar,",
-                "Seu sangue tem este poder!",
+                "Seu sangue tem este poder!"
             ],
             [
                 "4. Queres pureza p'ra teu coração?",
                 "No sangue há poder, sim, há poder;",
                 "Mais lealdade, mais consagração,",
-                "Seu sangue tem este poder!",
-
+                "Seu sangue tem este poder!"
             ],
             [
                 "5. Queres de Cristo a mensagem levar?",
@@ -2753,16 +2681,14 @@ const hymns = [
                 "1. Há um caminho santo, ao Céu de plena luz,",
                 "Às vezes espinhoso, à glória nos conduz;",
                 "E o caminho certo pra todo pecador;",
-                "Jesus é o Salvador, Jesus é o Salvador.",
-
+                "Jesus é o Salvador, Jesus é o Salvador."
             ],
             [
                 "2. Há paz inabalável pra quem está na luz;",
                 "Por preço incomparável",
                 "Comprou-me a mim Jesus",
                 "O dom do Pai amado minh'alma satisfaz,",
-                "Jesus é minha paz, Jesus é minha paz.",
-
+                "Jesus é minha paz, Jesus é minha paz."
             ],
             [
                 "3. Há um poder que sara o triste coração,",
@@ -2822,8 +2748,7 @@ const hymns = [
                 "2. Mesmo quando seres maus e perniciosos",
                 "Querem a semente boa destruir,",
                 "Vamos semeando, sempre satisfeitos,",
-                "Pois colheita santa havemos de fruir.",
-
+                "Pois colheita santa havemos de fruir."
             ],
             [
                 "3. Eia, pois, obreiros, semeai, ousados,",
@@ -2847,15 +2772,13 @@ const hymns = [
                 "1. Ó, tu herdeiro do reino celeste,",
                 "Não, não dormites o fim vai chegar;",
                 "Oh! Cinge as armas e põe-te na luta,",
-                "Pois a vitória desejas ganhar.",
-
+                "Pois a vitória desejas ganhar."
             ],
             [
                 "2. Não te detenham prazeres terrenos,",
                 "Pois bem depressa terão de passar;",
                 "Oh! deixa a vida que ao mundo te prende,",
-                "Vem, vem a Cristo que te há de salvar!",
-
+                "Vem, vem a Cristo que te há de salvar!"
             ],
             [
                 "3. Eis as potências dispostas à luta;",
@@ -2874,22 +2797,19 @@ const hymns = [
                 "1. Conta-me a história de Cristo, grava-a no meu coração.,",
                 "A linda história inaudita, de graça, paz e perdão!",
                 "Conta como Ele encarnando, veio ao mundo morar.",
-                "E aos pecadores indignos, de Deus amor revelar! (2x)",
-
+                "E aos pecadores indignos, de Deus amor revelar! (2x)"
             ],
             [
                 "2. Conta como Ele, bondoso, nunca a ninguém rejeitou,",
                 "Como de mãos estendidas todos a si convidou!",
                 "Como não pode o bom Mestre, seja a quem for recusar,",
-                "Se convencido e contrito, o Seu convite aceitar. (2x)",
-
+                "Se convencido e contrito, o Seu convite aceitar. (2x)"
             ],
             [
                 "3. Conta-me quando no monte sobre a cidade chorou",
                 "Pois orgulhosa e rebelde o Seu amor rejeitou!",
                 "Conta como Ele ainda chora, sobre os que seguem o mal;",
-                "E endurecidos resistem ao Seu amor divinal. (2x)",
-
+                "E endurecidos resistem ao Seu amor divinal. (2x)"
             ],
             [
                 "4. Conta também como Cristo, mesmo na cruz se lembrou",
@@ -2920,8 +2840,7 @@ const hymns = [
                 "2. Vós, filhos do mundo, escutai ao Senhor,",
                 "Que sempre vos chama com mui terno amor.",
                 "Ouvi que o Senhor nunca cessa em dizer:",
-                "Importa renascer!",
-
+                "Importa renascer!"
             ],
             [
                 "3. Ó vós que no santo descanso de Deus",
@@ -2931,7 +2850,7 @@ const hymns = [
             ]
         ],
         "coro": [
-            "Coro  Importa renascer!",
+            "Importa renascer!",
             "Importa renascer!",
             "Com voz infalível o disse Jesus:",
             "Importa renascer!"
@@ -3042,8 +2961,7 @@ const hymns = [
                 "Radiante é a tua porta,",
                 "Que ao longe já se vê,",
                 "Por onde tem entrada",
-                "O que no Cristo crê.",
-
+                "O que no Cristo crê."
             ],
             [
                 "2. A cruz e Sua glória",
@@ -3053,8 +2971,7 @@ const hymns = [
                 "Que gozo tu me inspiras,",
                 "Eterna habitação,",
                 "Pois eu sei que em ti se finda",
-                "A peregrinação!",
-
+                "A peregrinação!"
             ],
             [
                 "3. Ó doce lar amado,",
@@ -3113,19 +3030,19 @@ const hymns = [
                 "1. Jesus, Pastor amado, contempla-nos aqui;",
                 "Concede que sejamos um corpo só em Ti.",
                 "Contendas e malícias de nós bem longe vão;",
-                "Nenhum desgosto impeça a nossa comunhão. ",
+                "Nenhum desgosto impeça a nossa comunhão. "
             ],
             [
                 "2. Pois sendo resgatados por um só Salvador,",
                 "Devemos ser unidos por santo e forte amor;",
                 "Olhar com simpatia os erros de um irmão",
-                "E todos ajudá-lo, com terna compaixão.",
+                "E todos ajudá-lo, com terna compaixão."
             ],
             [
                 "3. Jesus, suave e meigo, ensina-nos a amar,",
                 "E faz-nos bem dispostos também no perdoar.",
                 "Oh! Quanto carecemos do auxílio do Senhor!",
-                "Unidos, supliquemos a Ti por esse amor.",
+                "Unidos, supliquemos a Ti por esse amor."
             ],
             [
                 "4. Senhor, se a igreja toda andar em santa união,",
@@ -3145,22 +3062,21 @@ const hymns = [
                 "Tu és tudo prá mim!",
                 "Foste morto, mas vives em mim;",
                 "Tu mereces louvor, ó Cordeiro de Deus!",
-                "Tu és tudo, sim, tudo prá mim!",
+                "Tu és tudo, sim, tudo prá mim!"
             ],
             [
                 "2. Quero a Ti dar louvor,",
                 "Pois és Rei sobre reis;",
                 "Tu és tudo, mas nada eu sou;",
                 "Enche meu coração de ternura e paz;",
-                "Honra eterna e glória Te dou.",
+                "Honra eterna e glória Te dou."
             ],
             [
                 "3. O Teu nome é amor,",
                 "Pois Tu amas a mim,",
                 "E eu quero andar neste amor;",
                 "Triunfante estou, confiando em Ti,",
-                "Meu Jesus, grande Consolador.",
-
+                "Meu Jesus, grande Consolador."
             ],
             [
                 "4. Ó Ungido de Deus,",
@@ -3180,15 +3096,13 @@ const hymns = [
                 "1. Jesus, sempre Te amo, porque sei que és meu;",
                 "Feliz eu Te rendo louvor que é só Teu.",
                 "Meu Mestre divino, Senhor e meu Rei;",
-                "A Ti ó meu Cristo, me submeterei.",
-
+                "A Ti ó meu Cristo, me submeterei."
             ],
             [
                 "2. Eu te amo por que tu morreste por mim",
                 "Eu te amo por que teu amor não tem fim",
                 "Em ti confiança pra sempre terei",
-                "E a ti, ó meu Cristo, me submeterei.",
-
+                "E a ti, ó meu Cristo, me submeterei."
             ],
             [
                 "3. Eu te amo na vida, na morte também",
@@ -3215,16 +3129,14 @@ const hymns = [
                 "E me dá Sua força e poder;",
                 "Torna em gozo minha dor,",
                 "Me inspira, dá valor;",
-                "Oh! Jesus é o melhor amigo!",
-
+                "Oh! Jesus é o melhor amigo!"
             ],
             [
                 "3. Quando as ondas se embravecem,",
                 "E meu barco querem afundar,",
                 "Ele dá-me calma e paz,",
                 "E bonança sempre traz,",
-                "Sim Jesus é o melhor amigo!",
-
+                "Sim Jesus é o melhor amigo!"
             ],
             [
                 "4. Ele deu a Sua própria vida",
@@ -3249,7 +3161,7 @@ const hymns = [
                 "1. Jubilosos te adoramos, Deus da glória, Deus de amor!",
                 "Nosso coração transborda em louvor a Ti, Senhor.",
                 "Rompe as nuvens da tristeza, do pecado e do temor.",
-                "Doador da eterna graça, enche-nos do Teu amor!",
+                "Doador da eterna graça, enche-nos do Teu amor!"
             ]
             [
             "2. Tuas obras anunciam Teu poder e resplendor.",
@@ -3345,13 +3257,13 @@ const hymns = [
                 "2. Louvamos-Te, ó Deus,",
                 "E ao Teu Filho de amor,",
                 "Que foi morto, mais vive,",
-                "Supremo Senhor",
+                "Supremo Senhor"
             ],
             [
                 "3. Louvamos-Te, ó Deus,",
                 "Pelo Espírito, luz,",
                 "Que no s tira das trevas,",
-                "E a Cristo conduz.",
+                "E a Cristo conduz."
             ],
             [
                 "4. Oh, vem nos encher,",
@@ -3375,13 +3287,13 @@ const hymns = [
                 "1. Ó anjos e homens, dai a Deus louvores,",
                 "Pois Sua graça dá aos pecadores.",
                 "Ó, firmamento, Céus e mar e Terra,",
-                "Sim, dai louvor a Deus.",
+                "Sim, dai louvor a Deus."
             ],
             [
                 "2. Vós, ó remidos, dai louvor a Cristo,",
                 "Tal sacrifício, oh! jamais foi visto!",
                 "A Sua morte Seu amor revela,",
-                "Sim, adorai Jesus!",
+                "Sim, adorai Jesus!"
             ],
             [
                 "3. Quão insondável é o amor divino!",
@@ -3400,11 +3312,7 @@ const hymns = [
                 "1. Mais perto quero estar,",
                 "Meu Deus, de Ti,",
                 "Inda que seja a dor,",
-                "Que me una a Ti.",
-                "Coro Eis meu constante orar:",
-                "Mais perto quero estar,",
-                "Mais perto quero estar,",
-                "Meu Deus, de Ti."
+                "Que me una a Ti."
             ],
             [
                 "2. Andando triste aqui,",
@@ -3440,15 +3348,13 @@ const hymns = [
                 "2. Marchai, soldados, bem alto erguei",
                 "O pavilhão da salvação;",
                 "A Belial, firmes, ousados, vencei;",
-                "Vencei a corrupção.",
-
+                "Vencei a corrupção."
             ],
             [
                 "3. Vossa armadura de guerra tomai,",
                 "O elmo, sim, da salvação:",
                 "E a espada: a Bíblia levai,",
-                "E vencereis, então.",
-
+                "E vencereis, então."
             ],
             [
                 "4. Avante, avante, confiando em Jesus,",
@@ -3481,8 +3387,7 @@ const hymns = [
                 "Deve ser o nosso cantar;",
                 "Um hino de fé que fale",
                 "Das bênçãos do amor sem-par,",
-                "Das bênçãos do amor sem-par.",
-
+                "Das bênçãos do amor sem-par."
             ],
             [
                 "3. Um dever é levar Cristo ao mundo",
@@ -3514,8 +3419,7 @@ const hymns = [
                 "2. Oh! lar feliz de amor e paz!",
                 "Jardim sem outro igual!",
                 "O teu fulgor de glória e luz,",
-                "Jamais o viu mortal.",
-
+                "Jamais o viu mortal."
             ],
             [
                 "3. Jesus em breve irá voltar,",
@@ -3560,8 +3464,7 @@ const hymns = [
                 "Me conduz ao bom descanso;",
                 "Para o campo verde em flor,",
                 "Refrigera, sim, minh’alma,",
-                "Saciando-me de amor",
-
+                "Saciando-me de amor"
             ],
             [
                 "2. Ele é meu companheiro;",
@@ -3571,8 +3474,7 @@ const hymns = [
                 "Ele é quem dá coragem,",
                 "Para nada eu temer;",
                 "Mesmo próximo à morte",
-                "Certo estou que vou vencer.",
-
+                "Certo estou que vou vencer."
             ],
             [
                 "3. Caminhando ao Seu lado",
@@ -3582,8 +3484,7 @@ const hymns = [
                 "Contra o meu inimigo",
                 "O Senhor sempre virá;",
                 "Me prepara uma mesa",
-                "E comigo nela está.",
-
+                "E comigo nela está."
             ],
             [
                 "4. Unge a cabeça minha",
@@ -3612,15 +3513,13 @@ const hymns = [
                 "2. Deus quer salvar ao vil malfeitor",
                 "Como promete sempre fará",
                 "NEle confia ó pecador",
-                "E pela fé vida nova terás",
-
+                "E pela fé vida nova terás"
             ],
             [
                 "3. Breve se finda a tua luz",
                 "E no juízo tu vais entrar",
                 "Não te detenhas vem a Jesus",
-                "Que teus pecados deseja apagar",
-
+                "Que teus pecados deseja apagar"
             ],
             [
                 "4. Que maravilha, que grande amor",
@@ -3645,14 +3544,13 @@ const hymns = [
                 "1. Milhares de milhares em refulgente luz!",
                 "Eis os guerreiros santos, milícias de Jesus!",
                 "Completa, sim completa, sua longa luta aqui.",
-                "Com Cristo seu Senhor e Rei, vão, descansar ali.",
+                "Com Cristo seu Senhor e Rei, vão, descansar ali."
             ],
             [
                 "2. Que doces sinfonias encham a terra e o Céu!",
                 "Que coros d'aleluias rompem além do véu!",
                 "E que chegou o dia, o dia triunfal,",
-                "E Cristo reinará, enfim, em glória divina!.",
-
+                "E Cristo reinará, enfim, em glória divina!."
             ],
             [
                 "3. Então, não há mais choro, nem há mais tentação;",
@@ -3677,8 +3575,7 @@ const hymns = [
                 "2. Cristo, bom mestre, eis meu querer:",
                 "Mais santidade sempre buscar;",
                 "Faze-me firme, dá-me poder",
-                "Para a verdade nunca deixar.",
-
+                "Para a verdade nunca deixar."
             ],
             [
                 "3. Cristo, bom mestre, eis meu querer:",
@@ -3711,8 +3608,7 @@ const hymns = [
                 "Por ti deixei no Céu Meu lar,",
                 "Fui peregrino aqui.",
                 "Não queiras, pois, desculpas dar;",
-                "Que fazes tu por Mim?",
-
+                "Que fazes tu por Mim?"
             ],
             [
                 "3. Imensa foi a dor,",
@@ -3774,14 +3670,13 @@ const hymns = [
                 "3. Jamais meu! A Ti confio",
                 "Tudo quanto chamo meu;",
                 "Tudo nas Tuas mãos entrego;",
-                "Meu Senhor, sou todo Teu!",
-
+                "Meu Senhor, sou todo Teu!"
             ],
             [
                 "4. Jamais meu! Ó santifica",
                 "Tudo quanto sou, Senhor!",
                 "Da vaidade e da soberba,",
-                "Vem livrar-me, Salvador.",
+                "Vem livrar-me, Salvador."
             ]
         ],
         "coro": [
@@ -3835,27 +3730,25 @@ const hymns = [
                 "1. Leva tu contigo o nome",
                 "De Jesus o Salvador;",
                 "Este nome dá conforto",
-                "Hoje, sempre e onde for.",
+                "Hoje, sempre e onde for."
             ],
             [
                 "2. Este nome, leva, sempre,",
                 "Para sempre defender.",
                 "Ele é arma ao teu alcance,",
-                "Quando o mal te aparecer.",
-
+                "Quando o mal te aparecer."
             ],
             [
                 "3. Oh! que nome tão precioso!",
                 "Gozo traz ao coração.",
                 "Sendo Por Jesus aceito,",
-                "Tu terás o Seu perdão.",
-
+                "Tu terás o Seu perdão."
             ],
             [
                 "4. Santo nome, e venerável",
                 "Tem Jesus, amado teu",
                 "“Rei dos reis” “Senhor eterno”",
-                "Tu aclamarás no Céu!",
+                "Tu aclamarás no Céu!"
             ]
         ],
         "coro": [
@@ -3879,7 +3772,7 @@ const hymns = [
                 "2. Nós O veremos na manhã gloriosa;",
                 "Contemplaremos o Seu resplendor.",
                 "Entoaremos hinos de vitória,",
-                "Cantando em coro, Hosana! Amém!",
+                "Cantando em coro, Hosana! Amém!"
             ],
             [
                 "3. Nós O veremos em radiante brilho;",
@@ -3909,8 +3802,7 @@ const hymns = [
                 "E por Teu Filho imaculado,",
                 "Ofertaste-nos a salvação.",
                 "Glória rendemos, honra, louvor,",
-                "E adoração a Ti, Redentor!",
-
+                "E adoração a Ti, Redentor!"
             ],
             [
                 "3. Tu nos convences dos vis pecados,",
@@ -3918,7 +3810,7 @@ const hymns = [
                 "E à verdade somos guiados,",
                 "Ó Espírito que nos dás..",
                 "Glória rendemos, honra, louvor,",
-                "E adoração, ó Jesus!",
+                "E adoração, ó Jesus!"
             ]
         ]
     },
@@ -3944,8 +3836,7 @@ const hymns = [
                 "Teus amigos te desprezam?",
                 "Conta-lhe isto em oração",
                 "E com Seu amor tão terno",
-                "Paz terás no coração.",
-
+                "Paz terás no coração."
             ],
             [
                 "3. Cristo é verdadeiro amigo",
@@ -3974,8 +3865,7 @@ const hymns = [
                 "2. Quando outrora em Galiléia,",
                 "Essa doce voz soou,",
                 "Logo, o coração ouvinte,",
-                "Tudo, pronto, abandonou.",
-
+                "Tudo, pronto, abandonou."
             ],
             [
                 "3. Sobre as vozes sedutoras,",
@@ -3987,7 +3877,7 @@ const hymns = [
                 "4. Quer no meio dos prazeres,",
                 "Quer no dia da aflição,",
                 "Inda clama, paciente:",
-                "\"Amas-Me tu, ó cristão?\"",
+                "\"Amas-Me tu, ó cristão?\""
             ],
             [
                 "5. Na vereda estreita e santa,",
@@ -4011,14 +3901,13 @@ const hymns = [
                 "1. Tens descanso encontrado em Jesus Cristo?",
                 "Permaneces pela graça que Ele deu?",
                 "Tens tu paz com teu Salvador bendito?",
-                "Plenitude do espírito Deus?",
+                "Plenitude do espírito Deus?"
             ],
             [
                 "2. Estarás bem seguro e corajoso,",
                 "Quando a tentação chegar-se para ti?",
                 "Tens a graça pra ser Vitorioso",
-                "Nas terríveis provações da vida aqui.",
-
+                "Nas terríveis provações da vida aqui."
             ],
             [
                 "3. Só em Cristo encontrarás descanso,",
@@ -4042,14 +3931,13 @@ const hymns = [
                 "1. Ó cristãos, avante! Sem temor marchar!",
                 "Pela cruz de Cristo, com ardor lutar.",
                 "Cristo o nosso Mestre, guia o batalhão;",
-                "No calor da guerra ergue Seu pendão.",
+                "No calor da guerra ergue Seu pendão."
             ],
             [
                 "2. Ó cristãos, avante, contra Satanás!",
                 "A Jesus seguindo, príncipe da paz.",
                 "Nunca o inimigo prevalecerá!",
-                "Com as hostes santas Cristo vencerá!",
-
+                "Com as hostes santas Cristo vencerá!"
             ],
             [
                 "3. Reinos pereceram, tronos e nações,",
@@ -4074,14 +3962,13 @@ const hymns = [
                 "1. Ó Deus de amor, vimos nós Te adorar.",
                 "Vós, ó nação rendei louvor!",
                 "És Tu, Senhor, o Poderoso Vencedor;",
-                "És Criador e Rei sem par! ",
+                "És Criador e Rei sem par! "
             ],
             [
                 "2. Por Teu poder nos criaste, Senhor,",
                 "Deste-nos vida e perfeição;",
                 "E ao desviar-nos de Teu plano de amor,",
-                "Veio, em Jesus, a salvação.",
-
+                "Veio, em Jesus, a salvação."
             ],
             [
                 "3. Teu é o poder e o louvor, nosso Deus;",
@@ -4130,27 +4017,19 @@ const hymns = [
                 "1. Quando lá do céu descendo para o seus Jesus voltar,",
                 "E o clarim de Deus a todos proclamar;",
                 "Que chegou o grande dia do triunfar do meu Rei;",
-                "Eu por Sua imensa graça lá estarei.",
-
-                "Coro",
-                "Quando enfim, chegar o dia",
-                "Do triunfar do meu Rei",
-                "Quando enfim, chegar o dia,",
-                "Pela graça de Jesus eu lá estarei."
+                "Eu por Sua imensa graça lá estarei."
             ],
             [
                 "2. Nesse dia, quando os mortos hão de a voz de Cristo ouvir,",
                 "E dos seus sepulcros hão de ressurgir,",
                 "Os remidos reunidos, logo aclamarão seu Rei,",
-                "E, por Sua imensa graça, lá estarei.",
-
+                "E, por Sua imensa graça, lá estarei."
             ],
             [
                 "3. Pelo mundo, rejeitado foi, Jesus, meu Salvador.",
                 "Desprezaram, insultaram meu Senhor,",
                 "Mas, faustoso, vem o dia do triunfar do meu Rei,",
-                "E, por Sua imensa graça, lá estarei.",
-
+                "E, por Sua imensa graça, lá estarei."
             ],
             [
                 "4. Em mim mesmo, nada tenho em que possa confiar,",
@@ -4210,7 +4089,7 @@ const hymns = [
                 "Passarinhos, belas flores,",
                 "Querem m’encantar;",
                 "São vãos terrestres esplendores,",
-                "Mas contemplo meu lar.",
+                "Mas contemplo meu lar."
             ],
             [
                 "2. Jesus me deu a Sua promessa;",
@@ -4220,8 +4099,7 @@ const hymns = [
                 "Meus pecados foram muitos,",
                 "Mui culpado sou;",
                 "Porém, Seu sangue põe-me limpo;",
-                "Eu para pátria vou.",
-
+                "Eu para pátria vou."
             ],
             [
                 "3. Qual filho de seu lar saudoso,",
@@ -4231,8 +4109,7 @@ const hymns = [
                 "É fiel - Sua vinda é certa,",
                 "Quando... Eu não sei.",
                 "Mas Ele manda estar alerta;",
-                "Do exílio voltarei.",
-
+                "Do exílio voltarei."
             ],
             [
                 "4. Sua vinda aguardo eu cantando;",
@@ -4260,15 +4137,13 @@ const hymns = [
                 "2. O cálice que Jesus bebeu",
                 "A maldição que padeceu",
                 "Tudo por mim, p'ra me salvar",
-                "Quem poderá contar?",
-
+                "Quem poderá contar?"
             ],
             [
                 "3. A zombaria tão cruel",
                 "A cruz sangrenta, o amargo fel",
                 "Que Ele sofreu pra me salvar",
-                "Quem poderá contar?",
-
+                "Quem poderá contar?"
             ],
             [
                 "4. Incomparável Salvador!",
@@ -4293,13 +4168,13 @@ const hymns = [
                 "1. Há um País de gozo e luz",
                 "Onde só santos há;",
                 "Prazeres há ali a flux;",
-                "É sempre dia lá.",
+                "É sempre dia lá."
             ],
             [
                 "2. Há sempre primavera lá,",
                 "Flores não murcharão;",
                 "Tão perto, sim, de nós está",
-                "A eternal mansão.",
+                "A eternal mansão."
             ],
             [
                 "3. Já nós estamos qual Moisés,",
@@ -4330,8 +4205,7 @@ const hymns = [
                 "1. Oh! que belos hinos cantam lá nos Céus!",
                 "É que o filho mau, ao lar voltou!",
                 "Vede lá ao longe o Pai já abraçar",
-                "Esse filho que Ele tanto amou.",
-
+                "Esse filho que Ele tanto amou."
             ],
             [
                 "2. Oh! que belos hinos cantam lá nos Céus!",
@@ -4367,15 +4241,13 @@ const hymns = [
                 "2. Que alegria estar onde há bênção e paz!",
                 "Que riqueza de amor sem igual:",
                 "O cansado recebe alimento e vigor:",
-                "Para o triste há consolo real!",
-
+                "Para o triste há consolo real!"
             ],
             [
                 "3. Que ternura estar onde há bênção e paz,",
                 "E perdão de inefável valor!",
                 "Mas somente os fiéis é que podem contar",
-                "Esta graça do bom Salvador.",
-
+                "Esta graça do bom Salvador."
             ],
             [
                 "4. Há louvor sem igual onde há bênção e paz!",
@@ -4406,8 +4278,7 @@ const hymns = [
                 "2. Não nos impute nossos vis pecados.",
                 "Teus, nós sejamos, sempre mais e mais;",
                 "Pois, confiantes, somos vigorados",
-                "Em teus paternos braços divinais.",
-
+                "Em teus paternos braços divinais."
             ],
             [
                 "3. Ó Pai, transforma nossa natureza,",
@@ -4432,15 +4303,13 @@ const hymns = [
                 "2. Quando a dor ou aflição",
                 "Perturbar meu coração,",
                 "É preciso confiar,",
-                "E a Jesus tudo entregar.",
-
+                "E a Jesus tudo entregar."
             ],
             [
                 "3. Quando fraco me sentir,",
                 "Quando o mundo me oprimir,",
                 "E pesar a minha cruz,",
-                "'Crê somente!' - Diz Jesus.",
-
+                "'Crê somente!' - Diz Jesus."
             ],
             [
                 "4. Quer nas trevas, quer na luz,",
@@ -4586,8 +4455,7 @@ const hymns = [
                 "2. Oh!, quem não quer auxílio dar,",
                 "Seus cordeirinhos abrigar,",
                 "E encaminhá-los a Jesus,",
-                "Fonte de vida, amor e luz?",
-
+                "Fonte de vida, amor e luz?"
             ],
             [
                 "3. Pelo deserto a padecer,",
@@ -4654,8 +4522,7 @@ const hymns = [
                 "Então eu fui e lhe entreguei",
                 "Meu triste coração;",
                 "Abrigo, paz e graça achei,",
-                "Achei consolação.",
-
+                "Achei consolação."
             ],
             [
                 "2. Ouvi o Salvador dizer:",
@@ -4703,7 +4570,7 @@ const hymns = [
                 "Pois desejo Te servir",
                 "E te honrar meu Salvador.",
                 "Pois desejo Te servir ",
-                "E Te honrar meu Salvador. Amém.",
+                "E Te honrar meu Salvador. Amém."
             ]
         ]
     },
@@ -4715,14 +4582,13 @@ const hymns = [
                 "1. Foi Jesus que abriu o caminho do Céu",
                 "Nenhum outro vou achar.",
                 "Nunca irei entrar na mansão de luz",
-                "Se não for através da cruz.",
+                "Se não for através da cruz."
             ],
             [
                 "2. Certamente eu vou no caminho da cruz,",
                 "Com resolução andar.",
                 "É desejo meu desfrutar no Céu,",
-                "Minha herança que Cristo deu.",
-
+                "Minha herança que Cristo deu."
             ],
             [
                 "3. Os caminhos ímpios do mundo deixei,",
@@ -4754,15 +4620,13 @@ const hymns = [
                 "2. Da vida voando, sem nenhum temor;",
                 "Acima buscando do véu o amor;",
                 "Que doce ventura, que aspecto feliz,",
-                "Que nova natura minh'alma bendiz.",
-
+                "Que nova natura minh'alma bendiz."
             ],
             [
                 "3. Do mar o bramido, da brisa o langor",
                 "Da ave o carpido de doce amor,",
                 "Me falam sentidos acordes dos Céus,",
-                "Me trazem aos ouvidos os hinos de Deus!",
-
+                "Me trazem aos ouvidos os hinos de Deus!"
             ],
             [
                 "4. Minh'alma ansiosa já quer percorrer",
@@ -4878,20 +4742,13 @@ const hymns = [
                 "1. Todo o que crê no Filho de Deus,",
                 "Que prá nos remir, desceu lá dos Céus;",
                 "Todo o que, contrito, a Deus se chegar;",
-                "Jesus está pronto agora a salvar.",
-
-                "Coro",
-                "Sim, Jesus te chama ó meu irmão!",
-                "A ti Ele oferece pleno perdão.",
-                "Seu sangue verteu para te resgatar,",
-                "E Ele é quem quer e pode salvar."
+                "Jesus está pronto agora a salvar."
             ],
             [
                 "2. Quem, arrependido, busca perdão,",
                 "Abrindo a Jesus o seu coração,",
                 "A paz hoje mesmo pode gozar,",
-                "Pois Ele está pronto, agora, a salvar",
-
+                "Pois Ele está pronto, agora, a salvar"
             ]
         ],
         "coro": [
@@ -4945,7 +4802,7 @@ const hymns = [
                 "1. Quando Cristo a trombeta lá no Céu mandar tocar,",
                 "Quando o dia majestoso amanhecer;",
                 "E os remidos desta Terra meu Jesus vier buscar",
-                "E fizer-se então chamada lá estarei.",
+                "E fizer-se então chamada lá estarei."
             ],
             [
                 "2. Nesse dia glorioso quando o crente ressurgir",
@@ -4957,7 +4814,7 @@ const hymns = [
                 "3. Viverei então prá Cristo, ‘té o dia terminar,",
                 "Falarei do Seu amor por nós aqui.",
                 "Quando pois findar a luta e o labor aqui cessar",
-                "E fizer-se então chamada lá estarei!",
+                "E fizer-se então chamada lá estarei!"
             ]
         ],
         "coro": [
@@ -4975,19 +4832,19 @@ const hymns = [
                 "1. Senhor meu Deus, quando eu, maravilhado,",
                 "Fico a pensar nas obras de Tuas mãos,",
                 "Estrelas mil a cintilar no espaço,",
-                "De Teu poder, em manifestação,",
+                "De Teu poder, em manifestação,"
             ],
             [
                 "2. Se ao caminhar por campos e florestas,",
                 "Escuto as aves belas a cantar;",
                 "Se estendo o olhar do alto da montanha,",
-                "E a fonte além eu ouço a murmurar,",
+                "E a fonte além eu ouço a murmurar,"
             ],
             [
                 "3. Se penco, então, que sem poupar Teu Filho,",
                 "O enviaste pra morrer por mim,",
                 "Levando à cruz os meus pecados todos,",
-                "Para eu viver eternamente assim,",
+                "Para eu viver eternamente assim,"
             ],
             [
                 "4. Ao vir Jesus em resplendor e glória,",
@@ -5011,7 +4868,7 @@ const hymns = [
                 "1. Que alegria é crer em Cristo,",
                 "Em Seu nome confiar;",
                 "Observar os Seus ensinos,",
-                "Nas promessas descansar!",
+                "Nas promessas descansar!"
             ], [
                 "2. Que alegria é crer em Cristo,",
                 "Ter certeza de perdão!",
@@ -5040,13 +4897,13 @@ const hymns = [
                 "1. “Que diz a Bíblia, livro sagrado”?",
                 "Para o fiel, eis a questão!",
                 "Ensinamentos de homens são falhos;",
-                "Que diz de Deus o livro então!",
+                "Que diz de Deus o livro então!"
             ], 
             [
                 "2. Poucos ponderam estes ensinos;",
                 "Querem fugir de a lei guardar;",
                 "Outros pretendem, quanto ao descanso,",
-                "Ter o poder de o revogar.",
+                "Ter o poder de o revogar."
             ],
             [
                 "3. Ao vir o mestre, há de saudar-vos,",
@@ -5070,20 +4927,19 @@ const hymns = [
                 "1. Eis os milhões que em trevas tão medonhas",
                 "Jazem perdidos, sem o Salvador!",
                 "Quem, quem irá as novas proclamando",
-                "Que Deus, em Cristo, salva o pecador?",
+                "Que Deus, em Cristo, salva o pecador?"
             ],
             [
                 "2. Portas abertas, eis por todo o mundo!",
                 "Cristãos, erguei-vos! Já avante andai!",
                 "Crentes em Cristo! Uni as vossas forças.",
-                "Da escravidão os povos libertai!.",
+                "Da escravidão os povos libertai!."
             ],
             [
                 "3.\"Ó vinde a mim! A voz divina clama,",
                 "\"Vinde!\" Clamai! em nome de Jesus:",
                 "Pra nos salvar da maldição eterna,",
-                "Seu sangue derramou por nós na cruz.",
-
+                "Seu sangue derramou por nós na cruz."
             ],
             [
                 "4. Ó Deus apressa o dia glorioso,",
@@ -5108,7 +4964,7 @@ const hymns = [
                 "1. Que segurança! Sou de Jesus!",
                 "Eu já desfruto as bênçãos da luz!",
                 "Sou por Jesus herdeiro de Deus;",
-                "Ele me leva à glória dos Céus.",
+                "Ele me leva à glória dos Céus."
             ],
             [
                 "2. Ao Seu amor eu me submeti",
@@ -5175,8 +5031,7 @@ const hymns = [
                 "2. Quem quiser agora, venha aceitar;",
                 "Eis a porta aberta, já podeis entrar;",
                 "É Jesus caminho para ao Céu chegar;",
-                "Todo que quiser é vir!",
-
+                "Todo que quiser é vir!"
             ],
             [
                 "3. Que fiel promessa tens, pecador!",
@@ -5201,14 +5056,13 @@ const hymns = [
                 "1. Quero ser um vaso de bênção,",
                 "Sim um vaso escolhido por Deus.",
                 "Para as novas levar aos perdidos,",
-                "Boas novas que vem lá dos Céus.",
+                "Boas novas que vem lá dos Céus."
             ],
             [
                 "2. Quero ser um vaso de bênção,",
                 "Cada dia desejo fazer,",
                 "Todo aquele que vive culpado,",
-                "O perdão de Jesus conhecer.",
-
+                "O perdão de Jesus conhecer."
             ],
             [
                 "3. Para ser um vaso de bênção",
@@ -5238,8 +5092,7 @@ const hymns = [
                 "2. Quero ter Jesus comigo;",
                 "Frágil sou em minha fé.",
                 "Sua voz me dá conforto",
-                "Quando me vacila o pé.",
-
+                "Quando me vacila o pé."
             ],
             [
                 "3. Quero ter Jesus comigo,",
@@ -5278,8 +5131,7 @@ const hymns = [
                 "A Ti, ó Filho - em Ti, ó bem amado!",
                 "E só em Ti temos aceitação;",
                 "E quem, no sangue estando já lavado,",
-                "Confiante está na Tua salvação.",
-
+                "Confiante está na Tua salvação."
             ],
             [
                 "3. Ó Deus, a Ti de coração louvamos,",
@@ -5302,21 +5154,19 @@ const hymns = [
                 "1. Com ouro e prata não fui resgatado,",
                 "Tesouro terrestre, jamais me livrou;",
                 "O preço foi o sangue de Cristo,",
-                "Manado na cruz do Calvário onde a vida raiou!",
+                "Manado na cruz do Calvário onde a vida raiou!"
             ],
             [
                 "2. O ouro e a prata valor, oh! não tinham",
                 "Pra satisfazer a justiça de Deus.",
                 "Mas Cristo pagou toda a dívida minha;",
-                "Encheu-me de amor e de paz lá do Céu.",
-
+                "Encheu-me de amor e de paz lá do Céu."
             ],
             [
                 "3. Por ouro e por prata não pude chegar-me",
                 "Diante de Deus e o perdão obter;",
                 "P’lo sangue de Cristo, eu pude lançar-me",
-                "Na graça divina e o favor receber.",
-
+                "Na graça divina e o favor receber."
             ],
             [
                 "4. Por ouro e por prata não fui redimido;",
@@ -5351,8 +5201,7 @@ const hymns = [
                 "Só tu podes, bom Jesus,",
                 "Dá-me vida, paz e luz",
                 "Peço-te perdão, Senhor,",
-                "Pois confio em Teu amor.",
-
+                "Pois confio em Teu amor."
             ],
             [
                 "3. Quando a morte, enfim chegar,",
@@ -5377,8 +5226,7 @@ const hymns = [
                 "2. Somos atraídos pelo Teu amor,",
                 "Nestas horas santas, cheias de dulçor.",
                 "Este amor nos fala bem ao coração,",
-                "Sobre a eterna graça, nossa redenção.",
-
+                "Sobre a eterna graça, nossa redenção."
             ],
             [
                 "3. Seja-nos suave para o coração,",
@@ -5403,15 +5251,13 @@ const hymns = [
                 "2. Só em Ti confio, grande é Teu amor;",
                 "Nunca desprezaste um só pecador;",
                 "Todo o que contrito já te procurou",
-                "Pela Tua graça salvação achou.",
-
+                "Pela Tua graça salvação achou."
             ],
             [
                 "3. Sim, em Ti confio, Salvador fiel,",
                 "Nunca abandonaste, o Teu Israel;",
                 "Tua excelsa graça, nunca faltará,",
-                "O que em Ti confia não perecerá.",
-
+                "O que em Ti confia não perecerá."
             ],
             [
                 "4. Sempre em Ti confio, grande é Teu poder,",
@@ -5440,15 +5286,13 @@ const hymns = [
                 "2. Cantarei com alegria,",
                 "Jubiloso som do Céu.",
                 "Louvarei com harmonia",
-                "A Jesus, o amado meu.",
-
+                "A Jesus, o amado meu."
             ],
             [
                 "3. A mensagem gloriosa",
                 "Duma eterna salvação,",
                 "Forte, sim, e poderosa,",
-                "Digna é de aceitação.",
-
+                "Digna é de aceitação."
             ],
             [
                 "4. Ao chegar o fim da lida,",
@@ -5473,15 +5317,13 @@ const hymns = [
                 "1. Santo!, Santo! Santo! Deus onipotente!",
                 "Cedo, de manhã, cantaremos Teu louvor.",
                 "Santo!, Santo! Santo! Deus Jeová infinito!",
-                "És Deus excelso, nosso Criador!",
-
+                "És Deus excelso, nosso Criador!"
             ],
             [
                 "2. Santo! Santo! Santo! Nós, os pecadores,",
                 "Não podemos ver a Tua glória sem tremor.",
                 "Tu somente és Santo, justo e compassivo,",
-                "Puro e perfeito, nosso Rei de amor.",
-
+                "Puro e perfeito, nosso Rei de amor."
             ],
             [
                 "3. Santo! Santo! Santo! Deus onipotente",
@@ -5500,30 +5342,23 @@ const hymns = [
                 "1. Oh! ‘stou satisfeito com Cristo,",
                 "Porque Ele minh’alma salvou;",
                 "E sobre o madeiro, sofrendo,",
-                "O Seu sangue amor revelou.",
-                "Coro  Oh! 'stou satisfeito com Cristo,",
-                "Confesso-O por meu Salvador:",
-                "Embora de nada ser digno,",
-                "Desfruto do Seu grande amor.",
-
+                "O Seu sangue amor revelou."
             ],
             [
                 "2. Oh! 'stou satisfeito com Cristo,",
                 "De triste, tornei-me feliz,",
                 "Ouvindo o Seu Santo evangelho,",
-                "E crendo no que Ele me diz.",
-
+                "E crendo no que Ele me diz."
             ],
             [
                 "3. Oh! 'stou satisfeito com Cristo,",
                 "E sei que vai logo voltar;",
                 "Virá com poder glorioso,",
-                "A fim de Seu povo levar.",
-
+                "A fim de Seu povo levar."
             ]
         ],
         "coro": [
-            "Coro  Oh! 'stou satisfeito com Cristo,",
+            "Oh! 'stou satisfeito com Cristo,",
             "Confesso-O por meu Salvador:",
             "Embora de nada ser digno,",
             "Desfruto do Seu grande amor."
@@ -5551,8 +5386,7 @@ const hymns = [
                 "Os que procuram chegar",
                 "Ao teu regaço, ó Sião",
                 "Livres serão de pecar",
-                "E de toda a tentação",
-
+                "E de toda a tentação"
             ],
             [
                 "3. Diz a Sagrada Escritura",
@@ -5584,21 +5418,19 @@ const hymns = [
                 "1. Se pelos vales eu peregrino vou andar,",
                 "Ou na luz gloriosa de Cristo habitar;",
                 "Irei com meu Senhor prá onde Ele for;",
-                "Confiando na graça de Meu Salvador.",
+                "Confiando na graça de Meu Salvador."
             ],
             [
                 "2. Se lá para o deserto Jesus me quer mandar;",
                 "Levando boas novas de Salvação sem par;",
                 "Eu lidarei, então, com paz no coração.",
-                "A Cristo seguindo, sem mais dilação.",
-
+                "A Cristo seguindo, sem mais dilação."
             ],
             [
                 "3. Será a minha sorte a dura cruz levar",
                 "Sua graça e Seu poder, quero sempre aqui contar.",
                 "Contente com Jesus, levando a minha cruz.",
-                "Eu falo de Cristo que é minha luz.",
-
+                "Eu falo de Cristo que é minha luz."
             ],
             [
                 "4. Ao Salvador Jesus eu desejo obedecer,",
@@ -5623,14 +5455,13 @@ const hymns = [
                 "1. Se tu buscares a Jesus,",
                 "Encontrarás o Salvador;",
                 "A ti virá manhã de luz",
-                "E paz em Seu amor.",
+                "E paz em Seu amor."
             ],
             [
                 "2. À luz que Ele prometeu,",
                 "Em teu viver desfrutarás",
                 "O amor e as bênçãos lá do céu,",
-                "De Deus a doce paz",
-
+                "De Deus a doce paz"
             ],
             [
                 "3. Jesus compreende a tua dor,",
@@ -5902,7 +5733,10 @@ const hymns = [
             ]
         ],
         "coro": [
-            "Sim, Cristo me ama, Sim, Cristo me ama, Sim, Cristo me ama, A Bíblia assim me diz."
+            "Sim, Cristo me ama,",
+            "Sim, Cristo me ama,",
+            "Sim, Cristo me ama,",
+            "A Bíblia assim me diz."
         ]
     },
     {
@@ -5929,7 +5763,7 @@ const hymns = [
             ]
         ],
         "coro": [
-            "Coro  Descansarei, descansarei",
+            "Descansarei, descansarei",
             "Sob Suas asas benditas,",
             "Ao Seu abrigo, pois, gozarei",
             "Paz e alegria infinitas."
@@ -5984,8 +5818,7 @@ const hymns = [
                 "2. Em breve vou partir",
                 "Pra onde não há dor.",
                 "Delícias no Céu vou fruir",
-                "Naquele lar de amor.",
-
+                "Naquele lar de amor."
             ],
             [
                 "3. Ó Mestre, que leal",
@@ -6011,8 +5844,7 @@ const hymns = [
                 "Tua doçura incomparável",
                 "Enche-me de amor sem fim.",
                 "Tua doçura incomparável",
-                "Enche-me de amor sem fim.",
-
+                "Enche-me de amor sem fim."
             ],
             [
                 "2. És a estrela resplendente,",
@@ -6020,8 +5852,7 @@ const hymns = [
                 "E dirige os meus passos,",
                 "Neste mundo de horror.",
                 "E dirige os meus passos,",
-                "Neste mundo de horror.",
-
+                "Neste mundo de horror."
             ],
             [
                 "3. Teus são os eternos braços,",
@@ -6029,8 +5860,7 @@ const hymns = [
                 "Que não fique enlaçado",
                 "P’lo maligno tentador.",
                 "Que não fique enlaçado",
-                "P'lo maligno tentador.",
-
+                "P'lo maligno tentador."
             ],
             [
                 "4. Com meu Salvador amado",
@@ -6038,8 +5868,7 @@ const hymns = [
                 "E com Ele eterno gozo",
                 "Eu terei lá no porvir.",
                 "E com Ele eterno gozo",
-                "Eu terei lá no porvir.",
-
+                "Eu terei lá no porvir."
             ],
             [
                 "5. Oh! Teu nome precioso",
@@ -6061,14 +5890,13 @@ const hymns = [
                 "Que o mundo não pode dar.",
                 "E na prova fatal,",
                 "Ou na luta mortal,",
-                "Tenho paz para me confortar.",
+                "Tenho paz para me confortar."
             ],
             [
                 "2. Quando eu fui a Jesus, encontrei plena luz,",
                 "De paz a minh'alma inundou.",
                 "Toda noite passou: novo dia raiou,",
-                "Porque Cristo Jesus me salvou.",
-
+                "Porque Cristo Jesus me salvou."
             ],
             [
                 "3. Esta paz sem igual, que me livra do mal,",
@@ -6096,8 +5924,7 @@ const hymns = [
                 "Aceita, ó Salvador,",
                 "De um grato pecador,",
                 "Tributo de louvor,",
-                "Dado com fervor.",
-
+                "Dado com fervor."
             ],
             [
                 "2. Atende, meu Jesus,",
@@ -6107,7 +5934,7 @@ const hymns = [
                 "Teu nome exaltar,",
                 "Aos outros vou falar",
                 "Do Teu amor sem par;",
-                "Vem me habilitar",
+                "Vem me habilitar"
             ],
             [
                 "3. Dá-me Senhor, mais fé",
@@ -6133,8 +5960,7 @@ const hymns = [
                 "Foi grande a luta e a tentação;",
                 "Tenho sofrido muita aflição.",
                 "Pra confortar o meu coração,",
-                "Eu venho a Ti, Senhor.",
-
+                "Eu venho a Ti, Senhor."
             ],
             [
                 "2. Minhas vaidades atirarei ",
@@ -6144,8 +5970,7 @@ const hymns = [
                 "Teu grande amor desejo provar,",
                 "E Tua graça manifestar;",
                 "Junto de Ti desejo ficar;",
-                "Eu venho a Ti, Senhor.",
-
+                "Eu venho a Ti, Senhor."
             ],
             [
                 "3. Medo da morte nunca terei,",
@@ -6181,8 +6006,7 @@ const hymns = [
                 "Seu amor é imutável,",
                 "Seu poder inabalável,",
                 "Seu cuidado é incansável,",
-                "Sim, sim, 'stá bem!",
-
+                "Sim, sim, 'stá bem!"
             ],
             [
                 "3. A fé canta na tristeza:",
@@ -6192,8 +6016,7 @@ const hymns = [
                 "Pois se Deus é quem nos guia,",
                 "Ternamente nos vigia,",
                 "Com bondade, noite e dia.",
-                "Sim, sim, ‘stá bem!",
-
+                "Sim, sim, ‘stá bem!"
             ],
             [
                 "4. Por caminhos escabrosos,",
@@ -6203,8 +6026,7 @@ const hymns = [
                 "A Jesus tudo obedece;",
                 "Sempre o mesmo permanece!",
                 "Nem um só dos Seus esquece!",
-                "Sim, sim, ‘stá bem!",
-
+                "Sim, sim, ‘stá bem!"
             ],
             [
                 "5. Quer na vida, quer na morte,",
@@ -6235,8 +6057,7 @@ const hymns = [
                 "Os meus pés e os lábios meus;",
                 "E em favor dos meus irmãos",
                 "Ajam sempre com amor,",
-                "Com prazer por onde for",
-
+                "Com prazer por onde for"
             ],
             [
                 "3. Quando, enfim, voltar Jesus",
@@ -6263,22 +6084,19 @@ const hymns = [
                 "2. Tudo, ó Cristo, a Ti entrego,",
                 "Corpo e alma, eis aqui!",
                 "Este mundo mau renego,",
-                "Ó Jesus, me aceita a mim!",
-
+                "Ó Jesus, me aceita a mim!"
             ],
             [
                 "3. Tudo, ó Cristo, a Ti entrego,",
                 "Quero ser somente Teu!",
                 "Tão submisso à Tua vontade",
-                "Como os anjos lá no Céu!",
-
+                "Como os anjos lá no Céu!"
             ],
             [
                 "4. Tudo, ó Cristo, a Ti entrego;",
                 "Oh, eu sinto Teu amor",
                 "Transformar a minha vida",
-                "E meu coração, Senhor!",
-
+                "E meu coração, Senhor!"
             ],
             [
                 "5. Tudo, ó Cristo, a Ti entrego;",
@@ -6300,13 +6118,12 @@ const hymns = [
                 "1. Tú és fiel, Senhor, ó Deus eterno!",
                 "Teus filhos sabem que não falharás!",
                 "Nunca mudaste, Tu nunca faltaste;",
-                "Tal como eras, sim, sempre serás.",
+                "Tal como eras, sim, sempre serás."
             ],
             [
                 "2. Nuvens no azul do céu,",
                 "Montes e vales campinas em flor:",
-                "Tudo criaste na terra e nos ares, E todos louvam-Te fiel Senhor.",
-
+                "Tudo criaste na terra e nos ares, E todos louvam-Te fiel Senhor."
             ],
             [
                 "3. Pleno perdão Tu dás: que, segurança!",
@@ -6332,7 +6149,7 @@ const hymns = [
                 "1. Um pendão real vos entregou o Rei",
                 "A vós, soldados Seus.",
                 "Corajosos, pois, em tudo O defendei;",
-                "Marchando para os céus.",
+                "Marchando para os céus."
             ],
             [
                 "2. Eis formados já os negros batalhões",
@@ -6344,8 +6161,7 @@ const hymns = [
                 "3. Quem receio sente no seu coração,",
                 "E fraco se mostrar,",
                 "Não receberá o eterno galardão,",
-                "Que Cristo tem p'ra dar.",
-
+                "Que Cristo tem p'ra dar."
             ],
             [
                 "4. Pois sejamos, todos, a Jesus leais,",
@@ -6370,15 +6186,13 @@ const hymns = [
                 "1. Vem, ó Jesus, entre nós morar;",
                 "Seja também Teu o nosso lar;",
                 "Sê com mamãe e com papai;",
-                "Vem-nos Senhor, abençoar.",
-
+                "Vem-nos Senhor, abençoar."
             ],
             [
                 "2. Reine afeição e perfeito amor,",
                 "Longe do mal, de qualquer temor;",
                 "Nosso viver, em tudo aqui,",
-                "Honre tão só o Salvador.",
-
+                "Honre tão só o Salvador."
             ],
             [
                 "3. Quando a manhã perenal raiar,",
@@ -6397,13 +6211,13 @@ const hymns = [
                 "1. Vem a Cristo, vem agora,"
             ],
             [
-                "2. Cristo pode, sim, salvar-te,",
+                "2. Cristo pode, sim, salvar-te,"
             ],
             [
-                "3. Ele almeja perdoar-te,",
+                "3. Ele almeja perdoar-te,"
             ],
             [
-                "4. Tua entrega não rejeita,",
+                "4. Tua entrega não rejeita,"
             ]
         ],
         "coro": [
@@ -6426,19 +6240,19 @@ const hymns = [
                 "2. O clarim que chama os crentes à batalha, já soou",
                 "Cristo, à frente do seu povo, multidões já conquistou",
                 "O inimigo, em retirada, seu furor patenteou",
-                "Vencendo vem Jesus",
+                "Vencendo vem Jesus"
             ],
             [
                 "3. E por fim entronizado as nações há de julgar",
                 "Todos, grandes e pequenos, o Juiz hão de encarar",
                 "E os remidos triunfantes, em fulgor hão de cantar",
-                "Venceu o Rei Jesus",
+                "Venceu o Rei Jesus"
             ]
         ],
         "coro": [
             [
                 "Glória! Glória! Aleluia! (3x)",
-                "Vencendo vem Jesus!",
+                "Vencendo vem Jesus!"
             ],
             [
                 "Glória! Glória! Aleluia! (3x)",
@@ -6464,8 +6278,7 @@ const hymns = [
                 "2. Já, sem demora, muito convém",
                 "Ir caminhando à glória de além",
                 "Cristo vos chama, quer vosso bem",
-                "Oh, vinde ao Salvador",
-
+                "Oh, vinde ao Salvador"
             ],
             [
                 "3. Que ama aos meninos, cristo vos diz",
@@ -6490,7 +6303,7 @@ const hymns = [
                 "1. Vinde, povo do Senhor, adorai-O com louvor.",
                 "Só a Eles exaltai; a Jesus e a Deus o Pai,",
                 "Ao cordeiro que morreu, e a quem o Filho deu.",
-                "Vinde, povo do Senhor, adorai-os com amor.",
+                "Vinde, povo do Senhor, adorai-os com amor."
             ],
             [
                 "2. Observemos com fervor este dia do Senhor,",
@@ -6571,7 +6384,7 @@ const hymns = [
         "verses": [
             [
                 "1. Vivifica Tua igreja ó bendito Salvador;",
-                "Sem Tua graça ela murcha ficará e sem vigor",
+                "Sem Tua graça ela murcha ficará e sem vigor"
             ]
         ],
         "coro": [
