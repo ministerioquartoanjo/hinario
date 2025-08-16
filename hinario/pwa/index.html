@@ -242,8 +242,14 @@
     </div>
 
     <style>
+        /* Increase spacing between stanzas (verses/chorus) */
         .complete-verse, .complete-chorus {
-            margin-bottom: 0.125rem;
+            margin-bottom: 0.75rem;
+        }
+        /* Slightly larger spacing when in fullscreen for readability */
+        #fullscreen-content .complete-verse,
+        #fullscreen-content .complete-chorus {
+            margin-bottom: 1rem;
         }
         #bg-image, #fullscreen-bg-image {
             opacity: 0.85;

@@ -23,6 +23,8 @@
 
 .chorus-slide, .complete-chorus {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    padding-top: 0.25em;  /* +15% vertical padding */
+    padding-bottom: 0.25em;
 }
 
 body {
@@ -177,7 +179,7 @@ body {
 
 .complete-verse,
 .complete-chorus {
-    margin-bottom: 3rem;
+    margin-bottom: 30px; /* fixed spacing between stanzas */
     text-align: left !important;
 }
 
@@ -201,7 +203,7 @@ body {
     background: rgba(255, 255, 255, 0.3);
 }
 
-/* Para Firefox */
+/* For Firefox */
 .slide-content {
     scrollbar-width: thin;
     scrollbar-color: rgba(255, 255, 255, 0.2) transparent;
@@ -214,6 +216,23 @@ body {
 .slide-content {
     -ms-overflow-style: none; /* IE/Edge */
     scrollbar-width: none; /* Firefox */
+}
+
+/* Fullscreen presentation sizing */
+#presentation-container #fullscreen-content {
+    /* Scale text with viewport (use vmin for better fit on both axes) */
+    font-size: clamp(1.5rem, 7vmin, 7rem) !important; /* override Tailwind text-4xl etc */
+    line-height: 1.15;
+    width: 100%;
+    max-width: 92vw;
+    max-height: 86dvh; /* account for mobile UI using dynamic viewport */
+    overflow: auto;
+    padding: 0 1rem;
+}
+
+/* Ensure the overlay area uses dynamic viewport height to avoid mobile browser chrome issues */
+#presentation-container .bg-opacity-50 {
+    min-height: 100dvh;
 }
 
 .checkbox-container {
