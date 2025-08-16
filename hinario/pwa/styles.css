@@ -228,6 +228,17 @@ body {
     padding: 0 1rem;
 }
 
+/* Remove visible focus ring from the scrollable complete hymn layer in presentation */
+#presentation-container .complete-scroll:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+/* Reduce tap highlight on mobile when focusing the scroller */
+#presentation-container .complete-scroll {
+    -webkit-tap-highlight-color: transparent;
+}
+
 /* Ensure the overlay area uses dynamic viewport height to avoid mobile browser chrome issues */
 #presentation-container .bg-opacity-50 {
     min-height: 100dvh;

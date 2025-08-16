@@ -314,6 +314,16 @@ function updateSlideContent() {
         fullscreenContent.innerHTML = content;
         slideContent.style.opacity = "1";
         fullscreenContent.style.opacity = "1";
+
+        // If in presentation with complete mode, and at slide 2 (index 1),
+        // focus the scrollable container so Arrow Up/Down work without click
+        if (!presentationContainer.classList.contains('hidden') && completeCheckbox.checked && currentSlideIndex === 1) {
+            const scroller = fullscreenContent.querySelector('.complete-scroll');
+            if (scroller) {
+                if (!scroller.hasAttribute('tabindex')) scroller.setAttribute('tabindex', '0');
+                try { scroller.focus({ preventScroll: false }); } catch (_) { scroller.focus(); }
+            }
+        }
     }, 300);
 }
 
@@ -542,7 +552,7 @@ function createSlidesComplete(hymn) {
     const firstSlide = `<span class="title-slide text-white">${hymn.title}</span><br><span class="author-slide text-yellow-400">${hymn.author}</span>`;
 
     // Second slide shows complete hymn with scroll
-    let completeHymnContent = `<div style='font-size: ${COMPLETE_HYMN_FONT_FACTOR * 100}%; overflow-y: auto; height: 100%;'>`;
+    let completeHymnContent = `<div class='complete-scroll' tabindex='0' style='font-size: ${COMPLETE_HYMN_FONT_FACTOR * 100}%; overflow-y: auto; height: 100%;'>`;
 
     // Process verses and chorus in correct order
     if (Array.isArray(hymn.verses[0])) {
