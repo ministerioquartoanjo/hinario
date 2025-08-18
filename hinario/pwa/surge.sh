@@ -13,6 +13,9 @@ cd "$PROJECT_DIR"
 # Build and assemble deploy folder
 npm run predeploy
 
+# SPA fallback: serve index.html for unknown routes
+cp ./deploy/index.html ./deploy/200.html
+
 # Domain handling: default to project domain unless overridden via env
 DEFAULT_DOMAIN="hinario.advertenciafinal.com"
 DOMAIN_ARG="${DOMAIN:-$DEFAULT_DOMAIN}"
