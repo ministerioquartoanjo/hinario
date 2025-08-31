@@ -56,6 +56,7 @@ const lineHeightDecreaseButton = document.getElementById("line-height-decrease")
 const lineHeightIncreaseButton = document.getElementById("line-height-increase");
 const completeCheckbox = document.getElementById('complete-checkbox');
 const slideshowIcon = document.getElementById("slideshow-icon");
+const randomHymnButton = document.getElementById('random-hymn');
 
 // Utility Functions
 function rgbToHex(rgb) {
@@ -265,6 +266,31 @@ function init() {
     completeCheckbox.addEventListener('change', changeCheckboxStateCompleto);
 
     slideshowIcon.addEventListener('click', startBackgroundSlideshow);
+
+    // Random hymn button: use delegation so clicks on inner <i> are captured
+    const triggerRandom = () => {
+        const randomIndex = Math.floor(Math.random() * hymns.length);
+        currentHymnIndex = randomIndex;
+        const selectedHymn = hymns[currentHymnIndex];
+        // Update input value to reflect chosen hymn
+        const input = document.getElementById('hymn-select');
+        if (input) input.value = selectedHymn.title;
+        // Reset slide position
+        currentSlideIndex = 0;
+        updateSlides();
+        updatePreview();
+        loadHymnAudio(currentHymnIndex);
+        // Ensure preview is visible
+        previewContainer.classList.remove('hidden');
+    };
+    document.addEventListener('click', (e) => {
+        const btn = e.target.closest('#random-hymn');
+        if (btn) {
+            e.preventDefault();
+            e.stopPropagation();
+            triggerRandom();
+        }
+    });
 
     // Set random background image on startup
     bgImageIndex = Math.floor(Math.random() * bgImages.length);

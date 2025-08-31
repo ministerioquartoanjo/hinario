@@ -56,7 +56,7 @@
 
         <!-- Controls and Hymn Selection -->
         <div class="bg-white dark:bg-gray-800 p-4 rounded-lg shadow-lg w-full">
-            <h1 class="text-2xl text-orange-dark font-bold mb-4 text-center relative">Hinário MQAAF <sup class="version" id="version">25.8.8</sup><i class="fas fa-images ml-2 cursor-pointer" id="slideshow-icon" title="Mostrar slides de fundo"></i><i class="fas fa-bars ml-2 cursor-pointer" id="menu-icon" title="Menu"></i>
+            <h1 class="text-2xl text-orange-dark font-bold mb-4 text-center relative">Hinário MQAAF <sup class="version" id="version">25.8.31</sup><i class="fas fa-images ml-2 cursor-pointer" id="slideshow-icon" title="Mostrar slides de fundo"></i><i class="fas fa-bars ml-2 cursor-pointer" id="menu-icon" title="Menu"></i>
                 <!-- Dropdown Menu -->
                 <div id="main-menu" class="dropdown-menu hidden">
                     <button id="menu-info" class="dropdown-item">
@@ -73,9 +73,14 @@
                     <label for="hymn-select" class="block text-gray-700 dark:text-gray-300 mb-1">Selecionar Hino:</label>
                     <div class="relative">
                         <input id="hymn-select" class="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-md dark:bg-gray-700 dark:text-white" />
-                        <button id="clear-hymn" type="button" aria-label="Clear hymn input" class="absolute right-2 top-1/2 transform -translate-y-1/2">
-                            <i class="fas fa-times text-gray-500"></i>
-                        </button>
+                        <div class="absolute right-2 top-1/2 transform -translate-y-1/2 flex items-center gap-2 z-10">
+                            <button id="random-hymn" type="button" aria-label="Random hymn" title="Hino aleatório" class="p-1">
+                                <i class="fas fa-random text-gray-500"></i>
+                            </button>
+                            <button id="clear-hymn" type="button" aria-label="Clear hymn input" class="p-1">
+                                <i class="fas fa-times text-gray-500"></i>
+                            </button>
+                        </div>
                     </div>
                 </div>
 

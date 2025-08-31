@@ -1,4 +1,4 @@
-const CACHE_NAME = 'hinario-v3';
+const CACHE_NAME = 'hinario-v4';
 const urlsToCache = [
     './',
     './index.html',
@@ -80,8 +80,8 @@ self.addEventListener('fetch', (event) => {
                 }
             }
 
-            // Assets: cache-first, ignorando querystring
-            const respostaCache = await cache.match(event.request, { ignoreSearch: true });
+            // Assets: cache-first, RESPECT querystring so versioned files update correctly
+            const respostaCache = await cache.match(event.request, { ignoreSearch: false });
             if (respostaCache) return respostaCache;
             const respostaRede = await fetch(event.request).catch(() => undefined);
             if (respostaRede) {
