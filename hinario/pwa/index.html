@@ -78,7 +78,7 @@
 
         <!-- Controls and Hymn Selection -->
         <div class="bg-white dark:bg-gray-800 p-4 rounded-lg shadow-lg w-full">
-            <h1 class="text-lg text-orange-dark font-bold mb-4 text-center relative relative">Hinário MQAAF <sup class="version" id="version">25.8.31.1</sup><i class="fas fa-images ml-2 cursor-pointer" id="slideshow-icon" title="Mostrar slides de fundo"></i><i class="fas fa-bars ml-2 cursor-pointer" id="menu-icon" title="Menu"></i><i class="fas fa-random ml-2 cursor-pointer" id="playlist-icon" title="Reproduzir playlist aleatória"></i><i class="fas fa-stop ml-2 cursor-pointer hidden" id="playlist-stop-icon" title="Parar playlist"></i>
+            <h1 class="text-lg text-orange-dark font-bold mb-4 text-center relative relative">Hinário MQAAF <sup class="version" id="version">25.8.31</sup><i class="fas fa-images ml-2 cursor-pointer" id="slideshow-icon" title="Mostrar slides de fundo"></i><i class="fas fa-bars ml-2 cursor-pointer" id="menu-icon" title="Menu"></i><i class="fas fa-random ml-2 cursor-pointer" id="playlist-icon" title="Reproduzir playlist aleatória"></i><i class="fas fa-stop ml-2 cursor-pointer hidden" id="playlist-stop-icon" title="Parar playlist"></i>
                 <!-- Dropdown Menu -->
                 <div id="main-menu" class="dropdown-menu hidden">
                     <button id="menu-info" class="dropdown-item">
@@ -304,10 +304,8 @@
     <script>
         // Chain-load hinos.js first (no document.write), then script.js, then init + SW
         const version = document.getElementById('version').textContent;
-        const isLocal = (location.hostname === 'localhost' || location.hostname === '127.0.0.1');
-        const hinosSrc = isLocal
-            ? 'hinos.js'
-            : 'https://raw.githubusercontent.com/ministerioquartoanjo/hinario/refs/heads/main/hinario/pwa/hinos.js';
+        const hinosLocal = `hinos.js?v=${version}`;
+        const hinosRemote = 'https://raw.githubusercontent.com/ministerioquartoanjo/hinario/refs/heads/main/hinario/pwa/hinos.js';
 
         function loadScript(src) {
             return new Promise((resolve, reject) => {
@@ -322,7 +320,13 @@
 
         (async () => {
             try {
-                await loadScript(hinosSrc);
+                // Prefer local copy (served with the site), fallback to remote only if needed
+                try {
+                    await loadScript(hinosLocal);
+                } catch (e) {
+                    console.warn('Local hinos.js failed, falling back to remote...', e);
+                    await loadScript(hinosRemote);
+                }
                 await loadScript(`script.js?v=${version}`);
                 if (typeof init === 'function') init();
                 if ('serviceWorker' in navigator) {
