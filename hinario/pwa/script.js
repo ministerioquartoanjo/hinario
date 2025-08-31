@@ -30,6 +30,11 @@ let lineHeight = 1.0; // Default line height
 let bgImageIndex = 0; // Index of the current background image
 let savedSlidePosition = 0; // Variável para armazenar a posição do slide
 
+// Playlist state
+let playlistActive = false;
+let playlistOrder = [];
+let playlistPosition = 0;
+
 // DOM Elements
 const hymnSelect = document.getElementById("hymn-select"); // Input for selecting a hymn
 const startButton = document.getElementById("start-button"); // Button to start the presentation
@@ -57,6 +62,10 @@ const lineHeightIncreaseButton = document.getElementById("line-height-increase")
 const completeCheckbox = document.getElementById('complete-checkbox');
 const slideshowIcon = document.getElementById("slideshow-icon");
 const randomHymnButton = document.getElementById('random-hymn');
+const playlistIcon = document.getElementById('playlist-icon');
+const playlistStopIcon = document.getElementById('playlist-stop-icon');
+const fsNextHymnButton = document.getElementById('fs-next-hymn');
+const fsStopPlaylistButton = document.getElementById('fs-stop-playlist');
 
 // Utility Functions
 function rgbToHex(rgb) {
@@ -185,7 +194,12 @@ function init() {
     prevButton.addEventListener("click", previousSlide);
     nextButton.addEventListener("click", nextSlide);
     closeFullscreenButton.addEventListener("click", () => {
-        exitPresentation();
+        // If in random playlist mode, behave like the stop button
+        if (typeof playlistActive !== 'undefined' && playlistActive) {
+            stopRandomPlaylist();
+        } else {
+            exitPresentation();
+        }
     });
 
     document.addEventListener("keydown", handleKeyPress);
@@ -292,6 +306,45 @@ function init() {
         }
     });
 
+    // Playlist controls: attach after DOM is ready
+    if (playlistIcon) {
+        playlistIcon.addEventListener('click', (e) => {
+            e.preventDefault();
+            startRandomPlaylist();
+        });
+    }
+    if (playlistStopIcon) {
+        playlistStopIcon.addEventListener('click', (e) => {
+            e.preventDefault();
+            stopRandomPlaylist();
+        });
+    }
+
+    // Auto-advance when audio ends in playlist mode
+    if (audioPlayer) {
+        audioPlayer.addEventListener('ended', () => {
+            if (playlistActive) advancePlaylist();
+        });
+    }
+
+    // Fullscreen small controls
+    if (fsNextHymnButton) {
+        fsNextHymnButton.addEventListener('click', (e) => {
+            e.preventDefault();
+            if (playlistActive) {
+                advancePlaylist();
+            } else {
+                nextHymn();
+            }
+        });
+    }
+    if (fsStopPlaylistButton) {
+        fsStopPlaylistButton.addEventListener('click', (e) => {
+            e.preventDefault();
+            stopRandomPlaylist();
+        });
+    }
+
     // Set random background image on startup
     bgImageIndex = Math.floor(Math.random() * bgImages.length);
     updateBackground();
@@ -392,11 +445,119 @@ function previousHymn() {
     loadHymnAudio(currentHymnIndex);
 }
 
+// --- Random Playlist Controls ---
+function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+}
+
+function startRandomPlaylist() {
+    // Build and shuffle full hymn index list
+    playlistOrder = shuffleArray(Array.from({ length: hymns.length }, (_, i) => i));
+    playlistPosition = 0;
+    playlistActive = true;
+
+    // Toggle icons
+    if (playlistIcon) playlistIcon.classList.add('hidden');
+    if (playlistStopIcon) playlistStopIcon.classList.remove('hidden');
+    if (fsStopPlaylistButton) fsStopPlaylistButton.classList.remove('hidden');
+    if (fsNextHymnButton) fsNextHymnButton.classList.remove('hidden');
+
+    // Force complete mode in presentation
+    if (completeCheckbox && !completeCheckbox.checked) {
+        completeCheckbox.checked = true;
+        changeCheckboxStateCompleto();
+    }
+
+    // Start presentation if not active
+    const isPresentationActive = !presentationContainer.classList.contains('hidden');
+    // Load and play the first hymn in the shuffled list
+    playCurrentInPlaylist(() => {
+        if (!isPresentationActive) {
+            startPresentation();
+        } else {
+            // Ensure audio starts if already in presentation
+            safeAutoplayAudio();
+        }
+    });
+}
+
+function stopRandomPlaylist() {
+    playlistActive = false;
+    playlistOrder = [];
+    playlistPosition = 0;
+
+    // Toggle icons
+    if (playlistIcon) playlistIcon.classList.remove('hidden');
+    if (playlistStopIcon) playlistStopIcon.classList.add('hidden');
+    if (fsStopPlaylistButton) fsStopPlaylistButton.classList.add('hidden');
+    if (fsNextHymnButton) fsNextHymnButton.classList.add('hidden');
+
+    // Stop audio and exit presentation, go back to main view
+    try {
+        if (audioPlayer && !audioPlayer.paused) audioPlayer.pause();
+        if (audioPlayer) audioPlayer.currentTime = 0;
+    } catch (_) {}
+    exitPresentation();
+}
+
+function safeAutoplayAudio() {
+    if (!audioPlayer) return;
+    const tryPlay = () => {
+        const p = audioPlayer.play();
+        if (p && typeof p.catch === 'function') {
+            p.catch(() => {});
+        }
+    };
+    // Try immediately; also ensure play after source loads
+    const onLoaded = () => {
+        audioPlayer.removeEventListener('loadeddata', onLoaded);
+        tryPlay();
+    };
+    audioPlayer.addEventListener('loadeddata', onLoaded, { once: true });
+    tryPlay();
+}
+
+function playCurrentInPlaylist(afterLoadCb) {
+    if (!playlistActive || playlistOrder.length === 0) return;
+    const idx = playlistOrder[playlistPosition % playlistOrder.length];
+    currentHymnIndex = idx;
+    const selectedHymn = hymns[currentHymnIndex];
+
+    // Reflect in input and UI
+    const input = document.getElementById('hymn-select');
+    if (input) input.value = selectedHymn.title;
+    currentSlideIndex = 0;
+    updateSlides();
+    updatePreview();
+
+    // Load audio then autoplay
+    Promise.resolve(loadHymnAudio(currentHymnIndex)).finally(() => {
+        safeAutoplayAudio();
+        if (typeof afterLoadCb === 'function') afterLoadCb();
+    });
+}
+
+function advancePlaylist() {
+    if (!playlistActive) return;
+    playlistPosition = (playlistPosition + 1) % playlistOrder.length;
+    playCurrentInPlaylist();
+}
+
 function startPresentation() {
+    // Ensure complete mode is on in presentation per requirement
+    if (completeCheckbox && !completeCheckbox.checked) {
+        completeCheckbox.checked = true;
+        changeCheckboxStateCompleto();
+    }
     presentationContainer.classList.remove("hidden");
     updateSlideContent();
     updateCounter();
-    audioPlayer.play();
+    // In playlist mode or manual, try to play; ignore autoplay errors
+    safeAutoplayAudio();
 }
 
 function exitPresentation() {
@@ -411,6 +572,9 @@ function exitPresentation() {
         // noop: best-effort stop
     }
     presentationContainer.classList.add("hidden");
+    // Ensure fullscreen playlist controls are hidden when leaving presentation
+    if (fsStopPlaylistButton) fsStopPlaylistButton.classList.add('hidden');
+    if (fsNextHymnButton) fsNextHymnButton.classList.add('hidden');
 }
 
 function updateFontSize() {

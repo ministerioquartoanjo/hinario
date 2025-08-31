@@ -12,17 +12,39 @@
     <link rel="icon" href="icons/icon-192x192.png" type="image/png">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Open+Sans&family=Lato&family=Montserrat&family=Poppins&family=Lora&family=Merriweather&family=Raleway&family=Oswald&family=Ubuntu&family=Dancing+Script&family=Playfair+Display&family=Source+Sans+Pro&family=Noto+Sans&display=swap" rel="stylesheet">
     <link href="js/jquery.autocomplete.css" rel="stylesheet" type="text/css" />
-    <script src="js/jquery.js"></script>
-    <script src="js/jquery.autocomplete.js"></script>
+    <!-- Pre-jQuery shim: remap 'unload' listeners to 'pagehide' to avoid violations during jQuery init -->
     <script>
-        (function() {
-            var isLocal = (location.hostname === 'localhost' || location.hostname === '127.0.0.1');
-            var src = isLocal
-                ? 'hinos.js'
-                : 'https://raw.githubusercontent.com/ministerioquartoanjo/hinario/refs/heads/main/hinario/pwa/hinos.js';
-            document.write('<script src="' + src + '"><' + '/script>');
+        (function(){
+            var origAdd = EventTarget.prototype.addEventListener;
+            EventTarget.prototype.addEventListener = function(type, listener, options){
+                if (type === 'unload') type = 'pagehide';
+                return origAdd.call(this, type, listener, options);
+            };
         })();
     </script>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.autocomplete.js"></script>
+    <!-- Remap deprecated unload handlers to pagehide to avoid permissions policy violations -->
+    <script>
+        (function(){
+            if (!window.jQuery) return;
+            var $ = window.jQuery;
+            // Wrap jQuery.fn.bind to translate 'unload' -> 'pagehide'
+            var originalBind = $.fn.bind;
+            $.fn.bind = function(type, data, fn) {
+                if (type === 'unload') type = 'pagehide';
+                return originalBind.call(this, type, data, fn);
+            };
+            // Replace any existing window unload cleanup with pagehide
+            try {
+                $(window).unbind('unload');
+                $(window).bind('pagehide', function(){
+                    try { $('*').add(document).unbind(); } catch(e) {}
+                });
+            } catch(e) {}
+        })();
+    </script>
+    <!-- hinos.js is dynamically loaded later to avoid document.write -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />    
     <link href="./dist/output.css" rel="stylesheet">
 </head>
@@ -56,7 +78,7 @@
 
         <!-- Controls and Hymn Selection -->
         <div class="bg-white dark:bg-gray-800 p-4 rounded-lg shadow-lg w-full">
-            <h1 class="text-2xl text-orange-dark font-bold mb-4 text-center relative">Hinário MQAAF <sup class="version" id="version">25.8.31</sup><i class="fas fa-images ml-2 cursor-pointer" id="slideshow-icon" title="Mostrar slides de fundo"></i><i class="fas fa-bars ml-2 cursor-pointer" id="menu-icon" title="Menu"></i>
+            <h1 class="text-lg text-orange-dark font-bold mb-4 text-center relative relative">Hinário MQAAF <sup class="version" id="version">25.8.31.1</sup><i class="fas fa-images ml-2 cursor-pointer" id="slideshow-icon" title="Mostrar slides de fundo"></i><i class="fas fa-bars ml-2 cursor-pointer" id="menu-icon" title="Menu"></i><i class="fas fa-random ml-2 cursor-pointer" id="playlist-icon" title="Reproduzir playlist aleatória"></i><i class="fas fa-stop ml-2 cursor-pointer hidden" id="playlist-stop-icon" title="Parar playlist"></i>
                 <!-- Dropdown Menu -->
                 <div id="main-menu" class="dropdown-menu hidden">
                     <button id="menu-info" class="dropdown-item">
@@ -214,11 +236,20 @@
             </div>
 
             <div class="absolute top-4 right-4 z-20">
-                <button id="close-fullscreen" class="bg-red-600 hover:bg-red-700 text-white font-bold rounded-full absolute top-0 right-0 m-1">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-2 h-2 md:w-3 md:h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <button id="close-fullscreen" class="bg-red-600 hover:bg-red-700 text-white rounded-full absolute top-0 right-0 m-0.5 md:m-1 p-0.5 md:p-2 transform scale-50 md:scale-100 origin-top-right">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-1 h-1 md:w-3 md:h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
                     </svg>
                 </button>
+                <!-- Playlist controls in fullscreen (stacked vertically near close) -->
+                <div class="flex flex-col items-end gap-2 mt-12 mr-1">
+                    <button id="fs-next-hymn" title="Próximo Hino" aria-label="Próximo Hino" class="bg-orange-dark hover:bg-orange-600 text-white rounded-full p-2 shadow-custom hidden">
+                        <i class="fas fa-step-forward"></i>
+                    </button>
+                    <button id="fs-stop-playlist" title="Parar Playlist" aria-label="Parar Playlist" class="bg-gray-700 hover:bg-gray-800 text-white rounded-full p-2 shadow-custom hidden">
+                        <i class="fas fa-stop"></i>
+                    </button>
+                </div>
             </div>
         </div>
     </div>
@@ -271,19 +302,38 @@
     </style>
 
     <script>
+        // Chain-load hinos.js first (no document.write), then script.js, then init + SW
         const version = document.getElementById('version').textContent;
-        const script = document.createElement('script');
-        script.src = `script.js?v=${version}`;
-        script.onload = () => {
-            // Ensure other scripts run after this script is loaded
-            init();
-            if ('serviceWorker' in navigator) {
-                navigator.serviceWorker.register('service-worker.js')
-                    .then(() => console.log('Service Worker Registered'))
-                    .catch(err => console.error('Service Worker Registration Failed:', err));
+        const isLocal = (location.hostname === 'localhost' || location.hostname === '127.0.0.1');
+        const hinosSrc = isLocal
+            ? 'hinos.js'
+            : 'https://raw.githubusercontent.com/ministerioquartoanjo/hinario/refs/heads/main/hinario/pwa/hinos.js';
+
+        function loadScript(src) {
+            return new Promise((resolve, reject) => {
+                const s = document.createElement('script');
+                s.src = src;
+                s.defer = true;
+                s.onload = resolve;
+                s.onerror = reject;
+                document.body.appendChild(s);
+            });
+        }
+
+        (async () => {
+            try {
+                await loadScript(hinosSrc);
+                await loadScript(`script.js?v=${version}`);
+                if (typeof init === 'function') init();
+                if ('serviceWorker' in navigator) {
+                    navigator.serviceWorker.register('service-worker.js')
+                        .then(() => console.log('Service Worker Registered'))
+                        .catch(err => console.error('Service Worker Registration Failed:', err));
+                }
+            } catch (e) {
+                console.error('Script load failed:', e);
             }
-        };
-        document.body.appendChild(script);
+        })();
     </script>
 </body>
 

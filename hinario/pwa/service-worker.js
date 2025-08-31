@@ -1,10 +1,10 @@
-const CACHE_NAME = 'hinario-v4';
+const CACHE_NAME = 'hinario-v5';
 const urlsToCache = [
     './',
     './index.html',
     './styles.css',
     './script.js',
-    './hinos.js',
+    './dist/output.css',
     './service-worker.js',
     './manifest.json',
     './icons/icon-192x192.png',
@@ -76,6 +76,19 @@ self.addEventListener('fetch', (event) => {
                 } catch (e) {
                     const cachedIndex = await cache.match('./index.html');
                     if (cachedIndex) return cachedIndex;
+                    return new Response('Offline', { status: 503, statusText: 'Offline' });
+                }
+            }
+
+            // Hinos carregado do GitHub raw: network-first com fallback para cache, respeitando querystring
+            if (event.request.url.includes('raw.githubusercontent.com') && event.request.url.endsWith('/hinos.js')) {
+                try {
+                    const resp = await fetch(event.request, { cache: 'no-store' });
+                    try { await cache.put(event.request, resp.clone()); } catch {}
+                    return resp;
+                } catch (e) {
+                    const cached = await cache.match(event.request, { ignoreSearch: false });
+                    if (cached) return cached;
                     return new Response('Offline', { status: 503, statusText: 'Offline' });
                 }
             }
