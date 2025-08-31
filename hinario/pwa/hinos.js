@@ -3162,7 +3162,7 @@ const hymns = [
                 "Nosso coração transborda em louvor a Ti, Senhor.",
                 "Rompe as nuvens da tristeza, do pecado e do temor.",
                 "Doador da eterna graça, enche-nos do Teu amor!"
-            ]
+            ],
             [
             "2. Tuas obras anunciam Teu poder e resplendor.",
             "Céus e Terra cantam hinos em louvor a Ti, Senhor.",
@@ -6121,7 +6121,7 @@ const hymns = [
                 "Tal como eras, sim, sempre serás."
             ],
             [
-                "2. Nuvens no azul do céu,",
+                "2. Nuvens no azul do céu, Sol refulgente",
                 "Montes e vales campinas em flor:",
                 "Tudo criaste na terra e nos ares, E todos louvam-Te fiel Senhor."
             ],
