@@ -14,7 +14,15 @@
     <link href="js/jquery.autocomplete.css" rel="stylesheet" type="text/css" />
     <script src="js/jquery.js"></script>
     <script src="js/jquery.autocomplete.js"></script>
-    <script src="hinos.js"></script>
+    <script>
+        (function() {
+            var isLocal = (location.hostname === 'localhost' || location.hostname === '127.0.0.1');
+            var src = isLocal
+                ? 'hinos.js'
+                : 'https://raw.githubusercontent.com/ministerioquartoanjo/hinario/refs/heads/main/hinario/pwa/hinos.js';
+            document.write('<script src="' + src + '"><' + '/script>');
+        })();
+    </script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />    
     <link href="./dist/output.css" rel="stylesheet">
 </head>
