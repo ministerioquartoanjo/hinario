@@ -941,21 +941,43 @@ async function downloadMP3s() {
     const mp3Urls = Array.from({ length: 196 }, (_, i) => `https://raw.githubusercontent.com/ministerioquartoanjo/hinario/refs/heads/desenv/media/${String(i + 1).padStart(3, '0')}-piano.mp3`);
     const cache = await caches.open('mp3-cache');
 
-    for (let i = 0; i < mp3Urls.length; i++) {
-        try {
-            const cachedResponse = await cache.match(mp3Urls[i]);
-            if (!cachedResponse) {
-                const response = await fetch(mp3Urls[i]);
-                if (!response.ok) throw new Error(`Falha ao baixar: ${mp3Urls[i]}`);
-                const blob = await response.blob();
-                await cache.put(mp3Urls[i], new Response(blob));
-            }
-        } catch (error) {
-            console.error(error);
-        }
+    const BATCH_SIZE = 15;
+    const BATCH_DELAY = 5000; // 5 segundos em milissegundos
+    let totalDownloaded = 0;
 
-        const progress = ((i + 1) / mp3Urls.length) * 100;
+    // Divide os URLs em lotes de 15
+    for (let batchStart = 0; batchStart < mp3Urls.length; batchStart += BATCH_SIZE) {
+        const batchEnd = Math.min(batchStart + BATCH_SIZE, mp3Urls.length);
+        const batch = mp3Urls.slice(batchStart, batchEnd);
+
+        // Baixa todos os arquivos do lote atual em paralelo
+        const batchPromises = batch.map(async (url) => {
+            try {
+                const cachedResponse = await cache.match(url);
+                if (!cachedResponse) {
+                    const response = await fetch(url);
+                    if (!response.ok) throw new Error(`Falha ao baixar: ${url}`);
+                    const blob = await response.blob();
+                    await cache.put(url, new Response(blob));
+                }
+                return true;
+            } catch (error) {
+                console.error(error);
+                return false;
+            }
+        });
+
+        // Aguarda todos os downloads do lote atual
+        await Promise.all(batchPromises);
+        
+        totalDownloaded += batch.length;
+        const progress = (totalDownloaded / mp3Urls.length) * 100;
         progressBar.style.width = `${progress}%`;
+
+        // Aguarda 5 segundos antes de iniciar o próximo lote (exceto no último lote)
+        if (batchEnd < mp3Urls.length) {
+            await new Promise(resolve => setTimeout(resolve, BATCH_DELAY));
+        }
     }
 }
 
