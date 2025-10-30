@@ -645,6 +645,41 @@ function updateFontFamily() {
     saveSettings();
 }
 
+// Função auxiliar para fetch com retry e exponential backoff
+async function fetchWithRetry(url, maxRetries = 3, initialDelay = 1000) {
+    let lastError;
+    
+    for (let attempt = 0; attempt < maxRetries; attempt++) {
+        try {
+            const response = await fetch(url);
+            
+            // Se receber 429, aguarda antes de tentar novamente
+            if (response.status === 429) {
+                const retryAfter = response.headers.get('Retry-After');
+                const delay = retryAfter ? parseInt(retryAfter) * 1000 : initialDelay * Math.pow(2, attempt);
+                
+                console.warn(`Rate limit atingido para ${url}. Tentativa ${attempt + 1}/${maxRetries}. Aguardando ${delay / 1000}s...`);
+                
+                if (attempt < maxRetries - 1) {
+                    await new Promise(resolve => setTimeout(resolve, delay));
+                    continue;
+                }
+            }
+            
+            return response;
+        } catch (error) {
+            lastError = error;
+            if (attempt < maxRetries - 1) {
+                const delay = initialDelay * Math.pow(2, attempt);
+                console.warn(`Erro ao buscar ${url}. Tentativa ${attempt + 1}/${maxRetries}. Aguardando ${delay / 1000}s...`);
+                await new Promise(resolve => setTimeout(resolve, delay));
+            }
+        }
+    }
+    
+    throw lastError || new Error(`Falha após ${maxRetries} tentativas: ${url}`);
+}
+
 async function loadHymnAudio(hymnNumber) {
     const audioElement = document.getElementById('hymn-audio');
     const loadingElement = document.getElementById('audio-loading');
@@ -703,8 +738,8 @@ async function loadHymnAudio(hymnNumber) {
             }
         }
 
-        // Se o arquivo não estiver no cache ou tiver expirado, baixa novamente
-        const response = await fetch(mp3Url);
+        // Se o arquivo não estiver no cache ou tiver expirado, baixa novamente com retry
+        const response = await fetchWithRetry(mp3Url, 3, 2000);
         if (!response.ok) throw new Error(`Falha ao baixar: ${mp3Url}`);
         const blob = await response.blob();
         await cache.put(mp3Url, new Response(blob, { headers: { 'date': new Date().toUTCString() } }));
@@ -996,44 +1031,50 @@ async function downloadMP3s() {
     const mp3Urls = Array.from({ length: 196 }, (_, i) => `https://raw.githubusercontent.com/ministerioquartoanjo/hinario/refs/heads/desenv/media/${String(i + 1).padStart(3, '0')}-piano.mp3`);
     const cache = await caches.open('mp3-cache');
 
-    const BATCH_SIZE = 15;
-    const BATCH_DELAY = 5000; // 5 segundos em milissegundos
+    const BATCH_SIZE = 10; // Reduzido de 15 para 10 para evitar rate limiting
+    const BATCH_DELAY = 8000; // Aumentado para 8 segundos
     let totalDownloaded = 0;
 
-    // Divide os URLs em lotes de 15
+    // Divide os URLs em lotes
     for (let batchStart = 0; batchStart < mp3Urls.length; batchStart += BATCH_SIZE) {
         const batchEnd = Math.min(batchStart + BATCH_SIZE, mp3Urls.length);
         const batch = mp3Urls.slice(batchStart, batchEnd);
 
-        // Baixa todos os arquivos do lote atual em paralelo
+        // Baixa todos os arquivos do lote atual em paralelo com retry
         const batchPromises = batch.map(async (url) => {
             try {
                 const cachedResponse = await cache.match(url);
                 if (!cachedResponse) {
-                    const response = await fetch(url);
+                    const response = await fetchWithRetry(url, 5, 3000); // 5 tentativas, delay inicial de 3s
                     if (!response.ok) throw new Error(`Falha ao baixar: ${url}`);
                     const blob = await response.blob();
-                    await cache.put(url, new Response(blob));
+                    await cache.put(url, new Response(blob, { headers: { 'date': new Date().toUTCString() } }));
                 }
                 return true;
             } catch (error) {
-                console.error(error);
+                console.error(`Erro ao baixar ${url}:`, error);
                 return false;
             }
         });
 
         // Aguarda todos os downloads do lote atual
-        await Promise.all(batchPromises);
+        const results = await Promise.all(batchPromises);
+        const successCount = results.filter(r => r).length;
         
         totalDownloaded += batch.length;
         const progress = (totalDownloaded / mp3Urls.length) * 100;
         progressBar.style.width = `${progress}%`;
+        
+        console.log(`Lote ${Math.floor(batchStart / BATCH_SIZE) + 1}: ${successCount}/${batch.length} arquivos baixados com sucesso`);
 
-        // Aguarda 5 segundos antes de iniciar o próximo lote (exceto no último lote)
+        // Aguarda antes de iniciar o próximo lote (exceto no último lote)
         if (batchEnd < mp3Urls.length) {
+            console.log(`Aguardando ${BATCH_DELAY / 1000}s antes do próximo lote...`);
             await new Promise(resolve => setTimeout(resolve, BATCH_DELAY));
         }
     }
+    
+    console.log('Download de todos os MP3s concluído!');
 }
 
 // Wire hamburger menu actions
