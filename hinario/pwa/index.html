@@ -181,10 +181,18 @@
                 </div>
             </div>
 
-            <audio id="hymn-audio" class="w-full mt-4" controls>
-                <source id="audio-source" type="audio/mpeg">
-                Your browser does not support the audio element.
-            </audio>
+            <div class="relative">
+                <audio id="hymn-audio" class="w-full mt-4" controls>
+                    <source id="audio-source" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <div id="audio-loading" class="hidden absolute inset-0 flex items-center justify-center bg-white bg-opacity-75 dark:bg-gray-800 dark:bg-opacity-75 rounded">
+                    <div class="flex items-center gap-2 text-gray-700 dark:text-gray-300">
+                        <i class="fas fa-spinner fa-spin"></i>
+                        <span>Carregando áudio...</span>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <!-- Preview -->

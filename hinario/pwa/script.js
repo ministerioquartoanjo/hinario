@@ -506,19 +506,32 @@ function stopRandomPlaylist() {
 
 function safeAutoplayAudio() {
     if (!audioPlayer) return;
+    const loadingElement = document.getElementById('audio-loading');
+    
     const tryPlay = () => {
         const p = audioPlayer.play();
         if (p && typeof p.catch === 'function') {
             p.catch(() => {});
         }
     };
+    
     // Try immediately; also ensure play after source loads
     const onLoaded = () => {
-        audioPlayer.removeEventListener('loadeddata', onLoaded);
+        if (loadingElement) {
+            loadingElement.classList.add('hidden');
+        }
         tryPlay();
     };
+    
     audioPlayer.addEventListener('loadeddata', onLoaded, { once: true });
-    tryPlay();
+    
+    // Se o áudio já estiver carregado, tenta reproduzir imediatamente
+    if (audioPlayer.readyState >= 2) {
+        if (loadingElement) {
+            loadingElement.classList.add('hidden');
+        }
+        tryPlay();
+    }
 }
 
 function playCurrentInPlaylist(afterLoadCb) {
@@ -633,41 +646,83 @@ function updateFontFamily() {
 }
 
 async function loadHymnAudio(hymnNumber) {
+    const audioElement = document.getElementById('hymn-audio');
+    const loadingElement = document.getElementById('audio-loading');
+    
+    // Para imediatamente o áudio atual
+    try {
+        if (audioElement && !audioElement.paused) {
+            audioElement.pause();
+        }
+        if (audioElement) {
+            audioElement.currentTime = 0;
+        }
+    } catch (e) {
+        // Ignora erros ao parar o áudio
+    }
+    
+    // Mostra o loading
+    if (loadingElement) {
+        loadingElement.classList.remove('hidden');
+    }
+    
     if (!('caches' in window)) {
         // Fallback to direct loading if Cache API not available
-        const audioElement = document.getElementById('hymn-audio');
         audioElement.src = `mp3/${hymnNumber}.mp3`;
+        if (loadingElement) {
+            loadingElement.classList.add('hidden');
+        }
         return;
     }
 
     hymnNumber = hymnNumber + 1;
-    const audioElement = document.getElementById('hymn-audio');
     const sourceElement = document.getElementById('audio-source');
     const mp3Url = `https://raw.githubusercontent.com/ministerioquartoanjo/hinario/refs/heads/desenv/media/${String(hymnNumber).padStart(3, '0')}-piano.mp3`;
 
-    const cache = await caches.open('mp3-cache');
-    const cachedResponse = await cache.match(mp3Url);
+    try {
+        const cache = await caches.open('mp3-cache');
+        const cachedResponse = await cache.match(mp3Url);
 
-    if (cachedResponse) {
-        const cachedDate = new Date(cachedResponse.headers.get('date'));
-        const threeYearsInMs = 3 * 365 * 24 * 60 * 60 * 1000; // 3 anos em milissegundos
-        if (Date.now() - cachedDate.getTime() > threeYearsInMs) {
-            await cache.delete(mp3Url); // Remove o arquivo expirado
-        } else {
-            const blob = await cachedResponse.blob();
-            sourceElement.src = URL.createObjectURL(blob);
-            audioElement.load();
-            return;
+        if (cachedResponse) {
+            const cachedDate = new Date(cachedResponse.headers.get('date'));
+            const threeYearsInMs = 3 * 365 * 24 * 60 * 60 * 1000; // 3 anos em milissegundos
+            if (Date.now() - cachedDate.getTime() > threeYearsInMs) {
+                await cache.delete(mp3Url); // Remove o arquivo expirado
+            } else {
+                const blob = await cachedResponse.blob();
+                sourceElement.src = URL.createObjectURL(blob);
+                audioElement.load();
+                
+                // Esconde o loading quando o áudio estiver pronto
+                audioElement.addEventListener('loadeddata', () => {
+                    if (loadingElement) {
+                        loadingElement.classList.add('hidden');
+                    }
+                }, { once: true });
+                return;
+            }
+        }
+
+        // Se o arquivo não estiver no cache ou tiver expirado, baixa novamente
+        const response = await fetch(mp3Url);
+        if (!response.ok) throw new Error(`Falha ao baixar: ${mp3Url}`);
+        const blob = await response.blob();
+        await cache.put(mp3Url, new Response(blob, { headers: { 'date': new Date().toUTCString() } }));
+        sourceElement.src = URL.createObjectURL(blob);
+        audioElement.load();
+        
+        // Esconde o loading quando o áudio estiver pronto
+        audioElement.addEventListener('loadeddata', () => {
+            if (loadingElement) {
+                loadingElement.classList.add('hidden');
+            }
+        }, { once: true });
+    } catch (error) {
+        console.error('Erro ao carregar áudio:', error);
+        if (loadingElement) {
+            loadingElement.classList.add('hidden');
         }
     }
-
-    // Se o arquivo não estiver no cache ou tiver expirado, baixa novamente
-    const response = await fetch(mp3Url);
-    if (!response.ok) throw new Error(`Falha ao baixar: ${mp3Url}`);
-    const blob = await response.blob();
-    await cache.put(mp3Url, new Response(blob, { headers: { 'date': new Date().toUTCString() } }));
-    sourceElement.src = URL.createObjectURL(blob);
-    audioElement.load();
 }
 
 /**
