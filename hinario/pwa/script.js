@@ -70,6 +70,9 @@ const remoteControlIcon = document.getElementById('remote-control-icon');
 const fsSpeedDownButton = document.getElementById('fs-speed-down');
 const fsSpeedUpButton = document.getElementById('fs-speed-up');
 const fsSpeedLabel = document.getElementById('fs-speed-label');
+const fsAudioPlayButton = document.getElementById('fs-audio-play');
+const fsAudioStopButton = document.getElementById('fs-audio-stop');
+const fsAudioRestartButton = document.getElementById('fs-audio-restart');
 
 // Utility Functions
 function rgbToHex(rgb) {
@@ -409,7 +412,57 @@ function init() {
             saveHymnSpeed(currentHymnIndex, next);
         });
     }
-
+    
+    // Fullscreen audio control buttons
+    console.log('Setting up fs audio buttons:', { fsAudioPlayButton, fsAudioStopButton, fsAudioRestartButton });
+    if (fsAudioPlayButton) {
+        console.log('Adding listener to fsAudioPlayButton');
+        fsAudioPlayButton.addEventListener('click', (e) => {
+            console.log('fsAudioPlayButton CLICKED!');
+            e.preventDefault();
+            if (audioPlayer) {
+                console.log('Playing audio...');
+                audioPlayer.play();
+            } else {
+                console.log('No audioPlayer found');
+            }
+        });
+    } else {
+        console.log('fsAudioPlayButton NOT FOUND');
+    }
+    if (fsAudioStopButton) {
+        console.log('Adding listener to fsAudioStopButton');
+        fsAudioStopButton.addEventListener('click', (e) => {
+            console.log('fsAudioStopButton CLICKED!');
+            e.preventDefault();
+            if (audioPlayer) {
+                console.log('Stopping audio...');
+                audioPlayer.pause();
+                audioPlayer.currentTime = 0;
+            } else {
+                console.log('No audioPlayer found');
+            }
+        });
+    } else {
+        console.log('fsAudioStopButton NOT FOUND');
+    }
+    if (fsAudioRestartButton) {
+        console.log('Adding listener to fsAudioRestartButton');
+        fsAudioRestartButton.addEventListener('click', (e) => {
+            console.log('fsAudioRestartButton CLICKED!');
+            e.preventDefault();
+            if (audioPlayer) {
+                console.log('Restarting audio...');
+                audioPlayer.currentTime = 0;
+                audioPlayer.play();
+            } else {
+                console.log('No audioPlayer found');
+            }
+        });
+    } else {
+        console.log('fsAudioRestartButton NOT FOUND');
+    }
+    
     // Delegated handler so the icon always works even if DOM changes
     document.addEventListener('click', (e) => {
         const target = e.target;
