@@ -1,0 +1,1043 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Controle de Hinos - v2.0</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * { box-sizing: border-box; }
+        
+        body {
+            margin: 0;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Arial, sans-serif;
+            background: #0f172a;
+            color: #f1f5f9;
+            padding: 8px;
+            font-size: 13px;
+            overflow-x: hidden;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 8px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #334155;
+        }
+        
+        .header h1 {
+            font-size: 14px;
+            margin: 0;
+            color: #f1f5f9;
+        }
+        
+        .section {
+            margin-bottom: 8px;
+            background: #1e293b;
+            border-radius: 6px;
+            padding: 8px;
+        }
+        
+        .section-title {
+            font-size: 11px;
+            color: #94a3b8;
+            margin: 0 0 6px 0;
+            text-transform: uppercase;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+        
+        .hymn-input {
+            width: 100%;
+            padding: 6px 8px;
+            border-radius: 4px;
+            border: 1px solid #475569;
+            background: #0f172a;
+            color: #f1f5f9;
+            font-size: 12px;
+            margin-bottom: 4px;
+        }
+        
+        .current-hymn {
+            font-size: 10px;
+            color: #64748b;
+            margin-bottom: 6px;
+            min-height: 12px;
+        }
+        
+        .btn {
+            padding: 4px 8px;
+            border-radius: 4px;
+            border: none;
+            font-size: 11px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.15s;
+        }
+        
+        .btn-primary {
+            background: #dc2626;
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            background: #b91c1c;
+        }
+        
+        .btn-secondary {
+            background: #475569;
+            color: #e2e8f0;
+        }
+        
+        .btn-secondary:hover {
+            background: #64748b;
+        }
+        
+        .btn-small {
+            padding: 2px 6px;
+            font-size: 10px;
+        }
+        
+        .grid {
+            display: grid;
+            gap: 4px;
+        }
+        
+        .grid-2 {
+            grid-template-columns: 1fr 1fr;
+        }
+        
+        .grid-3 {
+            grid-template-columns: auto 1fr auto;
+        }
+        
+        .grid-4 {
+            grid-template-columns: repeat(4, 1fr);
+        }
+        
+        .control-group {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            margin-bottom: 4px;
+        }
+        
+        .control-label {
+            font-size: 10px;
+            color: #94a3b8;
+            min-width: 60px;
+        }
+        
+        .control-value {
+            font-size: 10px;
+            color: #f1f5f9;
+            min-width: 35px;
+            text-align: center;
+            background: #0f172a;
+            padding: 2px 4px;
+            border-radius: 2px;
+        }
+        
+        .compact-select {
+            width: 100%;
+            padding: 3px 6px;
+            border-radius: 3px;
+            border: 1px solid #475569;
+            background: #0f172a;
+            color: #f1f5f9;
+            font-size: 10px;
+        }
+        
+        .color-input {
+            width: 100%;
+            height: 24px;
+            border: 1px solid #475569;
+            border-radius: 3px;
+            background: #0f172a;
+            cursor: pointer;
+        }
+        
+        .suggestions {
+            position: relative;
+        }
+        
+        .help-text {
+            font-size: 9px;
+            color: #64748b;
+            text-align: center;
+            margin-top: 6px;
+        }
+        
+        .collapsible {
+            cursor: pointer;
+            user-select: none;
+        }
+        
+        .collapsible:hover {
+            color: #f1f5f9;
+        }
+        
+        .collapsible-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease;
+        }
+        
+        .collapsible-content.open {
+            max-height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🎵 Controle Remoto</h1>
+    </div>
+    
+    <!-- Seleção de Hino -->
+    <div class="section">
+        <div class="section-title">Hino</div>
+        <div class="current-hymn" id="remote-current"></div>
+        <input id="remote-hymn-input" class="hymn-input" type="text" placeholder="Número ou título..." autocomplete="off" autofocus>
+        <div id="remote-suggestions" class="suggestions"></div>
+        <div class="grid grid-2" style="margin-top: 6px;">
+            <button id="remote-apply" class="btn btn-primary">Aplicar</button>
+            <button id="remote-close" class="btn btn-secondary">Fechar</button>
+        </div>
+    </div>
+    
+    <!-- Navegação -->
+    <div class="section">
+        <div class="section-title">Navegação</div>
+        <div class="grid grid-4">
+            <button id="remote-prev-hymn" class="btn btn-secondary btn-small">⏮ Hino</button>
+            <button id="remote-prev-slide" class="btn btn-secondary btn-small">⏪ Slide</button>
+            <button id="remote-next-slide" class="btn btn-secondary btn-small">Slide ⏩</button>
+            <button id="remote-next-hymn" class="btn btn-secondary btn-small">Hino ⏭</button>
+        </div>
+    </div>
+    
+    <!-- Apresentação -->
+    <div class="section">
+        <div class="section-title">Apresentação</div>
+        <div class="grid grid-2">
+            <button id="remote-complete" class="btn btn-secondary btn-small">Completo</button>
+            <button id="remote-start-presentation" class="btn btn-primary">▶ Iniciar</button>
+        </div>
+        <button id="remote-random-playlist" class="btn btn-secondary" style="width: 100%; margin-top: 4px;">🔀 Playlist Aleatória</button>
+    </div>
+    
+    <!-- Controles de Áudio -->
+    <div class="section">
+        <div class="section-title">🎵 Áudio</div>
+        <div class="grid grid-4" style="margin-bottom: 4px;">
+            <button id="remote-audio-play" class="btn btn-secondary btn-small">▶</button>
+            <button id="remote-audio-pause" class="btn btn-secondary btn-small">⏸</button>
+            <button id="remote-audio-stop" class="btn btn-secondary btn-small">⏹</button>
+            <button id="remote-audio-restart" class="btn btn-secondary btn-small">⏮</button>
+        </div>
+        <div class="control-group">
+            <span class="control-label">Velocidade:</span>
+            <button id="remote-speed-down" class="btn btn-secondary btn-small">🐌</button>
+            <span id="remote-speed-display" class="control-value">1.0x</span>
+            <button id="remote-speed-up" class="btn btn-secondary btn-small">🐰</button>
+        </div>
+    </div>
+    
+    <!-- Formatação (Colapsável) -->
+    <div class="section">
+        <div class="section-title collapsible" onclick="toggleSection('formatting')">⚙️ Formatação</div>
+        <div id="formatting" class="collapsible-content">
+            <div class="control-group">
+                <span class="control-label">Fonte:</span>
+                <button id="remote-font-decrease" class="btn btn-secondary btn-small">-</button>
+                <span id="remote-font-display" class="control-value">2rem</span>
+                <button id="remote-font-increase" class="btn btn-secondary btn-small">+</button>
+            </div>
+            
+            <div class="control-group">
+                <span class="control-label">Linha:</span>
+                <button id="remote-line-height-decrease" class="btn btn-secondary btn-small">-</button>
+                <span id="remote-line-height-display" class="control-value">1.5</span>
+                <button id="remote-line-height-increase" class="btn btn-secondary btn-small">+</button>
+            </div>
+            
+            <div class="control-group">
+                <span class="control-label">Fundo:</span>
+                <button id="remote-bg-toggle" class="btn btn-secondary btn-small" style="flex: 1;">Alternar</button>
+            </div>
+            
+            <div class="control-group">
+                <span class="control-label">Cor:</span>
+                <input id="remote-font-color" type="color" value="#FFFFFF" class="color-input" style="flex: 1;">
+            </div>
+            
+            <div class="control-group">
+                <span class="control-label">Família:</span>
+                <select id="remote-font-selector" class="compact-select" style="flex: 1;">
+                    <option value="Arial">Arial</option>
+                    <option value="Courier New">Courier New</option>
+                    <option value="Georgia">Georgia</option>
+                    <option value="Times New Roman">Times New Roman</option>
+                    <option value="Verdana">Verdana</option>
+                    <option value="Roboto">Roboto</option>
+                    <option value="Open Sans">Open Sans</option>
+                    <option value="Lato">Lato</option>
+                    <option value="Montserrat">Montserrat</option>
+                    <option value="Poppins">Poppins</option>
+                    <option value="Lora">Lora</option>
+                    <option value="Merriweather">Merriweather</option>
+                    <option value="Raleway">Raleway</option>
+                    <option value="Oswald">Oswald</option>
+                    <option value="Ubuntu">Ubuntu</option>
+                    <option value="Dancing Script">Dancing Script</option>
+                    <option value="Playfair Display">Playfair Display</option>
+                    <option value="Source Sans Pro">Source Sans Pro</option>
+                    <option value="Noto Sans">Noto Sans</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    
+    <div class="help-text">Tecla 'r' para abrir · Enter para aplicar · Esc para fechar</div>
+
+    <script>
+        // Toggle collapsible sections
+        function toggleSection(sectionId) {
+            var content = document.getElementById(sectionId);
+            if (content) {
+                content.classList.toggle('open');
+            }
+        }
+        
+        (function() {
+            function getOpener() {
+                return (window.opener && !window.opener.closed) ? window.opener : null;
+            }
+            
+            function getHymnTitles() {
+                var opener = getOpener();
+                if (!opener || !Array.isArray(opener.hymns)) return [];
+                return opener.hymns.map(function(h) {
+                    return h && h.title ? String(h.title) : "";
+                }).filter(function(t) {
+                    return t.length > 0;
+                });
+            }
+            
+            function renderSuggestions(query) {
+                var box = document.getElementById("remote-suggestions");
+                if (!box) return;
+                var text = (query || "").trim().toLowerCase();
+                box.innerHTML = "";
+                if (!text) {
+                    return;
+                }
+                var titles = getHymnTitles();
+                if (!titles.length) return;
+                var matches = titles.filter(function(title) {
+                    return title.toLowerCase().indexOf(text) !== -1;
+                }).slice(0, 10);
+                if (!matches.length) return;
+                var list = document.createElement("div");
+                list.style.position = "absolute";
+                list.style.left = "0";
+                list.style.right = "0";
+                list.style.zIndex = "50";
+                list.style.background = "#111827";
+                list.style.border = "1px solid #4b5563";
+                list.style.borderRadius = "4px";
+                list.style.maxHeight = "180px";
+                list.style.overflowY = "auto";
+                matches.forEach(function(title) {
+                    var item = document.createElement("div");
+                    item.textContent = title;
+                    item.setAttribute("data-title", title);
+                    item.style.padding = "4px 8px";
+                    item.style.cursor = "pointer";
+                    item.style.fontSize = "0.85rem";
+                    item.addEventListener("mouseenter", function() {
+                        item.style.background = "#1f2937";
+                    });
+                    item.addEventListener("mouseleave", function() {
+                        item.style.background = "transparent";
+                    });
+                    list.appendChild(item);
+                });
+                box.appendChild(list);
+            }
+            
+            function syncQuery() {
+                var opener = getOpener();
+                var input = document.getElementById("remote-hymn-input");
+                if (!input || !opener) return;
+                var text = input.value;
+                if (typeof opener.syncHymnQueryFromRemote === "function") {
+                    opener.syncHymnQueryFromRemote(text);
+                }
+                renderSuggestions(text);
+            }
+            
+            function refreshCurrent() {
+                var opener = getOpener();
+                var el = document.getElementById("remote-current");
+                if (!el) return;
+                if (!opener || typeof opener.getCurrentHymnInfo !== "function") {
+                    el.textContent = "";
+                    return;
+                }
+                var info = opener.getCurrentHymnInfo();
+                if (!info) {
+                    el.textContent = "";
+                    return;
+                }
+                var label = "Hino atual: " + info.index + (info.title ? " - " + info.title : "");
+                el.textContent = label;
+            }
+            
+            function applySelection(options) {
+                options = options || {};
+                var input = document.getElementById("remote-hymn-input");
+                if (!input) return;
+                var value = input.value.trim();
+                var opener = getOpener();
+                if (!opener) return;
+                if (value && typeof opener.selectHymnFromTitleOrNumber === "function") {
+                    opener.selectHymnFromTitleOrNumber(value);
+                    if (options.clear) {
+                        input.value = "";
+                    }
+                }
+                refreshCurrent();
+            }
+            
+            function goPrev() {
+                var opener = getOpener();
+                if (!opener) return;
+                if (typeof opener.previousHymn === "function") {
+                    opener.previousHymn();
+                }
+                refreshCurrent();
+            }
+            
+            function goNext() {
+                var opener = getOpener();
+                if (!opener) return;
+                if (typeof opener.nextHymn === "function") {
+                    opener.nextHymn();
+                }
+                refreshCurrent();
+            }
+            
+            // Slide navigation functions
+            function nextSlide() {
+                var opener = getOpener();
+                if (!opener) return;
+                if (typeof opener.nextSlide === "function") {
+                    opener.nextSlide();
+                }
+            }
+            
+            function previousSlide() {
+                var opener = getOpener();
+                if (!opener) return;
+                if (typeof opener.previousSlide === "function") {
+                    opener.previousSlide();
+                }
+            }
+            
+            // Presentation control functions
+            function toggleComplete() {
+                var opener = getOpener();
+                if (!opener) return;
+                if (typeof opener.toggleCheckboxCompleto === "function") {
+                    opener.toggleCheckboxCompleto();
+                }
+                updateCompleteButton();
+            }
+            
+            function startPresentation() {
+                var opener = getOpener();
+                if (!opener) return;
+                if (typeof opener.startPresentation === "function") {
+                    opener.startPresentation();
+                }
+            }
+            
+            function startRandomPlaylist() {
+                var opener = getOpener();
+                if (!opener) return;
+                if (typeof opener.startRandomPlaylist === "function") {
+                    opener.startRandomPlaylist();
+                }
+            }
+            
+            // Audio control functions
+            function playAudio() {
+                var opener = getOpener();
+                if (!opener) {
+                    console.log("Remote control: No opener found for audio play");
+                    return;
+                }
+                var audioPlayer = opener.document.getElementById('hymn-audio');
+                if (!audioPlayer) {
+                    console.log("Remote control: Audio player not found");
+                    return;
+                }
+                try {
+                    console.log("Remote control: Playing audio");
+                    audioPlayer.play();
+                    setTimeout(updateAudioStatus, 100);
+                } catch (e) {
+                    console.log("Error playing audio:", e);
+                }
+            }
+            
+            function pauseAudio() {
+                var opener = getOpener();
+                if (!opener) {
+                    console.log("Remote control: No opener found for audio pause");
+                    return;
+                }
+                var audioPlayer = opener.document.getElementById('hymn-audio');
+                if (!audioPlayer) {
+                    console.log("Remote control: Audio player not found");
+                    return;
+                }
+                try {
+                    console.log("Remote control: Pausing audio");
+                    audioPlayer.pause();
+                    setTimeout(updateAudioStatus, 100);
+                } catch (e) {
+                    console.log("Error pausing audio:", e);
+                }
+            }
+            
+            function stopAudio() {
+                var opener = getOpener();
+                if (!opener) {
+                    console.log("Remote control: No opener found for audio stop");
+                    return;
+                }
+                var audioPlayer = opener.document.getElementById('hymn-audio');
+                if (!audioPlayer) {
+                    console.log("Remote control: Audio player not found");
+                    return;
+                }
+                try {
+                    console.log("Remote control: Stopping audio");
+                    audioPlayer.pause();
+                    audioPlayer.currentTime = 0;
+                    setTimeout(updateAudioStatus, 100);
+                } catch (e) {
+                    console.log("Error stopping audio:", e);
+                }
+            }
+            
+            function restartAudio() {
+                var opener = getOpener();
+                if (!opener) {
+                    console.log("Remote control: No opener found for audio restart");
+                    return;
+                }
+                var audioPlayer = opener.document.getElementById('hymn-audio');
+                if (!audioPlayer) {
+                    console.log("Remote control: Audio player not found");
+                    return;
+                }
+                try {
+                    console.log("Remote control: Restarting audio");
+                    audioPlayer.currentTime = 0;
+                    audioPlayer.play();
+                    setTimeout(updateAudioStatus, 100);
+                } catch (e) {
+                    console.log("Error restarting audio:", e);
+                }
+            }
+            
+            // Audio speed controls
+            function increaseSpeed() {
+                var opener = getOpener();
+                if (!opener) return;
+                
+                var speedUpBtn = opener.document.getElementById('fs-speed-up');
+                if (speedUpBtn) {
+                    speedUpBtn.click();
+                    setTimeout(updateSpeedDisplay, 100);
+                }
+            }
+            
+            function decreaseSpeed() {
+                var opener = getOpener();
+                if (!opener) return;
+                
+                var speedDownBtn = opener.document.getElementById('fs-speed-down');
+                if (speedDownBtn) {
+                    speedDownBtn.click();
+                    setTimeout(updateSpeedDisplay, 100);
+                }
+            }
+            
+            // Font size controls - Fixed approach
+            function increaseFontSize() {
+                var opener = getOpener();
+                if (!opener) return;
+                
+                // Direct approach: trigger the same event as the main window buttons
+                var incBtn = opener.document.getElementById('font-increase');
+                if (incBtn) {
+                    incBtn.click();
+                    setTimeout(updateFontDisplay, 100);
+                }
+            }
+            
+            function decreaseFontSize() {
+                var opener = getOpener();
+                if (!opener) return;
+                
+                // Direct approach: trigger the same event as the main window buttons
+                var decBtn = opener.document.getElementById('font-decrease');
+                if (decBtn) {
+                    decBtn.click();
+                    setTimeout(updateFontDisplay, 100);
+                }
+            }
+            
+            // Line height controls - Fixed approach
+            function increaseLineHeight() {
+                var opener = getOpener();
+                if (!opener) return;
+                
+                // Direct approach: trigger the same event as the main window buttons
+                var incBtn = opener.document.getElementById('line-height-increase');
+                if (incBtn) {
+                    incBtn.click();
+                    setTimeout(updateLineHeightDisplay, 100);
+                }
+            }
+            
+            function decreaseLineHeight() {
+                var opener = getOpener();
+                if (!opener) return;
+                
+                // Direct approach: trigger the same event as the main window buttons
+                var decBtn = opener.document.getElementById('line-height-decrease');
+                if (decBtn) {
+                    decBtn.click();
+                    setTimeout(updateLineHeightDisplay, 100);
+                }
+            }
+            
+            // Background toggle
+            function toggleBackground() {
+                var opener = getOpener();
+                if (!opener) return;
+                if (typeof opener.updateBackground === "function") {
+                    opener.updateBackground();
+                }
+            }
+            
+            // Font color change
+            function changeFontColor() {
+                var opener = getOpener();
+                var colorInput = document.getElementById("remote-font-color");
+                if (!opener || !colorInput) return;
+                
+                var fontColorInput = opener.document.getElementById("font-color");
+                if (fontColorInput) {
+                    fontColorInput.value = colorInput.value;
+                    if (typeof opener.updateFontColor === "function") {
+                        opener.updateFontColor();
+                    }
+                }
+            }
+            
+            // Font family change
+            function changeFontFamily() {
+                var opener = getOpener();
+                var fontSelector = document.getElementById("remote-font-selector");
+                if (!opener || !fontSelector) return;
+                
+                var mainFontSelector = opener.document.getElementById("font-selector");
+                if (mainFontSelector) {
+                    mainFontSelector.value = fontSelector.value;
+                    if (typeof opener.updateFontFamily === "function") {
+                        opener.updateFontFamily();
+                    }
+                }
+            }
+            
+            // Update display functions
+            function updateCompleteButton() {
+                var opener = getOpener();
+                var btn = document.getElementById("remote-complete");
+                if (!opener || !btn) return;
+                
+                var checkbox = opener.document.getElementById("complete-checkbox");
+                if (checkbox) {
+                    btn.style.background = checkbox.checked ? "#ea580c" : "#374151";
+                    btn.style.color = checkbox.checked ? "white" : "#e5e7eb";
+                }
+            }
+            
+            function updateFontDisplay() {
+                var opener = getOpener();
+                var display = document.getElementById("remote-font-display");
+                if (!opener || !display) return;
+                
+                // Get value from the main window display
+                var mainDisplay = opener.document.getElementById('font-size-display');
+                if (mainDisplay && mainDisplay.textContent) {
+                    display.textContent = mainDisplay.textContent;
+                } else if (typeof opener.fontSize !== "undefined") {
+                    display.textContent = (opener.fontSize * 0.25).toFixed(1) + "rem";
+                } else {
+                    display.textContent = "2.0rem";
+                }
+            }
+            
+            function updateLineHeightDisplay() {
+                var opener = getOpener();
+                var display = document.getElementById("remote-line-height-display");
+                if (!opener || !display) return;
+                
+                // Get value from the main window display
+                var mainDisplay = opener.document.getElementById('line-height-display');
+                if (mainDisplay && mainDisplay.textContent) {
+                    display.textContent = mainDisplay.textContent;
+                } else if (typeof opener.lineHeight !== "undefined") {
+                    display.textContent = opener.lineHeight.toFixed(1);
+                } else {
+                    display.textContent = "1.0";
+                }
+            }
+            
+            function updateSpeedDisplay() {
+                var opener = getOpener();
+                var display = document.getElementById("remote-speed-display");
+                if (!opener || !display) return;
+                
+                // Get value from the main window display
+                var mainDisplay = opener.document.getElementById('fs-speed-label');
+                if (mainDisplay && mainDisplay.textContent) {
+                    display.textContent = mainDisplay.textContent;
+                } else {
+                    // Fallback: get directly from audio player
+                    var audioPlayer = opener.document.getElementById('hymn-audio');
+                    if (audioPlayer && audioPlayer.playbackRate) {
+                        display.textContent = audioPlayer.playbackRate.toFixed(1) + "x";
+                    } else {
+                        display.textContent = "1.0x";
+                    }
+                }
+            }
+            
+            function updateAudioStatus() {
+                var opener = getOpener();
+                if (!opener) return;
+                
+                var audioPlayer = opener.document.getElementById('hymn-audio');
+                var playBtn = document.getElementById("remote-audio-play");
+                var pauseBtn = document.getElementById("remote-audio-pause");
+                
+                if (!audioPlayer || !playBtn || !pauseBtn) return;
+                
+                // Update button states based on audio status
+                if (audioPlayer.paused) {
+                    playBtn.style.background = "#dc2626";  // Red for play
+                    playBtn.style.color = "white";
+                    pauseBtn.style.background = "#475569";  // Gray for pause
+                    pauseBtn.style.color = "#e2e8f0";
+                } else {
+                    playBtn.style.background = "#475569";   // Gray for play
+                    playBtn.style.color = "#e2e8f0";
+                    pauseBtn.style.background = "#dc2626";  // Red for pause
+                    pauseBtn.style.color = "white";
+                }
+            }
+            
+            function syncFormattingControls() {
+                var opener = getOpener();
+                if (!opener) return;
+                
+                // Sync font color
+                var colorInput = document.getElementById("remote-font-color");
+                var mainColorInput = opener.document.getElementById("font-color");
+                if (colorInput && mainColorInput) {
+                    colorInput.value = mainColorInput.value;
+                }
+                
+                // Sync font family
+                var fontSelector = document.getElementById("remote-font-selector");
+                var mainFontSelector = opener.document.getElementById("font-selector");
+                if (fontSelector && mainFontSelector) {
+                    fontSelector.value = mainFontSelector.value;
+                }
+                
+                updateCompleteButton();
+                updateFontDisplay();
+                updateLineHeightDisplay();
+                updateSpeedDisplay();
+                updateAudioStatus();
+            }
+            
+            window.addEventListener("DOMContentLoaded", function() {
+                var input = document.getElementById("remote-hymn-input");
+                var btnApply = document.getElementById("remote-apply");
+                var btnClose = document.getElementById("remote-close");
+                var btnPrev = document.getElementById("remote-prev");
+                var btnNext = document.getElementById("remote-next");
+                var suggestionsBox = document.getElementById("remote-suggestions");
+                
+                refreshCurrent();
+                
+                if (input) {
+                    input.addEventListener("input", function() {
+                        syncQuery();
+                    });
+                    input.addEventListener("keydown", function(e) {
+                        if (e.key === "Enter") {
+                            e.preventDefault();
+                            if (e.ctrlKey || e.metaKey) {
+                                applySelection({clear: true});
+                            } else {
+                                applySelection({clear: false});
+                            }
+                        }
+                    });
+                }
+                
+                if (suggestionsBox) {
+                    suggestionsBox.addEventListener("click", function(e) {
+                        var target = e.target;
+                        var title = target && target.getAttribute ? target.getAttribute("data-title") : null;
+                        if (!title) return;
+                        var input = document.getElementById("remote-hymn-input");
+                        if (input) {
+                            input.value = title;
+                        }
+                        applySelection({clear: false});
+                        suggestionsBox.innerHTML = "";
+                    });
+                }
+                
+                if (btnApply) {
+                    btnApply.addEventListener("click", function(e) {
+                        e.preventDefault();
+                        applySelection({clear: false});
+                    });
+                }
+                
+                if (btnClose) {
+                    btnClose.addEventListener("click", function(e) {
+                        e.preventDefault();
+                        window.close();
+                    });
+                }
+                
+                if (btnPrev) {
+                    btnPrev.addEventListener("click", function(e) {
+                        e.preventDefault();
+                        goPrev();
+                    });
+                }
+                
+                if (btnNext) {
+                    btnNext.addEventListener("click", function(e) {
+                        e.preventDefault();
+                        goNext();
+                    });
+                }
+                
+                // Slide navigation event listeners
+                var btnPrevSlide = document.getElementById("remote-prev-slide");
+                var btnNextSlide = document.getElementById("remote-next-slide");
+                var btnPrevHymn = document.getElementById("remote-prev-hymn");
+                var btnNextHymn = document.getElementById("remote-next-hymn");
+                
+                if (btnPrevSlide) {
+                    btnPrevSlide.addEventListener("click", function(e) {
+                        e.preventDefault();
+                        previousSlide();
+                    });
+                }
+                
+                if (btnNextSlide) {
+                    btnNextSlide.addEventListener("click", function(e) {
+                        e.preventDefault();
+                        nextSlide();
+                    });
+                }
+                
+                if (btnPrevHymn) {
+                    btnPrevHymn.addEventListener("click", function(e) {
+                        e.preventDefault();
+                        goPrev();
+                    });
+                }
+                
+                if (btnNextHymn) {
+                    btnNextHymn.addEventListener("click", function(e) {
+                        e.preventDefault();
+                        goNext();
+                    });
+                }
+                
+                // Presentation control event listeners
+                var btnComplete = document.getElementById("remote-complete");
+                var btnStartPresentation = document.getElementById("remote-start-presentation");
+                var btnRandomPlaylist = document.getElementById("remote-random-playlist");
+                
+                if (btnComplete) {
+                    btnComplete.addEventListener("click", function(e) {
+                        e.preventDefault();
+                        toggleComplete();
+                    });
+                }
+                
+                if (btnStartPresentation) {
+                    btnStartPresentation.addEventListener("click", function(e) {
+                        e.preventDefault();
+                        startPresentation();
+                    });
+                }
+                
+                if (btnRandomPlaylist) {
+                    btnRandomPlaylist.addEventListener("click", function(e) {
+                        e.preventDefault();
+                        startRandomPlaylist();
+                    });
+                }
+                
+                // Audio control event listeners
+                var btnAudioPlay = document.getElementById("remote-audio-play");
+                var btnAudioPause = document.getElementById("remote-audio-pause");
+                var btnAudioStop = document.getElementById("remote-audio-stop");
+                var btnAudioRestart = document.getElementById("remote-audio-restart");
+                var btnSpeedUp = document.getElementById("remote-speed-up");
+                var btnSpeedDown = document.getElementById("remote-speed-down");
+                
+                if (btnAudioPlay) {
+                    btnAudioPlay.addEventListener("click", function(e) {
+                        e.preventDefault();
+                        playAudio();
+                    });
+                }
+                
+                if (btnAudioPause) {
+                    btnAudioPause.addEventListener("click", function(e) {
+                        e.preventDefault();
+                        pauseAudio();
+                    });
+                }
+                
+                if (btnAudioStop) {
+                    btnAudioStop.addEventListener("click", function(e) {
+                        e.preventDefault();
+                        stopAudio();
+                    });
+                }
+                
+                if (btnAudioRestart) {
+                    btnAudioRestart.addEventListener("click", function(e) {
+                        e.preventDefault();
+                        restartAudio();
+                    });
+                }
+                
+                if (btnSpeedUp) {
+                    btnSpeedUp.addEventListener("click", function(e) {
+                        e.preventDefault();
+                        increaseSpeed();
+                    });
+                }
+                
+                if (btnSpeedDown) {
+                    btnSpeedDown.addEventListener("click", function(e) {
+                        e.preventDefault();
+                        decreaseSpeed();
+                    });
+                }
+                
+                // Font size controls
+                var btnFontIncrease = document.getElementById("remote-font-increase");
+                var btnFontDecrease = document.getElementById("remote-font-decrease");
+                
+                if (btnFontIncrease) {
+                    btnFontIncrease.addEventListener("click", function(e) {
+                        e.preventDefault();
+                        increaseFontSize();
+                    });
+                }
+                
+                if (btnFontDecrease) {
+                    btnFontDecrease.addEventListener("click", function(e) {
+                        e.preventDefault();
+                        decreaseFontSize();
+                    });
+                }
+                
+                // Line height controls
+                var btnLineHeightIncrease = document.getElementById("remote-line-height-increase");
+                var btnLineHeightDecrease = document.getElementById("remote-line-height-decrease");
+                
+                if (btnLineHeightIncrease) {
+                    btnLineHeightIncrease.addEventListener("click", function(e) {
+                        e.preventDefault();
+                        increaseLineHeight();
+                    });
+                }
+                
+                if (btnLineHeightDecrease) {
+                    btnLineHeightDecrease.addEventListener("click", function(e) {
+                        e.preventDefault();
+                        decreaseLineHeight();
+                    });
+                }
+                
+                // Background toggle
+                var btnBgToggle = document.getElementById("remote-bg-toggle");
+                if (btnBgToggle) {
+                    btnBgToggle.addEventListener("click", function(e) {
+                        e.preventDefault();
+                        toggleBackground();
+                    });
+                }
+                
+                // Font color input
+                var fontColorInput = document.getElementById("remote-font-color");
+                if (fontColorInput) {
+                    fontColorInput.addEventListener("input", function(e) {
+                        changeFontColor();
+                    });
+                }
+                
+                // Font selector
+                var fontSelector = document.getElementById("remote-font-selector");
+                if (fontSelector) {
+                    fontSelector.addEventListener("change", function(e) {
+                        changeFontFamily();
+                    });
+                }
+                
+                // Sync controls with main window
+                syncFormattingControls();
+                
+                // Periodic sync to keep controls updated
+                setInterval(function() {
+                    syncFormattingControls();
+                }, 500);
+                
+                setTimeout(function() {
+                    if (input) input.focus();
+                }, 50);
+            });
+            
+            window.addEventListener("keydown", function(e) {
+                if (e.key === "Escape") {
+                    e.preventDefault();
+                    window.close();
+                }
+            });
+        })();
+    </script>
+</body>
+</html>

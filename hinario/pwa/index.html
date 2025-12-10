@@ -78,7 +78,7 @@
 
         <!-- Controls and Hymn Selection -->
         <div class="bg-white dark:bg-gray-800 p-4 rounded-lg shadow-lg w-full">
-            <h1 class="text-lg text-orange-dark font-bold mb-4 text-center relative relative">Hinário MQAAF <sup class="version" id="version">25.10.30.2</sup><i class="fas fa-images ml-2 cursor-pointer" id="slideshow-icon" title="Mostrar slides de fundo"></i><i class="fas fa-bars ml-2 cursor-pointer" id="menu-icon" title="Menu"></i><i class="fas fa-random ml-2 cursor-pointer" id="playlist-icon" title="Reproduzir playlist aleatória"></i><i class="fas fa-stop ml-2 cursor-pointer hidden" id="playlist-stop-icon" title="Parar playlist"></i>
+            <h1 class="text-lg text-orange-dark font-bold mb-4 text-center relative relative">Hinário MQAAF <sup class="version" id="version">25.11.19.1</sup><i class="fas fa-images ml-2 cursor-pointer" id="slideshow-icon" title="Mostrar slides de fundo"></i><i class="fas fa-bars ml-2 cursor-pointer" id="menu-icon" title="Menu"></i><i class="fas fa-random ml-2 cursor-pointer" id="playlist-icon" title="Reproduzir playlist aleatória"></i><i class="fas fa-stop ml-2 cursor-pointer hidden" id="playlist-stop-icon" title="Parar playlist"></i><i class="fas fa-mobile-alt ml-2 cursor-pointer" id="remote-control-icon" title="Abrir controle remoto de hinos"></i>
                 <!-- Dropdown Menu -->
                 <div id="main-menu" class="dropdown-menu hidden">
                     <button id="menu-info" class="dropdown-item">
@@ -257,6 +257,13 @@
                     <button id="fs-stop-playlist" title="Parar Playlist" aria-label="Parar Playlist" class="bg-gray-700 hover:bg-gray-800 text-white rounded-full p-2 shadow-custom hidden">
                         <i class="fas fa-stop"></i>
                     </button>
+                    <div class="flex flex-col items-end gap-1 mt-4 text-xs text-white">
+                        <span id="fs-speed-label" class="px-2 py-1 bg-black bg-opacity-60 rounded">1.0x</span>
+                        <div class="flex gap-1">
+                            <button id="fs-speed-down" title="Diminuir velocidade do áudio" aria-label="Diminuir velocidade do áudio" class="bg-gray-700 hover:bg-gray-800 text-white rounded-full px-2 py-1 shadow-custom">🐌</button>
+                            <button id="fs-speed-up" title="Aumentar velocidade do áudio" aria-label="Aumentar velocidade do áudio" class="bg-gray-700 hover:bg-gray-800 text-white rounded-full px-2 py-1 shadow-custom">🐰</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

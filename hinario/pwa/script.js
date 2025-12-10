@@ -66,6 +66,10 @@ const playlistIcon = document.getElementById('playlist-icon');
 const playlistStopIcon = document.getElementById('playlist-stop-icon');
 const fsNextHymnButton = document.getElementById('fs-next-hymn');
 const fsStopPlaylistButton = document.getElementById('fs-stop-playlist');
+const remoteControlIcon = document.getElementById('remote-control-icon');
+const fsSpeedDownButton = document.getElementById('fs-speed-down');
+const fsSpeedUpButton = document.getElementById('fs-speed-up');
+const fsSpeedLabel = document.getElementById('fs-speed-label');
 
 // Utility Functions
 function rgbToHex(rgb) {
@@ -75,6 +79,49 @@ function rgbToHex(rgb) {
     // Extract RGB values from rgb(r,g,b) string
     const [r, g, b] = rgb.match(/\d+/g).map(Number);
     return '#' + ((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1);
+}
+
+function updateAudioSpeedLabel() {
+    if (!audioPlayer || !fsSpeedLabel) return;
+    const rate = audioPlayer.playbackRate || 1;
+    fsSpeedLabel.textContent = `${rate.toFixed(1)}x`;
+}
+
+// Audio speed management functions
+function getHymnSpeed(hymnIndex) {
+    // Get saved speed from localStorage or use hymn's default speed
+    const savedSpeeds = JSON.parse(localStorage.getItem('hymnSpeeds') || '{}');
+    const hymnId = `hymn_${hymnIndex}`;
+    
+    if (savedSpeeds[hymnId] !== undefined) {
+        return savedSpeeds[hymnId];
+    }
+    
+    // Use hymn's default speed property or fallback to 1.0
+    if (hymns[hymnIndex] && hymns[hymnIndex].speed !== undefined) {
+        return hymns[hymnIndex].speed;
+    }
+    
+    return 1.0;
+}
+
+function saveHymnSpeed(hymnIndex, speed) {
+    // Save speed for specific hymn in localStorage
+    const savedSpeeds = JSON.parse(localStorage.getItem('hymnSpeeds') || '{}');
+    const hymnId = `hymn_${hymnIndex}`;
+    savedSpeeds[hymnId] = speed;
+    localStorage.setItem('hymnSpeeds', JSON.stringify(savedSpeeds));
+    console.log(`Saved speed ${speed}x for hymn ${hymnIndex + 1}`);
+}
+
+function applyHymnSpeed(hymnIndex) {
+    // Apply the appropriate speed for the current hymn
+    if (!audioPlayer) return;
+    
+    const speed = getHymnSpeed(hymnIndex);
+    audioPlayer.playbackRate = speed;
+    updateAudioSpeedLabel();
+    console.log(`Applied speed ${speed}x for hymn ${hymnIndex + 1}`);
 }
 
 function adjustLineHeight(increment) {
@@ -88,6 +135,15 @@ function adjustLineHeight(increment) {
 
 // Event Handlers
 function handleKeyPress(e) {
+    console.log('KEYDOWN global:', e.key, 'alt=', e.altKey);
+
+    // Simple global shortcut: plain 'r' opens the remote control just like the header icon
+    if (e.key === 'r' && !e.altKey) {
+        e.preventDefault();
+        openRemoteControlWindow();
+        return;
+    }
+
     switch (e.key) {
         case "ArrowRight":
         case " ":
@@ -180,13 +236,8 @@ function init() {
     });
 
     $("#hymn-select").result(function (event, data, formatted) {
-        const selectedHymn = hymns.find(hymn => hymn.title === formatted);
-        if (selectedHymn) {
-            currentHymnIndex = hymns.indexOf(selectedHymn);
-            slides = createSlides(selectedHymn);
-            currentSlideIndex = 0;
-            updatePreview();
-            loadHymnAudio(currentHymnIndex);
+        if (formatted) {
+            selectHymnFromTitleOrNumber(formatted);
         }
     });
 
@@ -320,6 +371,56 @@ function init() {
         });
     }
 
+    // Fullscreen audio speed controls (10% steps between 0.5x and 2.0x)
+    if (fsSpeedDownButton || fsSpeedUpButton) {
+        // Initialize label from current playback rate
+        console.log('Initializing fullscreen speed controls');
+        updateAudioSpeedLabel();
+    }
+    if (fsSpeedDownButton) {
+        fsSpeedDownButton.addEventListener('click', (e) => {
+            e.preventDefault();
+            if (!audioPlayer) {
+                console.warn('fs-speed-down clicked but audioPlayer not found');
+                return;
+            }
+            const current = audioPlayer.playbackRate || 1;
+            const next = Math.max(0.5, Math.round((current - 0.1) * 10) / 10);
+            audioPlayer.playbackRate = next;
+            console.log('fs-speed-down: playbackRate ->', next);
+            updateAudioSpeedLabel();
+            // Save the new speed for current hymn
+            saveHymnSpeed(currentHymnIndex, next);
+        });
+    }
+    if (fsSpeedUpButton) {
+        fsSpeedUpButton.addEventListener('click', (e) => {
+            e.preventDefault();
+            if (!audioPlayer) {
+                console.warn('fs-speed-up clicked but audioPlayer not found');
+                return;
+            }
+            const current = audioPlayer.playbackRate || 1;
+            const next = Math.min(2.0, Math.round((current + 0.1) * 10) / 10);
+            audioPlayer.playbackRate = next;
+            console.log('fs-speed-up: playbackRate ->', next);
+            updateAudioSpeedLabel();
+            // Save the new speed for current hymn
+            saveHymnSpeed(currentHymnIndex, next);
+        });
+    }
+
+    // Delegated handler so the icon always works even if DOM changes
+    document.addEventListener('click', (e) => {
+        const target = e.target;
+        if (!target) return;
+        const icon = target.closest && target.closest('#remote-control-icon');
+        if (icon) {
+            e.preventDefault();
+            openRemoteControlWindow();
+        }
+    });
+
     // Auto-advance when audio ends in playlist mode
     if (audioPlayer) {
         audioPlayer.addEventListener('ended', () => {
@@ -368,6 +469,76 @@ function changeCheckboxStateCompleto() {
     }
     updateSlides();
     updatePreview();
+}
+
+// Shared hymn selection logic so it can be reused by autocomplete and remote control popup
+function selectHymnFromTitleOrNumber(query) {
+    if (!Array.isArray(hymns) || hymns.length === 0) return;
+
+    const trimmed = String(query || '').trim();
+    if (!trimmed) return;
+
+    let selectedHymn = null;
+
+    // Try number first (1-based index)
+    const asNumber = parseInt(trimmed, 10);
+    if (!Number.isNaN(asNumber) && asNumber >= 1 && asNumber <= hymns.length) {
+        selectedHymn = hymns[asNumber - 1];
+    }
+
+    // Fallback to title match
+    if (!selectedHymn) {
+        const lower = trimmed.toLowerCase();
+        selectedHymn = hymns.find(h => h.title && h.title.toLowerCase() === lower);
+    }
+
+    if (!selectedHymn) return;
+
+    currentHymnIndex = hymns.indexOf(selectedHymn);
+    if (currentHymnIndex < 0) return;
+
+    const input = document.getElementById('hymn-select');
+    if (input) {
+        input.value = selectedHymn.title;
+    }
+
+    currentSlideIndex = 0;
+    updateSlides();
+    updatePreview();
+    loadHymnAudio(currentHymnIndex);
+}
+
+// Allow remote popup to drive the same autocomplete as the main hymn-select
+function syncHymnQueryFromRemote(query) {
+    const input = document.getElementById('hymn-select');
+    if (!input) return;
+    const value = String(query ?? '');
+    input.value = value;
+
+    // Fire native events so any listeners (including jQuery autocomplete) react
+    input.dispatchEvent(new Event('input', { bubbles: true }));
+    input.dispatchEvent(new Event('change', { bubbles: true }));
+
+    // Notify jQuery autocomplete if present
+    if (typeof $ !== 'undefined' && window.jQuery && window.jQuery.Event && $("#hymn-select").length) {
+        const e = jQuery.Event('keyup');
+        // Use keycode for a regular character to make the plugin re-query
+        e.which = 82; // 'r' keycode as generic non-control key
+        $("#hymn-select").trigger(e);
+    }
+}
+
+// Expose current hymn info so the remote control popup can display it
+function getCurrentHymnInfo() {
+    if (!Array.isArray(hymns) || hymns.length === 0) {
+        return null;
+    }
+    const index = Math.max(0, Math.min(currentHymnIndex, hymns.length - 1));
+    const hymn = hymns[index];
+    return {
+        index: index + 1,
+        title: hymn && hymn.title ? hymn.title : ''
+    };
 }
 
 function updateSlides() {
@@ -707,6 +878,10 @@ async function loadHymnAudio(hymnNumber) {
         if (loadingElement) {
             loadingElement.classList.add('hidden');
         }
+        // Apply hymn speed for fallback loading
+        audioElement.addEventListener('loadeddata', () => {
+            applyHymnSpeed(hymnNumber);
+        }, { once: true });
         return;
     }
 
@@ -733,6 +908,8 @@ async function loadHymnAudio(hymnNumber) {
                     if (loadingElement) {
                         loadingElement.classList.add('hidden');
                     }
+                    // Apply hymn speed after audio is loaded
+                    applyHymnSpeed(hymnNumber - 1);
                 }, { once: true });
                 return;
             }
@@ -745,12 +922,14 @@ async function loadHymnAudio(hymnNumber) {
         await cache.put(mp3Url, new Response(blob, { headers: { 'date': new Date().toUTCString() } }));
         sourceElement.src = URL.createObjectURL(blob);
         audioElement.load();
-        
+        updateAudioSpeedLabel();
         // Esconde o loading quando o áudio estiver pronto
         audioElement.addEventListener('loadeddata', () => {
             if (loadingElement) {
                 loadingElement.classList.add('hidden');
             }
+            // Apply hymn speed after audio is loaded
+            applyHymnSpeed(hymnNumber - 1);
         }, { once: true });
     } catch (error) {
         console.error('Erro ao carregar áudio:', error);
@@ -1201,6 +1380,38 @@ function clearHymnInput() {
         $("#hymn-select").trigger(e);
     }
     input.focus();
+}
+
+let remoteControlWindow = null;
+
+function openRemoteControlWindow() {
+    console.log('openRemoteControlWindow invoked');
+    // Reuse existing window if still open
+    if (remoteControlWindow && !remoteControlWindow.closed) {
+        remoteControlWindow.focus();
+        return;
+    }
+
+    const width = 380;
+    const height = 520;
+    const left = window.screenX + Math.max(0, window.innerWidth - width - 40);
+    const top = window.screenY + 80;
+
+    // Try to open with absolute path first, then relative
+    const baseUrl = window.location.origin + window.location.pathname.replace(/\/[^\/]*$/, '/');
+    const remoteControlUrl = baseUrl + 'remote-control.html?v=' + Date.now();
+    
+    console.log('Trying to open:', remoteControlUrl);
+    
+    remoteControlWindow = window.open(remoteControlUrl, 'hymnRemoteControl', `width=${width},height=${height},left=${left},top=${top},resizable=yes,scrollbars=no`);
+    
+    if (!remoteControlWindow) {
+        console.error('Failed to open remote control window - popup may be blocked');
+        alert('Não foi possível abrir o controle remoto. Verifique se os pop-ups estão permitidos para este site.');
+        return;
+    }
+    
+    console.log('Remote control window opened successfully');
 }
 
 document.addEventListener('click', (event) => {

@@ -4,7 +4,7 @@
   "scripts": {
     "build": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --minify",
     "dev": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
-    "predeploy": "npm run build && rm -rf deploy && mkdir -p deploy && cp -r index.html app-slides1.html service-worker.js manifest.json styles.css hinos.js script.js .htaccess icons js dist deploy/ && cp icons/icon-192x192.png deploy/favicon.ico",
+    "predeploy": "npm run build && rm -rf deploy && mkdir -p deploy && cp -r index.html remote-control.html app-slides1.html service-worker.js manifest.json styles.css hinos.js script.js .htaccess icons js dist deploy/ && cp icons/icon-192x192.png deploy/favicon.ico",
     "deploy:surge": "bash surge.sh",
     "deploy:rsync": "rsync -av deploy/* af_hostoo:/home/zjpyv5vi/public_html/hinario_pwa"
   },
@@ -13,5 +13,6 @@
     "postcss": "^8.4.31",
     "tailwindcss": "^3.3.3",
     "gh-pages": "^6.2.0"
-  }
+  },
+  "packageManager": "pnpm@10.17.1+sha512.17c560fca4867ae9473a3899ad84a88334914f379be46d455cbf92e5cf4b39d34985d452d2583baf19967fa76cb5c17bc9e245529d0b98745721aa7200ecaf7a"
 }
