@@ -200,7 +200,7 @@
         <div id="remote-suggestions" class="suggestions"></div>
         <div class="grid grid-2" style="margin-top: 6px;">
             <button id="remote-apply" class="btn btn-primary">Aplicar</button>
-            <button id="remote-close" class="btn btn-secondary">Fechar</button>
+            <button id="remote-close" class="btn btn-secondary">Fechar Remoto</button>
         </div>
     </div>
     
@@ -218,11 +218,17 @@
     <!-- Apresentação -->
     <div class="section">
         <div class="section-title">Apresentação</div>
-        <div class="grid grid-2">
+        <div class="grid grid-3">
             <button id="remote-complete" class="btn btn-secondary btn-small">Completo</button>
-            <button id="remote-start-presentation" class="btn btn-primary">▶ Iniciar</button>
+            <button id="remote-start-presentation" class="btn btn-primary btn-small">▶ Iniciar</button>
+            <button id="remote-stop-presentation" class="btn btn-secondary btn-small">⏹ Parar</button>
         </div>
-        <button id="remote-random-playlist" class="btn btn-secondary" style="width: 100%; margin-top: 4px;">🔀 Playlist Aleatória</button>
+        <div class="grid grid-2" style="gap: 4px; margin-top: 4px;">
+            <button id="remote-random-playlist" class="btn btn-secondary">🔀 Playlist Aleatória</button>
+            <button id="remote-slideshow" class="btn btn-secondary" title="Mostrar slides de fundo">
+                <i class="fas fa-images"></i> Slideshow
+            </button>
+        </div>
     </div>
     
     <!-- Controles de Áudio -->
@@ -462,11 +468,55 @@
                 }
             }
             
+            function stopPresentation() {
+                var opener = getOpener();
+                if (!opener) return;
+                if (typeof opener.exitPresentation === "function") {
+                    opener.exitPresentation();
+                }
+            }
+            
             function startRandomPlaylist() {
                 var opener = getOpener();
                 if (!opener) return;
                 if (typeof opener.startRandomPlaylist === "function") {
                     opener.startRandomPlaylist();
+                }
+            }
+            
+            function toggleSlideshow() {
+                var opener = getOpener();
+                if (!opener) return;
+                
+                // Check if slideshow is already running
+                var slideshowContainer = opener.document.getElementById("slideshow-container");
+                
+                if (slideshowContainer) {
+                    // Slideshow is running, stop it
+                    if (typeof opener.stopBackgroundSlideshow === "function") {
+                        opener.stopBackgroundSlideshow();
+                    }
+                    updateSlideshowButton(false);
+                } else {
+                    // Slideshow is not running, start it
+                    if (typeof opener.startBackgroundSlideshow === "function") {
+                        opener.startBackgroundSlideshow();
+                    }
+                    updateSlideshowButton(true);
+                }
+            }
+            
+            function updateSlideshowButton(isRunning) {
+                var btn = document.getElementById("remote-slideshow");
+                if (!btn) return;
+                if (isRunning) {
+                    btn.innerHTML = '<i class="fas fa-stop"></i> Parar';
+                    btn.style.background = "#ea580c";
+                    btn.style.color = "white";
+                } else {
+                    btn.innerHTML = '<i class="fas fa-images"></i> Slideshow';
+                    btn.style.background = "";
+                    btn.style.color = "";
                 }
             }
             
@@ -884,6 +934,7 @@
                 // Presentation control event listeners
                 var btnComplete = document.getElementById("remote-complete");
                 var btnStartPresentation = document.getElementById("remote-start-presentation");
+                var btnStopPresentation = document.getElementById("remote-stop-presentation");
                 var btnRandomPlaylist = document.getElementById("remote-random-playlist");
                 
                 if (btnComplete) {
@@ -900,10 +951,26 @@
                     });
                 }
                 
+                if (btnStopPresentation) {
+                    btnStopPresentation.addEventListener("click", function(e) {
+                        e.preventDefault();
+                        stopPresentation();
+                    });
+                }
+                
                 if (btnRandomPlaylist) {
                     btnRandomPlaylist.addEventListener("click", function(e) {
                         e.preventDefault();
                         startRandomPlaylist();
+                    });
+                }
+                
+                // Slideshow button
+                var slideshowBtn = document.getElementById("remote-slideshow");
+                if (slideshowBtn) {
+                    slideshowBtn.addEventListener("click", function(e) {
+                        e.preventDefault();
+                        toggleSlideshow();
                     });
                 }
                 
