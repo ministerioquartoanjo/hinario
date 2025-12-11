@@ -6,7 +6,7 @@
     "dev": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
     "predeploy": "npm run build && rm -rf deploy && mkdir -p deploy && cp -r index.html remote-control.html app-slides1.html service-worker.js manifest.json styles.css hinos.js script.js .htaccess icons js dist deploy/ && cp icons/icon-192x192.png deploy/favicon.ico",
     "deploy:surge": "bash surge.sh",
-    "deploy:rsync": "rsync -av deploy/* af_hostoo:/home/zjpyv5vi/public_html/hinario_pwa"
+    "deploy:rsync": "rsync -rlptDv --chmod=D755,F644 deploy/* af_hostoo:/home/zjpyv5vi/public_html/hinario_pwa"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.16",
