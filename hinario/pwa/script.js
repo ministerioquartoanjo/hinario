@@ -620,11 +620,37 @@ function updateSlideContent() {
 
         // If in presentation with complete mode, and at slide 2 (index 1),
         // focus the scrollable container so Arrow Up/Down work without click
+        // and dynamically adjust footer spacer height to maximize useful scroll.
         if (!presentationContainer.classList.contains('hidden') && completeCheckbox.checked && currentSlideIndex === 1) {
             const scroller = fullscreenContent.querySelector('.complete-scroll');
             if (scroller) {
                 if (!scroller.hasAttribute('tabindex')) scroller.setAttribute('tabindex', '0');
                 try { scroller.focus({ preventScroll: false }); } catch (_) { scroller.focus(); }
+
+                // Dynamically size the footer spacer de forma simples e estável:
+                // - Conteúdo curto: ~10% da altura visível.
+                // - Conteúdo longo: ~25% da altura visível.
+                const spacer = scroller.querySelector('.complete-footer-spacer');
+                if (spacer) {
+                    // Reset height first to measure natural content height
+                    spacer.style.height = '0px';
+
+                    const containerHeight = scroller.clientHeight;
+                    const contentHeight = scroller.scrollHeight;
+
+                    if (containerHeight > 0) {
+                        if (contentHeight <= containerHeight) {
+                            // Hino mais curto que o container: pequeno respiro no final (~22.5% da altura)
+                            spacer.style.height = Math.round(containerHeight * 0.225) + 'px';
+                        } else {
+                            // Hino maior que o container: rodapé mais generoso (~56.25% da altura)
+                            spacer.style.height = Math.round(containerHeight * 0.5625) + 'px';
+                        }
+                    } else {
+                        // Fallback: se algo der errado na medição, usa 10vh
+                        spacer.style.height = '10vh';
+                    }
+                }
             }
         }
     }, 300);
@@ -1083,6 +1109,10 @@ function createSlidesComplete(hymn) {
             completeHymnContent += `<div class='complete-chorus text-left text-yellow-400'>${hymn.coro.join('<br>')}</div>`;
         }
     }
+
+    // Footer spacer: empty block with viewport-relative height to provide extra scroll room
+    // 10vh ~ 10% da altura da tela, para funcionar bem em diferentes projetores/resoluções
+    completeHymnContent += `<div class='complete-footer-spacer' style='height: 10vh;'></div>`;
 
     completeHymnContent += '</div>';
 

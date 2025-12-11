@@ -243,7 +243,7 @@
                 <span id="fullscreen-counter" class="bg-black bg-opacity-70 text-white px-3 py-1 rounded-md"></span>
             </div>
 
-            <div class="absolute top-4 -right-[6px] md:right-4 z-20">
+            <div class="fixed top-4 right-2 md:right-4 z-20">
                 <button id="close-fullscreen" class="bg-red-600 hover:bg-red-700 text-white rounded-full absolute top-0 right-0 m-0.5 md:m-1 p-0.5 md:p-2 transform scale-50 md:scale-100 origin-top-right">
                     <svg xmlns="http://www.w3.org/2000/svg" class="w-1 h-1 md:w-3 md:h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
@@ -325,6 +325,13 @@
         #fullscreen-content .complete-verse,
         #fullscreen-content .complete-chorus {
             margin-bottom: 1rem;
+        }
+        /* Invisible footer spacer at the end of complete hymns to allow extra scroll room */
+        .complete-footer-spacer {
+            margin-top: 0.75rem;
+        }
+        #fullscreen-content .complete-footer-spacer {
+            margin-top: 1rem;
         }
         #bg-image, #fullscreen-bg-image {
             opacity: 0.85;

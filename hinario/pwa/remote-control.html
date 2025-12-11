@@ -224,7 +224,10 @@
             <button id="remote-stop-presentation" class="btn btn-secondary btn-small">⏹ Parar</button>
         </div>
         <div class="grid grid-2" style="gap: 4px; margin-top: 4px;">
-            <button id="remote-random-playlist" class="btn btn-secondary">🔀 Playlist Aleatória</button>
+            <div class="grid grid-2" style="gap: 4px;">
+                <button id="remote-random-playlist" class="btn btn-secondary">🔀 Playlist</button>
+                <button id="remote-random-next" class="btn btn-secondary" style="display: none;">⏭ Próximo</button>
+            </div>
             <button id="remote-slideshow" class="btn btn-secondary" title="Mostrar slides de fundo">
                 <i class="fas fa-images"></i> Slideshow
             </button>
@@ -482,6 +485,40 @@
                 if (typeof opener.startRandomPlaylist === "function") {
                     opener.startRandomPlaylist();
                 }
+                updateRandomPlaylistControls();
+            }
+
+            function advanceRandomPlaylist() {
+                var opener = getOpener();
+                if (!opener) return;
+                if (typeof opener.advancePlaylist === "function") {
+                    opener.advancePlaylist();
+                }
+            }
+
+            function isRandomPlaylistActive() {
+                var opener = getOpener();
+                if (!opener) return false;
+                // Usa estado global playlistActive se disponível
+                if (typeof opener.playlistActive !== "undefined") {
+                    return !!opener.playlistActive;
+                }
+                // Fallback: inspeciona ícone de parar playlist fullscreen
+                var stopBtn = opener.document.getElementById('fs-stop-playlist');
+                return !!(stopBtn && !stopBtn.classList.contains('hidden'));
+            }
+
+            function updateRandomPlaylistControls() {
+                var nextBtn = document.getElementById('remote-random-next');
+                var startRandomBtn = document.getElementById("remote-random-playlist");
+                var nextRandomBtn = document.getElementById("remote-random-next");
+                if (!nextBtn || !startRandomBtn) return;
+                var active = isRandomPlaylistActive();
+                // Mostra o botão de próximo apenas quando playlist aleatória está ativa
+                nextBtn.style.display = active ? 'inline-block' : 'none';
+                // Opcional: destaca botão principal quando ativo
+                startRandomBtn.style.background = active ? '#ea580c' : '';
+                startRandomBtn.style.color = active ? '#ffffff' : '';
             }
             
             function toggleSlideshow() {
@@ -831,7 +868,7 @@
             
             window.addEventListener("DOMContentLoaded", function() {
                 var input = document.getElementById("remote-hymn-input");
-                var btnApply = document.getElementById("remote-apply");
+                var applyBtn = document.getElementById("remote-apply");
                 var btnClose = document.getElementById("remote-close");
                 var btnPrev = document.getElementById("remote-prev");
                 var btnNext = document.getElementById("remote-next");
@@ -869,8 +906,8 @@
                     });
                 }
                 
-                if (btnApply) {
-                    btnApply.addEventListener("click", function(e) {
+                if (applyBtn) {
+                    applyBtn.addEventListener("click", function(e) {
                         e.preventDefault();
                         applySelection({clear: false});
                     });
@@ -936,6 +973,7 @@
                 var btnStartPresentation = document.getElementById("remote-start-presentation");
                 var btnStopPresentation = document.getElementById("remote-stop-presentation");
                 var btnRandomPlaylist = document.getElementById("remote-random-playlist");
+                var btnNextRandom = document.getElementById("remote-random-next");
                 
                 if (btnComplete) {
                     btnComplete.addEventListener("click", function(e) {
@@ -962,6 +1000,13 @@
                     btnRandomPlaylist.addEventListener("click", function(e) {
                         e.preventDefault();
                         startRandomPlaylist();
+                    });
+                }
+                
+                if (btnNextRandom) {
+                    btnNextRandom.addEventListener("click", function(e) {
+                        e.preventDefault();
+                        advanceRandomPlaylist();
                     });
                 }
                 
