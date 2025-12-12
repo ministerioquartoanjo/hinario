@@ -326,6 +326,15 @@
         #fullscreen-content .complete-chorus {
             margin-bottom: 1rem;
         }
+        /* Zoomable words in complete view (used with Shift+hover) */
+        .zoom-word {
+            display: inline-block;
+            transition: transform 0.08s ease-out, font-weight 0.08s ease-out;
+        }
+        .zoom-word.word-zoomed {
+            transform: scale(1.1);
+            font-weight: 700;
+        }
         /* Invisible footer spacer at the end of complete hymns to allow extra scroll room */
         .complete-footer-spacer {
             margin-top: 0.75rem;

@@ -35,6 +35,23 @@ let playlistActive = false;
 let playlistOrder = [];
 let playlistPosition = 0;
 
+// Hover zoom state for complete hymn view
+// Zoom is triggered only when moving left-to-right across a word
+let currentZoomedWord = null;
+let zoomResetTimeoutId = null;
+let lastMouseX = null;
+
+function resetZoomedWord() {
+    if (currentZoomedWord) {
+        currentZoomedWord.classList.remove('word-zoomed');
+        if (currentZoomedWord.__originalColor != null) {
+            currentZoomedWord.style.color = currentZoomedWord.__originalColor;
+            currentZoomedWord.__originalColor = null;
+        }
+        currentZoomedWord = null;
+    }
+}
+
 // DOM Elements
 const hymnSelect = document.getElementById("hymn-select"); // Input for selecting a hymn
 const startButton = document.getElementById("start-button"); // Button to start the presentation
@@ -627,6 +644,87 @@ function updateSlideContent() {
                 if (!scroller.hasAttribute('tabindex')) scroller.setAttribute('tabindex', '0');
                 try { scroller.focus({ preventScroll: false }); } catch (_) { scroller.focus(); }
 
+                // Enable directional hover zoom on words inside complete-scroll
+                // Remove any previous handlers to avoid stacking
+                if (scroller.__zoomHandlerAttached) {
+                    scroller.removeEventListener('mousemove', scroller.__zoomHandlerAttached);
+                }
+                if (scroller.__zoomLeaveHandlerAttached) {
+                    scroller.removeEventListener('mouseleave', scroller.__zoomLeaveHandlerAttached);
+                }
+
+                const onMove = (e) => {
+                    const x = e.clientX;
+                    // Detect horizontal movement direction
+                    const movingRight = (lastMouseX == null) ? true : x > lastMouseX;
+                    lastMouseX = x;
+
+                    const target = e.target;
+                    if (!target || !target.classList || !target.classList.contains('zoom-word')) {
+                        resetZoomedWord();
+                        return;
+                    }
+
+                    // Only trigger zoom when moving left-to-right across the word
+                    if (!movingRight) {
+                        return;
+                    }
+
+                    if (currentZoomedWord === target) return;
+
+                    resetZoomedWord();
+                    currentZoomedWord = target;
+                    currentZoomedWord.classList.add('word-zoomed');
+
+                    // Adjust zoomed word color based on the word's computed color for better contrast
+                    try {
+                        const wordStyle = window.getComputedStyle(currentZoomedWord);
+                        const color = wordStyle && wordStyle.color ? wordStyle.color : '';
+                        const lc = color.trim().toLowerCase();
+                        const isWhite = /rgb\(\s*255\s*,\s*255\s*,\s*255\s*\)/.test(color) || lc === '#ffffff' || lc === 'white';
+                        // Approximate common yellows used for chorus text
+                        const isYellow = /rgb\(\s*25[0-9]\s*,\s*20[0-9]\s*,\s*[0-9]{1,3}\s*\)/.test(color) || lc === '#facc15' || lc === '#fde047' || lc === 'yellow' || lc === '#fbbf24' || lc === '#eab308';
+
+                        if (isWhite) {
+                            // Base text is white: zoomed word becomes yellow for contrast
+                            if (currentZoomedWord.__originalColor == null) {
+                                currentZoomedWord.__originalColor = currentZoomedWord.style.color || '';
+                            }
+                            currentZoomedWord.style.color = '#fde047'; // Tailwind yellow-300 approx
+                        } else if (isYellow) {
+                            // Base text is yellow (chorus padrão): zoomed word becomes white
+                            if (currentZoomedWord.__originalColor == null) {
+                                currentZoomedWord.__originalColor = currentZoomedWord.style.color || '';
+                            }
+                            currentZoomedWord.style.color = '#ffffff';
+                        }
+                    } catch (_) {
+                        // Ignore color detection errors
+                    }
+
+                    // Clear any existing reset timer and schedule a new one
+                    if (zoomResetTimeoutId) {
+                        clearTimeout(zoomResetTimeoutId);
+                    }
+                    zoomResetTimeoutId = setTimeout(() => {
+                        resetZoomedWord();
+                    }, 1000);
+                };
+
+                const onLeave = () => {
+                    if (zoomResetTimeoutId) {
+                        clearTimeout(zoomResetTimeoutId);
+                    }
+                    zoomResetTimeoutId = setTimeout(() => {
+                        resetZoomedWord();
+                    }, 1000);
+                };
+
+                scroller.addEventListener('mousemove', onMove, { passive: true });
+                scroller.addEventListener('mouseleave', onLeave, { passive: true });
+                scroller.__zoomHandlerAttached = onMove;
+                scroller.__zoomLeaveHandlerAttached = onLeave;
+
                 // Dynamically size the footer spacer de forma simples e estável:
                 // - Conteúdo curto: ~10% da altura visível.
                 // - Conteúdo longo: ~25% da altura visível.
@@ -1109,6 +1207,22 @@ function createSlidesComplete(hymn) {
             completeHymnContent += `<div class='complete-chorus text-left text-yellow-400'>${hymn.coro.join('<br>')}</div>`;
         }
     }
+
+    // Wrap individual words for zoom effect (used with Shift+hover)
+    completeHymnContent = completeHymnContent.replace(
+        /(<div class='complete-(?:verse|chorus)[^>]*'>)([\s\S]*?)(<\/div>)/g,
+        function(_, open, inner, close) {
+            const processed = inner
+                .split(/(\s+|<br\s*\/>|<br>)/)
+                .map(token => {
+                    if (!token || /^\s+$/.test(token)) return token; // espaços
+                    if (token === '<br>' || token === '<br/>' || token === '<br />') return token;
+                    return `<span class="zoom-word">${token}</span>`;
+                })
+                .join('');
+            return open + processed + close;
+        }
+    );
 
     // Footer spacer: empty block with viewport-relative height to provide extra scroll room
     // 10vh ~ 10% da altura da tela, para funcionar bem em diferentes projetores/resoluções
