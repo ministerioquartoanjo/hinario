@@ -195,6 +195,61 @@
             </div>
         </div>
 
+        <!-- Videos Section -->
+        <div id="videos-section" class="hidden mt-4">
+            <div class="bg-white dark:bg-gray-800 p-4 rounded-lg shadow-lg w-full">
+                <div class="flex items-center justify-between mb-2">
+                    <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-200">
+                        <i class="fas fa-video mr-2"></i>Videos Relacionados
+                    </h3>
+                    <div style="display: flex; gap: 8px; background: rgba(255,255,255,0.9) !important; padding: 8px !important; border-radius: 6px !important; border: 1px solid #e5e7eb !important;">
+                        <button id="manage-videos-btn" class="px-3 py-1 bg-blue-600 hover:bg-blue-700 text-white text-sm rounded transition-colors" onclick="openVideoModal();" style="background: #2563eb !important; color: white !important; border: 2px solid #1d4ed8 !important; font-weight: bold !important; box-shadow: 0 2px 4px rgba(0,0,0,0.3) !important;">
+                            <i class="fas fa-plus mr-1"></i>
+                            <span>Adicionar</span>
+                        </button>
+                    </div>
+                </div>
+                <div id="videos-list" class="space-y-2">
+                    <!-- Videos will be populated here -->
+                </div>
+            </div>
+            
+            <!-- Video Management Modal -->
+            <div id="video-modal" class="hidden fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4">
+                <div class="bg-white dark:bg-gray-800 rounded-lg max-w-md w-full p-6">
+                    <h3 class="text-lg font-semibold mb-4 text-gray-800 dark:text-gray-200">
+                        <i class="fas fa-video mr-2"></i>Gerenciar Videos
+                    </h3>
+                    
+                    <div class="mb-6">
+                        <label class="block text-sm font-medium mb-2 text-gray-700 dark:text-gray-300">Adicionar Video</label>
+                        <div class="flex gap-2">
+                            <input type="url" id="new-video-url" placeholder="https://youtu.be/..." 
+                                   class="flex-1 px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-md dark:bg-gray-700 dark:text-white">
+                            <button onclick="addNewVideo()" class="px-4 py-2 bg-green-600 hover:bg-green-700 text-white rounded transition-colors">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                        <p class="text-xs text-gray-500 mt-1">Cole a URL do YouTube e clique em + para adicionar</p>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <label class="block text-sm font-medium mb-2 text-gray-700 dark:text-gray-300">Videos Personalizados</label>
+                        <div id="custom-videos-list" class="space-y-2 max-h-40 overflow-y-auto">
+                            <!-- Custom videos will be populated here -->
+                        </div>
+                        <p class="text-xs text-gray-500 mt-1" id="no-videos-message">Nenhum vídeo personalizado adicionado</p>
+                    </div>
+                    
+                    <div class="flex justify-end gap-2">
+                        <button onclick="closeVideoModal()" class="px-4 py-2 bg-gray-600 hover:bg-gray-700 text-white rounded transition-colors">
+                            Fechar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- Preview -->
         <div class="hidden" id="preview-container">
             <div class="relative w-full h-[400px] md:h-[500px] overflow-hidden slide-container rounded-lg">

@@ -258,6 +258,7 @@ function init() {
     $("#hymn-select").result(function (event, data, formatted) {
         if (formatted) {
             selectHymnFromTitleOrNumber(formatted);
+            updateVideos();
         }
     });
 
@@ -354,6 +355,7 @@ function init() {
 
     // Random hymn button: use delegation so clicks on inner <i> are captured
     const triggerRandom = () => {
+        if (!Array.isArray(hymns) || hymns.length === 0) return;
         const randomIndex = Math.floor(Math.random() * hymns.length);
         currentHymnIndex = randomIndex;
         const selectedHymn = hymns[currentHymnIndex];
@@ -365,6 +367,7 @@ function init() {
         updateSlides();
         updatePreview();
         loadHymnAudio(currentHymnIndex);
+        updateVideos();
         // Ensure preview is visible
         previewContainer.classList.remove('hidden');
     };
@@ -522,6 +525,9 @@ function init() {
 
     // Initialize top drawer for settings
     setupTopDrawer();
+    
+    // Setup video management
+    setupVideoManagement();
 }
 
 // Fire event to change checkbox state
@@ -576,6 +582,7 @@ function selectHymnFromTitleOrNumber(query) {
     updateSlides();
     updatePreview();
     loadHymnAudio(currentHymnIndex);
+    updateVideos();
 }
 
 // Allow remote popup to drive the same autocomplete as the main hymn-select
@@ -894,8 +901,9 @@ function playCurrentInPlaylist(afterLoadCb) {
     currentSlideIndex = 0;
     updateSlides();
     updatePreview();
+    loadHymnAudio(currentHymnIndex);
+    updateVideos();
 
-    // Load audio then autoplay
     Promise.resolve(loadHymnAudio(currentHymnIndex)).finally(() => {
         safeAutoplayAudio();
         if (typeof afterLoadCb === 'function') afterLoadCb();
@@ -1801,4 +1809,354 @@ function handleSlideshowKeyPress(e) {
     } else if (e.key === 'ArrowRight' || e.key === ' ') {
         changeSlideshowImage();
     }
+}
+
+// Video management buttons - moved to init
+function setupVideoManagement() {
+    const manageVideosBtn = document.getElementById('manage-videos-btn');
+    const closeVideoModalBtn = document.getElementById('close-video-modal');
+    const addVideoBtn = document.getElementById('add-video-btn');
+    
+    if (manageVideosBtn) {
+        manageVideosBtn.addEventListener('click', openVideoModal);
+    }
+    
+    if (closeVideoModalBtn) {
+        closeVideoModalBtn.addEventListener('click', closeVideoModal);
+    }
+    
+    if (addVideoBtn) {
+        addVideoBtn.addEventListener('click', addNewVideo);
+    }
+    
+    // Close modal when clicking outside
+    const videoModal = document.getElementById('video-modal');
+    if (videoModal) {
+        videoModal.addEventListener('click', (e) => {
+            if (e.target === videoModal) {
+                closeVideoModal();
+            }
+        });
+    }
+    
+    // Enter key to add video
+    const newVideoInput = document.getElementById('new-video-url');
+    if (newVideoInput) {
+        newVideoInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') {
+                addNewVideo();
+            }
+        });
+    }
+}
+
+function updateVideos() {
+    console.log('updateVideos() called');
+    const videosSection = document.getElementById('videos-section');
+    const videosList = document.getElementById('videos-list');
+    
+    console.log('videosSection:', videosSection);
+    console.log('videosList:', videosList);
+    console.log('currentHymnIndex:', currentHymnIndex);
+    console.log('hymns array:', Array.isArray(hymns) ? hymns.length : 'not array');
+    
+    if (!videosSection || !videosList || !Array.isArray(hymns) || currentHymnIndex < 0 || currentHymnIndex >= hymns.length) {
+        console.log('Early return - missing elements or invalid index');
+        if (videosSection) videosSection.classList.add('hidden');
+        return;
+    }
+    
+    const currentHymn = hymns[currentHymnIndex];
+    console.log('currentHymn:', currentHymn);
+    const videos = currentHymn.videos || [];
+    console.log('videos:', videos);
+    
+    if (videos.length === 0) {
+        console.log('No videos found, hiding section');
+        videosSection.classList.add('hidden');
+        return;
+    }
+    
+    // Clear existing videos
+    videosList.innerHTML = '';
+    
+    // Create a simple container for all video links
+    const linksContainer = document.createElement('div');
+    linksContainer.className = 'flex flex-wrap gap-2';
+    
+    // Add each video as a simple link
+    videos.forEach((videoUrl, index) => {
+        const videoId = extractYouTubeId(videoUrl);
+        
+        const videoLink = document.createElement('a');
+        videoLink.href = videoUrl;
+        videoLink.target = '_blank';
+        videoLink.rel = 'noopener noreferrer';
+        videoLink.className = 'inline-flex items-center gap-1 text-red-600 hover:text-red-700 transition-colors';
+        videoLink.title = `Video ${index + 1}`;
+        
+        if (videoId) {
+            // YouTube video - show YouTube icon
+            videoLink.innerHTML = '<i class="fab fa-youtube text-lg"></i>';
+        } else {
+            // Other video - show generic video icon
+            videoLink.innerHTML = '<i class="fas fa-video text-lg"></i>';
+        }
+        
+        linksContainer.appendChild(videoLink);
+    });
+    
+    videosList.appendChild(linksContainer);
+    
+    console.log('Showing videos section');
+    videosSection.classList.remove('hidden');
+}
+
+// Helper function to extract YouTube video ID
+function extractYouTubeId(url) {
+    const regExp = /^.*((youtu.be\/)|(v\/)|(\/u\/\w\/)|(embed\/)|(watch\?))\??v?=?([^#&?]*).*/;
+    const match = url.match(regExp);
+    return (match && match[7].length === 11) ? match[7] : null;
+}
+
+// Function to stop all YouTube videos (no longer needed with just links, but keeping for consistency)
+function stopAllYouTubeVideos() {
+    const iframes = document.querySelectorAll('iframe[src*="youtube.com"]');
+    iframes.forEach(iframe => {
+        const src = iframe.src;
+        iframe.src = src;
+    });
+}
+
+// Custom Videos Management
+function getCustomVideos() {
+    const stored = localStorage.getItem('customHymnVideos');
+    return stored ? JSON.parse(stored) : {};
+}
+
+function saveCustomVideos(customVideos) {
+    localStorage.setItem('customHymnVideos', JSON.stringify(customVideos));
+}
+
+function addCustomVideo(hymnTitle, videoUrl) {
+    const customVideos = getCustomVideos();
+    if (!customVideos[hymnTitle]) {
+        customVideos[hymnTitle] = [];
+    }
+    customVideos[hymnTitle].push(videoUrl);
+    saveCustomVideos(customVideos);
+    updateVideos(); // Refresh the display
+}
+
+function removeCustomVideo(hymnTitle, videoIndex) {
+    const customVideos = getCustomVideos();
+    if (customVideos[hymnTitle]) {
+        customVideos[hymnTitle].splice(videoIndex, 1);
+        if (customVideos[hymnTitle].length === 0) {
+            delete customVideos[hymnTitle];
+        }
+        saveCustomVideos(customVideos);
+        updateVideos(); // Refresh the display
+    }
+}
+
+function updateVideos() {
+    const videosSection = document.getElementById('videos-section');
+    const videosList = document.getElementById('videos-list');
+    
+    if (!videosSection || !videosList || !Array.isArray(hymns) || currentHymnIndex < 0 || currentHymnIndex >= hymns.length) {
+        if (videosSection) videosSection.classList.add('hidden');
+        return;
+    }
+    
+    const currentHymn = hymns[currentHymnIndex];
+    
+    // Get both original and custom videos
+    const originalVideos = currentHymn.videos || [];
+    const customVideos = getCustomVideos();
+    const customHymnVideos = customVideos[currentHymn.title] || [];
+    const allVideos = [...originalVideos, ...customHymnVideos];
+    
+    // Always show the section so users can add videos, even if there are none
+    videosSection.classList.remove('hidden');
+    
+    // Clear existing videos
+    videosList.innerHTML = '';
+    
+    if (allVideos.length === 0) {
+        // Show message when no videos exist
+        const noVideosMsg = document.createElement('div');
+        noVideosMsg.className = 'text-gray-500 dark:text-gray-400 text-sm italic';
+        noVideosMsg.textContent = 'Nenhum vídeo adicionado. Clique em "Adicionar" para incluir um vídeo.';
+        videosList.appendChild(noVideosMsg);
+        return;
+    }
+    
+    // Create a simple container for all video links
+    const linksContainer = document.createElement('div');
+    linksContainer.className = 'flex flex-wrap gap-2';
+    
+    // Add each video as a simple link
+    allVideos.forEach((videoUrl, index) => {
+        const videoId = extractYouTubeId(videoUrl);
+        const isCustom = index >= originalVideos.length;
+        const customIndex = isCustom ? index - originalVideos.length : -1;
+        
+        const videoLink = document.createElement('a');
+        videoLink.href = videoUrl;
+        videoLink.target = '_blank';
+        videoLink.rel = 'noopener noreferrer';
+        videoLink.className = `inline-flex items-center gap-1 ${isCustom ? 'text-blue-600 hover:text-blue-700' : 'text-red-600 hover:text-red-700'} transition-colors`;
+        videoLink.title = `${isCustom ? 'Personalizado - ' : ''}Video ${isCustom ? customIndex + 1 : index + 1}`;
+        
+        if (videoId) {
+            // YouTube video - show YouTube icon
+            videoLink.innerHTML = `<i class="fab fa-youtube text-lg"></i>${isCustom ? '<sup class="text-xs">*</sup>' : ''}`;
+        } else {
+            // Other video - show generic video icon
+            videoLink.innerHTML = `<i class="fas fa-video text-lg"></i>${isCustom ? '<sup class="text-xs">*</sup>' : ''}`;
+        }
+        
+        linksContainer.appendChild(videoLink);
+    });
+    
+    videosList.appendChild(linksContainer);
+}
+
+// Make functions globally available for onclick handlers
+window.openVideoModal = function() {
+    const modal = document.getElementById('video-modal');
+    const customVideosList = document.getElementById('custom-videos-list');
+    const noVideosMessage = document.getElementById('no-videos-message');
+    const currentHymn = hymns[currentHymnIndex];
+    const customVideos = getCustomVideos();
+    const hymnCustomVideos = customVideos[currentHymn.title] || [];
+    
+    // Clear and populate custom videos list
+    customVideosList.innerHTML = '';
+    
+    if (hymnCustomVideos.length === 0) {
+        noVideosMessage.style.display = 'block';
+    } else {
+        noVideosMessage.style.display = 'none';
+        hymnCustomVideos.forEach((videoUrl, index) => {
+            const videoItem = document.createElement('div');
+            videoItem.className = 'flex items-center justify-between p-2 bg-gray-50 dark:bg-gray-700 rounded';
+            
+            const videoLink = document.createElement('a');
+            videoLink.href = videoUrl;
+            videoLink.target = '_blank';
+            videoLink.rel = 'noopener noreferrer';
+            videoLink.className = 'text-blue-600 dark:text-blue-400 hover:underline text-sm truncate flex-1 mr-2';
+            videoLink.textContent = videoUrl;
+            
+            const deleteBtn = document.createElement('button');
+            deleteBtn.className = 'px-2 py-1 bg-red-600 hover:bg-red-700 text-white text-xs rounded';
+            deleteBtn.innerHTML = '<i class="fas fa-trash"></i>';
+            deleteBtn.onclick = () => removeCustomVideo(currentHymn.title, index);
+            
+            videoItem.appendChild(videoLink);
+            videoItem.appendChild(deleteBtn);
+            customVideosList.appendChild(videoItem);
+        });
+    }
+    
+    modal.classList.remove('hidden');
+};
+
+window.closeVideoModal = function() {
+    const modal = document.getElementById('video-modal');
+    const input = document.getElementById('new-video-url');
+    modal.classList.add('hidden');
+    input.value = '';
+};
+
+window.addNewVideo = function() {
+    const input = document.getElementById('new-video-url');
+    const currentHymn = hymns[currentHymnIndex];
+    const videoUrl = input.value.trim();
+    
+    if (!videoUrl) {
+        alert('Por favor, insira uma URL válida');
+        return;
+    }
+    
+    // Basic URL validation
+    try {
+        new URL(videoUrl);
+    } catch (e) {
+        alert('URL inválida. Por favor, insira uma URL completa');
+        return;
+    }
+    
+    addCustomVideo(currentHymn.title, videoUrl);
+    input.value = '';
+    
+    // Refresh the modal to show the new video
+    window.openVideoModal();
+};
+
+function openVideoModal() {
+    const modal = document.getElementById('video-modal');
+    const customVideosList = document.getElementById('custom-videos-list');
+    const currentHymn = hymns[currentHymnIndex];
+    const customVideos = getCustomVideos();
+    const hymnCustomVideos = customVideos[currentHymn.title] || [];
+    
+    // Clear and populate custom videos list
+    customVideosList.innerHTML = '';
+    hymnCustomVideos.forEach((videoUrl, index) => {
+        const videoItem = document.createElement('div');
+        videoItem.className = 'flex items-center justify-between p-2 bg-gray-50 dark:bg-gray-700 rounded';
+        
+        const videoLink = document.createElement('a');
+        videoLink.href = videoUrl;
+        videoLink.target = '_blank';
+        videoLink.rel = 'noopener noreferrer';
+        videoLink.className = 'text-blue-600 dark:text-blue-400 hover:underline text-sm truncate flex-1 mr-2';
+        videoLink.textContent = videoUrl;
+        
+        const deleteBtn = document.createElement('button');
+        deleteBtn.className = 'px-2 py-1 bg-red-600 hover:bg-red-700 text-white text-xs rounded';
+        deleteBtn.innerHTML = '<i class="fas fa-trash"></i>';
+        deleteBtn.onclick = () => removeCustomVideo(currentHymn.title, index);
+        
+        videoItem.appendChild(videoLink);
+        videoItem.appendChild(deleteBtn);
+        customVideosList.appendChild(videoItem);
+    });
+    
+    modal.classList.remove('hidden');
+}
+
+function closeVideoModal() {
+    const modal = document.getElementById('video-modal');
+    const input = document.getElementById('new-video-url');
+    modal.classList.add('hidden');
+    input.value = '';
+}
+
+function addNewVideo() {
+    const input = document.getElementById('new-video-url');
+    const currentHymn = hymns[currentHymnIndex];
+    const videoUrl = input.value.trim();
+    
+    if (!videoUrl) {
+        alert('Por favor, insira uma URL válida');
+        return;
+    }
+    
+    // Basic URL validation
+    try {
+        new URL(videoUrl);
+    } catch (e) {
+        alert('URL inválida. Por favor, insira uma URL completa');
+        return;
+    }
+    
+    addCustomVideo(currentHymn.title, videoUrl);
+    input.value = '';
+    
+    // Refresh the modal to show the new video
+    openVideoModal();
 }

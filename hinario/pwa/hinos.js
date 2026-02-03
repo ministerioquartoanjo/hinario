@@ -29,6 +29,10 @@ const hymns = [
         "title": "2 - A Deus Demos glória",
         "author": "Fanny Jane Crosby William Howard Doane",
         "speed": 1.0,
+        "videos": [
+            "https://youtu.be/GCaieJSqrZo?si=5v8B2TkVvFPTuj2q",
+            "https://youtu.be/Jf2jLHDa5wU?si=pAscs-BA8fG5pepd"
+        ],
         "verses": [
             [
                 "1. A Deus demos glória, com grande fervor;",
@@ -4289,6 +4293,9 @@ const hymns = [
         "title": "126 - Oh! Nunca Separar!",
         "author": "Isaac Watts Timbrel Of Zion",
         "speed": 1.0,
+        "videos": [
+            "https://youtu.be/lVmDPbFfoKo?si=3sKEhKJ-8xjpokdY"
+        ],
         "verses": [
             [
                 "1. Há um País de gozo e luz",
@@ -5579,6 +5586,9 @@ const hymns = [
         "title": "166 - Se Cristo Comigo Vai",
         "author": "Frida Vingren C. Austin Miles",
         "speed": 1.0,
+        "videos": [
+            "https://youtu.be/HbDez34qav8?si=La-F6lv4kqaBglHi"
+        ],
         "verses": [
             [
                 "1. Se pelos vales eu peregrino vou andar,",
