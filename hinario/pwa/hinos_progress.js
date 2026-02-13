@@ -2,7 +2,7 @@ const hymns = [
     {
         "title": "1 - A Ceia do Senhor",
         "author": "Philip Paul Bliss",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Como irmãos nos acheguemos ao festim do Salvador;",
@@ -20,15 +20,14 @@ const hymns = [
                 "3. Tudo, enfim, de rude e triste, nessa cruz desfeito está;",
                 "Para nós somente existe gozo em Deus, que durará.",
                 "Damos graças e louvores, homenagens ao Senhor;",
-                "Temos fé em Sua vinda, Seu real e eterno amor.",
-
+                "Temos fé em Sua vinda, Seu real e eterno amor."
             ]
         ]
     },
     {
         "title": "2 - A Deus Demos glória",
         "author": "Fanny Jane Crosby William Howard Doane",
-        "speed": 1.0,
+        "speed": 1,
         "videos": [
             "https://youtu.be/GCaieJSqrZo?si=5v8B2TkVvFPTuj2q",
             "https://youtu.be/Jf2jLHDa5wU?si=pAscs-BA8fG5pepd"
@@ -63,7 +62,7 @@ const hymns = [
     {
         "title": "3 - A Esperança da Igreja",
         "author": "Henry Maxwell Wright",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Até que volte o Salvador",
@@ -110,7 +109,7 @@ const hymns = [
     {
         "title": "4 - A Lei do Meu Senhor",
         "author": "Lowell Mason",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Sábia, justa, santa e pura",
@@ -137,7 +136,7 @@ const hymns = [
     {
         "title": "5 - Aleluia! Aleluia! Gratos Hinos Entoai",
         "author": "Christopher Wordsworth, Ludwig van Beethoven",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Aleluia! Aleluia!",
@@ -164,7 +163,7 @@ const hymns = [
     {
         "title": "6 - A Mão no Arado!",
         "author": "Frida Vingren",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1.Quem sua mão ao arado já pôs,",
@@ -211,14 +210,13 @@ const hymns = [
     {
         "title": "7 - A Melhor Dádiva",
         "author": "Eben Eugene Rexford Joseph Garrison",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Traziam as ofertas aos pés do Salvador;",
                 "E todo sacrifício mostrava ser de amor.",
                 "Nenhuma oferenda mostrava sem valor;",
                 "A todas aceitava o meigo Salvador."
-
             ],
             [
                 "2. Ao longe, retraído, está um pecador;",
@@ -242,14 +240,15 @@ const hymns = [
     {
         "title": "8 - A Revelação da Cruz",
         "author": "Isaac Watts e Ralph. E. Hudson Ralph E. Hudson",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Quão cego outrora eu já vaguei",
                 "Distante do Senhor,",
                 "Que veio lá dos altos céus",
                 "Salvar o pecador."
-            ], [
+            ],
+            [
                 "2. Do grande amor sem-par ouvi,",
                 "O amor de meu Jesus,",
                 "Porém eu surdo então me fiz",
@@ -278,7 +277,7 @@ const hymns = [
     {
         "title": "9 - A Minha Fé e o Meu Amor",
         "author": "Edward Mote William Batchelder Bradbury",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Minha esperança até o fim,",
@@ -307,7 +306,7 @@ const hymns = [
     {
         "title": "10 - A Ovelha Perdida",
         "author": "Rev. J. A. Gordon, D.D.",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. O bom Pastor buscou-me",
@@ -352,7 +351,7 @@ const hymns = [
     {
         "title": "11 - A Ti Seja Consagrada Minha Vida",
         "author": "Frances Ridley Havergal",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. A Ti seja consagrada minha vida,",
@@ -360,18 +359,7 @@ const hymns = [
                 "Meus momentos e meus dias,",
                 "Sejam só a Teu louvor."
             ],
-            [
-                "2. Sempre minhas mãos se movam",
-                "Com presteza e com amor",
-                "E meus pés velozes corram",
-                "Ao serviço do Senhor."
-            ]
-            [
-            "3. Minha voz agora toma",
-            "Para o Teu louvor cantar;",
-            "Toma os lábios meus, fazendo-os",
-            "A mensagem proclamar"
-            ],
+            null,
             [
                 "4. Minha prata e ouro toma,",
                 "Nada quero te esconder",
@@ -395,7 +383,7 @@ const hymns = [
     {
         "title": "12 - Achei Jesus, o Meu Salvador",
         "author": "Autor desconhecido",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Achei Jesus, o Meu Salvador,",
@@ -433,7 +421,7 @@ const hymns = [
     {
         "title": "13 - Acordai,Acordai",
         "author": "Henry Maxwell Wright",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Eis marchamos para aquele bom país",
@@ -478,7 +466,7 @@ const hymns = [
     {
         "title": "14 - Adoração Reconhecida",
         "author": "Henry Maxwell Wright",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Ó minh’alma sem demora,",
@@ -510,15 +498,14 @@ const hymns = [
                 "Foi Jesus crucificado,",
                 "A minh'alma pra salvar;",
                 "Vinde todos! Vinde todos,",
-                "Já comigo, O adorar!",
-
+                "Já comigo, O adorar!"
             ]
         ]
     },
     {
         "title": "15 - Almejo a Fé que Forte É",
         "author": "William Hiley Bathurst William Henry Havergal",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Almejo a fé que forte é",
@@ -539,15 +526,14 @@ const hymns = [
                 "4. Tão forte seja minha fé,",
                 "Que, venha o que vier,",
                 "Eu possa mesmo aqui provar",
-                "Celestial prazer.",
-
+                "Celestial prazer."
             ]
         ]
     },
     {
         "title": "16 - Aleluia! Já Creio",
         "author": "Henry Maxwell Wright",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Deus tem prometido a salvação dar,",
@@ -563,8 +549,7 @@ const hymns = [
             ],
             [
                 "4. E, quando, na glória, eu vir meu bom Rei,",
-                "Com todos os santos ali cantarei.",
-
+                "Com todos os santos ali cantarei."
             ]
         ],
         "coro": [
@@ -575,7 +560,7 @@ const hymns = [
     {
         "title": "17 - Altamente os Céus Proclamam",
         "author": "Metrificação do Sl 19, Sarah Kalley Melodia Alema",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Altamente os céus proclamam",
@@ -602,7 +587,7 @@ const hymns = [
     {
         "title": "18 - Alvo Mais Que a Neve",
         "author": "Eden Reeder Latta Henry Southwick Perkins",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Seja bendito o Cordeiro",
@@ -644,7 +629,7 @@ const hymns = [
     {
         "title": "19 - Amigo Sem Igual!",
         "author": "Henry Maxwell Wright",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Amigo sem igual! (2x)",
@@ -658,15 +643,14 @@ const hymns = [
                 "2. Amigo sem igual! (2x)",
                 "Bem perto está, e quer salvar",
                 "Quem nEle confiar Amigo sem igual! (2x)",
-                "Convida com imenso amor A todo o pecador.",
-
+                "Convida com imenso amor A todo o pecador."
             ]
         ]
     },
     {
         "title": "20 - Amor que Vence",
         "author": "Henry Maxwell Wright",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Amor, que por amor desceste!",
@@ -702,7 +686,7 @@ const hymns = [
     {
         "title": "21 - Amor Sem Igual",
         "author": "R. Torrey. Jr Ernest Gebhardt",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Oh, não tens ouvido do amor sem igual,",
@@ -738,7 +722,7 @@ const hymns = [
     {
         "title": "22 - Anseio Um Lugar de Amor",
         "author": "John G. Whittier",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Anseio a paz, um lugar de amor!",
@@ -763,7 +747,7 @@ const hymns = [
     {
         "title": "23 - Ao Deus de Abraão Louvai",
         "author": "Atribuída a Daniel ben Judah Dayam // Robert Hawkey Moreton, através do inglês Melodia tradicional hebraica",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Ao Deus de Abraão louvai,",
@@ -785,9 +769,7 @@ const hymns = [
                 "3. Meu guia Deus será;  Seu infinito amor",
                 "Feliz em tudo me fará,  Por onde eu for.",
                 "Tomou-me pela mão,  Em trevas deu-me luz,",
-                "E tenho eterna salvação,  Por meu Jesus",
-
-
+                "E tenho eterna salvação,  Por meu Jesus"
             ],
             [
                 "4. Meu Deus por si jurou;",
@@ -798,14 +780,13 @@ const hymns = [
                 "Confiado em seu amor,",
                 "E para sempre engrandecer",
                 "Meu redentor!"
-
             ]
         ]
     },
     {
         "title": "24 - Ao Ver a Cruz",
         "author": "Isaac Watts/E.M",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Ao ver morrer na rude cruz,",
@@ -830,7 +811,7 @@ const hymns = [
     {
         "title": "25 - As Novas do Evangelho",
         "author": "Samuel Wesley Martin Joseph Jones",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. As novas do evangelho, ressoando estão aqui",
@@ -861,7 +842,7 @@ const hymns = [
     {
         "title": "26 - Assim Como Sou",
         "author": "R.R.Kalley",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Assim como estou: sem nada dizer,",
@@ -892,13 +873,14 @@ const hymns = [
     {
         "title": "27 - Aviva-nos Senhor!",
         "author": "Albert Midlane William Howard Doane",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Aviva-nos Senhor!",
                 "Oh, dá-nos Teu poder!",
                 "De santidade, fé e amor,",
-                "Reveste o nosso ser."],
+                "Reveste o nosso ser."
+            ],
             [
                 "2. Desperta-nos Senhor!",
                 "Oh, fazemos fluir As ricas bênçãos divinais,",
@@ -921,7 +903,7 @@ const hymns = [
     {
         "title": "28 - Bem-Aventurança do Crente",
         "author": "Frida Vingren",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Bem-aventurado o que confia",
@@ -968,7 +950,7 @@ const hymns = [
     {
         "title": "29 - Bem Junto a Cristo",
         "author": "Leila Maylor Morris",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Bem junto a Cristo eu quero estar,",
@@ -996,7 +978,7 @@ const hymns = [
     {
         "title": "30 - Brilha no Meio do Teu viver",
         "author": "Ina Duley Ogden, 1913 Chales Hutchison Gabriel, 1913",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Não somente prá fazer um feito singular",
@@ -1027,7 +1009,7 @@ const hymns = [
     {
         "title": "31 - Breve Jesus Voltará",
         "author": "Jessie E. Strout George E Lee",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Servos de Deus a trombeta tocai:",
@@ -1062,7 +1044,7 @@ const hymns = [
     {
         "title": "32 - Cada Vez Mais Puro",
         "author": "Autor desconhecido",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Cada vez mais puro faze o coração,",
@@ -1087,7 +1069,7 @@ const hymns = [
     {
         "title": "33 - Castelo Forte",
         "author": "Martinho Lutero",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Jeová castelo forte é;",
@@ -1127,7 +1109,7 @@ const hymns = [
     {
         "title": "34 - Chuva de Bênçãos",
         "author": "Daniel Webster Whhitle James Mcgranahan",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Chuva de bênçãos teremos",
@@ -1158,7 +1140,7 @@ const hymns = [
     {
         "title": "35 - Com Tua Mão Segura Bem a Minha",
         "author": "Julie Katlharina von Hausmann, Hubert Platt Main",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Com tua mão segura bem a minha",
@@ -1194,7 +1176,7 @@ const hymns = [
     {
         "title": "36 - Como é Triste Andar em Trevas",
         "author": "Joaquim dos Santos George Coles Stebbins",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Eu, nas trevas, vagueava,",
@@ -1231,7 +1213,7 @@ const hymns = [
     {
         "title": "37 - Conta as Bênçãos",
         "author": "Johnson Oatman Jr Edwin Othello Excel",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Se da vida as ondas agitadas são;",
@@ -1255,8 +1237,7 @@ const hymns = [
                 "4. Seja teu conflito fraco ou forte aqui,",
                 "Não te desanimes, Deus será por ti,",
                 "Seu divino auxílio, derrotando o mal,",
-                "Te dará consolo e paz celestial.",
-
+                "Te dará consolo e paz celestial."
             ]
         ],
         "coro": [
@@ -1269,7 +1250,7 @@ const hymns = [
     {
         "title": "38 - Contentamento",
         "author": "Jane Catherine Bonar Richard Holden",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Eu já contente estou: Tenho Jesus!",
@@ -1294,7 +1275,7 @@ const hymns = [
     {
         "title": "39 - Conversão",
         "author": "Henry Maxwell Wright",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Oh! quão cego andei e perdido vaguei,",
@@ -1318,8 +1299,7 @@ const hymns = [
                 "4. Quão ditoso então, este meu coração,",
                 "Conhecendo o excelso amor,",
                 "Que levou meu Jesus a sofrer lá na cruz;",
-                "P´ra salvar um tão pobre pecador",
-
+                "P´ra salvar um tão pobre pecador"
             ]
         ],
         "coro": [
@@ -1332,7 +1312,7 @@ const hymns = [
     {
         "title": "40 - Crer e observar",
         "author": "John H. Sammis Daniel Brink Towner",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Em Jesus confiar,  Sua lei observar,",
@@ -1374,7 +1354,7 @@ const hymns = [
     {
         "title": "41 - Cristo a Porta Está",
         "author": "Joel Carlson",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Jesus Cristo à porta está:",
@@ -1403,7 +1383,7 @@ const hymns = [
     {
         "title": "42 - Cristo é Tudo Para Mim",
         "author": "Will Lamartine Thompson",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Cristo é tudo para mim:",
@@ -1452,7 +1432,7 @@ const hymns = [
     {
         "title": "43 - Cristo Me Amou e Me Livrou",
         "author": "James Rowe",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Eu perdido pecador,",
@@ -1485,7 +1465,7 @@ const hymns = [
     {
         "title": "44 - Cristo Meu Vero Amigo",
         "author": "F.V. Gordon H. Clark",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Antes eu não conhecia a Jesus o Salvador,",
@@ -1516,7 +1496,7 @@ const hymns = [
     {
         "title": "45 - Cristo Foi Preparar-nos Lugar",
         "author": "Dewitt C. Huntington Tullius Clinton O'Katne",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Cristo foi preparar-nos lugar",
@@ -1553,7 +1533,7 @@ const hymns = [
     {
         "title": "46 - Cristo Prá Mim!",
         "author": "Henry Maxwell Wright",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Oh que descanso em Jesus encontrei!",
@@ -1600,7 +1580,7 @@ const hymns = [
     {
         "title": "47 - Cristo Salva o Pecador",
         "author": "Erdmann Neumeister James McGranahan",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Cristo salva o pecador,",
@@ -1631,7 +1611,7 @@ const hymns = [
     {
         "title": "48 - Da Igreja o Fundamento",
         "author": "Samuel John Stone Samuel Sebastian Wesley",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Da igreja o fundamento é Cristo, o Salvador;",
@@ -1656,7 +1636,7 @@ const hymns = [
     {
         "title": "49 - Dá-me a Bíblia",
         "author": "Priscila Jane Owens Edmund Simon Lorenz",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Dá-me a Bíblia que eu tanto anelo,",
@@ -1674,8 +1654,7 @@ const hymns = [
                 "3. Dá-me a Bíblia, que meu guia seja;",
                 "Por toda a vida, meu caminho e luz.",
                 "Seus bons ensinos sejam sempre o astro",
-                "Que me conduza para o pé da cruz",
-
+                "Que me conduza para o pé da cruz"
             ]
         ],
         "coro": [
@@ -1688,7 +1667,7 @@ const hymns = [
     {
         "title": "50 - De Todo o Mundo: Aleluia!",
         "author": "Henry Maxwell Wright",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. De todo o mundo, eis-nos aqui",
@@ -1707,7 +1686,6 @@ const hymns = [
                 "E nós, que somos Teus, também",
                 "Dizemos, firmes: Sim, Amém",
                 "E: \"Glória! Aleluia!\""
-
             ],
             [
                 "3. Ao Evangelho salvador,",
@@ -1735,14 +1713,13 @@ const hymns = [
                 "E todo mundo cantará,",
                 "E jubiloso O exaltará,",
                 "Com:\"Amém\",\"Aleluia!\""
-
             ]
         ]
     },
     {
         "title": "51 - Desejo a Santidade",
         "author": "Salomão Luiz Ginsburg Josiah Booth",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Desejo a santidade",
@@ -1779,7 +1756,7 @@ const hymns = [
     {
         "title": "52 - Deus Nos Deu Mensagem Santa",
         "author": "Sarah Poulton Kalley Edward John Hopkins",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Deus nos deu mensagem santa",
@@ -1807,7 +1784,7 @@ const hymns = [
     {
         "title": "53- Deus Velará Por Ti",
         "author": "Autor desconhecido W.S. Martin",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Não desanimes, Deus proverá;",
@@ -1850,7 +1827,7 @@ const hymns = [
     {
         "title": "54- Dize-o a Cristo",
         "author": "Joel Carlson E. S. Lorenz",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Se estás cansado e abatido,",
@@ -1887,7 +1864,7 @@ const hymns = [
     {
         "title": "55 - Eis Multidões",
         "author": "James McGranahan",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Eis multidões, em trevas tão medonhas,",
@@ -1903,9 +1880,9 @@ const hymns = [
             ],
             [
                 "3. “Oh vinde a mim!” A voz divina clama.",
-                 "Ide, clamai em nome de Jesus,",
-                 "Que pra salvar-nos do castigo eterno,",
-                 "Seu sangue derramou por nós na cruz."
+                "Ide, clamai em nome de Jesus,",
+                "Que pra salvar-nos do castigo eterno,",
+                "Seu sangue derramou por nós na cruz."
             ],
             [
                 "4. Ó Deus, apressa o dia glorioso ",
@@ -1924,7 +1901,7 @@ const hymns = [
     {
         "title": "56 - Em Fervente Oração",
         "author": "James McGranahan",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Em fervente oração,",
@@ -1958,7 +1935,7 @@ const hymns = [
     {
         "title": "57 - Em Mim Vem Habitar",
         "author": "João Corrêa da Costa William Howard Doane",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Em mim vem habitar,",
@@ -1986,15 +1963,14 @@ const hymns = [
                 "4. Oh! que consolação  A Cristo amar,",
                 "Pois que com tanto amor  Me quis salvar!",
                 "Nada me alegra mais,  Gozo não há maior",
-                "Que Tua paz,  Ó Salvador. Amém.",
-
+                "Que Tua paz,  Ó Salvador. Amém."
             ]
         ]
     },
     {
         "title": "58 - Eu Quero Fazer o que Queres, Senhor",
         "author": "Mary Browwn, estrofe 1 Charles Edwin Prior, estrofes 2 e 3 Carrie Esther Rounsefell",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Nem sempre será prá o lugar que eu quiser",
@@ -2037,7 +2013,7 @@ const hymns = [
     {
         "title": "59 - Eu Resolvi Seguir-te",
         "author": "John Ernest Bode Henry Thomas Smart",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Eu resolvi seguir-te,",
@@ -2074,14 +2050,15 @@ const hymns = [
     {
         "title": "60 - Exultação do Crente",
         "author": "Henry Maxwell Wright",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Vinde cantai e entoai louvores a Jesus,",
                 "Que para a nossa salvação, morreu na amarga cruz;",
                 "Seu sangue derramou, de tudo me lavou,",
                 "Mais alvo do que a neve me tornou."
-            ], [
+            ],
+            [
                 "2. Vinde conosco vos unir, na guerra contra o mal;",
                 "E com nosso Salvador, em marcha triunfal,",
                 "A todos proclamar, Sua graça e Seu poder.",
@@ -2091,8 +2068,7 @@ const hymns = [
                 "3. O Capitão da salvação é Cristo, o Salvador;",
                 "O Rei dos reis, o Redentor. Jesus, nosso Senhor;",
                 "Ele tudo vencerá, vitória nos dará;",
-                "A glória salvos, nos conduzirá.",
-
+                "A glória salvos, nos conduzirá."
             ]
         ],
         "coro": [
@@ -2105,7 +2081,7 @@ const hymns = [
     {
         "title": "61 - Eu Creio, Sim",
         "author": "Frida Vingren",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Té conhecer o amor sem fim,",
@@ -2129,8 +2105,7 @@ const hymns = [
                 "4. Eu sei que Deus, no Filho Seu,",
                 "Me vê perfeito e são;",
                 "Não há mais temor, só bendito amor,",
-                "Gozo no meu coração.",
-
+                "Gozo no meu coração."
             ]
         ],
         "coro": [
@@ -2143,7 +2118,7 @@ const hymns = [
     {
         "title": "62 - Face a Face",
         "author": "Carrie Ellis Breck Grant Colfaxtullar",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Quanto almejo ver a Cristo!",
@@ -2180,7 +2155,7 @@ const hymns = [
     {
         "title": "63 - Fala do Amor de Cristo",
         "author": "Joel Carlson (K. E. S.)",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Fala do amor de Cristo",
@@ -2191,7 +2166,6 @@ const hymns = [
                 "A paz que vem do céu;",
                 "A tua voz levanta",
                 "Em glória a Deus."
-
             ],
             [
                 "2. Para os aflitos, canta,",
@@ -2211,8 +2185,7 @@ const hymns = [
                 "Canta no alvor do dia,",
                 "E quando a noite vem;",
                 "Em Cristo, harmonia",
-                "Com Deus se obtém!",
-
+                "Com Deus se obtém!"
             ]
         ],
         "coro": [
@@ -2228,7 +2201,7 @@ const hymns = [
     {
         "title": "64 - Fé Persistente",
         "author": "William Hiley Bathurst Justus H. Nelson",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Almejo a fé que forte é",
@@ -2252,15 +2225,14 @@ const hymns = [
                 "4. Ó Deus, me dá tamanha fé,",
                 "Que venha o que vier!",
                 "Então na lide provarei",
-                "Celestial prazer.",
-
+                "Celestial prazer."
             ]
         ]
     },
     {
         "title": "65 - Feliz o Dia",
         "author": "Philip Doddridge, estrofes Atribuída a Edward Francis Rimbault, estribrilho Melodia americana",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Feliz o dia em que aceitei",
@@ -2293,14 +2265,13 @@ const hymns = [
     {
         "title": "66 - Fé é a Vitória",
         "author": "John Henry Yates",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Soldados de Jesus, Senhor, Cristãos, ó despertai.",
                 "Da noite já as trevas vêm, depressa batalhai!",
                 "E contra os inimigos vis saí a combater!",
                 "A nossa fé vitória é, ao mundo irá vencer."
-
             ],
             [
                 "2. Sob a bandeira que pra nós é o santo amor de Deus,",
@@ -2312,8 +2283,7 @@ const hymns = [
                 "3. Aquele que viver na fé, justiça alcançará;",
                 "Um nome novo há de ter, perdão receberá.",
                 "Assim, bem firmes, pela fé, unidos em amor,",
-                "Nós venceremos com poder que vem do Salvador.",
-
+                "Nós venceremos com poder que vem do Salvador."
             ]
         ],
         "coro": [
@@ -2326,7 +2296,7 @@ const hymns = [
     {
         "title": "67 - Findou-se a Luta de Jesus",
         "author": "Giovanni Pierluigi da Palestrina Hino latino",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Findou-se a luta de Jesus,",
@@ -2351,7 +2321,7 @@ const hymns = [
     {
         "title": "68 - Firme nas Promessas",
         "author": "Russell Kelso Carter",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Firme nas promessas do meu Salvador,",
@@ -2383,7 +2353,7 @@ const hymns = [
     {
         "title": "69 - Fortalece Tua Igreja",
         "author": "Henry Maxwell Wright",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Fortalece Tua igreja, ó bendito Salvador;",
@@ -2401,15 +2371,14 @@ const hymns = [
                 "3. Santifica Tua igreja pela graça divinal;",
                 "Faze-a sempre triunfante no conflito contra o mal;",
                 "Dá-lhe forças na jornada em demanda para o lar,",
-                "E que esteja preparada quando Cristo regressar!",
-
+                "E que esteja preparada quando Cristo regressar!"
             ]
         ]
     },
     {
         "title": "70 - Fonte és Tu de toda Bênção",
         "author": "Robert Robinson Hinário americano",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Fonte és Tu de toda bênção;",
@@ -2439,15 +2408,14 @@ const hymns = [
                 "O meu ser é vacilante",
                 "Toma-o, prende-o com amor",
                 "Para que eu, a todo instante",
-                "Glorifique a Ti, Senhor",
-
+                "Glorifique a Ti, Senhor"
             ]
         ]
     },
     {
         "title": "71 - Glória a Jesus",
         "author": "Henry Maxwell Wright",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1.Glória! Glória! Aleluia!",
@@ -2460,14 +2428,13 @@ const hymns = [
     {
         "title": "72 - Glória ao Salvador",
         "author": "Henry Maxwell Wright",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Chegado à cruz do meu bom Senhor,",
                 "Prostrado aos pés do Redentor,",
                 "Ele ouviu todo meu clamor,",
                 "Glória ao Salvador."
-
             ],
             [
                 "2. Que maravilha! Jesus me amou,",
@@ -2479,8 +2446,7 @@ const hymns = [
                 "3. Junto à cruz, inda há lugar,",
                 "Vem, ó aflito, sem demorar,",
                 "Cristo está pronto pra te salvar,",
-                "Vinde ao Salvador!",
-
+                "Vinde ao Salvador!"
             ]
         ],
         "coro": [
@@ -2492,7 +2458,7 @@ const hymns = [
     {
         "title": "73 - Glória ao Meu Jesus",
         "author": "Henry Maxwell Wright",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Por mim sofreu o Salvador,",
@@ -2516,8 +2482,7 @@ const hymns = [
                 "4. E, quando a guerra aqui findar,",
                 "Glória! Glória ao meu Jesus!",
                 "No céu, melhor, eu vou cantar,",
-                "Glória! Glória ao meu Jesus!",
-
+                "Glória! Glória ao meu Jesus!"
             ]
         ],
         "coro": [
@@ -2530,7 +2495,7 @@ const hymns = [
     {
         "title": "74 - Graças dou Por Minha Vida",
         "author": "August Ludvig Storm John Alfred Hultman",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Graças dou por minha vida,",
@@ -2541,7 +2506,6 @@ const hymns = [
                 "Pelo amor, pela aflição.",
                 "Pelas faltas perdoadas,",
                 "Grato sou de coração."
-
             ],
             [
                 "2. Graças pelo azul celeste,",
@@ -2552,7 +2516,6 @@ const hymns = [
                 "Pela estrela que brilhou,",
                 "Pela prece respondida,",
                 "E a esperança que raiou."
-
             ],
             [
                 "3. Graças dou a Jesus Cristo,",
@@ -2569,14 +2532,13 @@ const hymns = [
     {
         "title": "75 - Grande Comandante",
         "author": "Carrie Ellis Breck Grant Colfax Tullar",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Grande comandante Cristo nos será,",
                 "Nesta guerra santa à frente marchará;",
                 "Nunca Suas hostes abandonará;",
                 "Há de até o fim lutar."
-
             ],
             [
                 "2. Seu pendão glorioso vamos defender,",
@@ -2601,7 +2563,7 @@ const hymns = [
     {
         "title": "76 - Guia, ó Deus, a Minha Vida",
         "author": "William Willians John Hughes",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Guia, ó Deus, a minha vida",
@@ -2629,14 +2591,13 @@ const hymns = [
                 "E em louvor ao Deus eterno,",
                 "Para sempre vou cantar,",
                 "Para sempre vou cantar."
-
             ]
         ]
     },
     {
         "title": "77 - Há Tais Cantos Lá No Céu",
         "author": "Johnson Oatman, Jr John Robson Sydney",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Há tais cantos lá no céu,",
@@ -2665,8 +2626,7 @@ const hymns = [
                 "O universo inteiro pára,",
                 "Em espanto e admiração,",
                 "Ante o canto dos remidos",
-                "Ao Senhor da redenção",
-
+                "Ao Senhor da redenção"
             ]
         ],
         "coro": [
@@ -2683,14 +2643,13 @@ const hymns = [
     {
         "title": "78 - Há Trabalho Pronto",
         "author": "Henry Maxwell Wright",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Há trabalho pronto para ti, cristão;",
                 "Que demanda toda a tua devoção;",
                 "Vem, alegremente, a Cristo obedecer,",
                 "Pois só tu, ó crente, o poderás fazer!"
-
             ],
             [
                 "2. Para cada crente, o Mestre preparou",
@@ -2721,14 +2680,13 @@ const hymns = [
     {
         "title": "79 - Há Poder no Sangue de Jesus",
         "author": "Autor desconhecido L. E. Jones",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. O teu pecado tu queres deixar?",
                 "No sangue há poder, sim há poder;",
                 "Queres do mal a vitória ganhar?",
                 "Seu sangue tem este poder!"
-
             ],
             [
                 "2. Queres os vícios abandonar?",
@@ -2759,7 +2717,7 @@ const hymns = [
     {
         "title": "80 - Há um Caminho Santo",
         "author": "Emil Peterson P.V",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Há um caminho santo, ao céu de plena luz,",
@@ -2791,7 +2749,7 @@ const hymns = [
     {
         "title": "81 - Há Um Rio Cristalino",
         "author": "Robert Lowry George Henry Day",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Junto ao rio cristalino,",
@@ -2822,7 +2780,7 @@ const hymns = [
     {
         "title": "82 - Havemos de Colher",
         "author": "Knowles Shaw George A. Minor",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Semeemos todos a semente santa,",
@@ -2853,7 +2811,7 @@ const hymns = [
     {
         "title": "83 - Herdeiro do Reino",
         "author": "Autor desconhecido L. M",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Ó, tu herdeiro do reino celeste,",
@@ -2871,15 +2829,14 @@ const hymns = [
                 "3. Eis as potências dispostas à luta;",
                 "Sê fervoroso, fiel, bom cristão;",
                 "Já no horizonte refulgem as glórias",
-                "Oh! nobre herdeiro, prorrompe em canção",
-
+                "Oh! nobre herdeiro, prorrompe em canção"
             ]
         ]
     },
     {
         "title": "84 - História de Cristo",
         "author": "Henry Maxwell",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Conta-me a história de Cristo, grava-a no meu coração.,",
@@ -2917,7 +2874,7 @@ const hymns = [
     {
         "title": "85 - Importa Renascer",
         "author": "William True Sleeper George Coles Stebbins",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Um rico, de noite, chegou a Jesus,",
@@ -2948,7 +2905,7 @@ const hymns = [
     {
         "title": "86 - Infinita Graça",
         "author": "Melodia Tradicional Cubana",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Conforme a tua infinita graça,",
@@ -2960,8 +2917,7 @@ const hymns = [
                 "2. Meu coração entrego a Ti, contrito,",
                 "Perdão imploro, meu Senhor e Rei.",
                 "Conforme a Tua infinita graça,",
-                "Misericórdia, sim, alcançarei.",
-
+                "Misericórdia, sim, alcançarei."
             ]
         ],
         "coro": [
@@ -2974,7 +2930,7 @@ const hymns = [
     {
         "title": "87 - Já Termina o Ano Velho",
         "author": "Maria da Glória Loureiro de Andrade Melodia Tradicional leta",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Já termina o ano velho;",
@@ -3005,7 +2961,7 @@ const hymns = [
     {
         "title": "88 - Jesus, o Bom Amigo",
         "author": "Autor desconhecido",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Achei um bom amigo Jesus, o Salvador",
@@ -3044,7 +3000,7 @@ const hymns = [
     {
         "title": "89 - Jerusalém Excelsa",
         "author": "Bernard de Cluny Alexander Ewing",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Jerusalém excelsa,",
@@ -3074,15 +3030,14 @@ const hymns = [
                 "Ó coração que gemes,",
                 "Na dor que te satisfaz,",
                 "Com Deus que redime,",
-                "Feliz então serás.",
-
+                "Feliz então serás."
             ]
         ]
     },
     {
         "title": "90 - Jesus Me Guia",
         "author": "Joseph Henry Gilmore William Batchelder Bradbury",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Jesus me guia: que prazer!",
@@ -3119,7 +3074,7 @@ const hymns = [
     {
         "title": "91 - Jesus, Pastor Amado",
         "author": "Sarah Poulton Kalley George James Webb",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Jesus, Pastor amado, contempla-nos aqui;",
@@ -3143,15 +3098,14 @@ const hymns = [
                 "4. Senhor, se a igreja toda andar em santa união,",
                 "Então será bendito o nome de cristão.",
                 "Assim o que pediste em nós se cumprirá,",
-                "E o mundo, em nós, teus filhos, então distinguirá.",
-
+                "E o mundo, em nós, teus filhos, então distinguirá."
             ]
         ]
     },
     {
         "title": "92 - Jesus Tu és Bom",
         "author": "Joel Carlson Wendelborg",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Meu Jesus Tu és bom;",
@@ -3179,15 +3133,14 @@ const hymns = [
                 "Trazes paz e perdão;",
                 "Salvação, vida, tens para os Teus;",
                 "Que mensagem do céu e de transformação,",
-                "Enviada do trono de Deus!",
-
+                "Enviada do trono de Deus!"
             ]
         ]
     },
     {
         "title": "93 - Jesus, Sempre Te Amo",
         "author": "William Ralph Featherstone Adoniram Judson Gordon",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Jesus, sempre Te amo, porque sei que és meu;",
@@ -3205,15 +3158,14 @@ const hymns = [
                 "3. Eu te amo na vida, na morte também",
                 "Sempre hei de louvar-te na glória de além",
                 "Agora e pra sempre por ti viverei",
-                "E a ti, ó meu Cristo, me submeterei.",
-
+                "E a ti, ó meu Cristo, me submeterei."
             ]
         ]
     },
     {
         "title": "94 - Jesus o Melhor Amigo",
         "author": "Autor desconhecido",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Meu Jesus é o melhor Amigo,",
@@ -3254,7 +3206,7 @@ const hymns = [
     {
         "title": "95 - Jubilosos Te Adoramos",
         "author": "Henry van Dyke Ludwig van Beethoven, c",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Jubilosos te adoramos, Deus da glória, Deus de amor!",
@@ -3263,25 +3215,23 @@ const hymns = [
                 "Doador da eterna graça, enche-nos do Teu amor!"
             ],
             [
-            "2. Tuas obras anunciam Teu poder e resplendor.",
-            "Céus e Terra cantam hinos em louvor a Ti, Senhor.",
-            "Vales, montes e campinas, lindos prados, verde mar,",
-            "Aves, fontes cristalinas, todos querem te adorar."
-
+                "2. Tuas obras anunciam Teu poder e resplendor.",
+                "Céus e Terra cantam hinos em louvor a Ti, Senhor.",
+                "Vales, montes e campinas, lindos prados, verde mar,",
+                "Aves, fontes cristalinas, todos querem te adorar."
             ],
             [
                 "3. Aleluia, aleluia, a Jesus o Redentor!",
                 "Aleluia eternamente em louvor a Ti, Senhor",
                 "Que nos trouxe eterna glória, ao morrer por nós na cruz.",
-                "Aleluia ao Pai e ao Filho, que a todos nós conduz!",
-
+                "Aleluia ao Pai e ao Filho, que a todos nós conduz!"
             ]
         ]
     },
     {
         "title": "96 - Justificado",
         "author": "Harold Graham e Wayne Hooper",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Posso eu justificado ser,",
@@ -3311,15 +3261,14 @@ const hymns = [
                 "Sei que vida eterna vai me dar,",
                 "Sei que Cristo em breve irá voltar;",
                 "E porque justificado fui,",
-                "Com Ele ali no céu terei meu lar",
-
+                "Com Ele ali no céu terei meu lar"
             ]
         ]
     },
     {
         "title": "97 - Lindo País",
         "author": "Melodia Tradicional Irlandesa",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Há um País nas terras de além rio,",
@@ -3339,15 +3288,14 @@ const hymns = [
                 "E quando o Sol se põe no horizonte,",
                 "Eu julgo ver em sonhos este lar;",
                 "Vejo os amigos já ressuscitados,",
-                "E todos nós o nosso bom Jesus louvar.",
-
+                "E todos nós o nosso bom Jesus louvar."
             ]
         ]
     },
     {
         "title": "98 - Louvamos-Te ó Deus",
         "author": "William Pton Mackay John Jenkins Husband",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Louvamos-Te ó Deus",
@@ -3384,7 +3332,7 @@ const hymns = [
     {
         "title": "99 - Louvor a Deus e a Jesus",
         "author": "Elizabeth Rundle Charles Friedinand Flemming",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Ó anjos e homens, dai a Deus louvores,",
@@ -3402,15 +3350,14 @@ const hymns = [
                 "3. Quão insondável é o amor divino!",
                 "Jesus Seu Filho, é a luz do mundo",
                 "É tão sublime, luz ao peregrino,",
-                "Luz que ao Pai conduz!",
-
+                "Luz que ao Pai conduz!"
             ]
         ]
     },
     {
         "title": "100 - Mais Perto Quero Estar",
         "author": "Sarah Fuller Flower Adams Lowel Mason",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Mais perto quero estar,",
@@ -3441,7 +3388,7 @@ const hymns = [
     {
         "title": "101 - Marchai, Soldados de Cristo",
         "author": "Autor desconhecido Wm.J.Kirkpatrick",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Marchai, soldados de Cristo Jesus,",
@@ -3478,7 +3425,7 @@ const hymns = [
     {
         "title": "102 - Mensagem ao Mundo",
         "author": "H. Ernest Nichol",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Vamos dar a mensagem ao mundo,",
@@ -3486,7 +3433,6 @@ const hymns = [
                 "História de amor e graça,",
                 "História de paz e luz,",
                 "História de paz e luz."
-
             ],
             [
                 "2. Uma voz de advertência ao mundo",
@@ -3500,8 +3446,7 @@ const hymns = [
                 "Como alguém que pode salvar;",
                 "Que pode afastar pecados",
                 "E a glória de Deus mostrar,",
-                "E a glória de Deus mostrar.",
-
+                "E a glória de Deus mostrar."
             ]
         ],
         "coro": [
@@ -3514,7 +3459,7 @@ const hymns = [
     {
         "title": "103 - Meu Lar, Jerusalém",
         "author": "Joseph Bromehead",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Feliz Jerusalém, meu lar!",
@@ -3532,15 +3477,14 @@ const hymns = [
                 "3. Jesus em breve irá voltar,",
                 "E a paz do lar de além",
                 "Irá, então, em ti reinar,",
-                "Meu lar – Jerusalém",
-
+                "Meu lar – Jerusalém"
             ]
         ]
     },
     {
         "title": "104 - Meu Melhor Momento",
         "author": "Jairo Pablo A. de Carvalho",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "Meu melhor momento foi quando com Cristo",
@@ -3563,7 +3507,7 @@ const hymns = [
     {
         "title": "105 - Meu Pastor",
         "author": "Adriano Nobre Jojn Zundel",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Meu pastor é Jesus Cristo",
@@ -3603,15 +3547,14 @@ const hymns = [
                 "Por Sua misericórdia",
                 "E por Seu sublime bem",
                 "Habitarei em Sua casa",
-                "Eternamente, amém?",
-
+                "Eternamente, amém?"
             ]
         ]
     },
     {
         "title": "106 - Meu Redentor",
         "author": "Frida Vingren J. G. Foot",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Na cruz morrendo meu Redentor;",
@@ -3635,8 +3578,7 @@ const hymns = [
                 "4. Que maravilha, que grande amor",
                 "Se hoje creres salvo serás",
                 "Cristo te chama vem pecador",
-                "E gozo eterno no céu fluirás",
-
+                "E gozo eterno no céu fluirás"
             ]
         ],
         "coro": [
@@ -3649,7 +3591,7 @@ const hymns = [
     {
         "title": "107- Milícia de Jesus",
         "author": "Henry Maxwell Wright",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Milhares de milhares em refulgente luz!",
@@ -3667,15 +3609,14 @@ const hymns = [
                 "3. Então, não há mais choro, nem há mais tentação;",
                 "As dores, as tristezas p'ra sempre fugirão,",
                 "E os remidos todos verão Seu Salvador;",
-                "E transformados, todos, serão como o Senhor.",
-
+                "E transformados, todos, serão como o Senhor."
             ]
         ]
     },
     {
         "title": "108 - Minha Entrega",
         "author": "Adelaide Addison Pollard George Coles Stebbins",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Cristo, bom Mestre, eis meu querer;",
@@ -3693,15 +3634,14 @@ const hymns = [
                 "3. Cristo, bom mestre, eis meu querer:",
                 "Todas as minhas faltas vencer;",
                 "Faze-me rijo para lutar,",
-                "Para a vitória sempre ganhar.",
-
+                "Para a vitória sempre ganhar."
             ]
         ]
     },
     {
         "title": "109 - Na Cruz Morri Por Ti",
         "author": "Frances Ridley Haverga",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Na cruz morri por ti,",
@@ -3731,30 +3671,26 @@ const hymns = [
                 "Mas mesmo a morte desprezei,",
                 "Pra te salvar, assim;",
                 "Por ti a Minha vida dei;",
-                "Que fazes tu por Mim?",
-
+                "Que fazes tu por Mim?"
             ]
         ]
     },
     {
         "title": "110 - Não Desistir",
         "author": "Chuck Fulmore",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Dias há, bem sei, em que triste te sentes;",
                 "Sem ter esperança e prazer;",
                 "Mas existe alguém que promete ajudar-te",
                 "E forças à alma trazer."
-
             ],
             [
                 "2. Este mundo, eu sei, já não vai muito longe,",
                 "E o mal vai breve findar.",
                 "Minha fé em Deus, sim, está bem firmada:",
-                "Jesus logo vai regressar.",
-
-
+                "Jesus logo vai regressar."
             ]
         ],
         "coro": [
@@ -3767,7 +3703,7 @@ const hymns = [
     {
         "title": "111 - Não Sou Meu",
         "author": "Henry Maxwell Wright",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Não sou meu! Por Cristo salvo,",
@@ -3804,7 +3740,7 @@ const hymns = [
     {
         "title": "112 - Nome Bom, Doce a Fé",
         "author": "Lydia Baxter William Howard Doane",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Nome santo e venerável",
@@ -3841,7 +3777,7 @@ const hymns = [
     {
         "title": "113 - Nome Precioso",
         "author": "William Howard Doane",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Leva tu contigo o nome",
@@ -3878,7 +3814,7 @@ const hymns = [
     {
         "title": "114 - Nós O Veremos",
         "author": "Mariane Scriven",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Nós O veremos retornando em glória;",
@@ -3897,15 +3833,14 @@ const hymns = [
                 "Nosso louvor alçaremos ao céu",
                 "Com santos anjos O exaltaremos,",
                 "Cantando em coro, Hosana! Amém!",
-                "Hosana! Amém!",
-
+                "Hosana! Amém!"
             ]
         ]
     },
     {
         "title": "115 - Nós Te Adoramos",
         "author": "Edond Louis BuBudrynFranz Joseph Haydn",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Nós Te adoramos, Deus infinito,",
@@ -3936,7 +3871,7 @@ const hymns = [
     {
         "title": "116 - O Bondoso Amigo",
         "author": "R.H.Moreton",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Quão bondoso amigo é Cristo!",
@@ -3966,15 +3901,14 @@ const hymns = [
                 "Derramou Seu sangue puro",
                 "Nossa mancha pra lavar",
                 "Gozo em vida e no futuro",
-                "Nele podemos alcançar.",
-
+                "Nele podemos alcançar."
             ]
         ]
     },
     {
         "title": "117- O Convite de Cristo",
         "author": "Henry Maxwell Wright",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Eis, a voz de Cristo clama,",
@@ -4017,7 +3951,7 @@ const hymns = [
     {
         "title": "118 - O Descanso em Jesus",
         "author": "Frida Vingren F. M. Lelunan",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Tens descanso encontrado em Jesus Cristo?",
@@ -4048,7 +3982,7 @@ const hymns = [
     {
         "title": "119 - Ó Cristãos, Avante!",
         "author": "Sabine Baring Gould Arthur Seymour Sullivan",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Ó cristãos, avante! Sem temor marchar!",
@@ -4066,8 +4000,7 @@ const hymns = [
                 "3. Reinos pereceram, tronos e nações,",
                 "Mas a Igreja vence, mesmo em aflições.",
                 "Vamos, pois, avante, com fervor marchar,",
-                "Rumo para a glória, nosso eterno lar.",
-
+                "Rumo para a glória, nosso eterno lar."
             ]
         ],
         "coro": [
@@ -4080,7 +4013,7 @@ const hymns = [
     {
         "title": "120 - Ó Deus de Amor",
         "author": "Isaac Watts John Hatton",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Ó Deus de amor, vimos nós Te adorar.",
@@ -4098,15 +4031,14 @@ const hymns = [
                 "3. Teu é o poder e o louvor, nosso Deus;",
                 "Teu, nosso amor, fervor também.",
                 "Qual rocha firme a verdade ficará,",
-                "Deus eternal, Senhor. Amém.",
-
+                "Deus eternal, Senhor. Amém."
             ]
         ]
     },
     {
         "title": "121 - Ó Deus Eterno, Vem Me Conceder",
         "author": "John Ellerton Edward John Hopkins",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Ó Deus eterno, vem me conceder",
@@ -4137,7 +4069,7 @@ const hymns = [
     {
         "title": "122 - O Dia do Triunfo de Jesus",
         "author": "James Milton Black",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Quando lá do céu descendo para o seus Jesus voltar,",
@@ -4161,8 +4093,7 @@ const hymns = [
                 "4. Em mim mesmo, nada tenho em que possa confiar,",
                 "Mas Jesus morreu na cruz p'ra me salvar;",
                 "Tão somente nEle espero, sim, e sempre esperarei.",
-                "Pois, por Sua imensa graça, lá estarei.",
-
+                "Pois, por Sua imensa graça, lá estarei."
             ]
         ],
         "coro": [
@@ -4175,7 +4106,7 @@ const hymns = [
     {
         "title": "123 - O Dia Não Sei",
         "author": "Franklis Edson Belden",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. O dia não sei do regresso do Esposo;",
@@ -4207,7 +4138,7 @@ const hymns = [
     {
         "title": "124 - O Exilado",
         "author": "Justos H. Nelson",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Da linda pátria estou bem longe;",
@@ -4254,7 +4185,7 @@ const hymns = [
     {
         "title": "125 - O Grande Amor",
         "author": "Henry Maxwell Wright",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. O grande amor de meu Jesus",
@@ -4278,8 +4209,7 @@ const hymns = [
                 "4. Incomparável Salvador!",
                 "Quão inefável Teu amor!",
                 "Quão impossível de sondar!",
-                "Imenso e sem par",
-
+                "Imenso e sem par"
             ]
         ],
         "coro": [
@@ -4292,7 +4222,7 @@ const hymns = [
     {
         "title": "126 - Oh! Nunca Separar!",
         "author": "Isaac Watts Timbrel Of Zion",
-        "speed": 1.0,
+        "speed": 1,
         "videos": [
             "https://youtu.be/lVmDPbFfoKo?si=3sKEhKJ-8xjpokdY"
         ],
@@ -4313,8 +4243,7 @@ const hymns = [
                 "3. Já nós estamos qual Moisés,",
                 "Vendo o futuro lar;",
                 "E divisamos pela fé",
-                "A morada sem par.",
-
+                "A morada sem par."
             ]
         ],
         "coro": [
@@ -4333,7 +4262,7 @@ const hymns = [
     {
         "title": "127 - Oh! Que Belos Hinos",
         "author": "William Orcutt Cushing  George Frederick Root",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Oh! que belos hinos cantam lá nos céus!",
@@ -4364,7 +4293,7 @@ const hymns = [
     {
         "title": "128 - O Lugar de Bênção e Paz",
         "author": "Sarah Poulton Kalley",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Eu estou no lugar onde há bênção e paz,",
@@ -4388,8 +4317,7 @@ const hymns = [
                 "4. Há louvor sem igual onde há bênção e paz!",
                 "E eis que os anjos desejam cantar",
                 "Com os homens, em coro, a bendita mercê",
-                "De Jesus, que nos veio salvar!",
-
+                "De Jesus, que nos veio salvar!"
             ]
         ],
         "coro": [
@@ -4402,7 +4330,7 @@ const hymns = [
     {
         "title": "129 - Ó Pai Eterno",
         "author": "Katharine L. Bates",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Ó Pai eterno que no céu habitas,",
@@ -4420,15 +4348,14 @@ const hymns = [
                 "3. Ó Pai, transforma nossa natureza,",
                 "Vem ensinar-nos a fazer o bem.",
                 "Em nossa mente dá-nos mais pureza,",
-                "Mais santidade, por Jesus. Amém",
-
+                "Mais santidade, por Jesus. Amém"
             ]
         ]
     },
     {
         "title": "130 - O Segredo de Viver",
         "author": "Henry Maxwell Wright John J. Richardson",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Quando me cercar o mal",
@@ -4465,7 +4392,7 @@ const hymns = [
     {
         "title": "131 - Ó Senhor, Nos Alegramos",
         "author": "Leônidas Philadelpho da Siva William Lewis Rayner McCluer",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Ó Senhor, nos alegramos,",
@@ -4504,7 +4431,7 @@ const hymns = [
     {
         "title": "132 - Oh! Que Glória",
         "author": "Henry Maxwell Wright",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Meu Senhor, que me salvaste,",
@@ -4545,21 +4472,19 @@ const hymns = [
     {
         "title": "133 - Onde Quer Que For Irei",
         "author": "Fanny Jane Crosby John Samuel Norri Estribrilho Ira David Sankey",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Se Eu tiver Jesus ao lado,",
                 "E por Ele auxiliado;",
                 "Se por Ele for mandado,",
                 "A qualquer lugar irei."
-
             ],
             [
                 "2. Seja meu caminho duro,",
                 "Espinhoso ou inseguro,",
                 "Em Seus braços bem seguro,",
                 "Aonde me mandar irei."
-
             ],
             [
                 "3. Males poderão cercar-me,",
@@ -4584,7 +4509,7 @@ const hymns = [
     {
         "title": "134 - Ouço o Clamor do Bom Pastor",
         "author": "Alexcenah Thomas William Augustine Ogden",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Ouço o clamor do bom Pastor,",
@@ -4615,7 +4540,7 @@ const hymns = [
     {
         "title": "135 - Onde Quer Que Seja",
         "author": "Jessie Brown Pounds Kurt Frederic Kaiser",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Onde quer que seja com Jesus irei;",
@@ -4644,7 +4569,7 @@ const hymns = [
     {
         "title": "136 - Ouve-nos Senhor",
         "author": "George Whelpton",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Ouve-nos,",
@@ -4657,7 +4582,7 @@ const hymns = [
     {
         "title": "137 - Ouvi o Salvador dizer",
         "author": "Horatius Bonar John Bacchus Dykes",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Ouvi o Salvador dizer “Vem descansar em Mim,",
@@ -4693,7 +4618,7 @@ const hymns = [
     {
         "title": "138 - Pão da Vida",
         "author": "Salomão Luiz Ginsburg William Letton Viner",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Pão da vida, pão de Deus",
@@ -4722,7 +4647,7 @@ const hymns = [
     {
         "title": "139 - Para o Céu por Jesus Irei",
         "author": "Jessie Brown Pounds Charles Hutchison Gabriel",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Foi Jesus que abriu o caminho do céu",
@@ -4740,8 +4665,7 @@ const hymns = [
                 "3. Os caminhos ímpios do mundo deixei,",
                 "Jamais neles vou seguir;",
                 "Com Jesus, eu vou, levo a minha cruz,",
-                "No caminho que ao céu conduz.",
-
+                "No caminho que ao céu conduz."
             ]
         ],
         "coro": [
@@ -4755,7 +4679,7 @@ const hymns = [
     {
         "title": "140 - Pensando Em Jesus",
         "author": "Autor desconhecido",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Nas horas que passo pensando em Jesus",
@@ -4779,15 +4703,14 @@ const hymns = [
                 "4. Minh'alma ansiosa já quer percorrer",
                 "A senda gloriosa que eu hei de ver;",
                 "Que coisa tão bela; oh! que luz sem véu!",
-                "Jesus me revela mistérios do céu.",
-
+                "Jesus me revela mistérios do céu."
             ]
         ]
     },
     {
         "title": "141 - Plena Graça",
         "author": "Henry Maxwell Wright",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Plena graça para me salvar,",
@@ -4800,7 +4723,7 @@ const hymns = [
     {
         "title": "142 - Por Meus Pecados Padeceu",
         "author": "Isaac Watts Ralph E. Hudson",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Por meus pecados padeceu Jesus",
@@ -4831,7 +4754,7 @@ const hymns = [
     {
         "title": "143 - Prece ao Nosso Deus",
         "author": "Felice de Giardini",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Ó grande e eterno Deus!",
@@ -4858,7 +4781,7 @@ const hymns = [
     {
         "title": "144 - Precioso é Jesus para mim",
         "author": "Charles Hutchison Gabriel",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Precioso é Jesus o meu Rei, Salvador;",
@@ -4888,7 +4811,7 @@ const hymns = [
     {
         "title": "145 - Pronto a Salvar",
         "author": "Henry Maxwell Wright",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Todo o que crê no Filho de Deus,",
@@ -4913,7 +4836,7 @@ const hymns = [
     {
         "title": "146 - Qual o Adorno Desta vida?",
         "author": "Sarah Poulton Kalley Melodia Tradicional Inglesa Adapt. Hubert Platt Main",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Qual o adorno desta vida? É o amor,",
@@ -4950,7 +4873,7 @@ const hymns = [
     {
         "title": "147 - Quando Deus fizer Chamada lá Estarei",
         "author": "James Milton Black",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Quando Cristo a trombeta lá no céu mandar tocar,",
@@ -4981,7 +4904,7 @@ const hymns = [
     {
         "title": "148 - Quão Grande és Tu",
         "author": "Carl Boberg",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Senhor meu Deus, quando eu, maravilhado,",
@@ -5018,14 +4941,15 @@ const hymns = [
     {
         "title": "149 - Que Alegria é Crer em Cristo",
         "author": "Louisa M. R. Stead William James Kirkpatrick",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Que alegria é crer em Cristo,",
                 "Em Seu nome confiar;",
                 "Observar os Seus ensinos,",
                 "Nas promessas descansar!"
-            ], [
+            ],
+            [
                 "2. Que alegria é crer em Cristo,",
                 "Ter certeza de perdão!",
                 "Receber de Cristo mesmo ",
@@ -5048,14 +4972,14 @@ const hymns = [
     {
         "title": "150 - Que diz a Bíblia?",
         "author": "Franklin Edson Belden",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. “Que diz a Bíblia, livro sagrado”?",
                 "Para o fiel, eis a questão!",
                 "Ensinamentos de homens são falhos;",
                 "Que diz de Deus o livro então!"
-            ], 
+            ],
             [
                 "2. Poucos ponderam estes ensinos;",
                 "Querem fugir de a lei guardar;",
@@ -5079,7 +5003,7 @@ const hymns = [
     {
         "title": "151 - Quem Irá?",
         "author": "Henry Maxwell Wright",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Eis os milhões que em trevas tão medonhas",
@@ -5103,8 +5027,7 @@ const hymns = [
                 "4. Ó Deus apressa o dia glorioso,",
                 "Em que os remidos todos se unirão,",
                 "E, em coro excelso, santo, jubiloso,",
-                "P'ra todo o sempre, glória a Ti darão.",
-
+                "P'ra todo o sempre, glória a Ti darão."
             ]
         ],
         "coro": [
@@ -5117,7 +5040,7 @@ const hymns = [
     {
         "title": "152 - Que Segurança! Sou de Jesus",
         "author": "Fanny Jane CrosbY Phoebe Palmer Knapp",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Que segurança! Sou de Jesus!",
@@ -5148,7 +5071,7 @@ const hymns = [
     {
         "title": "153 - Quero Estar ao Pé da Cruz",
         "author": "Fancy Jane Crosby William Howard Doane",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Quero estar ao pé da cruz,",
@@ -5166,8 +5089,7 @@ const hymns = [
                 "3. Sempre a cruz, Jesus meu Rei,",
                 "Queiras recordar-me;",
                 "Dela, à sombra, ó Salvador,",
-                "Queiras abrigar-me.",
-
+                "Queiras abrigar-me."
             ]
         ],
         "coro": [
@@ -5180,7 +5102,7 @@ const hymns = [
     {
         "title": "154 - Quem Ouvir as Novas",
         "author": "Philip Paul Bliss",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Quem ouvir as novas, vá proclamar;",
@@ -5198,8 +5120,7 @@ const hymns = [
                 "3. Que fiel promessa tens, pecador!",
                 "Queres ter a vida? Vem ao Salvador!",
                 "Ele a todos fala com mui terno amor:",
-                "Todo que quiser é vir!",
-
+                "Todo que quiser é vir!"
             ]
         ],
         "coro": [
@@ -5212,7 +5133,7 @@ const hymns = [
     {
         "title": "155 - Quero Ser um Vaso de Bênção",
         "author": "Harper G. Smyth",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Quero ser um vaso de bênção,",
@@ -5230,20 +5151,20 @@ const hymns = [
                 "3. Para ser um vaso de bênção",
                 "É preciso ser sempre leal,",
                 "É preciso ter fé e pureza,",
-                "Que nos vem do poder divinal.",
-
+                "Que nos vem do poder divinal."
             ]
         ],
         "coro": [
             "Tudo consagro-Te agora Senhor;",
             "Vou proclamar a mensagem de amor.",
             "Meu compromisso no Teu serviço",
-            "É ser um vaso de bênção Senhor."]
+            "É ser um vaso de bênção Senhor."
+        ]
     },
     {
         "title": "156 - Quero Ter Jesus Comigo",
         "author": "Lizzie Edwards John Robson Sweney",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Quero ter Jesus comigo,",
@@ -5261,8 +5182,7 @@ const hymns = [
                 "3. Quero ter Jesus comigo,",
                 "Sempre aqui em meu viver,",
                 "No lazer e no trabalho,",
-                "No pesar e no prazer",
-
+                "No pesar e no prazer"
             ]
         ],
         "coro": [
@@ -5275,7 +5195,7 @@ const hymns = [
     {
         "title": "157 - Rasgou-se o Véu",
         "author": "Autor desconhecido",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Rasgou-se o véu, franca ficou a entrada;",
@@ -5305,15 +5225,14 @@ const hymns = [
                 "Teus santos seguidores, consagrados,",
                 "No sangue do bendito Salvador,",
                 "O culto e adoração Te apresentamos,",
-                "Porque nos chamaste, ó bom Senhor!",
-
+                "Porque nos chamaste, ó bom Senhor!"
             ]
         ]
     },
     {
         "title": "158 - Resgatados Pelo Sangue de Cristo",
         "author": "Frida Vingren",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Com ouro e prata não fui resgatado,",
@@ -5337,8 +5256,7 @@ const hymns = [
                 "4. Por ouro e por prata não fui redimido;",
                 "A entrada do céu não se pode comprar;",
                 "Mas, só pelo sangue de Cristo vertido",
-                "Na cruz, poderemos a glória alcançar.",
-
+                "Na cruz, poderemos a glória alcançar."
             ]
         ],
         "coro": [
@@ -5351,7 +5269,7 @@ const hymns = [
     {
         "title": "159 - Rocha Eterna",
         "author": "Augustus Montague Toplady Thomas Hastings",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Rocha eterna, foi na cruz,",
@@ -5373,15 +5291,14 @@ const hymns = [
                 "3. Quando a morte, enfim chegar,",
                 "E meus olhos eu fechar,",
                 "Quando para o céu subir O Teu rosto em glória vir,",
-                "Rocha eterna, que prazer  Eu terei de ti viver!",
-
+                "Rocha eterna, que prazer  Eu terei de ti viver!"
             ]
         ]
     },
     {
         "title": "160 – Sábado",
         "author": "Eduard Eyth U.B. Oyen",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Como estão felizes nossos corações!",
@@ -5399,15 +5316,14 @@ const hymns = [
                 "3. Seja-nos suave para o coração,",
                 "Teu sagrado dia, Tua criação.",
                 "Nossos vis pecados, lança para trás;",
-                "Dá-nos neste dia Tua excelsa paz!",
-
+                "Dá-nos neste dia Tua excelsa paz!"
             ]
         ]
     },
     {
         "title": "161 - Salvador Bendito",
         "author": "Henry Maxwell Wright Arthur Seymour Sullivan",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Salvador bendito, terno e bom Senhor;",
@@ -5431,8 +5347,7 @@ const hymns = [
                 "4. Sempre em Ti confio, grande é Teu poder,",
                 "Tu os inimigos podes bem vencer;",
                 "Salvo e bem seguro leva-me, Senhor,",
-                "Sempre protegido pelo Teu amor.",
-
+                "Sempre protegido pelo Teu amor."
             ]
         ],
         "coro": [
@@ -5443,7 +5358,7 @@ const hymns = [
     {
         "title": "162 - Salvo Estou",
         "author": "Frida Vingren Jno.R. Sweney",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Salvo estou, Jesus comprou-me",
@@ -5467,8 +5382,7 @@ const hymns = [
                 "4. Ao chegar o fim da lida,",
                 "Me recebes, Salvador;",
                 "Me concede eterna vida,",
-                "No Teu reino de amor.",
-
+                "No Teu reino de amor."
             ]
         ],
         "coro": [
@@ -5481,7 +5395,7 @@ const hymns = [
     {
         "title": "163 - Santo! Santo! Santo!",
         "author": "Reginald Heber John Bacchus Dykes",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Santo!, Santo! Santo! Deus onipotente!",
@@ -5499,15 +5413,14 @@ const hymns = [
                 "3. Santo! Santo! Santo! Deus onipotente",
                 "Tua criação manifesta o Teu amor.",
                 "Antes de criares todo o céu e a Terra,",
-                "Eras e sempre hás de ser, Senhor",
-
+                "Eras e sempre hás de ser, Senhor"
             ]
         ]
     },
     {
         "title": "164 - Satisfeito Com Cristo",
         "author": "Autor desconhecido",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Oh! ‘stou satisfeito com Cristo,",
@@ -5538,7 +5451,7 @@ const hymns = [
     {
         "title": "165 - Saudosa Lembrança",
         "author": "Adriano Nobre",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Oh, que saudosa lembrança",
@@ -5585,7 +5498,7 @@ const hymns = [
     {
         "title": "166 - Se Cristo Comigo Vai",
         "author": "Frida Vingren C. Austin Miles",
-        "speed": 1.0,
+        "speed": 1,
         "videos": [
             "https://youtu.be/HbDez34qav8?si=La-F6lv4kqaBglHi"
         ],
@@ -5612,8 +5525,7 @@ const hymns = [
                 "4. Ao Salvador Jesus eu desejo obedecer,",
                 "Pois na Sua Palavra encontro o meu saber;",
                 "Fiel a Deus serei, o mundo vencerei,",
-                "Jesus vai comigo, não mais temerei.",
-
+                "Jesus vai comigo, não mais temerei."
             ]
         ],
         "coro": [
@@ -5626,7 +5538,7 @@ const hymns = [
     {
         "title": "167 - Se Tu Buscares a Jesus",
         "author": "Ina Duley Ogdon Bemtley Deforrest Ackley",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Se tu buscares a Jesus,",
@@ -5657,7 +5569,7 @@ const hymns = [
     {
         "title": "168 - Seguir a Cristo",
         "author": "Frida Vingren",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Queres tu seguir a Cristo",
@@ -5706,7 +5618,7 @@ const hymns = [
     {
         "title": "169 - Seguirei a Cristo",
         "author": "Henry Maxwell Wright",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Sempre! Sempre! Seguirei a Cristo!",
@@ -5719,7 +5631,7 @@ const hymns = [
     {
         "title": "170 - Sempre Alegre",
         "author": "Fanny Jane Croby Robert Lowry",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Seja o coração alegre,",
@@ -5750,7 +5662,7 @@ const hymns = [
     {
         "title": "171 - Sempre Fiéis",
         "author": "Henry Maxwell Wright",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Sempre fiéis, sim, a Ti, nós seremos,",
@@ -5781,7 +5693,7 @@ const hymns = [
     {
         "title": "172 - Senhor, É Admirável o Teu Divino Amor",
         "author": "James George Deck Arthur Henry Mann",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Senhor, é admirável",
@@ -5802,7 +5714,8 @@ const hymns = [
                 "Sofreste afronta e dor",
                 "Pra nos libertar",
                 "Eterno Salvador."
-            ], [
+            ],
+            [
                 "3. Por nós sacrificaste",
                 "A vida sobre a cruz;",
                 "Da morte nos livraste,",
@@ -5811,7 +5724,8 @@ const hymns = [
                 "Com grato coração",
                 "E, humildes, te ofertamos",
                 "A nossa devoção."
-            ], [
+            ],
+            [
                 "4. Agora, transformados,",
                 "Queremos te servir",
                 "E, unidos, irmãos,",
@@ -5822,7 +5736,7 @@ const hymns = [
     {
         "title": "173 - Será de Manhã?",
         "author": "H. L. Tuner XIX James McGranahan",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Será de manhã, no começo do dia?",
@@ -5853,7 +5767,7 @@ const hymns = [
     {
         "title": "174 - Seu Sangue Tem Poder",
         "author": "Lewis Edgar Jones",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. De teu pecado te queres livrar?",
@@ -5890,7 +5804,7 @@ const hymns = [
     {
         "title": "175 - Sim, Cristo Me Ama",
         "author": "Anna Barlett Warner William Batchelder Bradbury",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Cristo tem amor por mim,",
@@ -5927,7 +5841,7 @@ const hymns = [
     {
         "title": "176 - Sob Suas Asas",
         "author": "William Orclt Cushing Ira David Sankey",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Sob Suas asas estou descansando,",
@@ -5958,7 +5872,7 @@ const hymns = [
     {
         "title": "177 - Sou Feliz Com Jesus",
         "author": "Horatio Gates Spafford Philip Paul Bliss",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Se paz, a mais doce, me deres gozar,",
@@ -5994,7 +5908,7 @@ const hymns = [
     {
         "title": "178 - Tão Grato é Me Lembrar",
         "author": "Phoebe Cary",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Tão grato é me lembrar",
@@ -6012,8 +5926,7 @@ const hymns = [
                 "3. Ó Mestre, que leal",
                 "Eu seja sempre aqui!",
                 "Pois quero junto aos salvos mil",
-                "Contigo estar ai.",
-
+                "Contigo estar ai."
             ]
         ],
         "coro": [
@@ -6025,7 +5938,7 @@ const hymns = [
     {
         "title": "179 - Teu Nome Precioso",
         "author": "Ja. S.",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Jesus Cristo, o Teu nome",
@@ -6072,7 +5985,7 @@ const hymns = [
     {
         "title": "180 - Tenho Paz em Meu Ser",
         "author": "Will L. Murphy/ João Pereira",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Tenho paz em meu ser,",
@@ -6105,7 +6018,7 @@ const hymns = [
     {
         "title": "181 - Teu Santo Amor, Jesus",
         "author": "Sylvaus Dryden Phelps Robert Lowry",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Teu Santo Amor, Jesus,",
@@ -6142,7 +6055,7 @@ const hymns = [
     {
         "title": "182 - Triste e Sombrio Foi Meu Viver",
         "author": "William True Sleeper George Coles Stebbins",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Triste e sombrio foi meu viver",
@@ -6179,7 +6092,7 @@ const hymns = [
     {
         "title": "183 - Tudo Está Bem",
         "author": "Henry Maxwell Wright",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Pelo amor de Deus bendito,",
@@ -6229,15 +6142,14 @@ const hymns = [
                 "Pelo sangue resgatados,",
                 "E do mundo separados.",
                 "Sempre por Jesus guardados.",
-                "Sim, sim, 'stá tudo bem!",
-
+                "Sim, sim, 'stá tudo bem!"
             ]
         ]
     },
     {
         "title": "184 - Toma, ó Deus, Meu Coração",
         "author": "Frances Ridley Havegal Henri Abraham Cesar Malan",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Toma, ó Deus, em Tua mão,",
@@ -6258,22 +6170,20 @@ const hymns = [
                 "Com poder, em glória e luz",
                 "Toma, ó Deus, meu pobre ser",
                 "Para sempre ir morar",
-                "Com Jesus no doce lar",
-
+                "Com Jesus no doce lar"
             ]
         ]
     },
     {
         "title": "185 - Tudo Entregarei",
         "author": "Judson Van Venter Wifield Scott Weeden",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Tudo, ó Cristo, a Ti entrego,",
                 "Tudo, sim, por Ti darei.",
                 "Resoluto, mas submisso,",
                 "Sempre a Ti eu seguirei."
-
             ],
             [
                 "2. Tudo, ó Cristo, a Ti entrego,",
@@ -6308,7 +6218,7 @@ const hymns = [
     {
         "title": "186 - Tú és Fiel, Senhor",
         "author": "Thomas Obediah Chislm William Marion Runyan",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Tú és fiel, Senhor, ó Deus eterno!",
@@ -6325,8 +6235,7 @@ const hymns = [
                 "3. Pleno perdão Tu dás: que, segurança!",
                 "Sempre nos guia na senda do bem;",
                 "E, no porvir, oh! que doce esperança!",
-                "Tu nos receberás no lar de além.",
-
+                "Tu nos receberás no lar de além."
             ]
         ],
         "coro": [
@@ -6340,7 +6249,7 @@ const hymns = [
     {
         "title": "187 - Um Pendão Real",
         "author": "Henry Maxwell Wright",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Um pendão real vos entregou o Rei",
@@ -6364,8 +6273,7 @@ const hymns = [
                 "4. Pois sejamos, todos, a Jesus leais,",
                 "E a Seu real pendão;",
                 "Os que na batalha sempre são fiéis,",
-                "Com Ele reinarão.",
-
+                "Com Ele reinarão."
             ]
         ],
         "coro": [
@@ -6378,7 +6286,7 @@ const hymns = [
     {
         "title": "188 - Vem Entre Nós Morar",
         "author": "Dario Pires de Araujo Paul Ritter",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Vem, ó Jesus, entre nós morar;",
@@ -6396,15 +6304,14 @@ const hymns = [
                 "3. Quando a manhã perenal raiar,",
                 "E a redenção se concretizar,",
                 "Nós Te rogamos, ó Senhor,",
-                "Salva também o nosso lar.",
-
+                "Salva também o nosso lar."
             ]
         ]
     },
     {
         "title": "189 - Vem a Cristo",
         "author": "John Fawcet",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Vem a Cristo, vem agora,"
@@ -6428,7 +6335,7 @@ const hymns = [
     {
         "title": "190 - Vencendo Vem Jesus",
         "author": "Júlia Ward Howe Melodia Tradicional Ameri",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Já refulge a glória eterna de Jesus o Rei dos reis:",
@@ -6467,7 +6374,7 @@ const hymns = [
     {
         "title": "191 - Vinde Meninos",
         "author": "George Frederick Root",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Vinde, meninos, vinde a Jesus!",
@@ -6485,8 +6392,7 @@ const hymns = [
                 "3. Que ama aos meninos, cristo vos diz",
                 "Quer receber-vos nesse País",
                 "Quer conceder-vos vida feliz",
-                "Oh, vinde ao Salvador.",
-
+                "Oh, vinde ao Salvador."
             ]
         ],
         "coro": [
@@ -6499,7 +6405,7 @@ const hymns = [
     {
         "title": "192 - Vinde, Povo do Senhor",
         "author": "Henry Alford George Job Elvery",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Vinde, povo do Senhor, adorai-O com louvor.",
@@ -6524,7 +6430,7 @@ const hymns = [
     {
         "title": "193 - Vitória em Cristo",
         "author": "Eugene Monroe Barlett",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Ouvi da bela história",
@@ -6571,7 +6477,7 @@ const hymns = [
     {
         "title": "194 - Vitoria Deus Dará a Mim",
         "author": "Autor desconhecido J.T.B.",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Vitória Deus dará a mim, eu sei,",
@@ -6585,7 +6491,7 @@ const hymns = [
     {
         "title": "195 - Vivifica Tua Igreja",
         "author": "Henry Maxwell Wright",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Vivifica Tua igreja ó bendito Salvador;",
@@ -6600,7 +6506,7 @@ const hymns = [
     {
         "title": "196 - Vós, Criaturas do Senhor",
         "author": "Francisco de Assis",
-        "speed": 1.0,
+        "speed": 1,
         "verses": [
             [
                 "1. Vós, criaturas do Senhor,",
@@ -6632,5 +6538,3 @@ const hymns = [
         ]
     }
 ];
-
-module.exports = { hymns };
