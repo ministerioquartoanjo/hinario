@@ -1,0 +1,32 @@
+{
+  "title": "163 - Santo! Santo! Santo!",
+  "author": "Reginald Heber John Bacchus Dykes",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Santo!, Santo! Santo! Deus onipotente!",
+      "Cedo, de manhã, cantaremos Teu louvor.",
+      "Santo!, Santo! Santo! Deus Jeová infinito!",
+      "És Deus excelso, nosso Criador!"
+    ],
+    [
+      "2. Santo! Santo! Santo! Nós, os pecadores,",
+      "Não podemos ver a Tua glória sem tremor.",
+      "Tu somente és Santo, justo e compassivo,",
+      "Puro e perfeito, nosso Rei de amor."
+    ],
+    [
+      "3. Santo! Santo! Santo! Deus onipotente",
+      "Tua criação manifesta o Teu amor.",
+      "Antes de criares todo o céu e a Terra,",
+      "Eras e sempre hás de ser, Senhor"
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

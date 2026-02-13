@@ -1,0 +1,38 @@
+{
+  "title": "49 - Dá-me a Bíblia",
+  "author": "Priscila Jane Owens Edmund Simon Lorenz",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Dá-me a Bíblia que eu tanto anelo,",
+      "Por seu caminho quero sempre andar;",
+      "Suas palavras são a doce nova",
+      "Que nosso Mestre veio anunciar."
+    ],
+    [
+      "2. Dá-me a Bíblia, dela eu preciso,",
+      "Pois do pecado há de me livrar;",
+      "Suas palavras têm poder e alento",
+      "Que minha alma podem renovar."
+    ],
+    [
+      "3. Dá-me a Bíblia, que meu guia seja;",
+      "Por toda a vida, meu caminho e luz.",
+      "Seus bons ensinos sejam sempre o astro",
+      "Que me conduza para o pé da cruz"
+    ]
+  ],
+  "coro": [
+    "Dá-me a Bíblia, livro tão precioso;",
+    "Santa doutrina, fonte é de luz.",
+    "São seus ensinos um sublime gozo;",
+    "Eles conduzem para o bom Jesus."
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

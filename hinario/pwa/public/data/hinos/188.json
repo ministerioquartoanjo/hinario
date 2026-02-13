@@ -1,0 +1,32 @@
+{
+  "title": "188 - Vem Entre Nós Morar",
+  "author": "Dario Pires de Araujo Paul Ritter",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Vem, ó Jesus, entre nós morar;",
+      "Seja também Teu o nosso lar;",
+      "Sê com mamãe e com papai;",
+      "Vem-nos Senhor, abençoar."
+    ],
+    [
+      "2. Reine afeição e perfeito amor,",
+      "Longe do mal, de qualquer temor;",
+      "Nosso viver, em tudo aqui,",
+      "Honre tão só o Salvador."
+    ],
+    [
+      "3. Quando a manhã perenal raiar,",
+      "E a redenção se concretizar,",
+      "Nós Te rogamos, ó Senhor,",
+      "Salva também o nosso lar."
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

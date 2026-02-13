@@ -1,0 +1,44 @@
+{
+  "title": "181 - Teu Santo Amor, Jesus",
+  "author": "Sylvaus Dryden Phelps Robert Lowry",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Teu Santo Amor, Jesus,",
+      "Veio me alcançar;",
+      "Meu ser, aos pés da cruz,",
+      "Quero consagrar.",
+      "Aceita, ó Salvador,",
+      "De um grato pecador,",
+      "Tributo de louvor,",
+      "Dado com fervor."
+    ],
+    [
+      "2. Atende, meu Jesus,",
+      "Essa petição;",
+      "Teu, e somente Teu",
+      "É meu coração.",
+      "Teu nome exaltar,",
+      "Aos outros vou falar",
+      "Do Teu amor sem par;",
+      "Vem me habilitar"
+    ],
+    [
+      "3. Dá-me Senhor, mais fé",
+      "E um amor real.",
+      "Pra te servir e ser",
+      "Muito mais leal",
+      "As almas a ganhar",
+      "Sempre na luz andar",
+      "E meus irmãos amar;",
+      "Vem me habilitar! Amém"
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

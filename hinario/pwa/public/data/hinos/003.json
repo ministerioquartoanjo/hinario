@@ -1,0 +1,54 @@
+{
+  "title": "3 - A Esperança da Igreja",
+  "author": "Henry Maxwell Wright",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Até que volte o Salvador",
+      "Cercando a mesa do Senhor,",
+      "A Ceia vimos celebrar,",
+      "De Cristo a morte anunciar,",
+      "E com humilde devoção",
+      "Render a Deus adoração."
+    ],
+    [
+      "2. Até que volte o Salvador,",
+      "Aqui mostremos Seu amor;",
+      "Com viva fé e gratidão,",
+      "Participemos deste pão,",
+      "Obedientes a Jesus,",
+      "Lembrando assim a Sua cruz!"
+    ],
+    [
+      "3. Até que volte o Salvador,",
+      "Bebendo o cálice do Senhor,",
+      "Seu nome queremos bendizer,",
+      "E mais e mais engrandecer,",
+      "O sangue que Ele derramou,",
+      "O sangue que nos resgatou!"
+    ],
+    [
+      "4. Se duras são as provações,",
+      "Se fortes as perseguições,",
+      "Se as lutas fazem-se sentir,",
+      "E custa-nos as resistir,",
+      "Não nos deixemos perturbar:",
+      "São só até Jesus voltar!"
+    ],
+    [
+      "5. Bem prontos para O receber,",
+      "Devemos sempre aqui viver;",
+      "O tempo foge, o dia vem,",
+      "A glória esperamos além,",
+      "Pois trabalhemos, com fervor,",
+      "Até que volte o Salvador."
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

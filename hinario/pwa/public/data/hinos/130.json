@@ -1,0 +1,44 @@
+{
+  "title": "130 - O Segredo de Viver",
+  "author": "Henry Maxwell Wright John J. Richardson",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Quando me cercar o mal",
+      "Ao rugir o temporal,",
+      "Em Jesus vou confiar,",
+      "Pois jamais irá falhar."
+    ],
+    [
+      "2. Quando a dor ou aflição",
+      "Perturbar meu coração,",
+      "É preciso confiar,",
+      "E a Jesus tudo entregar."
+    ],
+    [
+      "3. Quando fraco me sentir,",
+      "Quando o mundo me oprimir,",
+      "E pesar a minha cruz,",
+      "'Crê somente!' - Diz Jesus."
+    ],
+    [
+      "4. Quer nas trevas, quer na luz,",
+      "Sempre perto de Jesus,",
+      "Perto e pronto pra salvar",
+      "Quem somente confiar."
+    ]
+  ],
+  "coro": [
+    "O segredo do viver,",
+    "O segredo do vencer,",
+    "É em Cristo confiar,",
+    "Pois jamais irá falhar."
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

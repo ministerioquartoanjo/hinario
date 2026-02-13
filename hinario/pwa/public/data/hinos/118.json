@@ -1,0 +1,38 @@
+{
+  "title": "118 - O Descanso em Jesus",
+  "author": "Frida Vingren F. M. Lelunan",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Tens descanso encontrado em Jesus Cristo?",
+      "Permaneces pela graça que Ele deu?",
+      "Tens tu paz com teu Salvador bendito?",
+      "Plenitude do espírito Deus?"
+    ],
+    [
+      "2. Estarás bem seguro e corajoso,",
+      "Quando a tentação chegar-se para ti?",
+      "Tens a graça pra ser Vitorioso",
+      "Nas terríveis provações da vida aqui."
+    ],
+    [
+      "3. Só em Cristo encontrarás descanso,",
+      "Que ninguém aqui, jamais irá tirar;",
+      "Com Jesus tu hás de aprender ser manso,",
+      "E Sua glória em ti o mundo há de mirar."
+    ]
+  ],
+  "coro": [
+    "Tens descanso encontrado em Jesus Cristo?",
+    "Permaneces pela graça que Ele deu?",
+    "Plena paz, consolação, acharás na oração:",
+    "Deus aí vitória aos santos concedeu."
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

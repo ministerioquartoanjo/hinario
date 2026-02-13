@@ -1,0 +1,44 @@
+{
+  "title": "73 - Glória ao Meu Jesus",
+  "author": "Henry Maxwell Wright",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Por mim sofreu o Salvador,",
+      "Glória! Glória ao meu Jesus!",
+      "Louvai, comigo ao Redentor!",
+      "Glória! Glória ao meu Jesus!"
+    ],
+    [
+      "2. C'os meus pecados carregou,",
+      "Glória! Glória ao meu Jesus!",
+      "E sobre a cruz me resgatou.",
+      "Glória! Glória ao meu Jesus!"
+    ],
+    [
+      "3. Eu sei que perdoado estou,",
+      "Glória! Glória ao meu Jesus!",
+      "E, com certeza, ao céu eu vou!",
+      "Glória! Glória ao meu Jesus!"
+    ],
+    [
+      "4. E, quando a guerra aqui findar,",
+      "Glória! Glória ao meu Jesus!",
+      "No céu, melhor, eu vou cantar,",
+      "Glória! Glória ao meu Jesus!"
+    ]
+  ],
+  "coro": [
+    "Jesus! Jesus! Ó Salvador!",
+    "É doce o nome do Senhor.",
+    "Abrasa-me com santo amor,",
+    "Glória! Glória! Ao meu Senhor."
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

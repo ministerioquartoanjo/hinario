@@ -1,0 +1,50 @@
+{
+  "title": "58 - Eu Quero Fazer o que Queres, Senhor",
+  "author": "Mary Browwn, estrofe 1 Charles Edwin Prior, estrofes 2 e 3 Carrie Esther Rounsefell",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Nem sempre será prá o lugar que eu quiser",
+      "Que o Mestre vai me enviar.",
+      "É tão grande a seara já pronta a colher,",
+      "Na qual cuidarei trabalhar.",
+      "E se por caminhos que nunca segui,",
+      "A tua chamada eu ouvi;",
+      "Feliz certo irei dirigido por Ti,",
+      "A Tua vontade cumprir."
+    ],
+    [
+      "2. Há tantas palavras de amor e perdão",
+      "Que aos outros eu posso levar,",
+      "Porque nos caminhos dos vícios estão",
+      "Perdidos que devo ir buscar.",
+      "Senhor, se com Tua presença real",
+      "Tu fores pra fortalecer,",
+      "Darei a mensagem de servo leal",
+      "Com zelo, fervor e prazer."
+    ],
+    [
+      "3. Eu quero encontrar um obscuro lugar",
+      "Na Tua seara, Senhor.",
+      "Enquanto viver, eu irei trabalhar",
+      "Com fé e coragem e amor.",
+      "De ti meu sustento bem sei que virá,",
+      "E nada preciso temer",
+      "A Tua vontade, sim minha será;",
+      "Um servo fiel quero ser"
+    ]
+  ],
+  "coro": [
+    "Eu quero fazer o que queres, Senhor;",
+    "Por Ti sustentado serei.",
+    "E quero dizer o que queres, Senhor;",
+    "E assim o meu dever cumprirei."
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

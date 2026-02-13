@@ -1,0 +1,44 @@
+{
+  "title": "182 - Triste e Sombrio Foi Meu Viver",
+  "author": "William True Sleeper George Coles Stebbins",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Triste e sombrio foi meu viver",
+      "Longe de Ti meu Redentor.",
+      "Mas alegria vim conhecer,",
+      "Junto de ti, Senhor.",
+      "Foi grande a luta e a tentação;",
+      "Tenho sofrido muita aflição.",
+      "Pra confortar o meu coração,",
+      "Eu venho a Ti, Senhor."
+    ],
+    [
+      "2. Minhas vaidades atirarei ",
+      "Longe de mim, ó Salvador;",
+      "Pois Teu querer será minha lei;",
+      "Servir-te-ei, Senhor. ",
+      "Teu grande amor desejo provar,",
+      "E Tua graça manifestar;",
+      "Junto de Ti desejo ficar;",
+      "Eu venho a Ti, Senhor."
+    ],
+    [
+      "3. Medo da morte nunca terei,",
+      "Perto de mim sempre estarás;",
+      "Pois ao Teu lar um dia eu irei,",
+      "Tu me receberás. ",
+      "Junto de Ti desejo viver,",
+      "Junto de Ti eu vou combater;",
+      "Junto de Ti, vencer ou morrer;",
+      "Eu venho a Ti, Senhor"
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

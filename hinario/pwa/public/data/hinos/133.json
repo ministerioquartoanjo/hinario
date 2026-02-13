@@ -1,0 +1,44 @@
+{
+  "title": "133 - Onde Quer Que For Irei",
+  "author": "Fanny Jane Crosby John Samuel Norri Estribrilho Ira David Sankey",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Se Eu tiver Jesus ao lado,",
+      "E por Ele auxiliado;",
+      "Se por Ele for mandado,",
+      "A qualquer lugar irei."
+    ],
+    [
+      "2. Seja meu caminho duro,",
+      "Espinhoso ou inseguro,",
+      "Em Seus braços bem seguro,",
+      "Aonde me mandar irei."
+    ],
+    [
+      "3. Males poderão cercar-me,",
+      "Ou perigos assustar-me,",
+      "Mas, se Cristo segurar-me,",
+      "Onde me mandar irei."
+    ],
+    [
+      "4. Quando terminar a vida,",
+      "A batalha for vencida,",
+      "Tenho a glória prometida,",
+      "Eu pra meu Senhor irei."
+    ]
+  ],
+  "coro": [
+    "Seguirei a meu bom Mestre!",
+    "Seguirei a meu bom Mestre!",
+    "Seguirei a meu bom Mestre!",
+    "Onde quer que for irei!"
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

@@ -1,0 +1,56 @@
+{
+  "title": "168 - Seguir a Cristo",
+  "author": "Frida Vingren",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Queres tu seguir a Cristo",
+      "E andar na Sua luz?",
+      "Pelo mundo sempre visto,",
+      "Por levar a Sua cruz?"
+    ],
+    [
+      "2. Queres hoje dar o passo,",
+      "Para seres um cristão?",
+      "Vem quebranta triste laço",
+      "Do pecado e sedução"
+    ],
+    [
+      "3. A cidade na montanha,",
+      "Não se pode esconder,",
+      "E também a fé tamanha",
+      "Que a vida deu poder."
+    ],
+    [
+      "4. Amas tu a Jesus Cristo,",
+      "Que por ti Sua vida deu?",
+      "Vem então declaras isto",
+      "Júbilo então terás no céu."
+    ],
+    [
+      "5. Ó vê bem o teu intento",
+      "Custa tua vida sim!",
+      "Não resista com alento,",
+      "Vem a Cristo a luz sem fim."
+    ],
+    [
+      "6. Vem confessa teus pecados",
+      "Junto a cruz do Salvador;",
+      "Pede graça de segui-Lo,",
+      "Com coragem e amor."
+    ],
+    [
+      "7. Considera o grande gozo",
+      "Que no céu espera sim;",
+      "Aqui lutas lá repouso,",
+      "Galardão terás enfim."
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

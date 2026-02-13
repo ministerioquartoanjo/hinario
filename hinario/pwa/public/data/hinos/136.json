@@ -1,0 +1,20 @@
+{
+  "title": "136 - Ouve-nos Senhor",
+  "author": "George Whelpton",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Ouve-nos,",
+      "Senhor, Santo Salvador;",
+      "Enclina-Te a ouvir",
+      "E dá-nos Tua paz. Amém."
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

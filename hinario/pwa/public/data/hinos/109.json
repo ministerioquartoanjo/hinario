@@ -1,0 +1,44 @@
+{
+  "title": "109 - Na Cruz Morri Por Ti",
+  "author": "Frances Ridley Haverga",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Na cruz morri por ti,",
+      "Por ti, ó pecador!",
+      "Meu sangue ali verti,",
+      "Provando amarga dor.",
+      "Na cruz a minha vida pus,",
+      "Do céu por isso vim.",
+      "Das trevas te chamei à luz’",
+      "Que fazes tu por Mim?"
+    ],
+    [
+      "2. Em vão Eu não deixei",
+      "O trono lá na luz;",
+      "Em vão não permutei",
+      "A glória pela cruz.",
+      "Por ti deixei no céu Meu lar,",
+      "Fui peregrino aqui.",
+      "Não queiras, pois, desculpas dar;",
+      "Que fazes tu por Mim?"
+    ],
+    [
+      "3. Imensa foi a dor,",
+      "A angústia que sofri!",
+      "Não pode haver maior!",
+      "A ela sucumbi.",
+      "Mas mesmo a morte desprezei,",
+      "Pra te salvar, assim;",
+      "Por ti a Minha vida dei;",
+      "Que fazes tu por Mim?"
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

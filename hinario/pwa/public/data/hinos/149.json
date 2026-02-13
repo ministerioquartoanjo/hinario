@@ -1,0 +1,38 @@
+{
+  "title": "149 - Que Alegria é Crer em Cristo",
+  "author": "Louisa M. R. Stead William James Kirkpatrick",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Que alegria é crer em Cristo,",
+      "Em Seu nome confiar;",
+      "Observar os Seus ensinos,",
+      "Nas promessas descansar!"
+    ],
+    [
+      "2. Que alegria é crer em Cristo,",
+      "Ter certeza de perdão!",
+      "Receber de Cristo mesmo ",
+      "Vida, paz e salvação."
+    ],
+    [
+      "3. Que alegria é crer em Cristo,",
+      "Meu amigo e Salvador!",
+      "Andarei seguro sempre,",
+      "Bem feliz em Seu amor."
+    ]
+  ],
+  "coro": [
+    "Cristo! Cristo! Eu confio",
+    "Em Teu nome e Teu poder;",
+    "Cristo, meu Senhor amado,",
+    "Faze minha fé crescer."
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

@@ -1,0 +1,54 @@
+{
+  "title": "193 - Vitória em Cristo",
+  "author": "Eugene Monroe Barlett",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Ouvi da bela história",
+      "Que Jesus desceu da glória!",
+      "E no Gólgota enfim morreu",
+      "Por quantos como eu.",
+      "Ouvi de Seus gemidos,",
+      "Do Seu sangue e dos remidos;",
+      "E ao fim, contrito, me prostrei;",
+      "Vitória nEle achei."
+    ],
+    [
+      "2. Ouvi que Ele cura,",
+      "Sim, a todo que O procura;",
+      "Que o coxo fez andar, então,",
+      "E ao cego deu visão.",
+      "Orei, clamei: “meu Mestre,",
+      "Vem restaura minha vida.”",
+      "E logo Cristo me atendeu,",
+      "E a mim vitória deu."
+    ],
+    [
+      "3. Ouvi falar da glória",
+      "Que virá após vitória,",
+      "Para os redimidos por Jesus,",
+      "Na resplendente luz;",
+      "De anjos lá cantando,",
+      "E mansões já me aguardando;",
+      "Será glorioso ali chegar,",
+      "E então poder cantar:"
+    ]
+  ],
+  "coro": [
+    "Vitória em Cristo",
+    "Eterna vitória!",
+    "Buscou-me, salvou-me,",
+    "Na cruz por mim morreu!",
+    "Que paz e alegria,",
+    "Raiou um novo dia!",
+    "Vitória Jesus me deu,",
+    "No sangue que verteu!"
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

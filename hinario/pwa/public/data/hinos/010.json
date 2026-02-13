@@ -1,0 +1,52 @@
+{
+  "title": "10 - A Ovelha Perdida",
+  "author": "Rev. J. A. Gordon, D.D.",
+  "speed": 1,
+  "verses": [
+    [
+      "1. O bom Pastor buscou-me",
+      "Já longe do redil;",
+      "E com ternura achou-me,",
+      "Caído, triste viu!",
+      "As chagas com amor curou,",
+      "E ao lar nos braços me levou."
+    ],
+    [
+      "2. Ferido, abandonado,",
+      "Jesus me socorreu;",
+      "E segredou-me:\"achei-te;",
+      "De agora em diante és meu\".",
+      "Tão meiga voz jamais ouvi,",
+      "Prazer maior jamais senti."
+    ],
+    [
+      "3. Jesus mostrou-me as chagas",
+      "Que em meu lugar sofreu,",
+      "Coroa, mas de espinhos,",
+      "A cruz que padeceu.",
+      "Que poderia em mim achar,",
+      "Pra tais afrontas suportar?"
+    ],
+    [
+      "4. Enquanto as horas passam,",
+      "Eu tenho gozo e paz,",
+      "E aguardo, meu bom mestre,",
+      "Que tão feliz me faz!",
+      "Jesus, a mim virá buscar,",
+      "E então pra sempre irei gozar!"
+    ]
+  ],
+  "coro": [
+    "Sim, Jesus amou-me,",
+    "Com amor buscou-me.",
+    "Ele mesmo restaurou-me a Deus;",
+    "Por Seu sangue restaurou-me a Deus."
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

@@ -1,0 +1,46 @@
+{
+  "title": "88 - Jesus, o Bom Amigo",
+  "author": "Autor desconhecido",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Achei um bom amigo Jesus, o Salvador",
+      "O escolhido dos milhares para mim",
+      "Dos vales é o lírio; é o forte Mediador",
+      "Que me purifica e guarda para Si",
+      "Consolador amado, meu protetor do mal",
+      "Solicitude minha toma a Si"
+    ],
+    [
+      "2. Levou-me as dores todas as mágoas lhe entreguei",
+      "Minha fortaleza é, na tentação",
+      "Deixei por Ele tudo; os ídolos queimei",
+      "Ele me conserva santo o coração",
+      "Que o mundo me abandone; persiga o tentador",
+      "Jesus me guarda até da vida o fim."
+    ],
+    [
+      "3. Não desampara nunca nem me abandonará",
+      "Se fiel e obediente eu viver",
+      "Um muro é de fogo, que me protegerá",
+      "Té que venha a mim o tempo de vencer",
+      "Ao céu então voando, Sua glória eu verei",
+      "Onde a dor e a morte nunca vêm."
+    ]
+  ],
+  "coro": [
+    "Dos vales é o lírio, a estrela da manhã",
+    "O escolhido dos milhares para mim",
+    "Consolador amado, meu protetor do mal",
+    "Solicitude minha toma a Si",
+    "Dos vales é o lírio, a estrela da manhã",
+    "O escolhido dos milhares para mim"
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

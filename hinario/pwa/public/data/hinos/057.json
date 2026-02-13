@@ -1,0 +1,42 @@
+{
+  "title": "57 - Em Mim Vem Habitar",
+  "author": "João Corrêa da Costa William Howard Doane",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Em mim vem habitar,",
+      "Oh, vem Jesus;",
+      "E em mim fazer brilhar",
+      "A tua luz!",
+      "Eis a minha ambição:",
+      "Ter e sentir, Senhor,",
+      "Mais gratidão",
+      "E mais amor."
+    ],
+    [
+      "2. Os passos teus seguir  Eu quero sim,",
+      "Prá te servir e amar  Até o fim.",
+      "Eis o meu desejar,  Meu ideal maior,",
+      "Contigo andar  Ó Salvador."
+    ],
+    [
+      "3. Em meu interior  Vem tu brilhar.",
+      "Faz-me com mais ardor  Da cruz falar.?",
+      "Reveste o coração  E teu excelso amor,",
+      "De retidão  E de fervor."
+    ],
+    [
+      "4. Oh! que consolação  A Cristo amar,",
+      "Pois que com tanto amor  Me quis salvar!",
+      "Nada me alegra mais,  Gozo não há maior",
+      "Que Tua paz,  Ó Salvador. Amém."
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

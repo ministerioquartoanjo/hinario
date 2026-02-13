@@ -1,0 +1,20 @@
+{
+  "title": "71 - Glória a Jesus",
+  "author": "Henry Maxwell Wright",
+  "speed": 1,
+  "verses": [
+    [
+      "1.Glória! Glória! Aleluia!",
+      "Glória! Glória! Ao nosso Salvador.",
+      "Glória a Jesus! Glória a Jesus!",
+      "Nosso grande Redentor."
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

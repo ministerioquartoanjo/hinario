@@ -1,0 +1,41 @@
+{
+  "title": "56 - Em Fervente Oração",
+  "author": "James McGranahan",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Em fervente oração,",
+      "Vem o teu coração",
+      "Na presença de Deus derramar!",
+      "Mas só podes fruir",
+      "O que estás a pedir,",
+      "Quando tudo deixares no altar."
+    ],
+    [
+      "2. Maravilhas de amor te fará o Senhor",
+      "Atendendo à oração que aceitar",
+      "Seu imenso poder, te virá socorrer",
+      "Quando tudo deixares no altar!"
+    ],
+    [
+      "3. Se orares, porém, sem o teu coração",
+      "Ter a paz que o Senhor pode dar",
+      "Foi por Deus não Sentir que tua alma se abriu",
+      "Tudo, tudo, deixando no altar"
+    ]
+  ],
+  "coro": [
+    "Quando tudo perante o Senhor estiver,",
+    "E todo o teu ser Ele controlar,",
+    "Só então hás de ver,",
+    "Que o Senhor tem poder,",
+    "Quando tudo deixares no altar."
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

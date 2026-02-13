@@ -1,0 +1,34 @@
+{
+  "title": "5 - Aleluia! Aleluia! Gratos Hinos Entoai",
+  "author": "Christopher Wordsworth, Ludwig van Beethoven",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Aleluia! Aleluia!",
+      "Gratos hinos entoai.",
+      "Jubilosos e contentes,",
+      "Hinos a Jesus cantai.",
+      "Pra livrar-nos do pecado,",
+      "Triste morte padeceu;",
+      "Triunfando dessa morte,",
+      "Ele vida eterna deu"
+    ],
+    [
+      "2. Cristo, Redentor divino",
+      "O pecado aniquilou",
+      "E alcançou a mesma bênção",
+      "Para os que Ele resgatou.",
+      "Eis milhares de milhares",
+      "A prestar-lhe adoração,",
+      "Descobrindo em Sua obra",
+      "Vida, luz e salvação"
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

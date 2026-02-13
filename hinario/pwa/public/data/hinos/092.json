@@ -1,0 +1,42 @@
+{
+  "title": "92 - Jesus Tu és Bom",
+  "author": "Joel Carlson Wendelborg",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Meu Jesus Tu és bom;",
+      "Tu és tudo prá mim!",
+      "Foste morto, mas vives em mim;",
+      "Tu mereces louvor, ó Cordeiro de Deus!",
+      "Tu és tudo, sim, tudo prá mim!"
+    ],
+    [
+      "2. Quero a Ti dar louvor,",
+      "Pois és Rei sobre reis;",
+      "Tu és tudo, mas nada eu sou;",
+      "Enche meu coração de ternura e paz;",
+      "Honra eterna e glória Te dou."
+    ],
+    [
+      "3. O Teu nome é amor,",
+      "Pois Tu amas a mim,",
+      "E eu quero andar neste amor;",
+      "Triunfante estou, confiando em Ti,",
+      "Meu Jesus, grande Consolador."
+    ],
+    [
+      "4. Ó Ungido de Deus,",
+      "Trazes paz e perdão;",
+      "Salvação, vida, tens para os Teus;",
+      "Que mensagem do céu e de transformação,",
+      "Enviada do trono de Deus!"
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

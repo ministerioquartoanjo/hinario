@@ -1,0 +1,44 @@
+{
+  "title": "70 - Fonte és Tu de toda Bênção",
+  "author": "Robert Robinson Hinário americano",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Fonte és Tu de toda bênção;",
+      "Vem o canto me inspirar;",
+      "A misericórdia Tua",
+      "Quero em alto som louvar.",
+      "Oh, ensina o novo canto",
+      "Dos remidos lá dos céus;",
+      "Aos Teus servos povo santo",
+      "Prá louvarmos-Te bom Deus."
+    ],
+    [
+      "2. Ao Senhor eu agradeço",
+      "Pois Jesus me socorreu",
+      "E, por sua graça, um dia",
+      "Vai levar-me para o céu",
+      "Eu perdido, procurou-me",
+      "Longe do meu Deus, sem luz",
+      "Dos pecados meus lavou-me",
+      "Com seu sangue o bom Jesus"
+    ],
+    [
+      "3. Devedor à Tua graça",
+      "Cada dia e hora sou",
+      "Teu cuidado sempre faça",
+      "Com que eu ame a Ti, Senhor",
+      "O meu ser é vacilante",
+      "Toma-o, prende-o com amor",
+      "Para que eu, a todo instante",
+      "Glorifique a Ti, Senhor"
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

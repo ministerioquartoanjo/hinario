@@ -1,0 +1,38 @@
+{
+  "title": "147 - Quando Deus fizer Chamada lá Estarei",
+  "author": "James Milton Black",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Quando Cristo a trombeta lá no céu mandar tocar,",
+      "Quando o dia majestoso amanhecer;",
+      "E os remidos desta Terra meu Jesus vier buscar",
+      "E fizer-se então chamada lá estarei."
+    ],
+    [
+      "2. Nesse dia glorioso quando o crente ressurgir",
+      "E da gloria de Jesus participar",
+      "Quando os salvos triunfantes O saudarem no porvir",
+      "E fizer-se então chamada, lá estarei"
+    ],
+    [
+      "3. Viverei então prá Cristo, ‘té o dia terminar,",
+      "Falarei do Seu amor por nós aqui.",
+      "Quando pois findar a luta e o labor aqui cessar",
+      "E fizer-se então chamada lá estarei!"
+    ]
+  ],
+  "coro": [
+    "Quando Deus fizer chamada,",
+    "Quando Deus fizer chamada,",
+    "Quando Deus fizer chamada,",
+    "Quando Deus fizer chamada lá estarei!"
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 10
+}

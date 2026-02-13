@@ -1,0 +1,38 @@
+{
+  "title": "167 - Se Tu Buscares a Jesus",
+  "author": "Ina Duley Ogdon Bemtley Deforrest Ackley",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Se tu buscares a Jesus,",
+      "Encontrarás o Salvador;",
+      "A ti virá manhã de luz",
+      "E paz em Seu amor."
+    ],
+    [
+      "2. À luz que Ele prometeu,",
+      "Em teu viver desfrutarás",
+      "O amor e as bênçãos lá do céu,",
+      "De Deus a doce paz"
+    ],
+    [
+      "3. Jesus compreende a tua dor,",
+      "E sempre quer teu bem-estar;",
+      "Crê, pois, que junto ao salvador,",
+      "Conforto hás de gozar"
+    ]
+  ],
+  "coro": [
+    "Se buscares conhecê-Lo,",
+    "Oh sim, ama-lo-ás também!",
+    "Manhã feliz despontará",
+    "Para ti, no lar de além."
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

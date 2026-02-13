@@ -1,0 +1,40 @@
+{
+  "title": "180 - Tenho Paz em Meu Ser",
+  "author": "Will L. Murphy/ João Pereira",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Tenho paz em meu ser,",
+      "Uma perfeita paz;",
+      "Que o mundo não pode dar.",
+      "E na prova fatal,",
+      "Ou na luta mortal,",
+      "Tenho paz para me confortar."
+    ],
+    [
+      "2. Quando eu fui a Jesus, encontrei plena luz,",
+      "De paz a minh'alma inundou.",
+      "Toda noite passou: novo dia raiou,",
+      "Porque Cristo Jesus me salvou."
+    ],
+    [
+      "3. Esta paz sem igual, que me livra do mal,",
+      "Sublime, sem par, eternal,",
+      "Não a quero deixar: ela vai me ajudar,",
+      "Té chegar à mansão celestial."
+    ]
+  ],
+  "coro": [
+    "Em meu ser habita Cristo, o Senhor.",
+    "Em meu ser habita profundo amor!",
+    "Sim, não me desampara: Ele é fiel;",
+    "Estará comigo, meu Salvador."
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

@@ -1,0 +1,34 @@
+{
+  "title": "97 - Lindo País",
+  "author": "Melodia Tradicional Irlandesa",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Há um País nas terras de além rio,",
+      "Cheio de flores, de prazer e luz;",
+      "É destinado às almas resgatadas;",
+      "Lá não terão mais lutas nem mais cruz.",
+      "Pois é ali que a morte não mais entra,",
+      "Nem mais pecado o brilho tirará.",
+      "Jesus, o Rei dessas mansões tão lindas",
+      "Os salvos, todos, com prazer abraçará."
+    ],
+    [
+      "2. Lindo País! Eu vejo a brisa mansa",
+      "Acariciar campinas e jardins,",
+      "E embalar as palmas prateadas",
+      "Dos perfumados vales com jasmins.",
+      "E quando o Sol se põe no horizonte,",
+      "Eu julgo ver em sonhos este lar;",
+      "Vejo os amigos já ressuscitados,",
+      "E todos nós o nosso bom Jesus louvar."
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

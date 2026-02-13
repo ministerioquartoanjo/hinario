@@ -1,0 +1,37 @@
+{
+  "title": "178 - Tão Grato é Me Lembrar",
+  "author": "Phoebe Cary",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Tão grato é me lembrar",
+      "Que cada dia estou",
+      "Mais perto do celeste lar",
+      "Em que morar eu vou!"
+    ],
+    [
+      "2. Em breve vou partir",
+      "Pra onde não há dor.",
+      "Delícias no céu vou fruir",
+      "Naquele lar de amor."
+    ],
+    [
+      "3. Ó Mestre, que leal",
+      "Eu seja sempre aqui!",
+      "Pois quero junto aos salvos mil",
+      "Contigo estar ai."
+    ]
+  ],
+  "coro": [
+    "Cada vez mais, perto do lar,",
+    "Perto do meu eterno lar",
+    "Em que morar eu vou."
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

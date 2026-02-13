@@ -1,94 +1,39 @@
-# Hinário MQAAF (PWA)
+# Hinário MQAAF PWA
 
-Aplicativo Web Progressivo para apresentação de hinos, com modo de apresentação em tela cheia, playlist aleatória, reprodução de áudio e controles de tipografia/fundo em tempo real. Construído com Tailwind CSS e JavaScript puro.
+Este é um Web App Progressivo (PWA) de alta performance e estética premium para apresentação de hinos em reuniões, cultos e estudo individual.
 
-## Funcionalidades
-- Apresentação de hinos no modo completo/compacto com navegação por slides
-- Apresentação em tela cheia com imagens de fundo
-- Modo de playlist aleatória (controles de Próximo/Parar no modo tela cheia)
-- Reprodutor de áudio por hino
-- Ajustes de tamanho de fonte, altura de linha e cor
-- Overlay de configurações e atalhos de teclado
-- PWA instalável com cache via Service Worker
+## 🚀 Tecnologias
+- **Frontend**: HTML5, Tailwind CSS, Vanilla JavaScript (ES6+), jQuery
+- **PWA**: Manifest.json, Service Worker para suporte offline
+- **Build Tool**: Vite para desenvolvimento rápido e bundling otimizado
+- **Icons**: Font Awesome 5.15.3
+- **Fonts**: Google Fonts (Inter, Roboto, Montserrat, etc.)
 
-## Estrutura do Projeto (alto nível)
-- `index.html` – UI principal e carregador de scripts (carrega `hinos.js` e depois `script.js`)
-- `script.js` – lógica do app (apresentação, playlist, handlers da interface)
-- `hinos.js` – dados/conteúdo dos hinos
-- `service-worker.js` – cache PWA
-- `src/input.css` – fonte do Tailwind
-- `dist/output.css` – CSS gerado pelo build do Tailwind
-- `styles.css` – estilos adicionais
-- `icons/` – ícones do app e favicon
-- `js/` – jQuery e plugin de autocomplete
+## ✨ Funcionalidades
+- **Busca Inteligente**: Autocomplete dinâmico por número, título ou letra.
+- **Modos de Apresentação**: Alternância entre slides individuais e modo completo com rolagem.
+- **Sincronização Remota**: Controle a apresentação de outro dispositivo.
+- **Player de Áudio**: Reprodução com ajuste de velocidade e playlist automática.
+- **Personalização Total**: Controle de fontes, cores, altura de linha e temas (Dark/Light).
+- **Zoom em Palavras**: Pressione Shift e passe o mouse no modo completo para zoom instantâneo.
+- **Integração de Vídeos**: Adicione e gerencie vídeos do YouTube relacionados aos hinos.
 
-## Pré-requisitos
-- Node.js 18+ e npm
+## 📦 Instalação e Uso
+1. Instale as dependências:
+   ```bash
+   npm install
+   ```
+2. Inicie o servidor de desenvolvimento:
+   ```bash
+   npm run dev
+   ```
+3. Para produzir o bundle final:
+   ```bash
+   npm run build
+   ```
 
-## Install
-```bash
-npm install
-```
+## 📱 Controle Remoto
+Abra o menu ou clique no ícone de celular para abrir a interface de controle remoto. Ela sincroniza ações como troca de slides, hinos e player de áudio em tempo real com a janela principal via `BroadcastChannel`.
 
-## Desenvolvimento
-Duas opções comuns:
-
-1) Tailwind em modo watch + um servidor estático (recomendado por causa do Service Worker)
-```bash
-npm run dev
-# Em outro terminal, sirva a pasta (exemplos):
-# npx serve .
-# ou
-# python3 -m http.server 5173
-```
-Abra http://localhost:5173 (ou a porta que você escolher).
-
-2) Abrir `index.html` diretamente no navegador (o comportamento do SW não será o mesmo).
-
-## Build
-```bash
-npm run build
-```
-Gera o CSS compilado em `dist/output.css`.
-
-## Deploy (Surge)
-Este projeto inclui o script `surge.sh` que faz o build, prepara a pasta `deploy/` e publica no Surge.
-
-- Scripts no `package.json`:
-  - `predeploy`: faz o build e copia os arquivos para `deploy/`
-  - `deploy:surge`: executa `bash surge.sh`
-
-Execute:
-```bash
-npm run deploy:surge
-```
-O script irá:
-- Fazer o build do Tailwind
-- Copiar os arquivos necessários para `deploy/`
-- Publicar no domínio configurado do Surge
-
-## Cache Busting / Versionamento
-O `index.html` inclui um indicador de versão no cabeçalho:
-```html
-<sup class="version" id="version">YY.M.D[.X]</sup>
-```
-- Os scripts são carregados com `?v=<versão>`, ajudando a invalidar o cache do Service Worker e do navegador.
-- Após mudanças, atualize a versão e faça dois hard refreshes para garantir a atualização do SW.
-
-## Atalhos de Teclado (resumo)
-- Seta direita/esquerda ou swipe: avançar/voltar slide
-- PageUp/PageDown: avançar/retroceder hino
-- f: alternar fundo
-- c: alternar modo compacto/completo
-- +/-: aumentar/diminuir fonte
-- Seta cima/baixo: ajustar altura da linha
-- Alt+R: resetar configurações
-- Esc: fechar overlay
-
-## Contribuições / Issues / Solicitações
-Use o repositório para contribuir, reportar problemas ou solicitar ajustes:
-- https://github.com/ministerioquartoanjo/hinario/tree/main/hinario/pwa/README.md
-
-## Observações
-- O Service Worker pode manter assets antigos. Após deploys, faça dois hard refreshes para ativar o novo SW.
-- O `hinos.js` carrega da cópia local primeiro e só faz fallback para a URL remota se a local falhar.
+---
+Desenvolvido com foco na simplicidade e excelência visual.

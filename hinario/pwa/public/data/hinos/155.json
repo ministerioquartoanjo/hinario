@@ -1,0 +1,38 @@
+{
+  "title": "155 - Quero Ser um Vaso de Bênção",
+  "author": "Harper G. Smyth",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Quero ser um vaso de bênção,",
+      "Sim um vaso escolhido por Deus.",
+      "Para as novas levar aos perdidos,",
+      "Boas novas que vem lá dos céus."
+    ],
+    [
+      "2. Quero ser um vaso de bênção,",
+      "Cada dia desejo fazer,",
+      "Todo aquele que vive culpado,",
+      "O perdão de Jesus conhecer."
+    ],
+    [
+      "3. Para ser um vaso de bênção",
+      "É preciso ser sempre leal,",
+      "É preciso ter fé e pureza,",
+      "Que nos vem do poder divinal."
+    ]
+  ],
+  "coro": [
+    "Tudo consagro-Te agora Senhor;",
+    "Vou proclamar a mensagem de amor.",
+    "Meu compromisso no Teu serviço",
+    "É ser um vaso de bênção Senhor."
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

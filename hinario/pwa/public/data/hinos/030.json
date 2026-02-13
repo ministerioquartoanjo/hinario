@@ -1,0 +1,38 @@
+{
+  "title": "30 - Brilha no Meio do Teu viver",
+  "author": "Ina Duley Ogden, 1913 Chales Hutchison Gabriel, 1913",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Não somente prá fazer um feito singular",
+      "É preciso agir com muito ardor;",
+      "Mas as coisas mais humildes por executar",
+      "Deves fazê-las com todo amor."
+    ],
+    [
+      "2. Oh, talvez alguma vida possas alegrar",
+      "Com palavras cheias de calor,",
+      "Ou quem sabe algumas almas tristes alcançar",
+      "Com a mensagem do Senhor."
+    ],
+    [
+      "3. Mesmo que agitado seja aqui o teu viver,",
+      "Sê mais firme a tua devoção.",
+      "Vê em teu redor que há gente triste a perecer,",
+      "Sem ter certeza da salvação."
+    ]
+  ],
+  "coro": [
+    "Brilha no meio do teu viver.",
+    "Brilha no meio do teu viver,",
+    "Pois talvez algum aflito possas socorrer!",
+    "Brilha no meio do teu viver."
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

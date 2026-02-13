@@ -1,0 +1,47 @@
+{
+  "title": "33 - Castelo Forte",
+  "author": "Martinho Lutero",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Jeová castelo forte é;",
+      "O Deus leal e protetor.",
+      "E se vacila nossa fé,",
+      "Poder nos dá em Seu amor.",
+      "Destrói o perspicaz",
+      "Ardil de Satanás,",
+      "A fim de o derrotar",
+      "Com Seu poder sem par.",
+      "E aos Seus provê descanso e paz."
+    ],
+    [
+      "2. Se a nós quiserem derrotar",
+      "Os mais cruéis demônios vis;",
+      "Jamais nos pode abalar",
+      "Um tal poder com seus ardis.",
+      "Satã, o tentador,",
+      "E vil acusador,",
+      "Jamais nos vencerá;",
+      "Pois foi vencido já",
+      "Ali na cruz do Salvador."
+    ],
+    [
+      "3. Poder o nosso nada faz;",
+      "Sem Deus virá a perdição.",
+      "O Pai por Cristo força traz",
+      "E assim nos vem a proteção.",
+      "E se a morte atroz",
+      "Chegar enfim a nós,",
+      "Jesus nos salvará.",
+      "No céu então dará",
+      "Louvor a Deus a nossa voz."
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

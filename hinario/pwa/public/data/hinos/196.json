@@ -1,0 +1,41 @@
+{
+  "title": "196 - Vós, Criaturas do Senhor",
+  "author": "Francisco de Assis",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Vós, criaturas do Senhor,",
+      "Oh, elevai a Deus louvor!",
+      "Oh, louvai-O! Aleluia!",
+      "Tu, Sol dourado a refulgir;",
+      "Tu, Lua em prata a reluzir!",
+      "Oh, louvai-O! Oh, louvai-O! ",
+      "Aleluia! Aleluia! Aleluia!"
+    ],
+    [
+      "2. Ó Terra e céu, a Deus honrai;",
+      "Preito de amor e graças dai! ",
+      "Oh, louvai-O! Aleluia! ",
+      "Flores, erguei-vos em canção ",
+      "Ao grande Deus da criação!",
+      "Oh, louvai-O! Oh, louvai-O! ",
+      "Aleluia! Aleluia! Aleluia!"
+    ],
+    [
+      "3. Vós, homens sábios e de bem,",
+      "Dai ao Senhor louvor também!",
+      "Oh, louvai-O! Aleluia! ",
+      "Dai glória ao Filho, glória ao Pai,",
+      "E a todo o mundo aclamai!",
+      "Oh, louvai-O! Oh, louvai-O! ",
+      "Aleluia! Aleluia! Aleluia!"
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

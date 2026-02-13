@@ -1,0 +1,38 @@
+{
+  "title": "2 - A Deus Demos glória",
+  "author": "Fanny Jane Crosby William Howard Doane",
+  "speed": 1,
+  "verses": [
+    [
+      "1. A Deus demos glória, com grande fervor;",
+      "Seu Filho bendito por nós todos deu.",
+      "A graça concede a qualquer pecador,",
+      "Abrindo-lhe a porta de entrada no céu."
+    ],
+    [
+      "2. Oh! graça real! Foi assim que Jesus,",
+      "Morrendo, Seu sangue por nós derramou!",
+      "Herança nos céus, com os santos em luz,",
+      "Comprou-nos Jesus, pois o preço pagou."
+    ],
+    [
+      "3. A crer nos convida tal prova de amor,",
+      "Nos merecimentos do Filho de Deus.",
+      "E quem, pois, confia no Seu Salvador,",
+      "Vai vê-Lo exaltado na glória do céu."
+    ]
+  ],
+  "coro": [
+    "Exultai! Exultai! Vinde todos louvar!",
+    "A Jesus Salvador, a Jesus Redentor!",
+    "A Deus demos glória porquanto do céu",
+    "Seu Filho bendito por nós todos deu."
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

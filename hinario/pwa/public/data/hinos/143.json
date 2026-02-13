@@ -1,0 +1,34 @@
+{
+  "title": "143 - Prece ao Nosso Deus",
+  "author": "Felice de Giardini",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Ó grande e eterno Deus!",
+      "Ouve-nos lá dos céus;",
+      "Eis a oração: vem, Pai, presente estar,",
+      "Vem Teu poder nos dar",
+      "Com Tua voz falar ao coração. "
+    ],
+    [
+      "2. O insondável Deus Sim, te adoramos nós",
+      "Ó Criador vem nos purificar",
+      "Vem nos santificar",
+      "Dá-nos a Tua paz e o Teu amor"
+    ],
+    [
+      "3. Ó vem com Seu amor",
+      "Com Sua voz falar",
+      "Ao coração e venha em nós morar",
+      "Consolação nos dá",
+      "E, ó vem nos confirmar a redenção."
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

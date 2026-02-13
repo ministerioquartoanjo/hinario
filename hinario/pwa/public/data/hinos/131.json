@@ -1,0 +1,46 @@
+{
+  "title": "131 - Ó Senhor, Nos Alegramos",
+  "author": "Leônidas Philadelpho da Siva William Lewis Rayner McCluer",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Ó Senhor, nos alegramos,",
+      "Em aqui Te obedecer,",
+      "Pois Tu fostes quem mandaste,",
+      "O batismo receber.",
+      "Vem agora abençoar,",
+      "Os que assim te vêm louvar!"
+    ],
+    [
+      "2. Tal celebração revela,  ",
+      "Obediência a Ti Senhor;",
+      "É figura que recorda,",
+      "Teu poder renovador.",
+      "Vem por ele à igreja unir,",
+      "Quem te quer, Senhor, seguir."
+    ],
+    [
+      "3. Morte ao mundo declaramos,",
+      "Ao pecado e seu poder,",
+      "E contigo ao nosso lado,",
+      "Certo havemos de vencer.",
+      "Oh, Senhor, vem consagrar",
+      "A quem vem se batizar!"
+    ],
+    [
+      "4. Mortos para o mundo estamos,",
+      "Desejamos te servir,",
+      "Vivos em Jesus, queremos,",
+      "Sua imagem refletir.",
+      "Vem, Senhor, aqui fazer,",
+      "Tua graça em nós crescer. Amém."
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

@@ -1,0 +1,43 @@
+{
+  "title": "137 - Ouvi o Salvador dizer",
+  "author": "Horatius Bonar John Bacchus Dykes",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Ouvi o Salvador dizer “Vem descansar em Mim,",
+      "E nos Meus braços hás de ter",
+      "Consolação sem fim”!",
+      "Então eu fui e lhe entreguei",
+      "Meu triste coração;",
+      "Abrigo, paz e graça achei,",
+      "Achei consolação."
+    ],
+    [
+      "2. Ouvi o Salvador dizer:",
+      "Da vida fonte sou,",
+      "Da águas vivas, vem beber,",
+      "De graça eu sempre dou",
+      "Fui a Jesus e me prostei,",
+      "Das águas eu bebi.",
+      "Sedento nunca ficarei",
+      "Enquanto aqui estou."
+    ],
+    [
+      "3. Ouvi o Salvador dizer: ",
+      "A luz da vida sou;",
+      "A quem com fé me receber",
+      "A vida eterna dou.",
+      "Fui a Jesus e nEle achei ",
+      "O sol que brilha em mim;",
+      "E nessa luz eu and arei ",
+      "Até da vida o fim."
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

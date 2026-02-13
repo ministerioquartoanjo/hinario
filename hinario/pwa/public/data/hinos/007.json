@@ -1,0 +1,37 @@
+{
+  "title": "7 - A Melhor Dádiva",
+  "author": "Eben Eugene Rexford Joseph Garrison",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Traziam as ofertas aos pés do Salvador;",
+      "E todo sacrifício mostrava ser de amor.",
+      "Nenhuma oferenda mostrava sem valor;",
+      "A todas aceitava o meigo Salvador."
+    ],
+    [
+      "2. Ao longe, retraído, está um pecador;",
+      "Ao ver os donativos, sua alma sofre em dor.",
+      "Não tem nenhuma prenda pra dar ao Salvador!",
+      "Com olhos lacrimosos, súplica com fervor:"
+    ],
+    [
+      "3.\"Ó Mestre\", exclama, aflito, \"eu sei quão mau eu sou;",
+      "Mas toma a pobre oferta: Meu coração Te dou.",
+      "Jesus responde, manso:\"A dádiva aceitei;\"",
+      "De todas as ofertas, a tua Eu mais amei!"
+    ]
+  ],
+  "coro": [
+    "Também Senhor eu quero trazer-te este dom,",
+    "Indigno, mas sincero;",
+    "O impuro coração."
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

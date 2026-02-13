@@ -1,0 +1,44 @@
+{
+  "title": "37 - Conta as Bênçãos",
+  "author": "Johnson Oatman Jr Edwin Othello Excel",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Se da vida as ondas agitadas são;",
+      "Se desanimado, julgas tudo vão,",
+      "Conta as muitas bênçãos, conta cada vez,",
+      "E hás de ver, surpreso, quanto Deus já fez."
+    ],
+    [
+      "2. Tens acaso mágoas, duro é teu lidar?",
+      "É pesada cruz que tens de suportar?",
+      "Conta as muitas bênçãos, não duvidarás,",
+      "E cantando alegre os dias passarás."
+    ],
+    [
+      "3. Quando vires outros com riquezas e bens,",
+      "Lembra que tesouros prometidos tens",
+      "Nunca os bens da terra poderão comprar,",
+      "A mansão celeste em que tu vais morar."
+    ],
+    [
+      "4. Seja teu conflito fraco ou forte aqui,",
+      "Não te desanimes, Deus será por ti,",
+      "Seu divino auxílio, derrotando o mal,",
+      "Te dará consolo e paz celestial."
+    ]
+  ],
+  "coro": [
+    "Conta as bênçãos, dize quantas são,",
+    "Recebidas da divina mão.",
+    "Uma a uma conta cada vez;",
+    "Há de ver, surpreso, quanto Deus já fez."
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

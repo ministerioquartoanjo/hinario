@@ -1,0 +1,54 @@
+{
+  "title": "46 - Cristo Prá Mim!",
+  "author": "Henry Maxwell Wright",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Oh que descanso em Jesus encontrei!",
+      "Cristo prá mim! Cristo prá mim!",
+      "Oh que tesouros infindos achei!",
+      "Cristo prá mim! Cristo prá mim!",
+      "‘Scolham os outros o mundo prá si:",
+      "Busquem riquezas, delícias aqui;",
+      "Eu escolherei, ó Jesus, sempre a Ti!",
+      "Cristo prá mim! Cristo prá mim!"
+    ],
+    [
+      "2. Quer na aflição, na doença ou na dor:",
+      "Cristo p'ra mim! Cristo p'ra mim!",
+      "Quer na saúde, na força ou vigor;",
+      "Cristo p'ra mim! Cristo p'ra mim!",
+      "Sempre ao meu lado pra me socorrer,",
+      "Com Seu amor, sim, e com Seu poder;",
+      "Em cada transe pronto a me valer;",
+      "Cristo p'ra mim! Cristo p'ra mim!"
+    ],
+    [
+      "3. No dia amargo da perseguição:",
+      "Cristo p'ra mim! Cristo p'ra mim!",
+      "Nas duras provas e na tentação:",
+      "Cristo p'ra mim! Cristo p'ra mim!",
+      "Ele, o pecado e o mundo venceu",
+      "Quando, por mim, no Calvário morreu;",
+      "E da vitória a certeza me deu;",
+      "Cristo p'ra mim! Cristo p'ra mim!"
+    ],
+    [
+      "4. E se no vale da morte eu entrar,",
+      "Cristo p'ra mim! Cristo p'ra mim!",
+      "Quando perante meu Deus m'encontrar:",
+      "Cristo p'ra mim! Cristo p'ra mim!",
+      "Só no Teu sangue confio, Senhor,",
+      "Só no Teu sempre imutável amor!",
+      "Inda outra vez cantarei, Salvador:",
+      "Cristo p'ra mim! Cristo p'ra mim!"
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

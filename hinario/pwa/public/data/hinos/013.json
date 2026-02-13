@@ -1,0 +1,52 @@
+{
+  "title": "13 - Acordai,Acordai",
+  "author": "Henry Maxwell Wright",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Eis marchamos para aquele bom país",
+      "Onde o crente (sim é Cristo quem o diz);",
+      "Com seu Salvador prá sempre ali feliz,",
+      "Vai com Ele descansar.",
+      "Trabalhemos, pois, com zelo e com vigor,",
+      "Constrangidos pelo Seu imenso amor;",
+      "Trabalhemos pelo nosso Salvador;",
+      "Eis que a vida vai findar!"
+    ],
+    [
+      "2. Eis conosco nosso insigne Capitão",
+      "Que nos assegura eterna salvação",
+      "Eis da santa fé, o invicto pavilhão",
+      "Vamos, vamos trabalhar",
+      "Eis avante! Nada temos que temer",
+      "Por Jesus, havemos sempre de vencer",
+      "Trabalhemos, pois até o amanhecer",
+      "E o trabalho aqui findar"
+    ],
+    [
+      "3. Revestidos da couraça de Jesus",
+      "Como servos Seus e filhos, sim, da luz",
+      "Gloriando-nos em Cristo e Sua cruz",
+      "Vamos, vamos trabalhar",
+      "Aos perdidos, vamos com amor buscar",
+      "Aos desesperados, vamos declarar",
+      "Que Jesus ‘stá pronto todos a salvar",
+      "Ó sim, vamos trabalhar"
+    ]
+  ],
+  "coro": [
+    "Acordai! Acordai! Despertai! Despertai!",
+    "E cantai, sim cantai! O Senhor não tardará.",
+    "Eis marchamos para aquele bom País",
+    "Onde o crente (sim é Cristo quem o diz);",
+    "Com seu Salvador prá sempre ali feliz,",
+    "Vai com Ele descansar."
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

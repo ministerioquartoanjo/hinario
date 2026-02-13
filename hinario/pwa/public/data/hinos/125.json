@@ -1,0 +1,44 @@
+{
+  "title": "125 - O Grande Amor",
+  "author": "Henry Maxwell Wright",
+  "speed": 1,
+  "verses": [
+    [
+      "1. O grande amor de meu Jesus",
+      "Por mim, morrendo sobre a cruz;",
+      "Dá perdição prá me salvar,",
+      "Quem poderá contar?"
+    ],
+    [
+      "2. O cálice que Jesus bebeu",
+      "A maldição que padeceu",
+      "Tudo por mim, p'ra me salvar",
+      "Quem poderá contar?"
+    ],
+    [
+      "3. A zombaria tão cruel",
+      "A cruz sangrenta, o amargo fel",
+      "Que Ele sofreu pra me salvar",
+      "Quem poderá contar?"
+    ],
+    [
+      "4. Incomparável Salvador!",
+      "Quão inefável Teu amor!",
+      "Quão impossível de sondar!",
+      "Imenso e sem par"
+    ]
+  ],
+  "coro": [
+    "Quem pode o Seu amor contar?",
+    "Quem pode o Seu amor contar?",
+    "O grande amor do Salvador,",
+    "Quem poderá contar?"
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

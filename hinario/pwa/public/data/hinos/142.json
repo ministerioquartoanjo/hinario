@@ -1,0 +1,38 @@
+{
+  "title": "142 - Por Meus Pecados Padeceu",
+  "author": "Isaac Watts Ralph E. Hudson",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Por meus pecados padeceu Jesus",
+      "Que é vida e luz.",
+      "Ele o castigo meu sofreu",
+      "Na ensanguentada cruz."
+    ],
+    [
+      "2. Jamais terei tão fraca voz",
+      "Que hesite em confessar",
+      "A quem, com morte tão atroz,",
+      "Minha alma quis salvar"
+    ],
+    [
+      "3. Pois eu desejo aqui cantar",
+      "Ao grande Salvador.",
+      "E, quando for no céu morar,",
+      "Louvá-lo-ei melhor."
+    ],
+    [
+      "4. Oh, faz-me forte em confessar",
+      "A Ti, Jesus Senhor!",
+      "Oh, faz me pronto a confiar",
+      "Em Teu excelso amor!"
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

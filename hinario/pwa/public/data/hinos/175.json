@@ -1,0 +1,44 @@
+{
+  "title": "175 - Sim, Cristo Me Ama",
+  "author": "Anna Barlett Warner William Batchelder Bradbury",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Cristo tem amor por mim,",
+      "Com certeza eu creio assim;",
+      "Por amor de mim morreu,",
+      "Vivo está por mim no céu."
+    ],
+    [
+      "2. Sim, Jesus me tem amor,",
+      "E Se fez meu Salvador;",
+      "Hoje ainda tem prazer,",
+      "De crianças receber."
+    ],
+    [
+      "3. Por gozar Seu rico amor,",
+      "Hei de amar meu Salvador,",
+      "E desejo aqui mostrar,",
+      "Seu amor tão singular."
+    ],
+    [
+      "4. Meu Jesus comigo está,",
+      "E afinal me levará,",
+      "Para o lindo céu de luz,",
+      "Pois me resgatou na cruz."
+    ]
+  ],
+  "coro": [
+    "Sim, Cristo me ama,",
+    "Sim, Cristo me ama,",
+    "Sim, Cristo me ama,",
+    "A Bíblia assim me diz."
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

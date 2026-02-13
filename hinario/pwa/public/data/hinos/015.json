@@ -1,0 +1,35 @@
+{
+  "title": "15 - Almejo a Fé que Forte É",
+  "author": "William Hiley Bathurst William Henry Havergal",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Almejo a fé que forte é",
+      "No mundo tentador;",
+      "Que, calma, não recuará",
+      "E não terá temor.  2. A fé que não me faz queixar",
+      "Se vem a correção,",
+      "E quando mais severa for,",
+      "Mais firma o coração."
+    ],
+    [
+      "3. A fé que sempre brilha mais",
+      "Em meio ao furacão,",
+      "Que no perigo sente paz,",
+      "Em densa escuridão."
+    ],
+    [
+      "4. Tão forte seja minha fé,",
+      "Que, venha o que vier,",
+      "Eu possa mesmo aqui provar",
+      "Celestial prazer."
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

@@ -1,0 +1,36 @@
+{
+  "title": "159 - Rocha Eterna",
+  "author": "Augustus Montague Toplady Thomas Hastings",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Rocha eterna, foi na cruz,",
+      "Que morreste, Tu, Jesus.",
+      "Vem de Ti um sangue tal",
+      "Que me limpa todo mal.",
+      "Traz as bênçãos do perdão,",
+      "Dá pureza e salvação."
+    ],
+    [
+      "2. Nem trabalho nem penar",
+      "Pode o pecador salvar",
+      "Só tu podes, bom Jesus,",
+      "Dá-me vida, paz e luz",
+      "Peço-te perdão, Senhor,",
+      "Pois confio em Teu amor."
+    ],
+    [
+      "3. Quando a morte, enfim chegar,",
+      "E meus olhos eu fechar,",
+      "Quando para o céu subir O Teu rosto em glória vir,",
+      "Rocha eterna, que prazer  Eu terei de ti viver!"
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

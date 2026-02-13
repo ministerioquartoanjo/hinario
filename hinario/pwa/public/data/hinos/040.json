@@ -1,0 +1,49 @@
+{
+  "title": "40 - Crer e observar",
+  "author": "John H. Sammis Daniel Brink Towner",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Em Jesus confiar,  Sua lei observar,",
+      "E trilhar um caminho de paz.",
+      "Satisfeitos, guardar  O que Ele ordenar,",
+      "Alegria perene nos traz."
+    ],
+    [
+      "2. Ao andarmos com Deus,",
+      "Recebemos dos céus",
+      "Direção e conforto sem par.",
+      "Nem tristeza nem dor,",
+      "Nem a prova maior",
+      "Poderão nossa fé abalar."
+    ],
+    [
+      "3. Inefável prazer É Jesus conhecer,",
+      "É ser crente zeloso e leal,",
+      "Sua voz sempre ouvir,",
+      "Suas ordens cumprir,",
+      "É ter bênçãos constantes e real."
+    ],
+    [
+      "4. Resoluto, Senhor,",
+      "E com todo fervor,",
+      "Os teus passos queremos seguir,",
+      "Teus preceitos guardar,",
+      "O Teu nome exaltar,",
+      "Sempre a Tua presença sentir"
+    ]
+  ],
+  "coro": [
+    "Crer e observar",
+    "Tudo quanto ordenar;",
+    "O fiel obedece",
+    "Ao que Cristo mandar."
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

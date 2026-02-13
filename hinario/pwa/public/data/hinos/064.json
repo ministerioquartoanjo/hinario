@@ -1,0 +1,38 @@
+{
+  "title": "64 - Fé Persistente",
+  "author": "William Hiley Bathurst Justus H. Nelson",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Almejo a fé que forte é",
+      "Diante do terror;",
+      "Que, calma, não recuará",
+      "Do mundo aterrador."
+    ],
+    [
+      "2. A fé que não me faz queixar",
+      "Na dor da correção,",
+      "Mas quanto o fogo mais arder,",
+      "Mais firma o coração."
+    ],
+    [
+      "3. A fé que sempre brilha mais",
+      "No negro furacão,",
+      "Que no perigo sente paz,",
+      "Audaz na escuridão."
+    ],
+    [
+      "4. Ó Deus, me dá tamanha fé,",
+      "Que venha o que vier!",
+      "Então na lide provarei",
+      "Celestial prazer."
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

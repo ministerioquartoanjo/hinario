@@ -1,0 +1,32 @@
+{
+  "title": "69 - Fortalece Tua Igreja",
+  "author": "Henry Maxwell Wright",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Fortalece Tua igreja, ó bendito Salvador;",
+      "Aquecendo nossas almas no divino, santo amor.",
+      "Vem, derrama sobre todos toda a graça de Jesus,",
+      "Dando as bênçãos da verdade que nos mostram Tua luz."
+    ],
+    [
+      "2. Pai, contempla Tua igreja, vem estende Tua mão.",
+      "Dá-lhe a graça insondável da divina redenção,",
+      "Antes que ela desfaleça, e se torne sem vigor;",
+      "Vivifica, vivifica nossas almas, ó Senhor."
+    ],
+    [
+      "3. Santifica Tua igreja pela graça divinal;",
+      "Faze-a sempre triunfante no conflito contra o mal;",
+      "Dá-lhe forças na jornada em demanda para o lar,",
+      "E que esteja preparada quando Cristo regressar!"
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

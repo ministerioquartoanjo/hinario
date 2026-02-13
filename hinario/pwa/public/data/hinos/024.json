@@ -1,0 +1,32 @@
+{
+  "title": "24 - Ao Ver a Cruz",
+  "author": "Isaac Watts/E.M",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Ao ver morrer na rude cruz,",
+      "Em dor e angústia meu Jesus;",
+      "Compreendendo ser um pecador,",
+      "E meu orgulho sem valor."
+    ],
+    [
+      "2. As mãos, os pés e a fronte em dor",
+      "Derramam sangue por amor;",
+      "Oh! santa mão! Ferida mão!",
+      "Deseja dar-me salvação."
+    ],
+    [
+      "3. Dou graças mil a meu Jesus;",
+      "O amor provado sobre a cruz",
+      "Irá suster e conduzir",
+      "A minha vida no porvir."
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

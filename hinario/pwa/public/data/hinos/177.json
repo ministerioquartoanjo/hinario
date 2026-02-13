@@ -1,0 +1,43 @@
+{
+  "title": "177 - Sou Feliz Com Jesus",
+  "author": "Horatio Gates Spafford Philip Paul Bliss",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Se paz, a mais doce, me deres gozar,",
+      "Se dor a mais forte sofrer;",
+      "Oh, seja o que for, Tu me fazes saber",
+      "Que feliz com Jesus sempre sou!"
+    ],
+    [
+      "2. Embora me assalte o cruel Satanás,",
+      "E ataque com vis tentações,",
+      "Oh, sim, certo estou, mesmo em tais provações,",
+      "Em Jesus acharei força e paz."
+    ],
+    [
+      "3. Jesus, meu Senhor, ao morrer sobre a cruz",
+      "Livrou-me da culpa e do mal;",
+      "Salvou-me Jesus, oh, mercê sem igual!",
+      "Sou feliz, e hoje vivo na luz."
+    ],
+    [
+      "4. A vinda eu anseio do meu Salvador;",
+      "Em breve virá me buscar;",
+      "E então lá no céu vou pra sempre morar,",
+      "Com remidos, na luz do Senhor."
+    ]
+  ],
+  "coro": [
+    "Sou feliz com Jesus!",
+    "Sou feliz com Jesus,",
+    "Meu Senhor!"
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

@@ -1,0 +1,49 @@
+{
+  "title": "18 - Alvo Mais Que a Neve",
+  "author": "Eden Reeder Latta Henry Southwick Perkins",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Seja bendito o Cordeiro",
+      "Que na cruz por nós padeceu!",
+      "Seja bendito Seu sangue",
+      "Que por nós pecadores verteu.",
+      "Eis-nos no sangue lavados,",
+      "Com vestes que tão alvas são;",
+      "Nós pecadores remidos,",
+      "Que de Deus recebemos perdão."
+    ],
+    [
+      "2. Quão espinhosa coroa,",
+      "Que Jesus por nós suportou!",
+      "Oh! quão profundas as chagas",
+      "Que nos provam o quanto ele amou!",
+      "Eis nessas chagas pureza",
+      "Para o maior pecador!",
+      "Pois que mais alvos que a neve,",
+      "O teu sangue nos torna, Senhor!"
+    ],
+    [
+      "3. Se nós a ti confessarmos",
+      "E seguirmos na Tua luz,",
+      "Tu não somente perdoas,",
+      "Purificas também, ó Jesus",
+      "Sim, e de todo pecado!",
+      "Que maravilha desse amor!",
+      "Pois que mais alvos que a neve,",
+      "O teu sangue nos torna, Senhor!"
+    ]
+  ],
+  "coro": [
+    "Alvo, mais que a neve! (2x)",
+    "Sim nesse sangue lavado,",
+    "Mais alvo que a neve serei."
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

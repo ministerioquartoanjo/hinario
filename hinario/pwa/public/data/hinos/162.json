@@ -1,0 +1,44 @@
+{
+  "title": "162 - Salvo Estou",
+  "author": "Frida Vingren Jno.R. Sweney",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Salvo estou, Jesus comprou-me",
+      "Do pecado e perdição;",
+      "Com Seu ‘spirito já selou-me,",
+      "Deu-me paz no coração."
+    ],
+    [
+      "2. Cantarei com alegria,",
+      "Jubiloso som do céu.",
+      "Louvarei com harmonia",
+      "A Jesus, o amado meu."
+    ],
+    [
+      "3. A mensagem gloriosa",
+      "Duma eterna salvação,",
+      "Forte, sim, e poderosa,",
+      "Digna é de aceitação."
+    ],
+    [
+      "4. Ao chegar o fim da lida,",
+      "Me recebes, Salvador;",
+      "Me concede eterna vida,",
+      "No Teu reino de amor."
+    ]
+  ],
+  "coro": [
+    "Glória, glória, aleluia,",
+    "Já achei a salvação!",
+    "Glória, glória, aleluia,",
+    "Cristo deu-me redenção!"
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

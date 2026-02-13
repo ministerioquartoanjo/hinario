@@ -1,0 +1,32 @@
+{
+  "title": "99 - Louvor a Deus e a Jesus",
+  "author": "Elizabeth Rundle Charles Friedinand Flemming",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Ó anjos e homens, dai a Deus louvores,",
+      "Pois Sua graça dá aos pecadores.",
+      "Ó, firmamento, céus e mar e Terra,",
+      "Sim, dai louvor a Deus."
+    ],
+    [
+      "2. Vós, ó remidos, dai louvor a Cristo,",
+      "Tal sacrifício, oh! jamais foi visto!",
+      "A Sua morte Seu amor revela,",
+      "Sim, adorai Jesus!"
+    ],
+    [
+      "3. Quão insondável é o amor divino!",
+      "Jesus Seu Filho, é a luz do mundo",
+      "É tão sublime, luz ao peregrino,",
+      "Luz que ao Pai conduz!"
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

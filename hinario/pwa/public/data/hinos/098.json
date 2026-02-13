@@ -1,0 +1,44 @@
+{
+  "title": "98 - Louvamos-Te ó Deus",
+  "author": "William Pton Mackay John Jenkins Husband",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Louvamos-Te ó Deus",
+      "Pelo dom de Jesus,",
+      "Que por nós, pecadores,",
+      "Foi morto na cruz."
+    ],
+    [
+      "2. Louvamos-Te, ó Deus,",
+      "E ao Teu Filho de amor,",
+      "Que foi morto, mais vive,",
+      "Supremo Senhor"
+    ],
+    [
+      "3. Louvamos-Te, ó Deus,",
+      "Pelo Espírito, luz,",
+      "Que no s tira das trevas,",
+      "E a Cristo conduz."
+    ],
+    [
+      "4. Oh, vem nos encher,",
+      "De celeste fervor,",
+      "E fazer-nos fruir",
+      "Teu afável amor."
+    ]
+  ],
+  "coro": [
+    "Aleluia! Toda a glória",
+    "Te rendemos sem fim.",
+    "Aleluia! Tua graça",
+    "Imploramos, amém!"
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

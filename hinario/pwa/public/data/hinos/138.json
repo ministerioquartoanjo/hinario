@@ -1,0 +1,36 @@
+{
+  "title": "138 - Pão da Vida",
+  "author": "Salomão Luiz Ginsburg William Letton Viner",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Pão da vida, pão de Deus",
+      "Pão celeste é meu Jesus;",
+      "Pão que dá ao coração",
+      "Alegria paz e luz;",
+      "Pão que dá ao coração",
+      "Alegria paz e luz."
+    ],
+    [
+      "2. Sangue que Jesus verteu",
+      "Dá perdão, é eficaz;",
+      "Esse sangue ao coração",
+      "Força, amor e vida traz."
+    ],
+    [
+      "3. Vem Jesus me abençoar",
+      "Enche-me de Ti Senhor,",
+      "Pois desejo Te servir",
+      "E te honrar meu Salvador.",
+      "Pois desejo Te servir ",
+      "E Te honrar meu Salvador. Amém."
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

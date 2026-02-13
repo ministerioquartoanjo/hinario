@@ -1,0 +1,50 @@
+{
+  "title": "53- Deus Velará Por Ti",
+  "author": "Autor desconhecido W.S. Martin",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Não desanimes, Deus proverá;",
+      "Deus velará por ti.",
+      "Sob Suas asas te acolherá;",
+      "Deus velará por ti."
+    ],
+    [
+      "2. Se o coração palpitar de dor,",
+      "Deus velará por ti.",
+      "Tu já provaste teu terno amor,",
+      "Deus velará por ti."
+    ],
+    [
+      "3. Nos desalentos nas provações,",
+      "Deus velará por ti.",
+      "Lembra-te dele nas tentações,",
+      "Deus velará por ti."
+    ],
+    [
+      "4. Tudo o que pedes ele fará;",
+      "Deus velará por ti.",
+      "O que precisas não negará,",
+      "Deus velará por ti."
+    ],
+    [
+      "5. Como estiveres, não temas vem!",
+      "Deus velará por ti.",
+      "Ele te entende e te ama bem!",
+      "Deus velará por ti"
+    ]
+  ],
+  "coro": [
+    "Deus cuidará de ti;",
+    "No teu viver, no teu sofrer.",
+    "Seu olhar te acompanhará;",
+    "Deus velará por ti."
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

@@ -1,0 +1,44 @@
+{
+  "title": "36 - Como é Triste Andar em Trevas",
+  "author": "Joaquim dos Santos George Coles Stebbins",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Eu, nas trevas, vagueava,",
+      "Sem a luz da salvação;",
+      "Eu vivia sempre triste",
+      "E sem fé no coração."
+    ],
+    [
+      "2. Mas um dia Deus mostrou-me",
+      " Sua graça e a doce luz;",
+      " Vi então o caminho claro,",
+      " Ao ouvir o meu Jesus."
+    ],
+    [
+      "3. O meu ser pecaminoso",
+      " Contra a retidão lutou;",
+      " Mas Jesus me deu vitória",
+      " E das trevas me livrou."
+    ],
+    [
+      "4. Foi um novo nascimento,",
+      "Honra e glória ao redentor!",
+      "Ele deu-me luz e vida,",
+      "Santidade e Seu amor."
+    ]
+  ],
+  "coro": [
+    "Como é triste andar em trevas",
+    "Sem o brilho desta luz!",
+    "Bela é a vida iluminada,",
+    "Dirigida por Jesus!"
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

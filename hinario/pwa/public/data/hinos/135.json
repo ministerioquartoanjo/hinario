@@ -1,0 +1,36 @@
+{
+  "title": "135 - Onde Quer Que Seja",
+  "author": "Jessie Brown Pounds Kurt Frederic Kaiser",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Onde quer que seja com Jesus irei;",
+      "Ele é meu bendito Salvador e Rei.",
+      "Seja para a guerra, para batalhar,",
+      "Seja para os campos, para semear."
+    ],
+    [
+      "2.\"Sempre seguirei a Cristo meu Senhor\"",
+      "Diz o coração que sente o Seu amor.",
+      "Perto dEle sempre bem seguro vou ",
+      "Onde quer que seja mui contente estou."
+    ],
+    [
+      "3. Seja, pois, pra onde for que me levar,",
+      "Eu encontrarei ali meu doce lar.",
+      "Onde quer que seja sempre cantarei: ",
+      "Tu, Senhor, comigo estás; não temerei."
+    ]
+  ],
+  "coro": [
+    "Onde quer, onde quer que Jesus mandar",
+    "Sempre junto dEle eu irei andar."
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

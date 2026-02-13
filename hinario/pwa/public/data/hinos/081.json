@@ -1,0 +1,38 @@
+{
+  "title": "81 - Há Um Rio Cristalino",
+  "author": "Robert Lowry George Henry Day",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Junto ao rio cristalino,",
+      "Na cidade do Senhor,",
+      "Nasce do divino trono,",
+      "Puro e cheio de resplendor."
+    ],
+    [
+      "2. Pelas margens desse rio",
+      "Os remidos viverão,",
+      "Sempre a Cristo ali servindo",
+      "Com inteira devoção."
+    ],
+    [
+      "3.Junto àquele lindo rio",
+      "Qual cristal sempre a brilhar,",
+      "Bem unidos estaremos",
+      "Para o nosso Deus louvar."
+    ]
+  ],
+  "coro": [
+    "Breve iremos ver o rio,",
+    "Finda a peregrinação,",
+    "E louvor ao Deus eterno",
+    "Nossos lábios cantarão"
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

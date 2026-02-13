@@ -1,0 +1,32 @@
+{
+  "title": "1 - A Ceia do Senhor",
+  "author": "Philip Paul Bliss",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Como irmãos nos acheguemos ao festim do Salvador;",
+      "Esta é a Santa Ceia, memorial do eterno amor.",
+      "Os emblemas que hoje temos simbolizam redenção,",
+      "Pois de Cristo o sacrifício, limpa o mal e traz perdão."
+    ],
+    [
+      "2. Nosso mau e vil pecado, trouxe dor e perdição,",
+      "Mas de Deus o amor profundo nos livrou da escravidão.",
+      "Ao pensarmos que esta Ceia lembra a morte de Jesus,",
+      "Vemos, sim, a nossa culpa; morto foi por nós na cruz."
+    ],
+    [
+      "3. Tudo, enfim, de rude e triste, nessa cruz desfeito está;",
+      "Para nós somente existe gozo em Deus, que durará.",
+      "Damos graças e louvores, homenagens ao Senhor;",
+      "Temos fé em Sua vinda, Seu real e eterno amor."
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

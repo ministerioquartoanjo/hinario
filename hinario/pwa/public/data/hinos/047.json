@@ -1,0 +1,38 @@
+{
+  "title": "47 - Cristo Salva o Pecador",
+  "author": "Erdmann Neumeister James McGranahan",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Cristo salva o pecador,",
+      "Lava o rude coração;",
+      "Ao contrito com amor,",
+      "Oferece salvação."
+    ],
+    [
+      "2. Cristo salva o pecador",
+      "E concede-lhe perdão.",
+      "Aceitai o bom Senhor,",
+      "Aceitai de coração."
+    ],
+    [
+      "3. Vinde todos, e achareis",
+      "Paz e luz no Redentor,",
+      "Vinde, então recebereis",
+      "Vida eterna, do Senhor."
+    ]
+  ],
+  "coro": [
+    "Confiai em Seu poder;",
+    "Confiai em Seu amor;",
+    "Crede sim que Cristo quer",
+    "Libertar o pecador."
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

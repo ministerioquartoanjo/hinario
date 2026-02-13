@@ -1,0 +1,38 @@
+{
+  "title": "121 - Ó Deus Eterno, Vem Me Conceder",
+  "author": "John Ellerton Edward John Hopkins",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Ó Deus eterno, vem me conceder",
+      "A plenitude do Consolador.",
+      "Dos altos céus me outorga Teu poder,",
+      "Que me renova e enche de fervor"
+    ],
+    [
+      "2. Vem tu fazer em minha habitação",
+      "Um templo santo almejo ser, Senhor.",
+      "Quero seguir a Tua direção,",
+      "Viver no Espírito renovado."
+    ],
+    [
+      "3. Dá-me coragem pra testemunhar",
+      "No meu pensar, falar e proceder.",
+      "Que eu tenha vida santa e exemplar,",
+      "Também repleta de fervor e poder."
+    ],
+    [
+      "4. Ó Deus, aumenta a minha compaixão",
+      "Pelos perdidos, sem amor, sem luz.",
+      "Que mostre a todos Tua salvação,",
+      "Eis minha prece, em nome de Jesus. Amém."
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

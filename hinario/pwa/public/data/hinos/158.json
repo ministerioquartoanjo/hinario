@@ -1,0 +1,44 @@
+{
+  "title": "158 - Resgatados Pelo Sangue de Cristo",
+  "author": "Frida Vingren",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Com ouro e prata não fui resgatado,",
+      "Tesouro terrestre, jamais me livrou;",
+      "O preço foi o sangue de Cristo,",
+      "Manado na cruz do Calvário onde a vida raiou!"
+    ],
+    [
+      "2. O ouro e a prata valor, oh! não tinham",
+      "Pra satisfazer a justiça de Deus.",
+      "Mas Cristo pagou toda a dívida minha;",
+      "Encheu-me de amor e de paz lá do céu."
+    ],
+    [
+      "3. Por ouro e por prata não pude chegar-me",
+      "Diante de Deus e o perdão obter;",
+      "P’lo sangue de Cristo, eu pude lançar-me",
+      "Na graça divina e o favor receber."
+    ],
+    [
+      "4. Por ouro e por prata não fui redimido;",
+      "A entrada do céu não se pode comprar;",
+      "Mas, só pelo sangue de Cristo vertido",
+      "Na cruz, poderemos a glória alcançar."
+    ]
+  ],
+  "coro": [
+    "Por prata e ouro não fui remido,",
+    "Nem por tesouro de muito valor;",
+    "Mas pelo sangue que foi vertido,",
+    "Por Jesus, meu Salvador."
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

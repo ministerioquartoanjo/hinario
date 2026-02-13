@@ -1,0 +1,44 @@
+{
+  "title": "151 - Quem Irá?",
+  "author": "Henry Maxwell Wright",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Eis os milhões que em trevas tão medonhas",
+      "Jazem perdidos, sem o Salvador!",
+      "Quem, quem irá as novas proclamando",
+      "Que Deus, em Cristo, salva o pecador?"
+    ],
+    [
+      "2. Portas abertas, eis por todo o mundo!",
+      "Cristãos, erguei-vos! Já avante andai!",
+      "Crentes em Cristo! Uni as vossas forças.",
+      "Da escravidão os povos libertai!."
+    ],
+    [
+      "3.\"Ó vinde a mim! A voz divina clama,",
+      "\"Vinde!\" Clamai! em nome de Jesus:",
+      "Pra nos salvar da maldição eterna,",
+      "Seu sangue derramou por nós na cruz."
+    ],
+    [
+      "4. Ó Deus apressa o dia glorioso,",
+      "Em que os remidos todos se unirão,",
+      "E, em coro excelso, santo, jubiloso,",
+      "P'ra todo o sempre, glória a Ti darão."
+    ]
+  ],
+  "coro": [
+    "“Todo o poder o Pai me deu,",
+    "Na Terra, como lá no céu;",
+    "Ide pois, anunciar o evangelho,",
+    "E eis-Me convosco sempre!”"
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

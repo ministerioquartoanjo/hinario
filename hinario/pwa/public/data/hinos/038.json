@@ -1,0 +1,32 @@
+{
+  "title": "38 - Contentamento",
+  "author": "Jane Catherine Bonar Richard Holden",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Eu já contente estou: Tenho Jesus!",
+      "Com alegria vou: Tenho Jesus!",
+      "Gozo que o mundo traz, bem cedo se desfaz:",
+      "Tenho perfeita paz, paz em Jesus!"
+    ],
+    [
+      "2. Eu posso envelhecer, nunca Jesus!",
+      "Eu posso empobrecer, nunca Jesus!",
+      "Tudo me suprirá, sempre me valerá,",
+      "Nada me faltará, tendo Jesus."
+    ],
+    [
+      "3. Vai tudo aqui findar, menos Jesus!",
+      "Quando o Juiz chegar: é meu Jesus!",
+      "Bem grato me há de ser quando meu Rei descer.",
+      "Certo Ele irá dizer:\"Sou Jesus!\""
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

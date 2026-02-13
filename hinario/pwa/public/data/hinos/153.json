@@ -1,0 +1,38 @@
+{
+  "title": "153 - Quero Estar ao Pé da Cruz",
+  "author": "Fancy Jane Crosby William Howard Doane",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Quero estar ao pé da cruz,",
+      "De onde rica fonte",
+      "Corre franca e salutar,",
+      "Sobre o rude monte."
+    ],
+    [
+      "2. A tremer ao pé da cruz,",
+      "Graça eterna achou-me;",
+      "Lá a estrela da manhã",
+      "Raios Seus mandou-me."
+    ],
+    [
+      "3. Sempre a cruz, Jesus meu Rei,",
+      "Queiras recordar-me;",
+      "Dela, à sombra, ó Salvador,",
+      "Queiras abrigar-me."
+    ]
+  ],
+  "coro": [
+    "Sim, na cruz, sim, na cruz,",
+    "Sempre me glorio;",
+    "Té que ao fim vá descansar,",
+    "Salvo além do rio."
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

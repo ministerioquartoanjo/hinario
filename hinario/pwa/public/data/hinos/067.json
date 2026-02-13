@@ -1,0 +1,32 @@
+{
+  "title": "67 - Findou-se a Luta de Jesus",
+  "author": "Giovanni Pierluigi da Palestrina Hino latino",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Findou-se a luta de Jesus,",
+      "O Salvador venceu na cruz.",
+      "E neste mundo raia a luz.",
+      "Aleluia!"
+    ],
+    [
+      "2. Vencida a morte e seu terror,",
+      "Subiu à glória o Redentor.",
+      "Cantai louvores ao Senhor.",
+      "Aleluia."
+    ],
+    [
+      "3. Com majestade sem igual,",
+      "Firmou o reino divinal.",
+      "Cantai um hino triunfal.",
+      "Aleluia."
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

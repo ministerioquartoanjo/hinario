@@ -1,0 +1,44 @@
+{
+  "title": "126 - Oh! Nunca Separar!",
+  "author": "Isaac Watts Timbrel Of Zion",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Há um País de gozo e luz",
+      "Onde só santos há;",
+      "Prazeres há ali a flux;",
+      "É sempre dia lá."
+    ],
+    [
+      "2. Há sempre primavera lá,",
+      "Flores não murcharão;",
+      "Tão perto, sim, de nós está",
+      "A eternal mansão."
+    ],
+    [
+      "3. Já nós estamos qual Moisés,",
+      "Vendo o futuro lar;",
+      "E divisamos pela fé",
+      "A morada sem par."
+    ]
+  ],
+  "coro": [
+    "Marchamos para a terra além",
+    "E vamos à Jerusalém:",
+    "Iremos com Jesus reinar",
+    "E nunca mais nos separar.",
+    "Oh! Nunca separar?",
+    "Não, nunca separar!",
+    "Oh! Nunca separar?",
+    "Não, nunca separar,",
+    "Iremos com Jesus reinar",
+    "E nunca mais nos separar."
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

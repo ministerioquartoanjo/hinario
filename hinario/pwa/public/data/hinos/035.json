@@ -1,0 +1,43 @@
+{
+  "title": "35 - Com Tua Mão Segura Bem a Minha",
+  "author": "Julie Katlharina von Hausmann, Hubert Platt Main",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Com tua mão segura bem a minha",
+      "Pois eu tão frágil sou, ó Salvador!",
+      "Que não me atreva a dar jamais um passo",
+      "Sem teu amparo, meu Jesus Senhor!"
+    ],
+    [
+      "2. Com Tua mão, segura bem a minha,",
+      "E mais e mais unido a Ti, Jesus.",
+      "Ó traze-me, que nunca me desvie",
+      "De Ti, Senhor, a minha vida e luz!"
+    ],
+    [
+      "3. Com Tua mão, segura bem a minha,",
+      "E, pelo mundo, alegre seguirei:",
+      "Mesmo onde as sombras caem mais escuras",
+      "Teu rosto vendo, nada temerei."
+    ],
+    [
+      "4. E, se chegar à beira desse rio,",
+      "Que Tu por mim quiseste atravessar,  Com Tua mão segura bem a minha,",
+      "E sobre a morte eu hei de triunfar."
+    ],
+    [
+      "5. Quando voltares esses céus rompendo,",
+      "Segura bem a minha mão, Senhor,",
+      "E, meu Jesus, ó leva-me contigo,",
+      "Para onde eu goze Teu eterno amor."
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

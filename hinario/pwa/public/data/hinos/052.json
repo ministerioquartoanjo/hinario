@@ -1,0 +1,35 @@
+{
+  "title": "52 - Deus Nos Deu Mensagem Santa",
+  "author": "Sarah Poulton Kalley Edward John Hopkins",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Deus nos deu mensagem santa",
+      "Para nosso guia ser;",
+      "É a Bíblia que nos manda",
+      "Sempre ao Pai obedecer;",
+      "Ela ensina como devo aqui viver;"
+    ],
+    [
+      "2. Ela aponta o meu pecado",
+      "Para o meu caminho é luz;",
+      "Mostra como estou errado",
+      "Quando o mundo me seduz;",
+      "É espada a palavra de Jesus;"
+    ],
+    [
+      "3. Eu vou ler a minha Bíblia",
+      "E pensar com devoção",
+      "Na palavra de verdade",
+      "Que me traz consolação",
+      "A palavra vou guardar no coração"
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

@@ -1,0 +1,38 @@
+{
+  "title": "44 - Cristo Meu Vero Amigo",
+  "author": "F.V. Gordon H. Clark",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Antes eu não conhecia a Jesus o Salvador,",
+      "Pois vivia em pecados e temor;",
+      "Mas achei que minhas culpas sobre Si Jesus levou",
+      "E meu gozo nunca mais aqui cessou."
+    ],
+    [
+      "2. Antes, eu não conhecia essa purificação.",
+      "E o poder que desejava o coração.",
+      "Mas vigor das promessas a minh'alma transformou",
+      "E Jesus a fonte viva me levou."
+    ],
+    [
+      "3. Pronto estou p'ra com Cristo a mensagem proclamar,",
+      "Pelas vinhas onde eu vou a trabalhar;",
+      "Bem eu sei que é poderoso;",
+      "Sua graça me dará; e vitória plena me conceder."
+    ]
+  ],
+  "coro": [
+    "É Jesus Cristo meu vero amigo,",
+    "Que minhas culpas perdoou.",
+    "É Jesus Cristo meu vero amigo,",
+    "Pois a minh’alma libertou."
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

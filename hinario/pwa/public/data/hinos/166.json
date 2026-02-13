@@ -1,0 +1,44 @@
+{
+  "title": "166 - Se Cristo Comigo Vai",
+  "author": "Frida Vingren C. Austin Miles",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Se pelos vales eu peregrino vou andar,",
+      "Ou na luz gloriosa de Cristo habitar;",
+      "Irei com meu Senhor prá onde Ele for;",
+      "Confiando na graça de Meu Salvador."
+    ],
+    [
+      "2. Se lá para o deserto Jesus me quer mandar;",
+      "Levando boas novas de Salvação sem par;",
+      "Eu lidarei, então, com paz no coração.",
+      "A Cristo seguindo, sem mais dilação."
+    ],
+    [
+      "3. Será a minha sorte a dura cruz levar",
+      "Sua graça e Seu poder, quero sempre aqui contar.",
+      "Contente com Jesus, levando a minha cruz.",
+      "Eu falo de Cristo que é minha luz."
+    ],
+    [
+      "4. Ao Salvador Jesus eu desejo obedecer,",
+      "Pois na Sua Palavra encontro o meu saber;",
+      "Fiel a Deus serei, o mundo vencerei,",
+      "Jesus vai comigo, não mais temerei."
+    ]
+  ],
+  "coro": [
+    "Se Cristo comigo vai, eu irei;",
+    "E não temerei, com gozo irei; comigo vai;",
+    "É grato servir a Jesus, levar a cruz;",
+    "Se Cristo comigo vai, eu irei."
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

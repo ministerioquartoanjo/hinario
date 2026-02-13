@@ -1,0 +1,32 @@
+{
+  "title": "145 - Pronto a Salvar",
+  "author": "Henry Maxwell Wright",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Todo o que crê no Filho de Deus,",
+      "Que prá nos remir, desceu lá dos céus;",
+      "Todo o que, contrito, a Deus se chegar;",
+      "Jesus está pronto agora a salvar."
+    ],
+    [
+      "2. Quem, arrependido, busca perdão,",
+      "Abrindo a Jesus o seu coração,",
+      "A paz hoje mesmo pode gozar,",
+      "Pois Ele está pronto, agora, a salvar"
+    ]
+  ],
+  "coro": [
+    "Sim, Jesus te chama ó meu irmão!",
+    "A ti Ele oferece pleno perdão.",
+    "Seu sangue verteu para te resgatar,",
+    "E Ele é quem quer e pode salvar."
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

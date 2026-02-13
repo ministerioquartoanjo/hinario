@@ -1,21 +1,16 @@
 {
-  "name": "Hinário MQA",
-  "short_name": "Hinario MQAAF",
-  "start_url": "./index.html",
-  "scope": "./",
-  "background_color": "#ffffff",
-  "display": "standalone",
-  "icons": [
-    {
-      "sizes": "192x192",
-      "src": "icons/icon-192x192.png",
-      "type": "image/png"
-    },
-    {
-      "sizes": "512x512",
-      "src": "icons/icon-512x512.png",
-      "type": "image/png"
-    }
-  ],
-  "theme_color": "#4CAF50"
+    "name": "Hinário MQAAF PWA",
+    "short_name": "Hinário",
+    "description": "Aplicação de hinos MQAAF",
+    "start_url": "./index.html",
+    "display": "standalone",
+    "background_color": "#000000",
+    "theme_color": "#ea580c",
+    "icons": [
+        {
+            "src": "icon.png",
+            "sizes": "1024x1024",
+            "type": "image/png"
+        }
+    ]
 }

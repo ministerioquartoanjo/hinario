@@ -1,15 +1,17 @@
+/** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./*.html'],
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+    "./remote-control.html",
+  ],
+  darkMode: 'class',
   theme: {
     extend: {
       colors: {
-        'orange-dark': '#D35400',
+        'orange-dark': '#ea580c',
       },
-      boxShadow: {
-        'custom': '0 4px 10px rgba(0, 0, 0, 0.5)',
-      }
     },
-    darkMode: 'class',
   },
   plugins: [],
 }

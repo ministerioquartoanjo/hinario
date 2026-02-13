@@ -1,0 +1,44 @@
+{
+  "title": "146 - Qual o Adorno Desta vida?",
+  "author": "Sarah Poulton Kalley Melodia Tradicional Inglesa Adapt. Hubert Platt Main",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Qual o adorno desta vida? É o amor,",
+      "Alegria é concedida pelo amor, pelo amor",
+      "É bondoso, é paciente, não se torna maldizente",
+      "Não se torna maldizente, este meigo amor."
+    ],
+    [
+      "2. Com suspeitas não se alcança doce amor, doce amor",
+      "Onde houver desconfiança, ai do amor, ai do amor",
+      "Pois mostremos tolerância; muitas vezes a arrogância",
+      "Muitas vezes a arrogância , murcha e mata o amor."
+    ],
+    [
+      "3. Inda quando for custoso, nutre amor, nutre o amor",
+      "Ao irado e mui furioso mostra amor, mostra amor",
+      "Não te dês por insultado, mas responde com agrado",
+      "Mas responde com agrado, vence pelo amor."
+    ],
+    [
+      "4. Não te irrites, mas tolera, com amor, com amor",
+      "Tudo sofre, tudo espera pelo amor, pelo amor",
+      "Desavenças e rancores, não convém a pecadores",
+      "Não convém a pecadores, salvos pelo amor."
+    ],
+    [
+      "5. Pois, irmão, ao teu vizinho mostra amor, mostra amor",
+      "O valor não é mesquinho deste amor, deste amor",
+      "O supremo Deus nos ama, Cristo para os céus nos chama",
+      "Cristo para os céus nos chama, onde reina o amor."
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

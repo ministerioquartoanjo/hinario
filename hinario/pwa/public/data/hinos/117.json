@@ -1,0 +1,50 @@
+{
+  "title": "117- O Convite de Cristo",
+  "author": "Henry Maxwell Wright",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Eis, a voz de Cristo clama,",
+      "Sobre o revoltoso mar;",
+      "Desta vida perigosa:",
+      "“Vinde em Mim vos abrigar”!"
+    ],
+    [
+      "2. Quando outrora em Galiléia,",
+      "Essa doce voz soou,",
+      "Logo, o coração ouvinte,",
+      "Tudo, pronto, abandonou."
+    ],
+    [
+      "3. Sobre as vozes sedutoras,",
+      "De mundanas atrações,",
+      "Clama a meiga voz de Cristo:",
+      "\"Dai-me vossos corações!\""
+    ],
+    [
+      "4. Quer no meio dos prazeres,",
+      "Quer no dia da aflição,",
+      "Inda clama, paciente:",
+      "\"Amas-Me tu, ó cristão?\""
+    ],
+    [
+      "5. Na vereda estreita e santa,",
+      "Já pisada por Jesus,",
+      "A segui-Lo, Ele te chama:",
+      "\"Vem, cristão, andar na luz!\""
+    ],
+    [
+      "6. Dessa cruz angustiosa,",
+      "Onde brilha Seu amor,",
+      "Ouve a voz que te convida,",
+      "Ouve e segue, pecador!"
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

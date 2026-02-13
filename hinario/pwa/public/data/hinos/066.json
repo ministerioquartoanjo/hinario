@@ -1,0 +1,38 @@
+{
+  "title": "66 - Fé é a Vitória",
+  "author": "John Henry Yates",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Soldados de Jesus, Senhor, Cristãos, ó despertai.",
+      "Da noite já as trevas vêm, depressa batalhai!",
+      "E contra os inimigos vis saí a combater!",
+      "A nossa fé vitória é, ao mundo irá vencer."
+    ],
+    [
+      "2. Sob a bandeira que pra nós é o santo amor de Deus,",
+      "Trilhemos o caminho aqui, que leva para os céus.",
+      "Os santos crentes, pela fé, vencerão Satanás.",
+      "A nossa fé vitória é, e a todos traz a paz."
+    ],
+    [
+      "3. Aquele que viver na fé, justiça alcançará;",
+      "Um nome novo há de ter, perdão receberá.",
+      "Assim, bem firmes, pela fé, unidos em amor,",
+      "Nós venceremos com poder que vem do Salvador."
+    ]
+  ],
+  "coro": [
+    "Fé é a vitória,",
+    "Sim, fé sempre tem poder.",
+    "Fé é a vitória:",
+    "Ao mundo irá vencer."
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

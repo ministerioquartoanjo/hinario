@@ -1,0 +1,38 @@
+{
+  "title": "60 - Exultação do Crente",
+  "author": "Henry Maxwell Wright",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Vinde cantai e entoai louvores a Jesus,",
+      "Que para a nossa salvação, morreu na amarga cruz;",
+      "Seu sangue derramou, de tudo me lavou,",
+      "Mais alvo do que a neve me tornou."
+    ],
+    [
+      "2. Vinde conosco vos unir, na guerra contra o mal;",
+      "E com nosso Salvador, em marcha triunfal,",
+      "A todos proclamar, Sua graça e Seu poder.",
+      "Seu sangue derramou p'ra nos salvar!"
+    ],
+    [
+      "3. O Capitão da salvação é Cristo, o Salvador;",
+      "O Rei dos reis, o Redentor. Jesus, nosso Senhor;",
+      "Ele tudo vencerá, vitória nos dará;",
+      "A glória salvos, nos conduzirá."
+    ]
+  ],
+  "coro": [
+    "O sangue de Jesus me lavou, me lavou!",
+    "O sangue de Jesus me lavou, me lavou!",
+    "Alegre cantarei louvores ao meu Rei",
+    "A meu Senhor Jesus que me salvou."
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

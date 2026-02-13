@@ -1,0 +1,38 @@
+{
+  "title": "173 - Será de Manhã?",
+  "author": "H. L. Tuner XIX James McGranahan",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Será de manhã, no começo do dia?",
+      "Será quando a luz seu fulgor irradia,",
+      "Que Cristo há de vir com os anjos da glória,",
+      "Receber deste mundo os Seus?"
+    ],
+    [
+      "2. Será de manhã ou será pela tarde?",
+      "Também pode ser que as trevas da noite",
+      "Se tornem na luz desse brilho de glória,",
+      "Quando Cristo os Seus receber."
+    ],
+    [
+      "3. Oh! graça sem fim, quando a morte vencida,",
+      "Cristo Jesus revestir-nos de vida,",
+      "E formos então habitar lá na glória,",
+      "Nesse lar que Jesus preparou!"
+    ]
+  ],
+  "coro": [
+    "Oh, Jesus, Salvador, Senhor!",
+    "Quando vamos cantar:",
+    "Cristo volta, aleluia, aleluia, amém!",
+    "Aleluia, amém?"
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

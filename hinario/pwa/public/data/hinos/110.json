@@ -1,0 +1,32 @@
+{
+  "title": "110 - Não Desistir",
+  "author": "Chuck Fulmore",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Dias há, bem sei, em que triste te sentes;",
+      "Sem ter esperança e prazer;",
+      "Mas existe alguém que promete ajudar-te",
+      "E forças à alma trazer."
+    ],
+    [
+      "2. Este mundo, eu sei, já não vai muito longe,",
+      "E o mal vai breve findar.",
+      "Minha fé em Deus, sim, está bem firmada:",
+      "Jesus logo vai regressar."
+    ]
+  ],
+  "coro": [
+    "Não desistir, Cristo vem logo!",
+    "Breve a aurora há de raiar!",
+    "Não desistir, Cristo vem logo!",
+    "Não desistir, Ele virá!"
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

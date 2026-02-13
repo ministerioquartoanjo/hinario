@@ -1,0 +1,32 @@
+{
+  "title": "86 - Infinita Graça",
+  "author": "Melodia Tradicional Cubana",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Conforme a tua infinita graça,",
+      "Ó Pai, perdoa a minha transgressão.",
+      "Fazme sentir o Teu amor infindo,",
+      "Dá-me alegria em Tua salvação."
+    ],
+    [
+      "2. Meu coração entrego a Ti, contrito,",
+      "Perdão imploro, meu Senhor e Rei.",
+      "Conforme a Tua infinita graça,",
+      "Misericórdia, sim, alcançarei."
+    ]
+  ],
+  "coro": [
+    "Mas uma vez eu sinto o meu pecado,",
+    "Que é contra Ti, ó Pai de amor;",
+    "Concede, ó Deus, a mim, misericórdia,",
+    "E entoarei a Ti o meu louvor."
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

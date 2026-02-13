@@ -1,0 +1,31 @@
+{
+  "title": "189 - Vem a Cristo",
+  "author": "John Fawcet",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Vem a Cristo, vem agora,"
+    ],
+    [
+      "2. Cristo pode, sim, salvar-te,"
+    ],
+    [
+      "3. Ele almeja perdoar-te,"
+    ],
+    [
+      "4. Tua entrega não rejeita,"
+    ]
+  ],
+  "coro": [
+    "Vem, ó vem pecador!",
+    "Vem, vem, confiadamente,",
+    "A Jesus o Senhor!"
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

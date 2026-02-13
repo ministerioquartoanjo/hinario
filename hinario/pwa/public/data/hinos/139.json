@@ -1,0 +1,39 @@
+{
+  "title": "139 - Para o Céu por Jesus Irei",
+  "author": "Jessie Brown Pounds Charles Hutchison Gabriel",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Foi Jesus que abriu o caminho do céu",
+      "Nenhum outro vou achar.",
+      "Nunca irei entrar na mansão de luz",
+      "Se não for através da cruz."
+    ],
+    [
+      "2. Certamente eu vou no caminho da cruz,",
+      "Com resolução andar.",
+      "É desejo meu desfrutar no céu,",
+      "Minha herança que Cristo deu."
+    ],
+    [
+      "3. Os caminhos ímpios do mundo deixei,",
+      "Jamais neles vou seguir;",
+      "Com Jesus, eu vou, levo a minha cruz,",
+      "No caminho que ao céu conduz."
+    ]
+  ],
+  "coro": [
+    "Para o céu por Jesus irei;",
+    "Para o céu por Jesus irei.",
+    "Grande é meu prazer",
+    "De certeza ter:",
+    "Para o céu pela cruz irei."
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

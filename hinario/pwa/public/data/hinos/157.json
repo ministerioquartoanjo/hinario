@@ -1,0 +1,44 @@
+{
+  "title": "157 - Rasgou-se o Véu",
+  "author": "Autor desconhecido",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Rasgou-se o véu, franca ficou a entrada;",
+      "Confiança temos, para ali entrar;",
+      "Onde a divina glória revelada, outrora,",
+      "Não podíamos mirar.",
+      "Por Cristo, entrando, nada ali tememos;",
+      "A glória brilha, sem nos ofuscar;",
+      "Na luz estamos e permanecemos",
+      "Firmes, tranquilos, sem mais vacilar."
+    ],
+    [
+      "2. Contigo ali, Senhor, nos encontramos,",
+      "Pois nos levaste já ao Santo Pai,",
+      "Em cuja graça aceitos, sempre estamos,",
+      "Em cujo amor tão grande nos atrai",
+      "A Ti, ó Filho - em Ti, ó bem amado!",
+      "E só em Ti temos aceitação;",
+      "E quem, no sangue estando já lavado,",
+      "Confiante está na Tua salvação."
+    ],
+    [
+      "3. Ó Deus, a Ti de coração louvamos,",
+      "Pois de Ti nos quiseste aproximar,",
+      "Quando separados de Ti ficamos,",
+      "Por Tua lei divina, violar,",
+      "Teus santos seguidores, consagrados,",
+      "No sangue do bendito Salvador,",
+      "O culto e adoração Te apresentamos,",
+      "Porque nos chamaste, ó bom Senhor!"
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

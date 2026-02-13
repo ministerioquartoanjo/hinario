@@ -1,0 +1,38 @@
+{
+  "title": "164 - Satisfeito Com Cristo",
+  "author": "Autor desconhecido",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Oh! ‘stou satisfeito com Cristo,",
+      "Porque Ele minh’alma salvou;",
+      "E sobre o madeiro, sofrendo,",
+      "O Seu sangue amor revelou."
+    ],
+    [
+      "2. Oh! 'stou satisfeito com Cristo,",
+      "De triste, tornei-me feliz,",
+      "Ouvindo o Seu Santo evangelho,",
+      "E crendo no que Ele me diz."
+    ],
+    [
+      "3. Oh! 'stou satisfeito com Cristo,",
+      "E sei que vai logo voltar;",
+      "Virá com poder glorioso,",
+      "A fim de Seu povo levar."
+    ]
+  ],
+  "coro": [
+    "Oh! 'stou satisfeito com Cristo,",
+    "Confesso-O por meu Salvador:",
+    "Embora de nada ser digno,",
+    "Desfruto do Seu grande amor."
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

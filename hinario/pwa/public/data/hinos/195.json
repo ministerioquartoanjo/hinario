@@ -1,0 +1,22 @@
+{
+  "title": "195 - Vivifica Tua Igreja",
+  "author": "Henry Maxwell Wright",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Vivifica Tua igreja ó bendito Salvador;",
+      "Sem Tua graça ela murcha ficará e sem vigor"
+    ]
+  ],
+  "coro": [
+    "Vivifica, vivifica nossas almas, oh Senhor!",
+    "Vivifica, vivifica nossas almas, oh Senhor!"
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

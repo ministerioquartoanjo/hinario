@@ -1,0 +1,38 @@
+{
+  "title": "191 - Vinde Meninos",
+  "author": "George Frederick Root",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Vinde, meninos, vinde a Jesus!",
+      "Ele ganhou-vos bênçãos na cruz!",
+      "Os pequeninos Ele conduz;",
+      "Oh, vinde ao Salvador!"
+    ],
+    [
+      "2. Já, sem demora, muito convém",
+      "Ir caminhando à glória de além",
+      "Cristo vos chama, quer vosso bem",
+      "Oh, vinde ao Salvador"
+    ],
+    [
+      "3. Que ama aos meninos, cristo vos diz",
+      "Quer receber-vos nesse País",
+      "Quer conceder-vos vida feliz",
+      "Oh, vinde ao Salvador."
+    ]
+  ],
+  "coro": [
+    "Que alegria, sem pecado ou mal,",
+    "Reunir-nos todos afinal;",
+    "Juntos na pátria celestial,",
+    "Perto do Salvador"
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

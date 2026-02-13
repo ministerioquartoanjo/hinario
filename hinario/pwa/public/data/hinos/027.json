@@ -1,0 +1,37 @@
+{
+  "title": "27 - Aviva-nos Senhor!",
+  "author": "Albert Midlane William Howard Doane",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Aviva-nos Senhor!",
+      "Oh, dá-nos Teu poder!",
+      "De santidade, fé e amor,",
+      "Reveste o nosso ser."
+    ],
+    [
+      "2. Desperta-nos Senhor!",
+      "Oh, fazemos fluir As ricas bênçãos divinais,",
+      "Primícias do porvir!"
+    ],
+    [
+      "3. Renova-nos, Senhor!",
+      "Inspira mais fervor,",
+      "Aumenta nossa compaixão",
+      "Por todo pecador."
+    ]
+  ],
+  "coro": [
+    "Aviva-nos Senhor!",
+    "Eis nossa petição.",
+    "Acende o fogo divinal",
+    "Em cada coração."
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

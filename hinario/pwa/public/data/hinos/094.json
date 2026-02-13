@@ -1,0 +1,48 @@
+{
+  "title": "94 - Jesus o Melhor Amigo",
+  "author": "Autor desconhecido",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Meu Jesus é o melhor Amigo,",
+      "Nele ponho toda a minha fé;",
+      "Minhas chagas quer sarar,",
+      "E minha alma consolar.",
+      "Oh, Jesus é o melhor amigo!"
+    ],
+    [
+      "2. Meu Jesus é o fiel amigo,",
+      "E me dá Sua força e poder;",
+      "Torna em gozo minha dor,",
+      "Me inspira, dá valor;",
+      "Oh! Jesus é o melhor amigo!"
+    ],
+    [
+      "3. Quando as ondas se embravecem,",
+      "E meu barco querem afundar,",
+      "Ele dá-me calma e paz,",
+      "E bonança sempre traz,",
+      "Sim Jesus é o melhor amigo!"
+    ],
+    [
+      "4. Ele deu a Sua própria vida",
+      "Pra salvar o ímpio pecador;",
+      "Oh! Jamais me quer deixar,",
+      "Nunca me desamparar!",
+      "Sim, Jesus é o melhor amigo!"
+    ]
+  ],
+  "coro": [
+    "Jesus é o melhor Amigo! (2x)",
+    "Sempre prestes a ajudar,",
+    "Ele a todos quer salvar;",
+    "Sim, Jesus é o melhor Amigo."
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

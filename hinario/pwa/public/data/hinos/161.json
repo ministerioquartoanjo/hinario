@@ -1,0 +1,42 @@
+{
+  "title": "161 - Salvador Bendito",
+  "author": "Henry Maxwell Wright Arthur Seymour Sullivan",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Salvador bendito, terno e bom Senhor;",
+      "Só em Ti confio, grande Salvador.",
+      "Sobre a cruz morreste para me salvar,",
+      "Tudo padeceste para me livrar."
+    ],
+    [
+      "2. Só em Ti confio, grande é Teu amor;",
+      "Nunca desprezaste um só pecador;",
+      "Todo o que contrito já te procurou",
+      "Pela Tua graça salvação achou."
+    ],
+    [
+      "3. Sim, em Ti confio, Salvador fiel,",
+      "Nunca abandonaste, o Teu Israel;",
+      "Tua excelsa graça, nunca faltará,",
+      "O que em Ti confia não perecerá."
+    ],
+    [
+      "4. Sempre em Ti confio, grande é Teu poder,",
+      "Tu os inimigos podes bem vencer;",
+      "Salvo e bem seguro leva-me, Senhor,",
+      "Sempre protegido pelo Teu amor."
+    ]
+  ],
+  "coro": [
+    "Ó Jesus bendito, terno e bom Senhor;",
+    "Só em Ti confio, grande Salvador."
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

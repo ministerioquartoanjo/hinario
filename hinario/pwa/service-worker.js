@@ -1,107 +1,61 @@
 const CACHE_NAME = 'hinario-v5';
-const urlsToCache = [
+const ASSETS = [
     './',
     './index.html',
     './styles.css',
     './script.js',
-    './dist/output.css',
-    './service-worker.js',
-    './manifest.json',
-    './icons/icon-192x192.png',
-    './icons/icon-512x512.png',
-    './js/jquery.js',
-    './js/jquery.autocomplete.js',
-    './js/jquery.autocomplete.css',
+    './data/hymns-index.json',
+    './icon.png',
+    'https://code.jquery.com/jquery-3.6.0.min.js',
+    'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css'
 ];
 
-const EXPIRACAO_MS = 24 * 60 * 60 * 1000; // 1 dia
-
-self.addEventListener('install', (event) => {
+self.addEventListener('install', event => {
     event.waitUntil(
         caches.open(CACHE_NAME)
-            .then(async (cache) => {
-                console.log('Abrindo cache e salvando arquivos...');
-                await cache.addAll(urlsToCache);
-                await cache.put('timestamp', new Response(Date.now().toString()));
-            })
-            .catch(error => {
-                console.error("Erro durante o cache:", error);
-            })
+            .then(cache => cache.addAll(ASSETS))
+            .then(() => self.skipWaiting())
     );
 });
 
-self.addEventListener('activate', (event) => {
+self.addEventListener('activate', event => {
     event.waitUntil(
-        (async () => {
-            const keys = await caches.keys();
-            await Promise.all(
-                keys.map((key) => {
-                    if (key !== CACHE_NAME) {
-                        return caches.delete(key);
-                    }
-                })
+        caches.keys().then(keys => {
+            return Promise.all(
+                keys.filter(key => key !== CACHE_NAME)
+                    .map(key => caches.delete(key))
             );
-        })()
+        }).then(() => self.clients.claim())
     );
 });
 
-self.addEventListener('fetch', (event) => {
-    event.respondWith(
-        (async () => {
-            const cache = await caches.open(CACHE_NAME);
-            const timestampResponse = await cache.match('timestamp');
+self.addEventListener('fetch', event => {
+    const url = new URL(event.request.url);
 
-            if (timestampResponse) {
-                const timestamp = Number(await timestampResponse.text());
-                const agora = Date.now();
+    // Lista de arquivos que devem ser sempre atualizados (Network First)
+    const shouldNetworkFirst = [
+        '/',
+        '/index.html',
+        '/script.js',
+        '/styles.css',
+        '/data/hymns-index.json'
+    ].some(path => url.pathname.endsWith(path)) || url.pathname.includes('/data/hinos/');
 
-                if ((agora - timestamp) > EXPIRACAO_MS) {
-                    console.log('[SW] Cache expirado. Atualizando em background...');
-                    try {
-                        await cache.addAll(urlsToCache);
-                        await cache.put('timestamp', new Response(Date.now().toString()));
-                    } catch (e) {
-                        console.warn('[SW] Falha ao atualizar cache. Mantendo cache antigo.', e);
-                    }
-                }
-            }
-
-            // Navegações: tentar rede primeiro (para verificar atualização) e fallback para cache
-            if (event.request.mode === 'navigate') {
-                try {
-                    const networkResponse = await fetch(event.request, { cache: 'no-store' });
-                    // Atualiza cache com a última versão do HTML
-                    try { await cache.put(event.request, networkResponse.clone()); } catch {}
-                    return networkResponse;
-                } catch (e) {
-                    const cachedIndex = await cache.match('./index.html');
-                    if (cachedIndex) return cachedIndex;
-                    return new Response('Offline', { status: 503, statusText: 'Offline' });
-                }
-            }
-
-            // Hinos carregado do GitHub raw: network-first com fallback para cache, respeitando querystring
-            if (event.request.url.includes('raw.githubusercontent.com') && event.request.url.endsWith('/hinos.js')) {
-                try {
-                    const resp = await fetch(event.request, { cache: 'no-store' });
-                    try { await cache.put(event.request, resp.clone()); } catch {}
-                    return resp;
-                } catch (e) {
-                    const cached = await cache.match(event.request, { ignoreSearch: false });
-                    if (cached) return cached;
-                    return new Response('Offline', { status: 503, statusText: 'Offline' });
-                }
-            }
-
-            // Assets: cache-first, RESPECT querystring so versioned files update correctly
-            const respostaCache = await cache.match(event.request, { ignoreSearch: false });
-            if (respostaCache) return respostaCache;
-            const respostaRede = await fetch(event.request).catch(() => undefined);
-            if (respostaRede) {
-                try { await cache.put(event.request, respostaRede.clone()); } catch {}
-                return respostaRede;
-            }
-            return new Response('Offline', { status: 503, statusText: 'Offline' });
-        })()
-    );
+    if (shouldNetworkFirst) {
+        event.respondWith(
+            fetch(event.request)
+                .then(response => {
+                    const clonedResponse = response.clone();
+                    caches.open(CACHE_NAME).then(cache => cache.put(event.request, clonedResponse));
+                    return response;
+                })
+                .catch(() => caches.match(event.request))
+        );
+    } else {
+        // Cache First para o resto (MP3, Ícones, Bibliotecas Externas)
+        event.respondWith(
+            caches.match(event.request)
+                .then(response => response || fetch(event.request))
+        );
+    }
 });

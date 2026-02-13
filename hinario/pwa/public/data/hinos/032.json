@@ -1,0 +1,32 @@
+{
+  "title": "32 - Cada Vez Mais Puro",
+  "author": "Autor desconhecido",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Cada vez mais puro faze o coração,",
+      "Mais e mais buscando Tua direção;",
+      "Sendo confiante sempre em Ti, Senhor;",
+      "Firme em Tua força, salvo em Teu amor."
+    ],
+    [
+      "2. Cada vez mais calmo ao cercar-me a dor,",
+      "Cheio de paciência onde quer que for;",
+      "Dá-me mais bondade, mais resignação",
+      "Aos divinos planos, sob a Tua mão."
+    ],
+    [
+      "3. Cada vez mais santo, sempre mais leal,",
+      "Faz-me firme e forte sempre contra o mal.",
+      "Quero herdar a vida de bondade e luz,",
+      "Em teu lar eterno, ó meu bom Jesus."
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

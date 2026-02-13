@@ -1,0 +1,50 @@
+{
+  "title": "11 - A Ti Seja Consagrada Minha Vida",
+  "author": "Frances Ridley Havergal",
+  "speed": 1,
+  "verses": [
+    [
+      "1. A Ti seja consagrada minha vida,",
+      "Ó meu Senhor;",
+      "Meus momentos e meus dias,",
+      "Sejam só a Teu louvor."
+    ],
+    [
+      "2. Sempre minhas mãos se movam",
+      "Com presteza e com amor",
+      "E meus pés velozes corram",
+      "Ao serviço do Senhor."
+    ],
+    [
+      "3. Minha voz agora TOMA",
+      "Para o Teu louvor cantar;",
+      "Toma os lábios meus, fazendo-os",
+      "A mensagem proclamar"
+    ],
+    [
+      "4. Minha prata e ouro toma,",
+      "Nada quero te esconder",
+      "Minha inteligência usa",
+      "Para sempre o bem fazer"
+    ],
+    [
+      "5. A vontade minha toma,",
+      " Sujeitando a ti Senhor,",
+      "Do meu coração fazendo",
+      "O Teu trono, ó Salvador."
+    ],
+    [
+      "6. Meu amor e meu desejo",
+      " Sejam só teu nome honrar;",
+      "Faze que meu ser inteiro",
+      "Eu te possa consagrar. Amém!"
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

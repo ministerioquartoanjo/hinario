@@ -1,0 +1,38 @@
+{
+  "title": "170 - Sempre Alegre",
+  "author": "Fanny Jane Croby Robert Lowry",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Seja o coração alegre,",
+      "Sempre a transbordar louvor,",
+      "Pois o nosso Pai celeste,",
+      "Mostra-nos o Seu amor."
+    ],
+    [
+      "2. Temos proteção nas lutas,",
+      "Deus nos toma pela mão;",
+      "Sua sempiterna graça,",
+      "Dá-nos forças na aflição."
+    ],
+    [
+      "3. Sempre guiará os justos ,",
+      "Com amor, em Sua luz;",
+      "Juntos serviremos todos,",
+      "Ao amado e bom Jesus."
+    ]
+  ],
+  "coro": [
+    "Sempre alegre, sempre alegre,",
+    "É o viver do bom cristão;",
+    "Oh! que regozijo pleno,",
+    "Brota-lhe da salvação!"
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

@@ -1,0 +1,44 @@
+{
+  "title": "39 - Conversão",
+  "author": "Henry Maxwell Wright",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Oh! quão cego andei e perdido vaguei,",
+      "Longe, longe do meu Salvador!",
+      "Mas do céu Ele desceu, e Seu sangue verteu",
+      "Prá salvar um tão pobre pecador."
+    ],
+    [
+      "2. Eu ouvia falar dessa graça sem par,",
+      "Que do céu trouxe nosso Jesus;",
+      "Mas eu surdo me fiz, converter-me não quis,",
+      "Ao Senhor, que por mim morreu na cruz"
+    ],
+    [
+      "3. Mas um dia senti meu pecado e vi",
+      "Sobre mim a espada da lei;",
+      "Apressado fugi, em Jesus me escondi,",
+      "E abrigo seguro Nele achei"
+    ],
+    [
+      "4. Quão ditoso então, este meu coração,",
+      "Conhecendo o excelso amor,",
+      "Que levou meu Jesus a sofrer lá na cruz;",
+      "P´ra salvar um tão pobre pecador"
+    ]
+  ],
+  "coro": [
+    "Foi na cruz, foi na cruz, onde um dia eu vi",
+    "Meus pecados castigados em Jesus;",
+    "Foi ali, pela fé, que os olhos abri,",
+    "E agora me alegro em Sua luz."
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

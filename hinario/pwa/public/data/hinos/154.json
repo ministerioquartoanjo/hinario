@@ -1,0 +1,38 @@
+{
+  "title": "154 - Quem Ouvir as Novas",
+  "author": "Philip Paul Bliss",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Quem ouvir as novas, vá proclamar;",
+      "Salvação de graça, vinde desfrutar!",
+      "Oh! Que o mundo inteiro ouça anunciar:",
+      "“Todo o que quiser é vir”!"
+    ],
+    [
+      "2. Quem quiser agora, venha aceitar;",
+      "Eis a porta aberta, já podeis entrar;",
+      "É Jesus caminho para ao céu chegar;",
+      "Todo que quiser é vir!"
+    ],
+    [
+      "3. Que fiel promessa tens, pecador!",
+      "Queres ter a vida? Vem ao Salvador!",
+      "Ele a todos fala com mui terno amor:",
+      "Todo que quiser é vir!"
+    ]
+  ],
+  "coro": [
+    "Todo o que quiser, venha receber!",
+    "Possam todos essa boa nova ouvir!",
+    "É o Pai celeste quem convida assim:",
+    "Todo o que quiser é vir!"
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

@@ -1,0 +1,38 @@
+{
+  "title": "26 - Assim Como Sou",
+  "author": "R.R.Kalley",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Assim como estou: sem nada dizer,",
+      "Senão que por mim vieste a morrer,",
+      "E me convidaste a Ti recorrer:",
+      "Bendito Jesus, me chego a Ti!"
+    ],
+    [
+      "2. Assim como estou: sem mais demorar,",
+      "Minha alma do mal querendo limpar,",
+      "A ti, que de tudo me podes lavar:",
+      "Bendito Jesus, me chego a ti!"
+    ],
+    [
+      "3. Assim como estou: em grande aflição.",
+      "Tão digno de morte e da perdição,",
+      "Rogando-te vida, com paz e perdão:",
+      "Bendito Jesus, me chego a ti!"
+    ],
+    [
+      "4. Assim como estou: o Teu grande amor",
+      "Me vence: e crendo em Ti, sem temor,",
+      "Eu quero servir-te, divino Senhor!",
+      "Bendito Jesus, me chego a Ti!"
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

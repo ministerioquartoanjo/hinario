@@ -1,0 +1,44 @@
+{
+  "title": "55 - Eis Multidões",
+  "author": "James McGranahan",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Eis multidões, em trevas tão medonhas,",
+      "Vivem perdidas, sem o Salvador!",
+      "Quem lhes irá as novas proclamando",
+      "Que Deus, em Cristo, salva o pecador?"
+    ],
+    [
+      "2. Portas abertas, eis por todo mundo;",
+      "Tempos de ceifas agora aproveitai.",
+      "Servos de Cristo, uni as vossas forças,",
+      "Da escravidão os povos libertai."
+    ],
+    [
+      "3. “Oh vinde a mim!” A voz divina clama.",
+      "Ide, clamai em nome de Jesus,",
+      "Que pra salvar-nos do castigo eterno,",
+      "Seu sangue derramou por nós na cruz."
+    ],
+    [
+      "4. Ó Deus, apressa o dia glorioso ",
+      "Em que os remidos todos unirão ",
+      "E em grande coro, santo jubiloso, ",
+      "Pra todo sempre gloria a ti darão."
+    ]
+  ],
+  "coro": [
+    "“Todo o poder o Pai Me deu,",
+    "Na Terra, bem assim no céu;",
+    "Ide, pois, anunciar o evangelho,",
+    "E sempre Eu estou convosco"
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

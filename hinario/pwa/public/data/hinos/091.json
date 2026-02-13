@@ -1,0 +1,38 @@
+{
+  "title": "91 - Jesus, Pastor Amado",
+  "author": "Sarah Poulton Kalley George James Webb",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Jesus, Pastor amado, contempla-nos aqui;",
+      "Concede que sejamos um corpo só em Ti.",
+      "Contendas e malícias de nós bem longe vão;",
+      "Nenhum desgosto impeça a nossa comunhão. "
+    ],
+    [
+      "2. Pois sendo resgatados por um só Salvador,",
+      "Devemos ser unidos por santo e forte amor;",
+      "Olhar com simpatia os erros de um irmão",
+      "E todos ajudá-lo, com terna compaixão."
+    ],
+    [
+      "3. Jesus, suave e meigo, ensina-nos a amar,",
+      "E faz-nos bem dispostos também no perdoar.",
+      "Oh! Quanto carecemos do auxílio do Senhor!",
+      "Unidos, supliquemos a Ti por esse amor."
+    ],
+    [
+      "4. Senhor, se a igreja toda andar em santa união,",
+      "Então será bendito o nome de cristão.",
+      "Assim o que pediste em nós se cumprirá,",
+      "E o mundo, em nós, teus filhos, então distinguirá."
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

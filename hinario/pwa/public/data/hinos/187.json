@@ -1,0 +1,44 @@
+{
+  "title": "187 - Um Pendão Real",
+  "author": "Henry Maxwell Wright",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Um pendão real vos entregou o Rei",
+      "A vós, soldados Seus.",
+      "Corajosos, pois, em tudo O defendei;",
+      "Marchando para os céus."
+    ],
+    [
+      "2. Eis formados já os negros batalhões",
+      "Do grande usurpador!",
+      "Declarai-vos, hoje, bravos campeões;",
+      "Avante sem temor."
+    ],
+    [
+      "3. Quem receio sente no seu coração,",
+      "E fraco se mostrar,",
+      "Não receberá o eterno galardão,",
+      "Que Cristo tem p'ra dar."
+    ],
+    [
+      "4. Pois sejamos, todos, a Jesus leais,",
+      "E a Seu real pendão;",
+      "Os que na batalha sempre são fiéis,",
+      "Com Ele reinarão."
+    ]
+  ],
+  "coro": [
+    "Com valor! Sem temor!",
+    "Por Cristo prontos a sofrer!",
+    "Bem alto erguei o Seu pendão,",
+    "Firmes sempre até vencer!"
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

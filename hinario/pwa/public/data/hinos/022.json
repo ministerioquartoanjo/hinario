@@ -1,0 +1,32 @@
+{
+  "title": "22 - Anseio Um Lugar de Amor",
+  "author": "John G. Whittier",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Anseio a paz, um lugar de amor!",
+      "Saudoso estou deste lar feliz;",
+      "Subir em vestes de fulgor",
+      "Ao sempiterno, bom País."
+    ],
+    [
+      "2. Jamais virão os pecados vis",
+      "A penetrar nos portais de luz;",
+      "Será no centro do país",
+      "O trono eterno de Jesus."
+    ],
+    [
+      "3. Ali fruir infindáveis paz,",
+      "Ali viver são os sonhos meus;",
+      "E o doce enlevo que me traz,",
+      "Real se torne, queira Deus."
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

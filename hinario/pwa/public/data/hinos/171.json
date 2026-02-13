@@ -1,0 +1,38 @@
+{
+  "title": "171 - Sempre Fiéis",
+  "author": "Henry Maxwell Wright",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Sempre fiéis, sim, a Ti, nós seremos,",
+      "Por Tua graça, ó Cristo, Senhor!",
+      "Sempre fiéis, sim, por Ti lutaremos,",
+      "Sob Teu pendão, ó Jesus, Salvador!"
+    ],
+    [
+      "2. Por Ti viver, ó bendito Cordeiro,",
+      "Quem não deseja Te conhecer?",
+      "Quem, que se diga cristão verdadeiro,",
+      "Pronto não 'steja, por Ti a sofrer?"
+    ],
+    [
+      "3. Mas, Salvador, quão fraquinhos nós somos,",
+      "Como podemos deixar de cair,",
+      "Se por Ti mesmo guardados não formos?",
+      "Quem, té à morte, Te pode seguir?"
+    ]
+  ],
+  "coro": [
+    "Sempre fiéis, irmãos! Irmãos sejamos.",
+    "Sempre fiéis a Cristo Jesus.",
+    "Que até à morte, por nós prosseguiu,",
+    "E libertou-nos, morrendo na cruz!"
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

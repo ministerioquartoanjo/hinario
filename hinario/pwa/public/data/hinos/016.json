@@ -1,0 +1,34 @@
+{
+  "title": "16 - Aleluia! Já Creio",
+  "author": "Henry Maxwell Wright",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Deus tem prometido a salvação dar,",
+      "A quem em Seu Filho Jesus confiar."
+    ],
+    [
+      "2. Foi tal Seu amor, que me substituiu,",
+      "E sobre o Calvário, minh'alma remiu!"
+    ],
+    [
+      "3. Não posso jamais desse amor duvidar;",
+      "Não posso senão aos Seus pés me prostrar."
+    ],
+    [
+      "4. E, quando, na glória, eu vir meu bom Rei,",
+      "Com todos os santos ali cantarei."
+    ]
+  ],
+  "coro": [
+    "Aleluia! Já creio em Cristo Jesus.",
+    "E salvo sou pelo sangue da cruz."
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

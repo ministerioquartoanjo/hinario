@@ -1,0 +1,38 @@
+{
+  "title": "87 - Já Termina o Ano Velho",
+  "author": "Maria da Glória Loureiro de Andrade Melodia Tradicional leta",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Já termina o ano velho;",
+      "Damos a Jesus louvor,",
+      "Pois guardou-nos do maligno",
+      "O ano todo com amor."
+    ],
+    [
+      "2. Do pecado nos afasta,",
+      "Nossos passos vem guiar",
+      "Reanima nossas forças",
+      "E um bom ano vem nos dar."
+    ],
+    [
+      "3. A verdade em nós conserva;",
+      "Dá-nos Tua proteção;",
+      "De doutrina falsa e ímpia",
+      "Livra nosso coração."
+    ],
+    [
+      "4. Cristo eterno te adoramos,",
+      "Pois na glória de esplendor,",
+      "Junto a ti, eternamente",
+      "Viveremos, ó Senhor. Amém"
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

@@ -1,0 +1,40 @@
+{
+  "title": "43 - Cristo Me Amou e Me Livrou",
+  "author": "James Rowe",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Eu perdido pecador,",
+      "Longe do meu Jesus,",
+      "Já me achava sem vigor,",
+      "A perecer sem luz;",
+      "Meu estado Cristo viu,",
+      "E me estendeu a mão,",
+      "E salvar-me conseguiu,",
+      "Da perdição."
+    ],
+    [
+      "2. Minha vida, todo o ser,",
+      "Quero lhe consagrar.",
+      "A seu lado vou viver,",
+      "O Seu amor cantar,",
+      "E a mensagem transmitir,",
+      "Aos que perdidos são,",
+      "Vou ao meu Senhor servir,",
+      "Com gratidão."
+    ]
+  ],
+  "coro": [
+    "Cristo me amou e me livrou.",
+    "O Seu imenso amor me transformou.",
+    "Por Seu poder e Seu querer,",
+    "Cristo meu Salvador, me libertou"
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

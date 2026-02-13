@@ -1,0 +1,44 @@
+{
+  "title": "79 - Há Poder no Sangue de Jesus",
+  "author": "Autor desconhecido L. E. Jones",
+  "speed": 1,
+  "verses": [
+    [
+      "1. O teu pecado tu queres deixar?",
+      "No sangue há poder, sim há poder;",
+      "Queres do mal a vitória ganhar?",
+      "Seu sangue tem este poder!"
+    ],
+    [
+      "2. Queres os vícios abandonar?",
+      "No sangue há poder, sim, há poder;",
+      "Confia em Cristo para te curar;",
+      "Seu sangue tem este poder!"
+    ],
+    [
+      "3. Oh! Paralítico, queres andar?",
+      "No sangue há poder, sim, há poder;",
+      "Para fazer-te também caminhar,",
+      "Seu sangue tem este poder!"
+    ],
+    [
+      "4. Queres pureza p'ra teu coração?",
+      "No sangue há poder, sim, há poder;",
+      "Mais lealdade, mais consagração,",
+      "Seu sangue tem este poder!"
+    ],
+    [
+      "5. Queres de Cristo a mensagem levar?",
+      "No sangue há poder, sim, há poder;",
+      "Queres co'os anjos, na glória cantar?",
+      "Seu sangue tem este poder!"
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 9
+}

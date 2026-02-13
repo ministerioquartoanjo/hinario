@@ -1,0 +1,50 @@
+{
+  "title": "172 - Senhor, É Admirável o Teu Divino Amor",
+  "author": "James George Deck Arthur Henry Mann",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Senhor, é admirável",
+      "O Teu divino amor.",
+      "Eterno incomparável,",
+      "Motivo de louvor.",
+      "Amando-nos, chegaste",
+      "A este mundo aqui",
+      "E assim nos resgataste",
+      "Chamando-nos a Ti."
+    ],
+    [
+      "2. Provaste, humilhado,",
+      "A nossa condição;",
+      "Levaste sem pecado.",
+      "A nossa transgressão.",
+      "Sofreste a crueldade,",
+      "Sofreste afronta e dor",
+      "Pra nos libertar",
+      "Eterno Salvador."
+    ],
+    [
+      "3. Por nós sacrificaste",
+      "A vida sobre a cruz;",
+      "Da morte nos livraste,",
+      "Senhor e Rei Jesus!",
+      "Por isso te adoramos",
+      "Com grato coração",
+      "E, humildes, te ofertamos",
+      "A nossa devoção."
+    ],
+    [
+      "4. Agora, transformados,",
+      "Queremos te servir",
+      "E, unidos, irmãos,",
+      "O exemplo Teu seguir."
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

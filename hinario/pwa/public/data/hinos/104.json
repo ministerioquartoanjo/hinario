@@ -1,0 +1,30 @@
+{
+  "title": "104 - Meu Melhor Momento",
+  "author": "Jairo Pablo A. de Carvalho",
+  "speed": 1,
+  "verses": [
+    [
+      "Meu melhor momento foi quando com Cristo",
+      "Tive um encontro que jamais esquecerei",
+      "Da vida cansado no mundo perdido",
+      "Então a sua doce voz eu escutei",
+      "Com tanto amor me chamou",
+      "Amor que eu jamais fiz por merecer",
+      "Quando Ele me disse assim",
+      "Vinde a Mim, se estais cansado",
+      "Eu te aliviarei!",
+      "Com tanto amor me atraiu",
+      "Com tanto amor que eu não resisti",
+      "Chorando minha vida a Ele entreguei",
+      "Meu melhor momento Foi quando o encontrei",
+      "Meu melhor momento"
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 30
+}

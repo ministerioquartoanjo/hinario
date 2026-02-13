@@ -1,0 +1,32 @@
+{
+  "title": "129 - Ó Pai Eterno",
+  "author": "Katharine L. Bates",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Ó Pai eterno que no céu habitas,",
+      "Nós, os Teus filhos, vimos Te pedir",
+      "Que nos ampare Tuas mãos benditas,",
+      "Em nossas lutas, hoje e no porvir."
+    ],
+    [
+      "2. Não nos impute nossos vis pecados.",
+      "Teus, nós sejamos, sempre mais e mais;",
+      "Pois, confiantes, somos vigorados",
+      "Em teus paternos braços divinais."
+    ],
+    [
+      "3. Ó Pai, transforma nossa natureza,",
+      "Vem ensinar-nos a fazer o bem.",
+      "Em nossa mente dá-nos mais pureza,",
+      "Mais santidade, por Jesus. Amém"
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

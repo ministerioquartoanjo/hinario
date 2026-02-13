@@ -1,0 +1,32 @@
+{
+  "title": "93 - Jesus, Sempre Te Amo",
+  "author": "William Ralph Featherstone Adoniram Judson Gordon",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Jesus, sempre Te amo, porque sei que és meu;",
+      "Feliz eu Te rendo louvor que é só Teu.",
+      "Meu Mestre divino, Senhor e meu Rei;",
+      "A Ti ó meu Cristo, me submeterei."
+    ],
+    [
+      "2. Eu te amo por que tu morreste por mim",
+      "Eu te amo por que teu amor não tem fim",
+      "Em ti confiança pra sempre terei",
+      "E a ti, ó meu Cristo, me submeterei."
+    ],
+    [
+      "3. Eu te amo na vida, na morte também",
+      "Sempre hei de louvar-te na glória de além",
+      "Agora e pra sempre por ti viverei",
+      "E a ti, ó meu Cristo, me submeterei."
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

@@ -1,0 +1,44 @@
+{
+  "title": "90 - Jesus Me Guia",
+  "author": "Joseph Henry Gilmore William Batchelder Bradbury",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Jesus me guia: que prazer!",
+      "Palavra de consolação!",
+      "Por onde for, no meu viver,",
+      "Me guia sempre a Sua mão."
+    ],
+    [
+      "2. Nas horas triste de aflição",
+      "Que a vida sempre a todos dá,",
+      "Ou quando alegre o coração,",
+      "O meu Jesus me guiará."
+    ],
+    [
+      "3. Ajuda-me a não murmurar,",
+      "Qualquer que seja a condição.",
+      "Contente vou me guiarás ",
+      "Por Tua mui bondosa mão."
+    ],
+    [
+      "4. E quando a morte em mim vier,",
+      "A minha vida aqui ceifar,",
+      "Por ti guardado meu Senhor,",
+      "Contigo irei então morar."
+    ]
+  ],
+  "coro": [
+    "Jesus me guia: que prazer!",
+    "É Sua mão que me conduz.",
+    "Em cada passo do viver",
+    "Quem me dirige é meu Jesus."
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

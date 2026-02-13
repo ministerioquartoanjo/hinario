@@ -1,0 +1,45 @@
+{
+  "title": "12 - Achei Jesus, o Meu Salvador",
+  "author": "Autor desconhecido",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Achei Jesus, o Meu Salvador,",
+      "De amor fiel, veraz;",
+      "Não cessarei de Lhe dar louvor,",
+      "Pois tenho a Salvação e paz."
+    ],
+    [
+      "2. Vem me guardar Sua forte mão,",
+      "De todo o vício e mal;",
+      "Vencendo vou cada tentação;",
+      "Sustem-me o braço divinal."
+    ],
+    [
+      "3. Jesus me achou tão aflito e mal,",
+      "Sem ter consolação;",
+      "Chamou-me a Si, com amor real;",
+      "Cheguei-me e achei à salvação."
+    ],
+    [
+      "4. Da morte eterna me resgatou,",
+      "Da dura escravidão;",
+      "Na rocha eterna seguro estou;",
+      "Cantando vou, com gratidão."
+    ]
+  ],
+  "coro": [
+    "Salvo por Cristo sou,",
+    "Salvo por quem me amou!",
+    "Salvo por quem me amou!",
+    "Perfeita paz Ele agora me traz,",
+    "Porque salvo sou!"
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

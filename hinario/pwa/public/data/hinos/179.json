@@ -1,0 +1,54 @@
+{
+  "title": "179 - Teu Nome Precioso",
+  "author": "Ja. S.",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Jesus Cristo, o Teu nome",
+      "É tão doce para mim!",
+      "Tua doçura incomparável",
+      "Enche-me de amor sem fim.",
+      "Tua doçura incomparável",
+      "Enche-me de amor sem fim."
+    ],
+    [
+      "2. És a estrela resplendente,",
+      "Que brilha com fulgor,",
+      "E dirige os meus passos,",
+      "Neste mundo de horror.",
+      "E dirige os meus passos,",
+      "Neste mundo de horror."
+    ],
+    [
+      "3. Teus são os eternos braços,",
+      "Protegendo o seguidor,",
+      "Que não fique enlaçado",
+      "P’lo maligno tentador.",
+      "Que não fique enlaçado",
+      "P'lo maligno tentador."
+    ],
+    [
+      "4. Com meu Salvador amado",
+      "Posso alegre prosseguir,",
+      "E com Ele eterno gozo",
+      "Eu terei lá no porvir.",
+      "E com Ele eterno gozo",
+      "Eu terei lá no porvir."
+    ],
+    [
+      "5. Oh! Teu nome precioso",
+      "Continua a soar",
+      "Pelo mundo de pecado,",
+      "Para as almas despertar!",
+      "Pelo mundo de pecado,",
+      "Para as almas despertar!"
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

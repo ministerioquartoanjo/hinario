@@ -1,0 +1,34 @@
+{
+  "title": "17 - Altamente os Céus Proclamam",
+  "author": "Metrificação do Sl 19, Sarah Kalley Melodia Alema",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Altamente os céus proclamam",
+      "Seu divino Criador;",
+      "Anuncia o firmamento",
+      "Tuas obras ó Senhor.",
+      "Incessante, noite e dia,",
+      "Dão sinais do Teu poder;",
+      "Sem palavras proclamando",
+      "Tua glória, Teu saber."
+    ],
+    [
+      "2. Majestoso o sol caminha",
+      "Pelos céus, com resplendor!",
+      "Exultando, em seu percurso,",
+      "Enche o mundo de calor.",
+      "Todo o vasto universo",
+      "Canta, em coro, teu louvor!",
+      "E a nós vem doce ensino",
+      "Da Palavra do Senhor."
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

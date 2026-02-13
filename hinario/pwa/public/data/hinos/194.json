@@ -1,0 +1,21 @@
+{
+  "title": "194 - Vitoria Deus Dará a Mim",
+  "author": "Autor desconhecido J.T.B.",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Vitória Deus dará a mim, eu sei,",
+      "Vitória Deus dará a mim, eu sei.",
+      "Se eu andar em plena luz,",
+      "Confiar só em Jesus,",
+      "Vitória Deus dará a mim, eu sei."
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

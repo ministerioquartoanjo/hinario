@@ -1,0 +1,38 @@
+{
+  "title": "25 - As Novas do Evangelho",
+  "author": "Samuel Wesley Martin Joseph Jones",
+  "speed": 1,
+  "verses": [
+    [
+      "1. As novas do evangelho, ressoando estão aqui",
+      "Boas novas tão alegres, elas são pra mim e Ti",
+      "Assim Deus nos amou, sim a cada pecador",
+      "Que nos deu Seu Filho amado, p’ra sofre a nossa dor."
+    ],
+    [
+      "2. As novas do evangelho anunciam vida e paz;",
+      "Pois Jesus aos pecadores, salvação perene trás,",
+      "É tempo de aceitar o glorioso",
+      " Salvador Poderoso e mui bondoso, que perdoa o pecador"
+    ],
+    [
+      "3. As novas do evangelho levam todos a saber",
+      " Que perdão e vida eterna, todos podem receber",
+      "É só crer em Jesus e confiar em Seu amor",
+      "Pois na cruz verteu Seu sangue, para ser o Salvador"
+    ]
+  ],
+  "coro": [
+    "Santa paz e perdão",
+    "São as novas lá dos céus",
+    "Santa paz e perdão",
+    "Demos glória ao nosso Deus"
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

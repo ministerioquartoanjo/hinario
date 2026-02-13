@@ -1,0 +1,43 @@
+{
+  "title": "21 - Amor Sem Igual",
+  "author": "R. Torrey. Jr Ernest Gebhardt",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Oh, não tens ouvido do amor sem igual,",
+      "Do amor que teu Deus tem por ti?",
+      "O amor que O levou a Seu Filho entregar,",
+      "Prá os salvos levar para Si!"
+    ],
+    [
+      "2. Não foram os grandes que Cristo chamou,",
+      "Nem justos veio Ele salvar,",
+      "Mas pobres e fracos, culpados e maus",
+      "Mandou pelos servos buscar"
+    ],
+    [
+      "3. O homem, porém, não podia chegar",
+      "À santa presença de Deus,",
+      "Porque os pecados de seu coração",
+      "Vedavam-lhe a entrada nos céus"
+    ],
+    [
+      "4. Mas pelo Seu sangue Jesus expiou",
+      "A culpa dos crentes, na cruz;",
+      "Tirando o pecado, o caminho mostrou,",
+      "O qual para os céus nos conduz"
+    ]
+  ],
+  "coro": [
+    "Oh, crê! Sim crê! Oh crê! Sim crê!",
+    "A graça de Deus te chama dos céus.",
+    "Oh, crê nesse amor sem igual!"
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

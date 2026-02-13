@@ -1,0 +1,45 @@
+{
+  "title": "84 - História de Cristo",
+  "author": "Henry Maxwell",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Conta-me a história de Cristo, grava-a no meu coração.,",
+      "A linda história inaudita, de graça, paz e perdão!",
+      "Conta como Ele encarnando, veio ao mundo morar.",
+      "E aos pecadores indignos, de Deus amor revelar! (2x)"
+    ],
+    [
+      "2. Conta como Ele, bondoso, nunca a ninguém rejeitou,",
+      "Como de mãos estendidas todos a si convidou!",
+      "Como não pode o bom Mestre, seja a quem for recusar,",
+      "Se convencido e contrito, o Seu convite aceitar. (2x)"
+    ],
+    [
+      "3. Conta-me quando no monte sobre a cidade chorou",
+      "Pois orgulhosa e rebelde o Seu amor rejeitou!",
+      "Conta como Ele ainda chora, sobre os que seguem o mal;",
+      "E endurecidos resistem ao Seu amor divinal. (2x)"
+    ],
+    [
+      "4. Conta também como Cristo, mesmo na cruz se lembrou",
+      "Dos Seus cruéis inimigos e ao Pai por eles rogou!",
+      "Como ao ladrão moribundo, tão prontamente escutou,",
+      "E nesse dia consigo, para o descanso o levou! (2x)"
+    ],
+    [
+      "5. Conta-me as duras afrontas que mansamente sofreu:",
+      "Como na cruz levantado, Ele por ímpios morreu!",
+      "Dá-me o viver na certeza de que foi mesmo por mim!",
+      "Que Seu amor inefável, não tem mudança nem fim!",
+      "Que Seu amor inefável, não tem mudança nem fim!"
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

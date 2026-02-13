@@ -1,0 +1,38 @@
+{
+  "title": "34 - Chuva de Bênçãos",
+  "author": "Daniel Webster Whhitle James Mcgranahan",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Chuva de bênçãos teremos",
+      "É a promessa de Deus;",
+      "Tempos benditos veremos,",
+      "Chuvas mandadas dos céus."
+    ],
+    [
+      "2. Chuvas de bênçãos teremos,",
+      "Vida de paz e perdão.",
+      "Os pecadores indignos,",
+      "Graça dos céus obterão."
+    ],
+    [
+      "3. Chuvas de bênçãos teremos,",
+      "Manda-nos já, ó Senhor!",
+      "Que essa bendita promessa,",
+      "Venha trazer-nos vigor."
+    ]
+  ],
+  "coro": [
+    "Chuvas de bênçãos,",
+    "Chuvas de bênçãos dos céus!",
+    "Gotas somente nós temos;",
+    "Chuvas rogamos a Deus!"
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

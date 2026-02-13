@@ -1,0 +1,40 @@
+{
+  "title": "65 - Feliz o Dia",
+  "author": "Philip Doddridge, estrofes Atribuída a Edward Francis Rimbault, estribrilho Melodia americana",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Feliz o dia em que aceitei",
+      "Do meu Senhor a salvação.",
+      "A paz completa eu alcancei",
+      "E alegre está meu coração."
+    ],
+    [
+      "2. A decisão assim tomei",
+      "De ser fiel ao Salvador",
+      "E em cada dia renderei",
+      "Somente a Ele o meu louvor"
+    ],
+    [
+      "3. Exulta, pois, meu coração,",
+      "No Filho do supremo Deus",
+      "Porque te deu a redenção",
+      "E concedeu perdão dos céus."
+    ]
+  ],
+  "coro": [
+    "Que prazer eu senti",
+    "No dia em que me converti!",
+    "Agora sinto seu amor",
+    "E segurança paz fervor.",
+    "Sou feliz, sou feliz,",
+    "Pois em Jesus, me satisfiz."
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

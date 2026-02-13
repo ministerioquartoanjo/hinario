@@ -1,0 +1,44 @@
+{
+  "title": "59 - Eu Resolvi Seguir-te",
+  "author": "John Ernest Bode Henry Thomas Smart",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Eu resolvi seguir-te,",
+      "Jesus, até o fim,",
+      "Pois tu, Senhor, prometes",
+      "Guiar-me sempre a mim.",
+      "Conheço que sou fraco",
+      "E o bem não sei fazer,",
+      "Mas pela Tua graça",
+      "Eu sempre irei vencer."
+    ],
+    [
+      "2. O mundo já venceste,",
+      "E as suas obras más,",
+      "E sobre tudo reinas,",
+      "Ó Príncipe da paz.",
+      "No céu e aqui na terra",
+      "Impera o Teu poder,",
+      "E pela Tua graça",
+      "Eu sempre irei vencer."
+    ],
+    [
+      "3. A todos que te seguem,",
+      "E tomam sua cruz,",
+      "Prometes que contigo,",
+      "Irão morar, Jesus;",
+      "Descansarão na glória,",
+      "Contigo, ó vencedor,",
+      "Pois pela Tua graça",
+      "Vencerão sem temor."
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

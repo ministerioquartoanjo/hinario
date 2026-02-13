@@ -1,0 +1,36 @@
+{
+  "title": "9 - A Minha Fé e o Meu Amor",
+  "author": "Edward Mote William Batchelder Bradbury",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Minha esperança até o fim,",
+      "É Cristo que morreu por mim.",
+      "Eu creio só no meu Senhor,",
+      "No nome do bom Redentor."
+    ],
+    [
+      "2. Se lhe não posso a face ver, ",
+      "Na Sua graça vou viver. Em cada crise,",
+      "sem falhar, Sempre hei nEle confiar."
+    ],
+    [
+      "3. Jamais falhou ao prometer;",
+      "Nas lutas vem me socorrer.",
+      "Ao sobrevir a tentação,",
+      "É Cristo a minha salvação"
+    ]
+  ],
+  "coro": [
+    "A minha fé e o meu amor",
+    "Estão firmados no Senhor,",
+    "Estão firmados no Senhor."
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

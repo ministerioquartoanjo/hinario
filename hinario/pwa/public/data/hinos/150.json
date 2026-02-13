@@ -1,0 +1,38 @@
+{
+  "title": "150 - Que diz a Bíblia?",
+  "author": "Franklin Edson Belden",
+  "speed": 1,
+  "verses": [
+    [
+      "1. “Que diz a Bíblia, livro sagrado”?",
+      "Para o fiel, eis a questão!",
+      "Ensinamentos de homens são falhos;",
+      "Que diz de Deus o livro então!"
+    ],
+    [
+      "2. Poucos ponderam estes ensinos;",
+      "Querem fugir de a lei guardar;",
+      "Outros pretendem, quanto ao descanso,",
+      "Ter o poder de o revogar."
+    ],
+    [
+      "3. Ao vir o mestre, há de saudar-vos,",
+      "Vós que pisais a sua lei?",
+      "Há de ele achar-vos justificados?",
+      "Ó, meditai e respondei!"
+    ]
+  ],
+  "coro": [
+    "“Que diz a Bíblia”? Poucos dirão.",
+    "“Que diz a Bíblia”? Cumpre saber.",
+    "Seus mandamentos guardemos todos,",
+    "Breve Jesus iremos ver."
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

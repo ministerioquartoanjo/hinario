@@ -1,0 +1,32 @@
+{
+  "title": "192 - Vinde, Povo do Senhor",
+  "author": "Henry Alford George Job Elvery",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Vinde, povo do Senhor, adorai-O com louvor.",
+      "Só a Eles exaltai; a Jesus e a Deus o Pai,",
+      "Ao cordeiro que morreu, e a quem o Filho deu.",
+      "Vinde, povo do Senhor, adorai-os com amor."
+    ],
+    [
+      "2. Observemos com fervor este dia do Senhor,",
+      "Pois as bênçãos lá do céu, aos fiéis as prometeu.",
+      "Atentai à Sua voz com amor falar a nós.",
+      "Vinde, povo do Senhor, exaltai o Criador."
+    ],
+    [
+      "3. Quando a Igreja encontrar Seu esposo e o desposar,",
+      "Nossas lutas findarão, e virá a redenção.",
+      "Mal e dor ficando atrás, reinará amor e paz. ",
+      "Vinde, povo do Senhor, aclamai o Redentor."
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

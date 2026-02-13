@@ -1,0 +1,38 @@
+{
+  "title": "119 - Ó Cristãos, Avante!",
+  "author": "Sabine Baring Gould Arthur Seymour Sullivan",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Ó cristãos, avante! Sem temor marchar!",
+      "Pela cruz de Cristo, com ardor lutar.",
+      "Cristo o nosso Mestre, guia o batalhão;",
+      "No calor da guerra ergue Seu pendão."
+    ],
+    [
+      "2. Ó cristãos, avante, contra Satanás!",
+      "A Jesus seguindo, príncipe da paz.",
+      "Nunca o inimigo prevalecerá!",
+      "Com as hostes santas Cristo vencerá!"
+    ],
+    [
+      "3. Reinos pereceram, tronos e nações,",
+      "Mas a Igreja vence, mesmo em aflições.",
+      "Vamos, pois, avante, com fervor marchar,",
+      "Rumo para a glória, nosso eterno lar."
+    ]
+  ],
+  "coro": [
+    "Ó cristãos, avante!",
+    "Marchar, marchar, marchar!",
+    "Pela cruz de Cristo,",
+    "Com ardor lutar!"
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

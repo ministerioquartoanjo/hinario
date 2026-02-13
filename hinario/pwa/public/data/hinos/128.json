@@ -1,0 +1,44 @@
+{
+  "title": "128 - O Lugar de Bênção e Paz",
+  "author": "Sarah Poulton Kalley",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Eu estou no lugar onde há bênção e paz,",
+      "Onde sinto comigo Jesus.",
+      "Aos humildes Seu sangue assegura perdão:",
+      "Seu espírito os enche de luz."
+    ],
+    [
+      "2. Que alegria estar onde há bênção e paz!",
+      "Que riqueza de amor sem igual:",
+      "O cansado recebe alimento e vigor:",
+      "Para o triste há consolo real!"
+    ],
+    [
+      "3. Que ternura estar onde há bênção e paz,",
+      "E perdão de inefável valor!",
+      "Mas somente os fiéis é que podem contar",
+      "Esta graça do bom Salvador."
+    ],
+    [
+      "4. Há louvor sem igual onde há bênção e paz!",
+      "E eis que os anjos desejam cantar",
+      "Com os homens, em coro, a bendita mercê",
+      "De Jesus, que nos veio salvar!"
+    ]
+  ],
+  "coro": [
+    "Estou no lugar onde há bênção e paz,",
+    "Onde Cristo nos mostra afeição.",
+    "Descansai! Exultai! Confessai-O!",
+    "Publicai que nEle há salvação."
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

@@ -1,0 +1,44 @@
+{
+  "title": "122 - O Dia do Triunfo de Jesus",
+  "author": "James Milton Black",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Quando lá do céu descendo para o seus Jesus voltar,",
+      "E o clarim de Deus a todos proclamar;",
+      "Que chegou o grande dia do triunfar do meu Rei;",
+      "Eu por Sua imensa graça lá estarei."
+    ],
+    [
+      "2. Nesse dia, quando os mortos hão de a voz de Cristo ouvir,",
+      "E dos seus sepulcros hão de ressurgir,",
+      "Os remidos reunidos, logo aclamarão seu Rei,",
+      "E, por Sua imensa graça, lá estarei."
+    ],
+    [
+      "3. Pelo mundo, rejeitado foi, Jesus, meu Salvador.",
+      "Desprezaram, insultaram meu Senhor,",
+      "Mas, faustoso, vem o dia do triunfar do meu Rei,",
+      "E, por Sua imensa graça, lá estarei."
+    ],
+    [
+      "4. Em mim mesmo, nada tenho em que possa confiar,",
+      "Mas Jesus morreu na cruz p'ra me salvar;",
+      "Tão somente nEle espero, sim, e sempre esperarei.",
+      "Pois, por Sua imensa graça, lá estarei."
+    ]
+  ],
+  "coro": [
+    "Quando enfim, chegar o dia",
+    "Do triunfar do meu Rei",
+    "Quando enfim, chegar o dia,",
+    "Pela graça de Jesus eu lá estarei."
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

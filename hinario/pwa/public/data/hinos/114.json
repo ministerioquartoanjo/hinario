@@ -1,0 +1,33 @@
+{
+  "title": "114 - Nós O Veremos",
+  "author": "Mariane Scriven",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Nós O veremos retornando em glória;",
+      "Contemplaremos o Rei Salvador!",
+      "Com muitos anjos nós O louvaremos,",
+      "Cantando em coro: Hosana! Amém!"
+    ],
+    [
+      "2. Nós O veremos na manhã gloriosa;",
+      "Contemplaremos o Seu resplendor.",
+      "Entoaremos hinos de vitória,",
+      "Cantando em coro, Hosana! Amém!"
+    ],
+    [
+      "3. Nós O veremos em radiante brilho;",
+      "Nosso louvor alçaremos ao céu",
+      "Com santos anjos O exaltaremos,",
+      "Cantando em coro, Hosana! Amém!",
+      "Hosana! Amém!"
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

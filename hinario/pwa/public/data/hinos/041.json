@@ -1,0 +1,36 @@
+{
+  "title": "41 - Cristo a Porta Está",
+  "author": "Joel Carlson",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Jesus Cristo à porta está:",
+      "Bate sempre para entrar.",
+      "Se ouvires, abre já!",
+      "Abre o coração!"
+    ],
+    [
+      "2. Jesus bate ainda lá",
+      "E, se não abrires já,",
+      "Ele triste voltará;",
+      "Abre o coração!"
+    ],
+    [
+      "3. Jesus bate, abre já,",
+      "Abre, sim, ó pecador!",
+      "O juízo à porta está;",
+      "Abre o coração!"
+    ]
+  ],
+  "coro": [
+    "Abre o coração!",
+    "Abre o coração!"
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

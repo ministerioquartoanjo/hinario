@@ -1,0 +1,32 @@
+{
+  "title": "95 - Jubilosos Te Adoramos",
+  "author": "Henry van Dyke Ludwig van Beethoven, c",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Jubilosos te adoramos, Deus da glória, Deus de amor!",
+      "Nosso coração transborda em louvor a Ti, Senhor.",
+      "Rompe as nuvens da tristeza, do pecado e do temor.",
+      "Doador da eterna graça, enche-nos do Teu amor!"
+    ],
+    [
+      "2. Tuas obras anunciam Teu poder e resplendor.",
+      "Céus e Terra cantam hinos em louvor a Ti, Senhor.",
+      "Vales, montes e campinas, lindos prados, verde mar,",
+      "Aves, fontes cristalinas, todos querem te adorar."
+    ],
+    [
+      "3. Aleluia, aleluia, a Jesus o Redentor!",
+      "Aleluia eternamente em louvor a Ti, Senhor",
+      "Que nos trouxe eterna glória, ao morrer por nós na cruz.",
+      "Aleluia ao Pai e ao Filho, que a todos nós conduz!"
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

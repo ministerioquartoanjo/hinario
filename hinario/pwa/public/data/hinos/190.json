@@ -1,0 +1,46 @@
+{
+  "title": "190 - Vencendo Vem Jesus",
+  "author": "Júlia Ward Howe Melodia Tradicional Ameri",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Já refulge a glória eterna de Jesus o Rei dos reis:",
+      "Breve os reinos deste mundo ouvirão a Sua Lei!",
+      "Os sinais da Sua vinda mais se mostram cada vez;",
+      "Vencendo vem Jesus!"
+    ],
+    [
+      "2. O clarim que chama os crentes à batalha, já soou",
+      "Cristo, à frente do seu povo, multidões já conquistou",
+      "O inimigo, em retirada, seu furor patenteou",
+      "Vencendo vem Jesus"
+    ],
+    [
+      "3. E por fim entronizado as nações há de julgar",
+      "Todos, grandes e pequenos, o Juiz hão de encarar",
+      "E os remidos triunfantes, em fulgor hão de cantar",
+      "Venceu o Rei Jesus"
+    ]
+  ],
+  "coro": [
+    [
+      "Glória! Glória! Aleluia! (3x)",
+      "Vencendo vem Jesus!"
+    ],
+    [
+      "Glória! Glória! Aleluia! (3x)",
+      "Vencendo vem Jesus!"
+    ],
+    [
+      "Glória! Glória! Aleluia! (3x)",
+      "Venceu o Rei Jesus!"
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

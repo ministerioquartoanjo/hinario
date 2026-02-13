@@ -1,0 +1,44 @@
+{
+  "title": "74 - Graças dou Por Minha Vida",
+  "author": "August Ludvig Storm John Alfred Hultman",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Graças dou por minha vida,",
+      "Que Jesus já transformou.",
+      "E também por meu futuro",
+      "e por tudo que passou;",
+      "Pelas bênçãos derramadas,",
+      "Pelo amor, pela aflição.",
+      "Pelas faltas perdoadas,",
+      "Grato sou de coração."
+    ],
+    [
+      "2. Graças pelo azul celeste,",
+      "E por nuvens que há também:",
+      "Pelas rosas do caminho,",
+      "E os espinhos que ela tem.",
+      "Pelas lutas dessa vida,",
+      "Pela estrela que brilhou,",
+      "Pela prece respondida,",
+      "E a esperança que raiou."
+    ],
+    [
+      "3. Graças dou a Jesus Cristo,",
+      "Que morreu em meu lugar,",
+      "Pela paz que é sem medida,",
+      "E me ajuda a caminhar.",
+      "Graças dou por meus amigos,",
+      "O consolo no chorar,",
+      "Pelo amparo nos perigos,",
+      "Sempre graças hei de dar."
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

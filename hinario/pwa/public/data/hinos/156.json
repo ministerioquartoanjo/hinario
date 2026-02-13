@@ -1,0 +1,38 @@
+{
+  "title": "156 - Quero Ter Jesus Comigo",
+  "author": "Lizzie Edwards John Robson Sweney",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Quero ter Jesus comigo,",
+      "Quero a sós com Ele andar.",
+      "Quero ver Seu lindo rosto,",
+      "Em Seus braços descansar."
+    ],
+    [
+      "2. Quero ter Jesus comigo;",
+      "Frágil sou em minha fé.",
+      "Sua voz me dá conforto",
+      "Quando me vacila o pé."
+    ],
+    [
+      "3. Quero ter Jesus comigo,",
+      "Sempre aqui em meu viver,",
+      "No lazer e no trabalho,",
+      "No pesar e no prazer"
+    ]
+  ],
+  "coro": [
+    "Tendo fé no Salvador,",
+    "Descansando em Seu amor,",
+    "Seguirei no meu caminho,",
+    "Sem tristeza sem temor."
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

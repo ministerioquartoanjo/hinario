@@ -1,0 +1,44 @@
+{
+  "title": "78 - Há Trabalho Pronto",
+  "author": "Henry Maxwell Wright",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Há trabalho pronto para ti, cristão;",
+      "Que demanda toda a tua devoção;",
+      "Vem, alegremente, a Cristo obedecer,",
+      "Pois só tu, ó crente, o poderás fazer!"
+    ],
+    [
+      "2. Para cada crente, o Mestre preparou",
+      "Um trabalho certo, quando o resgatou,",
+      "O trabalho a que Jesus te chama aqui.",
+      "Como será feito, se não for por ti?"
+    ],
+    [
+      "3. Pode ser humilde, mas se for p'ra Deus,",
+      "Ele é contemplado lá dos altos céus.",
+      "E o esforço feito não será em vão",
+      "Se tiver de Cristo, plena aprovação!"
+    ],
+    [
+      "4. Quantos há perdidos, sem a salvação!",
+      "Quantos que precisam de consolação!",
+      "Como Cristo os ama, fá-los entender,",
+      "Pois só tu, ó crente, o poderás fazer!"
+    ]
+  ],
+  "coro": [
+    "Por Jesus a trabalhar,",
+    "Prontamente, fielmente, trabalhar!",
+    "Em Servi-Lo, que prazer!",
+    "E só tu, ó crente, o poderás fazer."
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

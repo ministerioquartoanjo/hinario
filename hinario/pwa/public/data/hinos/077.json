@@ -1,0 +1,53 @@
+{
+  "title": "77 - Há Tais Cantos Lá No Céu",
+  "author": "Johnson Oatman, Jr John Robson Sydney",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Há tais cantos lá no céu,",
+      "Que aqui ninguém jamais ouviu!",
+      "Sempre os anjos cantam glórias",
+      "Ao Cordeiro do Senhor. Harpas sempre em harmonia,",
+      "Sempre a voz em claros tons.",
+      "Quem nos dera ser assim,",
+      "Servindo ao Rei e Salvador!"
+    ],
+    [
+      "2. Mesmo que eu não seja um anjo,",
+      "Lá no céu hei de cantar.",
+      "Vou unir-me ao grande coro",
+      "Dos remidos do Senhor",
+      "Louvarei meu Salvador",
+      "Que sobre a cruz por mim morreu,",
+      "Que pagou as minhas culpas",
+      "E libertação me deu."
+    ],
+    [
+      "3. Esse canto de vitória,",
+      "Sim, os anjos ouvirão.",
+      "É qual voz de muitas águas,",
+      "Voz de grande multidão.",
+      "O universo inteiro pára,",
+      "Em espanto e admiração,",
+      "Ante o canto dos remidos",
+      "Ao Senhor da redenção"
+    ]
+  ],
+  "coro": [
+    "Santo! Santo!",
+    "É o canto de anjos bons.",
+    "Eu hei de um dia unir",
+    "A voz a tais aclamações!",
+    "Mas quando eu lhes contar a história",
+    "Desta redenção: Mudez!",
+    "Não podem compreender",
+    "Tão grande salvação!"
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

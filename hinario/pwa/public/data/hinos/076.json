@@ -1,0 +1,41 @@
+{
+  "title": "76 - Guia, ó Deus, a Minha Vida",
+  "author": "William Willians John Hughes",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Guia, ó Deus, a minha vida",
+      "Neste mundo de aflição;",
+      "Frágil sou em minha lida,",
+      "Mas é forte a Tua mão.",
+      "O meu ser de paz reveste.",
+      "Livra-me da tentação!",
+      "Livra-me da tentação!"
+    ],
+    [
+      "2. Abre as fontes da verdade,",
+      "De onde puras águas vem,",
+      "Nesse mundo de maldade,",
+      "Faz-me aproveitá-las bem.",
+      "Sê o fogo, sê a nuvem,",
+      "Sê libertador também,",
+      "Sê libertador também."
+    ],
+    [
+      "3. É chegando ao fim da estrada,",
+      "O Jordão eu vou passar,",
+      "E achei no céu morada,",
+      "Que Jesus foi preparar.",
+      "E em louvor ao Deus eterno,",
+      "Para sempre vou cantar,",
+      "Para sempre vou cantar."
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

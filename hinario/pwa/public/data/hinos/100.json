@@ -1,0 +1,38 @@
+{
+  "title": "100 - Mais Perto Quero Estar",
+  "author": "Sarah Fuller Flower Adams Lowel Mason",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Mais perto quero estar,",
+      "Meu Deus, de Ti,",
+      "Inda que seja a dor,",
+      "Que me una a Ti."
+    ],
+    [
+      "2. Andando triste aqui,",
+      "Na solidão, ",
+      "Paz e descanso a mim,",
+      "Teus braços dão."
+    ],
+    [
+      "3. Minh’alma cantará,",
+      "A Ti, Senhor,",
+      "Cheia de gratidão,",
+      "Por teu amor."
+    ]
+  ],
+  "coro": [
+    "Eis meu constante orar:",
+    "Mais perto quero estar,",
+    "Mais perto quero estar,",
+    "Meu Deus, de Ti."
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

@@ -1,0 +1,44 @@
+{
+  "title": "62 - Face a Face",
+  "author": "Carrie Ellis Breck Grant Colfaxtullar",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Quanto almejo ver a Cristo!",
+      "Ver-Lhe o rosto que prazer!",
+      "Quando, enfim, no lar eterno,",
+      "Poderei sempre O ver!"
+    ],
+    [
+      "2. Muito longe já O avisto,",
+      "Vejo como por um véu,",
+      "Mas desejo em breve vê-Lo",
+      "Face a face lá no céu!"
+    ],
+    [
+      "3. Oh! que encanto estar com Cristo,",
+      "Onde já não há mais dor!",
+      "Livre de qualquer perigo,",
+      "Desfrutando Seu amor!"
+    ],
+    [
+      "4. Face a face, que alegria",
+      "Há de ser viver assim,",
+      "Vendo o rosto tão querido",
+      "De quem morto foi por mim!"
+    ]
+  ],
+  "coro": [
+    "Face a face eu hei de vê-lo,",
+    "Quando vier em glória em luz;",
+    "Face a face lá na glória,",
+    "Hei de ver meu bom Jesus!"
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

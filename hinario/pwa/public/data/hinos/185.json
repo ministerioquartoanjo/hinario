@@ -1,0 +1,48 @@
+{
+  "title": "185 - Tudo Entregarei",
+  "author": "Judson Van Venter Wifield Scott Weeden",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Tudo, ó Cristo, a Ti entrego,",
+      "Tudo, sim, por Ti darei.",
+      "Resoluto, mas submisso,",
+      "Sempre a Ti eu seguirei."
+    ],
+    [
+      "2. Tudo, ó Cristo, a Ti entrego,",
+      "Corpo e alma, eis aqui!",
+      "Este mundo mau renego,",
+      "Ó Jesus, me aceita a mim!"
+    ],
+    [
+      "3. Tudo, ó Cristo, a Ti entrego,",
+      "Quero ser somente Teu!",
+      "Tão submisso à Tua vontade",
+      "Como os anjos lá no céu!"
+    ],
+    [
+      "4. Tudo, ó Cristo, a Ti entrego;",
+      "Oh, eu sinto Teu amor",
+      "Transformar a minha vida",
+      "E meu coração, Senhor!"
+    ],
+    [
+      "5. Tudo, ó Cristo, a Ti entrego;",
+      "Oh, que gozo, meu Senhor!",
+      "Paz perfeita, paz completa!",
+      "Glória, glória ao Salvador!"
+    ]
+  ],
+  "coro": [
+    "Tudo entregarei! (2x)",
+    "Sim, por Ti, Jesus bendito, tudo deixarei!"
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}
