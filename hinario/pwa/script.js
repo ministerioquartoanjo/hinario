@@ -19,6 +19,77 @@ const DEFAULT_AUDIO_FILTERS = {
     treble: 12
 };
 
+const remoteChannel = typeof BroadcastChannel !== 'undefined'
+    ? new BroadcastChannel('hinario_remote')
+    : null;
+let fullscreenWarningTimeout = null;
+let isFullscreenActive = false;
+
+const broadcastFullscreenState = () => {
+    remoteChannel?.postMessage({ action: 'fullscreenState', value: isFullscreenActive, source: 'main' });
+};
+
+const updateFullscreenUI = () => {
+    const btn = document.getElementById('btn-fullscreen');
+    const icon = btn?.querySelector('i');
+    if (icon) {
+        icon.classList.toggle('fa-expand', !isFullscreenActive);
+        icon.classList.toggle('fa-compress', isFullscreenActive);
+    }
+    if (btn) {
+        btn.setAttribute('title', isFullscreenActive ? 'Sair do modo tela cheia' : 'Entrar no modo tela cheia');
+    }
+    broadcastFullscreenState();
+};
+
+const enterFullscreen = () => {
+    const elem = document.getElementById('slide-preview');
+    const request = elem?.requestFullscreen?.bind(elem)
+        || elem?.webkitRequestFullscreen?.bind(elem)
+        || elem?.msRequestFullscreen?.bind(elem);
+
+    if (request) {
+        request().catch(() => {
+            showFullscreenWarning();
+        });
+    } else {
+        showFullscreenWarning();
+    }
+};
+
+const exitFullscreen = () => {
+    if (document.exitFullscreen) {
+        document.exitFullscreen();
+    } else if (document.webkitExitFullscreen) {
+        document.webkitExitFullscreen();
+    } else if (document.msExitFullscreen) {
+        document.msExitFullscreen();
+    }
+};
+
+const toggleFullscreen = () => {
+    if (isFullscreenActive) {
+        exitFullscreen();
+    } else {
+        enterFullscreen();
+    }
+};
+
+const showFullscreenWarning = () => {
+    clearTimeout(fullscreenWarningTimeout);
+    const message = document.getElementById('remote-warning');
+    if (!message) return;
+
+    message.textContent = 'Clique na tela principal para autorizar o modo tela cheia.';
+    message.classList.remove('hidden', 'opacity-0');
+    message.classList.add('opacity-100');
+
+    fullscreenWarningTimeout = setTimeout(() => {
+        message.classList.add('opacity-0');
+        setTimeout(() => message.classList.add('hidden'), 300);
+    }, 4000);
+};
+
 let BACKGROUNDS = [...DEFAULT_BACKGROUNDS];
 
 // --- Estado da Aplicação ---
@@ -385,7 +456,12 @@ const setupSearch = () => {
 };
 
 const selectHino = async (hinoOrIndex) => {
-    const hino = state.hinos.find(h => h.numero === hinoOrIndex.numero);
+    const numero = typeof hinoOrIndex === 'number'
+        ? hinoOrIndex
+        : hinoOrIndex?.numero;
+
+    if (!numero) return;
+    const hino = state.hinos.find(h => h.numero === numero);
     if (!hino) return;
 
     if (!hino.loaded) {
@@ -509,7 +585,18 @@ const loadAudio = async (numero) => {
     };
 };
 
+const updateNavControlsVisibility = () => {
+    const navControls = document.getElementById('slide-nav-controls');
+    if (!navControls) return;
+    if (state.currentHino) {
+        navControls.classList.remove('hidden');
+    } else {
+        navControls.classList.add('hidden');
+    }
+};
+
 const renderHino = () => {
+    updateNavControlsVisibility();
     if (!state.currentHino) return;
 
     const content = $('#slide-content');
@@ -601,6 +688,29 @@ const prevSlide = () => {
         state.currentSlide--;
         renderHino();
     }
+};
+
+const selectRandomHino = () => {
+    if (!state.hinos.length) return;
+    const randIdx = Math.floor(Math.random() * state.hinos.length);
+    selectHino(state.hinos[randIdx]);
+};
+
+const toggleRandomPlaylist = () => {
+    const player = document.getElementById('audio-player');
+    if (!player) return;
+
+    if (!state.isPlaylistActive) {
+        $('#btn-playlist-toggle').click();
+    } else {
+        $('#btn-playlist-stop').click();
+    }
+};
+
+const shuffleBackground = () => {
+    state.settings.bgIndex = Math.floor(Math.random() * BACKGROUNDS.length);
+    saveSettings();
+    applySettings();
 };
 
 const nextHino = () => {
@@ -1006,24 +1116,17 @@ const setupEvents = () => {
     });
 
     // Fullscreen Toggle
-    $('#btn-fullscreen').on('click', () => {
-        const elem = document.getElementById('slide-preview');
-        if (elem.requestFullscreen) {
-            elem.requestFullscreen();
-        } else if (elem.webkitRequestFullscreen) {
-            elem.webkitRequestFullscreen();
-        } else if (elem.msRequestFullscreen) {
-            elem.msRequestFullscreen();
-        }
-    });
+    $('#btn-fullscreen').on('click', toggleFullscreen);
 
     // Monitor Fullscreen changes to adjust width & Stop Audio on Exit
     $(document).on('fullscreenchange webkitfullscreenchange mozfullscreenchange MSFullscreenChange', () => {
-        const isFullscreen = document.fullscreenElement || document.webkitFullscreenElement || document.mozFullScreenElement || document.msFullscreenElement;
+        const fullscreenElement = document.fullscreenElement || document.webkitFullscreenElement || document.mozFullScreenElement || document.msFullscreenElement;
+        isFullscreenActive = Boolean(fullscreenElement);
+        updateFullscreenUI();
 
         // Adjust Width
         const content = $('#slide-content');
-        if (isFullscreen) {
+        if (isFullscreenActive) {
             content.removeClass('max-w-2xl').addClass('max-w-[90vw]');
         } else {
             content.removeClass('max-w-[90vw]').addClass('max-w-2xl');
@@ -1073,22 +1176,36 @@ const setupEvents = () => {
     });
 
     // Remote Control listener
-    const bc = new BroadcastChannel('hinario_remote');
-    bc.onmessage = (ev) => {
-        const { action } = ev.data;
+    if (remoteChannel) {
+        remoteChannel.onmessage = (ev) => {
+            const { action, source, numero } = ev.data || {};
 
-        switch (action) {
-            case 'nextSlide': nextSlide(); break;
-            case 'prevSlide': prevSlide(); break;
-            case 'nextHino': nextHino(); break;
-            case 'prevHino': prevHino(); break;
-            case 'togglePlay': $('#btn-play-pause').click(); break;
-            case 'stopAudio': $('#btn-stop').click(); break;
-            case 'toggleFullscreen': $('#btn-fullscreen').click(); break;
-            case 'toggleBg': $('#btn-toggle-bg').click(); break;
-            case 'toggleComplete': $('#check-completo').click(); break;
-        }
-    };
+            if (action === 'requestFullscreenState' && source === 'remote') {
+                broadcastFullscreenState();
+                return;
+            }
+
+            if (source === 'remote') {
+                switch (action) {
+                    case 'nextSlide': nextSlide(); break;
+                    case 'prevSlide': prevSlide(); break;
+                    case 'nextHino': nextHino(); break;
+                    case 'prevHino': prevHino(); break;
+                    case 'randomHino': selectRandomHino(); break;
+                    case 'togglePlay': $('#btn-play-pause').click(); break;
+                    case 'stopAudio': $('#btn-stop').click(); break;
+                    case 'toggleRandomPlaylist': toggleRandomPlaylist(); break;
+                    case 'shuffleBackground': shuffleBackground(); break;
+                    case 'toggleFullscreen': toggleFullscreen(); break;
+                    case 'toggleBg': $('#btn-toggle-bg').click(); break;
+                    case 'toggleComplete': $('#check-completo').click(); break;
+                    case 'selectHino':
+                        if (typeof numero === 'number') selectHino(numero);
+                        break;
+                }
+            }
+        };
+    }
 
     $('#btn-remote').on('click', () => {
         window.open('remote-control.html', 'remote_control', 'width=400,height=700');

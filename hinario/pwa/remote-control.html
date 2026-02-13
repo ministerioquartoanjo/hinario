@@ -13,24 +13,44 @@
         }
 
         .grid-button {
-            @apply bg-gray-800 hover:bg-orange-dark text-white p-6 rounded-2xl flex flex-col items-center justify-center gap-3 transition-all active:scale-95 shadow-lg;
+            @apply bg-gray-800 hover:bg-orange-dark text-white p-2 md:p-3 rounded-lg flex flex-col items-center justify-center gap-1.5 transition-all active:scale-95 shadow-md text-[11px] md:text-xs;
         }
     </style>
 </head>
 
 <body class="text-white font-sans flex flex-col h-screen">
-    <header class="p-6 bg-gray-900 border-b border-gray-800 flex items-center justify-between">
-        <h1 class="text-xl font-bold flex items-center gap-2">
-            <i class="fas fa-mobile-alt text-orange-dark"></i>
+    <header class="px-3 py-2 bg-gray-900 border-b border-gray-800 flex items-center justify-between text-[10px] md:text-xs">
+        <h1 class="text-xs md:text-sm font-semibold flex items-center gap-1">
+            <i class="fas fa-mobile-alt text-orange-dark text-sm md:text-base"></i>
             Controle Remoto
         </h1>
-        <div class="status-dot w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
+        <div class="status-dot w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
     </header>
 
-    <main class="flex-grow p-6 grid grid-cols-2 gap-4 overflow-y-auto">
+    <section class="px-3 py-2 bg-gray-950 border-b border-gray-900 space-y-2 text-[10px]">
+        <label class="uppercase tracking-wide text-[10px] text-gray-400" for="remote-hino-number">Selecionar Hino</label>
+        <div class="flex gap-2 items-center">
+            <div class="relative flex-1">
+                <input id="remote-hino-number" list="remote-hino-options" placeholder="Ex.: 120 - Título"
+                    class="w-full bg-gray-900 border border-gray-800 rounded-lg pl-3 pr-8 py-1.5 text-xs focus:outline-none focus:border-orange-dark"
+                    autocomplete="off">
+                <button id="remote-clear-hino"
+                    class="absolute right-2 top-1/2 -translate-y-1/2 text-gray-500 hover:text-red-400 text-xs"
+                    title="Limpar seleção">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <button id="remote-select-hino"
+                class="px-2.5 py-1.5 bg-orange-dark text-white text-xs rounded-lg font-semibold">Ir</button>
+        </div>
+        <datalist id="remote-hino-options"></datalist>
+        <p id="remote-hino-feedback" class="text-[10px] text-gray-500">Informe o número e toque em “Ir”.</p>
+    </section>
+
+    <main class="flex-grow p-3 md:p-4 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2 md:gap-3 overflow-y-auto text-[11px]">
         <!-- Navegação -->
         <button id="remote-prev" class="grid-button">
-            <i class="fas fa-chevron-left text-2xl"></i>
+            <i class="fas fa-chevron-left text-xl md:text-2xl"></i>
             <span>Slide Anterior</span>
         </button>
         <button id="remote-next" class="grid-button">
@@ -40,64 +60,165 @@
 
         <!-- Hinos -->
         <button id="remote-prev-hino" class="grid-button">
-            <i class="fas fa-step-backward text-2xl"></i>
+            <i class="fas fa-step-backward text-lg md:text-xl"></i>
             <span>Hino Anterior</span>
         </button>
         <button id="remote-next-hino" class="grid-button">
-            <i class="fas fa-step-forward text-2xl"></i>
+            <i class="fas fa-step-forward text-lg md:text-xl"></i>
             <span>Próximo Hino</span>
+        </button>
+        <button id="remote-random-hino" class="grid-button">
+            <i class="fas fa-random text-lg md:text-xl text-purple-400"></i>
+            <span>Hino Aleatório</span>
         </button>
 
         <!-- Áudio -->
-        <button id="remote-play" class="grid-button col-span-2 bg-orange-dark">
-            <i class="fas fa-play text-3xl"></i>
+        <button id="remote-play" class="grid-button bg-orange-dark">
+            <i class="fas fa-play text-xl md:text-2xl"></i>
             <span>Play / Pause</span>
         </button>
 
         <button id="remote-stop" class="grid-button">
-            <i class="fas fa-stop text-2xl text-red-400"></i>
+            <i class="fas fa-stop text-lg md:text-xl text-red-400"></i>
             <span>Parar Áudio</span>
         </button>
         <button id="remote-fullscreen" class="grid-button">
-            <i class="fas fa-expand text-2xl text-blue-400"></i>
-            <span>Tela Cheia</span>
+            <i class="fas fa-expand text-lg md:text-xl text-blue-400 transition-transform duration-200"></i>
+            <span class="text-[10px] md:text-xs">Entrar em Tela Cheia</span>
+            <small id="remote-fs-status"
+                class="text-[9px] text-gray-400 uppercase tracking-wide">Tela Normal</small>
         </button>
 
         <!-- Visual -->
         <button id="remote-toggle-bg" class="grid-button">
-            <i class="fas fa-image text-2xl text-green-400"></i>
+            <i class="fas fa-image text-lg md:text-xl text-green-400"></i>
             <span>Alternar Fundo</span>
         </button>
         <button id="remote-toggle-complete" class="grid-button">
-            <i class="fas fa-align-left text-2xl text-yellow-400"></i>
+            <i class="fas fa-align-left text-lg md:text-xl text-yellow-400"></i>
             <span>Modo Completo</span>
+        </button>
+        <button id="remote-random-bg" class="grid-button">
+            <i class="fas fa-palette text-lg md:text-xl text-blue-300"></i>
+            <span>Fundo Aleatório</span>
+        </button>
+        <button id="remote-random-playlist" class="grid-button bg-gray-900 border border-gray-800">
+            <i class="fas fa-random text-lg md:text-xl text-pink-400"></i>
+            <span>Toggle Playlist Aleatória</span>
         </button>
     </main>
 
-    <footer class="p-6 bg-gray-900 flex flex-col items-center gap-2">
-        <p class="text-xs text-gray-500">Conectado ao dispositivo principal</p>
-        <button onclick="window.close()" class="text-sm text-gray-400 underline">Fechar Controle</button>
+    <footer class="px-3 py-2 md:px-4 md:py-3 bg-gray-900 flex flex-col items-center gap-1 text-xs">
+        <p class="text-[10px] text-gray-500 uppercase tracking-wide">Conectado ao dispositivo principal</p>
+        <button onclick="window.close()" class="text-xs text-gray-400 underline">Fechar Controle</button>
     </footer>
 
     <script shadow>
         // Sincronização simples via BroadcastChannel
         const bc = new BroadcastChannel('hinario_remote');
+        let isFullscreenActive = false;
 
-        const send = (action) => {
-            bc.postMessage({ action });
+        const send = (action, extra = {}) => {
+            bc.postMessage({ action, source: 'remote', ...extra });
             // Haptic feedback se disponível
             if (navigator.vibrate) navigator.vibrate(50);
+        };
+
+        const fullscreenBtn = document.getElementById('remote-fullscreen');
+        const fullscreenIcon = fullscreenBtn.querySelector('i');
+        const fullscreenLabel = fullscreenBtn.querySelector('span');
+        const fullscreenStatus = document.getElementById('remote-fs-status');
+        const hinoInput = document.getElementById('remote-hino-number');
+        const hinoFeedback = document.getElementById('remote-hino-feedback');
+        const hinoOptions = document.getElementById('remote-hino-options');
+        const hinoClearBtn = document.getElementById('remote-clear-hino');
+
+        const updateFullscreenState = (active) => {
+            isFullscreenActive = active;
+            fullscreenIcon.classList.toggle('fa-expand', !active);
+            fullscreenIcon.classList.toggle('fa-compress', active);
+            fullscreenLabel.textContent = active ? 'Sair da Tela Cheia' : 'Entrar em Tela Cheia';
+            fullscreenStatus.textContent = active ? 'Modo Tela Cheia' : 'Tela Normal';
+            fullscreenStatus.classList.toggle('text-green-400', active);
+            fullscreenStatus.classList.toggle('text-gray-400', !active);
+        };
+
+        bc.onmessage = (event) => {
+            const { action, value, source } = event.data || {};
+            if (source === 'main' && action === 'fullscreenState') {
+                updateFullscreenState(Boolean(value));
+            }
+        };
+
+        const formatOption = (numero, titulo) => {
+            return `${String(numero).padStart(3, '0')} - ${titulo}`;
+        };
+
+        const parseNumeroFromInput = (value) => {
+            if (!value) return null;
+            const match = value.trim().match(/^(\d{1,4})/);
+            return match ? parseInt(match[1], 10) : null;
+        };
+
+        const populateHinoOptions = (list) => {
+            hinoOptions.innerHTML = list.map(h => `<option value="${formatOption(h.numero, h.titulo)}"></option>`).join('');
+        };
+
+        const loadHinosIndex = async () => {
+            try {
+                const response = await fetch('data/hymns-index.json');
+                if (!response.ok) throw new Error('Falha ao carregar lista');
+                const data = await response.json();
+                populateHinoOptions(data.slice(0, 400));
+            } catch (error) {
+                console.error('Erro ao carregar hinos para autocomplete:', error);
+                hinoFeedback.textContent = 'Falha ao carregar lista de hinos.';
+                hinoFeedback.classList.add('text-red-400');
+            }
+        };
+
+        const submitHino = () => {
+            const numero = parseNumeroFromInput(hinoInput.value);
+            if (!numero || numero < 1) {
+                hinoFeedback.textContent = 'Informe um número válido.';
+                hinoFeedback.classList.replace('text-green-400', 'text-red-400');
+                return;
+            }
+            send('selectHino', { numero });
+            hinoFeedback.textContent = `Solicitando hino ${numero}...`;
+            hinoFeedback.classList.remove('text-red-400');
+            hinoFeedback.classList.add('text-green-400');
         };
 
         document.getElementById('remote-prev').onclick = () => send('prevSlide');
         document.getElementById('remote-next').onclick = () => send('nextSlide');
         document.getElementById('remote-prev-hino').onclick = () => send('prevHino');
         document.getElementById('remote-next-hino').onclick = () => send('nextHino');
+        document.getElementById('remote-random-hino').onclick = () => send('randomHino');
         document.getElementById('remote-play').onclick = () => send('togglePlay');
         document.getElementById('remote-stop').onclick = () => send('stopAudio');
         document.getElementById('remote-fullscreen').onclick = () => send('toggleFullscreen');
         document.getElementById('remote-toggle-bg').onclick = () => send('toggleBg');
         document.getElementById('remote-toggle-complete').onclick = () => send('toggleComplete');
+        document.getElementById('remote-random-bg').onclick = () => send('shuffleBackground');
+        document.getElementById('remote-random-playlist').onclick = () => send('toggleRandomPlaylist');
+        document.getElementById('remote-select-hino').onclick = submitHino;
+        hinoInput.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter') {
+                e.preventDefault();
+                submitHino();
+            }
+        });
+        hinoClearBtn.addEventListener('click', () => {
+            hinoInput.value = '';
+            hinoFeedback.textContent = 'Seleção limpa. Informe outro número.';
+            hinoFeedback.classList.remove('text-red-400');
+            hinoFeedback.classList.remove('text-green-400');
+        });
+
+        // Solicitar estado inicial de fullscreen ao carregar
+        send('requestFullscreenState');
+        loadHinosIndex();
     </script>
 </body>
 
