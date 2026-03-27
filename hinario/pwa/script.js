@@ -1543,6 +1543,10 @@ const downloadJSONs = async () => {
         document.querySelector('#download-progress .text-orange-dark').textContent = 'Sincronizando áudios offline...';
         const finalCacheSize = await cache.keys();
         const missingFiles = total - finalCacheSize.length;
+        
+        // Update cache version after successful JSON download
+        await updateCacheVersion();
+        
         alert(`Letras sincronizadas para uso offline! ${finalCacheSize.length} hinos cacheados (${skipped} já existiam${failed > 0 ? `, ${failed} falharam` : ''}${missingFiles > 0 ? `, ${missingFiles} não encontrados` : ''}).`);
     }, 1000);
 };
@@ -1749,6 +1753,39 @@ $('<style>').text(`
 // --- Cache Status Functions ---
 let cachedJsonCount = 0;
 let cachedMp3Count = 0;
+let cacheVersion = '1.0.0'; // Auto-increment when JSON files change
+
+// Auto-update cache version based on file timestamps
+const updateCacheVersion = async () => {
+    try {
+        // Get current timestamp to use as version
+        const timestamp = Date.now();
+        const newVersion = `${Math.floor(timestamp / 1000000)}.${Math.floor((timestamp % 1000000) / 1000)}.${timestamp % 1000}`;
+        
+        const versionCache = await caches.open('version-cache');
+        await versionCache.put('cache-version', new Response(newVersion));
+        
+        console.log(`Cache version updated to: ${newVersion}`);
+        return newVersion;
+    } catch (e) {
+        console.error('Erro ao atualizar versão do cache:', e);
+        return cacheVersion;
+    }
+};
+
+// Force cache update (call this when you know JSONs changed)
+const forceCacheUpdate = async () => {
+    console.log('Forcing cache update...');
+    await clearJsonCache();
+    const newVersion = await updateCacheVersion();
+    cacheVersion = newVersion;
+    
+    // Reset counters
+    cachedJsonCount = 0;
+    updateCacheDisplay();
+    
+    return newVersion;
+};
 
 // Initialize counters with actual cache values
 const initializeCacheCounters = async () => {
@@ -1764,6 +1801,38 @@ const initializeCacheCounters = async () => {
         updateCacheDisplay();
     } catch (e) {
         console.error('Erro ao inicializar contadores:', e);
+    }
+};
+
+// Check if cache needs update based on version
+const checkCacheVersion = async () => {
+    try {
+        const versionCache = await caches.open('version-cache');
+        const versionResponse = await versionCache.match('cache-version');
+        const currentVersion = versionResponse ? await versionResponse.text() : '0.0.0';
+        
+        if (currentVersion !== cacheVersion) {
+            console.log(`Cache version changed from ${currentVersion} to ${cacheVersion}, clearing JSON cache...`);
+            await clearJsonCache();
+            await versionCache.put('cache-version', new Response(cacheVersion));
+            return true; // Needs update
+        }
+        return false; // No update needed
+    } catch (e) {
+        console.error('Erro ao verificar versão do cache:', e);
+        return false;
+    }
+};
+
+// Clear JSON cache for updates
+const clearJsonCache = async () => {
+    try {
+        const jsonCache = await caches.open('json-cache');
+        const keys = await jsonCache.keys();
+        await Promise.all(keys.map(key => jsonCache.delete(key)));
+        console.log('JSON cache cleared for update');
+    } catch (e) {
+        console.error('Erro ao limpar cache JSON:', e);
     }
 };
 
@@ -1833,11 +1902,18 @@ $(document).ready(() => {
     initHinos();
     setupEvents();
     
-    // Initialize cache counters with actual values
-    initializeCacheCounters();
-    
-    // Update cache status every 10 seconds (less frequent)
-    setInterval(updateCacheStatus, 10000);
+    // Check cache version first
+    checkCacheVersion().then(needsUpdate => {
+        if (needsUpdate) {
+            alert('Os hinos foram atualizados! Por favor, sincronize novamente para obter as últimas versões.');
+        }
+        
+        // Initialize cache counters with actual values
+        initializeCacheCounters();
+        
+        // Update cache status every 10 seconds (less frequent)
+        setInterval(updateCacheStatus, 10000);
+    });
 });
 
 // Expor funções globais se necessário
@@ -1849,3 +1925,8 @@ window.removeVideo = (hinoNum, url) => {
         updateVideos(state.currentHino);
     }
 };
+
+// Expose cache update functions for developers
+window.forceCacheUpdate = forceCacheUpdate;
+window.clearJsonCache = clearJsonCache;
+window.updateCacheVersion = updateCacheVersion;
