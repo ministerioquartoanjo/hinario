@@ -92,7 +92,7 @@
         <h1 class="text-xs md:text-sm font-semibold flex items-center gap-1">
             <i class="fas fa-mobile-alt text-orange-dark text-sm md:text-base"></i>
             Controle Remoto
-            <span class="text-[9px] text-gray-500">v26.02.13.2</span>
+            <span id="app-version" class="text-[9px] text-gray-500">v26.02.13.2</span>
         </h1>
         <div class="status-dot w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
     </header>
@@ -570,6 +570,18 @@
         });
         
         loadHinosIndex();
+    </script>
+    
+    <script src="version-config.js"></script>
+    <script>
+        // Set version immediately from config
+        document.addEventListener('DOMContentLoaded', () => {
+            const version = window.APP_VERSION || '260327.22';
+            const versionElements = document.querySelectorAll('#app-version');
+            versionElements.forEach(el => {
+                el.textContent = `v${version}`;
+            });
+        });
     </script>
 </body>
 

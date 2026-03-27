@@ -66,21 +66,9 @@
     <div id="app" class="flex flex-col min-h-screen">
         <!-- Header -->
         <header class="sticky top-0 z-40 bg-white dark:bg-gray-900 shadow-md p-2">
-            <div class="max-w-4xl mx-auto flex flex-wrap items-center justify-between gap-2">
+            <div class="max-w-4xl mx-auto flex flex-wrap items-center justify-between gap-4">
                 <div class="flex items-center gap-2">
                     <h1 class="text-lg md:text-xl font-bold text-orange-dark">Hinário MQAAF</h1>
-                    <span class="text-[10px] text-gray-400">v26.02.13.2</span>
-                </div>
-
-                <div class="flex items-center gap-2 mr-8">
-                    <button id="btn-remote" title="Controle Remoto"
-                        class="p-1.5 text-gray-500 hover:text-orange-dark transition-colors">
-                        <i class="fas fa-mobile-alt text-lg"></i>
-                    </button>
-                    <button id="btn-info" title="Informações"
-                        class="p-1.5 text-gray-500 hover:text-orange-dark transition-colors">
-                        <i class="fas fa-info-circle text-lg"></i>
-                    </button>
                 </div>
             </div>
 
@@ -124,13 +112,20 @@
         </header>
 
         <!-- Fixed Hamburger Menu -->
-        <div class="fixed top-3 right-4 z-[999] group">
+        <div class="fixed -top-1 right-4 z-[999] group">
             <button id="btn-menu"
-                class="p-2 bg-white/90 dark:bg-gray-900/90 backdrop-blur shadow-md rounded-full text-gray-600 dark:text-gray-300 hover:text-orange-dark transition-colors focus:outline-none ring-1 ring-gray-200 dark:ring-gray-700">
+                class="p-2 bg-white/90 dark:bg-gray-900/90 backdrop-blur text-gray-600 dark:text-gray-300 hover:text-orange-dark transition-colors focus:outline-none">
                 <i class="fas fa-bars text-xl"></i>
             </button>
             <div id="menu-dropdown"
                 class="hidden absolute right-0 mt-2 w-56 bg-white dark:bg-gray-800 rounded-lg shadow-xl py-2 z-50 ring-1 ring-black ring-opacity-5 border dark:border-gray-700">
+                <button id="menu-remote-control"
+                    class="w-full text-left px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-orange-50 dark:hover:bg-gray-700 hover:text-orange-dark"><i
+                        class="fas fa-mobile-alt mr-2 w-5 text-center"></i> Controle Remoto</button>
+                <button id="menu-info"
+                    class="w-full text-left px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-orange-50 dark:hover:bg-gray-700 hover:text-orange-dark"><i
+                        class="fas fa-info-circle mr-2 w-5 text-center"></i> Informações</button>
+                <div class="border-t border-gray-100 dark:border-gray-700 my-1"></div>
                 <a href="#" id="menu-download-mp3"
                     class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-orange-50 dark:hover:bg-gray-700 hover:text-orange-dark"><i
                         class="fas fa-download mr-2 w-5 text-center"></i> Download MP3s</a>
@@ -430,7 +425,10 @@
                     <i class="fas fa-download animate-spin"></i> Baixando...
                 </span>
             </div>
-            <div>&copy; 2024 Hinário MQAAF - Desenvolvido para servir comunidades cristãs.</div>
+            <div class="flex justify-center items-center gap-2 mb-1">
+                <span id="app-version-footer" class="text-[10px] text-gray-400">v26.02.13.2</span>
+            </div>
+            <div>&copy; 2026 Hinário Ministério Quarto Anjo - Advertência Final - Desenvolvido para servir comunidades cristãs.</div>
         </footer>
     </div>
 
@@ -582,6 +580,17 @@
     </div>
 
     <!-- Scripts -->
+    <script src="version-config.js"></script>
+    <script>
+        // Set version immediately from config
+        document.addEventListener('DOMContentLoaded', () => {
+            const version = window.APP_VERSION || '26.03.27';
+            const versionElements = document.querySelectorAll('#app-version, #app-version-footer');
+            versionElements.forEach(el => {
+                el.textContent = `v${version}`;
+            });
+        });
+    </script>
     <script type="module" src="script.js"></script>
 
     <script>

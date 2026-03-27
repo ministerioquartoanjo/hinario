@@ -1122,23 +1122,23 @@ const setupEvents = () => {
     };
 
     // Modais
-    $('#btn-info').on('click', () => $('#modal-info').removeClass('hidden'));
-    $('#btn-add-video').on('click', () => $('#modal-add-video').removeClass('hidden'));
     $('.btn-close-modal').on('click', () => {
         $('.glass-overlay').addClass('hidden');
     });
 
-    $('#btn-save-video').on('click', () => {
-        const url = $('#video-url-input').val();
-        if (url && state.currentHino) {
-            const videos = JSON.parse(localStorage.getItem(`videos_hino_${state.currentHino.numero}`) || '[]');
-            videos.push({ url, title: 'Vídeo Carregado' });
-            localStorage.setItem(`videos_hino_${state.currentHino.numero}`, JSON.stringify(videos));
-            updateVideos(state.currentHino);
-            $('#modal-add-video').addClass('hidden');
-            $('#video-url-input').val('');
-        }
+    // Mobile menu handlers
+    $('#menu-remote-control').on('click', () => {
+        window.open('remote-control.html', 'remote_control', 'width=400,height=700');
+        $('#menu-dropdown').addClass('hidden');
     });
+
+    $('#menu-info').on('click', () => {
+        $('#modal-info').removeClass('hidden');
+        $('#menu-dropdown').addClass('hidden');
+    });
+
+    // Add video modal handler
+    $('#btn-add-video').on('click', () => $('#modal-add-video').removeClass('hidden'));
 
     // Custom Backgrounds
     $('#menu-custom-backgrounds').on('click', () => {
@@ -1354,6 +1354,17 @@ const setupEvents = () => {
 
     $('#btn-remote').on('click', () => {
         window.open('remote-control.html', 'remote_control', 'width=400,height=700');
+    });
+
+    // Mobile menu handlers
+    $('#menu-remote-control').on('click', () => {
+        window.open('remote-control.html', 'remote_control', 'width=400,height=700');
+        $('#menu-dropdown').addClass('hidden');
+    });
+
+    $('#menu-info').on('click', () => {
+        $('#modal-info').removeClass('hidden');
+        $('#menu-dropdown').addClass('hidden');
     });
 
     // Exibir funções globais se necessário
@@ -1750,6 +1761,29 @@ $('<style>').text(`
     }
 `).appendTo('head');
 
+// --- Version Management ---
+// Version will be loaded from version-config.js
+let APP_VERSION = '260327.22'; // Fallback value
+
+// Load version from external config
+const loadVersion = () => {
+    const script = document.createElement('script');
+    script.src = 'version-config.js';
+    script.onload = () => {
+        APP_VERSION = window.APP_VERSION || APP_VERSION;
+        updateVersionDisplay();
+    };
+    document.head.appendChild(script);
+};
+
+// Update version display on page load
+const updateVersionDisplay = () => {
+    const versionElements = document.querySelectorAll('#app-version, #app-version-footer');
+    versionElements.forEach(el => {
+        el.textContent = `v${APP_VERSION}`;
+    });
+};
+
 // --- Cache Status Functions ---
 let cachedJsonCount = 0;
 let cachedMp3Count = 0;
@@ -1901,6 +1935,9 @@ $(document).ready(() => {
     loadSettings();
     initHinos();
     setupEvents();
+    
+    // Load and update version display
+    loadVersion();
     
     // Check cache version first
     checkCacheVersion().then(needsUpdate => {
