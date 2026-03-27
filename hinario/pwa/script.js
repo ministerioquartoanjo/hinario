@@ -29,6 +29,38 @@ const broadcastFullscreenState = () => {
     remoteChannel?.postMessage({ action: 'fullscreenState', value: isFullscreenActive, source: 'main' });
 };
 
+const broadcastPlaylistState = () => {
+    remoteChannel?.postMessage({ action: 'playlistState', value: state.isPlaylistActive, source: 'main' });
+};
+
+const broadcastPlayState = () => {
+    const player = document.getElementById('audio-player');
+    const isPlaying = player ? !player.paused : false;
+    remoteChannel?.postMessage({ action: 'playState', value: isPlaying, source: 'main' });
+};
+
+const broadcastSpeedState = () => {
+    const player = document.getElementById('audio-player');
+    const speed = player ? player.playbackRate : 1.0;
+    remoteChannel?.postMessage({ action: 'speedState', value: speed, source: 'main' });
+};
+
+const broadcastAudioFiltersState = () => {
+    const filters = state.settings.audioFilters;
+    console.log('Broadcasting audio filters:', filters);
+    remoteChannel?.postMessage({ action: 'audioFiltersState', value: filters, source: 'main' });
+};
+
+const broadcastBackgroundState = () => {
+    console.log('Broadcasting background state:', state.settings.showBackground);
+    remoteChannel?.postMessage({ action: 'backgroundState', value: state.settings.showBackground, source: 'main' });
+};
+
+const broadcastCompleteState = () => {
+    console.log('Broadcasting complete state:', state.settings.isCompleto);
+    remoteChannel?.postMessage({ action: 'completeState', value: state.settings.isCompleto, source: 'main' });
+};
+
 const updateFullscreenUI = () => {
     const btn = document.getElementById('btn-fullscreen');
     const icon = btn?.querySelector('i');
@@ -465,35 +497,61 @@ const selectHino = async (hinoOrIndex) => {
     if (!hino) return;
 
     if (!hino.loaded) {
-        try {
-            const loading = document.getElementById('audio-loading'); // Reusing existing loading indicator
-            loading.classList.remove('hidden');
+            const loadHinoData = async (hino) => {
+                if (hino.loaded) return hino;
 
-            const numStr = hino.numero.toString().padStart(3, '0');
-            const res = await fetch(`data/hinos/${numStr}.json`);
-            if (!res.ok) throw new Error('Erro ao carregar hino');
+                try {
+                    const loading = document.getElementById('audio-loading'); // Reusing existing loading indicator
+                    loading.classList.remove('hidden');
 
-            const rawData = await res.json();
-            // Transform the raw data (which contains verses array) into our structure
-            const transformed = transformHinos([rawData]);
+                    const numStr = hino.numero.toString().padStart(3, '0');
+                    const url = `data/hinos/${numStr}.json`;
+                    
+                    // Try cache first for offline support
+                    let res;
+                    if ('caches' in window) {
+                        const cache = await caches.open('json-cache');
+                        const cachedResponse = await cache.match(url);
+                        if (cachedResponse) {
+                            console.log('Usando JSON cacheado para hino', hino.numero);
+                            res = cachedResponse;
+                        } else {
+                            // Try online, then cache for future use
+                            res = await fetch(url);
+                            if (res.ok) {
+                                await cache.put(url, res.clone());
+                            }
+                        }
+                    } else {
+                        res = await fetch(url);
+                    }
+                    
+                    if (!res.ok) throw new Error('Erro ao carregar hino');
 
-            if (transformed && transformed.length > 0) {
-                const details = transformed[0];
-                hino.letras = details.letras;
-                hino.audioFilters = details.audioFilters;
-                hino.introducao = details.introducao;
-                hino.loaded = true;
-            }
-            loading.classList.add('hidden');
-        } catch (e) {
-            console.error("Erro ao carregar detalhes do hino:", e);
-            alert("Não foi possível carregar a letra deste hino.");
-            document.getElementById('audio-loading').classList.add('hidden');
-            return;
+                    const rawData = await res.json();
+                    // Transform the raw data (which contains verses array) into our structure
+                    const transformed = transformHinos([rawData]);
+
+                    if (transformed && transformed.length > 0) {
+                        const details = transformed[0];
+                        hino.letras = details.letras;
+                        hino.audioFilters = details.audioFilters;
+                        hino.introducao = details.introducao;
+                        hino.loaded = true;
+                    }
+                    loading.classList.add('hidden');
+                } catch (e) {
+                    console.error("Erro ao carregar detalhes do hino:", e);
+                    alert("Não foi possível carregar a letra deste hino.");
+                    document.getElementById('audio-loading').classList.add('hidden');
+                    return;
+                }
+            };
+
+            await loadHinoData(hino);
         }
-    }
 
-    state.currentHino = hino;
+        state.currentHino = hino;
     state.currentSlide = 0;
     renderHino();
     loadAudio(hino.numero);
@@ -577,6 +635,7 @@ const loadAudio = async (numero) => {
     player.oncanplay = () => {
         loading.classList.add('hidden');
         player.playbackRate = targetSpeed; // Reforçar caso perca no carregamento
+        broadcastAudioFiltersState(); // Enviar filtros atuais quando hino carrega
     };
 
     player.onerror = () => {
@@ -705,6 +764,12 @@ const toggleRandomPlaylist = () => {
     } else {
         $('#btn-playlist-stop').click();
     }
+    broadcastPlaylistState();
+};
+
+const toggleAudioFilters = () => {
+    $('#modal-audio-filters').removeClass('hidden');
+    broadcastAudioFiltersState();
 };
 
 const shuffleBackground = () => {
@@ -814,6 +879,7 @@ const setupEvents = () => {
         saveSettings();
         renderHino();
         saveSettings();
+        broadcastCompleteState();
     });
 
     // Double click to advance (fullscreen/presentation feel)
@@ -827,6 +893,7 @@ const setupEvents = () => {
         state.settings.showBackground = !state.settings.showBackground;
         applySettings();
         saveSettings();
+        broadcastBackgroundState();
     });
 
     $('#btn-change-bg').on('click', () => {
@@ -855,6 +922,7 @@ const setupEvents = () => {
 
     player.onplay = () => {
         $('#btn-play-pause i, #btn-fs-play-pause i').removeClass('fa-play').addClass('fa-pause');
+        broadcastPlayState();
 
         // Intro Countdown
         if (countdownInterval) clearInterval(countdownInterval);
@@ -879,6 +947,7 @@ const setupEvents = () => {
 
     player.onpause = () => {
         $('#btn-play-pause i, #btn-fs-play-pause i').removeClass('fa-pause').addClass('fa-play');
+        broadcastPlayState();
         if (countdownInterval) clearInterval(countdownInterval);
         $('#intro-countdown').addClass('hidden');
     };
@@ -888,6 +957,7 @@ const setupEvents = () => {
         player.currentTime = 0;
         if (countdownInterval) clearInterval(countdownInterval);
         $('#intro-countdown').addClass('hidden');
+        broadcastPlayState();
     });
 
     // Barra de Progresso e Tempo
@@ -950,6 +1020,7 @@ const setupEvents = () => {
         if (state.currentHino) {
             localStorage.setItem(`speed_hino_${state.currentHino.numero}`, player.playbackRate.toFixed(1));
         }
+        broadcastSpeedState();
     });
 
     $('#btn-speed-slow, #btn-fs-speed-dec').on('click', () => {
@@ -958,6 +1029,7 @@ const setupEvents = () => {
         if (state.currentHino) {
             localStorage.setItem(`speed_hino_${state.currentHino.numero}`, player.playbackRate.toFixed(1));
         }
+        broadcastSpeedState();
     });
 
     // Audio Filters Listeners
@@ -969,6 +1041,7 @@ const setupEvents = () => {
         initAudioContext();
         state.settings.audioFilters.gain = parseFloat($(this).val());
         applyAudioFilters();
+        broadcastAudioFiltersState();
         if (state.currentHino) {
             localStorage.setItem(`audio_filters_hino_${state.currentHino.numero}`, JSON.stringify(state.settings.audioFilters));
         }
@@ -980,6 +1053,7 @@ const setupEvents = () => {
         state.settings.audioFilters.mid = parseFloat($('#eq-mid').val());
         state.settings.audioFilters.treble = parseFloat($('#eq-treble').val());
         applyAudioFilters();
+        broadcastAudioFiltersState();
         if (state.currentHino) {
             localStorage.setItem(`audio_filters_hino_${state.currentHino.numero}`, JSON.stringify(state.settings.audioFilters));
         }
@@ -1003,6 +1077,7 @@ const setupEvents = () => {
         state.isPlaylistActive = true;
         $('#btn-playlist-toggle').addClass('text-green-600').removeClass('text-gray-400');
         $('#btn-fs-skip-next').removeClass('hidden');
+        broadcastPlaylistState();
 
         // Selecionar Hino Aleatório
         const randIdx = Math.floor(Math.random() * state.hinos.length);
@@ -1030,6 +1105,13 @@ const setupEvents = () => {
         state.isPlaylistActive = false;
         $('#btn-playlist-toggle').removeClass('text-green-600').addClass('text-gray-400');
         $('#btn-fs-skip-next').addClass('hidden');
+        // Parar áudio ao parar playlist
+        const player = document.getElementById('audio-player');
+        if (player) {
+            player.pause();
+            player.currentTime = 0;
+        }
+        broadcastPlaylistState();
     });
 
     player.onended = () => {
@@ -1163,8 +1245,22 @@ const setupEvents = () => {
             case 'c': case 'C': $('#check-completo').click(); break;
             case '+': $('#btn-font-inc').click(); break;
             case '-': $('#btn-font-dec').click(); break;
-            case 'ArrowUp': $('#btn-line-inc').click(); break;
-            case 'ArrowDown': $('#btn-line-dec').click(); break;
+            case 'ArrowUp':
+                if (e.shiftKey) {
+                    $('#btn-line-inc').click();
+                } else {
+                    const slideContent = document.getElementById('slide-content');
+                    if (slideContent) slideContent.scrollTop -= 200;
+                }
+                break;
+            case 'ArrowDown':
+                if (e.shiftKey) {
+                    $('#btn-line-dec').click();
+                } else {
+                    const content = document.getElementById('slide-content');
+                    if (content) content.scrollTop += 200;
+                }
+                break;
             case 'b': case 'B': $('#btn-change-bg').click(); break;
             case 'Escape': $('.btn-close-modal').click(); break;
         }
@@ -1183,6 +1279,15 @@ const setupEvents = () => {
             if (action === 'requestFullscreenState' && source === 'remote') {
                 broadcastFullscreenState();
                 return;
+            } else if (action === 'requestAudioFilters' && source === 'remote') {
+                broadcastAudioFiltersState();
+                return;
+            } else if (action === 'requestBackgroundState' && source === 'remote') {
+                broadcastBackgroundState();
+                return;
+            } else if (action === 'requestCompleteState' && source === 'remote') {
+                broadcastCompleteState();
+                return;
             }
 
             if (source === 'remote') {
@@ -1199,6 +1304,46 @@ const setupEvents = () => {
                     case 'toggleFullscreen': toggleFullscreen(); break;
                     case 'toggleBg': $('#btn-toggle-bg').click(); break;
                     case 'toggleComplete': $('#check-completo').click(); break;
+                    case 'scrollUp': 
+                        const slideContent = document.getElementById('slide-content');
+                        const innerContent = slideContent?.querySelector('.overflow-y-auto');
+                        if (innerContent) {
+                            innerContent.scrollBy({
+                                top: -200,
+                                behavior: 'smooth'
+                            });
+                        }
+                        break;
+                    case 'scrollDown': 
+                        const content = document.getElementById('slide-content');
+                        const innerScroll = content?.querySelector('.overflow-y-auto');
+                        if (innerScroll) {
+                            innerScroll.scrollBy({
+                                top: 200,
+                                behavior: 'smooth'
+                            });
+                        }
+                        break;
+                    case 'scrollToTop': 
+                        const contentTop = document.getElementById('slide-content');
+                        const innerTop = contentTop?.querySelector('.overflow-y-auto');
+                        if (innerTop) {
+                            innerTop.scrollTo({
+                                top: 0,
+                                behavior: 'smooth'
+                            });
+                        }
+                        break;
+                    case 'speedDown': $('#btn-speed-slow').click(); break;
+                    case 'speedUp': $('#btn-speed-fast').click(); break;
+                    case 'toggleEqualizer': toggleAudioFilters(); break;
+                    case 'restartAudio': 
+                        const player = document.getElementById('audio-player');
+                        if (player) {
+                            player.currentTime = 0;
+                            player.play();
+                        }
+                        break;
                     case 'selectHino':
                         if (typeof numero === 'number') selectHino(numero);
                         break;
@@ -1280,11 +1425,124 @@ const setupEvents = () => {
         e.preventDefault();
         downloadMP3s();
     });
+    $('#menu-download-json').on('click', (e) => {
+        e.preventDefault();
+        if (confirm('Deseja baixar todos os arquivos JSON dos hinos? Isso pode levar alguns minutos.')) {
+            downloadJSONs();
+        }
+    });
 
     setupZoom();
 };
 
-// Download MP3
+const downloadJSONs = async () => {
+    const progressBar = document.getElementById('progress-bar');
+    const progressText = document.getElementById('progress-text');
+    const progressContainer = document.getElementById('download-progress');
+
+    if (!('caches' in window)) {
+        alert("Seu navegador não suporta cache offline.");
+        return;
+    }
+
+    progressContainer.classList.remove('hidden');
+    const cache = await caches.open('json-cache');
+    
+    // Update progress text for JSON download
+    document.querySelector('#download-progress .text-orange-dark').textContent = 'Sincronizando letras offline...';
+    
+    // Show download status
+    showDownloadStatus(true);
+    
+    // Start frequent updates during download
+    const updateInterval = setInterval(updateCacheStatus, 500);
+    
+    // Check existing cache first
+    const existingKeys = await cache.keys();
+    const existingUrls = new Set(existingKeys.map(req => req.url));
+    
+    // Initialize counter with existing cache count
+    cachedJsonCount = 0; // Reset to count only new downloads
+    updateCacheDisplay();
+    
+    // Check if all files are already cached using optimized method
+    const total = 196;
+    const allCached = await checkIfAllCached('json-cache', total, (i) => {
+        const numStr = i.toString().padStart(3, '0');
+        return `https://raw.githubusercontent.com/ministerioquartoanjo/hinario/refs/heads/desenv/public/data/hinos/${numStr}.json`;
+    });
+    
+    if (allCached) {
+        clearInterval(updateInterval);
+        showDownloadStatus(false);
+        progressContainer.classList.add('hidden');
+        alert(`Todas as letras já estão sincronizadas para uso offline! ${existingKeys.length} hinos cacheados.`);
+        return;
+    }
+    
+    // Cache dos primeiros 196 hinos em JSON
+    let downloaded = 0;
+    let skipped = 0;
+
+    const BATCH_SIZE = 3;
+    const BATCH_DELAY = 1500;
+
+    for (let i = 1; i <= total; i += BATCH_SIZE) {
+        const batch = [];
+        for (let j = i; j < i + BATCH_SIZE && j <= total; j++) {
+            const numStr = j.toString().padStart(3, '0');
+            const url = `https://raw.githubusercontent.com/ministerioquartoanjo/hinario/refs/heads/desenv/public/data/hinos/${numStr}.json`;
+            if (!existingUrls.has(url)) {
+                batch.push(url);
+            } else {
+                skipped++;
+            }
+        }
+
+        if (batch.length === 0) continue;
+
+        await Promise.all(batch.map(async (url) => {
+            try {
+                const response = await fetch(url);
+                if (!response.ok) {
+                    if (response.status === 404) {
+                        console.log(`Hino não encontrado: ${url}`);
+                        return; // Skip missing files
+                    }
+                    throw new Error('Falha no download');
+                }
+                await cache.put(url, response.clone());
+                cachedJsonCount++;
+                updateCacheDisplay();
+                
+            } catch (e) {
+                console.error(`Erro ao cachear ${url}:`, e);
+            } finally {
+                downloaded++;
+                const percent = Math.round((downloaded / total) * 100);
+                if (progressBar) progressBar.style.width = `${percent}%`;
+                if (progressText) progressText.textContent = `${downloaded + skipped}/${total}`;
+            }
+        }));
+
+        // Delay entre batches para não sobrecarregar servidor
+        if (i + BATCH_SIZE <= total) {
+            await new Promise(resolve => setTimeout(resolve, BATCH_DELAY));
+        }
+    }
+
+    // Esconder progresso após completion
+    setTimeout(async () => {
+        clearInterval(updateInterval);
+        showDownloadStatus(false);
+        progressContainer.classList.add('hidden');
+        // Reset progress text to default
+        document.querySelector('#download-progress .text-orange-dark').textContent = 'Sincronizando áudios offline...';
+        const finalCacheSize = await cache.keys();
+        alert(`Letras sincronizadas para uso offline! ${finalCacheSize.length} hinos cacheados (${skipped} já existiam).`);
+    }, 1000);
+};
+
 const downloadMP3s = async () => {
     const progressBar = document.getElementById('progress-bar');
     const progressText = document.getElementById('progress-text');
@@ -1298,9 +1556,41 @@ const downloadMP3s = async () => {
     progressContainer.classList.remove('hidden');
     const cache = await caches.open('mp3-cache');
 
-    // Vamos sincronizar os primeiros 196 hinos (ajustável conforme hinos.js)
+    // Update progress text for MP3 download
+    document.querySelector('#download-progress .text-orange-dark').textContent = 'Sincronizando áudios offline...';
+    
+    // Show download status
+    showDownloadStatus(true);
+    
+    // Start frequent updates during download
+    const updateInterval = setInterval(updateCacheStatus, 500);
+
+    // Check existing cache first
+    const existingKeys = await cache.keys();
+    const existingUrls = new Set(existingKeys.map(req => req.url));
+
+    // Initialize counter with existing cache count
+    cachedMp3Count = 0; // Reset to count only new downloads
+    updateCacheDisplay();
+
+    // Check if all files are already cached using optimized method
     const total = 196;
+    const allCached = await checkIfAllCached('mp3-cache', total, (i) => {
+        const numStr = i.toString().padStart(3, '0');
+        return `https://raw.githubusercontent.com/ministerioquartoanjo/hinario/refs/heads/desenv/media/${numStr}-piano.mp3`;
+    });
+    
+    if (allCached) {
+        clearInterval(updateInterval);
+        showDownloadStatus(false);
+        progressContainer.classList.add('hidden');
+        alert(`Todos os áudios já estão sincronizados para uso offline! ${existingKeys.length} áudios cacheados.`);
+        return;
+    }
+
+    // Vamos sincronizar os primeiros 196 hinos (ajustável conforme hinos.js)
     let downloaded = 0;
+    let skipped = 0;
 
     const BATCH_SIZE = 5;
     const BATCH_DELAY = 1000;
@@ -1310,37 +1600,53 @@ const downloadMP3s = async () => {
         for (let j = i; j < i + BATCH_SIZE && j <= total; j++) {
             const numStr = j.toString().padStart(3, '0');
             const url = `https://raw.githubusercontent.com/ministerioquartoanjo/hinario/refs/heads/desenv/media/${numStr}-piano.mp3`;
-            batch.push(url);
+            if (!existingUrls.has(url)) {
+                batch.push(url);
+            } else {
+                skipped++;
+            }
         }
+
+        if (batch.length === 0) continue;
 
         await Promise.all(batch.map(async (url) => {
             try {
-                const cachedResponse = await cache.match(url);
-                if (!cachedResponse) {
-                    const response = await fetchWithRetry(url, 3, 1000);
-                    const blob = await response.blob();
-                    await cache.put(url, new Response(blob, {
-                        headers: { 'date': new Date().toUTCString(), 'content-type': 'audio/mpeg' }
-                    }));
+                const response = await fetch(url);
+                if (!response.ok) {
+                    if (response.status === 404) {
+                        console.log(`Áudio não encontrado: ${url}`);
+                        return; // Skip missing files
+                    }
+                    throw new Error('Falha no download');
                 }
+                await cache.put(url, response.clone());
+                cachedMp3Count++;
+                updateCacheDisplay();
             } catch (e) {
-                console.error(`Erro ao baixar ${url}:`, e);
+                console.error(`Erro ao cachear ${url}:`, e);
             } finally {
                 downloaded++;
                 const percent = Math.round((downloaded / total) * 100);
                 if (progressBar) progressBar.style.width = `${percent}%`;
-                if (progressText) progressText.textContent = `${downloaded}/${total}`;
+                if (progressText) progressText.textContent = `${downloaded + skipped}/${total}`;
             }
         }));
 
+        // Delay entre batches para não sobrecarregar servidor
         if (i + BATCH_SIZE <= total) {
-            await new Promise(r => setTimeout(r, BATCH_DELAY));
+            await new Promise(resolve => setTimeout(resolve, BATCH_DELAY));
         }
     }
 
-    setTimeout(() => {
+    // Esconder progresso após completion
+    setTimeout(async () => {
+        clearInterval(updateInterval);
+        showDownloadStatus(false);
         progressContainer.classList.add('hidden');
-        alert("Sincronização de hinos concluída!");
+        // Reset progress text to default
+        document.querySelector('#download-progress .text-orange-dark').textContent = 'Sincronizando áudios offline...';
+        const finalCacheSize = await cache.keys();
+        alert(`Áudios sincronizados para uso offline! ${finalCacheSize.length} áudios cacheados (${skipped} já existiam).`);
     }, 1000);
 };
 
@@ -1419,11 +1725,98 @@ $('<style>').text(`
     }
 `).appendTo('head');
 
+// --- Cache Status Functions ---
+let cachedJsonCount = 0;
+let cachedMp3Count = 0;
+
+// Initialize counters with actual cache values
+const initializeCacheCounters = async () => {
+    try {
+        const jsonCache = await caches.open('json-cache');
+        const jsonKeys = await jsonCache.keys();
+        cachedJsonCount = jsonKeys.length;
+        
+        const mp3Cache = await caches.open('mp3-cache');
+        const mp3Keys = await mp3Cache.keys();
+        cachedMp3Count = mp3Keys.length;
+        
+        updateCacheDisplay();
+    } catch (e) {
+        console.error('Erro ao inicializar contadores:', e);
+    }
+};
+
+const updateCacheStatus = async () => {
+    try {
+        const jsonCache = await caches.open('json-cache');
+        const jsonKeys = await jsonCache.keys();
+        cachedJsonCount = jsonKeys.length;
+        
+        const mp3Cache = await caches.open('mp3-cache');
+        const mp3Keys = await mp3Cache.keys();
+        cachedMp3Count = mp3Keys.length;
+        
+        document.getElementById('json-count').textContent = `${cachedJsonCount} letras`;
+        document.getElementById('mp3-count').textContent = `${cachedMp3Count} áudios`;
+    } catch (e) {
+        console.error('Erro ao verificar cache:', e);
+        document.getElementById('json-count').textContent = 'Erro';
+        document.getElementById('mp3-count').textContent = 'Erro';
+    }
+};
+
+const updateCacheDisplay = () => {
+    document.getElementById('json-count').textContent = `${cachedJsonCount} letras`;
+    document.getElementById('mp3-count').textContent = `${cachedMp3Count} áudios`;
+};
+
+const checkIfAllCached = async (cacheName, totalFiles, urlGenerator) => {
+    try {
+        const cache = await caches.open(cacheName);
+        const keys = await cache.keys();
+        const existingUrls = new Set(keys.map(req => req.url));
+        
+        // Quick check: if count matches expected, assume all cached
+        if (keys.length >= totalFiles * 0.8) { // Allow for some missing files
+            return true;
+        }
+        
+        // Only do full check if count is suspiciously low
+        let allCached = true;
+        for (let i = 1; i <= totalFiles; i++) {
+            const url = urlGenerator(i);
+            if (!existingUrls.has(url)) {
+                allCached = false;
+                break;
+            }
+        }
+        return allCached;
+    } catch (e) {
+        console.error('Erro ao verificar cache completo:', e);
+        return false;
+    }
+};
+
+const showDownloadStatus = (show) => {
+    const status = document.getElementById('download-status');
+    if (show) {
+        status.classList.remove('hidden');
+    } else {
+        status.classList.add('hidden');
+    }
+};
+
 // --- Inicialização ---
 $(document).ready(() => {
     loadSettings();
     initHinos();
     setupEvents();
+    
+    // Initialize cache counters with actual values
+    initializeCacheCounters();
+    
+    // Update cache status every 10 seconds (less frequent)
+    setInterval(updateCacheStatus, 10000);
 });
 
 // Expor funções globais se necessário
