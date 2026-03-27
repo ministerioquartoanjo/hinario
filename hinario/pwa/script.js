@@ -1466,10 +1466,10 @@ const downloadJSONs = async () => {
     updateCacheDisplay();
     
     // Check if all files are already cached using optimized method
-    const total = 196;
+    const total = 196; // All files exist in public/data/hinos
     const allCached = await checkIfAllCached('json-cache', total, (i) => {
         const numStr = i.toString().padStart(3, '0');
-        return `https://raw.githubusercontent.com/ministerioquartoanjo/hinario/refs/heads/desenv/public/data/hinos/${numStr}.json`;
+        return `data/hinos/${numStr}.json`;
     });
     
     if (allCached) {
@@ -1483,6 +1483,7 @@ const downloadJSONs = async () => {
     // Cache dos primeiros 196 hinos em JSON
     let downloaded = 0;
     let skipped = 0;
+    let failed = 0;
 
     const BATCH_SIZE = 3;
     const BATCH_DELAY = 1500;
@@ -1491,7 +1492,7 @@ const downloadJSONs = async () => {
         const batch = [];
         for (let j = i; j < i + BATCH_SIZE && j <= total; j++) {
             const numStr = j.toString().padStart(3, '0');
-            const url = `https://raw.githubusercontent.com/ministerioquartoanjo/hinario/refs/heads/desenv/public/data/hinos/${numStr}.json`;
+            const url = `data/hinos/${numStr}.json`;
             if (!existingUrls.has(url)) {
                 batch.push(url);
             } else {
@@ -1507,16 +1508,18 @@ const downloadJSONs = async () => {
                 if (!response.ok) {
                     if (response.status === 404) {
                         console.log(`Hino não encontrado: ${url}`);
-                        return; // Skip missing files
+                        // Don't count as error, just skip silently
+                        return;
                     }
-                    throw new Error('Falha no download');
+                    throw new Error(`Falha no download: ${response.status} ${response.statusText}`);
                 }
                 await cache.put(url, response.clone());
                 cachedJsonCount++;
                 updateCacheDisplay();
-                
+                console.log(`Downloaded JSON: ${url}`);
             } catch (e) {
-                console.error(`Erro ao cachear ${url}:`, e);
+                console.error(`Erro ao baixar JSON (${url}):`, e);
+                failed++;
             } finally {
                 downloaded++;
                 const percent = Math.round((downloaded / total) * 100);
@@ -1539,8 +1542,28 @@ const downloadJSONs = async () => {
         // Reset progress text to default
         document.querySelector('#download-progress .text-orange-dark').textContent = 'Sincronizando áudios offline...';
         const finalCacheSize = await cache.keys();
-        alert(`Letras sincronizadas para uso offline! ${finalCacheSize.length} hinos cacheados (${skipped} já existiam).`);
+        const missingFiles = total - finalCacheSize.length;
+        alert(`Letras sincronizadas para uso offline! ${finalCacheSize.length} hinos cacheados (${skipped} já existiam${failed > 0 ? `, ${failed} falharam` : ''}${missingFiles > 0 ? `, ${missingFiles} não encontrados` : ''}).`);
     }, 1000);
+};
+
+const downloadWithFallback = async (primaryUrl, fallbackUrl) => {
+    try {
+        // Try primary URL first (main branch)
+        const response = await fetch(primaryUrl);
+        if (response.ok) {
+            return { response, url: primaryUrl };
+        }
+        throw new Error(`Primary failed: ${response.status}`);
+    } catch (e) {
+        console.log(`Primary URL failed, trying fallback: ${primaryUrl}`);
+        // Try fallback URL (develop branch)
+        const fallbackResponse = await fetch(fallbackUrl);
+        if (fallbackResponse.ok) {
+            return { response: fallbackResponse, url: fallbackUrl };
+        }
+        throw new Error(`Fallback also failed: ${fallbackResponse.status}`);
+    }
 };
 
 const downloadMP3s = async () => {
@@ -1577,7 +1600,7 @@ const downloadMP3s = async () => {
     const total = 196;
     const allCached = await checkIfAllCached('mp3-cache', total, (i) => {
         const numStr = i.toString().padStart(3, '0');
-        return `https://raw.githubusercontent.com/ministerioquartoanjo/hinario/refs/heads/desenv/media/${numStr}-piano.mp3`;
+        return `https://raw.githubusercontent.com/ministerioquartoanjo/hinario/main/media/${numStr}-piano.mp3`;
     });
     
     if (allCached) {
@@ -1599,9 +1622,12 @@ const downloadMP3s = async () => {
         const batch = [];
         for (let j = i; j < i + BATCH_SIZE && j <= total; j++) {
             const numStr = j.toString().padStart(3, '0');
-            const url = `https://raw.githubusercontent.com/ministerioquartoanjo/hinario/refs/heads/desenv/media/${numStr}-piano.mp3`;
-            if (!existingUrls.has(url)) {
-                batch.push(url);
+            const primaryUrl = `https://raw.githubusercontent.com/ministerioquartoanjo/hinario/main/media/${numStr}-piano.mp3`;
+            const fallbackUrl = `https://raw.githubusercontent.com/ministerioquartoanjo/hinario/refs/heads/desenv/media/${numStr}-piano.mp3`;
+            
+            // Check if either URL is already cached
+            if (!existingUrls.has(primaryUrl) && !existingUrls.has(fallbackUrl)) {
+                batch.push({ primaryUrl, fallbackUrl });
             } else {
                 skipped++;
             }
@@ -1609,21 +1635,15 @@ const downloadMP3s = async () => {
 
         if (batch.length === 0) continue;
 
-        await Promise.all(batch.map(async (url) => {
+        await Promise.all(batch.map(async ({ primaryUrl, fallbackUrl }) => {
             try {
-                const response = await fetch(url);
-                if (!response.ok) {
-                    if (response.status === 404) {
-                        console.log(`Áudio não encontrado: ${url}`);
-                        return; // Skip missing files
-                    }
-                    throw new Error('Falha no download');
-                }
+                const { response, url } = await downloadWithFallback(primaryUrl, fallbackUrl);
                 await cache.put(url, response.clone());
                 cachedMp3Count++;
                 updateCacheDisplay();
+                console.log(`Downloaded from: ${url}`);
             } catch (e) {
-                console.error(`Erro ao cachear ${url}:`, e);
+                console.error(`Erro ao baixar áudio (${primaryUrl}):`, e);
             } finally {
                 downloaded++;
                 const percent = Math.round((downloaded / total) * 100);
@@ -1646,7 +1666,8 @@ const downloadMP3s = async () => {
         // Reset progress text to default
         document.querySelector('#download-progress .text-orange-dark').textContent = 'Sincronizando áudios offline...';
         const finalCacheSize = await cache.keys();
-        alert(`Áudios sincronizados para uso offline! ${finalCacheSize.length} áudios cacheados (${skipped} já existiam).`);
+        const missingFiles = total - finalCacheSize.length;
+        alert(`Áudios sincronizados para uso offline! ${finalCacheSize.length} áudios cacheados (${skipped} já existiam${missingFiles > 0 ? `, ${missingFiles} não encontrados` : ''}).`);
     }, 1000);
 };
 

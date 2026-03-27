@@ -7,8 +7,8 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "deploy": "npm run build && echo '\n✅ Build concluído! Faça upload da pasta dist/ para o servidor.'",
-    "deploy:rsync": "rsync -rlptDv --delete --chmod=D755,F644 dist/* af_hostoo:/home/zjpyv5vi/public_html/hinario_pwa"
+    "prepare-deploy": "npm run build && echo '\n✅ Build concluído! Faça upload da pasta dist/ para o servidor.'",
+    "deploy:rsync": "rsync -rlptDv --delete --chmod=D755,F644 dist/* af_hostoo:/home/zjpyv5vi/public_html/hinariopwa"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.24",

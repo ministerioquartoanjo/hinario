@@ -88,10 +88,14 @@
                 <div class="relative flex items-center">
                     <i class="fas fa-search absolute left-2 text-gray-400 text-sm"></i>
                     <input type="text" id="hino-search" placeholder="Número, título ou palavra-chave..."
-                        class="w-full pl-8 pr-10 py-2 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 focus:border-orange-dark focus:ring-0 transition-all text-base shadow-sm"
+                        class="w-full pl-8 pr-16 py-2 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 focus:border-orange-dark focus:ring-0 transition-all text-base shadow-sm"
                         autocomplete="off">
+                    <button id="btn-random-hino" title="Hino Aleatório"
+                        class="absolute right-8 p-1 text-gray-500 hover:text-orange-dark transition-colors z-10 pointer-events-auto">
+                        <i class="fas fa-random"></i>
+                    </button>
                     <button id="btn-clear-search"
-                        class="absolute right-2 p-1.5 text-gray-400 hover:text-red-500 transition-colors">
+                        class="absolute right-2 p-1.5 text-gray-400 hover:text-red-500 transition-colors z-10 pointer-events-auto">
                         <i class="fas fa-times text-sm"></i>
                     </button>
 
@@ -365,9 +369,6 @@
                                 <button id="btn-download-current"
                                     class="p-2 text-gray-500 hover:text-green-600 transition-colors"
                                     title="Baixar MP3"><i class="fas fa-file-download text-xl"></i></button>
-                                <button id="btn-random-hino" title="Hino Aleatório"
-                                    class="p-2 text-gray-500 hover:text-orange-dark"><i
-                                        class="fas fa-random"></i></button>
                                 <button id="btn-audio-filters" title="Equalizador e Som"
                                     class="p-2 text-gray-500 hover:text-orange-dark transition-colors">
                                     <i class="fas fa-sliders-h text-xl"></i>
