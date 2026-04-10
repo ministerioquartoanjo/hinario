@@ -54,12 +54,19 @@ self.addEventListener('fetch', event => {
         );
     } else {
         // Cache First para o resto (MP3, Ícones, Bibliotecas Externas)
+        // Apenas para requisições GET
+        if (event.request.method !== 'GET') {
+            event.respondWith(fetch(event.request));
+            return;
+        }
+
         event.respondWith(
             caches.match(event.request)
                 .then(response => {
                     if (response) return response;
                     return fetch(event.request).then(fetchResponse => {
-                        if (fetchResponse.ok || fetchResponse.status === 206) {
+                        // Apenas cachear respostas válidas e bem-sucedidas
+                        if (fetchResponse && (fetchResponse.ok || fetchResponse.status === 206)) {
                             const clonedResponse = fetchResponse.clone();
                             caches.open('mp3-cache').then(cache => {
                                 cache.put(event.request, clonedResponse);

@@ -343,10 +343,20 @@
         let isPlaying = false;
 
         const updatePlayState = (playing) => {
+            console.log('Updating remote play state to:', playing);
             isPlaying = playing;
-            playIcon.classList.toggle('fa-play', !playing);
-            playIcon.classList.toggle('fa-pause', playing);
-            playLabel.textContent = playing ? 'Pausar' : 'Play/Pause';
+            playIcon.className = playing ? 'fas fa-pause text-xs' : 'fas fa-play text-xs';
+            playLabel.textContent = playing ? 'Pausar' : 'Play';
+            
+            if (playing) {
+                playBtn.style.backgroundColor = 'rgb(249 115 22)'; // orange-dark
+                playBtn.classList.add('bg-orange-dark');
+                playBtn.classList.remove('bg-gray-200');
+            } else {
+                playBtn.style.backgroundColor = 'rgb(229 231 235)'; // gray-200
+                playBtn.classList.remove('bg-orange-dark');
+                playBtn.classList.add('bg-gray-200');
+            }
         };
 
         const updateAudioFilters = (filters) => {
@@ -420,6 +430,8 @@
 
         bc.onmessage = (event) => {
             const { action, value, source } = event.data || {};
+            console.log('Remote received message:', action, value, 'from', source);
+            
             if (source === 'main') {
                 if (action === 'fullscreenState') {
                     updateFullscreenState(Boolean(value));
@@ -428,7 +440,7 @@
                 } else if (action === 'playState') {
                     updatePlayState(Boolean(value));
                 } else if (action === 'speedState') {
-                    speedDisplay.textContent = value.toFixed(1) + 'x';
+                    if (value !== undefined) speedDisplay.textContent = Number(value).toFixed(1) + 'x';
                 } else if (action === 'audioFiltersState') {
                     updateAudioFilters(value);
                 } else if (action === 'backgroundState') {
@@ -516,13 +528,11 @@
         };
         document.getElementById('remote-random-bg').onclick = () => send('shuffleBackground');
         document.getElementById('remote-random-playlist').onclick = () => {
-            if (isPlaylistActive) {
-                send('toggleRandomPlaylist');
-                updatePlaylistState(false);
-            } else {
-                send('toggleRandomPlaylist');
-                updatePlaylistState(true);
-            }
+            // Apenas envia a ação, o estado visual será atualizado pelo broadcast recebido da main
+            send('toggleRandomPlaylist');
+            
+            // Haptic feedback
+            if (navigator.vibrate) navigator.vibrate(50);
         };
         document.getElementById('remote-select-hino').onclick = submitHino;
         hinoInput.addEventListener('keydown', (e) => {
