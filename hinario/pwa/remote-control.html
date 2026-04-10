@@ -12,6 +12,46 @@
             background-color: #f9fafb;
         }
 
+        #remote-search-results {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            margin-top: 0.25rem;
+            background: white;
+            border: 1px solid #d1d5db;
+            border-radius: 0.5rem;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+            max-height: 15rem;
+            overflow-y: auto;
+            z-index: 100;
+        }
+
+        .remote-search-item {
+            padding: 0.75rem;
+            border-bottom: 1px solid #f1f5f9;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            text-align: left;
+        }
+
+        .remote-search-item:last-child {
+            border-bottom: none;
+        }
+
+        .remote-search-item:hover,
+        .remote-search-item.active {
+            background-color: #f97316;
+            color: white;
+        }
+
+        .remote-search-item.active .text-gray-500,
+        .remote-search-item.active .opacity-70,
+        .remote-search-item.active .opacity-50 {
+            color: white;
+            opacity: 0.9;
+        }
+
         .grid-button {
             background-color: #e5e7eb;
             color: #1f2937;
@@ -101,7 +141,7 @@
         <label class="uppercase tracking-wide text-[10px] text-gray-600" for="remote-hino-number">Selecionar Hino</label>
         <div class="flex gap-2 items-center">
             <div class="relative flex-1">
-                <input id="remote-hino-number" list="remote-hino-options" placeholder="Ex.: 120 - Título"
+                <input id="remote-hino-number" placeholder="Ex.: 120 - Título"
                     class="w-full bg-white border border-gray-300 rounded-lg pl-3 pr-8 py-1.5 text-xs focus:outline-none focus:border-orange-dark"
                     autocomplete="off">
                 <button id="remote-clear-hino"
@@ -109,11 +149,12 @@
                     title="Limpar seleção">
                     <i class="fas fa-times"></i>
                 </button>
+                <div id="remote-search-results" class="hidden"></div>
             </div>
             <button id="remote-select-hino"
                 class="px-2.5 py-1.5 bg-orange-dark text-white text-xs rounded-lg font-semibold">Ir</button>
         </div>
-        <datalist id="remote-hino-options"></datalist>
+        <div id="remote-hino-options" class="hidden"></div>
         <p id="remote-hino-feedback" class="text-[10px] text-gray-500">Informe o número e toque em “Ir”.</p>
     </section>
 
@@ -205,22 +246,22 @@
         <!-- Visual Controls -->
         <div class="mb-3">
             <h3 class="text-[9px] text-gray-600 uppercase tracking-wide mb-1">Visual</h3>
-            <div class="grid grid-cols-2 gap-1">
+            <div class="grid grid-cols-4 gap-1">
                 <button id="remote-toggle-bg" class="grid-button">
                     <i class="fas fa-image text-xs text-green-400"></i>
                     <span>Fundo</span>
                 </button>
                 <button id="remote-random-bg" class="grid-button">
                     <i class="fas fa-palette text-xs text-blue-300"></i>
-                    <span>Fundo Aleatório</span>
+                    <span>Alt BG</span>
                 </button>
                 <button id="remote-toggle-complete" class="grid-button">
                     <i class="fas fa-align-left text-xs text-yellow-400"></i>
-                    <span>Completo</span>
+                    <span>Livre</span>
                 </button>
                 <button id="remote-random-playlist" class="grid-button bg-gray-900 border border-gray-800">
                     <i class="fas fa-random text-xs text-pink-400"></i>
-                    <span>Playlist</span>
+                    <span>Play</span>
                 </button>
             </div>
         </div>
@@ -302,7 +343,9 @@
         </div>
     </div>
 
-    <script shadow>
+    <script type="module">
+        import { searchLogic } from './src/utils/searchLogic.js';
+
         // Sincronização simples via BroadcastChannel
         const bc = new BroadcastChannel('hinario_remote');
         let isFullscreenActive = false;
@@ -321,6 +364,7 @@
         const hinoFeedback = document.getElementById('remote-hino-feedback');
         const hinoOptions = document.getElementById('remote-hino-options');
         const hinoClearBtn = document.getElementById('remote-clear-hino');
+        const searchResultsBox = document.getElementById('remote-search-results');
         const playlistBtn = document.getElementById('remote-random-playlist');
         const playlistIcon = playlistBtn.querySelector('i');
         const playlistLabel = playlistBtn.querySelector('span');
@@ -341,6 +385,9 @@
         const stopLabel = stopBtn.querySelector('span');
         const speedDisplay = document.getElementById('remote-speed-display');
         let isPlaying = false;
+        let remoteHinosList = [];
+        let remoteFilteredHinos = [];
+        let remoteSelectedResult = -1;
 
         const updatePlayState = (playing) => {
             console.log('Updating remote play state to:', playing);
@@ -462,7 +509,30 @@
         };
 
         const populateHinoOptions = (list) => {
-            hinoOptions.innerHTML = list.map(h => `<option value="${formatOption(h.numero, h.titulo)}"></option>`).join('');
+            remoteHinosList = list || [];
+        };
+
+        const renderRemoteResults = (list) => {
+            remoteFilteredHinos = list;
+            if (!list.length) {
+                searchResultsBox.classList.add('hidden');
+                searchResultsBox.innerHTML = '';
+                return;
+            }
+
+            searchResultsBox.innerHTML = list.map((h, idx) => {
+                const letraPreview = h.letras && h.letras[0] ? h.letras[0].texto.substring(0, 45).replace(/\n/g, ' ') : '';
+                return `
+                    <div class="remote-search-item ${idx === remoteSelectedResult ? 'active' : ''}" data-index="${idx}">
+                        <div class="font-bold flex justify-between items-center">
+                            <span>${h.numero} - ${h.titulo}</span>
+                            <span class="text-[10px] opacity-50">#${h.numero}</span>
+                        </div>
+                        <div class="text-[11px] opacity-70 truncate mt-1">${letraPreview}...</div>
+                    </div>
+                `;
+            }).join('');
+            searchResultsBox.classList.remove('hidden');
         };
 
         const loadHinosIndex = async () => {
@@ -470,12 +540,23 @@
                 const response = await fetch('data/hymns-index.json');
                 if (!response.ok) throw new Error('Falha ao carregar lista');
                 const data = await response.json();
-                populateHinoOptions(data.slice(0, 400));
+                populateHinoOptions(data);
             } catch (error) {
                 console.error('Erro ao carregar hinos para autocomplete:', error);
                 hinoFeedback.textContent = 'Falha ao carregar lista de hinos.';
                 hinoFeedback.classList.add('text-red-400');
             }
+        };
+
+        const selectRemoteHino = (hino) => {
+            if (!hino) return;
+            hinoInput.value = `${hino.numero} - ${hino.titulo}`;
+            searchResultsBox.classList.add('hidden');
+            remoteSelectedResult = -1;
+            send('selectHino', { numero: hino.numero });
+            hinoFeedback.textContent = `Solicitando hino ${hino.numero}...`;
+            hinoFeedback.classList.remove('text-red-400');
+            hinoFeedback.classList.add('text-green-400');
         };
 
         const submitHino = () => {
@@ -490,6 +571,44 @@
             hinoFeedback.classList.remove('text-red-400');
             hinoFeedback.classList.add('text-green-400');
         };
+
+        hinoInput.addEventListener('input', (event) => {
+            const matches = searchLogic.filterHinos(remoteHinosList, event.target.value, 8);
+            remoteSelectedResult = -1;
+            renderRemoteResults(matches);
+        });
+
+        hinoInput.addEventListener('keydown', (event) => {
+            if (searchResultsBox.classList.contains('hidden')) {
+                if (event.key === 'Enter') submitHino();
+                return;
+            }
+
+            const prevIndex = remoteSelectedResult;
+            remoteSelectedResult = searchLogic.handleKeyboardNavigation(event, remoteSelectedResult, remoteFilteredHinos.length);
+
+            if (event.key === 'Escape') {
+                searchResultsBox.classList.add('hidden');
+            } else if (event.key === 'Enter') {
+                const hino = remoteSelectedResult > -1 ? remoteFilteredHinos[remoteSelectedResult] : remoteFilteredHinos[0];
+                if (hino) {
+                    event.preventDefault();
+                    selectRemoteHino(hino);
+                } else {
+                    submitHino();
+                }
+            } else if (prevIndex !== remoteSelectedResult) {
+                renderRemoteResults(remoteFilteredHinos);
+            }
+        });
+
+        searchResultsBox.addEventListener('click', (event) => {
+            const item = event.target.closest('.remote-search-item');
+            if (!item) return;
+            const index = Number(item.dataset.index);
+            const hino = remoteFilteredHinos[index];
+            if (hino) selectRemoteHino(hino);
+        });
 
         document.getElementById('remote-prev').onclick = () => send('prevSlide');
         document.getElementById('remote-next').onclick = () => send('nextSlide');
@@ -545,12 +664,16 @@
             hinoInput.value = '';
             hinoFeedback.textContent = 'Campo limpo. Informe outro número.';
             hinoFeedback.classList.remove('text-red-400', 'text-green-400');
+            searchResultsBox.classList.add('hidden');
+            remoteSelectedResult = -1;
         });
         hinoClearBtn.addEventListener('click', () => {
             hinoInput.value = '';
             hinoFeedback.textContent = 'Seleção limpa. Informe outro número.';
             hinoFeedback.classList.remove('text-red-400');
             hinoFeedback.classList.remove('text-green-400');
+            searchResultsBox.classList.add('hidden');
+            remoteSelectedResult = -1;
         });
 
         // Solicitar estado inicial de fullscreen ao carregar

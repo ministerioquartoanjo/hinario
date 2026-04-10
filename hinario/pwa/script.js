@@ -8,6 +8,7 @@ import { audioPlayer } from './src/components/audioPlayer.js';
 import { hinoLoader } from './src/utils/hinoLoader.js';
 import { hinoRenderer } from './src/components/hinoRenderer.js';
 import { state } from './src/state.js';
+import { searchLogic } from './src/utils/searchLogic.js';
 
 // --- Globals ---
 let BACKGROUNDS = [...DEFAULT_BACKGROUNDS];
@@ -23,6 +24,13 @@ const saveSettings = () => localStorage.setItem('hinario_settings', JSON.stringi
 const applySettings = () => {
     const body = document.body;
     body.classList.toggle('dark', state.settings.darkMode);
+
+    const $btnToggleBg = $('#btn-toggle-bg');
+    if (state.settings.showBackground) {
+        $btnToggleBg.css('background-color', '').addClass('bg-orange-dark').removeClass('bg-gray-500');
+    } else {
+        $btnToggleBg.css('background-color', '#6b7280').addClass('bg-gray-500').removeClass('bg-orange-dark');
+    }
 
     $('#slide-content').css({
         'font-family': state.settings.fontFamily,
@@ -173,19 +181,16 @@ const setupSearch = () => {
         
         $results.html(hinos.map((h, i) => `
             <div class="search-item p-3 cursor-pointer transition-colors border-b last:border-0 dark:border-gray-700 ${i === selectedIndex ? 'bg-orange-dark text-white' : 'hover:bg-orange-100 dark:hover:bg-orange-900/30'}" data-index="${i}">
-                <div class="font-bold">${h.numero} - ${h.titulo}</div>
+                <div class="font-bold flex justify-between items-center">
+                    <span>${h.numero} - ${h.titulo}</span>
+                    <span class="text-[10px] opacity-50">#${h.numero}</span>
+                </div>
             </div>
         `).join('')).removeClass('hidden');
     };
 
     $input.on('input', function() {
-        const term = $(this).val().toLowerCase();
-        if (term.length < 1) return $results.addClass('hidden');
-        
-        const matches = state.hinos.filter(h => 
-            h.numero.toString().includes(term) || h.titulo.toLowerCase().includes(term)
-        ).slice(0, 10);
-        
+        const matches = searchLogic.filterHinos(state.hinos, $(this).val());
         selectedIndex = -1;
         renderResults(matches);
     });
@@ -193,24 +198,18 @@ const setupSearch = () => {
     $input.on('keydown', function(e) {
         if ($results.hasClass('hidden')) return;
 
-        if (e.key === 'ArrowDown') {
-            e.preventDefault();
-            selectedIndex = (selectedIndex + 1) % filteredHinos.length;
-            renderResults(filteredHinos);
-        } else if (e.key === 'ArrowUp') {
-            e.preventDefault();
-            selectedIndex = (selectedIndex - 1 + filteredHinos.length) % filteredHinos.length;
-            renderResults(filteredHinos);
+        const prevIndex = selectedIndex;
+        selectedIndex = searchLogic.handleKeyboardNavigation(e, selectedIndex, filteredHinos.length);
+
+        if (e.key === 'Escape') {
+            $results.addClass('hidden');
         } else if (e.key === 'Enter') {
             e.preventDefault();
-            if (selectedIndex > -1) {
-                selectHino(filteredHinos[selectedIndex]);
-            } else if (filteredHinos.length > 0) {
-                selectHino(filteredHinos[0]);
-            }
+            const hino = selectedIndex > -1 ? filteredHinos[selectedIndex] : filteredHinos[0];
+            if (hino) selectHino(hino);
             $results.addClass('hidden');
-        } else if (e.key === 'Escape') {
-            $results.addClass('hidden');
+        } else if (prevIndex !== selectedIndex) {
+            renderResults(filteredHinos);
         }
     });
 
@@ -298,14 +297,16 @@ const setupEvents = () => {
         state.settings.showBackground = true;
         applySettings();
         saveSettings();
-        broadcast('backgroundState', true);
+        const player = document.getElementById('audio-player');
+        broadcastState(state, player);
     });
 
     $('#btn-toggle-bg').on('click', () => {
         state.settings.showBackground = !state.settings.showBackground;
         applySettings();
         saveSettings();
-        broadcast('backgroundState', state.settings.showBackground);
+        const player = document.getElementById('audio-player');
+        broadcastState(state, player);
     });
 
     $('#btn-fullscreen').on('click', () => {
@@ -668,12 +669,14 @@ const setupEvents = () => {
     });
 
     $('#menu-remote-control').on('click', () => {
-        window.open('remote-control.html', 'remote_control', 'width=400,height=700');
+        const rand = Math.floor(Math.random() * 1000000);
+        window.open(`remote-control.html?r=${rand}`, 'remote_control', 'width=400,height=700');
         $('#menu-dropdown').addClass('hidden');
     });
 
     $('#btn-remote').on('click', () => {
-        window.open('remote-control.html', 'remote_control', 'width=400,height=700');
+        const rand = Math.floor(Math.random() * 1000000);
+        window.open(`remote-control.html?r=${rand}`, 'remote_control', 'width=400,height=700');
     });
 
     $('#menu-custom-backgrounds').on('click', () => {
@@ -827,7 +830,11 @@ $(document).ready(() => {
         speedDown: () => $('#btn-speed-slow').click(),
         toggleFullscreen: () => $('#btn-fullscreen').click(),
         toggleBg: () => $('#btn-toggle-bg').click(),
-        toggleComplete: () => $('#btn-check-completo').click(),
+        toggleComplete: () => {
+            const $check = $('#check-completo');
+            $check.prop('checked', !$check.prop('checked')).trigger('change');
+        },
+        shuffleBackground: () => $('#btn-change-bg').click(),
         randomHino: () => $('#btn-random-hino').click(),
         toggleRandomPlaylist: () => $('#btn-playlist-toggle').click(),
         scrollUp: () => {
@@ -845,8 +852,18 @@ $(document).ready(() => {
         scrollToTop: () => {
             if (state.settings.isCompleto) {
                 const container = $('#slide-content > div');
-                container.scrollTop(0);
+                if (container.length) {
+                    container.scrollTop(0);
+                } else {
+                    // Fallback se não encontrar a div interna
+                    $('#slide-content').scrollTop(0);
+                }
+            } else {
+                state.currentSlide = 0;
+                renderHino();
             }
+            // Sincronizar estado após a mudança
+            broadcastState(state, document.getElementById('audio-player'));
         }
     }, state);
 });
