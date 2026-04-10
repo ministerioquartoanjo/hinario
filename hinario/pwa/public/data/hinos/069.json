@@ -28,5 +28,11 @@
     "mid": -5,
     "treble": 12
   },
-  "introducao": 0
+  "introducao": 0,
+  "videos": [
+    {
+      "url": "https://www.youtube.com/watch?v=dP4gsEGHH_s",
+      "title": "Hino 069 - Fortalece Tua Igreja"
+    }
+  ]
 }

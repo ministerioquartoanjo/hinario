@@ -15,8 +15,8 @@ let BACKGROUNDS = [...DEFAULT_BACKGROUNDS];
 let countdownInterval = null;
 let cachedJsonCount = 0;
 let cachedMp3Count = 0;
-let cacheVersion = '1.0.0';
-let APP_VERSION = '2026.04.09.1';
+let cacheVersion = '1.0.1'; // Atualizado para forçar refresh dos hinos com vídeos
+const APP_VERSION = window.APP_VERSION || '2026.04.09.1';
 const fullscreenWarningTimeout = { current: null };
 
 const saveSettings = () => localStorage.setItem('hinario_settings', JSON.stringify(state.settings));
@@ -366,6 +366,33 @@ const setupEvents = () => {
 
     $('#btn-audio-filters').on('click', () => {
         $('#modal-audio-filters').removeClass('hidden');
+    });
+
+    // Gerenciamento de Vídeos
+    $('#btn-add-video').on('click', () => {
+        if (!state.currentHino) return alert("Selecione um hino primeiro.");
+        $('#modal-add-video').removeClass('hidden');
+    });
+
+    $('#btn-save-video').on('click', () => {
+        const url = $('#video-url-input').val().trim();
+        if (!url) return alert("Insira uma URL do YouTube.");
+
+        const hinoNum = state.currentHino.numero;
+        const videos = JSON.parse(localStorage.getItem(`videos_hino_${hinoNum}`) || '[]');
+        
+        if (videos.some(v => v.url === url)) return alert("Este vídeo já foi adicionado.");
+
+        videos.push({ url, title: "Vídeo Personalizado" });
+        localStorage.setItem(`videos_hino_${hinoNum}`, JSON.stringify(videos));
+        
+        $('#video-url-input').val('');
+        $('#modal-add-video').addClass('hidden');
+        hinoRenderer.updateVideos(state.currentHino);
+    });
+
+    $('.btn-close-modal').on('click', function() {
+        $(this).closest('.fixed').addClass('hidden');
     });
 
     $('#btn-download-current').on('click', handleDownload);

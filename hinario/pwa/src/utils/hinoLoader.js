@@ -68,7 +68,8 @@ export const hinoLoader = {
                     titulo, 
                     letras, 
                     audioFilters: h.audioFilters, 
-                    introducao: h.introducao 
+                    introducao: h.introducao,
+                    videos: h.videos || []
                 };
             } catch (e) {
                 console.error("Erro ao transformar hino:", h, e);

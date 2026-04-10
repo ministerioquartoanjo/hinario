@@ -66,19 +66,30 @@ export const hinoRenderer = {
         videoSection.removeClass('hidden');
         videoList.empty();
 
-        const videos = JSON.parse(localStorage.getItem(`videos_hino_${hino.numero}`) || '[]');
+        // Mesclar vídeos do JSON (se existirem) com vídeos do LocalStorage
+        const localVideos = JSON.parse(localStorage.getItem(`videos_hino_${hino.numero}`) || '[]');
+        const jsonVideos = hino.videos || [];
+        
+        // Evitar duplicatas se o mesmo vídeo estiver no JSON e no LocalStorage
+        const allVideos = [...jsonVideos];
+        localVideos.forEach(lv => {
+            if (!allVideos.some(jv => jv.url === lv.url)) {
+                allVideos.push(lv);
+            }
+        });
 
-        if (videos.length === 0) {
+        if (allVideos.length === 0) {
             videoList.append('<p class="text-sm text-gray-400 italic">Nenhum vídeo personalizado adicionado.</p>');
         } else {
-            videos.forEach(v => {
+            allVideos.forEach(v => {
                 const videoId = hinoRenderer.extractVideoId(v.url);
+                const isLocal = localVideos.some(lv => lv.url === v.url);
                 videoList.append(`
                     <div class="bg-gray-100 dark:bg-gray-700 p-2 rounded-lg flex gap-3 items-center">
                         <img src="https://img.youtube.com/vi/${videoId}/default.jpg" class="w-20 rounded" alt="Thumbnail">
                         <div class="flex-grow">
                             <a href="${v.url}" target="_blank" class="text-sm font-semibold hover:text-orange-dark line-clamp-1">${v.title || 'Vídeo no YouTube'}</a>
-                            <button class="text-xs text-red-500 mt-1" onclick="removeVideo(${hino.numero}, '${v.url}')">Remover</button>
+                            ${isLocal ? `<button class="text-xs text-red-500 mt-1" onclick="removeVideo(${hino.numero}, '${v.url}')">Remover</button>` : ''}
                         </div>
                     </div>
                 `);
