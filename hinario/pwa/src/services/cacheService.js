@@ -11,8 +11,11 @@ export const cacheService = {
             
             const mp3Cache = await caches.open('mp3-cache');
             const mp3Keys = await mp3Cache.keys();
+
+            // Conta apenas as chaves que seguem o novo padrão unificado
+            const validMp3Count = mp3Keys.filter(key => key.url.includes('hino_mp3_')).length;
             
-            return { json: jsonKeys.length, mp3: mp3Keys.length };
+            return { json: jsonKeys.length, mp3: validMp3Count };
         } catch (e) {
             console.error('Erro ao inicializar contadores:', e);
             return { json: 0, mp3: 0 };
@@ -86,8 +89,10 @@ export const cacheService = {
             const versionResponse = await versionCache.match('cache-version');
             const currentStoredVersion = versionResponse ? await versionResponse.text() : '0.0.0';
             
-            if (currentStoredVersion !== currentLocalVersion) {
-                console.log(`Cache version mismatch: ${currentStoredVersion} vs ${currentLocalVersion}`);
+            // Só limpa o cache se a versão no dispositivo for mais antiga que a do código
+            // Isso evita limpar o cache após um download bem-sucedido que gerou um novo timestamp
+            if (this.isVersionOlder(currentStoredVersion, currentLocalVersion)) {
+                console.log(`Cache version outdated: ${currentStoredVersion} < ${currentLocalVersion}. Clearing JSON cache.`);
                 await this.clearJsonCache();
                 await versionCache.put('cache-version', new Response(currentLocalVersion));
                 return true; // Needs update
@@ -99,9 +104,33 @@ export const cacheService = {
         }
     },
 
+    isVersionOlder(stored, local) {
+        const s = stored.split('.').map(Number);
+        const l = local.split('.').map(Number);
+        for (let i = 0; i < Math.max(s.length, l.length); i++) {
+            const sv = s[i] || 0;
+            const lv = l[i] || 0;
+            if (sv < lv) return true;
+            if (sv > lv) return false;
+        }
+        return false;
+    },
+
+    async clearMp3Cache() {
+        try {
+            const mp3Cache = await caches.open('mp3-cache');
+            const keys = await mp3Cache.keys();
+            await Promise.all(keys.map(key => mp3Cache.delete(key)));
+            console.log('MP3 cache cleared');
+        } catch (e) {
+            console.error('Erro ao limpar cache MP3:', e);
+        }
+    },
+
     async forceCacheUpdate() {
         console.log('Forcing cache update...');
         await this.clearJsonCache();
+        await this.clearMp3Cache();
         return await this.updateCacheVersion();
     }
 };

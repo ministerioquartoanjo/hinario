@@ -763,23 +763,66 @@ const downloadJSONs = async () => {
 
 const downloadMP3s = async () => {
     const total = 196;
-    const cache = await caches.open('mp3-cache');
+    const mp3Cache = await caches.open('mp3-cache');
     uiUtils.showDownloadStatus(true);
+    
+    const chunkSize = 5; 
+    const delayBetweenChunks = 300; 
 
-    for (let i = 1; i <= total; i++) {
-        const numStr = i.toString().padStart(3, '0');
-        const primaryUrl = `https://raw.githubusercontent.com/ministerioquartoanjo/hinario/main/media/${numStr}-piano.mp3`;
-        const fallbackUrl = `https://raw.githubusercontent.com/ministerioquartoanjo/hinario/refs/heads/desenv/media/${numStr}-piano.mp3`;
+    // Loop correto para processar todos os hinos de 1 a 196
+    for (let i = 1; i <= total; ) {
+        const chunk = [];
+        for (let j = 0; j < chunkSize && (i + j) <= total; j++) {
+            chunk.push(i + j);
+        }
 
-        try {
-            const { response, url } = await cacheService.downloadWithFallback(primaryUrl, fallbackUrl);
-            await cache.put(url, response.clone());
-        } catch (e) { console.error(e); }
-        if (i % 5 === 0) uiUtils.updateCacheDisplay(cachedJsonCount, i);
+        console.log(`Baixando lote: ${chunk[0]} até ${chunk[chunk.length-1]}`);
+
+        // Executa o lote atual em paralelo
+        await Promise.all(chunk.map(async (num) => {
+            const numStr = num.toString().padStart(3, '0');
+            const primaryUrl = `https://raw.githubusercontent.com/ministerioquartoanjo/hinario/refs/heads/desenv/media/${numStr}-piano.mp3`;
+            const fallbackUrl = `https://raw.githubusercontent.com/ministerioquartoanjo/hinario/main/media/${numStr}-piano.mp3`;
+            
+            // Chave ÚNICA E SIMPLES: garante 196 hinos cravados
+            const storageKey = `hino_mp3_${numStr}`;
+
+            try {
+                const { response, url } = await cacheService.downloadWithFallback(primaryUrl, fallbackUrl);
+                console.log(`Hino ${num} baixado de: ${url}`);
+                await mp3Cache.put(storageKey, response.clone());
+                console.log(`Hino ${num} salvo no cache com chave única: ${storageKey}`);
+            } catch (e) { 
+                console.error(`FALHA hino ${num}:`, e); 
+            }
+        }));
+
+        // Incrementa i pelo tamanho do lote processado
+        i += chunk.length;
+
+        // Atualiza o contador visual baseado nas chaves VÁLIDAS do cache
+        const keys = await mp3Cache.keys();
+        const validCount = keys.filter(key => key.url.includes('hino_mp3_')).length;
+        uiUtils.updateCacheDisplay(cachedJsonCount, validCount);
+
+        // Pequena pausa entre lotes
+        if (i <= total) {
+            await new Promise(resolve => setTimeout(resolve, delayBetweenChunks));
+        }
     }
     
+    // Verificação final rigorosa
+    const finalKeys = await mp3Cache.keys();
+    cachedMp3Count = finalKeys.filter(key => key.url.includes('hino_mp3_')).length;
+    uiUtils.updateCacheDisplay(cachedJsonCount, cachedMp3Count);
+    
     uiUtils.showDownloadStatus(false);
-    alert('Áudios sincronizados!');
+    
+    if (cachedMp3Count < total) {
+        alert(`Sincronização parcial: ${cachedMp3Count} de ${total} áudios baixados. Tente sincronizar novamente para completar.`);
+    } else {
+        alert(`Sincronização completa! Todos os ${total} áudios estão no cache.`);
+    }
 };
 
 const handleDownload = async () => {

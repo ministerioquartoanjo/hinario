@@ -34,13 +34,19 @@ export const audioPlayer = {
         // Check Cache API
         if ('caches' in window) {
             const cache = await caches.open('mp3-cache');
-            const cachedResponse = await cache.match(audioUrl) || await cache.match(altUrl);
+            
+            // Busca pela nova chave única primeiro, depois pelas URLs antigas para compatibilidade
+            const uniqueKey = `hino_mp3_${numStr}`;
+            const cachedResponse = await cache.match(uniqueKey) || 
+                                 await cache.match(audioUrl) || 
+                                 await cache.match(altUrl);
+                                 
             if (cachedResponse) {
                 const blob = await cachedResponse.blob();
                 player.src = URL.createObjectURL(blob);
                 player.load();
                 player.playbackRate = targetSpeed;
-                $('#speed-display').text(targetSpeed.toFixed(1) + 'x');
+                $('#speed-display, #fs-speed-display').text(targetSpeed.toFixed(1) + 'x');
                 loading.classList.add('hidden');
                 return;
             }
