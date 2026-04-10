@@ -612,10 +612,12 @@ const loadAudio = async (numero) => {
     }
     applyAudioFilters();
 
-    // Check Cache API
+    // Check Cache API (both URL formats: desenv and main)
+    const altUrl = `https://raw.githubusercontent.com/ministerioquartoanjo/hinario/main/media/${numStr}-piano.mp3`;
+
     if ('caches' in window) {
         const cache = await caches.open('mp3-cache');
-        const cachedResponse = await cache.match(audioUrl);
+        const cachedResponse = await cache.match(audioUrl) || await cache.match(altUrl);
         if (cachedResponse) {
             const blob = await cachedResponse.blob();
             player.src = URL.createObjectURL(blob);
@@ -627,6 +629,30 @@ const loadAudio = async (numero) => {
         }
     }
 
+    // Not in cache — fetch, cache, and play
+    try {
+        const response = await fetch(audioUrl);
+        if (response.ok) {
+            if ('caches' in window) {
+                const cache = await caches.open('mp3-cache');
+                await cache.put(audioUrl, response.clone());
+                cachedMp3Count++;
+                updateCacheDisplay();
+            }
+            const blob = await response.blob();
+            player.src = URL.createObjectURL(blob);
+            player.load();
+            player.playbackRate = targetSpeed;
+            $('#speed-display, #fs-speed-display').text(targetSpeed.toFixed(1) + 'x');
+            loading.classList.add('hidden');
+            broadcastAudioFiltersState();
+            return;
+        }
+    } catch (e) {
+        console.warn('Fetch direto falhou, usando player.src:', e);
+    }
+
+    // Fallback: let browser handle it directly
     player.src = audioUrl;
     player.load();
     player.playbackRate = targetSpeed;
@@ -634,12 +660,12 @@ const loadAudio = async (numero) => {
 
     player.oncanplay = () => {
         loading.classList.add('hidden');
-        player.playbackRate = targetSpeed; // Reforçar caso perca no carregamento
-        broadcastAudioFiltersState(); // Enviar filtros atuais quando hino carrega
+        player.playbackRate = targetSpeed;
+        broadcastAudioFiltersState();
     };
 
     player.onerror = () => {
-        console.warn("Falha ao carregar áudio. Tentando carregar diretamente via fetch...");
+        console.warn("Falha ao carregar áudio diretamente.");
         loading.classList.add('hidden');
     };
 };
@@ -1703,11 +1729,12 @@ const handleDownload = async () => {
     try {
         btn.find('i').attr('class', 'fas fa-spinner fa-spin');
 
-        // Tenta pegar do cache primeiro se existir
+        // Tenta pegar do cache primeiro se existir (ambas URLs)
         let blob;
         if ('caches' in window) {
             const cache = await caches.open('mp3-cache');
-            const cachedResponse = await cache.match(audioUrl);
+            const altUrl = `https://raw.githubusercontent.com/ministerioquartoanjo/hinario/main/media/${numStr}-piano.mp3`;
+            const cachedResponse = await cache.match(audioUrl) || await cache.match(altUrl);
             if (cachedResponse) {
                 blob = await cachedResponse.blob();
             }
@@ -1824,6 +1851,12 @@ const forceCacheUpdate = async () => {
 // Initialize counters with actual cache values
 const initializeCacheCounters = async () => {
     try {
+        if (!('caches' in window)) {
+            console.warn('Cache API não disponível');
+            updateCacheDisplay();
+            return;
+        }
+        
         const jsonCache = await caches.open('json-cache');
         const jsonKeys = await jsonCache.keys();
         cachedJsonCount = jsonKeys.length;
@@ -1831,10 +1864,11 @@ const initializeCacheCounters = async () => {
         const mp3Cache = await caches.open('mp3-cache');
         const mp3Keys = await mp3Cache.keys();
         cachedMp3Count = mp3Keys.length;
-        
-        updateCacheDisplay();
     } catch (e) {
         console.error('Erro ao inicializar contadores:', e);
+    } finally {
+        // Always update display with current values
+        updateCacheDisplay();
     }
 };
 
@@ -1872,6 +1906,8 @@ const clearJsonCache = async () => {
 
 const updateCacheStatus = async () => {
     try {
+        if (!('caches' in window)) return;
+        
         const jsonCache = await caches.open('json-cache');
         const jsonKeys = await jsonCache.keys();
         cachedJsonCount = jsonKeys.length;
@@ -1879,13 +1915,11 @@ const updateCacheStatus = async () => {
         const mp3Cache = await caches.open('mp3-cache');
         const mp3Keys = await mp3Cache.keys();
         cachedMp3Count = mp3Keys.length;
-        
-        document.getElementById('json-count').textContent = `${cachedJsonCount} letras`;
-        document.getElementById('mp3-count').textContent = `${cachedMp3Count} áudios`;
     } catch (e) {
         console.error('Erro ao verificar cache:', e);
-        document.getElementById('json-count').textContent = 'Erro';
-        document.getElementById('mp3-count').textContent = 'Erro';
+    } finally {
+        // Always update display with current values
+        updateCacheDisplay();
     }
 };
 
@@ -1939,17 +1973,21 @@ $(document).ready(() => {
     // Load and update version display
     loadVersion();
     
-    // Check cache version first
+    // Initialize cache counters immediately (independent of version check)
+    initializeCacheCounters();
+    
+    // Update cache status every 10 seconds
+    setInterval(updateCacheStatus, 10000);
+    
+    // Check cache version (async, may show alert)
     checkCacheVersion().then(needsUpdate => {
         if (needsUpdate) {
-            alert('Os hinos foram atualizados! Por favor, sincronize novamente para obter as últimas versões.');
+            console.warn('Cache desatualizado. Sincronize novamente para obter as últimas versões.');
+            // Re-initialize counters after cache was cleared
+            initializeCacheCounters();
         }
-        
-        // Initialize cache counters with actual values
-        initializeCacheCounters();
-        
-        // Update cache status every 10 seconds (less frequent)
-        setInterval(updateCacheStatus, 10000);
+    }).catch(err => {
+        console.error('Erro ao verificar versão do cache:', err);
     });
 });
 

@@ -19,10 +19,11 @@ self.addEventListener('install', event => {
 });
 
 self.addEventListener('activate', event => {
+    const KEEP_CACHES = [CACHE_NAME, 'mp3-cache', 'json-cache', 'version-cache'];
     event.waitUntil(
         caches.keys().then(keys => {
             return Promise.all(
-                keys.filter(key => key !== CACHE_NAME)
+                keys.filter(key => !KEEP_CACHES.includes(key))
                     .map(key => caches.delete(key))
             );
         }).then(() => self.clients.claim())
@@ -55,7 +56,18 @@ self.addEventListener('fetch', event => {
         // Cache First para o resto (MP3, Ícones, Bibliotecas Externas)
         event.respondWith(
             caches.match(event.request)
-                .then(response => response || fetch(event.request))
+                .then(response => {
+                    if (response) return response;
+                    return fetch(event.request).then(fetchResponse => {
+                        if (fetchResponse.ok || fetchResponse.status === 206) {
+                            const clonedResponse = fetchResponse.clone();
+                            caches.open('mp3-cache').then(cache => {
+                                cache.put(event.request, clonedResponse);
+                            });
+                        }
+                        return fetchResponse;
+                    });
+                })
         );
     }
 });
