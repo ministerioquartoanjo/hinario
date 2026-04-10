@@ -25,6 +25,12 @@ const applySettings = () => {
     const body = document.body;
     body.classList.toggle('dark', state.settings.darkMode);
 
+    // Ajustar cores padrão baseado no tema se não houver cor personalizada manual
+    if (state.settings.darkMode) {
+        if (state.settings.fontColor === '#000000') state.settings.fontColor = '#FFFFFF';
+        if (state.settings.bgColor === '#FFFFFF') state.settings.bgColor = '#000000';
+    }
+
     const $btnToggleBg = $('#btn-toggle-bg');
     if (state.settings.showBackground) {
         $btnToggleBg.css('background-color', '').addClass('bg-orange-dark').removeClass('bg-gray-500');
@@ -286,6 +292,21 @@ const setupEvents = () => {
         saveSettings();
     });
 
+    $('#menu-manage-videos').on('click', (e) => {
+        e.preventDefault();
+        $('#video-section').toggleClass('hidden');
+    });
+
+    // Toggle Aparência no Mobile
+    $('#toggle-appearance').on('click', () => {
+        if (window.innerWidth < 768) {
+            const content = $('#appearance-content');
+            const icon = $('#appearance-icon');
+            content.toggleClass('hidden');
+            icon.toggleClass('rotate-180');
+        }
+    });
+
     $('#btn-toggle-theme').on('click', () => {
         state.settings.darkMode = !state.settings.darkMode;
         applySettings();
@@ -328,6 +349,7 @@ const setupEvents = () => {
 
     const player = document.getElementById('audio-player');
     $('#btn-play-pause, #btn-fs-play-pause').on('click', () => {
+        if (!state.currentHino) return alert("Selecione um hino primeiro.");
         initAudio();
         player.paused ? player.play() : player.pause();
     });
