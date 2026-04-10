@@ -663,33 +663,41 @@ const setupEvents = () => {
         broadcastState(state, player);
     };
 
-    player.onerror = () => {
-        $('#btn-play-pause i, #btn-fs-play-pause i').removeClass('fa-pause').addClass('fa-play');
-        if (countdownInterval) clearInterval(countdownInterval);
-        $('#intro-countdown').addClass('hidden');
-        broadcastState(state, player);
-    };
+    const $audioProgressBar = $('#audio-progress-bar');
+    const $audioSeeker = $('#audio-seeker');
+    const $fsProgressBar = $('#fs-progress-bar');
+    const $fsAudioSeeker = $('#fs-audio-seeker');
+    const $currentTime = $('#current-time');
+    const $totalDuration = $('#total-duration');
 
-    player.onratechange = () => {
-        broadcast('speedState', player.playbackRate);
+    const formatTime = (seconds) => {
+        if (isNaN(seconds)) return "0:00";
+        const min = Math.floor(seconds / 60);
+        const sec = Math.floor(seconds % 60);
+        return `${min}:${sec.toString().padStart(2, '0')}`;
     };
 
     player.ontimeupdate = () => {
-        if (!player.duration) return;
-        const progress = (player.currentTime / player.duration) * 100;
-        $('#audio-progress-bar').css('width', `${progress}%`);
-        $('#current-time').text(uiUtils.formatTime?.(player.currentTime) || '0:00');
-
-        // Lógica de Auto-Scroll/Avanço na Introdução (Modo Playlist)
-        if (state.isPlaylistActive && state.currentHino) {
-            const introTime = (typeof state.currentHino.introducao === 'number') ? state.currentHino.introducao : 8;
-            
-            // Avanço automático da Capa -> Primeiro Verso após a introdução
-            if (state.currentSlide === 0 && player.currentTime > introTime) {
-                nextSlide();
-            }
+        const percent = (player.currentTime / player.duration) * 100 || 0;
+        $audioProgressBar.css('width', `${percent}%`);
+        $audioSeeker.val(percent);
+        $fsProgressBar.css('width', `${percent}%`);
+        $fsAudioSeeker.val(percent);
+        $currentTime.text(formatTime(player.currentTime));
+        if (!isNaN(player.duration)) {
+            $totalDuration.text(formatTime(player.duration));
         }
     };
+
+    $audioSeeker.on('input', function() {
+        const time = (this.value / 100) * player.duration;
+        if (!isNaN(time)) player.currentTime = time;
+    });
+
+    $fsAudioSeeker.on('input', function() {
+        const time = (this.value / 100) * player.duration;
+        if (!isNaN(time)) player.currentTime = time;
+    });
 
     $('#btn-export-settings').on('click', settingsService.exportData);
     $('#btn-import-settings').on('click', () => $('#import-file').click());
