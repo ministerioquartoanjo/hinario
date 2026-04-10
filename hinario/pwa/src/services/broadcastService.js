@@ -50,6 +50,11 @@ export const setupBroadcastListeners = (actions, state) => {
             case 'requestCompleteState':
                 broadcast('completeState', state.settings.isCompleto);
                 break;
+            case 'requestPlayState':
+                const player = document.getElementById('audio-player');
+                const isPlaying = player ? !player.paused && !player.ended && player.readyState > 2 : false;
+                broadcast('playState', isPlaying);
+                break;
             case 'selectHino':
                 if (data.numero) actions.selectHino(data.numero);
                 break;

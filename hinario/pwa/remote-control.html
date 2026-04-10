@@ -553,6 +553,8 @@
             hinoInput.value = `${hino.numero} - ${hino.titulo}`;
             searchResultsBox.classList.add('hidden');
             remoteSelectedResult = -1;
+            send('stopAudio');
+            updatePlayState(false);
             send('selectHino', { numero: hino.numero });
             hinoFeedback.textContent = `Solicitando hino ${hino.numero}...`;
             hinoFeedback.classList.remove('text-red-400');
@@ -566,6 +568,8 @@
                 hinoFeedback.classList.replace('text-green-400', 'text-red-400');
                 return;
             }
+            send('stopAudio');
+            updatePlayState(false);
             send('selectHino', { numero });
             hinoFeedback.textContent = `Solicitando hino ${numero}...`;
             hinoFeedback.classList.remove('text-red-400');
@@ -615,8 +619,16 @@
         document.getElementById('remote-scroll-up').onclick = () => send('scrollUp');
         document.getElementById('remote-scroll-down').onclick = () => send('scrollDown');
         document.getElementById('remote-home').onclick = () => send('scrollToTop');
-        document.getElementById('remote-prev-hino').onclick = () => send('prevHino');
-        document.getElementById('remote-next-hino').onclick = () => send('nextHino');
+        document.getElementById('remote-prev-hino').onclick = () => {
+            send('stopAudio');
+            updatePlayState(false);
+            send('prevHino');
+        };
+        document.getElementById('remote-next-hino').onclick = () => {
+            send('stopAudio');
+            updatePlayState(false);
+            send('nextHino');
+        };
         document.getElementById('remote-random-hino').onclick = () => {
             send('stopAudio');
             updatePlayState(false);
@@ -687,6 +699,9 @@
         
         // Solicitar estado do completo
         send('requestCompleteState');
+        
+        // Solicitar estado do play/pause
+        send('requestPlayState');
         
         // Setup real-time label updates for filter sliders
         document.getElementById('remote-range-gain').addEventListener('input', (e) => {
