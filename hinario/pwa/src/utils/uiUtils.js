@@ -66,5 +66,27 @@ export const uiUtils = {
                 }
             `).appendTo('head');
         }
+    },
+
+    showToast(message, type = 'info') {
+        const bgMap = {
+            'success': 'bg-green-600',
+            'error': 'bg-red-600',
+            'info': 'bg-blue-600',
+            'warning': 'bg-orange-600'
+        };
+        
+        const toast = $(`
+            <div class="fixed bottom-4 left-1/2 -translate-x-1/2 ${bgMap[type] || bgMap.info} text-white px-6 py-3 rounded-full shadow-2xl z-[9999] animate-bounce-in flex items-center gap-2 min-w-[200px] justify-center">
+                <i class="fas ${type === 'error' ? 'fa-exclamation-triangle' : 'fa-info-circle'}"></i>
+                <span class="font-bold text-sm">${message}</span>
+            </div>
+        `);
+        
+        $('body').append(toast);
+        
+        setTimeout(() => {
+            toast.fadeOut(300, function() { $(this).remove(); });
+        }, 3000);
     }
 };

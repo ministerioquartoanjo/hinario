@@ -1,4 +1,4 @@
-const CACHE_NAME = 'hinario-v5';
+const CACHE_NAME = 'hinario-mqa-cache-v1.0.3'; // Incrementado para limpar erro de fetch
 const ASSETS = [
     './',
     './index.html',

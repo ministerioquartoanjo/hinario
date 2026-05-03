@@ -1,3 +1,5 @@
+import { obsService } from '../services/obsService.js';
+
 /**
  * Hino Renderer component logic
  */
@@ -15,20 +17,24 @@ export const hinoRenderer = {
         const content = $('#slide-content');
         const counter = $('#slide-counter');
         const currentSlideData = state.currentHino.letras[state.currentSlide];
+        let obsText = '';
 
         // Verificar se é Slide de Capa
         if (currentSlideData && currentSlideData.tipo === 'capa') {
+            const h1Text = currentSlideData.titulo;
+            const pText = currentSlideData.autor;
             content.html(`
                 <div class="flex flex-col items-center justify-center h-full animate-fade-in">
                     <h1 class="text-4xl md:text-6xl font-black mb-6 text-center leading-tight drop-shadow-lg text-white">
-                        ${currentSlideData.titulo}
+                        ${h1Text}
                     </h1>
                     <p class="text-xl md:text-2xl font-light italic opacity-80 mt-4 text-white">
-                        ${currentSlideData.autor}
+                        ${pText}
                     </p>
                     <p class="text-sm mt-8 opacity-50 hidden md:block">(Clique duas vezes para iniciar)</p>
                 </div>
             `);
+            obsText = `${h1Text}\n${pText}`;
             counter.addClass('hidden');
         } else if (state.settings.isCompleto) {
             // Modo Completo (Texto Corrido)
@@ -38,6 +44,10 @@ export const hinoRenderer = {
                     `<div class="mb-4 ${l.tipo === 'refrão' ? 'font-bold italic' : ''}" ${l.tipo === 'refrão' ? 'style="color: #fde047;"' : ''}>${l.texto.replace(/\n/g, '<br>')}</div>`
                 ).join('');
             content.html(`<div class="overflow-y-auto max-h-full w-full px-4 text-left custom-scrollbar pb-12">${fullText}</div>`);
+            obsText = state.currentHino.letras
+                .filter(l => l.tipo !== 'capa')
+                .map(l => l.texto)
+                .join('\n\n');
             counter.addClass('hidden');
         } else {
             // Modo Slides (Versos/Coros)
@@ -48,6 +58,7 @@ export const hinoRenderer = {
                     ${letra.texto.replace(/\n/g, '<br>')}
                 </div>
             `);
+            obsText = letra.texto;
 
             // Ajustar contador (subtrair 1 pois o 0 é capa)
             const totalSlidesReal = state.currentHino.letras.length - 1;
@@ -56,6 +67,11 @@ export const hinoRenderer = {
         }
 
         if (applySettings) applySettings();
+        
+        // Transmitir para o OBS se estiver conectado
+        if (obsService.connected) {
+            obsService.updateText(obsText);
+        }
     },
 
     updateVideos(hino) {

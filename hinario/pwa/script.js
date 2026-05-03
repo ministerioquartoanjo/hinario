@@ -1,5 +1,5 @@
 import { DEFAULT_BACKGROUNDS } from './src/constants/defaults.js';
-import { broadcast, broadcastState, setupBroadcastListeners } from './src/services/broadcastService.js';
+import { broadcast, broadcastState, setupBroadcastListeners, remoteChannel } from './src/services/broadcastService.js';
 import { cacheService } from './src/services/cacheService.js';
 import { settingsService } from './src/services/settingsService.js';
 import { uiUtils } from './src/utils/uiUtils.js';
@@ -7,6 +7,7 @@ import { audioUtils } from './src/utils/audioUtils.js';
 import { audioPlayer } from './src/components/audioPlayer.js';
 import { hinoLoader } from './src/utils/hinoLoader.js';
 import { hinoRenderer } from './src/components/hinoRenderer.js';
+import { obsService } from './src/services/obsService.js';
 import { state } from './src/state.js';
 import { searchLogic } from './src/utils/searchLogic.js';
 
@@ -52,13 +53,12 @@ const applySettings = () => {
         'font-weight': 600
     });
 
-    // Ajustar o título para ser no máximo 30% maior que a fonte configurada
     $('#slide-content h1').css({
-        'font-size': `${state.settings.fontSize * 1.3}rem`
+        'font-size': `${(state.settings.fontSize || 1.5) * 1.3}rem`
     });
 
-    $('#font-size-display').text(`${state.settings.fontSize.toFixed(2)}rem`);
-    $('#line-height-display').text(state.settings.lineHeight);
+    $('#font-size-display').text(`${(Number(state.settings.fontSize) || 1.5).toFixed(2)}rem`);
+    $('#line-height-display').text(state.settings.lineHeight || 1.4);
     $('#font-family-select').val(state.settings.fontFamily);
     $('#font-color-picker').val(state.settings.fontColor);
     $('#bg-color-picker').val(state.settings.bgColor || '#000000');
@@ -80,9 +80,36 @@ const applySettings = () => {
 
 const loadSettings = () => {
     const saved = localStorage.getItem('hinario_settings');
-    if (saved) Object.assign(state.settings, JSON.parse(saved));
+    if (saved) {
+        const parsed = JSON.parse(saved);
+        Object.assign(state.settings, parsed);
+    }
+    
+    // Garantir que customBackgrounds seja um array válido
+    if (!Array.isArray(state.settings.customBackgrounds)) {
+        state.settings.customBackgrounds = [];
+    }
+    
     BACKGROUNDS = [...DEFAULT_BACKGROUNDS, ...state.settings.customBackgrounds];
     applySettings();
+    
+    // Atualizar a lista de fundos customizados na UI se o elemento existir
+    const $list = $('#custom-bg-list');
+    if ($list.length) {
+        $list.empty();
+        state.settings.customBackgrounds.forEach((bg, index) => {
+            const $item = $(`
+                <div class="flex items-center justify-between bg-gray-100 p-2 rounded-lg group">
+                    <span class="truncate text-xs flex-1 mr-2">${bg}</span>
+                    <button class="text-red-500 opacity-0 group-hover:opacity-100 transition-opacity p-1" onclick="window.removeCustomBg(${index})">
+                        <i class="fas fa-trash-alt"></i>
+                    </button>
+                </div>
+            `);
+            $list.append($item);
+        });
+    }
+
     if (state.audioCtx) audioUtils.applyAudioFilters(state.audioCtx, state, state.settings.audioFilters);
 };
 
@@ -135,6 +162,35 @@ const prevSlide = () => {
 const nextHino = () => {
     const idx = state.hinos.findIndex(h => h.numero === state.currentHino?.numero);
     return selectHino(state.hinos[(idx + 1) % state.hinos.length]);
+};
+
+const prevHino = () => {
+    const idx = state.hinos.findIndex(h => h.numero === state.currentHino?.numero);
+    return selectHino(state.hinos[(idx - 1 + state.hinos.length) % state.hinos.length]);
+};
+
+const scrollUp = () => {
+    stopAutoScroll();
+    if (state.settings.isCompleto) {
+        const container = $('#slide-content > div');
+        if (container.length) {
+            container.scrollTop(container.scrollTop() - 100);
+        }
+    } else {
+        prevSlide();
+    }
+};
+
+const scrollDown = () => {
+    stopAutoScroll();
+    if (state.settings.isCompleto) {
+        const container = $('#slide-content > div');
+        if (container.length) {
+            container.scrollTop(container.scrollTop() + 100);
+        }
+    } else {
+        nextSlide();
+    }
 };
 
 const playlistNextRandom = async () => {
@@ -1018,18 +1074,20 @@ const downloadMP3s = async () => {
 
 const handleDownload = async () => {
     if (!state.currentHino) return alert("Selecione um hino.");
-    const numStr = state.currentHino.numero.toString().padStart(3, '0');
-    const audioUrl = `https://raw.githubusercontent.com/ministerioquartoanjo/hinario/refs/heads/desenv/media/${numStr}-piano.mp3`;
-    window.open(audioUrl, '_blank');
 };
 
 // --- Inicialização ---
 $(document).ready(() => {
-    loadSettings();
-    hinoLoader.loadIndex(state).then(() => setupSearch());
-    setupEvents();
-    uiUtils.setupZoom(() => state.settings.isCompleto);
+loadSettings();
+hinoLoader.loadIndex(state).then(() => setupSearch());
+setupEvents();
+uiUtils.setupZoom(() => state.settings.isCompleto);
     
+cacheService.initializeCounters().then(counts => {
+cachedJsonCount = counts.json;
+cachedMp3Count = counts.mp3;
+uiUtils.updateCacheDisplay(cachedJsonCount, cachedMp3Count);
+});
     cacheService.initializeCounters().then(counts => {
         cachedJsonCount = counts.json;
         cachedMp3Count = counts.mp3;
@@ -1051,55 +1109,221 @@ $(document).ready(() => {
     setupBroadcastListeners({
         prevSlide,
         nextSlide,
-        nextHino,
-        prevHino: () => {
-            const idx = state.hinos.findIndex(h => h.numero === state.currentHino?.numero);
-            if (idx > 0) selectHino(state.hinos[idx - 1]);
+        scrollUp,
+        scrollDown,
+        toggleFullscreen: () => {
+            const elem = document.getElementById('slide-preview');
+            if (!document.fullscreenElement) {
+                if (elem.requestFullscreen) elem.requestFullscreen();
+            } else {
+                if (document.exitFullscreen) document.exitFullscreen();
+            }
         },
-        selectHino,
-        togglePlay: () => $('#btn-play-pause').click(),
-        stopAudio: () => $('#btn-stop').click(),
-        restartAudio: () => $('#btn-fs-restart').click(),
-        speedUp: () => $('#btn-speed-fast').click(),
-        speedDown: () => $('#btn-speed-slow').click(),
-        toggleFullscreen: () => $('#btn-fullscreen').click(),
+        togglePlay: () => {
+            initAudio();
+            const player = document.getElementById('audio-player');
+            if (player.paused) player.play();
+            else player.pause();
+        },
+        stopAudio: () => {
+            const player = document.getElementById('audio-player');
+            player.pause();
+            player.currentTime = 0;
+        },
+        restartAudio: () => {
+            const player = document.getElementById('audio-player');
+            player.currentTime = 0;
+            player.play();
+        },
+        speedUp: () => {
+            const player = document.getElementById('audio-player');
+            player.playbackRate = Math.min(player.playbackRate + 0.1, 2.0);
+            broadcast('speedState', player.playbackRate);
+        },
+        speedDown: () => {
+            const player = document.getElementById('audio-player');
+            player.playbackRate = Math.max(player.playbackRate - 0.1, 0.5);
+            broadcast('speedState', player.playbackRate);
+        },
         toggleBg: () => $('#btn-toggle-bg').click(),
-        toggleComplete: () => {
-            const $check = $('#check-completo');
-            $check.prop('checked', !$check.prop('checked')).trigger('change');
-        },
+        toggleComplete: () => $('#check-completo').click(),
         shuffleBackground: () => $('#btn-change-bg').click(),
-        randomHino: () => $('#btn-random-hino').click(),
         toggleRandomPlaylist: () => $('#btn-playlist-toggle').click(),
-        scrollUp: () => {
-            if (state.settings.isCompleto) {
-                const container = $('#slide-content > div');
-                container.scrollTop(container.scrollTop() - 100);
-            }
-        },
-        scrollDown: () => {
-            if (state.settings.isCompleto) {
-                const container = $('#slide-content > div');
-                container.scrollTop(container.scrollTop() + 100);
-            }
-        },
+        selectHino: (numero) => selectHinoByNumber(numero),
         scrollToTop: () => {
             if (state.settings.isCompleto) {
                 const container = $('#slide-content > div');
                 if (container.length) {
                     container.scrollTop(0);
                 } else {
-                    // Fallback se não encontrar a div interna
                     $('#slide-content').scrollTop(0);
                 }
             } else {
                 state.currentSlide = 0;
                 renderHino();
             }
-            // Sincronizar estado após a mudança
             broadcastState(state, document.getElementById('audio-player'));
+        },
+        toggleObs: async () => {
+            console.log('Ação toggleObs disparada via Controle Remoto');
+            const status = await obsService.getSourceStatus();
+            if (status && status.exists) {
+                console.log('Alternando visibilidade da fonte OBS para:', !status.enabled);
+                await obsService.toggleSource(!status.enabled);
+                await updateObsUI();
+            } else {
+                console.warn('Não foi possível alternar OBS: Fonte não existe ou não detectada.');
+            }
         }
     }, state);
+
+    // --- OBS Settings ---
+    const $modalObs = $('#modal-obs-settings');
+    const $obsIndicator = $('#obs-status-indicator');
+    const $obsStatusText = $('#obs-status-text');
+    const $btnObsConnect = $('#btn-obs-connect');
+    const $btnObsDisconnect = $('#btn-obs-disconnect');
+    const $btnObsCreateSource = $('#btn-obs-create-source');
+
+    const updateObsUI = async () => {
+        console.log('Atualizando UI do OBS...', { connected: obsService.connected });
+        state.obsConnected = obsService.connected;
+        
+        if (obsService.connected) {
+            $obsIndicator.removeClass('bg-red-500').addClass('bg-green-500');
+            $obsStatusText.text('Conectado');
+            $btnObsConnect.addClass('hidden');
+            $btnObsDisconnect.removeClass('hidden');
+            $('#btn-obs-stream').addClass('text-blue-500').removeClass('text-gray-500');
+            
+            try {
+                const status = await obsService.getSourceStatus();
+                console.log('Status da fonte recebido:', status);
+                state.obsEnabled = status ? status.enabled : false;
+                
+                // NOTIFICAÇÃO CRUCIAL PARA O CONTROLE REMOTO
+                broadcast('obsState', state.obsEnabled && state.obsConnected);
+                
+                if (status && status.exists) {
+                    console.log('Fonte existe. Configurando Switch...');
+                    const icon = status.enabled ? 'fa-eye text-white' : 'fa-eye-slash text-gray-400';
+                    const text = status.enabled ? 'FONTE VISÍVEL NO OBS' : 'FONTE OCULTA NO OBS';
+                    
+                    $btnObsCreateSource.html(`<i class="fas ${icon} mr-2"></i> ${text}`)
+                        .removeClass('bg-blue-600 bg-gray-600 bg-green-700 bg-gray-500 hidden')
+                        .addClass(status.enabled ? 'bg-green-600' : 'bg-gray-500')
+                        .css('display', 'flex') // Garantir que o flex do tailwind funcione
+                        .data('action', 'toggle')
+                        .data('enabled', status.enabled);
+                } else {
+                    console.log('Fonte não existe. Configurando botão de criação...');
+                    $btnObsCreateSource.html('<i class="fas fa-plus-circle mr-2"></i> CRIAR FONTE NO OBS STUDIO')
+                        .removeClass('bg-green-600 bg-gray-500 bg-green-700 bg-gray-600 hidden')
+                        .addClass('bg-blue-600')
+                        .css('display', 'flex')
+                        .data('action', 'create');
+                }
+            } catch (err) {
+                console.error('Erro ao processar status da fonte na UI:', err);
+            }
+        } else {
+            $obsIndicator.removeClass('bg-green-500').addClass('bg-red-500');
+            $obsStatusText.text('Desconectado');
+            $btnObsConnect.removeClass('hidden');
+            $btnObsDisconnect.addClass('hidden');
+            $('#btn-obs-stream').addClass('text-gray-500').removeClass('text-blue-500');
+        }
+    };
+
+    // Escutar eventos globais do OBS Service para atualizar a UI
+    obsService.obs.on('Identified', () => {
+        updateObsUI();
+    });
+
+    obsService.obs.on('ConnectionClosed', () => {
+        updateObsUI();
+    });
+
+    // Monitorar mudanças de cena ou itens para atualizar o switch
+    obsService.obs.on('SceneItemEnableStateChanged', () => {
+        updateObsUI();
+    });
+
+    // Responder a requisições de estado inicial do OBS
+    remoteChannel.addEventListener('message', async (event) => {
+        const { action, source } = event.data || {};
+        if (source === 'remote' && action === 'requestObsState') {
+            const status = await obsService.getSourceStatus();
+            state.obsConnected = obsService.connected;
+            state.obsEnabled = status ? status.enabled : false;
+            broadcast('obsState', state.obsEnabled && state.obsConnected);
+        }
+    });
+
+    // Sincronização em Tempo Real com OBS
+    obsService.obs.on('CurrentProgramSceneChanged', () => updateObsUI()); // Mudou a cena no OBS
+    obsService.obs.on('SceneItemCreated', () => updateObsUI());           // Criou algo no OBS
+    obsService.obs.on('SceneItemRemoved', () => updateObsUI());           // Deletou algo no OBS
+    obsService.obs.on('InputConfigPropChanged', () => updateObsUI());     // Mudou config de entrada
+    obsService.obs.on('InputSettingsChanged', (data) => {                 // Mudou nome ou settings
+        if (data.inputName === obsService.config.sourceName) updateObsUI();
+    });
+
+    $('#menu-obs-settings, #btn-obs-stream').on('click', () => {
+        $('#obs-address').val(obsService.config.address);
+        $('#obs-password').val(obsService.config.password);
+        $('#obs-source-name').val(obsService.config.sourceName);
+        updateObsUI();
+        $modalObs.removeClass('hidden');
+    });
+
+    $btnObsCreateSource.on('click', async () => {
+        const action = $btnObsCreateSource.data('action');
+        
+        if (action === 'create') {
+            const originalText = $btnObsCreateSource.html();
+            $btnObsCreateSource.prop('disabled', true).text('Criando...');
+            try {
+                await obsService.createSource();
+                uiUtils.showToast('Fonte criada com sucesso!', 'success');
+                await updateObsUI();
+            } catch (e) {
+                uiUtils.showToast(e.message, 'error');
+                $btnObsCreateSource.html(originalText);
+            } finally {
+                $btnObsCreateSource.prop('disabled', false);
+            }
+        } else {
+            const currentState = $btnObsCreateSource.data('enabled');
+            await obsService.toggleSource(!currentState);
+            updateObsUI();
+        }
+    });
+
+    $btnObsConnect.on('click', async () => {
+        obsService.config.address = $('#obs-address').val();
+        obsService.config.password = $('#obs-password').val();
+        obsService.config.sourceName = $('#obs-source-name').val();
+        
+        $btnObsConnect.prop('disabled', true).text('Conectando...');
+        try {
+            await obsService.connect();
+            uiUtils.showToast('Conectado ao OBS!', 'success');
+            updateObsUI();
+        } catch (e) {
+            console.error('Erro na UI ao conectar OBS:', e);
+            uiUtils.showToast(e.message, 'error');
+            $obsStatusText.text(e.message);
+        } finally {
+            $btnObsConnect.prop('disabled', false).text('Conectar');
+        }
+    });
+
+    $btnObsDisconnect.on('click', async () => {
+        await obsService.disconnect();
+        updateObsUI();
+        uiUtils.showToast('Desconectado do OBS');
+    });
 });
 
 // Expose globals for legacy compatibility

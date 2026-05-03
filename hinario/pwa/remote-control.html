@@ -187,6 +187,10 @@
                     <i class="fas fa-arrow-down text-xs text-green-400"></i>
                     <span>Descer</span>
                 </button>
+                <button id="remote-obs-toggle" class="grid-button">
+                    <i class="fas fa-eye text-blue-400"></i>
+                    <span>OBS</span>
+                </button>
             </div>
         </div>
 
@@ -377,6 +381,12 @@
         const completeIcon = completeBtn.querySelector('i');
         const completeLabel = completeBtn.querySelector('span');
         let isCompleteActive = false;
+        
+        const obsBtn = document.getElementById('remote-obs-toggle');
+        const obsIcon = obsBtn.querySelector('i');
+        const obsLabel = obsBtn.querySelector('span');
+        let isObsActive = false;
+
         const playBtn = document.getElementById('remote-play');
         const playIcon = playBtn.querySelector('i');
         const playLabel = playBtn.querySelector('span');
@@ -475,6 +485,15 @@
             fullscreenStatus.classList.toggle('text-gray-400', !active);
         };
 
+        const updateObsState = (active) => {
+            console.log('Updating remote OBS state to:', active);
+            isObsActive = active;
+            obsIcon.className = active ? 'fas fa-eye text-white' : 'fas fa-eye-slash text-blue-400';
+            obsBtn.classList.toggle('bg-green-600', active);
+            obsBtn.classList.toggle('bg-gray-200', !active);
+            obsLabel.textContent = active ? 'OBS ON' : 'OBS';
+        };
+
         bc.onmessage = (event) => {
             const { action, value, source } = event.data || {};
             console.log('Remote received message:', action, value, 'from', source);
@@ -494,6 +513,8 @@
                     updateBackgroundState(Boolean(value));
                 } else if (action === 'completeState') {
                     updateCompleteState(Boolean(value));
+                } else if (action === 'obsState') {
+                    updateObsState(Boolean(value));
                 }
             }
         };
@@ -688,8 +709,16 @@
             remoteSelectedResult = -1;
         });
 
+        document.getElementById('remote-obs-toggle').onclick = () => {
+            send('toggleObs');
+            updateObsState(!isObsActive);
+        };
+
         // Solicitar estado inicial de fullscreen ao carregar
         send('requestFullscreenState');
+        
+        // Solicitar estado inicial do OBS
+        send('requestObsState');
         
         // Solicitar valores atuais dos filtros de áudio
         send('requestAudioFilters');

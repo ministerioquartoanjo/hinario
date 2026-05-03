@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --force",
     "build": "vite build",
     "preview": "vite preview",
     "prepare-deploy": "npm run build && echo '\n✅ Build concluído! Faça upload da pasta dist/ para o servidor.'",
@@ -15,5 +15,8 @@
     "postcss": "^8.5.6",
     "tailwindcss": "^3.4.15",
     "vite": "^7.3.1"
+  },
+  "dependencies": {
+    "obs-websocket-js": "^5.0.8"
   }
 }

@@ -24,6 +24,11 @@ export const broadcastState = (state, player) => {
     broadcast('audioFiltersState', state.settings.audioFilters);
     broadcast('backgroundState', state.settings.showBackground);
     broadcast('completeState', state.settings.isCompleto);
+    
+    // Transmitir estado do OBS se o serviço estiver disponível
+    if (state.obsConnected !== undefined) {
+        broadcast('obsState', state.obsEnabled && state.obsConnected);
+    }
 };
 
 export const setupBroadcastListeners = (actions, state) => {
@@ -50,6 +55,11 @@ export const setupBroadcastListeners = (actions, state) => {
             case 'requestCompleteState':
                 broadcast('completeState', state.settings.isCompleto);
                 break;
+            case 'requestObsState':
+                if (state.obsConnected !== undefined) {
+                    broadcast('obsState', state.obsEnabled && state.obsConnected);
+                }
+                break;
             case 'requestPlayState':
                 const player = document.getElementById('audio-player');
                 const isPlaying = player ? !player.paused && !player.ended && player.readyState > 2 : false;
@@ -57,6 +67,13 @@ export const setupBroadcastListeners = (actions, state) => {
                 break;
             case 'selectHino':
                 if (data.numero) actions.selectHino(data.numero);
+                break;
+            case 'toggleObs':
+                if (actions.toggleObs) {
+                    actions.toggleObs();
+                } else {
+                    console.warn('Ação toggleObs não encontrada no objeto actions');
+                }
                 break;
             default:
                 if (actions[action]) {
