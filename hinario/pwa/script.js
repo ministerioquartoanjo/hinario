@@ -16,8 +16,14 @@ let countdownInterval = null;
 let cachedJsonCount = 0;
 let cachedMp3Count = 0;
 let cacheVersion = '1.0.1'; // Atualizado para forçar refresh dos hinos com vídeos
-const APP_VERSION = window.APP_VERSION || '2026.04.09.1';
+const APP_VERSION = window.APP_VERSION || '2026.04.17.1';
 const fullscreenWarningTimeout = { current: null };
+
+// Auto-scroll variables
+let autoScrollInterval = null;
+let autoScrollStartTime = 0;
+let autoScrollDelay = 0;
+const AUTO_SCROLL_TITLE_DELAY = 2000; // 2 segundos para mostrar título
 
 const saveSettings = () => localStorage.setItem('hinario_settings', JSON.stringify(state.settings));
 
@@ -90,7 +96,7 @@ const initAudio = () => {
 };
 
 const loadAudio = (numero) => {
-    audioPlayer.loadAudio(numero, state, {
+    return audioPlayer.loadAudio(numero, state, {
         updateDisplay: () => {
             cacheService.initializeCounters().then(counts => {
                 cachedJsonCount = counts.json;
@@ -116,7 +122,7 @@ const nextSlide = () => {
         state.currentSlide++;
         renderHino();
     } else if (state.isPlaylistActive) {
-        nextHino();
+        playlistNextRandom();
     }
 };
 
@@ -128,7 +134,129 @@ const prevSlide = () => {
 
 const nextHino = () => {
     const idx = state.hinos.findIndex(h => h.numero === state.currentHino?.numero);
-    selectHino(state.hinos[(idx + 1) % state.hinos.length]);
+    return selectHino(state.hinos[(idx + 1) % state.hinos.length]);
+};
+
+const playlistNextRandom = async () => {
+    if (state.hinos.length === 0) return;
+    const randIdx = Math.floor(Math.random() * state.hinos.length);
+    await selectHino(state.hinos[randIdx]);
+
+    // Aguardar 2 segundos antes de iniciar o áudio (tempo do slide de apresentação)
+    setTimeout(() => {
+        if (!state.isPlaylistActive) return;
+
+        const player = document.getElementById('audio-player');
+        if (player) {
+            player.currentTime = 0;
+            player.play().catch(e => console.warn("Autoplay playlist falhou:", e));
+        }
+    }, AUTO_SCROLL_TITLE_DELAY);
+};
+
+// --- Auto-scroll Functions ---
+const stopAutoScroll = () => {
+    if (autoScrollInterval) {
+        clearInterval(autoScrollInterval);
+        autoScrollInterval = null;
+    }
+};
+
+const startAutoScroll = (scrollDuration) => {
+    stopAutoScroll();
+
+    const container = $('#slide-content > div');
+    if (!container.length) return;
+
+    const scrollHeight = container[0].scrollHeight - container[0].clientHeight;
+    if (scrollHeight <= 0) return;
+
+    const scrollStep = scrollHeight / (scrollDuration * 60); // 60fps
+    let currentScroll = 0;
+
+    autoScrollInterval = setInterval(() => {
+        currentScroll += scrollStep;
+        if (currentScroll >= scrollHeight) {
+            currentScroll = scrollHeight;
+            stopAutoScroll();
+        }
+        container.scrollTop(currentScroll);
+    }, 1000 / 60);
+};
+
+const initPlaylistAutoScroll = async () => {
+    if (!state.isPlaylistActive || !state.currentHino) return;
+
+    const player = document.getElementById('audio-player');
+    if (!player) return;
+
+    // Aguardar o áudio estar pronto para obter a duração
+    const waitForDuration = () => new Promise((resolve) => {
+        if (player.duration && !isNaN(player.duration)) {
+            resolve(player.duration);
+            return;
+        }
+        const checkDuration = () => {
+            if (player.duration && !isNaN(player.duration)) {
+                player.removeEventListener('loadedmetadata', checkDuration);
+                resolve(player.duration);
+            }
+        };
+        player.addEventListener('loadedmetadata', checkDuration);
+        setTimeout(() => resolve(player.duration || 180), 5000);
+    });
+
+    const duration = await waitForDuration();
+
+    // Passo 1: Aguardar 2 segundos (slide de apresentação do título)
+    setTimeout(() => {
+        if (!state.isPlaylistActive || !state.currentHino) return;
+
+        // Passo 2: Mudar para modo completo (mostrar letra inteira)
+        state.settings.isCompleto = true;
+        state.currentSlide = 1;
+        renderHino();
+        applySettings();
+
+        // Passo 3: Verificar se há contador de introdução
+        const hasIntroCountdown = state.currentHino.introducao && state.currentHino.introducao > 0;
+
+        if (hasIntroCountdown) {
+            // Aguardar o contador de introdução terminar
+            const introSeconds = state.currentHino.introducao;
+
+            const checkIntroComplete = setInterval(() => {
+                if (!state.isPlaylistActive) {
+                    clearInterval(checkIntroComplete);
+                    return;
+                }
+
+                const currentTime = player.currentTime || 0;
+                const introRemaining = introSeconds - currentTime;
+
+                // Quando o contador acabar (currentTime >= introducao), iniciar rolagem
+                if (currentTime >= introSeconds || introRemaining <= 0) {
+                    clearInterval(checkIntroComplete);
+
+                    const remainingDuration = duration - currentTime;
+                    // Subtrair 2% para terminar antes do final
+                    const scrollDuration = remainingDuration * 0.98;
+
+                    if (scrollDuration > 5) {
+                        setTimeout(() => startAutoScroll(scrollDuration), 100);
+                    }
+                }
+            }, 100);
+        } else {
+            // Sem contador: iniciar rolagem imediatamente
+            // Subtrair 2% para terminar antes do final
+            const scrollDuration = duration * 0.98;
+
+            if (scrollDuration > 5) {
+                setTimeout(() => startAutoScroll(scrollDuration), 100);
+            }
+        }
+    }, AUTO_SCROLL_TITLE_DELAY);
 };
 
 const selectHino = async (hinoOrIndex) => {
@@ -168,10 +296,15 @@ const selectHino = async (hinoOrIndex) => {
     state.currentHino = hino;
     state.currentSlide = 0;
     renderHino();
-    loadAudio(hino.numero);
+    await loadAudio(hino.numero);
     $('#hino-search').val(`${hino.numero} - ${hino.titulo}`).blur();
     hinoRenderer.updateVideos(hino);
     document.getElementById('slide-preview').scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+    // Iniciar rolagem automática em modo playlist
+    if (state.isPlaylistActive) {
+        initPlaylistAutoScroll();
+    }
 };
 
 // --- Busca ---
@@ -260,8 +393,8 @@ const setupEvents = () => {
         $('#btn-clear-search').click();
     });
 
-    $('#btn-prev').on('click', prevSlide);
-    $('#btn-next').on('click', nextSlide);
+    $('#btn-prev').on('click', () => { stopAutoScroll(); prevSlide(); });
+    $('#btn-next').on('click', () => { stopAutoScroll(); nextSlide(); });
     $('#btn-random-hino').on('click', () => {
         if (!state.hinos.length) return;
         const randIdx = Math.floor(Math.random() * state.hinos.length);
@@ -435,11 +568,7 @@ const setupEvents = () => {
         $('#btn-fs-skip-next').removeClass('hidden');
         broadcast('playlistState', true);
 
-        // Selecionar Hino Aleatório
-        const randIdx = Math.floor(Math.random() * state.hinos.length);
-        await selectHino(state.hinos[randIdx]);
-
-        // Entrar em Tela Cheia
+        // Entrar em Tela Cheia (antes do await para manter o gesto do usuário válido)
         const elem = document.getElementById('slide-preview');
         if (elem.requestFullscreen) {
             elem.requestFullscreen().catch(err => {
@@ -449,31 +578,26 @@ const setupEvents = () => {
             elem.webkitRequestFullscreen();
         }
 
-        // Tocar áudio
-        setTimeout(() => {
-            const player = document.getElementById('audio-player');
-            if (player) {
-                player.currentTime = 0;
-                player.play().catch(e => console.warn("Autoplay bloqueado ou falhou:", e));
-            }
-        }, 1000);
+        // Selecionar Hino Aleatório
+        const randIdx = Math.floor(Math.random() * state.hinos.length);
+        await selectHino(state.hinos[randIdx]);
+
+        // Tocar áudio (loadAudio já foi aguardado dentro de selectHino)
+        const plPlayer = document.getElementById('audio-player');
+        if (plPlayer) {
+            plPlayer.currentTime = 0;
+            plPlayer.play().catch(e => console.warn("Autoplay bloqueado ou falhou:", e));
+        }
     });
 
     $('#btn-playlist-next, #btn-fs-skip-next').on('click', async () => {
-        const loading = document.getElementById('audio-loading');
-        if (loading) loading.classList.remove('hidden');
-        
         await nextHino();
         
-        // O selectHino chamado por nextHino já chama loadAudio.
-        // Precisamos garantir que o play seja chamado após o carregamento.
-        setTimeout(() => {
-            const player = document.getElementById('audio-player');
-            if (player) {
-                player.play().catch(e => console.warn("Autoplay ao avançar playlist falhou:", e));
-            }
-            if (loading) loading.classList.add('hidden');
-        }, 800);
+        // loadAudio já foi aguardado dentro de selectHino/nextHino
+        const plPlayer = document.getElementById('audio-player');
+        if (plPlayer) {
+            plPlayer.play().catch(e => console.warn("Autoplay ao avançar playlist falhou:", e));
+        }
     });
 
     $('#btn-playlist-stop').on('click', function() {
@@ -501,13 +625,16 @@ const setupEvents = () => {
             case 'ArrowRight':
             case ' ':
                 e.preventDefault();
+                stopAutoScroll(); // Parar rolagem automática
                 nextSlide();
                 break;
             case 'ArrowLeft':
                 e.preventDefault();
+                stopAutoScroll(); // Parar rolagem automática
                 prevSlide();
                 break;
             case 'ArrowUp':
+                stopAutoScroll(); // Parar rolagem automática
                 if (state.settings.isCompleto) {
                     const container = $('#slide-content > div');
                     container.scrollTop(container.scrollTop() - 50);
@@ -516,6 +643,7 @@ const setupEvents = () => {
                 }
                 break;
             case 'ArrowDown':
+                stopAutoScroll(); // Parar rolagem automática
                 if (state.settings.isCompleto) {
                     const container = $('#slide-content > div');
                     container.scrollTop(container.scrollTop() + 50);
@@ -524,10 +652,12 @@ const setupEvents = () => {
                 }
                 break;
             case 'Home':
+                stopAutoScroll(); // Parar rolagem automática
                 state.currentSlide = 0;
                 renderHino();
                 break;
             case 'End':
+                stopAutoScroll(); // Parar rolagem automática
                 if (state.currentHino) {
                     state.currentSlide = state.currentHino.letras.length - 1;
                     renderHino();
@@ -575,8 +705,8 @@ const setupEvents = () => {
 
     const handleSwipe = () => {
         const threshold = 50;
-        if (touchendX < touchstartX - threshold) nextSlide();
-        if (touchendX > touchstartX + threshold) prevSlide();
+        if (touchendX < touchstartX - threshold) { stopAutoScroll(); nextSlide(); }
+        if (touchendX > touchstartX + threshold) { stopAutoScroll(); prevSlide(); }
     };
 
     // Filtros de Áudio (Equalizador)
@@ -641,9 +771,10 @@ const setupEvents = () => {
         $('#btn-play-pause i, #btn-fs-play-pause i').removeClass('fa-pause').addClass('fa-play');
         if (countdownInterval) clearInterval(countdownInterval);
         $('#intro-countdown').addClass('hidden');
-        
+        stopAutoScroll(); // Parar rolagem automática
+
         if (state.isPlaylistActive) {
-            nextHino();
+            playlistNextRandom();
         } else {
             broadcastState(state, player);
         }
@@ -653,6 +784,7 @@ const setupEvents = () => {
         $('#btn-play-pause i, #btn-fs-play-pause i').removeClass('fa-pause').addClass('fa-play');
         if (countdownInterval) clearInterval(countdownInterval);
         $('#intro-countdown').addClass('hidden');
+        stopAutoScroll(); // Parar rolagem automática
         broadcastState(state, player);
     };
 
@@ -660,6 +792,7 @@ const setupEvents = () => {
         $('#btn-play-pause i, #btn-fs-play-pause i').removeClass('fa-pause').addClass('fa-play');
         if (countdownInterval) clearInterval(countdownInterval);
         $('#intro-countdown').addClass('hidden');
+        stopAutoScroll(); // Parar rolagem automática
         broadcastState(state, player);
     };
 
@@ -793,6 +926,7 @@ const setupEvents = () => {
     $('#slide-preview').on('dblclick', (e) => {
         // Evita zoom acidental em dispositivos móveis
         e.preventDefault();
+        stopAutoScroll(); // Parar rolagem automática
         nextSlide();
     });
 };

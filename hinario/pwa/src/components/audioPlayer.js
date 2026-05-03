@@ -10,6 +10,28 @@ export const audioPlayer = {
         const loading = document.getElementById('audio-loading');
         
         if (!player || !loading) return;
+
+        // Reset play button immediately when loading new audio
+        $('#btn-play-pause i, #btn-fs-play-pause i').removeClass('fa-pause').addClass('fa-play');
+
+        // Helper: wait for audio to be ready to play
+        const waitForReady = () => new Promise((resolve) => {
+            if (player.readyState >= 3 && player.src) {
+                // Add small delay to ensure player is fully initialized
+                setTimeout(resolve, 50);
+                return;
+            }
+            const onReady = () => {
+                player.removeEventListener('canplaythrough', onReady);
+                player.removeEventListener('canplay', onReady);
+                player.removeEventListener('loadeddata', onReady);
+                // Add small delay to ensure player is fully initialized
+                setTimeout(resolve, 50);
+            };
+            player.addEventListener('canplaythrough', onReady);
+            player.addEventListener('canplay', onReady);
+            player.addEventListener('loadeddata', onReady);
+        });
         
         const numStr = numero.toString().padStart(3, '0');
         const audioUrl = `https://raw.githubusercontent.com/ministerioquartoanjo/hinario/refs/heads/desenv/media/${numStr}-piano.mp3`;
@@ -47,6 +69,7 @@ export const audioPlayer = {
                 player.load();
                 player.playbackRate = targetSpeed;
                 $('#speed-display, #fs-speed-display').text(targetSpeed.toFixed(1) + 'x');
+                await waitForReady();
                 loading.classList.add('hidden');
                 return;
             }
@@ -66,6 +89,7 @@ export const audioPlayer = {
                 player.load();
                 player.playbackRate = targetSpeed;
                 $('#speed-display, #fs-speed-display').text(targetSpeed.toFixed(1) + 'x');
+                await waitForReady();
                 loading.classList.add('hidden');
                 if (broadcastFilters) broadcastFilters();
                 return;
@@ -80,15 +104,14 @@ export const audioPlayer = {
         player.playbackRate = targetSpeed;
         $('#speed-display, #fs-speed-display').text(targetSpeed.toFixed(1) + 'x');
 
-        player.oncanplay = () => {
+        try {
+            await waitForReady();
             loading.classList.add('hidden');
             player.playbackRate = targetSpeed;
             if (broadcastFilters) broadcastFilters();
-        };
-
-        player.onerror = () => {
-            console.warn("Audio load error.");
+        } catch (e) {
+            console.warn("Audio load error:", e);
             loading.classList.add('hidden');
-        };
+        }
     }
 };
