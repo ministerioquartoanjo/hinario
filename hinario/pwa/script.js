@@ -1301,11 +1301,17 @@ uiUtils.updateCacheDisplay(cachedJsonCount, cachedMp3Count);
     });
 
     $btnObsConnect.on('click', async () => {
-        obsService.config.address = $('#obs-address').val();
-        obsService.config.password = $('#obs-password').val();
-        obsService.config.sourceName = $('#obs-source-name').val();
+        const address = $('#obs-address').val();
+        const password = $('#obs-password').val();
+        let sourceName = $('#obs-source-name').val()?.trim();
         
-        $btnObsConnect.prop('disabled', true).text('Conectando...');
+        if (!sourceName) {
+            sourceName = 'Hinario';
+            $('#obs-source-name').val(sourceName);
+        }
+
+        obsService.config = { address, password, sourceName };
+        $btnObsConnect.text('Conectando...').prop('disabled', true);
         try {
             await obsService.connect();
             uiUtils.showToast('Conectado ao OBS!', 'success');

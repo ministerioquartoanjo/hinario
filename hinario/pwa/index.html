@@ -618,12 +618,12 @@
                     <input type="password" id="obs-password" placeholder="Senha do WebSocket"
                         class="w-full p-2 border rounded dark:bg-gray-700 dark:border-gray-600">
                 </div>
-                <div>
-                    <label class="block text-sm mb-1 font-medium">Nome da Fonte no OBS (Opcional):</label>
-                    <input type="text" id="obs-source-name" placeholder="Ex: Letra Hinário"
-                        class="w-full p-2 border rounded dark:bg-gray-700 dark:border-gray-600">
-                    <p class="text-[10px] text-gray-400 mt-1">Se definido, o app tentará atualizar esta fonte de texto no OBS.</p>
+                <div class="space-y-1">
+                    <label class="text-xs text-gray-400">Nome da Fonte no OBS</label>
+                    <input type="text" id="obs-source-name" placeholder="Ex: Hinario" value="Hinario"
+                        class="w-full bg-gray-700 border border-gray-600 rounded p-2 text-white text-sm focus:outline-none focus:border-blue-500">
                 </div>
+                <p class="text-[10px] text-gray-400 mt-1">Se definido, o app tentará atualizar esta fonte de texto no OBS.</p>
                 <div class="flex items-center gap-2">
                     <div id="obs-status-indicator" class="w-3 h-3 rounded-full bg-red-500"></div>
                     <span id="obs-status-text" class="text-sm">Desconectado</span>

@@ -7,7 +7,7 @@ class ObsService {
         this.config = JSON.parse(localStorage.getItem('obs_config')) || {
             address: 'localhost:4455',
             password: '',
-            sourceName: ''
+            sourceName: 'Hinario'
         };
 
         // Escutar eventos de conexão e desconexão
@@ -58,6 +58,9 @@ class ObsService {
     }
 
     saveConfig() {
+        if (!this.config.sourceName || this.config.sourceName.trim() === '') {
+            this.config.sourceName = 'Hinario';
+        }
         localStorage.setItem('obs_config', JSON.stringify(this.config));
     }
 
