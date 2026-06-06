@@ -342,7 +342,7 @@
                             <div class="flex items-center gap-2 text-gray-700 dark:text-gray-300">
                                 <span class="text-sm">Texto:</span>
                                 <input type="color" id="font-color-picker" value="#FFFFFF"
-                                    class="h-8 w-8 rounded overflow-hidden cursor-pointer border dark:border-gray-600">
+                                    class="h-8 w-8 rounded overflow-hidden cursor-pointer border bg-white dark:bg-gray-800 dark:border-gray-600">
                             </div>
                             <div class="flex items-center gap-2 text-gray-700 dark:text-gray-300">
                                 <span class="text-sm">Fundo:</span>
@@ -469,7 +469,9 @@
                         <div><kbd class="px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded">PgUp/PgDown</kbd> Próx/Ant Hino
                         </div>
                         <div><kbd class="px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded">F</kbd> Alternar fundo</div>
+                        <div><kbd class="px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded">B</kbd> Mudar fundo</div>
                         <div><kbd class="px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded">C</kbd> Modo Completo</div>
+                        <div><kbd class="px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded">F8</kbd> Controle Remoto</div>
                         <div><kbd class="px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded">+ / -</kbd> Tamanho Fonte</div>
                         <div><kbd class="px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded">Setas Cima/Baixo</kbd> Rolar tela</div>
                         <div><kbd class="px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded">Shift + Setas</kbd> Altura Linha</div>
@@ -645,7 +647,7 @@
     </div>
 
     <!-- Scripts -->
-    <script src="version-config.js"></script>
+    <script src="version-config.js?v={{BUILD_TIMESTAMP}}"></script>
     <script>
         // Set version immediately from config
         document.addEventListener('DOMContentLoaded', () => {
@@ -655,51 +657,55 @@
                 el.textContent = `v${version}`;
             });
         });
-    </script>
-    <script type="module" src="script.js"></script>
 
-    <script>
-        // PWA Service Worker Registration with Update Logic
+        // Register Service Worker
         if ('serviceWorker' in navigator) {
-            window.addEventListener('load', () => {
-                navigator.serviceWorker.register('service-worker.js')
-                    .then(reg => {
-                        console.log('Service Worker registrado!');
+            const swVersion = window.APP_VERSION || '1.0.0';
+            navigator.serviceWorker.register(`sw.js?v=${swVersion}`).then((registration) => {
+                console.log('[App] SW registered:', registration.scope);
 
-                        // Verificar atualizações automaticamente em intervalos (ex: a cada 1 hora)
-                        setInterval(() => {
-                            reg.update();
-                        }, 60 * 60 * 1000);
+                // Verificar atualizações a cada 30 segundos
+                setInterval(() => {
+                    registration.update();
+                }, 30000);
 
-                        reg.onupdatefound = () => {
-                            const installingWorker = reg.installing;
-                            installingWorker.onstatechange = () => {
-                                if (installingWorker.state === 'installed') {
-                                    if (navigator.serviceWorker.controller) {
-                                        // Nova versão encontrada! 
-                                        console.log('Nova versão disponível. Recarregando...');
-                                        // Podemos avisar o usuário ou simplesmente recarregar
-                                        if (confirm('Uma nova atualização do Hinário está disponível. Deseja carregar agora?')) {
-                                            window.location.reload();
-                                        }
-                                    }
-                                }
-                            };
-                        };
-                    })
-                    .catch(err => console.log('Falha ao registrar Service Worker:', err));
-            });
+                // Escutar mensagens do SW
+                navigator.serviceWorker.addEventListener('message', (event) => {
+                    if (event.data.type === 'SW_ACTIVATED') {
+                        const newCache = event.data.cacheName;
+                        const currentCache = localStorage.getItem('sw_cache_version');
+                        
+                        console.log('[App] SW activated with cache:', newCache);
+                        
+                        // Se o cache mudou, há nova versão
+                        if (currentCache && currentCache !== newCache) {
+                            console.log('[App] New version detected! Reloading...');
+                            localStorage.setItem('sw_cache_version', newCache);
+                            
+                            // Forçar reload imediatamente
+                            window.location.reload();
+                        } else {
+                            localStorage.setItem('sw_cache_version', newCache);
+                        }
+                    }
+                });
 
-            // Recarregar quando o novo Service Worker assumir o controle
-            let refreshing = false;
-            navigator.serviceWorker.addEventListener('controllerchange', () => {
-                if (!refreshing) {
-                    window.location.reload();
-                    refreshing = true;
-                }
+                // Escutar quando há nova versão do SW
+                registration.addEventListener('updatefound', () => {
+                    const newWorker = registration.installing;
+                    newWorker.addEventListener('statechange', () => {
+                        if (newWorker.state === 'activated') {
+                            console.log('[App] New SW activated');
+                        }
+                    });
+                });
+
+            }).catch((error) => {
+                console.error('[App] SW registration failed:', error);
             });
         }
     </script>
+    <script type="module" src="script.js"></script>
 </body>
 
 </html>

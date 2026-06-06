@@ -7,14 +7,15 @@
     "dev": "vite --force",
     "build": "vite build",
     "preview": "vite preview",
-    "prepare-deploy": "npm run build && echo '\n✅ Build concluído! Faça upload da pasta dist/ para o servidor.'",
-    "deploy:rsync": "rsync -rlptDv --delete --chmod=D755,F644 dist/* af_hostoo:/home/zjpyv5vi/public_html/hinariopwa"
+    "deploy": "npm run build && wrangler pages deploy dist --project-name=hinariopwa --branch=production",
+    "deploy:preview": "npm run build && wrangler pages deploy dist --project-name=hinariopwa --branch=preview"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.24",
     "postcss": "^8.5.6",
     "tailwindcss": "^3.4.15",
-    "vite": "^7.3.1"
+    "vite": "^7.3.1",
+    "wrangler": "^4.0.0"
   },
   "dependencies": {
     "obs-websocket-js": "^5.0.8"

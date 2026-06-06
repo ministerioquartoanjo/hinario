@@ -28,6 +28,7 @@ export const broadcastState = (state, player) => {
     // Transmitir estado do OBS se o serviço estiver disponível
     if (state.obsConnected !== undefined) {
         broadcast('obsState', state.obsEnabled && state.obsConnected);
+        broadcast('obsConnected', state.obsConnected);
     }
 };
 
@@ -58,6 +59,7 @@ export const setupBroadcastListeners = (actions, state) => {
             case 'requestObsState':
                 if (state.obsConnected !== undefined) {
                     broadcast('obsState', state.obsEnabled && state.obsConnected);
+                    broadcast('obsConnected', state.obsConnected);
                 }
                 break;
             case 'requestPlayState':

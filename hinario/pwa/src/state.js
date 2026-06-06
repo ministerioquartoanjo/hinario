@@ -13,7 +13,9 @@ export const state = {
     // OBS State
     obsConnected: false,
     obsEnabled: false,
+    // Merge runtime settings with persisted settings
     settings: {
+        ...INITIAL_STATE.settings,
         gainNode: null,
         bassNode: null,
         midNode: null,

@@ -26,6 +26,15 @@ let autoScrollStartTime = 0;
 let autoScrollDelay = 0;
 const AUTO_SCROLL_TITLE_DELAY = 2000; // 2 segundos para mostrar título
 
+// Playlist timeout tracking
+let playlistTimeouts = [];
+
+const clearAllPlaylistTimeouts = () => {
+    console.log('DEBUG: Limpando', playlistTimeouts.length, 'timeouts pendentes');
+    playlistTimeouts.forEach(id => clearTimeout(id));
+    playlistTimeouts = [];
+};
+
 const saveSettings = () => localStorage.setItem('hinario_settings', JSON.stringify(state.settings));
 
 const applySettings = () => {
@@ -34,8 +43,13 @@ const applySettings = () => {
 
     // Ajustar cores padrão baseado no tema se não houver cor personalizada manual
     if (state.settings.darkMode) {
+        // Modo escuro: texto claro, fundo escuro
         if (state.settings.fontColor === '#000000') state.settings.fontColor = '#FFFFFF';
         if (state.settings.bgColor === '#FFFFFF') state.settings.bgColor = '#000000';
+    } else {
+        // Modo claro: texto escuro, fundo claro
+        if (state.settings.fontColor === '#FFFFFF') state.settings.fontColor = '#000000';
+        if (state.settings.bgColor === '#000000') state.settings.bgColor = '#FFFFFF';
     }
 
     const $btnToggleBg = $('#btn-toggle-bg');
@@ -70,9 +84,11 @@ const applySettings = () => {
             'background-image': `url('${bgUrl}')`,
             'background-color': 'transparent'
         });
+        $('#slide-bg-overlay').removeClass('hidden');
         $('#slide-content').css('text-shadow', '2px 2px 8px rgba(0,0,0,0.9), 0px 0px 10px rgba(0,0,0,0.5)');
     } else {
         $('#slide-bg').addClass('hidden');
+        $('#slide-bg-overlay').addClass('hidden');
         $('#slide-preview').css('background-color', state.settings.bgColor || '#000000');
         $('#slide-content').css('text-shadow', 'none');
     }
@@ -197,28 +213,36 @@ const playlistNextRandom = async () => {
     if (state.hinos.length === 0) return;
     const randIdx = Math.floor(Math.random() * state.hinos.length);
     await selectHino(state.hinos[randIdx]);
-
-    // Aguardar 2 segundos antes de iniciar o áudio (tempo do slide de apresentação)
-    setTimeout(() => {
-        if (!state.isPlaylistActive) return;
-
-        const player = document.getElementById('audio-player');
-        if (player) {
-            player.currentTime = 0;
-            player.play().catch(e => console.warn("Autoplay playlist falhou:", e));
-        }
-    }, AUTO_SCROLL_TITLE_DELAY);
 };
+
+const randomHino = async () => {
+    if (state.hinos.length === 0) return;
+    const randIdx = Math.floor(Math.random() * state.hinos.length);
+    await selectHino(state.hinos[randIdx]);
+};
+
+// Expor para uso no broadcast listener
+window.__playlistNextRandom = playlistNextRandom;
 
 // --- Auto-scroll Functions ---
 const stopAutoScroll = () => {
+    console.log('DEBUG: stopAutoScroll executado, interval:', autoScrollInterval);
     if (autoScrollInterval) {
         clearInterval(autoScrollInterval);
         autoScrollInterval = null;
+        console.log('DEBUG: Interval limpo');
     }
 };
 
 const startAutoScroll = (scrollDuration) => {
+    console.log('DEBUG: startAutoScroll chamado, duration:', scrollDuration, 'isPlaylistActive:', state.isPlaylistActive);
+    
+    // Só executar se a playlist estiver ativa
+    if (!state.isPlaylistActive) {
+        console.log('DEBUG: Playlist não está ativa, cancelando startAutoScroll');
+        return;
+    }
+    
     stopAutoScroll();
 
     const container = $('#slide-content > div');
@@ -231,6 +255,11 @@ const startAutoScroll = (scrollDuration) => {
     let currentScroll = 0;
 
     autoScrollInterval = setInterval(() => {
+        // Verificar se playlist ainda está ativa
+        if (!state.isPlaylistActive) {
+            stopAutoScroll();
+            return;
+        }
         currentScroll += scrollStep;
         if (currentScroll >= scrollHeight) {
             currentScroll = scrollHeight;
@@ -265,7 +294,7 @@ const initPlaylistAutoScroll = async () => {
     const duration = await waitForDuration();
 
     // Passo 1: Aguardar 2 segundos (slide de apresentação do título)
-    setTimeout(() => {
+    const titleTimeout = setTimeout(() => {
         if (!state.isPlaylistActive || !state.currentHino) return;
 
         // Passo 2: Mudar para modo completo (mostrar letra inteira)
@@ -299,7 +328,10 @@ const initPlaylistAutoScroll = async () => {
                     const scrollDuration = remainingDuration * 0.98;
 
                     if (scrollDuration > 5) {
-                        setTimeout(() => startAutoScroll(scrollDuration), 100);
+                        const scrollTimeout = setTimeout(() => {
+                            if (state.isPlaylistActive) startAutoScroll(scrollDuration);
+                        }, 100);
+                        playlistTimeouts.push(scrollTimeout);
                     }
                 }
             }, 100);
@@ -309,10 +341,15 @@ const initPlaylistAutoScroll = async () => {
             const scrollDuration = duration * 0.98;
 
             if (scrollDuration > 5) {
-                setTimeout(() => startAutoScroll(scrollDuration), 100);
+                const scrollTimeout = setTimeout(() => {
+                    if (state.isPlaylistActive) startAutoScroll(scrollDuration);
+                }, 100);
+                playlistTimeouts.push(scrollTimeout);
             }
         }
     }, AUTO_SCROLL_TITLE_DELAY);
+    
+    playlistTimeouts.push(titleTimeout);
 };
 
 const selectHino = async (hinoOrIndex) => {
@@ -503,8 +540,13 @@ const setupEvents = () => {
     });
 
     $('#btn-change-bg, #btn-fs-change-bg').on('click', () => {
+        console.log('DEBUG: btn-change-bg clicked');
+        console.log('DEBUG: BACKGROUNDS.length =', BACKGROUNDS.length);
+        console.log('DEBUG: current bgIndex =', state.settings.bgIndex);
         state.settings.bgIndex = (state.settings.bgIndex + 1) % BACKGROUNDS.length;
         state.settings.showBackground = true;
+        console.log('DEBUG: new bgIndex =', state.settings.bgIndex);
+        console.log('DEBUG: new bgUrl =', BACKGROUNDS[state.settings.bgIndex]);
         applySettings();
         saveSettings();
         const player = document.getElementById('audio-player');
@@ -667,7 +709,10 @@ const setupEvents = () => {
         if (player) {
             player.pause();
             player.currentTime = 0;
-            // O evento onpause/onstop já cuidará de atualizar os ícones e o broadcast
+            // Atualizar ícones imediatamente
+            $('#btn-play-pause i, #btn-fs-play-pause i').removeClass('fa-pause').addClass('fa-play');
+            if (countdownInterval) clearInterval(countdownInterval);
+            $('#intro-countdown').addClass('hidden');
         }
         
         broadcast('playlistState', false);
@@ -737,6 +782,10 @@ const setupEvents = () => {
                     localStorage.removeItem('hinario_settings');
                     location.reload();
                 }
+                break;
+            case 'F8':
+                e.preventDefault();
+                $('#menu-remote-control').click();
                 break;
             case 'Escape':
                 $('.btn-close-modal').click();
@@ -840,7 +889,7 @@ const setupEvents = () => {
         $('#btn-play-pause i, #btn-fs-play-pause i').removeClass('fa-pause').addClass('fa-play');
         if (countdownInterval) clearInterval(countdownInterval);
         $('#intro-countdown').addClass('hidden');
-        stopAutoScroll(); // Parar rolagem automática
+        // Não para a rolagem automática - apenas pausa o áudio
         broadcastState(state, player);
     };
 
@@ -848,7 +897,7 @@ const setupEvents = () => {
         $('#btn-play-pause i, #btn-fs-play-pause i').removeClass('fa-pause').addClass('fa-play');
         if (countdownInterval) clearInterval(countdownInterval);
         $('#intro-countdown').addClass('hidden');
-        stopAutoScroll(); // Parar rolagem automática
+        // Não para a rolagem automática - apenas pausa o áudio
         broadcastState(state, player);
     };
 
@@ -1119,6 +1168,45 @@ uiUtils.updateCacheDisplay(cachedJsonCount, cachedMp3Count);
                 if (document.exitFullscreen) document.exitFullscreen();
             }
         },
+        exitFullscreen: () => {
+            if (document.fullscreenElement) {
+                if (document.exitFullscreen) document.exitFullscreen();
+                else if (document.webkitExitFullscreen) document.webkitExitFullscreen();
+            }
+        },
+        stopAutoScroll: () => {
+            console.log('DEBUG: stopAutoScroll chamado via broadcast');
+            stopAutoScroll();
+        },
+        randomHino: () => {
+            randomHino();
+        },
+        openObsSettings: () => {
+            $('#menu-obs-settings').click();
+        },
+        clearSlide: () => {
+            // Limpar todos os timeouts pendentes da playlist
+            clearAllPlaylistTimeouts();
+            
+            // Limpar o hino carregado da tela
+            state.currentHino = null;
+            state.currentSlide = 0;
+            $('#slide-content').empty().append('<p class="text-2xl md:text-3xl lg:text-4xl text-white font-semibold leading-relaxed">Selecione um hino para começar</p>');
+            $('#video-list').empty();
+            $('#video-section').addClass('hidden');
+            
+            // Parar o áudio
+            const player = document.getElementById('audio-player');
+            if (player) {
+                player.pause();
+                player.currentTime = 0;
+            }
+            
+            // Resetar ícones
+            $('#btn-play-pause i, #btn-fs-play-pause i').removeClass('fa-pause').addClass('fa-play');
+            if (countdownInterval) clearInterval(countdownInterval);
+            $('#intro-countdown').addClass('hidden');
+        },
         togglePlay: () => {
             initAudio();
             const player = document.getElementById('audio-player');
@@ -1149,6 +1237,15 @@ uiUtils.updateCacheDisplay(cachedJsonCount, cachedMp3Count);
         toggleComplete: () => $('#check-completo').click(),
         shuffleBackground: () => $('#btn-change-bg').click(),
         toggleRandomPlaylist: () => $('#btn-playlist-toggle').click(),
+        playlistNextRandom: () => {
+            console.log('DEBUG main: playlistNextRandom called, isPlaylistActive =', state.isPlaylistActive);
+            if (state.isPlaylistActive) {
+                // Chama a função original definida no escopo global
+                window.__playlistNextRandom();
+            } else {
+                nextSlide();
+            }
+        },
         selectHino: (numero) => selectHinoByNumber(numero),
         scrollToTop: () => {
             if (state.settings.isCompleto) {
@@ -1188,6 +1285,9 @@ uiUtils.updateCacheDisplay(cachedJsonCount, cachedMp3Count);
     const updateObsUI = async () => {
         console.log('Atualizando UI do OBS...', { connected: obsService.connected });
         state.obsConnected = obsService.connected;
+        
+        // NOTIFICAR CONEXÃO DO OBS PARA O CONTROLE REMOTO
+        broadcast('obsConnected', state.obsConnected);
         
         if (obsService.connected) {
             $obsIndicator.removeClass('bg-red-500').addClass('bg-green-500');
@@ -1275,6 +1375,27 @@ uiUtils.updateCacheDisplay(cachedJsonCount, cachedMp3Count);
         $('#obs-source-name').val(obsService.config.sourceName);
         updateObsUI();
         $modalObs.removeClass('hidden');
+    });
+
+    // Salvar senha automaticamente quando digitada
+    $('#obs-password').on('input', () => {
+        const password = $('#obs-password').val();
+        obsService.config.password = password;
+        obsService.saveConfig();
+    });
+
+    // Salvar endereço automaticamente quando alterado
+    $('#obs-address').on('input', () => {
+        const address = $('#obs-address').val();
+        obsService.config.address = address;
+        obsService.saveConfig();
+    });
+
+    // Salvar nome da fonte automaticamente quando alterado
+    $('#obs-source-name').on('input', () => {
+        const sourceName = $('#obs-source-name').val()?.trim() || 'Hinario';
+        obsService.config.sourceName = sourceName;
+        obsService.saveConfig();
     });
 
     $btnObsCreateSource.on('click', async () => {
