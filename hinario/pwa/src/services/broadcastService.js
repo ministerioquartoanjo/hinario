@@ -67,6 +67,9 @@ export const setupBroadcastListeners = (actions, state) => {
                 const isPlaying = player ? !player.paused && !player.ended && player.readyState > 2 : false;
                 broadcast('playState', isPlaying);
                 break;
+            case 'requestThemeState':
+                broadcast('themeState', state.settings.darkMode);
+                break;
             case 'selectHino':
                 if (data.numero) actions.selectHino(data.numero);
                 break;
@@ -75,6 +78,25 @@ export const setupBroadcastListeners = (actions, state) => {
                     actions.toggleObs();
                 } else {
                     console.warn('Ação toggleObs não encontrada no objeto actions');
+                }
+                break;
+            case 'updateAudioFilters':
+                if (actions.updateAudioFilters) {
+                    // Extrair os filtros dos dados (pode vir como propriedades individuais)
+                    const filters = {
+                        gain: data.gain,
+                        bass: data.bass,
+                        mid: data.mid,
+                        treble: data.treble
+                    };
+                    // Remover undefined
+                    Object.keys(filters).forEach(key => {
+                        if (filters[key] === undefined) delete filters[key];
+                    });
+                    console.log('[BroadcastService] Calling updateAudioFilters with:', filters);
+                    actions.updateAudioFilters(filters);
+                } else {
+                    console.warn('Ação updateAudioFilters não encontrada no objeto actions');
                 }
                 break;
             default:

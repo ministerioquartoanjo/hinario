@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR" class="dark">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
@@ -282,71 +282,72 @@
 
     <!-- Audio Filters Modal -->
     <div id="remote-modal-audio-filters" class="fixed inset-0 z-50 glass-overlay flex items-center justify-center p-4 hidden">
-        <div class="bg-gray-900 rounded-2xl shadow-2xl max-w-md w-full p-4 relative border border-gray-800">
-            <button class="btn-close-modal absolute top-2 right-2 text-gray-400 hover:text-red-500" onclick="this.closest('.fixed').classList.add('hidden')">
-                <i class="fas fa-times text-lg"></i>
+        <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-2xl max-w-md w-full p-6 relative">
+            <button class="btn-close-modal absolute top-4 right-4 text-gray-400 hover:text-red-500" onclick="this.closest('.fixed').classList.add('hidden')">
+                <i class="fas fa-times text-xl"></i>
             </button>
-            <h2 class="text-lg font-bold mb-3 flex items-center text-white">
+            <h2 class="text-xl font-bold mb-4 flex items-center">
                 <i class="fas fa-sliders-h mr-2 text-orange-dark"></i> Ajustes de Áudio
             </h2>
-            <div class="space-y-4">
+            <div class="space-y-6">
                 <!-- Normalização / Gain -->
                 <div class="space-y-2">
                     <div class="flex justify-between items-center">
-                        <label class="text-xs font-medium text-gray-300">Normalização (Volume Extra)</label>
-                        <span id="remote-label-gain" class="text-xs font-mono text-gray-400">1.0x</span>
+                        <label class="text-sm font-medium">Normalização (Volume Extra)</label>
+                        <span id="remote-label-gain" class="text-xs font-mono">1.0x</span>
                     </div>
                     <input type="range" id="remote-range-gain" min="0.5" max="2.5" step="0.1" value="1.0"
-                        class="w-full h-2 bg-gray-700 rounded-lg appearance-none cursor-pointer accent-orange-dark">
+                        class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer dark:bg-gray-700 accent-orange-dark">
                 </div>
 
-                <div class="h-[1px] bg-gray-700"></div>
+                <div class="h-[1px] bg-gray-200 dark:bg-gray-700"></div>
 
                 <!-- Equalizer -->
-                <div class="space-y-3">
-                    <h3 class="text-xs font-bold uppercase tracking-wider opacity-50 text-center text-gray-400">Equalizador</h3>
+                <div class="space-y-4">
+                    <h3 class="text-sm font-bold uppercase tracking-wider opacity-50 text-center">Equalizador</h3>
 
-                    <div class="relative bg-gray-800 rounded-xl p-3 border border-gray-700">
+                    <div class="relative bg-gray-50 dark:bg-gray-900/50 rounded-xl p-6 border dark:border-gray-700">
                         <!-- Grid Lines Background -->
-                        <div class="absolute inset-x-1 top-1 bottom-6 flex flex-col justify-between pointer-events-none opacity-20">
-                            <div class="border-t border-gray-600 w-full"></div>
-                            <div class="border-t border-gray-600 w-full"></div>
+                        <div class="absolute inset-x-6 top-6 bottom-14 flex flex-col justify-between pointer-events-none opacity-20">
+                            <div class="border-t border-gray-400 w-full"></div>
+                            <div class="border-t border-gray-400 w-full"></div>
                             <div class="border-t border-orange-dark w-full opacity-50"></div>
-                            <div class="border-t border-gray-600 w-full"></div>
-                            <div class="border-t border-gray-600 w-full"></div>
+                            <div class="border-t border-gray-400 w-full"></div>
+                            <div class="border-t border-gray-400 w-full"></div>
                         </div>
 
-                        <!-- Frequency Sliders (Horizontal like main app) -->
-                        <div class="relative z-10 space-y-2">
-                            <div class="flex justify-between items-center">
-                                <label class="text-xs text-gray-400 w-12">60Hz</label>
-                                <input type="range" id="remote-range-bass" min="-20" max="20" step="1" value="0"
-                                    class="flex-1 h-2 bg-gray-700 rounded-lg appearance-none cursor-pointer accent-orange-dark mx-2">
-                                <span id="remote-label-bass" class="text-xs font-mono text-gray-500 w-8 text-right">0dB</span>
+                        <div class="flex justify-around gap-4 h-32 relative z-10">
+                            <!-- Bass -->
+                            <div class="flex flex-col items-center gap-2">
+                                <span id="remote-label-bass-val" class="text-[9px] font-mono text-orange-dark">+0dB</span>
+                                <input type="range" id="remote-range-bass" min="-12" max="12" step="1" value="0" orient="vertical"
+                                    class="w-4 h-full cursor-pointer accent-orange-dark"
+                                    style="writing-mode: bt-lr; -webkit-appearance: slider-vertical; appearance: slider-vertical;">
+                                <span class="text-[10px] font-bold uppercase tracking-tighter">Grave</span>
                             </div>
-                            <div class="flex justify-between items-center">
-                                <label class="text-xs text-gray-400 w-12">1kHz</label>
-                                <input type="range" id="remote-range-mid" min="-20" max="20" step="1" value="0"
-                                    class="flex-1 h-2 bg-gray-700 rounded-lg appearance-none cursor-pointer accent-orange-dark mx-2">
-                                <span id="remote-label-mid" class="text-xs font-mono text-gray-500 w-8 text-right">0dB</span>
+                            <!-- Mid -->
+                            <div class="flex flex-col items-center gap-2">
+                                <span id="remote-label-mid-val" class="text-[9px] font-mono text-orange-dark">+0dB</span>
+                                <input type="range" id="remote-range-mid" min="-12" max="12" step="1" value="0" orient="vertical"
+                                    class="w-4 h-full cursor-pointer accent-orange-dark"
+                                    style="writing-mode: bt-lr; -webkit-appearance: slider-vertical; appearance: slider-vertical;">
+                                <span class="text-[10px] font-bold uppercase tracking-tighter">Médio</span>
                             </div>
-                            <div class="flex justify-between items-center">
-                                <label class="text-xs text-gray-400 w-12">10kHz</label>
-                                <input type="range" id="remote-range-treble" min="-20" max="20" step="1" value="0"
-                                    class="flex-1 h-2 bg-gray-700 rounded-lg appearance-none cursor-pointer accent-orange-dark mx-2">
-                                <span id="remote-label-treble" class="text-xs font-mono text-gray-500 w-8 text-right">0dB</span>
+                            <!-- Treble -->
+                            <div class="flex flex-col items-center gap-2">
+                                <span id="remote-label-treble-val" class="text-[9px] font-mono text-orange-dark">+0dB</span>
+                                <input type="range" id="remote-range-treble" min="-12" max="12" step="1" value="0" orient="vertical"
+                                    class="w-4 h-full cursor-pointer accent-orange-dark"
+                                    style="writing-mode: bt-lr; -webkit-appearance: slider-vertical; appearance: slider-vertical;">
+                                <span class="text-[10px] font-bold uppercase tracking-tighter">Agudo</span>
                             </div>
                         </div>
                     </div>
-
-                <div class="flex gap-2 mt-3">
-                    <button id="remote-reset-filters" class="flex-1 bg-gray-700 hover:bg-gray-600 text-white text-xs py-2 rounded-lg transition-colors">
-                        <i class="fas fa-undo mr-1"></i> Resetar
-                    </button>
-                    <button id="remote-apply-filters" class="flex-1 bg-orange-dark hover:bg-orange-700 text-white text-xs py-2 rounded-lg transition-colors">
-                        <i class="fas fa-check mr-1"></i> Aplicar
-                    </button>
                 </div>
+
+                <button id="remote-reset-filters"
+                    class="w-full bg-gray-100 dark:bg-gray-700 text-xs py-2 rounded font-bold hover:bg-orange-dark hover:text-white transition-all">Resetar
+                    Tudo</button>
             </div>
         </div>
     </div>
@@ -359,6 +360,7 @@
         let isFullscreenActive = false;
 
         const send = (action, extra = {}) => {
+            console.log('[Remote] Broadcasting action:', action, 'extra:', extra);
             bc.postMessage({ action, source: 'remote', ...extra });
             // Haptic feedback se disponível
             if (navigator.vibrate) navigator.vibrate(50);
@@ -422,22 +424,33 @@
         };
 
         const updateAudioFilters = (filters) => {
-            console.log('Received audio filters:', filters);
+            console.log('[Remote] updateAudioFilters called with:', JSON.stringify(filters));
+            if (!filters || typeof filters !== 'object') {
+                console.error('[Remote] Invalid filters received:', filters);
+                return;
+            }
             if (filters.gain !== undefined) {
+                console.log('[Remote] Updating gain:', filters.gain);
                 document.getElementById('remote-range-gain').value = filters.gain;
-                document.getElementById('remote-label-gain').textContent = filters.gain.toFixed(1) + 'x';
+                document.getElementById('remote-label-gain').textContent = parseFloat(filters.gain).toFixed(1) + 'x';
             }
             if (filters.bass !== undefined) {
+                console.log('[Remote] Updating bass:', filters.bass);
                 document.getElementById('remote-range-bass').value = filters.bass;
-                document.getElementById('remote-label-bass').textContent = filters.bass + 'dB';
+                const sign = parseInt(filters.bass) > 0 ? '+' : '';
+                document.getElementById('remote-label-bass-val').textContent = sign + filters.bass + 'dB';
             }
             if (filters.mid !== undefined) {
+                console.log('[Remote] Updating mid:', filters.mid);
                 document.getElementById('remote-range-mid').value = filters.mid;
-                document.getElementById('remote-label-mid').textContent = filters.mid + 'dB';
+                const sign = parseInt(filters.mid) > 0 ? '+' : '';
+                document.getElementById('remote-label-mid-val').textContent = sign + filters.mid + 'dB';
             }
             if (filters.treble !== undefined) {
+                console.log('[Remote] Updating treble:', filters.treble);
                 document.getElementById('remote-range-treble').value = filters.treble;
-                document.getElementById('remote-label-treble').textContent = filters.treble + 'dB';
+                const sign = parseInt(filters.treble) > 0 ? '+' : '';
+                document.getElementById('remote-label-treble-val').textContent = sign + filters.treble + 'dB';
             }
         };
 
@@ -540,6 +553,9 @@
                     updateObsState(Boolean(value));
                 } else if (action === 'obsConnected') {
                     updateObsConnected(Boolean(value));
+                } else if (action === 'themeState') {
+                    // Aplicar tema recebido da página principal
+                    document.documentElement.classList.toggle('dark', Boolean(value));
                 }
             }
         };
@@ -549,8 +565,10 @@
         };
 
         const parseNumeroFromInput = (value) => {
+            console.log('[Remote] parseNumeroFromInput called with:', value);
             if (!value) return null;
             const match = value.trim().match(/^(\d{1,4})/);
+            console.log('[Remote] Regex match:', match);
             return match ? parseInt(match[1], 10) : null;
         };
 
@@ -595,12 +613,18 @@
         };
 
         const selectRemoteHino = (hino) => {
-            if (!hino) return;
+            console.log('[Remote] selectRemoteHino called with:', hino);
+            if (!hino) {
+                console.log('[Remote] No hino provided, returning');
+                return;
+            }
             hinoInput.value = `${hino.numero} - ${hino.titulo}`;
             searchResultsBox.classList.add('hidden');
             remoteSelectedResult = -1;
+            console.log('[Remote] Sending stopAudio');
             send('stopAudio');
             updatePlayState(false);
+            console.log('[Remote] Sending selectHino with numero:', hino.numero);
             send('selectHino', { numero: hino.numero });
             hinoFeedback.textContent = `Solicitando hino ${hino.numero}...`;
             hinoFeedback.classList.remove('text-red-400');
@@ -608,7 +632,9 @@
         };
 
         const submitHino = () => {
+            console.log('[Remote] submitHino called, input value:', hinoInput.value);
             const numero = parseNumeroFromInput(hinoInput.value);
+            console.log('[Remote] Parsed numero:', numero);
             if (!numero || numero < 1) {
                 hinoFeedback.textContent = 'Informe um número válido.';
                 hinoFeedback.classList.replace('text-green-400', 'text-red-400');
@@ -628,9 +654,15 @@
             renderRemoteResults(matches);
         });
 
+        console.log('[Remote] Registering keydown listener on hinoInput');
         hinoInput.addEventListener('keydown', (event) => {
+            console.log('[Remote] Keydown event fired:', event.key, 'searchBox hidden:', searchResultsBox.classList.contains('hidden'));
+            
             if (searchResultsBox.classList.contains('hidden')) {
-                if (event.key === 'Enter') submitHino();
+                if (event.key === 'Enter') {
+                    console.log('[Remote] Enter with hidden results, calling submitHino');
+                    submitHino();
+                }
                 return;
             }
 
@@ -640,11 +672,14 @@
             if (event.key === 'Escape') {
                 searchResultsBox.classList.add('hidden');
             } else if (event.key === 'Enter') {
+                console.log('[Remote] Enter pressed, selectedIndex:', remoteSelectedResult, 'filteredLength:', remoteFilteredHinos.length);
                 const hino = remoteSelectedResult > -1 ? remoteFilteredHinos[remoteSelectedResult] : remoteFilteredHinos[0];
+                console.log('[Remote] Selected hino:', hino);
                 if (hino) {
                     event.preventDefault();
                     selectRemoteHino(hino);
                 } else {
+                    console.log('[Remote] No hino selected, calling submitHino');
                     submitHino();
                 }
             } else if (prevIndex !== remoteSelectedResult) {
@@ -705,6 +740,17 @@
         document.getElementById('remote-equalizer').onclick = () => {
             document.getElementById('remote-modal-audio-filters').classList.remove('hidden');
         };
+        document.getElementById('remote-reset-filters').onclick = () => {
+            document.getElementById('remote-range-gain').value = 1.2;
+            document.getElementById('remote-label-gain').textContent = '1.2x';
+            document.getElementById('remote-range-bass').value = 0;
+            document.getElementById('remote-label-bass-val').textContent = '+0dB';
+            document.getElementById('remote-range-mid').value = 0;
+            document.getElementById('remote-label-mid-val').textContent = '+0dB';
+            document.getElementById('remote-range-treble').value = 0;
+            document.getElementById('remote-label-treble-val').textContent = '+0dB';
+            send('updateAudioFilters', { gain: 1.2, bass: 0, mid: 0, treble: 0 });
+        };
         document.getElementById('remote-restart').onclick = () => send('restartAudio');
         document.getElementById('remote-fullscreen').onclick = () => send('toggleFullscreen');
         document.getElementById('remote-toggle-bg').onclick = () => {
@@ -737,12 +783,6 @@
             if (navigator.vibrate) navigator.vibrate(50);
         };
         document.getElementById('remote-select-hino').onclick = submitHino;
-        hinoInput.addEventListener('keydown', (e) => {
-            if (e.key === 'Enter') {
-                e.preventDefault();
-                submitHino();
-            }
-        });
         hinoInput.addEventListener('dblclick', () => {
             hinoInput.value = '';
             hinoFeedback.textContent = 'Campo limpo. Informe outro número.';
@@ -789,19 +829,54 @@
         
         // Solicitar estado do play/pause
         send('requestPlayState');
-        
-        // Setup real-time label updates for filter sliders
+
+        // Solicitar tema atual
+        send('requestThemeState');
+
+        // Throttle function to limit broadcast frequency
+        const throttle = (fn, wait) => {
+            let lastTime = 0;
+            return (...args) => {
+                const now = Date.now();
+                if (now - lastTime >= wait) {
+                    lastTime = now;
+                    fn(...args);
+                }
+            };
+        };
+
+        // Real-time filter updates with throttling (50ms)
+        const sendGainUpdate = throttle((val) => send('updateAudioFilters', { gain: parseFloat(val) }), 50);
+        const sendBassUpdate = throttle((val) => send('updateAudioFilters', { bass: parseInt(val) }), 50);
+        const sendMidUpdate = throttle((val) => send('updateAudioFilters', { mid: parseInt(val) }), 50);
+        const sendTrebleUpdate = throttle((val) => send('updateAudioFilters', { treble: parseInt(val) }), 50);
+
         document.getElementById('remote-range-gain').addEventListener('input', (e) => {
-            document.getElementById('remote-label-gain').textContent = parseFloat(e.target.value).toFixed(1) + 'x';
+            const val = e.target.value;
+            console.log('[Remote] Gain input:', val);
+            document.getElementById('remote-label-gain').textContent = parseFloat(val).toFixed(1) + 'x';
+            sendGainUpdate(val);
         });
         document.getElementById('remote-range-bass').addEventListener('input', (e) => {
-            document.getElementById('remote-label-bass').textContent = e.target.value + 'dB';
+            const val = e.target.value;
+            console.log('[Remote] Bass input:', val);
+            const sign = parseInt(val) > 0 ? '+' : '';
+            document.getElementById('remote-label-bass-val').textContent = sign + val + 'dB';
+            sendBassUpdate(val);
         });
         document.getElementById('remote-range-mid').addEventListener('input', (e) => {
-            document.getElementById('remote-label-mid').textContent = e.target.value + 'dB';
+            const val = e.target.value;
+            console.log('[Remote] Mid input:', val);
+            const sign = parseInt(val) > 0 ? '+' : '';
+            document.getElementById('remote-label-mid-val').textContent = sign + val + 'dB';
+            sendMidUpdate(val);
         });
         document.getElementById('remote-range-treble').addEventListener('input', (e) => {
-            document.getElementById('remote-label-treble').textContent = e.target.value + 'dB';
+            const val = e.target.value;
+            console.log('[Remote] Treble input:', val);
+            const sign = parseInt(val) > 0 ? '+' : '';
+            document.getElementById('remote-label-treble-val').textContent = sign + val + 'dB';
+            sendTrebleUpdate(val);
         });
         
         loadHinosIndex();

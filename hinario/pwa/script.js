@@ -41,6 +41,9 @@ const applySettings = () => {
     const body = document.body;
     body.classList.toggle('dark', state.settings.darkMode);
 
+    // Broadcast tema para controle remoto
+    broadcast('themeState', state.settings.darkMode);
+
     // Ajustar cores padrão baseado no tema se não houver cor personalizada manual
     if (state.settings.darkMode) {
         // Modo escuro: texto claro, fundo escuro
@@ -537,6 +540,7 @@ const setupEvents = () => {
         state.settings.darkMode = !state.settings.darkMode;
         applySettings();
         saveSettings();
+        broadcast('themeState', state.settings.darkMode);
     });
 
     $('#btn-change-bg, #btn-fs-change-bg').on('click', () => {
@@ -1246,7 +1250,15 @@ uiUtils.updateCacheDisplay(cachedJsonCount, cachedMp3Count);
                 nextSlide();
             }
         },
-        selectHino: (numero) => selectHinoByNumber(numero),
+        selectHino: (data) => {
+            console.log('[Main] selectHino called with data:', data);
+            const numero = typeof data === 'number' ? data : data?.numero;
+            if (numero) {
+                selectHino(numero);
+            } else {
+                console.error('[Main] No numero provided to selectHino');
+            }
+        },
         scrollToTop: () => {
             if (state.settings.isCompleto) {
                 const container = $('#slide-content > div');
@@ -1271,6 +1283,35 @@ uiUtils.updateCacheDisplay(cachedJsonCount, cachedMp3Count);
             } else {
                 console.warn('Não foi possível alternar OBS: Fonte não existe ou não detectada.');
             }
+        },
+        updateAudioFilters: (filters) => {
+            console.log('[Main] updateAudioFilters called:', filters);
+            initAudio();
+            if (filters.gain !== undefined) {
+                state.settings.audioFilters.gain = parseFloat(filters.gain);
+                $('#range-gain').val(state.settings.audioFilters.gain);
+                $('#label-gain').text(state.settings.audioFilters.gain.toFixed(1) + 'x');
+            }
+            if (filters.bass !== undefined) {
+                state.settings.audioFilters.bass = parseInt(filters.bass);
+                $('#eq-bass').val(state.settings.audioFilters.bass);
+                const sign = state.settings.audioFilters.bass > 0 ? '+' : '';
+                $('#val-bass').text(sign + state.settings.audioFilters.bass + 'dB');
+            }
+            if (filters.mid !== undefined) {
+                state.settings.audioFilters.mid = parseInt(filters.mid);
+                $('#eq-mid').val(state.settings.audioFilters.mid);
+                const sign = state.settings.audioFilters.mid > 0 ? '+' : '';
+                $('#val-mid').text(sign + state.settings.audioFilters.mid + 'dB');
+            }
+            if (filters.treble !== undefined) {
+                state.settings.audioFilters.treble = parseInt(filters.treble);
+                $('#eq-treble').val(state.settings.audioFilters.treble);
+                const sign = state.settings.audioFilters.treble > 0 ? '+' : '';
+                $('#val-treble').text(sign + state.settings.audioFilters.treble + 'dB');
+            }
+            audioUtils.applyAudioFilters(state.audioCtx, state, state.settings.audioFilters);
+            broadcast('audioFiltersState', state.settings.audioFilters);
         }
     }, state);
 
