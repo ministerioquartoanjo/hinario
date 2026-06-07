@@ -1178,10 +1178,7 @@ uiUtils.updateCacheDisplay(cachedJsonCount, cachedMp3Count);
                 else if (document.webkitExitFullscreen) document.webkitExitFullscreen();
             }
         },
-        stopAutoScroll: () => {
-            console.log('DEBUG: stopAutoScroll chamado via broadcast');
-            stopAutoScroll();
-        },
+        stopAutoScroll: () => stopAutoScroll(),
         randomHino: () => {
             randomHino();
         },
@@ -1242,7 +1239,6 @@ uiUtils.updateCacheDisplay(cachedJsonCount, cachedMp3Count);
         shuffleBackground: () => $('#btn-change-bg').click(),
         toggleRandomPlaylist: () => $('#btn-playlist-toggle').click(),
         playlistNextRandom: () => {
-            console.log('DEBUG main: playlistNextRandom called, isPlaylistActive =', state.isPlaylistActive);
             if (state.isPlaylistActive) {
                 // Chama a função original definida no escopo global
                 window.__playlistNextRandom();
@@ -1251,13 +1247,8 @@ uiUtils.updateCacheDisplay(cachedJsonCount, cachedMp3Count);
             }
         },
         selectHino: (data) => {
-            console.log('[Main] selectHino called with data:', data);
             const numero = typeof data === 'number' ? data : data?.numero;
-            if (numero) {
-                selectHino(numero);
-            } else {
-                console.error('[Main] No numero provided to selectHino');
-            }
+            if (numero) selectHino(numero);
         },
         scrollToTop: () => {
             if (state.settings.isCompleto) {
@@ -1274,18 +1265,32 @@ uiUtils.updateCacheDisplay(cachedJsonCount, cachedMp3Count);
             broadcastState(state, document.getElementById('audio-player'));
         },
         toggleObs: async () => {
-            console.log('Ação toggleObs disparada via Controle Remoto');
             const status = await obsService.getSourceStatus();
             if (status && status.exists) {
-                console.log('Alternando visibilidade da fonte OBS para:', !status.enabled);
                 await obsService.toggleSource(!status.enabled);
                 await updateObsUI();
-            } else {
-                console.warn('Não foi possível alternar OBS: Fonte não existe ou não detectada.');
             }
         },
+        saveObsSettings: (data) => {
+            if (data.address !== undefined) {
+                $('#obs-address').val(data.address);
+                localStorage.setItem('obs_address', data.address);
+            }
+            if (data.password !== undefined) {
+                $('#obs-password').val(data.password);
+                localStorage.setItem('obs_password', data.password);
+            }
+            if (data.sourceName !== undefined) {
+                $('#obs-source-name').val(data.sourceName);
+                localStorage.setItem('obs_source_name', data.sourceName);
+            }
+            // Tentar conectar ao OBS com as novas configurações simulando o clique
+            $('#btn-obs-connect').click();
+        },
+        connectObs: () => $('#btn-obs-connect').click(),
+        disconnectObs: () => $('#btn-obs-disconnect').click(),
+        createObsSource: () => $('#btn-obs-create-source').click(),
         updateAudioFilters: (filters) => {
-            console.log('[Main] updateAudioFilters called:', filters);
             initAudio();
             if (filters.gain !== undefined) {
                 state.settings.audioFilters.gain = parseFloat(filters.gain);

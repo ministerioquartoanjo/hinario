@@ -11,11 +11,6 @@ export const broadcastState = (state, player) => {
     
     const isPlaying = player ? !player.paused && !player.ended && player.readyState > 2 : false;
     
-    console.log('Broadcasting state:', { 
-        playing: isPlaying, 
-        playlist: state.isPlaylistActive,
-        fullscreen: !!document.fullscreenElement 
-    });
 
     broadcast('fullscreenState', !!document.fullscreenElement);
     broadcast('playlistState', state.isPlaylistActive);
@@ -40,8 +35,6 @@ export const setupBroadcastListeners = (actions, state) => {
         
         // Ignorar mensagens que não vêm do remote
         if (source !== 'remote') return;
-
-        console.log('Remote action received:', action, data);
 
         switch (action) {
             case 'requestFullscreenState':
@@ -74,11 +67,7 @@ export const setupBroadcastListeners = (actions, state) => {
                 if (data.numero) actions.selectHino(data.numero);
                 break;
             case 'toggleObs':
-                if (actions.toggleObs) {
-                    actions.toggleObs();
-                } else {
-                    console.warn('Ação toggleObs não encontrada no objeto actions');
-                }
+                if (actions.toggleObs) actions.toggleObs();
                 break;
             case 'updateAudioFilters':
                 if (actions.updateAudioFilters) {
@@ -93,18 +82,14 @@ export const setupBroadcastListeners = (actions, state) => {
                     Object.keys(filters).forEach(key => {
                         if (filters[key] === undefined) delete filters[key];
                     });
-                    console.log('[BroadcastService] Calling updateAudioFilters with:', filters);
                     actions.updateAudioFilters(filters);
-                } else {
-                    console.warn('Ação updateAudioFilters não encontrada no objeto actions');
                 }
                 break;
+            case 'saveObsSettings':
+                if (actions.saveObsSettings) actions.saveObsSettings(data);
+                break;
             default:
-                if (actions[action]) {
-                    actions[action]();
-                } else {
-                    console.warn(`Ação remota desconhecida: ${action}`);
-                }
+                if (actions[action]) actions[action]();
         }
     };
 };
