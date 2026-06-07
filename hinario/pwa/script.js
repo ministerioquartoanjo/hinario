@@ -44,17 +44,6 @@ const applySettings = () => {
     // Broadcast tema para controle remoto
     broadcast('themeState', state.settings.darkMode);
 
-    // Ajustar cores padrão baseado no tema se não houver cor personalizada manual
-    if (state.settings.darkMode) {
-        // Modo escuro: texto claro, fundo escuro
-        if (state.settings.fontColor === '#000000') state.settings.fontColor = '#FFFFFF';
-        if (state.settings.bgColor === '#FFFFFF') state.settings.bgColor = '#000000';
-    } else {
-        // Modo claro: texto escuro, fundo claro
-        if (state.settings.fontColor === '#FFFFFF') state.settings.fontColor = '#000000';
-        if (state.settings.bgColor === '#000000') state.settings.bgColor = '#FFFFFF';
-    }
-
     const $btnToggleBg = $('#btn-toggle-bg');
     if (state.settings.showBackground) {
         $btnToggleBg.css('background-color', '').addClass('bg-orange-dark').removeClass('bg-gray-500');
@@ -724,7 +713,7 @@ const setupEvents = () => {
 
     // Atalhos de Teclado
     $(document).on('keydown', (e) => {
-        if ($(e.target).is('input, textarea, select')) return;
+        if ($(e.target).is('input, textarea, select') && !$(e.target).is('input[type="color"]')) return;
 
         switch (e.key) {
             case 'ArrowRight':
@@ -780,12 +769,27 @@ const setupEvents = () => {
             case 'C':
                 $('#check-completo').click();
                 break;
-            case 'r':
-            case 'R':
+            case 'a':
+            case 'A':
                 if (e.altKey) {
                     localStorage.removeItem('hinario_settings');
                     location.reload();
+                } else {
+                    $('#btn-random-hino').click();
                 }
+                break;
+            case 's':
+            case 'S':
+                if (!state.hinos.length) return;
+                const randIdx = Math.floor(Math.random() * state.hinos.length);
+                selectHino(state.hinos[randIdx]).then(() => {
+                    const player = document.getElementById('audio-player');
+                    if (player) player.play();
+                });
+                break;
+            case 'p':
+            case 'P':
+                $('#btn-play-pause').click();
                 break;
             case 'F8':
                 e.preventDefault();
@@ -794,6 +798,38 @@ const setupEvents = () => {
             case 'Escape':
                 $('.btn-close-modal').click();
                 if (document.fullscreenElement) document.exitFullscreen();
+                break;
+            case '+':
+            case '=':
+                e.preventDefault();
+                const playerUp = document.getElementById('audio-player');
+                if (playerUp) {
+                    playerUp.playbackRate = Math.min(playerUp.playbackRate + 0.1, 2.0);
+                    $('#speed-display, #fs-speed-display').text(playerUp.playbackRate.toFixed(1) + 'x');
+                    broadcast('speedState', playerUp.playbackRate);
+                }
+                break;
+            case '-':
+            case '_':
+                e.preventDefault();
+                const playerDown = document.getElementById('audio-player');
+                if (playerDown) {
+                    playerDown.playbackRate = Math.max(playerDown.playbackRate - 0.1, 0.5);
+                    $('#speed-display, #fs-speed-display').text(playerDown.playbackRate.toFixed(1) + 'x');
+                    broadcast('speedState', playerDown.playbackRate);
+                }
+                break;
+            case ']':
+                e.preventDefault();
+                state.settings.fontSize += 0.1;
+                applySettings();
+                saveSettings();
+                break;
+            case '[':
+                e.preventDefault();
+                state.settings.fontSize = Math.max(0.5, state.settings.fontSize - 0.1);
+                applySettings();
+                saveSettings();
                 break;
         }
     });
@@ -1192,7 +1228,7 @@ uiUtils.updateCacheDisplay(cachedJsonCount, cachedMp3Count);
             // Limpar o hino carregado da tela
             state.currentHino = null;
             state.currentSlide = 0;
-            $('#slide-content').empty().append('<p class="text-2xl md:text-3xl lg:text-4xl text-white font-semibold leading-relaxed">Selecione um hino para começar</p>');
+            $('#slide-content').empty().append('<p class="text-xl md:text-2xl lg:text-3xl text-white font-semibold leading-relaxed">Selecione um hino para começar</p>');
             $('#video-list').empty();
             $('#video-section').addClass('hidden');
             
@@ -1219,6 +1255,10 @@ uiUtils.updateCacheDisplay(cachedJsonCount, cachedMp3Count);
             player.pause();
             player.currentTime = 0;
         },
+        playAudio: () => {
+            const player = document.getElementById('audio-player');
+            if (player) player.play();
+        },
         restartAudio: () => {
             const player = document.getElementById('audio-player');
             player.currentTime = 0;
@@ -1233,6 +1273,16 @@ uiUtils.updateCacheDisplay(cachedJsonCount, cachedMp3Count);
             const player = document.getElementById('audio-player');
             player.playbackRate = Math.max(player.playbackRate - 0.1, 0.5);
             broadcast('speedState', player.playbackRate);
+        },
+        fontInc: () => {
+            state.settings.fontSize += 0.1;
+            applySettings();
+            saveSettings();
+        },
+        fontDec: () => {
+            state.settings.fontSize = Math.max(0.5, state.settings.fontSize - 0.1);
+            applySettings();
+            saveSettings();
         },
         toggleBg: () => $('#btn-toggle-bg').click(),
         toggleComplete: () => $('#check-completo').click(),

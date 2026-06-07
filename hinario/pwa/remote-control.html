@@ -893,6 +893,48 @@
         // Solicitar tema atual
         send('requestThemeState');
 
+        // Atalhos de teclado no controle remoto
+        document.addEventListener('keydown', (e) => {
+            if (e.target.tagName === 'INPUT') return;
+
+            switch (e.key) {
+                case '+':
+                case '=':
+                    e.preventDefault();
+                    send('speedUp');
+                    break;
+                case '-':
+                case '_':
+                    e.preventDefault();
+                    send('speedDown');
+                    break;
+                case ']':
+                    e.preventDefault();
+                    send('fontInc');
+                    break;
+                case '[':
+                    e.preventDefault();
+                    send('fontDec');
+                    break;
+                case 'a':
+                case 'A':
+                    e.preventDefault();
+                    send('randomHino');
+                    break;
+                case 's':
+                case 'S':
+                    e.preventDefault();
+                    send('randomHino');
+                    send('playAudio');
+                    break;
+                case 'p':
+                case 'P':
+                    e.preventDefault();
+                    send('togglePlay');
+                    break;
+            }
+        });
+
         // Throttle function to limit broadcast frequency
         const throttle = (fn, wait) => {
             let lastTime = 0;
