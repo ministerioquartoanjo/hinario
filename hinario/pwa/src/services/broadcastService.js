@@ -3,7 +3,16 @@ export const remoteChannel = typeof BroadcastChannel !== 'undefined'
     : null;
 
 export const broadcast = (action, value) => {
-    remoteChannel?.postMessage({ action, value, source: 'main' });
+    const payload = { action, value, source: 'main' };
+    remoteChannel?.postMessage(payload);
+
+    // Ponte cross-origin: retransmite o estado via postMessage para a janela
+    // que abriu esta (opener) ou para o topo (parent, quando embutido em
+    // iframe), permitindo que um controle remoto hospedado em outra origem
+    // receba atualizações de estado.
+    const bridgePayload = { __hinarioBridge: true, state: payload };
+    try { if (window.opener) window.opener.postMessage(bridgePayload, '*'); } catch (_) {}
+    try { if (window.parent && window.parent !== window) window.parent.postMessage(bridgePayload, '*'); } catch (_) {}
 };
 
 export const broadcastState = (state, player) => {
@@ -28,11 +37,9 @@ export const broadcastState = (state, player) => {
 };
 
 export const setupBroadcastListeners = (actions, state) => {
-    if (!remoteChannel) return;
+    const handleRemoteAction = (payload) => {
+        const { action, source, ...data } = payload || {};
 
-    remoteChannel.onmessage = (event) => {
-        const { action, source, ...data } = event.data || {};
-        
         // Ignorar mensagens que não vêm do remote
         if (source !== 'remote') return;
 
@@ -92,4 +99,17 @@ export const setupBroadcastListeners = (actions, state) => {
                 if (actions[action]) actions[action]();
         }
     };
+
+    if (remoteChannel) {
+        remoteChannel.onmessage = (event) => handleRemoteAction(event.data);
+    }
+
+    // Ponte cross-origin: permite que um controle remoto hospedado em outra
+    // origem (ex: um painel unificado externo) envie comandos via
+    // window.postMessage, já que BroadcastChannel é restrito à mesma origem.
+    window.addEventListener('message', (event) => {
+        if (event.data && event.data.__hinarioBridge === true) {
+            handleRemoteAction(event.data.command);
+        }
+    });
 };
