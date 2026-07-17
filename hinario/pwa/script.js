@@ -1005,13 +1005,13 @@ const setupEvents = () => {
 
     $('#menu-remote-control').on('click', () => {
         const rand = Math.floor(Math.random() * 1000000);
-        window.open(`remote-control.html?r=${rand}`, 'remote_control', 'width=400,height=700');
+        window.open(`remote-control.html?r=${rand}`, 'remote_control', 'width=250,height=500');
         $('#menu-dropdown').addClass('hidden');
     });
 
     $('#btn-remote').on('click', () => {
         const rand = Math.floor(Math.random() * 1000000);
-        window.open(`remote-control.html?r=${rand}`, 'remote_control', 'width=400,height=700');
+        window.open(`remote-control.html?r=${rand}`, 'remote_control', 'width=250,height=500');
     });
 
     $('#menu-custom-backgrounds').on('click', () => {
