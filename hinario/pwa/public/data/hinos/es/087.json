@@ -1,0 +1,38 @@
+{
+  "title": "87 - Se acabó el año viejo",
+  "author": "Maria da Glória Loureiro de Andrade Letra de la melodía tradicional",
+  "speed": 1,
+  "verses": [
+    [
+      "1. El año viejo ha terminado;",
+      "Alabamos a Jesús,",
+      "Porque él nos guardó del maligno",
+      "Todo el año con amor."
+    ],
+    [
+      "2. Del pecado nos aleja,",
+      "Nuestros pasos vienen a guiar",
+      "Reaviva nuestras fuerzas",
+      "Y un buen año viene a darnos."
+    ],
+    [
+      "3. La verdad nos preserva;",
+      "Danos tu protección;",
+      "De la doctrina falsa y malvada",
+      "Libra nuestros corazones."
+    ],
+    [
+      "4. Cristo eterno te adoramos,",
+      "Porque en la gloria del esplendor,",
+      "Junto a ti, eternamente",
+      "Viviremos, oh Señor. Amén"
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

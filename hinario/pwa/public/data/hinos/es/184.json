@@ -1,0 +1,35 @@
+{
+  "title": "184 - Toma, oh Dios, mi corazón",
+  "author": "Frances Ridley Havegal Henri Abraham Cesar Malan",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Toma, oh Dios, en tu mano,",
+      "Cómo está mi corazón.",
+      "Aun sin ningún valor,",
+      "Hazlo puro, santo y bueno,",
+      "Llénalo al fin de tu amor."
+    ],
+    [
+      "2. Toma, oh Dios, mis manos,",
+      "Mis pies y mis labios;",
+      "Y a favor de mis hermanos",
+      "Actúa siempre con amor,",
+      "Con agrado dondequiera que vayas"
+    ],
+    [
+      "3. Cuando Jesús finalmente regrese",
+      "Con poder, en gloria y luz",
+      "Toma, oh Dios, mi pobre ser",
+      "Para siempre ir a vivir",
+      "Con Jesús en el dulce hogar"
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

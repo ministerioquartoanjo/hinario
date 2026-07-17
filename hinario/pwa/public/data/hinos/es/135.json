@@ -1,0 +1,36 @@
+{
+  "title": "135 - Dondequiera que esté",
+  "author": "Jessie Brown golpea a Kurt Frederic Kaiser",
+  "speed": 1,
+  "verses": [
+    [
+      "1. A donde sea que con Jesús iré;",
+      "Él es mi bendito Salvador y Rey.",
+      "Ya sea a la guerra, a la batalla,",
+      "Ya sea al campo, a sembrar."
+    ],
+    [
+      "2.\"Siempre seguiré a Cristo mi Señor\"",
+      "Dice el corazón que siente su amor.",
+      "Cerca de Él siempre estaré seguro ",
+      "Dondequiera que esté, soy muy feliz."
+    ],
+    [
+      "3. Por eso, dondequiera que me lleve,",
+      "Allí encontraré mi dulce hogar.",
+      "Dondequiera que sea, siempre cantaré: ",
+      "Tú, Señor, estás conmigo; No temeré."
+    ]
+  ],
+  "coro": [
+    "Dondequiera que Jesús envíe",
+    "Siempre caminaré con Él."
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

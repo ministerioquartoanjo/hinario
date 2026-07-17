@@ -1,0 +1,39 @@
+{
+  "title": "139 - Al cielo por Jesús iré",
+  "author": "Jessie Brown Pounds Charles Hutchison Gabriel",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Fue Jesús quien abrió el camino al cielo",
+      "No encontraré otro.",
+      "Nunca entraré en la mansión de la luz",
+      "Si no es a través de la cruz."
+    ],
+    [
+      "2. Seguramente iré por el camino de la cruz,",
+      "Con resolución de caminar.",
+      "Es mi deseo disfrutar en el cielo,",
+      "Mi herencia que Cristo dio."
+    ],
+    [
+      "3. He dejado los malos caminos del mundo,",
+      "Nunca los seguiré;",
+      "Con Jesús, voy, llevo mi cruz,",
+      "Por el camino que lleva al cielo."
+    ]
+  ],
+  "coro": [
+    "Al cielo por Jesús iré;",
+    "Al cielo por Jesús iré.",
+    "Grande es mi placer",
+    "Ciertamente tendré:",
+    "Al cielo por la cruz iré."
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

@@ -1,0 +1,33 @@
+{
+  "title": "114 - Lo veremos",
+  "author": "Mariane Scriven",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Lo veremos regresar en gloria;",
+      "¡Contemplaremos al Rey Salvador!",
+      "Con muchos ángeles lo alabaremos,",
+      "Cantando a coro: ¡Hosanna! ¡Amén!"
+    ],
+    [
+      "2. Lo veremos en la mañana gloriosa;",
+      "Contemplaremos su esplendor.",
+      "Cantaremos himnos de victoria,",
+      "Cantando a coro, ¡Hosanna! ¡Amén!"
+    ],
+    [
+      "3. Lo veremos en resplandor radiante;",
+      "Nuestra alabanza elevaremos al cielo",
+      "Con santos ángeles Lo ensalzaremos,",
+      "Cantando a coro, ¡Hosanna! ¡Amén!",
+      "¡Hosanna! ¡Amén!"
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

@@ -1,0 +1,50 @@
+{
+  "title": "11 - A ti sea consagrada mi vida",
+  "author": "Frances Ridley Havergal",
+  "speed": 1,
+  "verses": [
+    [
+      "1. A Ti sea consagrada mi vida,",
+      "Oh mi Señor;",
+      "Mis momentos y mis días,",
+      "Sean sólo para Tu alabanza."
+    ],
+    [
+      "2. Siempre mis manos se mueven",
+      "Con rapidez y con amor",
+      "Y mis pies veloces corren",
+      "Al servicio del Señor."
+    ],
+    [
+      "3. Mi voz TOMA ahora",
+      "Para Tu alabanza cantar;",
+      "Toma mis labios, haciéndolos",
+      "El mensaje proclama"
+    ],
+    [
+      "4. Toma mi plata y mi oro,",
+      "No quiero esconderte nada",
+      "Mi inteligencia sirve",
+      "Para hacer siempre el bien"
+    ],
+    [
+      "5. Toma mi voluntad,",
+      " Sometiéndome a ti Señor,",
+      "Haciendo de mi corazón",
+      "Tu trono, oh Salvador."
+    ],
+    [
+      "6. Mi amor y mi deseo",
+      "Que sólo sea honrado tu nombre;",
+      "Que todo mi ser",
+      "Que te consagre. ¡Amén!"
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

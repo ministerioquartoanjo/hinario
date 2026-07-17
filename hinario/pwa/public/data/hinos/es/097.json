@@ -1,0 +1,34 @@
+{
+  "title": "97 - Hermoso país",
+  "author": "Melodía tradicional irlandesa",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Hay un país en las tierras más allá del río,",
+      "Lleno de flores, placer y luz;",
+      "Está destinado a las almas rescatadas;",
+      "No habrá más luchas ni más cruces.",
+      "Porque es allí donde ya no entra la muerte,",
+      "No más pecado quitará el brillo.",
+      "Jesús, el Rey de estas hermosas mansiones",
+      "Los salvos, todos, con gusto lo harán abrazo."
+    ],
+    [
+      "2. ¡Hermoso País! Veo la suave brisa",
+      "Acariciando prados y jardines,",
+      "Y acunando las palmeras plateadas",
+      "De los fragantes valles con jazmines.",
+      "Y cuando el Sol se pone en el horizonte,",
+      "Creo ver este hogar en sueños;",
+      "Veo amigos ya resucitados,",
+      "Y todos alabamos a nuestro buen Jesús."
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

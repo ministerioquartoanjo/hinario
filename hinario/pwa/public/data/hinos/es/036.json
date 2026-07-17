@@ -1,0 +1,44 @@
+{
+  "title": "36 - Qué triste es caminar en la oscuridad",
+  "author": "Joaquim dos Santos George Coles Stebbins",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Yo, en oscuridad, vagué,",
+      "Sin la luz de la salvación;",
+      "Siempre estuve triste",
+      "Y sin fe en mi corazón."
+    ],
+    [
+      "2. Pero un día Dios me mostró",
+      " Su gracia y dulce luz;",
+      " Entonces vi el camino claro,",
+      " Cuando escuché a mi Jesús."
+    ],
+    [
+      "3. Mi yo pecaminoso",
+      " luchó contra la justicia;",
+      " Pero Jesús me dio la victoria",
+      " Y me libró de las tinieblas."
+    ],
+    [
+      "4. Fue un nuevo nacimiento,",
+      "¡Honor y gloria al redentor!",
+      "Él me dio luz y vida,",
+      "Santidad y su amor."
+    ]
+  ],
+  "coro": [
+    "¡Qué triste es caminar en tinieblas",
+    "Sin el brillo de esta luz!",
+    "¡Hermosa es la vida iluminada,",
+    "Dirigida por Jesús!"
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

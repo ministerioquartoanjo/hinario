@@ -1,0 +1,36 @@
+{
+  "title": "138 - Pan de Vida",
+  "author": "Salomón Luiz Ginsburg William Letton Viner",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Pan de vida, pan de Dios",
+      "El pan celestial es mi Jesús;",
+      "Pan que da el corazón",
+      "Alegría, paz y luz;",
+      "Pan que da el corazón",
+      "Alegría, paz y luz."
+    ],
+    [
+      "2. Sangre que derramó Jesús",
+      "Da perdón, es eficaz;",
+      "Esta sangre al corazón",
+      "Fuerza, amor y vida trae."
+    ],
+    [
+      "3. Ven Jesús y bendíceme",
+      "Lléname de Ti Señor,",
+      "Porque quiero servirte",
+      "Y honrarte mi Salvador.",
+      "Porque quiero servirte",
+      "Y honrarte mi Salvador. Amén."
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

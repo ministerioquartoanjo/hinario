@@ -1,0 +1,39 @@
+{
+  "title": "68 - Firme en promesas",
+  "author": "Russell Kelso Carter",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Manteniéndome firme en las promesas de mi Salvador,",
+      "Cantaré alabanzas a mi Creador.",
+      "Siempre mantengo su amor,",
+      "Mantente firme en las promesas de Jesús."
+    ],
+    [
+      "2. Firmes en las promesas que no fallarán,",
+      "Venceré las tormentas del mar embravecido;",
+      "Venceré todo temor y todo mal,",
+      "Estaré firme en las promesas de Jesús."
+    ],
+    [
+      "3. Mantente firme en las promesas de Jesús Señor,",
+      "Estoy agradecido por tu favor;",
+      "Por Su Espíritu soy un vencedor;",
+      "Mantente firme en las promesas de Jesús."
+    ]
+  ],
+  "coro": [
+    "Estate firme, firme,",
+    "Estate firme, firme,",
+    "Estate firme en las promesas de Jesús, mi Maestro.",
+    "Estate firme,",
+    "Estate firme en las promesas de Jesús."
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

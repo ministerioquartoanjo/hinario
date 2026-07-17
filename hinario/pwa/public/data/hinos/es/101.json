@@ -1,0 +1,44 @@
+{
+  "title": "101 - Marchai, Soldados de Cristo",
+  "author": "Autor desconocido Wm.J.Kirkpatrick",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Marchad, soldados de Cristo Jesús,",
+      "Marchad, marchad y enfrentad,",
+      "Al enemigo del bien y de la luz;",
+      "Soldados, ¡adelante!"
+    ],
+    [
+      "2. Marchen, soldados, en alto, alcen",
+      "La bandera de la salvación;",
+      "A Belial, firme, audaz, vencido;",
+      "Vencer la corrupción."
+    ],
+    [
+      "3. Toma tu armadura de guerra,",
+      "El yelmo, sí, de salvación:",
+      "Y la espada: toma la Biblia,",
+      "Y entonces vencerás."
+    ],
+    [
+      "4. Adelante, adelante, confiando en Jesús,",
+      "Seréis fuertes por su amor,",
+      "Marchad invictos, soldados de la luz,",
+      "Jesús es el vencedor."
+    ]
+  ],
+  "coro": [
+    "Sí, avanzad, no retrocedáis;",
+    "Sin miedo, con valor,",
+    "Marchad, luchad, porque Cristo va;",
+    "¡En vanguardia, avanzad!"
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

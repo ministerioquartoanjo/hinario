@@ -1,0 +1,38 @@
+{
+  "title": "152 - ¡Qué seguridad! Soy de Jesús",
+  "author": "Fanny Jane CrosbY Phoebe Palmer Knapp",
+  "speed": 1,
+  "verses": [
+    [
+      "1. ¡Qué seguridad! ¡Soy de Jesús!",
+      "¡Ya disfruto de las bendiciones de la luz!",
+      "Soy por medio de Jesús heredero de Dios;",
+      "Él me lleva a la gloria de los cielos."
+    ],
+    [
+      "2. A su amor me sometí",
+      "Y entonces me sentí extasiado",
+      "Ángeles cantando en lo alto de los cielos",
+      "Alabado sea la excelente gracia de Dios"
+    ],
+    [
+      "3. Viviendo siempre en su gran amor,",
+      "Me regocijo en mi Salvador;",
+      "Esperanzado, vivo en la luz;",
+      "¡En la bondad de mi Jesús!"
+    ]
+  ],
+  "coro": [
+    "¡Canta alma mía! ¡Canta al Señor!",
+    "¡Dale siempre ardiente alabanza!",
+    "¡Canta alma mía! ¡Cantad al Señor!",
+    "¡Alabadle siempre ardientemente!"
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

@@ -1,0 +1,35 @@
+{
+  "title": "52 - Dios nos dio un mensaje santo",
+  "author": "Sarah Poulton Kalley Edward John Hopkins",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Dios nos dio un mensaje santo",
+      "Para ser nuestra guía;",
+      "Es la Biblia la que nos dice",
+      "Obedecer siempre al Padre;",
+      "Enseña cómo debo vivir aquí;"
+    ],
+    [
+      "2. Señala mi pecado",
+      "Porque mi camino es ligero;",
+      "Muestra lo equivocado que estoy",
+      "Cuando el mundo me seduce;",
+      "La palabra de Jesús es una espada;"
+    ],
+    [
+      "3. Leeré mi Biblia",
+      "Y pensaré con devoción",
+      "En la palabra de verdad",
+      "Que me trae consuelo",
+      "La palabra la guardaré en mi corazón"
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

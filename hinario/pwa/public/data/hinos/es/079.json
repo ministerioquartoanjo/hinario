@@ -1,0 +1,44 @@
+{
+  "title": "79 - Hay poder en la sangre de Jesús",
+  "author": "Autor desconocido L. E. Jones",
+  "speed": 1,
+  "verses": [
+    [
+      "1. ¿Quieres dejar tu pecado?",
+      "En la sangre hay poder, sí hay poder;",
+      "¿Quieres la victoria del mal?",
+      "¡Tu sangre tiene este poder!"
+    ],
+    [
+      "2. ¿Quieres abandonar los vicios?",
+      "En la sangre hay poder, sí, hay poder;",
+      "Confía en Cristo para sanarte;",
+      "¡Su sangre tiene este poder!"
+    ],
+    [
+      "3. ¡Oh! Paralítico, ¿quieres caminar?",
+      "En la sangre hay poder, sí, hay poder;",
+      "Para hacerte caminar también,",
+      "¡Tu sangre tiene este poder!"
+    ],
+    [
+      "4. ¿Quieres pureza para tu corazón?",
+      "En la sangre hay poder, sí, hay poder;",
+      "Más lealtad, más consagración,",
+      "¡Tu sangre tiene este poder!"
+    ],
+    [
+      "5. ¿Quieres llevar el mensaje de Cristo?",
+      "En la sangre hay poder, sí, hay poder;",
+      "¿Quieres cantar con los ángeles en gloria?",
+      "¡Su sangre tiene este poder!"
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 9
+}

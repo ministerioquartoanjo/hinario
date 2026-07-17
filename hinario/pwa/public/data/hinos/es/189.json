@@ -1,0 +1,31 @@
+{
+  "title": "189 - Ven a Cristo",
+  "author": "John Fawcet",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Ven a Cristo, ven ahora,"
+    ],
+    [
+      "2. Cristo ciertamente puede salvarte,"
+    ],
+    [
+      "3. Él anhela perdonarte,"
+    ],
+    [
+      "4. Tu entrega no rechaza,"
+    ]
+  ],
+  "coro": [
+    "¡Ven, oh pecador!",
+    "Ven, ven, confiadamente,",
+    "¡A Jesús el Señor!"
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

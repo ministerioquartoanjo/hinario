@@ -1,0 +1,44 @@
+{
+  "title": "59 - Decidí seguirte",
+  "author": "John Ernest Bode Henry Thomas Smart",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Decidí seguirte,",
+      "Jesús, hasta el final,",
+      "Por ti, Señor, prometo",
+      "Guiarme siempre.",
+      "Sé que soy débil",
+      "Y no sé hacer el bien,",
+      "Pero por tu gracia",
+      "Siempre venceré."
+    ],
+    [
+      "2. Ya has vencido al mundo,",
+      "Y sus malas obras,",
+      "Y reinas sobre todo,",
+      "Oh Príncipe de paz.",
+      "En el cielo y aquí en la tierra",
+      "Tu poder reina,",
+      "Y por tu gracia",
+      "Siempre venceré."
+    ],
+    [
+      "3. A todos los que te siguen,",
+      "Y toman su cruz,",
+      "Prometes que contigo,",
+      "Vivirán, Jesús;",
+      "Descansarán en gloria,",
+      "Contigo, oh vencedor,",
+      "Porque por tu gracia",
+      "Vencerán sin temor."
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

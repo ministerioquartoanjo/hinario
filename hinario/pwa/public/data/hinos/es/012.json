@@ -1,0 +1,45 @@
+{
+  "title": "12 - Encontré a Jesús, Mi Salvador",
+  "author": "Autor desconocido",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Encontré a Jesús, Mi Salvador,",
+      "De amor fiel y verdadero;",
+      "No dejaré de alabarlo,",
+      "Porque tengo salvación y paz."
+    ],
+    [
+      "2. Ven y guárdame tu mano fuerte,",
+      "De todo vicio y maldad;",
+      "Venciendo toda tentación;",
+      "Sostenme el brazo divino."
+    ],
+    [
+      "3. Jesús me encontró tan afligido y en problemas,",
+      "Sin consuelo;",
+      "Me llamó a sí mismo, con verdadero amor;",
+      "Vine y encontré salvación."
+    ],
+    [
+      "4. Él me rescató de la muerte eterna,",
+      "De la dura esclavitud;",
+      "Sobre la roca eterna estoy a salvo;",
+      "Cantando voy, con gratitud."
+    ]
+  ],
+  "coro": [
+    "Salvo por Cristo soy,",
+    "¡Salvo por los que me amaron!",
+    "¡Salvo por los que me amaron!",
+    "Paz perfecta Él ahora me trae,",
+    "¡Porque soy salvo!"
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

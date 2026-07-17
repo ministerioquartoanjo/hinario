@@ -1,0 +1,32 @@
+{
+  "title": "86 - Gracia Infinita",
+  "author": "Melodía Tradicional Cubana",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Según tu infinita gracia,",
+      "Oh Padre, perdona mi transgresión.",
+      "Hazme sentir tu infinito amor,",
+      "Dame alegría en tu salvación."
+    ],
+    [
+      "2. Mi corazón te entrego, contrito,",
+      "Perdón te pido, mi Señor y Rey.",
+      "Según tu infinita gracia,",
+      "Misericordia, sí la obtendré."
+    ]
+  ],
+  "coro": [
+    "Pero una vez que sienta mi pecado,",
+    "Que está contra ti, oh Padre de amor;",
+    "Concédeme, oh Dios, misericordia,",
+    "Y te cantaré mi alabanza."
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

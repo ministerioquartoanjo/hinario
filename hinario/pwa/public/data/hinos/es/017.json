@@ -1,0 +1,34 @@
+{
+  "title": "17 - Altamente proclaman los cielos",
+  "author": "Metrificación del Sal 19, Melodía alemana de Sarah Kalley",
+  "speed": 1,
+  "verses": [
+    [
+      "1. En lo alto los cielos proclaman",
+      "Tu divino Creador;",
+      "El firmamento anuncia",
+      "Tus obras, oh Señor.",
+      "Sin cesar, noche y día,",
+      "Dan señales de tu poder;",
+      "Sin palabras proclamando",
+      "Tu gloria, Tu conocimiento."
+    ],
+    [
+      "2. Majestuoso, el sol camina",
+      "¡Por los cielos, con esplendor!",
+      "Exultante, en su recorrido,",
+      "Llena de calor el mundo.",
+      "El vasto universo entero",
+      "¡Canta, a coro, tu alabanza!",
+      "Y a nosotros llega dulce enseñanza",
+      "De la Palabra del Señor."
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

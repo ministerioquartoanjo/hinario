@@ -1,0 +1,44 @@
+{
+  "title": "49 - Dame la Biblia",
+  "author": "Priscilla Jane Owens Edmund Simon Lorenz",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Dame la Biblia que anhelo,",
+      "Siempre quiero caminar por tu camino;",
+      "Tus palabras son la dulce noticia.",
+      "Que nuestro Maestro vino a anunciar."
+    ],
+    [
+      "2. Dame la Biblia, la necesito,",
+      "Porque él me librará del pecado;",
+      "Tus palabras tienen poder y aliento.",
+      "Que mi alma pueda renovarse."
+    ],
+    [
+      "3. Dame la Biblia, que sea mi guía;",
+      "Por toda mi vida, mi camino y luz.",
+      "Tus buenas enseñanzas siempre serán la estrella.",
+      "Que me lleves al pie de la cruz"
+    ]
+  ],
+  "coro": [
+    "Dame la Biblia, que libro tan precioso;",
+    "Santa doctrina, fuente es de luz.",
+    "Sus enseñanzas son un gozo sublime;",
+    "Conducen al buen Jesús."
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0,
+  "videos": [
+    {
+      "url": "https://www.youtube.com/watch?v=PzOrJcXCOQs",
+      "title": "Vídeo do Hino 49 - Dá-me a Bíblia"
+    }
+  ]
+}

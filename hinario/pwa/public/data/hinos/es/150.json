@@ -1,0 +1,38 @@
+{
+  "title": "150 - ¿Qué dice la Biblia?",
+  "author": "Franklin Edson Belden",
+  "speed": 1,
+  "verses": [
+    [
+      "1. “¿Qué dice la Biblia, el libro sagrado”?",
+      "¡Para los fieles, esa es la pregunta!",
+      "Las enseñanzas de los hombres son defectuosas;",
+      "¡Qué dice entonces el libro acerca de Dios!"
+    ],
+    [
+      "2. Pocos consideran estas enseñanzas;",
+      "Quieren escapar de guardar la ley;",
+      "Otros quieren, en cuanto al descanso,",
+      "Tener el poder de revocarla."
+    ],
+    [
+      "3. Cuando venga el maestro, él os saludará,",
+      "¿Tú que pisoteas su ley?",
+      "¿Te encontrará justificado?",
+      "¡Oh, medita y responde!"
+    ]
+  ],
+  "coro": [
+    "“¿Qué dice la Biblia”? Pocos lo dirán.",
+    "“¿Qué dice la Biblia”? Es necesario saber.",
+    "Sus mandamientos guardemos todos,",
+    "Pronto veremos a Jesús."
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

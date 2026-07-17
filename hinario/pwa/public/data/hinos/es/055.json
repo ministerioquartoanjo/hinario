@@ -1,0 +1,44 @@
+{
+  "title": "55 - He aquí multitudes",
+  "author": "James McGranahan",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Aquí hay multitudes, en tan terrible oscuridad,",
+      "¡Viven perdidos, sin el Salvador!",
+      "¿Quién les dará la noticia proclamando",
+      "Que Dios, en Cristo, salva al pecador?"
+    ],
+    [
+      "2. Puertas abiertas, he aquí en todo el mundo;",
+      "Tiempos de cosecha aprovechad ahora.",
+      "Siervos de Cristo, unid vuestras fuerzas,",
+      "Liberad al pueblo de la esclavitud."
+    ],
+    [
+      "3. \"¡Oh, ven a mí!\" La voz divina clama.",
+      "Vayan, clamen en el nombre de Jesús,",
+      "El cual nos salve del castigo eterno,",
+      "Su sangre derramada por nosotros en la cruz."
+    ],
+    [
+      "4. Oh Dios, apresura el día glorioso ",
+      "Cuando los redimidos se unan todos ",
+      "Y en un gran coro, santos y gozosos, ",
+      "Te darán gloria por los siglos de los siglos."
+    ]
+  ],
+  "coro": [
+    "“Todo poder me ha dado el Padre,",
+    "En la tierra, así como en el cielo;",
+    "Id, pues, a predicar el evangelio,",
+    "Y yo estaré con vosotros siempre"
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

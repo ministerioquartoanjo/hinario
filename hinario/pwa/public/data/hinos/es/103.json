@@ -1,0 +1,32 @@
+{
+  "title": "103 - Mi hogar, Jerusalén",
+  "author": "Joseph Bromehead",
+  "speed": 1,
+  "verses": [
+    [
+      "1. ¡Feliz Jerusalén, mi hogar!",
+      "¡En ti anhelo estar!",
+      "Sentir allí la calma en la gloria,",
+      "Y disfrutar de tu placer."
+    ],
+    [
+      "2. ¡Oh! ¡Feliz hogar de amor y paz!",
+      "¡Jardín como ningún otro!",
+      "Tu resplandor de gloria y luz,",
+      "Ningún mortal lo ha visto jamás."
+    ],
+    [
+      "3. Jesús pronto regresará,",
+      "Y la paz del hogar más allá",
+      "Reinará entonces en ti,",
+      "Mi hogar – Jerusalén"
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

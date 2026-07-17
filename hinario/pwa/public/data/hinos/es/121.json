@@ -1,0 +1,38 @@
+{
+  "title": "121 - Oh Dios Eterno, ven a concédeme",
+  "author": "John Ellerton Edward John Hopkins",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Oh Dios eterno, ven y concédeme",
+      "La plenitud del Consolador.",
+      "Desde los cielos concédeme Tu poder,",
+      "Que me renueva y me llena de fervor"
+    ],
+    [
+      "2. Ven y haz en mi morada",
+      "Un templo santo que anhelo ser, Señor.",
+      "Quiero seguir tu dirección,",
+      "Vivir en el Espíritu renovado."
+    ],
+    [
+      "3. Dame valor para testificar",
+      "En mi pensamiento, palabra y acciones.",
+      "Que tenga una vida santa y ejemplar,",
+      "También llena de fervor y poder."
+    ],
+    [
+      "4. Oh Dios, aumenta mi compasión",
+      "Por los perdidos, sin amor, sin luz.",
+      "Que muestres a todos tu salvación,",
+      "Esta es mi oración, en el nombre de Jesús. Amén."
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

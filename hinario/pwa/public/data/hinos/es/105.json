@@ -1,0 +1,54 @@
+{
+  "title": "105 - Mi pastor",
+  "author": "Adriano Nobre Jojn Zundel",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Mi pastor es Jesucristo",
+      "Quiero confiar en Él;",
+      "Con Jesús no me falta nada;",
+      "Junto a Él quiero caminar.",
+      "Guíame al buen descanso;",
+      "Al campo verde en flor,",
+      "Sí, refresca mi alma,",
+      "Llenándome de amor"
+    ],
+    [
+      "2. Él es mi compañero;",
+      "Con Jesús deseo caminar;",
+      "Porque me da vigor y fuerza,",
+      "Para que pueda caminar;",
+      "Él es quien da coraje,",
+      "Por nada temo;",
+      "Incluso cerca de la muerte",
+      "Estoy seguro de que voy a ganar."
+    ],
+    [
+      "3. Caminando a su lado",
+      "Ya no temeré más el mal;",
+      "Su cayado y Su cayado",
+      "Me dan una protección real;",
+      "Contra mi enemigo",
+      "El Señor siempre vendrá;",
+      "Prepárame una mesa",
+      "Y está conmigo en él."
+    ],
+    [
+      "4. Unge mi cabeza",
+      "Con el aceite de su amor;",
+      "Mi alegría es desbordante,",
+      "Porque mi copa es dulce;",
+      "Por su misericordia",
+      "Y por su sublime bien",
+      "Habitaré en tu casa",
+      "Para siempre, ¿amén?"
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

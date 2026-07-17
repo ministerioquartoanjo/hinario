@@ -1,0 +1,44 @@
+{
+  "title": "113 - Nombre precioso",
+  "author": "William Howard Doane",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Lleva contigo el nombre",
+      "De Jesús el Salvador;",
+      "Este nombre da consuelo",
+      "Hoy, cuando y dondequiera."
+    ],
+    [
+      "2. Este nombre lleva siempre",
+      "Para defender siempre.",
+      "Es un arma a tu alcance,",
+      "Cuando el mal se te aparece."
+    ],
+    [
+      "3. ¡Oh! ¡Qué nombre tan precioso!",
+      "El gozo trae al corazón.",
+      "Siendo aceptado por Jesús,",
+      "Tendrás Su perdón."
+    ],
+    [
+      "4. Santo nombre, y venerable",
+      "Ten a Jesús, tu amado",
+      "“Rey de reyes” “Señor Eterno”",
+      "¡Aclamarás en el cielo!"
+    ]
+  ],
+  "coro": [
+    "¡Buen nombre! Dulce fe.",
+    "¡Esperanza para el futuro!",
+    "¡Buen nombre! Dulce fe.",
+    "¡Esperanza para el futuro!"
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

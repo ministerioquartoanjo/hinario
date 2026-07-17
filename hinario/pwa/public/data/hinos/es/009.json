@@ -1,0 +1,36 @@
+{
+  "title": "9 - Mi fe y mi amor",
+  "author": "Edward Mote William Batchelder Bradbury",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Mi esperanza hasta el fin,",
+      "Es Cristo quien murió por mí.",
+      "Creo sólo en mi Señor,",
+      "En el nombre del buen Redentor."
+    ],
+    [
+      "2. Si no puedo ver Su rostro, ",
+      " En Su gracia viviré. En cada crisis,",
+      "sin falta, siempre confiaré en Él."
+    ],
+    [
+      "3. Él nunca dejó de prometer;",
+      "En mis luchas él viene en mi ayuda.",
+      "Cuando viene la tentación,",
+      "Cristo es mi salvación"
+    ]
+  ],
+  "coro": [
+    "Mi fe y mi amor",
+    "Están establecidos en el Señor,",
+    "Están establecidos en el Señor."
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

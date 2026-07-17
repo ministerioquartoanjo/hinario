@@ -1,0 +1,35 @@
+{
+  "title": "15 - Anhelo una fe fuerte",
+  "author": "William Hiley Bathurst William Henry Havergal",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Anhelo una fe fuerte",
+      "En el mundo tentador;",
+      "Que, con calma, no retrocederá",
+      "Y no tendrá miedo.  2. Fe que no me hace quejarme",
+      "Si viene la corrección,",
+      "Y cuando es más severa,",
+      "Cuanto más estabiliza el corazón."
+    ],
+    [
+      "3. La fe que siempre brilla más",
+      "En medio del huracán,",
+      "Que en el peligro siente paz,",
+      "En la densa oscuridad."
+    ],
+    [
+      "4. Tan fuerte sea mi fe,",
+      "Que, pase lo que pase,",
+      "Puedo incluso saborear",
+      "El placer celestial aquí."
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

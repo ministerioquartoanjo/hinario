@@ -1,0 +1,34 @@
+{
+  "title": "4 - La Ley de Mi Señor",
+  "author": "Lowell Mason",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Sabio, justo, santo y puro",
+      "Es la ley de mi Señor,",
+      "Que corrige la vida impura",
+      "Del pecador perdido.",
+      "La enseñanza del Señor",
+      "Siempre perfecta allí;",
+      "Es tan rica en sus preceptos",
+      "Y santos consejos que da."
+    ],
+    [
+      "2. Los buenos consejos del Señor,",
+      "Justos y benignos son;",
+      "En ellos veo, como espejos,",
+      "Cuán malo es mi corazón.",
+      "Más que el sol resplandeciente,",
+      "Los preceptos del Señor",
+      "Iluminan nuestras mentes,",
+      "Con resplandor divino."
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

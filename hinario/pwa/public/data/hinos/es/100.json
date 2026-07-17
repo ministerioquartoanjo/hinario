@@ -1,0 +1,38 @@
+{
+  "title": "100 - Más cerca quiero estar",
+  "author": "Sarah Fuller Flower Adams Lowel Mason",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Quiero estar más cerca,",
+      "Dios mío, de Ti,",
+      "Aunque sea dolor,",
+      "Que me una a Ti."
+    ],
+    [
+      "2. Caminando triste aquí,",
+      "En soledad, ",
+      "Paz y descanso para mí,",
+      "Tus brazos dan."
+    ],
+    [
+      "3. Mi alma cantará,",
+      "A Ti, Señor,",
+      "Llena de gratitud,",
+      "Por tu amor."
+    ]
+  ],
+  "coro": [
+    "Aquí está mi oración constante:",
+    "Más cerca quiero estar,",
+    "Más cerca quiero estar,",
+    "Dios mío, de Ti."
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

@@ -1,0 +1,53 @@
+{
+  "title": "77 - Hay tales canciones en el cielo",
+  "author": "Johnson Oatman, Jr John Robson Sydney",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Hay tales canciones allí en el cielo,",
+      "¡Que aquí nadie ha oído jamás!",
+      "Siempre los ángeles cantan alabanzas",
+      "Al Cordero del Señor. Arpas siempre en armonía,",
+      "Siempre la voz en tonos claros.",
+      "Si tan solo pudiéramos ser así,",
+      "¡Sirviendo al Rey y Salvador!"
+    ],
+    [
+      "2. Aunque no sea un ángel,",
+      "En el cielo cantaré.",
+      "Me uniré al gran coro",
+      "De los redimidos del Señor",
+      "Alabaré a mi Salvador",
+      "Que murió por mí en la cruz,",
+      "Que pagó mis pecados",
+      "Y me dio libertad."
+    ],
+    [
+      "3. Este cántico de victoria,",
+      "Sí, los ángeles lo oirán.",
+      "Es como la voz de muchas aguas,",
+      "La voz de una gran multitud.",
+      "El universo entero se detiene,",
+      "En asombro y admiración,",
+      "Al cántico de los redimidos",
+      "Al Señor de la redención"
+    ]
+  ],
+  "coro": [
+    "¡Santo! ¡Santo!",
+    "Es el canto de los ángeles buenos.",
+    "Un día me uniré",
+    "¡La voz a tales aclamaciones!",
+    "Pero cuando os cuento la historia",
+    "De esta redención: ¡Mudos!",
+    "No pueden entender",
+    "¡Qué salvación tan grande!"
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

@@ -1,0 +1,38 @@
+{
+  "title": "140 - Pensando en Jesús",
+  "author": "Autor desconocido",
+  "speed": 1,
+  "verses": [
+    [
+      "1. En las horas que paso pensando en Jesús",
+      "Las tinieblas las disipo, buscando la luz;",
+      "¡Qué horas de la vida son tan dulces para mí;",
+      "Jesús me invita, para que ascienda a Él!"
+    ],
+    [
+      "2. De la vida volando, sin miedo alguno;",
+      "Arriba buscando el amor por encima del velo;",
+      "Qué dulce aventura, qué aspecto tan feliz,",
+      "Qué nueva naturaleza bendice mi alma."
+    ],
+    [
+      "3. Del mar el rugido, de la brisa la languidez",
+      "Del pájaro el llanto del dulce amor,",
+      "Las cuerdas de los cielos me hablan en significado,",
+      "¡Los himnos de Dios traen a mis oídos!"
+    ],
+    [
+      "4. Mi alma ansiosa ya quiere recorrer",
+      "El camino glorioso que veré;",
+      "Qué cosa más hermosa; ¡Vaya! ¡Qué luz sin velo!",
+      "Jesús me revela los misterios del cielo."
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

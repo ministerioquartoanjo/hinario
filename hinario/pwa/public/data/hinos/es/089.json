@@ -1,0 +1,44 @@
+{
+  "title": "89 - Jerusalén Excelsa",
+  "author": "Bernard de Cluny Alexander Ewing",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Jerusalén exaltada,",
+      "En ti nos gloriamos,",
+      "Esperanza afable",
+      "De todo creyente aquí.",
+      "Radiante es tu puerta,",
+      "Que se ve desde lejos,",
+      "Por la cual se entra",
+      "Todo aquel que cree en Cristo."
+    ],
+    [
+      "2. La cruz y su gloria",
+      "Y nuestro Redentor",
+      "En ti son exaltados",
+      "Con himnos de alabanza.",
+      "Qué gozo inspiras en mí,",
+      "Morada eterna,",
+      "Porque sé que en ti termina la peregrinación",
+      "¡Peregrinación!"
+    ],
+    [
+      "3. Oh dulce amado hogar,",
+      "Estarás en mi reposo,",
+      "Cuando haya heredado",
+      "Tu bien y Tu paz",
+      "Oh corazón que gime,",
+      "En el dolor que te sacia,",
+      "Con Dios que redime,",
+      "Felices entonces serás."
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

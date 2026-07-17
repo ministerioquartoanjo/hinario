@@ -1,0 +1,44 @@
+{
+  "title": "126- ¡Ay! ¡Nunca se separe!",
+  "author": "Isaac Watts Timbrel de Sión",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Hay un país de alegría y luz",
+      "Donde sólo hay santos;",
+      "Los placeres fluyen allí;",
+      "Allí siempre es de día."
+    ],
+    [
+      "2. Siempre hay primavera allí,",
+      "Las flores no se marchitarán;",
+      "Tan cerca, sí, de nosotros está",
+      "La mansión eterna."
+    ],
+    [
+      "3. Ahora somos como Moisés,",
+      "Viendo el hogar futuro;",
+      "Y vemos por fe",
+      "La morada sin igual."
+    ]
+  ],
+  "coro": [
+    "Marchamos a la tierra más allá",
+    "Y vamos a Jerusalén:",
+    "Iremos con Jesús a reinar",
+    "Y nunca más seremos separados.",
+    "¡Oh! ¿Nunca separarse?",
+    "¡No, nunca separarse!",
+    "¡Oh! ¿Nunca separarnos?",
+    "No, nunca separarnos,",
+    "Iremos con Jesús a reinar",
+    "Y nunca más separarnos."
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

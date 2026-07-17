@@ -1,0 +1,43 @@
+{
+  "title": "137 - Escuché al Salvador decir",
+  "author": "Horacio Bonar Juan Baco Dykes",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Escuché al Salvador decir: “Ven a descansar en Mí,",
+      "Y en Mis brazos tendrás",
+      "Consuelo sin fin”!",
+      "Entonces fui y le di",
+      "Mi corazón triste;",
+      "Refugio, paz y gracia encontré,",
+      "Encontré consuelo."
+    ],
+    [
+      "2. Escuché al Salvador decir:",
+      "Yo soy la fuente de vida,",
+      "De las aguas vivas, ven y bebe,",
+      "Siempre doy gratis",
+      "Fui a Jesús y me incliné,",
+      "De las aguas bebí.",
+      "Nunca tendré sed",
+      "Mientras esté aquí."
+    ],
+    [
+      "3. Escuché al Salvador decir: ",
+      "Yo soy la luz de la vida;",
+      "Al que me recibe con fe",
+      "Vida eterna le doy.",
+      "Fui a Jesús y en Él encontré ",
+      "El sol que brilla en mí;",
+      "Y en esa luz caminaré ",
+      "Hasta el fin de la vida."
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

@@ -1,0 +1,38 @@
+{
+  "title": "66 - La fe es victoria",
+  "author": "John Henry Yates",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Soldados de Jesús, Señor, cristianos, despertad.",
+      "La oscuridad viene de la noche, ¡rápida batalla!",
+      "¡Y contra los viles enemigos salgo a luchar!",
+      "Nuestra fe es victoria, el mundo vencerá."
+    ],
+    [
+      "2. Bajo el estandarte que para nosotros es el santo amor de Dios,",
+      "Caminemos aquí por el camino que conduce a los cielos.",
+      "Los santos creyentes, por la fe, vencerán a Satanás.",
+      "Nuestra fe es victoria y trae paz a todos."
+    ],
+    [
+      "3. El que vive en la fe alcanzará la justicia;",
+      "Un nuevo nombre tendrá, se recibirá el perdón.",
+      "Así, manteniéndonos firmes, por la fe, unidos en el amor,",
+      "Venceremos con el poder que viene del Salvador."
+    ]
+  ],
+  "coro": [
+    "La fe es victoria,",
+    "Sí, la fe siempre tiene poder.",
+    "La fe es victoria:",
+    "El mundo vencerá."
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

@@ -1,0 +1,48 @@
+{
+  "title": "185 - Lo entregaré todo",
+  "author": "Judson Van Venter Wifield Scott Weeden",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Todo, oh Cristo, a Ti lo entrego,",
+      "Todo, sí, por Ti lo daré.",
+      "Resoluto, pero sumiso,",
+      "Siempre te seguiré."
+    ],
+    [
+      "2. Todo, oh Cristo, a Ti me entrego,",
+      "Cuerpo y alma, ¡he aquí!",
+      "Este mundo malo lo niego,",
+      "¡Oh Jesús, acéptame!"
+    ],
+    [
+      "3. Todo, oh Cristo, a Ti lo entrego,",
+      "¡Quiero ser sólo Tuyo!",
+      "Como sumiso a Tu voluntad",
+      "¡Como los ángeles en el cielo!"
+    ],
+    [
+      "4. Todo, oh Cristo, a Ti me entrego;",
+      "Oh, siento tu amor",
+      "Transforma mi vida",
+      "¡Y mi corazón, Señor!"
+    ],
+    [
+      "5. Todo, oh Cristo, a Ti me entrego;",
+      "¡Oh, qué alegría, Señor mío!",
+      "¡Paz perfecta, paz completa!",
+      "¡Gloria, gloria al Salvador!"
+    ]
+  ],
+  "coro": [
+    "¡Todo lo entregaré! (2x)",
+    "¡Sí, por Ti, bendito Jesús, lo dejaré todo!"
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

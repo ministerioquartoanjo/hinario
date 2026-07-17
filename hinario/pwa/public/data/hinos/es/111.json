@@ -1,0 +1,44 @@
+{
+  "title": "111 - No soy mío",
+  "author": "Henry Maxwell Wright",
+  "speed": 1,
+  "verses": [
+    [
+      "1. ¡No soy mío! Por Cristo salvado,",
+      "Que por mí murió en la cruz.",
+      "Con gozo confieso,",
+      "Que pertenezco al buen Jesús."
+    ],
+    [
+      "2. ¡No soy mío! Redimido por Él,",
+      "Cuando la sangre derramada;",
+      "En Su gracia confiando,",
+      "Que mi alma rescató."
+    ],
+    [
+      "3. ¡Nunca el mío! A Ti te encomiendo",
+      "Todo lo que llamo mío;",
+      "Todo en Tus manos lo encomiendo;",
+      "¡Señor mío, soy todo Tuyo!"
+    ],
+    [
+      "4. ¡Nunca el mío! ¡Oh santifica",
+      "Todo lo que soy, Señor!",
+      "De la vanidad y del orgullo,",
+      "Ven y líbrame, Salvador."
+    ]
+  ],
+  "coro": [
+    "¡No soy mío! ¡Oh! ¡No soy mío!",
+    "Buen Jesús, ¡soy todo tuyo!",
+    "Hoy y siempre,",
+    "Buen Jesús, ¡soy todo tuyo!"
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

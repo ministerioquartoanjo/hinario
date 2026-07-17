@@ -1,0 +1,44 @@
+{
+  "title": "151 - ¿Quién irá?",
+  "author": "Henry Maxwell Wright",
+  "speed": 1,
+  "verses": [
+    [
+      "1. He aquí los millones que en tan espantosa oscuridad",
+      "¡Yacen perdidos, sin el Salvador!",
+      "¿Quién, quién proclamará la noticia?",
+      "¿Que Dios, en Cristo, salva al pecador?"
+    ],
+    [
+      "2. ¡Puertas abiertas, contemplad en todo el mundo!",
+      "¡Cristianos, levántense! ¡Adelante!",
+      "¡Creyentes en Cristo! Une tus fuerzas.",
+      "¡Liberen al pueblo de la esclavitud!"
+    ],
+    [
+      "3.\"¡Oh, venid a mí! La voz divina clama,",
+      "\"¡Venir!\" ¡Llorar! en el nombre de Jesús:",
+      "Para salvarnos de la maldición eterna,",
+      "Su sangre fue derramada por nosotros en la cruz."
+    ],
+    [
+      "4. Oh Dios, apresura el día glorioso,",
+      "En el que todos los redimidos se unirán,",
+      "Y, en un coro exaltado, santo y alegre,",
+      "Por los siglos de los siglos te darán gloria."
+    ]
+  ],
+  "coro": [
+    "“Todo poder me ha dado el Padre,",
+    "En la Tierra, como allí en el cielo;",
+    "Id, pues, a proclamar el evangelio,",
+    "¡Y aquí estoy contigo siempre!"
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

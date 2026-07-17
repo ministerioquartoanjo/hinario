@@ -1,0 +1,54 @@
+{
+  "title": "165 - Recuerdo anhelante",
+  "author": "Adriano Nobre",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Ay, que lindo recuerdo",
+      "¡Te tengo, oh Sión!",
+      "Tierra que tanto amo,",
+      "Porque eres de mi corazón.",
+      "volaré hacia ti",
+      "Cuando mi Señor regrese;",
+      "Porque fue al cielo,",
+      "Y él vendrá a buscarme pronto."
+    ],
+    [
+      "2. Bella, muy bella, es la esperanza",
+      "De los que te cuidan",
+      "Porque reciben fuerza",
+      "eso solo esta ahi",
+      "Quienes buscan llegar",
+      "En tu regazo, oh Sión",
+      "Serán libres del pecado",
+      "Y de toda la tentación"
+    ],
+    [
+      "3. La Sagrada Escritura dice",
+      "que bonitos son tus pies",
+      "De los que buenas noticias",
+      "Llévalo a los infieles",
+      "Y si es tan bonito hablar",
+      "De estas grandezas, aquí",
+      "Ese no será el disfrute.",
+      "¡La gracia que existe allí!"
+    ]
+  ],
+  "coro": [
+    "si, peleare",
+    "Por esta tierra más allá;",
+    "Y ahí terminaré",
+    "Las muchas luchas desde abajo.",
+    "Ahí está mi buen Señor",
+    "Que anhelo ver;",
+    "Él es todo para mí,",
+    "Y sin Él no puedo vivir."
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

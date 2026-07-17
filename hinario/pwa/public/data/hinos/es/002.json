@@ -1,0 +1,38 @@
+{
+  "title": "2 - A Dios le dimos gloria",
+  "author": "Fanny Jane CrosbyWilliam Howard Doane",
+  "speed": 1,
+  "verses": [
+    [
+      "1. A Dios dimos gloria, con gran fervor;",
+      "Su bendito Hijo nos dio a todos.",
+      "La gracia concede a cualquier pecador,",
+      "Abriendo la puerta al cielo para ti."
+    ],
+    [
+      "2. ¡Ah! verdadera gracia! Así es como Jesús,",
+      "¡Moriendo, su sangre derramada por nosotros!",
+      "Herencia en los cielos, con los santos en la luz,",
+      "Jesús nos compró, porque él pagó el precio."
+    ],
+    [
+      "3. Creer nos invita a tal prueba de amor,",
+      "En los méritos del Hijo de Dios.",
+      "Y quien confía en su Salvador,",
+      "Lo veréis exaltado en la gloria del cielo."
+    ]
+  ],
+  "coro": [
+    "¡Alegrarse! ¡Alegrarse! ¡Todos vengan y alaben!",
+    "¡A Jesús Salvador, a Jesús Redentor!",
+    "A Dios le damos gloria porque desde el cielo",
+    "Su bendito Hijo nos dio a todos."
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

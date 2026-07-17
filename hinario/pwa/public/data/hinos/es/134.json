@@ -1,0 +1,38 @@
+{
+  "title": "134 - Escucho el Clamor del Buen Pastor",
+  "author": "Alexcenah Thomas William Augustine Ogden",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Oigo el clamor del buen Pastor,",
+      "A través del desierto desolado;",
+      "Sus corderos llamando,",
+      "Deseando salvarlos."
+    ],
+    [
+      "2. ¡Oh!, ¿quién no quiere ayuda para dar,",
+      "Tus corderos al abrigo,",
+      "Y conducirlos a Jesús,",
+      "Fuente de vida, de amor y de luz?"
+    ],
+    [
+      "3. En el desierto para sufrir,",
+      "En los caminos para morir,",
+      "Buscaréis a vuestros corderitos,",
+      "Para que Yo pueda bendecirlos."
+    ]
+  ],
+  "coro": [
+    "“Vayan a buscarlo, vayan a buscarlo",
+    "¡Estos corderitos Míos ahora!",
+    "¡Vayan a buscarlo, vayan a buscarlo,",
+    "¡Para que Yo pueda bendecirlos”!"
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

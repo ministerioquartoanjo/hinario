@@ -1,0 +1,44 @@
+{
+  "title": "157 - El velo se rasgó",
+  "author": "Autor desconocido",
+  "speed": 1,
+  "verses": [
+    [
+      "1. El velo se rasgó, la entrada se hizo clara;",
+      "Tenemos confianza, para entrar allí;",
+      "Donde la gloria divina se reveló, una vez,",
+      "No pudimos mirar.",
+      "Porque Cristo, entrando, allí no tememos nada;",
+      "La gloria brilla, sin deslumbrarnos;",
+      "En la luz estamos y permanecemos",
+      "Firmes, tranquilos, sin más vacilar."
+    ],
+    [
+      "2. Contigo allí, Señor, nos encontramos,",
+      "Porque ya nos has conducido al Santo Padre,",
+      "En cuya gracia somos siempre acogidos,",
+      "En cuyo amor tan grande nos atrae",
+      "A Ti, oh Hijo, en Ti, oh amado!",
+      "Y sólo en Ti tenemos aceptación;",
+      "Y quien, habiendo sido lavados en la sangre,",
+      "Confiado está en la Tuya salvación."
+    ],
+    [
+      "3. Oh Dios, te alabamos de corazón,",
+      "Porque quisiste acercarnos,",
+      "Cuando fuimos separados de Ti,",
+      "Por tu divina ley, violamos,",
+      "Tus santos seguidores, consagrados,",
+      "En la sangre del bendito Salvador,",
+      "El culto y la adoración que te presentamos,",
+      "Porque Tú nos llamaste, ¡oh buen Señor!"
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

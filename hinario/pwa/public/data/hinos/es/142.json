@@ -1,0 +1,38 @@
+{
+  "title": "142 - Por mis pecados sufrió",
+  "author": "Isaac Watts Ralph E. Hudson",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Por mis pecados Jesús sufrió",
+      "Quien es vida y luz.",
+      "Él sufrió mi castigo",
+      "En la cruz sangrienta."
+    ],
+    [
+      "2. Nunca tendré una voz tan débil",
+      "Que dude en confesar",
+      "A quien, con tan atroz muerte,",
+      "Mi alma quiso salvar"
+    ],
+    [
+      "3. Porque deseo aquí cantar",
+      "Al gran Salvador.",
+      "Y cuando vaya al cielo a vivir,",
+      "Lo alabaré mejor."
+    ],
+    [
+      "4. ¡Oh, hazme fuerte para confesar",
+      "A Ti, Jesús Señor!",
+      "¡Oh, prepárame para confiar",
+      "¡En Tu exaltado amor!"
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

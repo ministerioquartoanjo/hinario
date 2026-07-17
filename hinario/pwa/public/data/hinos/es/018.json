@@ -1,0 +1,49 @@
+{
+  "title": "18 - Apunte a más que la nieve",
+  "author": "Eden Reeder Latta Henry Southwick Perkins",
+  "speed": 1,
+  "verses": [
+    [
+      "1. ¡Bendito sea el Cordero",
+      "que sufrió en la cruz por nosotros!",
+      "Sea bendita su sangre",
+      "que derramó por nosotros pecadores.",
+      "He aquí, somos lavados en sangre,",
+      "Con vestiduras tan blancas;",
+      "Redimimos a los pecadores,",
+      "Que recibimos el perdón de Dios."
+    ],
+    [
+      "2. ¡Qué corona de espinas,",
+      "Que Jesús llevó por nosotros!",
+      "¡Oh! ¡Cuán profundas las llagas",
+      "Que nos prueban cuánto amó!",
+      "¡He aquí en estas llagas la pureza",
+      "Para el mayor pecador!",
+      "Para más blancos que la nieve,",
+      "¡Tu sangre nos hace, Señor!"
+    ],
+    [
+      "3. Si te confesamos",
+      "Y seguimos en Tu luz,",
+      "Tú no sólo perdonas,",
+      "También purificas, oh Jesús",
+      "¡Sí, y de todo pecado!",
+      "¡Qué maravilloso este amor!",
+      "Porque es más blanco que la nieve,",
+      "¡Tu sangre nos hace, Señor!"
+    ]
+  ],
+  "coro": [
+    "¡Blancos, más blancos que la nieve! (2x)",
+    "Sí, en esta sangre lavada,",
+    "Seré más un objetivo que la nieve."
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

@@ -1,0 +1,38 @@
+{
+  "title": "47 - Cristo salva al pecador",
+  "author": "Erdmann Neumeister James McGranahan",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Cristo salva al pecador,",
+      "Lava el corazón rudo;",
+      "Contrito de amor,",
+      "Ofrece salvación."
+    ],
+    [
+      "2. Cristo salva al pecador",
+      "Y le concede el perdón.",
+      "Acepta al buen Señor,",
+      "Acepta de corazón."
+    ],
+    [
+      "3. Venid todos y encontraréis",
+      "Paz y luz en el Redentor,",
+      "Venid, entonces recibiréis",
+      "Vida eterna del Señor."
+    ]
+  ],
+  "coro": [
+    "Confía en su poder;",
+    "Confía en su amor;",
+    "Cree que Cristo quiere",
+    "Liberar al pecador."
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

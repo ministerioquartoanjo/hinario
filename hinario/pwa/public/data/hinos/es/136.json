@@ -1,0 +1,20 @@
+{
+  "title": "136 - Escúchanos Señor",
+  "author": "George Whelpton",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Escúchanos,",
+      "Señor, Santo Salvador;",
+      "Inclínate para escuchar",
+      "Y danos tu paz. Amén."
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

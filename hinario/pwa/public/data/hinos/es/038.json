@@ -1,0 +1,32 @@
+{
+  "title": "38 - Contentamiento",
+  "author": "Jane Catherine Bonar Richard Holden",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Ya soy feliz: ¡tengo a Jesús!",
+      "Con alegría voy: ¡tengo a Jesús!",
+      "Alegría que trae el mundo, muy pronto se disuelve:",
+      "¡Tengo perfecta paz, paz en Jesús!"
+    ],
+    [
+      "2. ¡Puedo envejecer, nunca Jesús!",
+      "¡Puedo volverme pobre, nunca Jesús!",
+      "Todo me abastecerá, siempre me valdrá,",
+      "Nada me faltará, teniendo a Jesús."
+    ],
+    [
+      "3. ¡Todo terminará aquí, menos Jesús!",
+      "Cuando llegue el Juez: ¡es mi Jesús!",
+      "Estaré muy agradecido cuando mi Rey baje.",
+      "Por supuesto que dirá: \"¡Soy Jesús!\""
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

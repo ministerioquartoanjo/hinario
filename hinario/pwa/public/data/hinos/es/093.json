@@ -1,0 +1,32 @@
+{
+  "title": "93 - Jesús, siempre te amo",
+  "author": "William Ralph Featherstone Adoniram Judson Gordon",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Jesús, siempre te amo, porque sé que eres mío;",
+      "Feliz te doy la alabanza que es sólo Tuya.",
+      "Mi divino Maestro, Señor y mi Rey;",
+      "A Ti, mi Cristo, me someteré."
+    ],
+    [
+      "2. Te amo porque moriste por mí",
+      "Te amo porque tu amor no tiene fin",
+      "En ti tendré confianza para siempre",
+      "Y a ti, oh Cristo mío, me someteré."
+    ],
+    [
+      "3. Te amo en la vida, también en la muerte",
+      "Siempre te alabaré en la gloria más allá",
+      "Ahora y por siempre para ti viviré",
+      "Y a ti, oh Cristo mío, me someteré."
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

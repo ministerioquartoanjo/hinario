@@ -1,0 +1,32 @@
+{
+  "title": "145 - Listo para guardar",
+  "author": "Henry Maxwell Wright",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Todo aquel que cree en el Hijo de Dios,",
+      "Quien para redimirnos, descendió del cielo;",
+      "Quien se acerca contrito a Dios;",
+      "Jesús ya está listo para salvar."
+    ],
+    [
+      "2. Quien, arrepentido, busca perdón,",
+      "Abriendo su corazón a Jesús,",
+      "La paz puede disfrutar hoy,",
+      "Porque Él ya está listo para salvar"
+    ]
+  ],
+  "coro": [
+    "¡Sí, Jesús te llama mi hermano!",
+    "A ti te ofrece el perdón total.",
+    "Su sangre derramada para rescatarte,",
+    "Y Él es el que quiere y puede salvar."
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

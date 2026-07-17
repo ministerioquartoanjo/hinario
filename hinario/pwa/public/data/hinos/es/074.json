@@ -1,0 +1,44 @@
+{
+  "title": "74 - Gracias doy por mi vida",
+  "author": "August Ludvig Storm John Alfred Hultman",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Doy gracias por mi vida,",
+      "Que Jesús ya transformó.",
+      "Y también por mi futuro",
+      "y por todo lo sucedido;",
+      "Por las bendiciones derramadas,",
+      "Por el amor, por la aflicción.",
+      "Por las faltas perdonadas,",
+      "Agradezco de corazón."
+    ],
+    [
+      "2. Gracias por el cielo azul,",
+      "Y por las nubes que también hay:",
+      "Por las rosas en el camino,",
+      "Y las espinas que tiene.",
+      "Por las luchas de esta vida,",
+      "Por la estrella que brilló,",
+      "Por la oración contestada,",
+      "Y la esperanza que amaneció."
+    ],
+    [
+      "3. Doy gracias a Jesucristo,",
+      "Que murió en mi lugar,",
+      "Por la paz que no tiene medida,",
+      "Y me ayuda a caminar.",
+      "Gracias doy por mis amigos,",
+      "Consuelo en el llanto,",
+      "Por apoyo en los peligros,",
+      "Siempre daré gracias."
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

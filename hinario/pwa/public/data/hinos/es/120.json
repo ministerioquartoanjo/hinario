@@ -1,0 +1,32 @@
+{
+  "title": "120 - Oh Dios del Amor",
+  "author": "Isaac Watts John Hatton",
+  "speed": 1,
+  "verses": [
+    [
+      "1. ¡Oh Dios de amor, venimos a adorarte.",
+      "Tú, oh nación, alabado!",
+      "Eres Tú, Señor, el Poderoso Conquistador;",
+      "¡Tú eres Creador y Rey sin igual! "
+    ],
+    [
+      "2. Con Tu poder nos creaste, Señor,",
+      "Nos diste vida y perfección;",
+      "Y cuando nos desviamos de Tu plan de amor,",
+      "La salvación vino en Jesús."
+    ],
+    [
+      "3. Tuyo es el poder y la alabanza, Dios nuestro;",
+      "Tuyo, nuestro amor, también el fervor.",
+      "Sobre una roca firme permanecerá la verdad,",
+      "Dios eterno, Señor. Amén."
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

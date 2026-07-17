@@ -1,0 +1,50 @@
+{
+  "title": "117- La invitación de Cristo",
+  "author": "Henry Maxwell Wright",
+  "speed": 1,
+  "verses": [
+    [
+      "1. He aquí, la voz de Cristo clama,",
+      "Sobre el mar embravecido;",
+      "De esta vida peligrosa:",
+      "“Ven y refúgiate en Mí”!"
+    ],
+    [
+      "2. Una vez en Galilea,",
+      "Aquella dulce voz sonó,",
+      "Pronto, el corazón que escucha,",
+      "Todo, listo, abandonado."
+    ],
+    [
+      "3. Sobre las voces seductoras,",
+      "De las atracciones mundanas,",
+      "Grita la dulce voz de Cristo:",
+      "\"Dadme vuestros corazones!\""
+    ],
+    [
+      "4. Ya sea en medio de los placeres,",
+      "Ya sea en el día de la angustia,",
+      "Clama, paciente:",
+      "\"¿Me amas, oh cristiano?\""
+    ],
+    [
+      "5. Por el camino estrecho y santo,",
+      "Ya recorrido por Jesús,",
+      "Para seguirlo, Él te llama:",
+      "\"¡Ven, cristiano, camina en la luz!\""
+    ],
+    [
+      "6. Desde esa cruz angustiada,",
+      "Donde brilla su amor,",
+      "Escucha la voz que te invita,",
+      "¡Escucha y sigue, pecador!"
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

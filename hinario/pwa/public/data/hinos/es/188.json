@@ -1,0 +1,32 @@
+{
+  "title": "188 - Ven entre nosotros a vivir",
+  "author": "Darío Pires de Araujo Paul Ritter",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Ven, oh Jesús, a vivir entre nosotros;",
+      "Que nuestro hogar sea también el tuyo;",
+      "Estar con mamá y papá;",
+      "Ven, Señor, bendícenos."
+    ],
+    [
+      "2. Reina el cariño y el amor perfecto,",
+      "Lejos del mal, de cualquier temor;",
+      "Nuestro vivir, en todo aquí,",
+      "Sólo honra al Salvador."
+    ],
+    [
+      "3. Cuando amanezca la mañana eterna,",
+      "Y la redención se hace realidad,",
+      "Te rogamos, oh Señor,",
+      "También salva nuestro hogar."
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

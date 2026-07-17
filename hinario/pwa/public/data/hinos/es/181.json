@@ -1,0 +1,44 @@
+{
+  "title": "181 - Tu Santo Amor, Jesús",
+  "author": "Sylvaus Dryden Phelps Robert Lowry",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Tu Santo Amor, Jesús,",
+      "Vino a alcanzarme;",
+      "Mi ser, al pie de la cruz,",
+      "Quiero consagrarte.",
+      "Acepta, oh Salvador,",
+      "De un pecador agradecido,",
+      "Homenaje de alabanza,",
+      "Dado con fervor."
+    ],
+    [
+      "2. Responde, Jesús mío,",
+      "Esta petición;",
+      "Tuya, y sólo Tuya",
+      "Es mi corazón.",
+      "Exalta tu nombre,",
+      "A otros hablaré",
+      "De Tu amor sin igual;",
+      "Ven y capacítame"
+    ],
+    [
+      "3. Dame Señor, más fe",
+      "Y amor verdadero.",
+      "Para servirte y ser",
+      "Mucho más leal",
+      "Almas para ganar",
+      "Caminar siempre en la luz",
+      "Y mis hermanos para amar;",
+      "¡Ven y empoderame! Amén"
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

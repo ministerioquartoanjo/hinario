@@ -1,0 +1,38 @@
+{
+  "title": "75 - Gran comandante",
+  "author": "Carrie Ellis Breck Grant Colfax Tullar",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Cristo será un gran comandante para nosotros,",
+      "En esta guerra santa marchará hacia adelante;",
+      "Sus huestes nunca abandonarán;",
+      "Él peleará hasta el final."
+    ],
+    [
+      "2. Defenderemos tu glorioso estandarte,",
+      "Las huestes enemigas siempre lucharán;",
+      "Nuestro general ciertamente ganará.",
+      "Seguiremos a Jesús."
+    ],
+    [
+      "3. En la feroz batalla tenemos protección,",
+      "Y después de todo, a coro, junto con la multitud,",
+      "Todos cantaremos la verdadera canción,",
+      "Cuando lleguemos allí"
+    ]
+  ],
+  "coro": [
+    "¡Siempre adelante! Envía al General.",
+    "¡Siempre adelante! ¡Guerra contra el mal!",
+    "¡Firmes, fuertes, nunca flaqueen!",
+    "¡Con Jesús venceremos!"
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

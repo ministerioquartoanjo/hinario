@@ -1,0 +1,44 @@
+{
+  "title": "106 - Mi Redentor",
+  "author": "Frida Vingren J. G. Pie",
+  "speed": 1,
+  "verses": [
+    [
+      "1. En la cruz murió mi Redentor;",
+      "Él tomó todos mis males.",
+      "Si lo recibes, tienes su amor,",
+      "Por tus pecados, Jesús perdonó."
+    ],
+    [
+      "2. Dios quiere salvar al vil malhechor",
+      "Como él promete que siempre lo hará.",
+      "Confía en Él, oh pecador",
+      "Y por la fe tendrás vida nueva"
+    ],
+    [
+      "3. Tu luz pronto se acabará",
+      "Y en el juicio entrarás",
+      "No te contengas, ven a Jesús",
+      "Que tus pecados quieren borrar"
+    ],
+    [
+      "4. Que maravilla, que gran amor",
+      "Si crees hoy serás salvo",
+      "Cristo te llama ven pecador",
+      "Y el gozo eterno en el cielo fluirás"
+    ]
+  ],
+  "coro": [
+    "Cuando Dios viene la sangre.",
+    "Que Jesús ya dijo,",
+    "Pasará sin hacerte daño;",
+    "En Egipto esto sucedió."
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

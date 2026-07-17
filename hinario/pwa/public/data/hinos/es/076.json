@@ -1,0 +1,41 @@
+{
+  "title": "76 - Guía, oh Dios, mi vida",
+  "author": "William Willians John Hughes",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Guía, oh Dios, mi vida",
+      "En este mundo de aflicción;",
+      "Soy frágil en mi trabajo,",
+      "Pero tu mano es fuerte.",
+      "Mi ser se cubre de paz.",
+      "¡Líbrame de la tentación!",
+      "¡Líbrame de la tentación!"
+    ],
+    [
+      "2. Abre las fuentes de la verdad,",
+      "De donde provienen las aguas puras,",
+      "En este mundo del mal,",
+      "Hazme aprovecharlas al máximo.",
+      "Sé el fuego, sé la nube,",
+      "Sé un libertador también,",
+      "Sé un libertador también."
+    ],
+    [
+      "3. Está llegando al final del camino,",
+      "cruzaré el Jordán,",
+      "Y encontré morada en el cielo,",
+      "Que Jesús fue a preparar.",
+      "Y en alabanza del Dios eterno,",
+      "Por siempre cantaré,",
+      "Por siempre cantaré."
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

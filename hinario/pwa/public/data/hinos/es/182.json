@@ -1,0 +1,44 @@
+{
+  "title": "182 - Triste y oscuro era mi vida",
+  "author": "William True Sleeper George Coles Stebbins",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Triste y oscura fue mi vida",
+      "Lejos de Ti, mi Redentor.",
+      "Pero la alegría llegué a conocer,",
+      "Junto a ti, Señor.",
+      "La lucha y la tentación fueron grandes;",
+      "He padecido mucha aflicción.",
+      "Para consolar mi corazón,",
+      "a Ti vengo, Señor."
+    ],
+    [
+      "2. Apartaré de mí mis vanidades ",
+      ", oh Salvador;",
+      "Porque tu voluntad será mi ley;",
+      "Te serviré, Señor. ",
+      "Tu gran amor deseo probar,",
+      "Y tu gracia manifestar;",
+      "Junto a Ti deseo permanecer;",
+      "A Ti vengo, Señor."
+    ],
+    [
+      "3. Nunca temeré a la muerte,",
+      "Siempre estarás cerca de mí;",
+      "Porque a Tu casa un día iré,",
+      "Tú me recibirás. ",
+      "Junto a Ti deseo vivir,",
+      "Junto a Ti pelearé;",
+      "Junto a Ti venceré o moriré;",
+      "A Ti vengo, Señor"
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

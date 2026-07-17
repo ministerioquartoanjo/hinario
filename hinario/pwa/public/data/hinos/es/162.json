@@ -1,0 +1,44 @@
+{
+  "title": "162 - Salvada soy",
+  "author": "Frida Vingren Jno.R. Sweney",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Estoy a salvo, Jesús me ha comprado",
+      "Del pecado y la perdición;",
+      "Con su espíritu ya me ha sellado,",
+      "Me ha dado paz en mi corazón."
+    ],
+    [
+      "2. Cantaré con alegría,",
+      "Un sonido gozoso del cielo.",
+      "Alabaré con armonía",
+      "Jesús, amado mío."
+    ],
+    [
+      "3. El glorioso mensaje",
+      "De salvación eterna,",
+      "Fuerte, sí, y poderoso,",
+      "Digno de aceptación."
+    ],
+    [
+      "4. Cuando llegue el fin de la tarea,",
+      "Tú me recibes, Salvador;",
+      "Concédeme vida eterna,",
+      "En tu reino de amor."
+    ]
+  ],
+  "coro": [
+    "Gloria, gloria, aleluya,",
+    "¡Ya he encontrado la salvación!",
+    "Gloria, gloria, aleluya,",
+    "¡Cristo me dio redención!"
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

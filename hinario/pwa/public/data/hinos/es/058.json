@@ -1,0 +1,50 @@
+{
+  "title": "58 - Quiero hacer lo que Tú quieras, Señor",
+  "author": "Mary Browwn, estrofa 1 Charles Edwin Prior, estrofas 2 y 3 Carrie Esther Rounsefell",
+  "speed": 1,
+  "verses": [
+    [
+      "1. No siempre será el lugar que quiero",
+      "Que el Maestro me enviará.",
+      "La mies es tan grande, lista para ser cosechada,",
+      "En la cual me ocuparé de trabajar.",
+      "Y si por caminos que nunca he seguido,",
+      "Tu llamada he escuchado;",
+      "Feliz ciertamente seré guiado por Ti,",
+      "Tu voluntad se cumplirá."
+    ],
+    [
+      "2. Hay tantas palabras de amor y de perdón",
+      "Que puedo llevar a los demás,",
+      "Porque en los caminos de los vicios hay",
+      "Perdidos que debo ir a buscar.",
+      "Señor, si con Tu presencia real",
+      "Eres para fortalecer,",
+      "Daré el mensaje de un siervo leal",
+      "Con celo, fervor y agrado."
+    ],
+    [
+      "3. Quiero encontrar un lugar oscuro",
+      "En Tu cosecha, Señor.",
+      "Mientras viva, trabajaré",
+      "Con fe y coraje y amor.",
+      "De ti sé que vendrá mi sustento,",
+      "Y no he de temer a nada",
+      "Tu voluntad, sí la mía será;",
+      "Un siervo fiel quiero ser"
+    ]
+  ],
+  "coro": [
+    "Quiero hacer lo que Tú quieres, Señor;",
+    "Por Ti sostenido seré.",
+    "Y quiero decir lo que Tú quieras, Señor;",
+    "Y así cumpliré con mi deber."
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

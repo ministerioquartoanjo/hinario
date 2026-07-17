@@ -1,0 +1,46 @@
+{
+  "title": "131 - Oh Señor, nos regocijamos",
+  "author": "Leônidas Philadelpho da Siva William Lewis Rayner McCluer",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Oh Señor, nos regocijamos,",
+      "Por obedecerte aquí,",
+      "Porque tú fuiste el que mandaste,",
+      "El bautismo para recibir.",
+      "Ven ahora y bendice,",
+      "¡Aquellos que así vienen a alabarte!"
+    ],
+    [
+      "2. Tal celebración revela, ",
+      "La obediencia a Ti, Señor;",
+      "Es una figura que recuerda,",
+      "Tu poder renovador.",
+      "Ven por ella a la iglesia para unirse,",
+      "Quien quiera seguirte, Señor."
+    ],
+    [
+      "3. Declaramos la muerte al mundo,",
+      "Al pecado y su poder,",
+      "Y contigo a nuestro lado,",
+      "Ciertamente venceremos.",
+      "Oh, Señor, ven y consagra",
+      "¡Quien venga a ser bautizado!"
+    ],
+    [
+      "4. Muertos para el mundo estamos,",
+      "Deseamos servirte,",
+      "Vivos en Jesús, queremos,",
+      "Su imagen para reflejar.",
+      "Ven, Señor, aquí para hacer,",
+      "Tu gracia en nosotros crecer. Amén."
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

@@ -1,0 +1,44 @@
+{
+  "title": "8 - La Revelación de la Cruz",
+  "author": "Isaac Watts y Ralph. E. Hudson Ralph E. Hudson",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Cuán ciego vagaba una vez",
+      "Lejos del Señor,",
+      "Que vino de lo alto de los cielos",
+      "Para salvar al pecador."
+    ],
+    [
+      "2. Del gran amor sin igual escuché,",
+      "El amor de mi Jesús,",
+      "Pero me hice sordo y luego me volví",
+      "Y desprecié la luz."
+    ],
+    [
+      "3. Ya he sentido el miedo a la muerte,",
+      "Revoloteando sobre mí;",
+      "A los pies de Cristo entonces corrí",
+      "Y finalmente encontré refugio."
+    ],
+    [
+      "4. Redimido, oh Cristo, el corazón",
+      "Pongo a tu disposición;",
+      "Tu nombre siempre quiero honrar,",
+      "Honra tu santo amor."
+    ]
+  ],
+  "coro": [
+    "Fue en la cruz, fue en la cruz, cuando finalmente me di cuenta;",
+    "¡Mi pecado recayó sobre Jesús!",
+    "Fue entonces por la fe que mis ojos se abrieron;",
+    "¡Qué placer siento ahora en su luz!"
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

@@ -1,0 +1,34 @@
+{
+  "title": "16 - ¡Aleluya! Ya creo",
+  "author": "Henry Maxwell Wright",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Dios ha prometido salvación para dar,",
+      "A todo aquel que confía en Su Hijo Jesús."
+    ],
+    [
+      "2. Fue tal su amor, que me reemplazó,",
+      "¡Y en el Calvario, mi alma redimió!"
+    ],
+    [
+      "3. Nunca puedo dudar de este amor;",
+      "Sólo puedo postrarme a Sus pies."
+    ],
+    [
+      "4. Y cuando en la gloria vea a mi buen Rey,",
+      "Con todos los santos allí cantaré."
+    ]
+  ],
+  "coro": [
+    "¡Aleluya! Ya creo en Cristo Jesús.",
+    "Y soy salvo por la sangre de la cruz."
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

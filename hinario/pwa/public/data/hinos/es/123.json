@@ -1,0 +1,39 @@
+{
+  "title": "123 - El día que no lo sé",
+  "author": "Franklis Edson Belden",
+  "speed": 1,
+  "verses": [
+    [
+      "1. No sé el día del regreso del Esposo;",
+      "Pero las señales vienen para llenarme de alegría;",
+      "Porque pronto vendrá ese evento glorioso,",
+      "Pero el día no lo sé."
+    ],
+    [
+      "2. Los creyentes verán, a través de la Sagrada Escritura,",
+      "Que nuestra felicidad eterna no tardará.",
+      "Miremos, pues, a la gloria futura,",
+      "Pero el día no lo sé."
+    ],
+    [
+      "3. Orad, velad, esa es la necesidad;",
+      "Nuestros pies están firmemente plantados en la bendita verdad.",
+      "Habrá descanso en la ciudad celestial,",
+      "Pero qué día no lo sé."
+    ]
+  ],
+  "coro": [
+    "¡Cristo viene!",
+    "Velémonos, oremos, ¡Él viene!",
+    "¡Aleluya! ¡Aleluya! Él vendrá sobre las nubes,",
+    "Con los ángeles de gloria,",
+    "Pero el día no lo sé."
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

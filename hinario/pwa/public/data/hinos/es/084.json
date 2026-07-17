@@ -1,0 +1,45 @@
+{
+  "title": "84 - Historia de Cristo",
+  "author": "Henry Maxwell",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Cuéntame la historia de Cristo, grábala en mi corazón.,",
+      "¡Una hermosa y sin precedentes historia de gracia, paz y perdón!",
+      "Cuenta cómo se encarnó, vino al mundo a vivir.",
+      "¡Y a los pecadores indignos se les revelará el amor de Dios! (2x)"
+    ],
+    [
+      "2. Cuenta cómo Él, siendo bondadoso, nunca rechazó a nadie,",
+      "¡Como con las manos extendidas todos te invitaron!",
+      "¿Cómo puede el buen Maestro, sea quien sea, negarse,",
+      "Si estás convencido y arrepentido, acepta su invitación. (2x)"
+    ],
+    [
+      "3. Dime cuando en la colina sobre la ciudad lloraste",
+      "¡Porque los orgullosos y rebeldes rechazaron su amor!",
+      "Cuenten cómo todavía llora por los que siguen el mal;",
+      "Y los endurecidos resisten a su divino amor. (2x)"
+    ],
+    [
+      "4. También cuenta cómo Cristo, incluso en la cruz, se acordó",
+      "¡De sus crueles enemigos y al Padre por ellos oró!",
+      "En cuanto al ladrón moribundo, tan fácilmente escuchado,",
+      "¡Y ese día contigo lo llevaste a descansar! (2x)"
+    ],
+    [
+      "5. Cuéntame de las duras afrentas que sufriste mansamente:",
+      "Como en la cruz levantada, ¡murió por los impíos!",
+      "¡Dame la vida con la certeza de que realmente fue para mí!",
+      "¡Que su inefable amor no tiene cambio ni fin!",
+      "¡Que su inefable amor no tiene cambio ni fin!"
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

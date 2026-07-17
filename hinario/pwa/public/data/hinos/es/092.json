@@ -1,0 +1,42 @@
+{
+  "title": "92 - Jesús, eres bueno",
+  "author": "Joel Carlson Wendelborg",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Jesús mío, Tú eres bueno;",
+      "¡Tú lo eres todo para mí!",
+      "Estabas muerto, pero vives en mí;",
+      "¡Tú mereces alabanza, oh Cordero de Dios!",
+      "¡Tú eres todo, sí, todo para mí!"
+    ],
+    [
+      "2. Quiero alabarte,",
+      "Porque Tú eres Rey sobre reyes;",
+      "Tú lo eres todo, pero yo nada;",
+      "Llena mi corazón de ternura y paz;",
+      "Honor y gloria eterna te doy."
+    ],
+    [
+      "3. Tu nombre es amor,",
+      "Porque tú me amas,",
+      "Y quiero caminar en este amor;",
+      "Estoy triunfante, confiando en Ti,",
+      "Jesús mío, gran Consolador."
+    ],
+    [
+      "4. Oh Ungido de Dios,",
+      "Traes paz y perdón;",
+      "Salvación, vida, tienes para Tuya;",
+      "¡Qué mensaje del cielo y transformación,",
+      "Enviado desde el trono de Dios!"
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

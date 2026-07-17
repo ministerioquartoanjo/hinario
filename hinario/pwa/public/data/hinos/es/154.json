@@ -1,0 +1,38 @@
+{
+  "title": "154 - Quien escuche la noticia",
+  "author": "Felipe Pablo Bliss",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Cualquiera que oiga la noticia, vaya y proclame;",
+      "¡Salvación gratis, ven y disfruta!",
+      "¡Oh! Deja que todo el mundo te escuche anunciar:",
+      "“¡Lo que quieras está por venir”!"
+    ],
+    [
+      "2. El que lo quiera ahora, venga y acéptelo;",
+      "Aquí está la puerta abierta, ya podéis entrar;",
+      "Jesús es el camino para llegar al cielo;",
+      "¡Todo lo que quieras está por venir!"
+    ],
+    [
+      "3. ¡Qué promesa tan fiel tienes, pecador!",
+      "¿Quieres tener vida? ¡Ven al Salvador!",
+      "A todos les habla con gran ternura y amor:",
+      "¡Todo lo que quieras está por venir!"
+    ]
+  ],
+  "coro": [
+    "¡Lo que quieras, ven a recibirlo!",
+    "¡Que todos escuchen esta buena noticia!",
+    "Es el Padre celestial quien invita así:",
+    "¡Lo único que quieres es venir!"
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

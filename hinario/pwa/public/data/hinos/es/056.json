@@ -1,0 +1,41 @@
+{
+  "title": "56 - En oración ferviente",
+  "author": "James McGranahan",
+  "speed": 1,
+  "verses": [
+    [
+      "1. En oración ferviente,",
+      "Deja que tu corazón se derrame",
+      "¡En la presencia de Dios!",
+      "Pero sólo podrás disfrutar",
+      "Lo que estás pidiendo,",
+      "Cuando dejas todo en el altar."
+    ],
+    [
+      "2. El Señor hará maravillas de amor por ti",
+      "Contestando la oración que aceptes",
+      "Su inmenso poder vendrá a ayudarte",
+      "Cuando dejes todo en el altar!"
+    ],
+    [
+      "3. Si oras, en cambio, sin tu corazón",
+      "Teniendo la paz que el Señor puede dar",
+      "Fue porque Dios no sintió que tu alma fue abierta",
+      "Todo, todo, dejándolo en el altar"
+    ]
+  ],
+  "coro": [
+    "Cuando todo esté delante del Señor,",
+    "Y todo tu ser Él controle,",
+    "Solo entonces verás,",
+    "Que el Señor tiene poder,",
+    "Cuando dejes todo en el altar."
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

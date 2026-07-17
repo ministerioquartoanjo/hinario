@@ -1,0 +1,44 @@
+{
+  "title": "122 - El día del triunfo de Jesús",
+  "author": "James Milton Black",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Cuando del cielo descendiendo por su Jesús regrese,",
+      "Y el clarín de Dios proclame a todos;",
+      "Que ha llegado el gran día del triunfo de mi Rey;",
+      "Yo, por su inmensa gracia, allí estaré."
+    ],
+    [
+      "2. En aquel día, cuando los muertos oirán la voz de Cristo,",
+      "Y de sus tumbas resucitarán,",
+      "Los redimidos reunidos pronto aclamarán a su Rey,",
+      "Y, por su inmensa gracia, allí estaré."
+    ],
+    [
+      "3. Jesús, mi Salvador, fue rechazado por el mundo.",
+      "Despreciaron e insultaron a mi Señor,",
+      "Pero, gloriosamente, se acerca el día del triunfo de mi Rey,",
+      "Y, por su inmensa gracia, allí estaré."
+    ],
+    [
+      "4. En mí mismo, no tengo nada en lo que pueda confiar,",
+      "Pero Jesús murió en la cruz para salvarme;",
+      "Solo en Él espero, sí, y siempre esperaré.",
+      "Porque, por Su inmensa gracia, estaré allí."
+    ]
+  ],
+  "coro": [
+    "Cuando finalmente llegue el día",
+    "Del triunfo de mi Rey",
+    "Cuando finalmente llegue el día,",
+    "Por la gracia de Jesús estaré allí."
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

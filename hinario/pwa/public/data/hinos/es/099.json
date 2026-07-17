@@ -1,0 +1,32 @@
+{
+  "title": "99 - Alabanza a Dios y a Jesús",
+  "author": "Elizabeth Rundle Charles Friedinand Flemming",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Oh ángeles y hombres, alabad a Dios,",
+      "Porque su gracia da a los pecadores.",
+      "Oh firmamento, cielos, mar y tierra,",
+      "Sí, alabad a Dios."
+    ],
+    [
+      "2. Vosotros, oh redimidos, alabad a Cristo,",
+      "¡Qué sacrificio, oh! ¡Nunca ha sido visto!",
+      "Su muerte Su amor revela,",
+      "¡Sí, adora a Jesús!"
+    ],
+    [
+      "3. ¡Cuán insondable es el amor divino!",
+      "Jesús su Hijo, es la luz del mundo",
+      "Él es tan sublime, luz para el peregrino,",
+      "Luz que conduce al Padre!"
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

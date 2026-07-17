@@ -1,0 +1,44 @@
+{
+  "title": "39 - Conversión",
+  "author": "Henry Maxwell Wright",
+  "speed": 1,
+  "verses": [
+    [
+      "1. ¡Oh! ¡Cuán ciego caminé y perdido vagué,",
+      "Lejos, lejos de mi Salvador!",
+      "Pero del cielo descendió, y su sangre derramó",
+      "Para salvar a tan pobre pecador."
+    ],
+    [
+      "2. Oí hablar de esta gracia única,",
+      "Que trajo a nuestro Jesús del cielo;",
+      "Pero me quedé sordo, no quise convertirme,",
+      "Al Señor, que murió por mí en la cruz"
+    ],
+    [
+      "3. Pero un día sentí mi pecado y vi",
+      "La espada de la ley sobre mí;",
+      "Huí rápidamente, me escondí en Jesús,",
+      "Y encontré un refugio seguro en Él"
+    ],
+    [
+      "4. Qué bendito entonces, este corazón mío,",
+      "Conociendo el amor exaltado,",
+      "Que llevó a mi Jesús a sufrir allí en la cruz;",
+      "Para salvar a tan pobre pecador"
+    ]
+  ],
+  "coro": [
+    "Fue en la cruz, fue en la cruz, donde un día vi",
+    "Mis pecados castigados en Jesús;",
+    "Fue allí, por la fe, que abrí mis ojos,",
+    "Y ahora me regocijo en Su luz."
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

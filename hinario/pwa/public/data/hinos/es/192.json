@@ -1,0 +1,32 @@
+{
+  "title": "192 - Venid, Pueblo del Señor",
+  "author": "Henry Alford George Job Elvery",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Vengan, pueblo del Señor, adórenlo con alabanza.",
+      "Exáltenlos sólo a ellos; a Jesús y a Dios Padre,",
+      "Al Cordero que murió, y al cual el Hijo dio.",
+      "Venid, pueblo del Señor, adóralos con amor."
+    ],
+    [
+      "2. Observemos con fervor este día del Señor,",
+      "Porque ha prometido bendiciones del cielo a los fieles.",
+      "Escuchen su voz hablándonos con amor.",
+      "Venid, pueblo del Señor, ensalzad al Creador."
+    ],
+    [
+      "3. Cuando la Iglesia encuentre a su marido y se case con él,",
+      "Nuestras luchas terminarán y vendrá la redención.",
+      "Dejados atrás el mal y el dolor, reinarán el amor y la paz. ",
+      "Venid, pueblo del Señor, aclamad al Redentor."
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

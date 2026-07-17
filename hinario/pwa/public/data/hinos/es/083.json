@@ -1,0 +1,32 @@
+{
+  "title": "83 - Heredero del Reino",
+  "author": "Autor desconocido L. M",
+  "speed": 1,
+  "verses": [
+    [
+      "1. ¡Oh, heredero del reino celestial,",
+      "No, no duermas, el fin llegará;",
+      "¡Oh! Cíñete tus armas y únete a la lucha,",
+      "Porque deseas obtener la victoria."
+    ],
+    [
+      "2. No os detengan de los placeres terrenales,",
+      "Porque pronto pasarán;",
+      "¡Oh! Deja la vida que te ata al mundo,",
+      "¡Ven, ven a Cristo que te salvará!"
+    ],
+    [
+      "3. Estos son los poderes listos para luchar;",
+      "Sé ferviente, fiel, buen cristiano;",
+      "Las glorias brillan en el horizonte",
+      "¡Oh! noble heredero, estalla en canción"
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

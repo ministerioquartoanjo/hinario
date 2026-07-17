@@ -1,0 +1,53 @@
+{
+  "title": "63 - Habla del Amor de Cristo",
+  "author": "Joel Carlson (K. E. S.)",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Habla del amor de Cristo",
+      "Al pecador triste;",
+      "Amor por todos visto",
+      "En la cruz del Redentor.",
+      "Canta con alegría",
+      "La paz que viene del cielo;",
+      "Alza tu voz",
+      "En gloria a Dios."
+    ],
+    [
+      "2. Por los afligidos, cantad,",
+      "Las bendiciones que hay en Dios;",
+      "Desde la cruz se levanta un estandarte",
+      "Porque nos da valor.",
+      "Cantad por los perdidos",
+      "La gracia de Jesús;",
+      "Su sangre ya derramada,",
+      "Que fluye de la cruz!"
+    ],
+    [
+      "3. Canta con esperanza,",
+      "En la oscuridad también,",
+      "Canta con confianza,",
+      "Hay vida más allá;",
+      "Canta al amanecer,",
+      "Y cuando llega la noche;",
+      "En Cristo, la armonía",
+      "¡Con Dios se obtiene!"
+    ]
+  ],
+  "coro": [
+    "Cristo en la cruz nos ganó la salvación eterna.",
+    "Con Su sangre nos lavó",
+    "El Rey de ¡redención!",
+    "En el templo, el velo se rasgó;",
+    "Jesús abrió el camino;",
+    "Inaugurado en la cruz,",
+    "¡Al cielo de luz!"
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

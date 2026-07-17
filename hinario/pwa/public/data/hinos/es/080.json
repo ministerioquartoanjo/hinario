@@ -1,0 +1,39 @@
+{
+  "title": "80 - Hay un Camino Santo",
+  "author": "Emil Peterson P.V",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Hay un camino santo, al cielo de plena luz,",
+      "A veces espinoso, a la gloria nos lleva;",
+      "Y el camino recto para todo pecador;",
+      "Jesús es el Salvador, Jesús es el Salvador."
+    ],
+    [
+      "2. Hay paz inquebrantable para los que están en la luz;",
+      "Por un precio incomparable",
+      "Jesús me compró para mí",
+      "El regalo del Padre amado satisface mi alma,",
+      "Jesús es mi paz, Jesús es mi paz."
+    ],
+    [
+      "3. Hay un poder que sana el corazón triste,",
+      "Que da alivio al alma, paz y consuelo,",
+      "Y mantiene mi vestido, también, en luz nívea;",
+      "El poder de mi Jesús, el poder de mi Jesús!"
+    ],
+    [
+      "4. Hay un final glorioso, más allá del velo oscuro;",
+      "Al final del camino espinoso está el cielo;",
+      "Y cuando el velo de oscuridad sea quitado,",
+      "Veré a Jesús, entonces, veré a Jesús, entonces"
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

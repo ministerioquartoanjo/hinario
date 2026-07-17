@@ -1,0 +1,38 @@
+{
+  "title": "155 - Quiero ser un recipiente de bendición",
+  "author": "Harper G. Smyth",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Quiero ser vaso de bendición,",
+      "Sí, vaso escogido por Dios.",
+      "Para llevar nuevas a los perdidos,",
+      "Buenas noticias que vienen del cielo."
+    ],
+    [
+      "2. Quiero ser vaso de bendición,",
+      "Cada día deseo hacer,",
+      "Todo aquel que vive culpable,",
+      "El perdón de Jesús lo sepa."
+    ],
+    [
+      "3. Para ser vaso de bendición",
+      "Debes ser siempre leal,",
+      "Debes tener fe y pureza,",
+      "La cual nos viene del poder divino."
+    ]
+  ],
+  "coro": [
+    "Te consagro todo ahora, Señor;",
+    "Proclamaré el mensaje de amor.",
+    "Mi compromiso en Tu servicio",
+    "Es ser vaso de bendición, Señor."
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

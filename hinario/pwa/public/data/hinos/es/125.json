@@ -1,0 +1,44 @@
+{
+  "title": "125 - El gran amor",
+  "author": "Henry Maxwell Wright",
+  "speed": 1,
+  "verses": [
+    [
+      "1. El gran amor de mi Jesús",
+      "Por mí, muriendo en la cruz;",
+      "Da destrucción para salvarme,",
+      "¿Quién puede decirlo?"
+    ],
+    [
+      "2. La copa que bebió Jesús",
+      "La maldición que sufrió",
+      "Todo por mí, para salvarme",
+      "¿Quién puede saberlo?"
+    ],
+    [
+      "3. La burla cruel",
+      "La cruz sangrienta, la hiel amarga",
+      "Que sufrió para salvarme",
+      "¿Quién puede decirlo?"
+    ],
+    [
+      "4. ¡Salvador incomparable!",
+      "¡Qué inefable tu amor!",
+      "¡Qué imposible de sondear!",
+      "Inmenso e incomparable"
+    ]
+  ],
+  "coro": [
+    "¿Quién puede contar su amor?",
+    "¿Quién puede contar su amor?",
+    "El gran amor del Salvador,",
+    "¿Quién puede contar?"
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

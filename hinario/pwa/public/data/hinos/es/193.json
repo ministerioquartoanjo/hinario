@@ -1,0 +1,54 @@
+{
+  "title": "193 - Victoria en Cristo",
+  "author": "Eugene Monroe Barlett",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Escuché la hermosa historia",
+      "¡Que Jesús descendió de la gloria!",
+      "Y en el Gólgota finalmente murió",
+      "Por aquellos como yo.",
+      "Escuché de Sus gemidos,",
+      "De Su sangre y de los redimidos;",
+      "Y al final, contrito, me postré;",
+      "En Él encontré la victoria."
+    ],
+    [
+      "2. Oí que Él sana,",
+      "Sí, a todo aquel que lo busca;",
+      "Que el cojo hizo caminar,",
+      "Y al ciego le dio la vista.",
+      "Oré, clamé: “Maestro mío,",
+      "Ven, restaura mi vida.”",
+      "E inmediatamente Cristo me respondió,",
+      "Y me dio la victoria."
+    ],
+    [
+      "3. He oído hablar de la gloria",
+      "que vendrá después de la victoria,",
+      "Para los redimidos por Jesús,",
+      "En la luz resplandeciente;",
+      "De ángeles allí cantando,",
+      "Y mansiones que ya me esperan;",
+      "Será glorioso llegar allí,",
+      "Y luego poder cantar:"
+    ]
+  ],
+  "coro": [
+    "Victoria en Cristo",
+    "Eterna ¡victoria!",
+    "Me buscó, me salvó,",
+    "¡En la cruz por mí murió!",
+    "¡Qué paz y alegría,",
+    "¡Un nuevo día ha amanecido!",
+    "Victoria que Jesús me dio,",
+    "¡En la sangre que derramó!"
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

@@ -1,0 +1,54 @@
+{
+  "title": "46 - ¡Cristo Prá Mim!",
+  "author": "Henry Maxwell Wright",
+  "speed": 1,
+  "verses": [
+    [
+      "1. ¡Oh qué descanso en Jesús encontré!",
+      "¡Cristo para mí! ¡Cristo por mí!",
+      "¡Oh qué tesoros infinitos encontré!",
+      "¡Cristo por mí! ¡Cristo por mí!",
+      "‘Que otros elijan el mundo para sí:",
+      "Buscad aquí riquezas, deleites;",
+      "Yo elegiré, oh Jesús, siempre a Ti!",
+      "¡Cristo por mí! ¡Cristo por mí!"
+    ],
+    [
+      "2. Ya sea en aflicción, enfermedad o dolor:",
+      "¡Cristo por mí! ¡Cristo por mí!",
+      "Ya sea en salud, fuerza o vigor;",
+      "¡Cristo por mí! ¡Cristo por mí!",
+      "Siempre a mi lado para ayudarme,",
+      "Con su amor, sí, y con su poder;",
+      "En cada trance dispuesto a ayudarme;",
+      "¡Cristo por mí! ¡Cristo por mí!"
+    ],
+    [
+      "3. En el amargo día de la persecución:",
+      "¡Cristo por mí! ¡Cristo por mí!",
+      "En las duras pruebas y tentaciones:",
+      "¡Cristo por mí! ¡Cristo por mí!",
+      "Él, el pecado y el mundo vencieron",
+      "Cuando, por mí, en el Calvario murió;",
+      "Y me dio la certeza de la victoria;",
+      "¡Cristo por mí! ¡Cristo por mí!"
+    ],
+    [
+      "4. Y si entro en el valle de la muerte,",
+      "¡Cristo por mí! ¡Cristo por mí!",
+      "Cuando ante mi Dios me encuentre:",
+      "¡Cristo por mí! ¡Cristo por mí!",
+      "Sólo en Tu sangre confío, Señor,",
+      "¡Sólo en Tu amor siempre inmutable!",
+      "Volveré a cantar, Salvador:",
+      "¡Cristo por mí! ¡Cristo para mí!"
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

@@ -1,0 +1,38 @@
+{
+  "title": "26 - Tal como soy",
+  "author": "R.R.Kalley",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Tal como soy: sin decir nada,",
+      "Salvo que moriste por mí,",
+      "Y me invitaste a volverme a Ti:",
+      "¡Bendito Jesús, vengo a Ti!"
+    ],
+    [
+      "2. Tal como soy: sin más dilación,",
+      "Mi alma del mal queriendo limpiar,",
+      "A ti, que puedes lavarme de todo:",
+      "¡Bendito Jesús, a ti vengo!"
+    ],
+    [
+      "3. Tal como estoy: en gran angustia.",
+      "Tan digno de muerte y perdición,",
+      "Rogando por la vida, con paz y perdón:",
+      "¡Bendito Jesús, vengo a ti!"
+    ],
+    [
+      "4. Tal como soy: Tu gran amor",
+      "me conquista: y creyendo en Ti, sin temor,",
+      "¡Quiero servirte, divino Señor!",
+      "¡Bendito Jesús, a Ti vengo!"
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

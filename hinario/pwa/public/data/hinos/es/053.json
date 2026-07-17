@@ -1,0 +1,50 @@
+{
+  "title": "53- Dios cuidará de ti",
+  "author": "Autor desconocido W.S. Martín",
+  "speed": 1,
+  "verses": [
+    [
+      "1. No te desanimes, Dios proveerá;",
+      "Dios cuidará de ti.",
+      "Bajo sus alas te acogerá;",
+      "Dios cuidará de ti."
+    ],
+    [
+      "2. Si tu corazón palpita de dolor,",
+      "Dios cuidará de ti.",
+      "Ya has demostrado tu tierno amor,",
+      "Dios cuidará de ti."
+    ],
+    [
+      "3. En los desalientos y en las pruebas,",
+      "Dios velará por ti.",
+      "Acuérdate de él en las tentaciones,",
+      "Dios velará por ti."
+    ],
+    [
+      "4. Todo lo que le pidas él lo hará;",
+      "Dios cuidará de ti.",
+      "Lo que necesites no te lo negará,",
+      "Dios cuidará de ti."
+    ],
+    [
+      "5. Como seas, no tengas miedo, ¡ven!",
+      "Dios velará por ti.",
+      "¡Él te comprende y te ama bien!",
+      "Dios velará por ti"
+    ]
+  ],
+  "coro": [
+    "Dios velará por ti;",
+    "En tu vivir, en tu sufrimiento.",
+    "Su mirada te acompañará;",
+    "Dios velará por ti."
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

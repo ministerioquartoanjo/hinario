@@ -1,0 +1,32 @@
+{
+  "title": "67 - La lucha de Jesús ha terminado",
+  "author": "Giovanni Pierluigi da Palestrina Himno latino",
+  "speed": 1,
+  "verses": [
+    [
+      "1. La lucha de Jesús terminó,",
+      "El Salvador venció en la cruz.",
+      "Y la luz amanece en este mundo.",
+      "¡Aleluya!"
+    ],
+    [
+      "2. Habiendo vencido la muerte y su terror,",
+      "El Redentor ha resucitado a la gloria.",
+      "Cantad al Señor.",
+      "Aleluya."
+    ],
+    [
+      "3. Con incomparable majestad,",
+      "Estableció el reino divino.",
+      "Canta un himno triunfal.",
+      "Aleluya."
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

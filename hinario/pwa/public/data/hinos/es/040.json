@@ -1,0 +1,49 @@
+{
+  "title": "40 - Creer y observar",
+  "author": "John H. Sammis Daniel Brink Towner",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Confía en Jesús, observa su ley,",
+      "Y camina por un camino de paz.",
+      "Satisfechos, guarda lo que Él manda,",
+      "El gozo perenne nos trae."
+    ],
+    [
+      "2. Cuando caminamos con Dios,",
+      "Recibimos de los cielos",
+      "Dirección y consuelo incomparables.",
+      "Ni tristeza ni dolor,",
+      "No hay mayor prueba",
+      "Nuestra fe puede temblar."
+    ],
+    [
+      "3. Placer inefable es conocer a Jesús,",
+      "es ser un creyente celoso y leal,",
+      "escuchar siempre su voz,",
+      "cumplir sus órdenes,",
+      "es tener bendiciones constantes y reales."
+    ],
+    [
+      "4. Resuelto, Señor,",
+      "Y con todo fervor,",
+      "Tus pasos queremos seguir,",
+      "Tus preceptos que guardar,",
+      "Tu nombre para enaltecer,",
+      "Sentir siempre tu presencia"
+    ]
+  ],
+  "coro": [
+    "Creer y observar",
+    "Todo lo que mandas;",
+    "Los fieles obedecen",
+    "Lo que Cristo manda."
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

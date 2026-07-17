@@ -1,0 +1,38 @@
+{
+  "title": "127 - ¡Ay! Qué hermosos himnos",
+  "author": "William Orcutt Cushing George Frederick Root",
+  "speed": 1,
+  "verses": [
+    [
+      "1. ¡Oh! ¡qué hermosos himnos cantan en los cielos!",
+      "¡El hijo malo ha vuelto a casa!",
+      "Mira a lo lejos el Padre ya abraza",
+      "Este hijo que tanto amó."
+    ],
+    [
+      "2. ¡Oh! ¡Qué hermosos himnos cantan en los cielos!",
+      "¡Porque ha convertido a un pecador!",
+      "Alma rebelde, convertida a Dios,",
+      "Deja el mundo y vuélvete al Padre del amor."
+    ],
+    [
+      "3. ¡Oh! arrepentidos, celebrad hoy,",
+      "¡Como lo hacen los ángeles con fervor!",
+      "Vayan aprisa, ustedes, y anuncien,",
+      "Que un pecador ha sido redimido."
+    ]
+  ],
+  "coro": [
+    "¡Gloria, mil ángeles cantan allí!",
+    "¡Gloria, óiganla, las arpas ahora!",
+    "Es el coro santo dando su alabanza,",
+    "Porque se convirtió pecador."
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

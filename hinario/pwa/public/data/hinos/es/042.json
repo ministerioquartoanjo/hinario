@@ -1,0 +1,56 @@
+{
+  "title": "42 - Cristo lo es todo para mí",
+  "author": "Will Lamartine Thompson",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Cristo lo es todo para mí:",
+      "Es vida, paz y luz;",
+      "Tu brazo fuerte me sostiene;",
+      "Sólo Él me guía.",
+      "Cuando tu corazón está triste,",
+      "Él me da consuelo;",
+      "Consuelo Al corazón Dar a Jesús"
+    ],
+    [
+      "2. Cristo lo es todo para mí,",
+      "Amigo incomparable.",
+      "A Él voy en apuros,",
+      "Y líbrame del mal.",
+      "Mi Señor me da todo,",
+      "demostrando tu amor,",
+      "El gran amor,",
+      "De mi Señor,",
+      "De Jesús."
+    ],
+    [
+      "3. Cristo lo es todo para mí,",
+      "Siempre lo amaré.",
+      "no podré abandonar",
+      "Mi Señor y Rey.",
+      "Leal servidor aquí estaré,",
+      "Por la vida serviré",
+      "Yo serviré.",
+      "A mi buen Rey,",
+      "A Jesús."
+    ],
+    [
+      "4. Cristo lo es todo para mí,",
+      "siempre confiaré",
+      "En el gran amor del Salvador",
+      "Hasta que llegue el final.",
+      "Entonces en el cielo cantaré;",
+      "Santa alabanza cantaré;",
+      "Santa alabanza",
+      "A mi Señor,",
+      "A Jesús."
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

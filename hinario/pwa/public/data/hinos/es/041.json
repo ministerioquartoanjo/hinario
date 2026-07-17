@@ -1,0 +1,36 @@
+{
+  "title": "41 - Cristo está a la puerta",
+  "author": "Joel Carlson",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Jesucristo está a la puerta:",
+      "Llama siempre para entrar.",
+      "Si escuchas, ¡abre ahora!",
+      "¡Abre tu corazón!"
+    ],
+    [
+      "2. Jesús sigue llamando allí",
+      "Y si no lo abres ahora,",
+      "Volverá triste;",
+      "¡Abre tu corazón!"
+    ],
+    [
+      "3. Jesús llama, abre ahora,",
+      "¡Abre, sí, oh pecador!",
+      "El juicio está a la puerta;",
+      "¡Abre tu corazón!"
+    ]
+  ],
+  "coro": [
+    "¡Abre tu corazón!",
+    "¡Abre tu corazón!"
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

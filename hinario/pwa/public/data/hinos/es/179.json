@@ -1,0 +1,54 @@
+{
+  "title": "179 - Tu Precioso Nombre",
+  "author": "Ja. S.",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Jesucristo, Tu nombre",
+      "¡Es tan dulce para mí!",
+      "Tu incomparable dulzura",
+      "Me llena de amor sin fin.",
+      "Tu dulzura incomparable",
+      "Me llena de amor sin fin."
+    ],
+    [
+      "2. Tú eres la estrella resplandeciente,",
+      "Que brilla intensamente,",
+      "Y dirige mis pasos,",
+      "En este mundo de horror.",
+      "Y dirige mis pasos,",
+      "En este mundo de horror."
+    ],
+    [
+      "3. Tuyos son los brazos eternos,",
+      "Protegiendo al seguidor,",
+      "Que no sea atrapado",
+      "Por el malvado tentador.",
+      "Que no sea atrapado",
+      "Por el malvado tentador."
+    ],
+    [
+      "4. Con mi amado Salvador",
+      "puedo proceder felizmente,",
+      "Y con Él gozo eterno",
+      "tendré allí en el futuro.",
+      "Y con Él gozo eterno",
+      "tendré allí en el futuro."
+    ],
+    [
+      "5. ¡Oh! Tu precioso nombre",
+      "Sigue sonando",
+      "A través del mundo del pecado,",
+      "¡Para que las almas despierten!",
+      "Para que el mundo del pecado,",
+      "¡Para que las almas despierten!"
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

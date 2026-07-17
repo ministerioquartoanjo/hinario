@@ -1,0 +1,44 @@
+{
+  "title": "130 - El secreto de vivir",
+  "author": "Henry Maxwell Wright John J. Richardson",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Cuando el mal me rodee",
+      "Cuando la tormenta ruge,",
+      "En Jesús confiaré,",
+      "Porque él nunca fallará."
+    ],
+    [
+      "2. Cuando el dolor o la aflicción",
+      "turba mi corazón,",
+      "Es necesario confiar,",
+      "Y entregarlo todo a Jesús."
+    ],
+    [
+      "3. Cuando me siento débil,",
+      "Cuando el mundo me oprime,",
+      "Y pesa mi cruz,",
+      "'¡Sólo cree!' - Dice Jesús."
+    ],
+    [
+      "4. Ya sea en la oscuridad o en la luz,",
+      "Siempre cerca de Jesús,",
+      "Cerca y lista para salvar",
+      "Quien sólo confía."
+    ]
+  ],
+  "coro": [
+    "El secreto de vivir,",
+    "El secreto de vencer,",
+    "Es en Cristo confiar,",
+    "Porque él nunca fallará."
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

@@ -1,0 +1,37 @@
+{
+  "title": "72 - Gloria al Salvador",
+  "author": "Henry Maxwell Wright",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Llegando a la cruz de mi buen Señor,",
+      "Postrado a los pies del Redentor,",
+      "Escuchó todo mi clamor,",
+      "Gloria al Salvador."
+    ],
+    [
+      "2. ¡Qué maravilloso! Jesús me amó,",
+      "Me perdonó todo gratuitamente;",
+      "Rompió mis ataduras y me liberó;",
+      "¡Gloria al Salvador!"
+    ],
+    [
+      "3. Junto a la cruz, todavía hay lugar,",
+      "Ven, oh afligido, sin demora,",
+      "Cristo está listo para salvarte,",
+      "¡Ven al Salvador!"
+    ]
+  ],
+  "coro": [
+    "¡Gloria al Salvador! (2x)",
+    "Ahora sé que Él me salvó",
+    "¡Gloria al Salvador!"
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

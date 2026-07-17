@@ -1,0 +1,44 @@
+{
+  "title": "174 - Tu sangre tiene poder",
+  "author": "Lewis Edgar Jones",
+  "speed": 1,
+  "verses": [
+    [
+      "1. ¿Quieres liberarte de tu pecado?",
+      "La sangre de Jesús da poder.",
+      "¿Es tu deseo escapar del maligno?",
+      "Tendrás poder en Su sangre."
+    ],
+    [
+      "2. ¿No quieres ahuyentar la vanidad?",
+      "La sangre de Jesús da poder.",
+      "¿Quieres que tus pasiones dominen?",
+      "Tendrás poder en Su sangre."
+    ],
+    [
+      "3. ¿Quieres purificar tu corazón?",
+      "La sangre de Jesús da poder.",
+      "Todas las manchas pueden ser quitadas de ti;",
+      "Su sangre tiene este poder."
+    ],
+    [
+      "4. ¿Quieres entrar al servicio real?",
+      "La sangre de Jesús da poder.",
+      "¿Quieres también ser un siervo leal?",
+      "Su sangre tiene este poder."
+    ]
+  ],
+  "coro": [
+    "Hay poder, sí, fuerza incomparable",
+    "Sólo en la sangre de Jesús.",
+    "Hay poder, sí, ven, oh pecador,",
+    "Y acepta el regalo de Jesús."
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

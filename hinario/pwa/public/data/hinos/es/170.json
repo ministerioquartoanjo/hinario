@@ -1,0 +1,38 @@
+{
+  "title": "170 - Siempre alegre",
+  "author": "Fanny Jane Croby Robert Lowry",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Que tu corazón esté alegre,",
+      "Siempre rebosante de alabanza,",
+      "Por nuestro Padre celestial,",
+      "Nos muestra su amor."
+    ],
+    [
+      "2. Tenemos protección en las luchas,",
+      "Dios nos toma de la mano;",
+      "Su gracia eterna,",
+      "Nos da fortaleza en la aflicción."
+    ],
+    [
+      "3. Él siempre guiará a los justos,",
+      "Con amor, en su luz;",
+      "Juntos serviremos todos,",
+      "Al amado y buen Jesús."
+    ]
+  ],
+  "coro": [
+    "Siempre alegre, siempre gozoso,",
+    "Es la vida de un buen cristiano;",
+    "¡Oh! ¡Qué gozo pleno,",
+    "Produce la salvación!"
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

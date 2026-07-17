@@ -1,0 +1,56 @@
+{
+  "title": "168 - Siguiendo a Cristo",
+  "author": "Frida Vingren",
+  "speed": 1,
+  "verses": [
+    [
+      "1. ¿Seguirás a Cristo",
+      "Y caminarás en su luz?",
+      "Para el mundo siempre visto,",
+      "¿Cargando su cruz?"
+    ],
+    [
+      "2. ¿Quieres dar hoy el paso,",
+      "Ser cristiano?",
+      "Ven a romper el triste vínculo",
+      "Del pecado y la seducción"
+    ],
+    [
+      "3. La ciudad en la montaña,",
+      "No se puede esconder,",
+      "Y también tal fe",
+      "Que la vida dio poder."
+    ],
+    [
+      "4. ¿Amas a Jesucristo,",
+      "Quién dio su vida por ti?",
+      "Ven entonces y declara este",
+      "Gozo que entonces tendrás en el cielo."
+    ],
+    [
+      "5. Oh, mira atentamente tu intención",
+      "¡Te costará la vida!",
+      "No resistas con valentía,",
+      "Ven a Cristo, la luz infinita."
+    ],
+    [
+      "6. Ven y confiesa tus pecados",
+      "Junto a la cruz del Salvador;",
+      "Pide la gracia de seguirlo,",
+      "Con valentía y amor."
+    ],
+    [
+      "7. Considera el gran gozo",
+      "Que te espera en el cielo;",
+      "Aquí luchas, allí descansas,",
+      "Finalmente tendrás recompensa."
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

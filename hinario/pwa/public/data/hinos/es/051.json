@@ -1,0 +1,44 @@
+{
+  "title": "51 - Deseo de Santidad",
+  "author": "Salomão Luiz Ginsburg Josiah Booth",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Deseo la santidad",
+      "Del amor de mi Jesús;",
+      "Vivir para Su gloria",
+      "Y caminar en Su luz.",
+      "Deseo aprender",
+      "La ley justa y santa;",
+      "Las órdenes de mi Maestro",
+      "Obedeceré."
+    ],
+    [
+      "2. Mi objetivo es seguir en todo",
+      "El ejemplo de Jesús,",
+      "Recorriendo el buen camino",
+      "Que conduce al santo hogar.",
+      "Es Cristo, mi buen Maestro,",
+      "Él también me enseña a orar.",
+      "Solo en la montaña",
+      "Hablaré con Dios."
+    ],
+    [
+      "3. Ama y obedece",
+      "Deseo, Jesús mío,",
+      "Porque moriste por mí",
+      "Clavado en la cruz.",
+      "Oh Salvador, concédeme",
+      "Tu favor.",
+      "Que pueda mostrar a todos",
+      "Tu inmenso amor."
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

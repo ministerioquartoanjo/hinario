@@ -1,0 +1,38 @@
+{
+  "title": "60 - Exultación del creyente",
+  "author": "Henry Maxwell Wright",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Venid, cantad y cantad alabanzas a Jesús,",
+      "Quien por nuestra salvación, murió en la amarga cruz;",
+      "Su sangre derramada, él me lavó de todo,",
+      "Más blanco que la nieve me hizo."
+    ],
+    [
+      "2. Ven y únete a nosotros, en la guerra contra el mal;",
+      "Y con nuestro Salvador, en marcha triunfal,",
+      "Proclama su gracia y su poder a todos.",
+      "¡Su sangre derramada para salvarnos!"
+    ],
+    [
+      "3. El Capitán de la salvación es Cristo, el Salvador;",
+      "El Rey de reyes, el Redentor. Jesús, nuestro Señor;",
+      "Él vencerá todo, la victoria nos dará;",
+      "Gloria salvada, nos guiará."
+    ]
+  ],
+  "coro": [
+    "¡La sangre de Jesús me lavó, me lavó!",
+    "¡La sangre de Jesús me lavó, me lavó!",
+    "Con alegría cantaré alabanzas a mi Rey",
+    "A mi Señor Jesús que me salvó."
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

@@ -1,0 +1,40 @@
+{
+  "title": "65 - Feliz el día",
+  "author": "Philip Doddridge, estrofas Atribuidas a Edward Francis Rimbault, estribillo American Melody",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Feliz el día en que acepté",
+      "La salvación de mi Señor.",
+      "He alcanzado la paz completa",
+      "Y mi corazón está gozoso."
+    ],
+    [
+      "2. Tomé esta decisión",
+      "Ser fiel al Salvador",
+      "Y cada día daré",
+      "Mi alabanza solo a Él"
+    ],
+    [
+      "3. Alégrate, pues, corazón mío,",
+      "En el Hijo del Dios supremo",
+      "Porque él os dio redención",
+      "Y concedió el perdón desde el cielo."
+    ]
+  ],
+  "coro": [
+    "¡Qué placer sentí",
+    "En el día que me convertí!",
+    "Ahora siento su amor",
+    "Y seguridad fervor paz.",
+    "Soy feliz, soy feliz,",
+    "Porque en Jesús, estoy satisfecho."
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

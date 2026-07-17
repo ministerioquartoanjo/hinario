@@ -1,0 +1,32 @@
+{
+  "title": "163 - ¡Santo! ¡Santo! ¡Santo!",
+  "author": "Reginald Heber John Bacchus Dykes",
+  "speed": 1,
+  "verses": [
+    [
+      "1. ¡Santo!, ¡Santo! ¡Santo! ¡Dios Todopoderoso!",
+      "Temprano en la mañana cantaremos Tu alabanza.",
+      "¡Santo!, ¡Santo! ¡Santo! ¡Jehová Dios infinito!",
+      "¡Tú eres el Dios exaltado, nuestro Creador!"
+    ],
+    [
+      "2. ¡Santo! ¡Santo! ¡Santo! Nosotros, los pecadores,",
+      "No podemos ver tu gloria sin temblar.",
+      "Solo tú eres Santo, justo y compasivo,",
+      "Puro y perfecto, nuestro Rey de amor."
+    ],
+    [
+      "3. ¡Santo! ¡Santo! ¡Santo! Dios omnipotente",
+      "Tu creación manifiesta tu amor.",
+      "Antes de crear todo el cielo y la tierra,",
+      "Tú eras y siempre serás, Señor"
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

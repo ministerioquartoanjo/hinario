@@ -1,0 +1,32 @@
+{
+  "title": "1 - La Cena del Señor",
+  "author": "Philip Paul Bliss",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Vengamos como hermanos a la fiesta del Salvador;",
+      "Esta es la Santa Cena, memorial del amor eterno.",
+      "Los emblemas que tenemos hoy simbolizan la redención,",
+      "Porque el sacrificio de Cristo limpia el mal y trae el perdón."
+    ],
+    [
+      "2. Nuestro malvado y vil pecado trajo dolor y perdición,",
+      "Pero el profundo amor de Dios nos liberó de la esclavitud.",
+      "Cuando pensamos que esta Cena recuerda la muerte de Jesús,",
+      "Vemos, sí, nuestra culpa; Murió por nosotros en la cruz."
+    ],
+    [
+      "3. Todo, finalmente, lo grosero y triste, en esta cruz se deshace;",
+      "Para nosotros sólo hay gozo en Dios, que perdurará.",
+      "Damos gracias y alabanzas, homenajes al Señor;",
+      "Tenemos fe en su venida, en su amor real y eterno."
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

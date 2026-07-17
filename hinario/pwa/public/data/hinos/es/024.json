@@ -1,0 +1,32 @@
+{
+  "title": "24 - Al ver la cruz",
+  "author": "Isaac Watts/E.M",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Ver morir a mi Jesús en la ruda cruz,",
+      "En dolor y angustia;",
+      "Entendiendo que es pecador,",
+      "Y mi orgullo sin valor."
+    ],
+    [
+      "2. Las manos, los pies y la frente en dolor",
+      "Derramar sangre por amor;",
+      "¡Oh! ¡santa mano! ¡Mano herida!",
+      "Quiere darme salvación."
+    ],
+    [
+      "3. Doy mil gracias a mi Jesús;",
+      "El amor probado en la cruz",
+      "Sostendrá y guiará",
+      "Mi vida en el futuro."
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

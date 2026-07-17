@@ -1,0 +1,54 @@
+{
+  "title": "28 - Bienaventuranza del creyente",
+  "author": "Frida Vingren",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Bienaventurado el que confía",
+      "En el Señor, como lo hizo Abraham;",
+      "Creyó, aunque no vio,",
+      "Y así la fe no fue en vano.",
+      "Bienaventurado el que sigue fielmente,",
+      "En los santos caminos del Señor;",
+      "En la tribulación es paciente,",
+      "Esperando en su Salvador."
+    ],
+    [
+      "2. Los héroes de la Santa Biblia,",
+      "No disfrutaron inmediatamente de sus trofeos;",
+      "Pero siempre llevaban la pesada cruz,",
+      "Para obtener poder de los cielos,",
+      "Y luego, salieron al mundo,",
+      "Como mensajeros del Señor,",
+      "Con valentía y profundo amor,",
+      "Proclamando a Cristo, el Salvador."
+    ],
+    [
+      "3. El que quiere que Dios tenga la corona,",
+      "Pasará por más tribulación;",
+      "Nadie vuela a las alturas santas,",
+      "Sin las alas de la humillación;",
+      "El Señor ha dado a sus amados,",
+      "Parte de su glorioso ser;",
+      "Quien esté herido en el corazón,",
+      "Más de esa gloria tendrá"
+    ],
+    [
+      "4. Sí, confías completamente;",
+      "En la inmensa gracia del Señor;",
+      "Aleja de ti el desaliento",
+      "Y confía en su santo amor.",
+      "Aleluya sea el lema,",
+      "Del héroe y de todo vencedor;",
+      "Y del cielo más fuerte venga la brisa,",
+      "Que te lleve al seno del Señor."
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

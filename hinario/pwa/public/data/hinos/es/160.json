@@ -1,0 +1,32 @@
+{
+  "title": "160 – Sábado",
+  "author": "Eduard Eyth U.B. Oye",
+  "speed": 1,
+  "verses": [
+    [
+      "1. ¡Cuán felices están nuestros corazones!",
+      "Libres de preocupaciones, luchas y aflicciones.",
+      "Te alabamos, Creador nuestro,",
+      "En este día santo, el día del Señor."
+    ],
+    [
+      "2. Nos atrae tu amor,",
+      "En estas horas santas, llenas de dulzura.",
+      "Este amor habla bien a nuestro corazón,",
+      "De la gracia eterna, nuestra redención."
+    ],
+    [
+      "3. Sé amable con nuestros corazones,",
+      "Tu día santo, Tu creación.",
+      "Echa detrás de nosotros nuestros viles pecados;",
+      "¡Danos hoy tu exaltada paz!"
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

@@ -1,0 +1,44 @@
+{
+  "title": "78 - Hay trabajo listo",
+  "author": "Henry Maxwell Wright",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Hay trabajo listo para ti, cristiano;",
+      "Eso exige toda tu devoción;",
+      "Ven, gozosamente, a obedecer a Cristo,",
+      "¡Porque sólo tú, oh creyente, puedes hacerlo!"
+    ],
+    [
+      "2. Para cada creyente, el Maestro preparó",
+      "Una determinada obra, cuando lo rescató,",
+      "La obra a la que Jesús te llama aquí.",
+      "¿Cómo se hará, si no por ti?"
+    ],
+    [
+      "3. Puede ser humilde, pero si es para Dios,",
+      "Se contempla desde lo alto de los cielos.",
+      "Y el esfuerzo realizado no será en vano",
+      "Si tiene la aprobación de Cristo, ¡plena aprobación!"
+    ],
+    [
+      "4. ¡Cuántos están perdidos, sin salvación!",
+      "¡Cuántos necesitan consuelo!",
+      "Cómo los ama Cristo, hazles entender,",
+      "¡Porque sólo tú, oh creyente, puedes hacerlo!"
+    ]
+  ],
+  "coro": [
+    "Por Jesús trabajando,",
+    "¡Pronto, fielmente, trabaja!",
+    "En Servirle, ¡qué placer!",
+    "Y sólo tú, oh creyente, puedes hacerlo."
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

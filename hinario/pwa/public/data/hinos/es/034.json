@@ -1,0 +1,38 @@
+{
+  "title": "34 - Lluvia de bendiciones",
+  "author": "Daniel Webster Whitle James McGranahan",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Lluvia de bendiciones tendremos",
+      "Es la promesa de Dios;",
+      "Tiempos benditos veremos,",
+      "Lluvia enviada desde los cielos."
+    ],
+    [
+      "2. Tendremos lluvias de bendiciones,",
+      "Vida de paz y perdón.",
+      "Pecadores indignos,",
+      "Gracia del cielo obtendremos."
+    ],
+    [
+      "3. Tendremos lluvias de bendiciones,",
+      "¡Envíanos ahora, oh Señor!",
+      "Que esta bendita promesa,",
+      "Ven y nos traiga vigor."
+    ]
+  ],
+  "coro": [
+    "Lluvias de bendiciones,",
+    "¡Lluvias de bendiciones del cielo!",
+    "Gotas sólo nosotros tenemos;",
+    "¡Lluvias rogamos a Dios!"
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

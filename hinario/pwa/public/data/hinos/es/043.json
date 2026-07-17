@@ -1,0 +1,40 @@
+{
+  "title": "43 - Cristo me amó y me libró",
+  "author": "James Rowe",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Yo era un pecador perdido,",
+      "Lejos de mi Jesús,",
+      "Ya estaba sin fuerzas,",
+      "Pereciendo sin luz;",
+      "Mi estado vio Cristo,",
+      "Y extendió su mano hacia mí,",
+      "Y logró salvarme,",
+      "De la perdición."
+    ],
+    [
+      "2. Mi vida, todo mi ser,",
+      "quiero consagrarte.",
+      "A tu lado viviré,",
+      "Su amor cantará,",
+      "Y el mensaje será transmitido,",
+      "A los que están perdidos,",
+      "Serviré a mi Señor,",
+      "Con gratitud."
+    ]
+  ],
+  "coro": [
+    "Cristo me amó y me liberó.",
+    "Su inmenso amor transformó mí.",
+    "Por Su poder y Su voluntad,",
+    "Cristo mi Salvador, me liberó"
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

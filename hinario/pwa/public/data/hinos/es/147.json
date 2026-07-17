@@ -1,0 +1,38 @@
+{
+  "title": "147 - Cuando Dios llame allí estaré",
+  "author": "James Milton Black",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Cuando Cristo llame a sonar la trompeta en el cielo,",
+      "Cuando amanezca el día majestuoso;",
+      "Y los redimidos de esta Tierra, mi Jesús viene a buscar",
+      "Y entonces se haga el llamado, allí estaré."
+    ],
+    [
+      "2. En ese día glorioso cuando el creyente resurja",
+      "Y participe de la gloria de Jesús",
+      "Cuando los salvos triunfantes lo saluden en el futuro",
+      "Y entonces se haga el llamado, allí estaré"
+    ],
+    [
+      "3. Entonces viviré para Cristo, hasta que termine el día,",
+      "Hablaré de su amor por nosotros aquí.",
+      "Cuando la lucha termine y el trabajo aquí cese",
+      "Y entonces venga el llamado, ¡estaré allí!"
+    ]
+  ],
+  "coro": [
+    "Cuando Dios llame,",
+    "Cuando Dios llame,",
+    "Cuando Dios llame,",
+    "Cuando Dios llame, ¡estaré allí!"
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 10
+}

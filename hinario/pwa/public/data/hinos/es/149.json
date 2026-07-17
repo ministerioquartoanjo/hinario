@@ -1,0 +1,38 @@
+{
+  "title": "149 - Qué gozo es creer en Cristo",
+  "author": "Louisa M. R. Stead William James Kirkpatrick",
+  "speed": 1,
+  "verses": [
+    [
+      "1. ¡Qué gozo es creer en Cristo,",
+      "en su nombre confiar;",
+      "observar sus enseñanzas,",
+      "en las promesas descansar!"
+    ],
+    [
+      "2. ¡Qué gozo es creer en Cristo,",
+      "Estar seguro del perdón!",
+      "Recibir de Cristo mismo ",
+      "Vida, paz y salvación."
+    ],
+    [
+      "3. ¡Qué gozo es creer en Cristo,",
+      "Mi amigo y Salvador!",
+      "Siempre caminaré seguro,",
+      "Muy feliz en su amor."
+    ]
+  ],
+  "coro": [
+    "¡Cristo! ¡Cristo! Confío",
+    "En Tu nombre y Tu poder;",
+    "Cristo, mi Señor amado,",
+    "Haz crecer mi fe."
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

@@ -1,0 +1,38 @@
+{
+  "title": "64 - Fe persistente",
+  "author": "William Hiley Bathurst Justus H. Nelson",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Anhelo una fe que sea fuerte",
+      "Ante el terror;",
+      "Que, con calma, no retroceda",
+      "Del mundo aterrador."
+    ],
+    [
+      "2. La fe que no me hace quejarme",
+      "En el dolor de la corrección,",
+      "Pero cuanto más arde el fuego,",
+      "Más firme es el corazón."
+    ],
+    [
+      "3. La fe que siempre brilla más",
+      "En el huracán negro,",
+      "Que en el peligro siente paz,",
+      "Audaz en la oscuridad."
+    ],
+    [
+      "4. Oh Dios, dame tal fe,",
+      "¡Pase lo que pase!",
+      "Así en la lucha probaré",
+      "El placer celestial."
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

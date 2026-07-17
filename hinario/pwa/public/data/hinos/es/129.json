@@ -1,0 +1,32 @@
+{
+  "title": "129 - Oh Padre Eterno",
+  "author": "Katharine L. Bates",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Oh Padre eterno que habitas en los cielos,",
+      "Nosotros, Tus hijos, venimos a pedirte",
+      "Que nos sostengas con Tus manos benditas,",
+      "En nuestras luchas, hoy y en el futuro."
+    ],
+    [
+      "2. No nos imputes nuestros viles pecados.",
+      "Tuyos, seamos, siempre cada vez más;",
+      "Porque, confiados, somos fortalecidos",
+      "En tus paternos brazos divinos."
+    ],
+    [
+      "3. Oh Padre, transforma nuestra naturaleza,",
+      "Ven y enséñanos a hacer el bien.",
+      "En nuestra mente danos más pureza,",
+      "Más santidad, por Jesús. Amén"
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

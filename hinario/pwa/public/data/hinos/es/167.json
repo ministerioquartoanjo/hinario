@@ -1,0 +1,38 @@
+{
+  "title": "167 - Si buscas a Jesús",
+  "author": "Ina Duley Ogdon Bemtley Deforrest Ackley",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Si buscas a Jesús,",
+      "Encontrarás al Salvador;",
+      "La mañana de luz llegará a ti",
+      "Y paz en su amor."
+    ],
+    [
+      "2. En la luz que prometió,",
+      "En tu vida disfrutarás",
+      "Amor y bendiciones del cielo,",
+      "De Dios a la dulce paz"
+    ],
+    [
+      "3. Jesús comprende tu dolor,",
+      "Y siempre quiere tu bienestar;",
+      "Cree, por tanto, que junto al salvador,",
+      "Comodidad que disfrutarás"
+    ]
+  ],
+  "coro": [
+    "Si buscas conocerlo,",
+    "¡Oh, sí, tú también lo amarás!",
+    "Feliz mañana amanecerá",
+    "Para ti, en el hogar del más allá."
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

@@ -1,0 +1,42 @@
+{
+  "title": "31 - Jesús regresará pronto",
+  "author": "Jessie E. Strout George E Lee",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Siervos de Dios, toquen la trompeta:",
+      "¡Pronto Jesús regresará!",
+      "Lleven el mensaje a todos:",
+      "¡Pronto Jesús regresará!"
+    ],
+    [
+      "2. Id a las naciones y anunciad rápidamente:",
+      "¡Pronto Jesús regresará!",
+      "Agradecidos, gozosos, cantad la noticia:",
+      "¡Pronto Jesús regresará!"
+    ],
+    [
+      "3. Colinas y valles, el sonido resuena:",
+      "¡Pronto Jesús regresará!",
+      "Las olas del mar cantan la canción:",
+      "¡Pronto Jesús regresará!"
+    ],
+    [
+      "4. Las guerras y el hambre nos hacen comprender:",
+      "¡Jesús regresará pronto!",
+      "Señales graves ya nos lo hacen saber:",
+      "¡Jesús regresará pronto!"
+    ]
+  ],
+  "coro": [
+    "¡Vendrá pronto! ¡Vendrá pronto!",
+    "Jesús regresará pronto."
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

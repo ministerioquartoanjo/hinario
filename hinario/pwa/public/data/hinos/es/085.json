@@ -1,0 +1,38 @@
+{
+  "title": "85 - Importa renacido",
+  "author": "William True Sleeper George Coles Stebbins",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Un hombre rico, de noche, vino a Jesús,",
+      "Para conocer el camino de la luz.",
+      "El Maestro, muy claramente, le hizo entender",
+      "¡Es importante renacer!"
+    ],
+    [
+      "2. Hijos del mundo, escuchad al Señor,",
+      "Que siempre os llama con tierno amor.",
+      "Oíd que el Señor no deja de decir:",
+      "¡Es importante renacer!"
+    ],
+    [
+      "3. Oh tú que en el santo reposo de Dios",
+      "Quieres entrar y vivir con los suyos,",
+      "Debes prestar atención a la palabra de Cristo:",
+      "¡Es importante renacer!"
+    ]
+  ],
+  "coro": [
+    "¡Es importante renacer!",
+    "¡Es importante renacer!",
+    "Con voz infalible Jesús dijo:",
+    "¡Es importante renacer!"
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

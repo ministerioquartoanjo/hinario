@@ -1,0 +1,32 @@
+{
+  "title": "48 - La Fundación de la Iglesia",
+  "author": "Samuel John Stone Samuel Sebastian Wesley",
+  "speed": 1,
+  "verses": [
+    [
+      "1. El fundamento de la iglesia es Cristo, el Salvador;",
+      "Y en Él reposa, es fuerte en su amor.",
+      "En Cristo está edificada, permanecerá firme;",
+      "Porque sobre la Roca Eterna nunca será conmovida."
+    ],
+    [
+      "2. La Piedra más preciosa que Dios proveyó,",
+      "Sostiene las piedras vivas que la gracia obró;",
+      "Estemos siempre unidos, viviendo en plena luz,",
+      "Y la gloria de esta Iglesia será del Rey Jesús."
+    ],
+    [
+      "3. En medio de las duras luchas que debe enfrentar,",
+      "La Iglesia espera, en Cristo, triunfar algún día,",
+      "Porque la visión gloriosa finalmente se cumplirá,",
+      "Y la Iglesia victoriosa descansará en paz."
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

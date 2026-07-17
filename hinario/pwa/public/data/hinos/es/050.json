@@ -1,0 +1,59 @@
+{
+  "title": "50 - De todo el mundo: ¡Aleluya!",
+  "author": "Henry Maxwell Wright",
+  "speed": 1,
+  "verses": [
+    [
+      "1. De todas partes del mundo, aquí estamos",
+      "En Ti sólo confiando,",
+      "Permaneciendo en Tu amor.",
+      "Tu reino sólo buscando,",
+      "Nuestras vidas, nuestro amor,",
+      "A Ti traemos, Salvador,",
+      "Canto: ¡Aleluya!"
+    ],
+    [
+      "2. Vivir para Ti, morir en Ti,",
+      "Nuestros padres aspiraban;",
+      "Hacer sólo Tu voluntad,",
+      "Esto es lo que deseaban.",
+      "Y nosotros, que somos Tuyos, también",
+      "decimos, firmemente: Sí, Amén",
+      "Y: \"¡Gloria! ¡Aleluya!\""
+    ],
+    [
+      "3. Al Evangelio salvador,",
+      "Tan puro y glorioso,",
+      "Las leyes santísimas que Tú",
+      "Danos, bondadoso Señor,",
+      "¡Amén! Decimos con fervor,",
+      "Y, por Tu inmenso amor,",
+      "clamamos:\"¡Aleluya!\""
+    ],
+    [
+      "4. Sí, constreñidos por el amor,",
+      "Perdidos buscamos",
+      "Salvar, - ganar para Ti, Señor:",
+      "Esto es a lo que aspiramos,",
+      "Siguiendo siempre tu ley,",
+      "A ti, Rey leal y bendito,",
+      "Cantamos:\"¡Aleluya!\""
+    ],
+    [
+      "5. Ni el trabajo será en vano,",
+      "Porque he aquí cuán glorioso,",
+      "Se acerca el día en que Jesús",
+      "vendrá victorioso;",
+      "Y todos cantarán,",
+      "Y lo exaltarán con alegría,",
+      "Con:\"Amén\",\"¡Aleluya!\""
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

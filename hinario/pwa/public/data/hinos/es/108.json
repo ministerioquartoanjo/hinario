@@ -1,0 +1,32 @@
+{
+  "title": "108 - Mi entrega",
+  "author": "Adelaide Addison Pollard George Coles Stebbins",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Cristo, Maestro bueno, esta es mi voluntad;",
+      "Tu voluntad siempre se cumplirá.",
+      "Hazme fuerte para vencer",
+      "Duras debilidades que puedan venir."
+    ],
+    [
+      "2. Cristo, maestro bueno, este es mi deseo:",
+      "Buscar siempre más santidad;",
+      "Hazme firme, dame poder",
+      "Para que la verdad nunca se vaya."
+    ],
+    [
+      "3. Cristo, maestro bueno, este es mi deseo:",
+      "Superar todas mis faltas;",
+      "Hazme fuerte para luchar,",
+      "Para que la victoria gane siempre."
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

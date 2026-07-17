@@ -1,0 +1,44 @@
+{
+  "title": "146 - ¿Cuál es el adorno de esta vida?",
+  "author": "Sarah Poulton Kalley Adaptación de melodía tradicional inglesa. Hubert Platt Principal",
+  "speed": 1,
+  "verses": [
+    [
+      "1. ¿Cuál es el adorno de esta vida? Es amor,",
+      "La alegría la da el amor, el amor",
+      "Es bondadoso, es paciente, no se convierte en maldición",
+      "No se convierte en maldición, este amor tierno."
+    ],
+    [
+      "2. Con sospecha no se puede lograr dulce amor, dulce amor",
+      "Donde hay desconfianza, ¡ay del amor, ay del amor!",
+      "Porque mostremos tolerancia; Muchas veces la soberbia",
+      "Muchas veces la soberbia marchita y mata el amor."
+    ],
+    [
+      "3. Incluso cuando sea difícil, alimenta el amor, alimenta el amor",
+      "A los enojados y muy furiosos, muestra amor, muestra amor",
+      "No te dejes insultar, sino responde con bondad",
+      "Pero responde con bondad, vence a través del amor."
+    ],
+    [
+      "4. No te enfades, sino tolera, con amor, con amor",
+      "Todo sufre, todo espera amor, amor",
+      "Desacuerdos y rencores, no aptos para pecadores",
+      "No aptos para pecadores, salvados por el amor."
+    ],
+    [
+      "5. Pues hermano, muestra amor a tu prójimo, muestra amor",
+      "El valor no es mezquino de este amor, de este amor",
+      "El Dios supremo nos ama, Cristo nos llama a los cielos",
+      "Cristo nos llama a los cielos, donde reina el amor."
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

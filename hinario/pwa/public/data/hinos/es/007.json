@@ -1,0 +1,37 @@
+{
+  "title": "7 - El mejor regalo",
+  "author": "Eben Eugene Rexford Joseph Garrison",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Trajeron ofrendas a los pies del Salvador;",
+      "Y cada sacrificio resultó ser de amor.",
+      "Ninguna ofrenda fue inútil;",
+      "El gentil Salvador las aceptó todas."
+    ],
+    [
+      "2. A lo lejos, retirado, está un pecador;",
+      "Cuando ve las donaciones, su alma sufre en dolor.",
+      "¡No tiene ningún regalo que dar al Salvador!",
+      "Con los ojos llorosos, suplica con fervor:"
+    ],
+    [
+      "3.\"Oh Maestro\", exclama angustiado, \"Sé lo malo que soy;",
+      "Pero toma la pobre ofrenda: Mi corazón te doy Tú.",
+      "Jesús responde manso:\"Acepté el regalo;\"",
+      "¡De todas las ofrendas, la tuya amé más!"
+    ]
+  ],
+  "coro": [
+    "También Señor, quiero traerte este regalo,",
+    "Indigno, pero sincero;",
+    "El corazón impuro."
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

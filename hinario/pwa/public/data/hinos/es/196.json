@@ -1,0 +1,41 @@
+{
+  "title": "196 - Vosotros, criaturas del Señor",
+  "author": "Francisco de Asís",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Vosotros, criaturas del Señor,",
+      "¡Oh, alabad a Dios!",
+      "¡Oh, alabadle! ¡Aleluya!",
+      "Tú, brillante Sol dorado;",
+      "Tú, brillante Luna plateada!",
+      "¡Oh, alábalo! ¡Oh, alábalo! ",
+      "¡Aleluya! ¡Aleluya! ¡Aleluya!"
+    ],
+    [
+      "2. Oh tierra y cielo, honrad a Dios; ",
+      "¡Precio del amor y del agradecimiento! ",
+      " ¡Oh, alabado sea! ¡Aleluya! ",
+      "Flores, levántense en canto ",
+      "¡Al gran Dios de la creación!",
+      "¡Oh, alábenlo! ¡Oh, alábalo! ",
+      "¡Aleluya! ¡Aleluya! ¡Aleluya!"
+    ],
+    [
+      "3. Ustedes, hombres sabios y buenos,",
+      "¡Alabad también al Señor!",
+      "¡Oh, alabadle! ¡Aleluya! ",
+      "Dad gloria al Hijo, gloria al Padre,",
+      "¡Y dad gracias al mundo entero!",
+      "¡Oh, alabadle! ¡Oh, alábalo! ",
+      "¡Aleluya! ¡Aleluya! ¡Aleluya!"
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

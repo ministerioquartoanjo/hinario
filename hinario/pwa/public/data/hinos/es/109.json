@@ -1,0 +1,44 @@
+{
+  "title": "109 - En la cruz morí por ti",
+  "author": "Frances Ridley Haverga",
+  "speed": 1,
+  "verses": [
+    [
+      "1. En la cruz morí por ti,",
+      "¡Por ti, oh pecador!",
+      "Mi sangre derramé allí,",
+      "Sabriendo dolor amargo.",
+      "En la cruz puse mi vida,",
+      "Del cielo para eso vine.",
+      "De las tinieblas te llamé a la luz'",
+      "¿Qué haces por Mí?"
+    ],
+    [
+      "2. En vano no dejé",
+      "El trono allí en la luz;",
+      "En vano no cambié",
+      "Gloria por la cruz.",
+      "Por ti dejé Mi hogar en el cielo,",
+      "Fui peregrino aquí.",
+      "No quieras, por tanto, poner excusas;",
+      "¿Qué haces por Mí?"
+    ],
+    [
+      "3. Inmenso fue el dolor,",
+      "¡La angustia que sufrí!",
+      "¡No podía haber mayor!",
+      "Sucumbí a él.",
+      "Pero hasta la muerte desprecié,",
+      "Para salvarte, así;",
+      "Por ti mi vida di;",
+      "¿Qué haces por Mí?"
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

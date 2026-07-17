@@ -1,0 +1,43 @@
+{
+  "title": "20 - El amor que gana",
+  "author": "Henry Maxwell Wright",
+  "speed": 1,
+  "verses": [
+    [
+      "1. ¡Amor, que por amor bajaste!",
+      "¡Amor, que por amor moriste!",
+      "¡Ah! ¡Cuánto dolor no sufriste,",
+      "Mi corazón para conquistar,",
+      "Y mi amor para vencer!"
+    ],
+    [
+      "2. Amor, que con amor me seguiste",
+      "Yo, que sin amor, Tú viste!",
+      "¡Oh! ¡Cuánto amor sentiste por mí,",
+      "Mi Salvador, mi buen Jesús,",
+      "Sufrimiento en la cruz!"
+    ],
+    [
+      "3. ¡Amor, que todo me perdona!",
+      "Amor, que incluso bendice",
+      "¡Un acusado al que amas!",
+      "¡Un acusado a quien amas!",
+      "Vencido, oh Salvador, por ti,",
+      "¡Tu gran amor sentí!"
+    ],
+    [
+      "4. Amor sublime que perdura,",
+      "Que en tu gracia me sostienes,",
+      "Rodeándome de mil bienaventuranzas!",
+      "Acepta ahora, oh Salvador,",
+      "¡Mi humilde amor!"
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

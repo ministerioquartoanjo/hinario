@@ -1,0 +1,41 @@
+{
+  "title": "102 - Mensaje al mundo",
+  "author": "H. Ernest Nichol",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Demos el mensaje al mundo,",
+      "Proclamemos la historia de la cruz;",
+      "Historia de amor y gracia,",
+      "Historia de paz y luz,",
+      "Historia de paz y luz."
+    ],
+    [
+      "2. Una voz de advertencia al mundo",
+      "Debe ser nuestro canto;",
+      "Un himno de fe que habla",
+      "De las bendiciones del amor incomparable,",
+      "De las bendiciones del amor incomparable."
+    ],
+    [
+      "3. Un deber es llevar a Cristo al mundo",
+      "Como aquel que puede salvar;",
+      "Quien puede quitar los pecados",
+      "Y la gloria de Dios se mostrará,",
+      "Y la gloria de Dios se mostrará."
+    ]
+  ],
+  "coro": [
+    "Porque Jesús, nuestro Rey, pronto",
+    "Volverá Rey de reyes, Señor;",
+    "Su reino de luz vendrá a fundar,",
+    "Un reino de paz y amor."
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

@@ -1,0 +1,38 @@
+{
+  "title": "30 - Brilla en medio de tu vida",
+  "author": "Ina Duley Ogden, 1913 Chales Hutchison Gabriel, 1913",
+  "speed": 1,
+  "verses": [
+    [
+      "1. No sólo para hacer una hazaña singular",
+      "Hay que actuar con gran ardor;",
+      "Pero las cosas más humildes para hacer",
+      "Debes hacerlas con todo amor."
+    ],
+    [
+      "2. Oh, tal vez puedas alegrar alguna vida",
+      "Con palabras llenas de calidez,",
+      "O tal vez alcanzar algunas almas tristes",
+      "Con el mensaje del Señor."
+    ],
+    [
+      "3. Incluso si tu vida aquí es agitada,",
+      "Sé más firme en tu devoción.",
+      "Mira a tu alrededor que hay gente triste que perece,",
+      "Sin certeza de salvación."
+    ]
+  ],
+  "coro": [
+    "Brilla en medio de tu vivir.",
+    "Brilla en medio de tu vida,",
+    "¡Porque tal vez alguien en apuros puedas ayudar!",
+    "Brilla en medio de tu vida."
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

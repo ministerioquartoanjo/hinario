@@ -1,0 +1,48 @@
+{
+  "title": "94 - Jesús el mejor amigo",
+  "author": "Autor desconocido",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Mi Jesús es el mejor Amigo,",
+      "En Él pongo toda mi fe;",
+      "Mis heridas quieren sanar,",
+      "Y mi alma consuela.",
+      "¡Oh, Jesús es el mejor amigo!"
+    ],
+    [
+      "2. Mi Jesús es el amigo fiel,",
+      "Y me da su fuerza y ​​poder;",
+      "Convierte mi dolor en alegría,",
+      "Me inspira, da valor;",
+      "¡Oh! ¡Jesús es el mejor amigo!"
+    ],
+    [
+      "3. Cuando las olas se enojan,",
+      "Y mi barca se quiere hundirse,",
+      "Él me da calma y paz,",
+      "Y la calma siempre trae,",
+      "¡Sí, Jesús es el mejor amigo!"
+    ],
+    [
+      "4. Él dio su propia vida",
+      "Para salvar al malvado pecador;",
+      "¡Oh! Nunca querrás dejarme,",
+      "¡Nunca me abandones!",
+      "¡Sí, Jesús es el mejor amigo!"
+    ]
+  ],
+  "coro": [
+    "¡Jesús es el mejor amigo! (2x)",
+    "Siempre listo para ayudar,",
+    "Quiere salvar a todos;",
+    "Sí, Jesús es el mejor Amigo."
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

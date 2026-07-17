@@ -1,0 +1,44 @@
+{
+  "title": "148 - ¿Qué tan genial eres?",
+  "author": "Carl Boberg",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Señor Dios mío, cuando yo, maravillado,",
+      "pienso en las obras de tus manos,",
+      "Mil estrellas titilando en el espacio,",
+      "De tu poder, en manifestación,"
+    ],
+    [
+      "2. Si al caminar por campos y bosques,",
+      "escucho el canto de los hermosos pájaros;",
+      "si miro desde lo alto de la montaña,",
+      "y la fuente más allá escucho un murmullo,"
+    ],
+    [
+      "3. Si pienso, entonces, que sin perdonar a Tu Hijo,",
+      "Lo enviaste a morir por mí,",
+      "Llevando todos mis pecados a la cruz,",
+      "Para que yo pudiera vivir así para siempre,"
+    ],
+    [
+      "4. Cuando Jesús venga en resplandeciente y gloria,",
+      "Para llevarme al hogar de Sus hijos,",
+      "Me postraré en infinita gratitud,",
+      "Y exclamaré: ¡Cuán grande eres, Dios mío!"
+    ]
+  ],
+  "coro": [
+    "Así te canta mi alma, Señor:",
+    "¡Cuán grande eres! ¡Cuán grande eres!",
+    "Así te canta mi alma, Señor:",
+    "¡Cuán grande eres! ¡Qué grande eres!"
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

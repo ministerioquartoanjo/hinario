@@ -1,0 +1,32 @@
+{
+  "title": "107- Milicia de Jesús",
+  "author": "Henry Maxwell Wright",
+  "speed": 1,
+  "verses": [
+    [
+      "1. ¡Miles de miles en luz refulgente!",
+      "¡He aquí los santos guerreros, milicias de Jesús!",
+      "Completa, sí completa, tu larga lucha aquí.",
+      "Con Cristo vuestro Señor y Rey, ve, descansa allí."
+    ],
+    [
+      "2. ¡Que dulces sinfonías llenen la tierra y el cielo!",
+      "¡Qué coros de aleluyas se rompen más allá del velo!",
+      "Y ha llegado el día, el día triunfal,",
+      "¡Y Cristo finalmente reinará en la gloria divina!"
+    ],
+    [
+      "3. Entonces ya no habrá más llanto, ni habrá más tentación;",
+      "Los dolores, las tristezas huirán para siempre,",
+      "Y todos los redimidos verán a su Salvador;",
+      "Y transformados, todos serán como el Señor."
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

@@ -1,0 +1,44 @@
+{
+  "title": "37 - Cuenta tus Bendiciones",
+  "author": "Johnson Oatman Jr Edwin Othello Excel",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Si las olas de la vida son turbulentas;",
+      "Si estás desanimado, piensas que todo es vano,",
+      "Cuenta las muchas bendiciones, cuenta cada vez,",
+      "Y verás, con sorpresa, cuánto Dios ya ha hecho."
+    ],
+    [
+      "2. ¿Tienes penas, te resulta difícil afrontarlas?",
+      "¿Es una cruz pesada la que tienes que llevar?",
+      "Cuenta las muchas bendiciones, no dudarás,",
+      "Y cantando con alegría pasarán los días."
+    ],
+    [
+      "3. Cuando veas a otros con riquezas y posesiones,",
+      "Recuerda qué tesoros prometidos tienes",
+      "Los bienes de la tierra nunca podrás comprar,",
+      "La mansión celestial en la que vivirás."
+    ],
+    [
+      "4. Sea aquí débil o fuerte tu conflicto,",
+      "No te desanimes, Dios estará por ti,",
+      "Su divina ayuda, venciendo el mal,",
+      "Te dará consuelo y paz celestial."
+    ]
+  ],
+  "coro": [
+    "Cuenta las bendiciones, di cuántas son,",
+    "Recibidas de la mano divina.",
+    "Una a una cada vez;",
+    "Verás, con sorpresa, cuánto Dios ya ha hecho."
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

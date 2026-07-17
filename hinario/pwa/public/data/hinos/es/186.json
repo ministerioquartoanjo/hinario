@@ -1,0 +1,38 @@
+{
+  "title": "186 - Tú eres fiel, Señor",
+  "author": "Thomas Obediah Chislm William Marion Runyan",
+  "speed": 1,
+  "verses": [
+    [
+      "1. ¡Tú eres fiel, Señor, oh Dios eterno!",
+      "¡Tus hijos saben que no fallarás!",
+      "Nunca has cambiado, nunca has fallado;",
+      "Como eras, sí, siempre serás."
+    ],
+    [
+      "2. Nubes en el cielo azul, sol resplandeciente",
+      "Montañas y valles, prados en flor:",
+      "Tú creaste todo lo que hay en la tierra y en el aire, Y todos te alaban, Señor fiel."
+    ],
+    [
+      "3. Perdón pleno Tú das: ¡qué, seguridad!",
+      "Guíanos siempre por el camino del bien;",
+      "Y, en el futuro, ¡oh! ¡qué dulce esperanza!",
+      "Nos recibirás en el hogar del más allá."
+    ]
+  ],
+  "coro": [
+    "¡Eres fiel, Señor!",
+    "¡Eres fiel, Señor!",
+    "¡Día tras día Tus bendiciones nos dan!",
+    "Tu misericordia nos sostiene y nos guarda;",
+    "Sí, por siempre, oh Dios, serás fiel."
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

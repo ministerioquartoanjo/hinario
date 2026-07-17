@@ -1,0 +1,38 @@
+{
+  "title": "153 - Quiero estar al pie de la cruz",
+  "author": "Fancy Jane Crosby William Howard Doane",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Quiero estar al pie de la cruz,",
+      "De donde corre una fuente rica",
+      "clara y saludable,",
+      "Sobre la escarpada montaña."
+    ],
+    [
+      "2. Temblando al pie de la cruz,",
+      "La gracia eterna me encontró;",
+      "Allí me envió el lucero de la mañana",
+      "Sus rayos."
+    ],
+    [
+      "3. Siempre la cruz, Jesús mi Rey,",
+      "Quieres acordarte de mí;",
+      "A ella, en la sombra, oh Salvador,",
+      "Quieres cobijarme."
+    ]
+  ],
+  "coro": [
+    "Sí, en la cruz, sí, en la cruz,",
+    "Siempre me gloriaré;",
+    "Hasta el fin descansaré,",
+    "Salvado más allá del río."
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

@@ -1,0 +1,38 @@
+{
+  "title": "115 - Te adoramos",
+  "author": "Edond Louis BuBudrynFranz Joseph Haydn",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Te adoramos, Dios infinito,",
+      "Y a tu Hijo, Rey, Salvador;",
+      "Tu nombre eterno es siempre bendito;",
+      "Tu espíritu nos trae amor.",
+      "Gloria te rendimos, honor, alabanza;",
+      "¡Y te adoramos, oh Señor!"
+    ],
+    [
+      "2. Estábamos presos del pecado,",
+      "Tú nos liberaste de esta prisión;",
+      "Y por medio de Tu Hijo inmaculado,",
+      "Nos ofreciste la salvación.",
+      "Gloria te rendimos, honra, alabanza,",
+      "¡Y adoramos a Ti, Redentor!"
+    ],
+    [
+      "3. Tú nos convences de pecados viles,",
+      "Y de justicia, nos das luz,",
+      "Y a la verdad somos guiados,",
+      "Oh Espíritu que nos da...",
+      "Gloria rendimos, honra, alabanza,",
+      "Y adoramos, ¡oh Jesús!"
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

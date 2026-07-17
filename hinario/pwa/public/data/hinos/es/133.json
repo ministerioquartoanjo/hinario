@@ -1,0 +1,44 @@
+{
+  "title": "133 - Donde quiera que vaya, iré",
+  "author": "Fanny Jane Crosby John Samuel Norri Estribrilho Ira David Sankey",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Si tengo a Jesús a mi lado,",
+      "Y ayudado por Él;",
+      "Si soy enviado por Él,",
+      "Iré a cualquier parte."
+    ],
+    [
+      "2. Sea mi camino duro,",
+      "espinoso o inseguro,",
+      "en sus brazos muy seguro,",
+      "dondequiera que me envíes iré."
+    ],
+    [
+      "3. Los males pueden rodearme,",
+      "O los peligros me asustan,",
+      "Pero si Cristo me sostiene,",
+      "A donde sea enviado iré."
+    ],
+    [
+      "4. Cuando la vida termine,",
+      "La batalla está ganada,",
+      "Tengo la gloria prometida,",
+      "Iré a mi Señor."
+    ]
+  ],
+  "coro": [
+    "¡Seguiré a mi buen Maestro!",
+    "¡Seguiré a mi buen Maestro!",
+    "¡Seguiré a mi buen Maestro!",
+    "¡Dondequiera que vaya, iré!"
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

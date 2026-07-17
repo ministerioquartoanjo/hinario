@@ -1,0 +1,64 @@
+{
+  "title": "183 - Todo está bien",
+  "author": "Henry Maxwell Wright",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Por amor de Dios bendito,",
+      "¡Todo va bien!",
+      "Su amor es infinito:",
+      "¡Todo está bien!",
+      "Este amor nos ha probado,",
+      "En su Hijo muy amado,",
+      "Que fue sacrificado por nosotros.",
+      "¡Sí, sí, está bien!"
+    ],
+    [
+      "2. Cristo, ahora, empuña el cetro:",
+      "¡Todo está bien!",
+      "El que ha muerto es el que gobierna:",
+      "¡Todo está bien!",
+      "Su amor es inmutable,",
+      "Su poder es inquebrantable,",
+      "Su cuidado es incansable,",
+      "¡Sí, sí, está bien!"
+    ],
+    [
+      "3. La fe canta en la tristeza:",
+      "¡Todo va bien!",
+      "Canta, sí, y con firmeza:",
+      "¡Todo está bien!",
+      "Porque si Dios es quien nos guía,",
+      "Nos cuida con ternura,",
+      "Con bondad, de noche y de día.",
+      "¡Sí, sí, está bien!"
+    ],
+    [
+      "4. Por caminos difíciles,",
+      "¡Todo va bien!",
+      "O por mares tempestuosos,",
+      "¡Todo está bien!",
+      "Todo obedece a Jesús;",
+      "¡Siempre permanece lo mismo!",
+      "¡Nadie de su pueblo lo olvida!",
+      "¡Sí, sí, está bien!"
+    ],
+    [
+      "5. Ya sea en la vida o en la muerte,",
+      "¡Todo está bien!",
+      "¡Qué feliz es nuestra suerte!",
+      "¡Todo está bien!",
+      "Por la sangre redimidos,",
+      "Y separados del mundo.",
+      "Siempre por Jesús guardado.",
+      "Sí, sí, '¡está bien!"
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

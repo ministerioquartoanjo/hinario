@@ -1,0 +1,28 @@
+{
+  "title": "19 - ¡Amigo sin igual!",
+  "author": "Henry Maxwell Wright",
+  "speed": 1,
+  "verses": [
+    [
+      "1. ¡Amigo único! (2x)",
+      "Jesús murió, en mi lugar,",
+      "Para salvarme.",
+      "¡Amigo único! (2x)",
+      "Tu gran amor no cambiará",
+      "Y nunca fallará."
+    ],
+    [
+      "2. ¡Amigo único! (2x)",
+      "Él está muy cerca, y quiere salvar",
+      "Quien en Él confía ¡Amigo Sin Igual! (2x)",
+      "Invita con inmenso amor A cada pecador."
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

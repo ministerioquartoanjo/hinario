@@ -1,0 +1,38 @@
+{
+  "title": "176 - Bajo sus alas",
+  "author": "William Orclt Cushing Ira David Sankey",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Bajo sus alas estoy descansando,",
+      "Aunque la noche, estoy confiado;",
+      "Bajo sus alas estoy siempre cobijado,",
+      "He sido redimido y ya soy su hijo."
+    ],
+    [
+      "2. Bajo sus alas encuentro refugio,",
+      "Mi corazón puede descansar.",
+      "Y si este mundo no brinda ayuda,",
+      "Bajo sus alas encontraré paz."
+    ],
+    [
+      "3. ¡Bajo Sus alas, una preciosa promesa!",
+      "Siempre puedo esconderme del mal.",
+      "Salvo en Jesús y confiado en la gracia,",
+      "Nada en el mundo puede sacudirme."
+    ]
+  ],
+  "coro": [
+    "Descansaré, descansaré",
+    "Bajo Sus alas benditas,",
+    "Bajo Su refugio, por lo tanto, disfrutaré",
+    "Paz y alegría infinitas."
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

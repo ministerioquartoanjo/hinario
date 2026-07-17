@@ -1,0 +1,44 @@
+{
+  "title": "73 - Gloria a Mi Jesús",
+  "author": "Henry Maxwell Wright",
+  "speed": 1,
+  "verses": [
+    [
+      "1. El Salvador sufrió por mí,",
+      "¡Gloria! ¡Gloria a mi Jesús!",
+      "¡Alabado sea conmigo, el Redentor!",
+      "¡Gloria! ¡Gloria a mi Jesús!"
+    ],
+    [
+      "2. Él cargó con mis pecados,",
+      "¡Gloria! ¡Gloria a mi Jesús!",
+      "Y en la cruz me rescató.",
+      "¡Gloria! ¡Gloria a mi Jesús!"
+    ],
+    [
+      "3. Sé que estoy perdonado,",
+      "¡Gloria! ¡Gloria a mi Jesús!",
+      "¡Y, ciertamente, al cielo voy!",
+      "¡Gloria! ¡Gloria a mi Jesús!"
+    ],
+    [
+      "4. Y, cuando aquí termine la guerra,",
+      "¡Gloria! ¡Gloria a mi Jesús!",
+      "En el cielo, mejor, cantaré,",
+      "¡Gloria! ¡Gloria a mi Jesús!"
+    ]
+  ],
+  "coro": [
+    "¡Jesús! ¡Jesús! ¡Oh Salvador!",
+    "Dulce es el nombre del Señor.",
+    "Llámame con amor santo,",
+    "¡Gloria! ¡Gloria! A mi Señor."
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

@@ -1,0 +1,35 @@
+{
+  "title": "29 - Justo al lado de Cristo",
+  "author": "Leila Maylor Morris",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Junto a Cristo quiero estar,",
+      "Junto a la cruz dulce paz disfruta.",
+      "Sí a Tu pecho busco la paz.",
+      "¡Porque Tu divino amor satisface!",
+      "Porque Tu divino amor satisface!"
+    ],
+    [
+      "2. No traigo nada más al Señor,",
+      "Solo este corazón mío pecaminoso,",
+      "Pero te ruego en contrición,",
+      "¡Oh Salvador, dame paz y perdón!",
+      "¡Oh Salvador, dame paz y perdón!"
+    ],
+    [
+      "3. Sí, quiero que Cristo esté conmigo,",
+      "Hasta que pueda aterrizar allí en el más allá.",
+      "¡Oh, hogar eterno, hogar de esplendor!",
+      "Allí estaré al lado de mi Salvador.",
+      "Allí cantaré de todo su gran amor."
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

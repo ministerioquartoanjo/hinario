@@ -1,0 +1,34 @@
+{
+  "title": "5 - ¡Aleluya! ¡Aleluya! Cantar himnos de agradecimiento",
+  "author": "Christopher Wordsworth, Ludwig van Beethoven",
+  "speed": 1,
+  "verses": [
+    [
+      "1. ¡Aleluya! ¡Aleluya!",
+      "Grandes himnos cantan.",
+      "Gozosos y contentos,",
+      "Himnos a Jesús cantan.",
+      "Para liberarnos del pecado,",
+      "Sufrió una muerte triste;",
+      "Triunfando sobre esta muerte,",
+      "Dio vida eterna"
+    ],
+    [
+      "2. Cristo, divino Redentor",
+      "El pecado aniquilado",
+      "Y alcanzó la misma bendición",
+      "Para los que rescató.",
+      "He aquí, miles de miles",
+      "Adorándolo,",
+      "Descubriendo en su obra",
+      "Vida, luz y salvación"
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

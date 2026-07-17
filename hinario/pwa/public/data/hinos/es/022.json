@@ -1,0 +1,32 @@
+{
+  "title": "22 - Anhelo un lugar de amor",
+  "author": "John G. Whittier",
+  "speed": 1,
+  "verses": [
+    [
+      "1. ¡Anhelo la paz, un lugar de amor!",
+      "Extraño este hogar feliz;",
+      "Ascender con túnicas de brillantez",
+      "Al buen y eterno país."
+    ],
+    [
+      "2. Los pecados viles nunca vendrán",
+      "A traspasar los portales de luz;",
+      "Estará en el centro del país",
+      "El trono eterno de Jesús."
+    ],
+    [
+      "3. Allí puedo disfrutar de una paz infinita,",
+      "Allí viven mis sueños;",
+      "Y el dulce éxtasis que me trae,",
+      "Que se haga realidad, que Dios quiera."
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

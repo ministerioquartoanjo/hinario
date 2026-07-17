@@ -1,0 +1,52 @@
+{
+  "title": "13 - Despierta, despierta",
+  "author": "Henry Maxwell Wright",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Aquí marchamos hacia esa buena patria",
+      "Donde el creyente (sí, es Cristo quien lo dice);",
+      "Con su Salvador permanece siempre feliz allí,",
+      "Va con Él a descansar.",
+      "Trabajemos, pues, con celo y vigor,",
+      "Constreñidos por su inmenso amor;",
+      "Trabajemos por nuestro Salvador;",
+      "He aquí, la vida volverá ¡fin!"
+    ],
+    [
+      "2. Aquí está con nosotros nuestro distinguido Capitán",
+      "Que nos asegura la salvación eterna",
+      "He aquí la santa fe, el pabellón invicto",
+      "Vamos, trabajemos",
+      "¡Allá vamos! No tenemos nada que temer",
+      "Por Jesús, siempre venceremos",
+      "Trabajemos, hasta el amanecer",
+      "Y aquí termina el trabajo"
+    ],
+    [
+      "3. Vestidos con la coraza de Jesús",
+      "Como sus siervos e hijos, sí, de la luz",
+      "Gloriosos en Cristo y su cruz",
+      "Venid, trabajemos",
+      "A los perdidos, busquemos con amor",
+      "A los desesperados, declaremos",
+      "Que Jesús está listo para salvar a todos",
+      "Oh sí, trabajemos"
+    ]
+  ],
+  "coro": [
+    "¡Despertad! ¡Despertar! ¡Despierto! ¡Despierta!",
+    "Y canta, ¡sí canta! El Señor no tardará.",
+    "He aquí, marchamos hacia aquella buena patria",
+    "Donde el creyente (sí, es Cristo quien lo dice);",
+    "Con su Salvador siempre permanece allí feliz,",
+    "Va con Él a descansar."
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

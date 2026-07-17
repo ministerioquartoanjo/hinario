@@ -1,0 +1,43 @@
+{
+  "title": "35 - Con tu mano sosteniendo la mía con fuerza",
+  "author": "Julie Katlharina von Hausmann, Hubert Platt Main",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Sostén fuerte la mía con tu mano",
+      "¡Porque soy tan frágil, oh Salvador!",
+      "Que nunca me atreva a dar un paso",
+      "¡Sin tu apoyo, mi Jesús Señor!"
+    ],
+    [
+      "2. Con Tu mano, toma fuerte la mía,",
+      "Y cada vez más unidos a Ti, Jesús.",
+      "¡Oh, tráeme, que nunca me aleje",
+      "De Ti, Señor, mi vida y mi luz!"
+    ],
+    [
+      "3. Con Tu mano, toma la mía con fuerza,",
+      "Y, a través del mundo, te seguiré con alegría:",
+      "Incluso donde las sombras se vuelven más oscuras",
+      "Al ver Tu rostro, no temeré a nada."
+    ],
+    [
+      "4. Y, si llego a la orilla de ese río,",
+      "Que Tú quisiste cruzar por mí, Con Tu mano sujeta fuerte la mía,",
+      "Y sobre la muerte triunfaré."
+    ],
+    [
+      "5. Cuando regreses de estos cielos quebrantados,",
+      "Toma fuerte mi mano, Señor,",
+      "Y, Jesús mío, llévame contigo,",
+      "Donde pueda disfrutar de tu amor eterno."
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

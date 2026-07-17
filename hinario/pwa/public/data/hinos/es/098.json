@@ -1,0 +1,44 @@
+{
+  "title": "98 - Te alabamos, oh Dios",
+  "author": "William Pton Mackay John Jenkins Esposo",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Te alabamos, oh Dios",
+      "Por el don de Jesús,",
+      "Quien por nosotros, pecadores,",
+      "Murió en la cruz."
+    ],
+    [
+      "2. Te alabamos, oh Dios,",
+      "Y a tu Hijo de amor,",
+      "Que fue asesinado, pero vive,",
+      "Señor Supremo"
+    ],
+    [
+      "3. Te alabamos, oh Dios,",
+      "Por el Espíritu, luz,",
+      "Que nos saca de las tinieblas,",
+      "Y conduce a Cristo."
+    ],
+    [
+      "4. Oh, ven a llenarnos,",
+      "De fervor celestial,",
+      "Y haznos gozar",
+      "Tu afable amor."
+    ]
+  ],
+  "coro": [
+    "¡Aleluya! Toda la gloria",
+    "Te damos sin fin.",
+    "¡Aleluya! Su excelencia",
+    "¡Se lo rogamos, amén!"
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

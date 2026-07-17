@@ -1,0 +1,32 @@
+{
+  "title": "95 - Alegres te adoramos",
+  "author": "Henry van Dyke Ludwig van Beethoven, c",
+  "speed": 1,
+  "verses": [
+    [
+      "1. ¡Con alegría te adoramos, Dios de gloria, Dios de amor!",
+      "Nuestro corazón se desborda en alabanza a Ti, Señor.",
+      "Rompe las nubes de tristeza, pecado y miedo.",
+      "Dador de gracia eterna, ¡llénanos de tu amor!"
+    ],
+    [
+      "2. Tus obras anuncian Tu poder y esplendor.",
+      "Cielos y Tierra cantan himnos en alabanza a Ti, Señor.",
+      "Valles, montañas y praderas, prados hermosos, mar verde,",
+      "Pájaros, manantiales cristalinos, todos quieren adorarte."
+    ],
+    [
+      "3. ¡Aleluya, aleluya, a Jesús Redentor!",
+      "Aleluya eternamente en alabanza a Ti, Señor",
+      "Que nos trajiste la gloria eterna, al morir por nosotros en la cruz.",
+      "¡Aleluya al Padre y al Hijo, que nos guía a todos!"
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

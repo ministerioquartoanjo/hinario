@@ -1,0 +1,36 @@
+{
+  "title": "159 - Roca eterna",
+  "author": "Augustus Montague Toplady Thomas Hastings",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Roca eterna, estaba en la cruz,",
+      "Que moriste, Tú, Jesús.",
+      "Tal sangre viene de Ti",
+      "Que me limpia de todo mal.",
+      "Trae las bendiciones del perdón,",
+      "Da pureza y salvación."
+    ],
+    [
+      "2. Ni trabajo ni dolor",
+      "Puede el pecador salvar",
+      "Sólo tú puedes, buen Jesús,",
+      "Dame vida, paz y luz",
+      "Te pido perdón, Señor,",
+      "Porque confío en tu amor."
+    ],
+    [
+      "3. Cuando por fin llegue la muerte,",
+      "Y mis ojos cierro,",
+      "Cuando Tu rostro en gloria se eleve al cielo,",
+      "Roca eterna, ¡qué placer tendré en ti viviendo!"
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

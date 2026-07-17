@@ -1,0 +1,44 @@
+{
+  "title": "45 - Cristo fue a prepararnos un lugar",
+  "author": "Dewitt C. Huntington Tulio Clinton O'Katne",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Cristo fue a preparar un lugar para nosotros",
+      "En la morada celestial del Padre,",
+      "¿A dónde llegaremos pronto?",
+      "Y donde el pecado nunca nos traiciona.",
+      "Arriba en el cielo, arriba en el cielo,",
+      "Cristo fue a prepararnos un lugar;",
+      "Arriba en el cielo, arriba en el cielo,",
+      "En el hogar celestial del Padre."
+    ],
+    [
+      "2. Allí estaremos con Jesús,",
+      "Disfrutando sin cesar de tu amor,",
+      "En la morada perenne de la luz,",
+      "Jardín inefable del Señor.",
+      "Arriba en el cielo, arriba en el cielo,",
+      "Allí estaremos con Jesús;",
+      "Arriba en el cielo, arriba en el cielo,",
+      "Disfrutando infinitamente de su amor."
+    ],
+    [
+      "3. En este hogar feliz y eterno,",
+      "El pecado nunca entrará;",
+      "Sólo hay gloria, pureza y placer;",
+      "Allí estarán los salvos con Cristo.",
+      "Arriba en el cielo, arriba en el cielo,",
+      "En este hogar feliz y eterno;",
+      "Arriba en el cielo, arriba en el cielo,",
+      "Después de todo, encontraremos descanso."
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

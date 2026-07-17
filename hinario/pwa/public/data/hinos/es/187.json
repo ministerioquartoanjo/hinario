@@ -1,0 +1,44 @@
+{
+  "title": "187 - Un estandarte real",
+  "author": "Henry Maxwell Wright",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Un estandarte real entregado al Rey",
+      "A vosotros, sus soldados.",
+      "Valientes, pues, defendedlo en todo;",
+      "Marchando hacia los cielos."
+    ],
+    [
+      "2. ¡He aquí, los batallones negros",
+      "Del gran usurpador ya se han formado!",
+      "Declaraos, hoy, valientes campeones;",
+      "Adelante sin miedo."
+    ],
+    [
+      "3. El que tiene miedo siente en su corazón,",
+      "Y se muestra débil,",
+      "No recibirá la recompensa eterna,",
+      "Que Cristo tiene para dar."
+    ],
+    [
+      "4. Porque seamos todos leales a Jesús,",
+      "Y a su estandarte real;",
+      "Los que son siempre fieles en la batalla,",
+      "Con Él reinarán."
+    ]
+  ],
+  "coro": [
+    "¡Con valor! ¡Sin miedo!",
+    "¡Por Cristo dispuesto a sufrir!",
+    "Levanten en alto su estandarte,",
+    "¡Manténganse siempre firmes hasta vencer!"
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

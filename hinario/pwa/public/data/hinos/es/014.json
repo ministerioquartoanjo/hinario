@@ -1,0 +1,46 @@
+{
+  "title": "14 - Adoración reconocida",
+  "author": "Henry Maxwell Wright",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Oh alma mía, sin demora,",
+      "Levántate a cantar;",
+      "Las alabanzas de tu Cristo,",
+      "¡Y celebra su nombre!",
+      "Para redimirte, para redimirte,",
+      "¡Su vida quiso dar!"
+    ],
+    [
+      "2. Es tan triste mi condición",
+      "Conocí a mi Salvador;",
+      "Que descendió del cielo a la tierra,",
+      "¡Para ser mi Redentor!",
+      "¡Oh! ¡Qué grande! ¡Oh! ¡Qué grande!",
+      "¡Y el amor de mi Señor!"
+    ],
+    [
+      "3. Justamente condenado,",
+      "¿Qué podría hacer,",
+      "De este castigo para liberarme,",
+      "Perdón para merecer?",
+      "Su sangre, Su sangre,",
+      "¡Jesús quiso derramar por mí!"
+    ],
+    [
+      "4. Con mis crímenes cargados,",
+      "Allí en la cruz, en mi lugar,",
+      "Jesús fue crucificado,",
+      "Mi alma para salvar;",
+      "¡Vengan todos! ¡Venid todos,",
+      "¡Ya conmigo, para adorarlo!"
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

@@ -1,0 +1,44 @@
+{
+  "title": "61 - Creo, sí",
+  "author": "Frida Vingren",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Hasta que conocí el amor sin fin,",
+      "era un pecador;",
+      "En mi pensamiento, no había lugar",
+      "Para Cristo y el cielo."
+    ],
+    [
+      "2. Porque cuando vi a Jesús por mí,",
+      "Sufriendo en la cruz,",
+      "Mi corazón, sin dudar,",
+      "Recibió amor y luz."
+    ],
+    [
+      "3. Con lágrimas pedí perdón,",
+      "Y dolor, también sentí;",
+      "Entonces vino Jesús y me dijo:",
+      "\"Por ti morí\"."
+    ],
+    [
+      "4. Sé que Dios, en su Hijo,",
+      "me ve perfecto y sano;",
+      "Ya no hay temor, sólo amor bendito,",
+      "Alegría en mi corazón."
+    ]
+  ],
+  "coro": [
+    "Creo, sí, ya creo, sí,",
+    "Jesús murió por mí;",
+    "Por su sangre, que derramó,",
+    "Fui liberado al fin."
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

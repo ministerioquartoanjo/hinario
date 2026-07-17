@@ -1,0 +1,21 @@
+{
+  "title": "194 - Vitoria Deus me la da",
+  "author": "Autor desconocido J.T.B.",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Victoria Dios me dará, lo sé,",
+      "Victoria Dios me dará, lo sé.",
+      "Si camino en plena luz,",
+      "Confía sólo en Jesús,",
+      "Victoria Dios me dará, lo sé."
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

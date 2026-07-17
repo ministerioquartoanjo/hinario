@@ -1,0 +1,46 @@
+{
+  "title": "190 - Jesús vencedor viene",
+  "author": "Júlia Ward Howe Ameri Melodía tradicional",
+  "speed": 1,
+  "verses": [
+    [
+      "1. La gloria eterna de Jesús, el Rey de reyes, ya brilla:",
+      "¡Pronto los reinos de este mundo escucharán Su Ley!",
+      "Las señales de Su venida se muestran cada vez más;",
+      "¡Jesús sale victorioso!"
+    ],
+    [
+      "2. Ya ha sonado la corneta que llama a los creyentes a la batalla",
+      "Cristo, a la cabeza de su pueblo, ya ha conquistado multitudes",
+      "El enemigo, en retirada, se ha hecho evidente su furia",
+      "Vencedor viene Jesús"
+    ],
+    [
+      "3. Y finalmente entronizados, las naciones juzgarán",
+      "A todos, grandes y pequeños, el Juez se enfrentará",
+      "Y los redimidos triunfantes, con brillantez cantarán",
+      "El Rey Jesús ha vencido"
+    ]
+  ],
+  "coro": [
+    [
+      "¡Gloria! ¡Gloria! ¡Aleluya! (3x)",
+      "¡Vencedor viene Jesús!"
+    ],
+    [
+      "¡Gloria! ¡Gloria! ¡Aleluya! (3x)",
+      "¡Vencedor viene Jesús!"
+    ],
+    [
+      "¡Gloria! ¡Gloria! ¡Aleluya! (3x)",
+      "¡El Rey Jesús ha ganado!"
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

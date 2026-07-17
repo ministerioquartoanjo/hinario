@@ -1,0 +1,48 @@
+{
+  "title": "132 - ¡Ay! Qué gloria",
+  "author": "Henry Maxwell Wright",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Señor mío, que me salvaste,",
+      "Tuyo, y sólo tuyo soy;",
+      "Con Tu sangre me sanaste;",
+      "¡Gloria! ¡Gloria a Ti te doy!"
+    ],
+    [
+      "2. Para obtener tan gran alegría,",
+      "trabajé mucho y mucho;",
+      "Pero todo esfuerzo fue en vano,",
+      "Creo que solo lo encontré."
+    ],
+    [
+      "3. Confiando, confiando,",
+      "Siempre y solo, Jesús, en Ti,",
+      "Tu poder y Tu gracia,",
+      "Bien me guarden."
+    ],
+    [
+      "4. Consagrado a Tu servicio,",
+      "quiero que vivas;",
+      "Dando siempre testimonio",
+      "De Tu gracia y de Tu poder."
+    ]
+  ],
+  "coro": [
+    "¡Oh! ¡Qué gloria! (2x)",
+    "¡Disfruto en mi corazón!",
+    "Confío en Jesús,",
+    "Y, creyendo, ¡tengo salvación!",
+    "¡Oh! ¡Qué gloria! (2x)",
+    "¡Disfruto en mi corazón!",
+    "Confío en Jesús,",
+    "Y en su sangre encontré perdón"
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

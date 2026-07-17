@@ -1,0 +1,43 @@
+{
+  "title": "21 - Amor sin igual",
+  "author": "R. Torrey. Jr. Ernest Gebhardt",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Oh, ¿no has oído hablar del amor incomparable,",
+      "Del amor que tu Dios tiene por ti?",
+      "El amor que lo llevó a entregar a Su Hijo,",
+      "¡Para que los salvos lo tomaran para sí!"
+    ],
+    [
+      "2. No fueron los grandes a quienes Cristo llamó,",
+      "No los justos vino a salvar,",
+      "Sino los pobres y los débiles, los culpables y los malvados",
+      "Envió a buscar a los siervos"
+    ],
+    [
+      "3. El hombre, sin embargo, no pudo alcanzar",
+      "La santa presencia de Dios,",
+      "Porque los pecados de su corazón",
+      "Le prohibieron entrar al cielo"
+    ],
+    [
+      "4. Pero con su sangre Jesús expió",
+      "La culpa de los creyentes, en la cruz;",
+      "Quitando el pecado, mostró el camino,",
+      "Que nos lleva al cielo"
+    ]
+  ],
+  "coro": [
+    "¡Oh, cree! ¡Sí, créeme! ¡Oh, créeme! ¡Sí, créelo!",
+    "La gracia de Dios te llama desde el cielo.",
+    "¡Oh, cree en este amor incomparable!"
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

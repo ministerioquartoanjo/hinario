@@ -1,0 +1,38 @@
+{
+  "title": "156 - Quiero tener a Jesús conmigo",
+  "author": "Lizzie Edwards John Robson Sweney",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Quiero tener a Jesús conmigo,",
+      "Quiero caminar solo con Él.",
+      "Quiero ver su hermoso rostro,",
+      "En sus brazos para descansar."
+    ],
+    [
+      "2. Quiero tener a Jesús conmigo;",
+      "Soy frágil en mi fe.",
+      "Su voz me da consuelo",
+      "Cuando mi pie tiembla."
+    ],
+    [
+      "3. Quiero tener a Jesús conmigo,",
+      "Siempre aquí en mi vida,",
+      "En el ocio y en el trabajo,",
+      "En el dolor y en el placer"
+    ]
+  ],
+  "coro": [
+    "Teniendo fe en el Salvador,",
+    "Descansando en su amor,",
+    "Continuaré en mi camino,",
+    "Sin tristeza, sin miedo."
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

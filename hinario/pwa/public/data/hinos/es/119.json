@@ -1,0 +1,38 @@
+{
+  "title": "119 - ¡Oh cristianos, adelante!",
+  "author": "Sabine Baring Gould Arthur Seymour Sullivan",
+  "speed": 1,
+  "verses": [
+    [
+      "1. ¡Oh cristianos, adelante! ¡Marchen sin miedo!",
+      "Por la cruz de Cristo, luchen con ardor.",
+      "Cristo nuestro Maestro, guía el batallón;",
+      "En el fragor de la guerra levanta su estandarte."
+    ],
+    [
+      "2. ¡Oh cristianos, adelante, contra Satanás!",
+      "Siguiendo a Jesús, príncipe de la paz.",
+      "¡El enemigo nunca prevalecerá!",
+      "¡Con las santas huestes Cristo vencerá!"
+    ],
+    [
+      "3. Perecieron reinos, tronos y naciones,",
+      "Pero la Iglesia vence, incluso en las aflicciones.",
+      "Marchemos, pues, adelante, con fervor,",
+      "Hacia la gloria, nuestro hogar eterno."
+    ]
+  ],
+  "coro": [
+    "¡Oh cristianos, adelante!",
+    "¡Marchen, marchen, marchen!",
+    "Por la cruz de Cristo,",
+    "¡Luchen ardientemente!"
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

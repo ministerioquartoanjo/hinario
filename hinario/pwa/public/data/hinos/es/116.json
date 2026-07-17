@@ -1,0 +1,44 @@
+{
+  "title": "116 - El amable amigo",
+  "author": "RH Moreton",
+  "speed": 1,
+  "verses": [
+    [
+      "1. ¡Qué amable amigo es Cristo!",
+      "Él llevó nuestro dolor con nosotros.",
+      "Y nos ordena tomar",
+      "Cuidando al Señor",
+      "Extrañando el corazón dolorido",
+      "¿Alegría, paz, consuelo?",
+      "Esto se debe a que no tomamos",
+      "Todos a Dios en oración."
+    ],
+    [
+      "2. Estás débil y agobiado",
+      "¿De cuidado y miedo?",
+      "A Jesús refugio eterno",
+      "¡Ve con fe a exponer tu maldad!",
+      "¿Tus amigos te desprecian?",
+      "Dile esto en oración.",
+      "Y con su amor tan tierno",
+      "Paz tendrás en tu corazón."
+    ],
+    [
+      "3. Cristo es un verdadero amigo",
+      "De esta evidencia nos mostró",
+      "Cuando llevarlo contigo",
+      "El culpable encarnado",
+      "Derramó su sangre pura",
+      "Nuestra mancha para lavar",
+      "Disfrute en la vida y en el futuro.",
+      "En Él podemos lograr."
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

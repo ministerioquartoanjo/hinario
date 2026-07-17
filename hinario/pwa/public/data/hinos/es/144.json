@@ -1,0 +1,37 @@
+{
+  "title": "144 - Jesús es precioso para mí",
+  "author": "Charles Hutchison Gabriel",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Precioso es Jesús, mi Rey, Salvador;",
+      "Solo a Él daré mi alabanza.",
+      "Él es una fuente divina de fortaleza y vigor;",
+      "Precioso es Jesús para mí."
+    ],
+    [
+      "2. Jesús llama a la puerta de mi corazón,",
+      "Y espera pacientemente, quiere darme perdón.",
+      "Que su sacrificio no sea en vano;",
+      "Precioso es Jesús para mí."
+    ],
+    [
+      "3. Preciosas promesas tengo del Rey;",
+      "Con Él en un hogar eterno habitaré;",
+      "En un reino de luz veré Su rostro;",
+      "Precioso es Jesús para mí."
+    ]
+  ],
+  "coro": [
+    "¡Precioso es Jesús para mí! (2X)",
+    "Él es mi Redentor, mi Fiel protector;",
+    "Jesús es precioso para mí."
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

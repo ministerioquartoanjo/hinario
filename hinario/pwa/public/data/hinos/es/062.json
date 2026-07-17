@@ -1,0 +1,44 @@
+{
+  "title": "62 - Cara a cara",
+  "author": "Carrie Ellis Breck Grant Colfaxtullar",
+  "speed": 1,
+  "verses": [
+    [
+      "1. ¡Cuánto anhelo ver a Cristo!",
+      "Ver Su rostro, ¡qué placer!",
+      "Cuando, finalmente, en el hogar eterno,",
+      "¡siempre podré verlo!"
+    ],
+    [
+      "2. Ya lo veo muy lejos,",
+      "lo veo como a través de un velo,",
+      "pero deseo verlo pronto",
+      "¡cara a cara en el cielo!"
+    ],
+    [
+      "3. ¡Oh! ¡Qué encanto estar con Cristo,",
+      "Donde ya no hay dolor!",
+      "Libre de cualquier peligro,",
+      "¡Disfrutando de su amor!"
+    ],
+    [
+      "4. Cara a cara, qué alegría",
+      "Será vivir así,",
+      "Ver el rostro tan querido",
+      "¡Que murió por mí!"
+    ]
+  ],
+  "coro": [
+    "Cara a cara lo veré,",
+    "Cuando venga en gloria en luz;",
+    "Cara a cara allí en gloria,",
+    "¡Veré a mi buen Jesús!"
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

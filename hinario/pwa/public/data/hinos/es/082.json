@@ -1,0 +1,38 @@
+{
+  "title": "82 - Cosecharemos",
+  "author": "Knowles Shaw George A. Minor",
+  "speed": 1,
+  "verses": [
+    [
+      "1. Sembremos todos la semilla santa,",
+      "Desde el amanecer hasta el anochecer;",
+      "Con calma, esperando el momento de la cosecha,",
+      "Cuando cosecharemos con alegría."
+    ],
+    [
+      "2. Incluso cuando los seres malvados y perniciosos",
+      "Quieran destruir la buena semilla,",
+      "Sembremos, siempre satisfechos,",
+      "Para una cosecha santa disfrutaremos."
+    ],
+    [
+      "3. Venid, pues, trabajadores, sembrad con valentía,",
+      "La semilla viva de verdad y luz;",
+      "Proclamando a Cristo, su poder y gloria,",
+      "¡La salvación perfecta que alcanzó en la cruz!"
+    ]
+  ],
+  "coro": [
+    "¡Cosecharemos! ¡Cosecharemos!",
+    "¡Oh, qué gozosos, cosecharemos!",
+    "¡Cosecharemos! ¡Cosecharemos!",
+    "¡Cosechas abundantes, traeremos!"
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

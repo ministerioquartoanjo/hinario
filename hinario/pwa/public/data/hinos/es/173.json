@@ -1,0 +1,38 @@
+{
+  "title": "173 - ¿Será por la mañana?",
+  "author": "H. L. Sintonizador XIX James McGranahan",
+  "speed": 1,
+  "verses": [
+    [
+      "1. ¿Será en la mañana, al comienzo del día?",
+      "¿Será cuando la luz brille,",
+      "Que Cristo vendrá con los ángeles de gloria,",
+      "Recibirá lo suyo de este mundo?"
+    ],
+    [
+      "2. ¿Será en la mañana o será en la tarde?",
+      "También puede ser que la oscuridad de la noche",
+      "Se convierta en la luz de este resplandor de gloria,",
+      "Cuando Cristo reciba a los suyos."
+    ],
+    [
+      "3. ¡Oh! Gracia sin fin, cuando la muerte sea vencida,",
+      "Cristo Jesús nos vestirá de vida,",
+      "Y entonces moraremos allí en gloria,",
+      "¡En este hogar que Jesús preparó!"
+    ]
+  ],
+  "coro": [
+    "¡Oh, Jesús, Salvador, Señor!",
+    "¿Cuándo cantaremos:",
+    "Cristo regresa, aleluya, aleluya, amén!",
+    "Aleluya, amén?"
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}

@@ -1,0 +1,34 @@
+{
+  "title": "143 - Oración a Nuestro Dios",
+  "author": "Felice de Giardini",
+  "speed": 1,
+  "verses": [
+    [
+      "1. ¡Oh Dios grande y eterno!",
+      "Escúchanos desde el cielo;",
+      "He aquí la oración: ven, Padre, hazte presente,",
+      "Ven, danos tu poder",
+      "Con tu voz, habla al corazón. "
+    ],
+    [
+      "2. El Dios insondable Sí, te adoramos",
+      "Oh Creador, ven y purifícanos",
+      "Ven y santifícanos",
+      "Danos tu paz y tu amor"
+    ],
+    [
+      "3. Oh ven con Tu amor",
+      "Con Tu voz habla",
+      "Al corazón y ven a habitar en nosotros",
+      "Danos consuelo",
+      "Y, Oh ven a confirmar nuestra redención."
+    ]
+  ],
+  "audioFilters": {
+    "gain": 1.2,
+    "bass": 0,
+    "mid": -5,
+    "treble": 12
+  },
+  "introducao": 0
+}
