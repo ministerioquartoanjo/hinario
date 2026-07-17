@@ -77,3 +77,133 @@ input[type="range"][orient="vertical"] {
   width: 16px;
   height: 100%;
 }
+
+/* Estilos específicos do Controle Remoto */
+body.tema-controle-remoto {
+    background-color: #f9fafb;
+    max-width: 270px;
+    margin: 0 auto;
+    overflow-x: hidden;
+    min-width: 0; /* sobrescreve min-width do body padrao */
+}
+
+#remote-search-results {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    margin-top: 0.25rem;
+    background: white;
+    border: 1px solid #d1d5db;
+    border-radius: 0.5rem;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    max-height: 15rem;
+    overflow-y: auto;
+    z-index: 100;
+}
+
+.remote-search-item {
+    padding: 0.75rem;
+    border-bottom: 1px solid #f1f5f9;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-align: left;
+}
+
+.remote-search-item:last-child {
+    border-bottom: none;
+}
+
+.remote-search-item:hover,
+.remote-search-item.active {
+    background-color: #f97316;
+    color: white;
+}
+
+.remote-search-item.active .text-gray-500,
+.remote-search-item.active .opacity-70,
+.remote-search-item.active .opacity-50 {
+    color: white;
+    opacity: 0.9;
+}
+
+.grid-button {
+    background-color: #e5e7eb;
+    color: #1f2937;
+    border-radius: 0.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+    border: none;
+    cursor: pointer;
+    /* Sobrescritas que existiam no arquivo */
+    min-height: 2rem !important;
+    padding: 0.25rem 0.125rem !important;
+    font-size: 0.6rem !important;
+    gap: 0.125rem !important;
+    width: 90% !important;
+    margin: 0 auto;
+}
+.grid-button:hover {
+    background-color: #f97316;
+    color: white;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(249, 115, 22, 0.3);
+}
+.grid-button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(249, 115, 22, 0.2);
+}
+.grid-button.invisible {
+    visibility: hidden;
+}
+.grid-button span {
+    display: block;
+    width: 100%;
+    text-align: center;
+    line-height: 1.1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.speed-button {
+    min-height: 1rem;
+    padding: 0.25rem;
+    font-size: 0.75rem;
+    gap: 0;
+    width: 2rem;
+    flex: 0 0 auto;
+    background-color: #e5e7eb;
+    color: #1f2937;
+    border-radius: 0.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+    cursor: pointer;
+    border: none;
+}
+.speed-button:hover {
+    background-color: #f97316;
+    color: white;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(249, 115, 22, 0.3);
+}
+
+.gap-1 {
+    gap: 0.25rem !important;
+}
+.bg-green-600 {
+    background-color: rgb(34 197 94) !important;
+}
+.bg-gray-200 {
+    background-color: rgb(229 231 235) !important;
+}
+.bg-orange-dark {
+    background-color: rgb(249 115 22) !important;
+}
