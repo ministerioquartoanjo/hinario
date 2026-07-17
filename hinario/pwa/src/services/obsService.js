@@ -4,11 +4,7 @@ class ObsService {
     constructor() {
         this.obs = new OBSWebSocket();
         this.connected = false;
-        this.config = JSON.parse(localStorage.getItem('obs_config')) || {
-            address: 'localhost:4455',
-            password: '',
-            sourceName: 'Hinario'
-        };
+        this.config = this.loadConfig();
 
         // Escutar eventos de conexão e desconexão
         this.obs.on('Identified', () => {
@@ -20,6 +16,32 @@ class ObsService {
             console.log('Conexão com OBS fechada');
             this.connected = false;
         });
+    }
+
+    loadConfig() {
+        const defaultConfig = {
+            address: 'localhost:4455',
+            password: '',
+            sourceName: 'Hinario'
+        };
+
+        const raw = localStorage.getItem('obs_config');
+        if (raw) {
+            try {
+                return { ...defaultConfig, ...JSON.parse(raw) };
+            } catch (e) {
+                console.error('Erro ao carregar configuração do OBS:', e);
+            }
+        }
+
+        // Migrar de chaves legadas (compatibility com versões anteriores)
+        const legacy = {
+            address: localStorage.getItem('obs_address') || defaultConfig.address,
+            password: localStorage.getItem('obs_password') || defaultConfig.password,
+            sourceName: localStorage.getItem('obs_source_name') || defaultConfig.sourceName
+        };
+
+        return { ...defaultConfig, ...legacy };
     }
 
     async connect() {
@@ -62,6 +84,11 @@ class ObsService {
             this.config.sourceName = 'Hinario';
         }
         localStorage.setItem('obs_config', JSON.stringify(this.config));
+
+        // Manter chaves legadas sincronizadas para compatibilidade com remote-control
+        localStorage.setItem('obs_address', this.config.address);
+        localStorage.setItem('obs_password', this.config.password);
+        localStorage.setItem('obs_source_name', this.config.sourceName);
     }
 
     async updateText(text) {

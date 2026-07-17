@@ -1324,16 +1324,18 @@ uiUtils.updateCacheDisplay(cachedJsonCount, cachedMp3Count);
         saveObsSettings: (data) => {
             if (data.address !== undefined) {
                 $('#obs-address').val(data.address);
-                localStorage.setItem('obs_address', data.address);
+                obsService.config.address = data.address;
             }
             if (data.password !== undefined) {
                 $('#obs-password').val(data.password);
-                localStorage.setItem('obs_password', data.password);
+                obsService.config.password = data.password;
             }
             if (data.sourceName !== undefined) {
-                $('#obs-source-name').val(data.sourceName);
-                localStorage.setItem('obs_source_name', data.sourceName);
+                const sourceName = data.sourceName?.trim() || 'Hinario';
+                $('#obs-source-name').val(sourceName);
+                obsService.config.sourceName = sourceName;
             }
+            obsService.saveConfig();
             // Tentar conectar ao OBS com as novas configurações simulando o clique
             $('#btn-obs-connect').click();
         },

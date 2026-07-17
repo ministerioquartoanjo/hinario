@@ -10,6 +10,28 @@
             if (navigator.vibrate) navigator.vibrate(50);
         };
 
+        const defaultObsConfig = () => ({ address: 'localhost:4455', password: '', sourceName: 'Hinario' });
+
+        const getObsConfig = () => {
+            try {
+                const raw = localStorage.getItem('obs_config');
+                return raw ? { ...defaultObsConfig(), ...JSON.parse(raw) } : defaultObsConfig();
+            } catch (e) {
+                return defaultObsConfig();
+            }
+        };
+
+        const setObsConfig = (updates) => {
+            const config = { ...getObsConfig(), ...updates };
+            if (!config.sourceName?.trim()) config.sourceName = 'Hinario';
+            localStorage.setItem('obs_config', JSON.stringify(config));
+            // Sincronizar chaves legadas para compatibilidade
+            localStorage.setItem('obs_address', config.address);
+            localStorage.setItem('obs_password', config.password);
+            localStorage.setItem('obs_source_name', config.sourceName);
+            return config;
+        };
+
         const fullscreenBtn = document.getElementById('remote-fullscreen');
         const fullscreenIcon = fullscreenBtn.querySelector('i');
         const fullscreenLabel = fullscreenBtn.querySelector('span');
@@ -442,32 +464,35 @@
 
         document.getElementById('remote-obs-config').onclick = () => {
             // Carregar valores atuais do localStorage para sincronizar
-            document.getElementById('remote-obs-address').value = localStorage.getItem('obs_address') || 'localhost:4455';
-            document.getElementById('remote-obs-password').value = localStorage.getItem('obs_password') || '';
-            document.getElementById('remote-obs-source-name').value = localStorage.getItem('obs_source_name') || 'Hinario';
+            const config = getObsConfig();
+            document.getElementById('remote-obs-address').value = config.address;
+            document.getElementById('remote-obs-password').value = config.password;
+            document.getElementById('remote-obs-source-name').value = config.sourceName;
             document.getElementById('remote-modal-obs-settings').classList.remove('hidden');
         };
         
         // Inicializar os campos com os valores atuais ao carregar a página
-        document.getElementById('remote-obs-address').value = localStorage.getItem('obs_address') || 'localhost:4455';
-        document.getElementById('remote-obs-password').value = localStorage.getItem('obs_password') || '';
-        document.getElementById('remote-obs-source-name').value = localStorage.getItem('obs_source_name') || 'Hinario';
+        const initialObsConfig = getObsConfig();
+        document.getElementById('remote-obs-address').value = initialObsConfig.address;
+        document.getElementById('remote-obs-password').value = initialObsConfig.password;
+        document.getElementById('remote-obs-source-name').value = initialObsConfig.sourceName;
         
         // Salvar configurações OBS automaticamente quando os campos são alterados
         document.getElementById('remote-obs-address').addEventListener('input', (e) => {
             const value = e.target.value;
-            localStorage.setItem('obs_address', value);
+            setObsConfig({ address: value });
             send('saveObsSettings', { address: value });
         });
         document.getElementById('remote-obs-password').addEventListener('input', (e) => {
             const value = e.target.value;
-            localStorage.setItem('obs_password', value);
+            setObsConfig({ password: value });
             send('saveObsSettings', { password: value });
         });
         document.getElementById('remote-obs-source-name').addEventListener('input', (e) => {
             const value = e.target.value;
-            localStorage.setItem('obs_source_name', value);
-            send('saveObsSettings', { sourceName: value });
+            const sourceName = value?.trim() || 'Hinario';
+            setObsConfig({ sourceName });
+            send('saveObsSettings', { sourceName });
         });
 
         // Handlers para botões de conexão/desconexão/criação de fonte do OBS
