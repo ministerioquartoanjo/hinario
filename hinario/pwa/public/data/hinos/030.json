@@ -34,5 +34,11 @@
     "mid": -5,
     "treble": 12
   },
-  "introducao": 0
+  "introducao": 0,
+  "videos": [
+    {
+      "url": "https://www.youtube.com/watch?v=Ueda_PLQkL4",
+      "title": "Hinário Adventista 308 - BRILHA NO MEIO DO TEU VIVER"
+    }
+  ]
 }

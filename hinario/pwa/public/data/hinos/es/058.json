@@ -1,50 +1,63 @@
 {
-  "title": "58 - Quiero hacer lo que Tú quieras, Señor",
-  "author": "Mary Browwn, estrofa 1 Charles Edwin Prior, estrofas 2 y 3 Carrie Esther Rounsefell",
-  "speed": 1,
-  "verses": [
-    [
-      "1. No siempre será el lugar que quiero",
-      "Que el Maestro me enviará.",
-      "La mies es tan grande, lista para ser cosechada,",
-      "En la cual me ocuparé de trabajar.",
-      "Y si por caminos que nunca he seguido,",
-      "Tu llamada he escuchado;",
-      "Feliz ciertamente seré guiado por Ti,",
-      "Tu voluntad se cumplirá."
-    ],
-    [
-      "2. Hay tantas palabras de amor y de perdón",
-      "Que puedo llevar a los demás,",
-      "Porque en los caminos de los vicios hay",
-      "Perdidos que debo ir a buscar.",
-      "Señor, si con Tu presencia real",
-      "Eres para fortalecer,",
-      "Daré el mensaje de un siervo leal",
-      "Con celo, fervor y agrado."
-    ],
-    [
-      "3. Quiero encontrar un lugar oscuro",
-      "En Tu cosecha, Señor.",
-      "Mientras viva, trabajaré",
-      "Con fe y coraje y amor.",
-      "De ti sé que vendrá mi sustento,",
-      "Y no he de temer a nada",
-      "Tu voluntad, sí la mía será;",
-      "Un siervo fiel quiero ser"
-    ]
+  "id": "Himnario Adventista Quiero hacer lo que Tú quieras, Señor",
+  "title": "Himnario Adventista Quiero hacer lo que Tú quieras, Señor",
+  "_type": "playlist",
+  "entries": [
+    {
+      "_type": "url",
+      "ie_key": "Youtube",
+      "id": "yPgUGutqlJU",
+      "url": "https://www.youtube.com/watch?v=yPgUGutqlJU",
+      "title": "HIMNO 359: HAZ LO QUE QUIERAS",
+      "description": "Himnario Bautista Aut. Adelaide A. Pollard Trad. Ernesto Barocio Iglesia Bautista Shalom CDMX.",
+      "duration": 174,
+      "channel_id": "UCbLyT3babQTYbnqEeYHAUvA",
+      "channel": "Iglesia Bautista Shalom CDMX",
+      "channel_url": "https://www.youtube.com/channel/UCbLyT3babQTYbnqEeYHAUvA",
+      "uploader": "Iglesia Bautista Shalom CDMX",
+      "uploader_id": "@IglesiaBautistaShalomCDMX",
+      "uploader_url": "https://www.youtube.com/@IglesiaBautistaShalomCDMX",
+      "thumbnails": [
+        {
+          "url": "https://i.ytimg.com/vi/yPgUGutqlJU/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAJ1JHRn5NLTJPjYFMf0RzFg_Lv3Q",
+          "height": 202,
+          "width": 360
+        },
+        {
+          "url": "https://i.ytimg.com/vi/yPgUGutqlJU/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCYYxOAxN4JvAx1GzYOPMu-mm_L_g",
+          "height": 404,
+          "width": 720
+        }
+      ],
+      "timestamp": null,
+      "release_timestamp": null,
+      "availability": null,
+      "view_count": 46215,
+      "live_status": null,
+      "channel_is_verified": null,
+      "__x_forwarded_for_ip": null
+    }
   ],
-  "coro": [
-    "Quiero hacer lo que Tú quieres, Señor;",
-    "Por Ti sostenido seré.",
-    "Y quiero decir lo que Tú quieras, Señor;",
-    "Y así cumpliré con mi deber."
-  ],
-  "audioFilters": {
-    "gain": 1.2,
-    "bass": 0,
-    "mid": -5,
-    "treble": 12
+  "webpage_url": "ytsearch1:Himnario Adventista Quiero hacer lo que Tú quieras, Señor",
+  "original_url": "ytsearch1:Himnario Adventista Quiero hacer lo que Tú quieras, Señor",
+  "webpage_url_basename": "Himnario Adventista Quiero hacer lo que Tú quieras, Señor",
+  "webpage_url_domain": null,
+  "extractor": "youtube:search",
+  "extractor_key": "YoutubeSearch",
+  "release_year": null,
+  "playlist_count": 1,
+  "epoch": 1784755104,
+  "__files_to_move": {},
+  "_version": {
+    "version": "2026.07.04",
+    "current_git_head": null,
+    "release_git_head": "997fa140840a08df3938b40da470c78049fef1f6",
+    "repository": "yt-dlp/yt-dlp"
   },
-  "introducao": 0
+  "videos": [
+    {
+      "url": "https://www.youtube.com/watch?v=yPgUGutqlJU",
+      "title": "HIMNO 359: HAZ LO QUE QUIERAS"
+    }
+  ]
 }

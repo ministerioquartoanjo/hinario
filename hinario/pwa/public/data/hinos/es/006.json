@@ -1,54 +1,63 @@
 {
-  "title": "6 - ¡La Mano en el Arado!",
-  "author": "Frida Vingren",
-  "speed": 1,
-  "verses": [
-    [
-      "1.Quien ha puesto su mano en el arado,",
-      "Constante debe ser;",
-      "El sol declina y al poco tiempo,",
-      "Oscurecerá.",
-      "Adelante en Cristo pensando,",
-      "En oración velando;",
-      "Con alegría y amor trabajando,",
-      "Por tu Señor."
-    ],
-    [
-      "2.No te desanimes, porque tu cruz es",
-      "Mayor que la de tu hermano;",
-      "El más pesado llevó a tu Jesús,",
-      "Te consuela, entonces;",
-      "Tu cruz es llevada,",
-      "Como Jesús perdonando.",
-      "Caminando alegremente",
-      "Hacia el hermoso cielo."
-    ],
-    [
-      "3. Sé un buen soldado de Cristo Jesús,",
-      "Sufriendo aflicciones,",
-      "No sofocando el mensaje de la cruz,",
-      "En persecución;",
-      "Su amor va proclamando,",
-      "Noticias de paz, sí, conduciendo.",
-      "A los que esperan",
-      "Salvación."
-    ],
-    [
-      "4. Cuando, finalmente, sueltes la cruz,",
-      "Jesús te coronará;",
-      "Con gozo santo en gloria y luz",
-      "Él te consolará.",
-      "Olvidarás tus problemas.",
-      "Tribulaciones y dolores,",
-      "Cuando en el cielo disfrutes,",
-      "Paz perfecta."
-    ]
+  "id": "Himnario Adventista ¡La Mano en el Arado!",
+  "title": "Himnario Adventista ¡La Mano en el Arado!",
+  "_type": "playlist",
+  "entries": [
+    {
+      "_type": "url",
+      "ie_key": "Youtube",
+      "id": "RgNtEhAHW3E",
+      "url": "https://www.youtube.com/watch?v=RgNtEhAHW3E",
+      "title": "Tu Mano en el Arado",
+      "description": "Provided to YouTube by DistroKid Tu Mano en el Arado · Cynthiad Dulce Historia ℗ 799674 Records DK Released on: ...",
+      "duration": 148,
+      "channel_id": "UCXEq-OipbdKAeDPRO8bg0JQ",
+      "channel": "Cynthiad - Topic",
+      "channel_url": "https://www.youtube.com/channel/UCXEq-OipbdKAeDPRO8bg0JQ",
+      "uploader": "Cynthiad - Topic",
+      "uploader_id": null,
+      "uploader_url": null,
+      "thumbnails": [
+        {
+          "url": "https://i.ytimg.com/vi/RgNtEhAHW3E/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBPSeBrD3UGgQTFQXvDtdJ8MQ-kPw",
+          "height": 202,
+          "width": 360
+        },
+        {
+          "url": "https://i.ytimg.com/vi/RgNtEhAHW3E/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC9ENEklwimmFE8UWV-KygQH-9BIA",
+          "height": 404,
+          "width": 720
+        }
+      ],
+      "timestamp": null,
+      "release_timestamp": null,
+      "availability": null,
+      "view_count": 3807,
+      "live_status": null,
+      "channel_is_verified": null,
+      "__x_forwarded_for_ip": null
+    }
   ],
-  "audioFilters": {
-    "gain": 1.2,
-    "bass": 0,
-    "mid": -5,
-    "treble": 12
+  "webpage_url": "ytsearch1:Himnario Adventista ¡La Mano en el Arado!",
+  "original_url": "ytsearch1:Himnario Adventista ¡La Mano en el Arado!",
+  "webpage_url_basename": "Himnario Adventista ¡La Mano en el Arado!",
+  "webpage_url_domain": null,
+  "extractor": "youtube:search",
+  "extractor_key": "YoutubeSearch",
+  "release_year": null,
+  "playlist_count": 1,
+  "epoch": 1784755004,
+  "__files_to_move": {},
+  "_version": {
+    "version": "2026.07.04",
+    "current_git_head": null,
+    "release_git_head": "997fa140840a08df3938b40da470c78049fef1f6",
+    "repository": "yt-dlp/yt-dlp"
   },
-  "introducao": 0
+  "videos": [
+    {
+      "url": "https://www.youtube.com/watch?v=RgNtEhAHW3E",
+      "title": "Tu Mano en el Arado"
+    }
+  ]
 }

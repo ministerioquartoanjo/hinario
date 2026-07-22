@@ -46,5 +46,11 @@
     "mid": -5,
     "treble": 12
   },
-  "introducao": 0
+  "introducao": 0,
+  "videos": [
+    {
+      "url": "https://www.youtube.com/watch?v=jjB_2Nhl1Kg",
+      "title": "Hino 31: SUBLIME AMOR. Hinário Adventista do Sétimo Dia (Hinário IASD)"
+    }
+  ]
 }

@@ -33,5 +33,11 @@
     "mid": -5,
     "treble": 12
   },
-  "introducao": 0
+  "introducao": 0,
+  "videos": [
+    {
+      "url": "https://www.youtube.com/watch?v=6NcEKeKr1V8",
+      "title": "Hinário Adventistas-79 Glória ao Salvador"
+    }
+  ]
 }

@@ -34,5 +34,11 @@
     "mid": -5,
     "treble": 12
   },
-  "introducao": 0
+  "introducao": 0,
+  "videos": [
+    {
+      "url": "https://www.youtube.com/watch?v=o1u39u8Mm4I",
+      "title": "Hinário Adventista 594 - OUVE-NOS, SENHOR"
+    }
+  ]
 }

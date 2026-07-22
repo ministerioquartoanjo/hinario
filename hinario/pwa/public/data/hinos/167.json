@@ -34,5 +34,11 @@
     "mid": -5,
     "treble": 12
   },
-  "introducao": 0
+  "introducao": 0,
+  "videos": [
+    {
+      "url": "https://www.youtube.com/watch?v=FHqRzJ1Pj0Q",
+      "title": "Novo Hinário Adventista • Hino 128 • Se Tu Buscares a Jesus • (Lyrics)"
+    }
+  ]
 }

@@ -95,6 +95,7 @@ export const es = {
     language: 'Idioma',
     interfaceLanguage: 'Idioma de la Interfaz',
     hymnLanguage: 'Idioma de los Himnos',
+    introPreview: 'Anticipar Letra (s)',
     selectLanguage: 'Seleccionar idioma',
     remoteControlTitle: 'Control Remoto - Himnario MQAAF',
     remoteControl: 'Control Remoto',

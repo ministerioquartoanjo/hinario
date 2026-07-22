@@ -1,44 +1,58 @@
 {
-  "title": "78 - Hay trabajo listo",
-  "author": "Henry Maxwell Wright",
-  "speed": 1,
-  "verses": [
-    [
-      "1. Hay trabajo listo para ti, cristiano;",
-      "Eso exige toda tu devoción;",
-      "Ven, gozosamente, a obedecer a Cristo,",
-      "¡Porque sólo tú, oh creyente, puedes hacerlo!"
-    ],
-    [
-      "2. Para cada creyente, el Maestro preparó",
-      "Una determinada obra, cuando lo rescató,",
-      "La obra a la que Jesús te llama aquí.",
-      "¿Cómo se hará, si no por ti?"
-    ],
-    [
-      "3. Puede ser humilde, pero si es para Dios,",
-      "Se contempla desde lo alto de los cielos.",
-      "Y el esfuerzo realizado no será en vano",
-      "Si tiene la aprobación de Cristo, ¡plena aprobación!"
-    ],
-    [
-      "4. ¡Cuántos están perdidos, sin salvación!",
-      "¡Cuántos necesitan consuelo!",
-      "Cómo los ama Cristo, hazles entender,",
-      "¡Porque sólo tú, oh creyente, puedes hacerlo!"
-    ]
+  "id": "Himnario Adventista Hay trabajo listo",
+  "title": "Himnario Adventista Hay trabajo listo",
+  "_type": "playlist",
+  "entries": [
+    {
+      "_type": "url",
+      "ie_key": "Youtube",
+      "id": "DGNMz1CYmeo",
+      "url": "https://www.youtube.com/watch?v=DGNMz1CYmeo",
+      "title": "HA62 | Himno 359 | ¡Trabajad! ¡Trabajad!",
+      "description": "Somos siervos de Dios ...",
+      "duration": 131,
+      "channel_id": "UC2TQFq0vEPs1xn-T70FmoTQ",
+      "channel": "Himnario adventista 62",
+      "channel_url": "https://www.youtube.com/channel/UC2TQFq0vEPs1xn-T70FmoTQ",
+      "uploader": "Himnario adventista 62",
+      "uploader_id": "@himnarioHA62",
+      "uploader_url": "https://www.youtube.com/@himnarioHA62",
+      "thumbnails": [
+        {
+          "url": "https://i.ytimg.com/vi/DGNMz1CYmeo/hqdefault.jpg?sqp=-oaymwEfCOADEI4CSFXyq4qpAxEIARUAAIhCGAFwAcABBrgCGKLzl_8DCgiDuJnIBRjgqAE=&rs=AOn4CLChLr0icp839OUhW0MtlLI2DSzmww&usqp=CBg",
+          "height": 270,
+          "width": 480
+        }
+      ],
+      "timestamp": null,
+      "release_timestamp": null,
+      "availability": null,
+      "view_count": 195626,
+      "live_status": null,
+      "channel_is_verified": null,
+      "__x_forwarded_for_ip": null
+    }
   ],
-  "coro": [
-    "Por Jesús trabajando,",
-    "¡Pronto, fielmente, trabaja!",
-    "En Servirle, ¡qué placer!",
-    "Y sólo tú, oh creyente, puedes hacerlo."
-  ],
-  "audioFilters": {
-    "gain": 1.2,
-    "bass": 0,
-    "mid": -5,
-    "treble": 12
+  "webpage_url": "ytsearch1:Himnario Adventista Hay trabajo listo",
+  "original_url": "ytsearch1:Himnario Adventista Hay trabajo listo",
+  "webpage_url_basename": "Himnario Adventista Hay trabajo listo",
+  "webpage_url_domain": null,
+  "extractor": "youtube:search",
+  "extractor_key": "YoutubeSearch",
+  "release_year": null,
+  "playlist_count": 1,
+  "epoch": 1784755141,
+  "__files_to_move": {},
+  "_version": {
+    "version": "2026.07.04",
+    "current_git_head": null,
+    "release_git_head": "997fa140840a08df3938b40da470c78049fef1f6",
+    "repository": "yt-dlp/yt-dlp"
   },
-  "introducao": 0
+  "videos": [
+    {
+      "url": "https://www.youtube.com/watch?v=DGNMz1CYmeo",
+      "title": "HA62 | Himno 359 | ¡Trabajad! ¡Trabajad!"
+    }
+  ]
 }

@@ -1,44 +1,63 @@
 {
-  "title": "148 - ¿Qué tan genial eres?",
-  "author": "Carl Boberg",
-  "speed": 1,
-  "verses": [
-    [
-      "1. Señor Dios mío, cuando yo, maravillado,",
-      "pienso en las obras de tus manos,",
-      "Mil estrellas titilando en el espacio,",
-      "De tu poder, en manifestación,"
-    ],
-    [
-      "2. Si al caminar por campos y bosques,",
-      "escucho el canto de los hermosos pájaros;",
-      "si miro desde lo alto de la montaña,",
-      "y la fuente más allá escucho un murmullo,"
-    ],
-    [
-      "3. Si pienso, entonces, que sin perdonar a Tu Hijo,",
-      "Lo enviaste a morir por mí,",
-      "Llevando todos mis pecados a la cruz,",
-      "Para que yo pudiera vivir así para siempre,"
-    ],
-    [
-      "4. Cuando Jesús venga en resplandeciente y gloria,",
-      "Para llevarme al hogar de Sus hijos,",
-      "Me postraré en infinita gratitud,",
-      "Y exclamaré: ¡Cuán grande eres, Dios mío!"
-    ]
+  "id": "Himnario Adventista ¿Qué tan genial eres?",
+  "title": "Himnario Adventista ¿Qué tan genial eres?",
+  "_type": "playlist",
+  "entries": [
+    {
+      "_type": "url",
+      "ie_key": "Youtube",
+      "id": "5MBokIcKOM4",
+      "url": "https://www.youtube.com/watch?v=5MBokIcKOM4",
+      "title": "Himno Adventista 143 DIGNO ERES TÚ - Nuevo Himnario Adventista",
+      "description": "SUSCRÍBETE     A NUESTRO CANAL     #DignoEresTu #Himno143 #NuevoHimnarioAdventista #HimnoAdventista Jesús, ...",
+      "duration": 152,
+      "channel_id": "UCNDiH9MuZyzzFcBTUno4eDA",
+      "channel": "Nuevo Tiempo Chile",
+      "channel_url": "https://www.youtube.com/channel/UCNDiH9MuZyzzFcBTUno4eDA",
+      "uploader": "Nuevo Tiempo Chile",
+      "uploader_id": "@NuevoTiempoChile",
+      "uploader_url": "https://www.youtube.com/@NuevoTiempoChile",
+      "thumbnails": [
+        {
+          "url": "https://i.ytimg.com/vi/5MBokIcKOM4/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDZ19eqtPWR5coMCU3wS8eNvIm0cQ",
+          "height": 202,
+          "width": 360
+        },
+        {
+          "url": "https://i.ytimg.com/vi/5MBokIcKOM4/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDfLSW8Cn7Xm0tEisEMUAdk1nzXmg",
+          "height": 404,
+          "width": 720
+        }
+      ],
+      "timestamp": null,
+      "release_timestamp": null,
+      "availability": null,
+      "view_count": 2852243,
+      "live_status": null,
+      "channel_is_verified": null,
+      "__x_forwarded_for_ip": null
+    }
   ],
-  "coro": [
-    "Así te canta mi alma, Señor:",
-    "¡Cuán grande eres! ¡Cuán grande eres!",
-    "Así te canta mi alma, Señor:",
-    "¡Cuán grande eres! ¡Qué grande eres!"
-  ],
-  "audioFilters": {
-    "gain": 1.2,
-    "bass": 0,
-    "mid": -5,
-    "treble": 12
+  "webpage_url": "ytsearch1:Himnario Adventista ¿Qué tan genial eres?",
+  "original_url": "ytsearch1:Himnario Adventista ¿Qué tan genial eres?",
+  "webpage_url_basename": "Himnario Adventista ¿Qué tan genial eres",
+  "webpage_url_domain": null,
+  "extractor": "youtube:search",
+  "extractor_key": "YoutubeSearch",
+  "release_year": null,
+  "playlist_count": 1,
+  "epoch": 1784755279,
+  "__files_to_move": {},
+  "_version": {
+    "version": "2026.07.04",
+    "current_git_head": null,
+    "release_git_head": "997fa140840a08df3938b40da470c78049fef1f6",
+    "repository": "yt-dlp/yt-dlp"
   },
-  "introducao": 0
+  "videos": [
+    {
+      "url": "https://www.youtube.com/watch?v=5MBokIcKOM4",
+      "title": "Himno Adventista 143 DIGNO ERES TÚ - Nuevo Himnario Adventista"
+    }
+  ]
 }

@@ -1,38 +1,58 @@
 {
-  "title": "186 - Tú eres fiel, Señor",
-  "author": "Thomas Obediah Chislm William Marion Runyan",
-  "speed": 1,
-  "verses": [
-    [
-      "1. ¡Tú eres fiel, Señor, oh Dios eterno!",
-      "¡Tus hijos saben que no fallarás!",
-      "Nunca has cambiado, nunca has fallado;",
-      "Como eras, sí, siempre serás."
-    ],
-    [
-      "2. Nubes en el cielo azul, sol resplandeciente",
-      "Montañas y valles, prados en flor:",
-      "Tú creaste todo lo que hay en la tierra y en el aire, Y todos te alaban, Señor fiel."
-    ],
-    [
-      "3. Perdón pleno Tú das: ¡qué, seguridad!",
-      "Guíanos siempre por el camino del bien;",
-      "Y, en el futuro, ¡oh! ¡qué dulce esperanza!",
-      "Nos recibirás en el hogar del más allá."
-    ]
+  "id": "Himnario Adventista Tú eres fiel, Señor",
+  "title": "Himnario Adventista Tú eres fiel, Señor",
+  "_type": "playlist",
+  "entries": [
+    {
+      "_type": "url",
+      "ie_key": "Youtube",
+      "id": "gadupryofo8",
+      "url": "https://www.youtube.com/watch?v=gadupryofo8",
+      "title": "Himno 55 Grande Señor, Es tu Misericordia Nuevo himnario Adventista",
+      "description": "Himno 55 Grande Señor, Es tu Misericordia Nuevo himnario Adventista.",
+      "duration": 219,
+      "channel_id": "UCUXPcSw5E2t1PGBfLBG44HA",
+      "channel": "Compartiendo Esperanza",
+      "channel_url": "https://www.youtube.com/channel/UCUXPcSw5E2t1PGBfLBG44HA",
+      "uploader": "Compartiendo Esperanza",
+      "uploader_id": "@CompartiendoEsperanza",
+      "uploader_url": "https://www.youtube.com/@CompartiendoEsperanza",
+      "thumbnails": [
+        {
+          "url": "https://i.ytimg.com/vi/gadupryofo8/hqdefault.jpg?sqp=-oaymwE2COADEI4CSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gSAAuADigIMCAAQARhWIGAoZTAP&rs=AOn4CLAsY5U9oKMq8ZvW3lbNVS296vFlwg",
+          "height": 270,
+          "width": 480
+        }
+      ],
+      "timestamp": null,
+      "release_timestamp": null,
+      "availability": null,
+      "view_count": 1056129,
+      "live_status": null,
+      "channel_is_verified": null,
+      "__x_forwarded_for_ip": null
+    }
   ],
-  "coro": [
-    "¡Eres fiel, Señor!",
-    "¡Eres fiel, Señor!",
-    "¡Día tras día Tus bendiciones nos dan!",
-    "Tu misericordia nos sostiene y nos guarda;",
-    "Sí, por siempre, oh Dios, serás fiel."
-  ],
-  "audioFilters": {
-    "gain": 1.2,
-    "bass": 0,
-    "mid": -5,
-    "treble": 12
+  "webpage_url": "ytsearch1:Himnario Adventista Tú eres fiel, Señor",
+  "original_url": "ytsearch1:Himnario Adventista Tú eres fiel, Señor",
+  "webpage_url_basename": "Himnario Adventista Tú eres fiel, Señor",
+  "webpage_url_domain": null,
+  "extractor": "youtube:search",
+  "extractor_key": "YoutubeSearch",
+  "release_year": null,
+  "playlist_count": 1,
+  "epoch": 1784755353,
+  "__files_to_move": {},
+  "_version": {
+    "version": "2026.07.04",
+    "current_git_head": null,
+    "release_git_head": "997fa140840a08df3938b40da470c78049fef1f6",
+    "repository": "yt-dlp/yt-dlp"
   },
-  "introducao": 0
+  "videos": [
+    {
+      "url": "https://www.youtube.com/watch?v=gadupryofo8",
+      "title": "Himno 55 Grande Señor, Es tu Misericordia Nuevo himnario Adventista"
+    }
+  ]
 }

@@ -1,32 +1,63 @@
 {
-  "title": "160 - Sábado",
-  "author": "Eduard Eyth U.B. Oye",
-  "speed": 1,
-  "verses": [
-    [
-      "1. ¡Cuán felices están nuestros corazones!",
-      "Libres de preocupaciones, luchas y aflicciones.",
-      "Te alabamos, Creador nuestro,",
-      "En este día santo, el día del Señor."
-    ],
-    [
-      "2. Nos atrae tu amor,",
-      "En estas horas santas, llenas de dulzura.",
-      "Este amor habla bien a nuestro corazón,",
-      "De la gracia eterna, nuestra redención."
-    ],
-    [
-      "3. Sé amable con nuestros corazones,",
-      "Tu día santo, Tu creación.",
-      "Echa detrás de nosotros nuestros viles pecados;",
-      "¡Danos hoy tu exaltada paz!"
-    ]
+  "id": "Himnario Adventista Sábado",
+  "title": "Himnario Adventista Sábado",
+  "_type": "playlist",
+  "entries": [
+    {
+      "_type": "url",
+      "ie_key": "Youtube",
+      "id": "YjOih0XmvOE",
+      "url": "https://www.youtube.com/watch?v=YjOih0XmvOE",
+      "title": "Himno Adventista 547 - Sábado es",
+      "description": "Himno Adventista 547 - Sábado es Ahora podrás encontrar tus himnos favoritos   en un sólo lugar y en alta calidad ☑️, para ...",
+      "duration": 63,
+      "channel_id": "UCTMOmWVVXbTX0sQ7WAIChrw",
+      "channel": "Iglesia Adventista del Séptimo Día - Perú (UPN)",
+      "channel_url": "https://www.youtube.com/channel/UCTMOmWVVXbTX0sQ7WAIChrw",
+      "uploader": "Iglesia Adventista del Séptimo Día - Perú (UPN)",
+      "uploader_id": "@AdventistasUPN",
+      "uploader_url": "https://www.youtube.com/@AdventistasUPN",
+      "thumbnails": [
+        {
+          "url": "https://i.ytimg.com/vi/YjOih0XmvOE/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCeYfXYH30jpAWvTD5muWMj1yDsAw",
+          "height": 202,
+          "width": 360
+        },
+        {
+          "url": "https://i.ytimg.com/vi/YjOih0XmvOE/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBnxjKkShB2wIbdIHevh2wLiqySYw",
+          "height": 404,
+          "width": 720
+        }
+      ],
+      "timestamp": null,
+      "release_timestamp": null,
+      "availability": null,
+      "view_count": 253360,
+      "live_status": null,
+      "channel_is_verified": null,
+      "__x_forwarded_for_ip": null
+    }
   ],
-  "audioFilters": {
-    "gain": 1.2,
-    "bass": 0,
-    "mid": -5,
-    "treble": 12
+  "webpage_url": "ytsearch1:Himnario Adventista Sábado",
+  "original_url": "ytsearch1:Himnario Adventista Sábado",
+  "webpage_url_basename": "Himnario Adventista Sábado",
+  "webpage_url_domain": null,
+  "extractor": "youtube:search",
+  "extractor_key": "YoutubeSearch",
+  "release_year": null,
+  "playlist_count": 1,
+  "epoch": 1784755302,
+  "__files_to_move": {},
+  "_version": {
+    "version": "2026.07.04",
+    "current_git_head": null,
+    "release_git_head": "997fa140840a08df3938b40da470c78049fef1f6",
+    "repository": "yt-dlp/yt-dlp"
   },
-  "introducao": 0
+  "videos": [
+    {
+      "url": "https://www.youtube.com/watch?v=YjOih0XmvOE",
+      "title": "Himno Adventista 547 - Sábado es"
+    }
+  ]
 }

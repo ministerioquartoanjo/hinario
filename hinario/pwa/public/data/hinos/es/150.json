@@ -1,38 +1,58 @@
 {
-  "title": "150 - ¿Qué dice la Biblia?",
-  "author": "Franklin Edson Belden",
-  "speed": 1,
-  "verses": [
-    [
-      "1. “¿Qué dice la Biblia, el libro sagrado”?",
-      "¡Para los fieles, esa es la pregunta!",
-      "Las enseñanzas de los hombres son defectuosas;",
-      "¡Qué dice entonces el libro acerca de Dios!"
-    ],
-    [
-      "2. Pocos consideran estas enseñanzas;",
-      "Quieren escapar de guardar la ley;",
-      "Otros quieren, en cuanto al descanso,",
-      "Tener el poder de revocarla."
-    ],
-    [
-      "3. Cuando venga el maestro, él os saludará,",
-      "¿Tú que pisoteas su ley?",
-      "¿Te encontrará justificado?",
-      "¡Oh, medita y responde!"
-    ]
+  "id": "Himnario Adventista ¿Qué dice la Biblia?",
+  "title": "Himnario Adventista ¿Qué dice la Biblia?",
+  "_type": "playlist",
+  "entries": [
+    {
+      "_type": "url",
+      "ie_key": "Youtube",
+      "id": "DNfLSnkkNVs",
+      "url": "https://www.youtube.com/watch?v=DNfLSnkkNVs",
+      "title": "Himno 209 La Biblia nos habla de Cristo Nuevo Himnario Adventista",
+      "description": "Himno 209 La Biblia nos habla de Cristo Nuevo Himnario Adventista.",
+      "duration": 312,
+      "channel_id": "UCUXPcSw5E2t1PGBfLBG44HA",
+      "channel": "Compartiendo Esperanza",
+      "channel_url": "https://www.youtube.com/channel/UCUXPcSw5E2t1PGBfLBG44HA",
+      "uploader": "Compartiendo Esperanza",
+      "uploader_id": "@CompartiendoEsperanza",
+      "uploader_url": "https://www.youtube.com/@CompartiendoEsperanza",
+      "thumbnails": [
+        {
+          "url": "https://i.ytimg.com/vi/DNfLSnkkNVs/hqdefault.jpg?sqp=-oaymwE2COADEI4CSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gSAAuADigIMCAAQARhyIFgoPTAP&rs=AOn4CLDWzGgJykdW4PorJL1vWqZ0aR46EA",
+          "height": 270,
+          "width": 480
+        }
+      ],
+      "timestamp": null,
+      "release_timestamp": null,
+      "availability": null,
+      "view_count": 1415829,
+      "live_status": null,
+      "channel_is_verified": null,
+      "__x_forwarded_for_ip": null
+    }
   ],
-  "coro": [
-    "“¿Qué dice la Biblia”? Pocos lo dirán.",
-    "“¿Qué dice la Biblia”? Es necesario saber.",
-    "Sus mandamientos guardemos todos,",
-    "Pronto veremos a Jesús."
-  ],
-  "audioFilters": {
-    "gain": 1.2,
-    "bass": 0,
-    "mid": -5,
-    "treble": 12
+  "webpage_url": "ytsearch1:Himnario Adventista ¿Qué dice la Biblia?",
+  "original_url": "ytsearch1:Himnario Adventista ¿Qué dice la Biblia?",
+  "webpage_url_basename": "Himnario Adventista ¿Qué dice la Biblia",
+  "webpage_url_domain": null,
+  "extractor": "youtube:search",
+  "extractor_key": "YoutubeSearch",
+  "release_year": null,
+  "playlist_count": 1,
+  "epoch": 1784755283,
+  "__files_to_move": {},
+  "_version": {
+    "version": "2026.07.04",
+    "current_git_head": null,
+    "release_git_head": "997fa140840a08df3938b40da470c78049fef1f6",
+    "repository": "yt-dlp/yt-dlp"
   },
-  "introducao": 0
+  "videos": [
+    {
+      "url": "https://www.youtube.com/watch?v=DNfLSnkkNVs",
+      "title": "Himno 209 La Biblia nos habla de Cristo Nuevo Himnario Adventista"
+    }
+  ]
 }

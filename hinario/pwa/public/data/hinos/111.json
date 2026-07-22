@@ -40,5 +40,11 @@
     "mid": -5,
     "treble": 12
   },
-  "introducao": 0
+  "introducao": 0,
+  "videos": [
+    {
+      "url": "https://www.youtube.com/watch?v=WLANtS8injM",
+      "title": "Novo Hinário Adventista • Hino 132 • Pra Quem Nada Tem • (Lyrics)"
+    }
+  ]
 }

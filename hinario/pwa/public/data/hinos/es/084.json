@@ -1,45 +1,63 @@
 {
-  "title": "84 - Historia de Cristo",
-  "author": "Henry Maxwell",
-  "speed": 1,
-  "verses": [
-    [
-      "1. Cuéntame la historia de Cristo, grábala en mi corazón.,",
-      "¡Una hermosa y sin precedentes historia de gracia, paz y perdón!",
-      "Cuenta cómo se encarnó, vino al mundo a vivir.",
-      "¡Y a los pecadores indignos se les revelará el amor de Dios! (2x)"
-    ],
-    [
-      "2. Cuenta cómo Él, siendo bondadoso, nunca rechazó a nadie,",
-      "¡Como con las manos extendidas todos te invitaron!",
-      "¿Cómo puede el buen Maestro, sea quien sea, negarse,",
-      "Si estás convencido y arrepentido, acepta su invitación. (2x)"
-    ],
-    [
-      "3. Dime cuando en la colina sobre la ciudad lloraste",
-      "¡Porque los orgullosos y rebeldes rechazaron su amor!",
-      "Cuenten cómo todavía llora por los que siguen el mal;",
-      "Y los endurecidos resisten a su divino amor. (2x)"
-    ],
-    [
-      "4. También cuenta cómo Cristo, incluso en la cruz, se acordó",
-      "¡De sus crueles enemigos y al Padre por ellos oró!",
-      "En cuanto al ladrón moribundo, tan fácilmente escuchado,",
-      "¡Y ese día contigo lo llevaste a descansar! (2x)"
-    ],
-    [
-      "5. Cuéntame de las duras afrentas que sufriste mansamente:",
-      "Como en la cruz levantada, ¡murió por los impíos!",
-      "¡Dame la vida con la certeza de que realmente fue para mí!",
-      "¡Que su inefable amor no tiene cambio ni fin!",
-      "¡Que su inefable amor no tiene cambio ni fin!"
-    ]
+  "id": "Himnario Adventista Historia de Cristo",
+  "title": "Himnario Adventista Historia de Cristo",
+  "_type": "playlist",
+  "entries": [
+    {
+      "_type": "url",
+      "ie_key": "Youtube",
+      "id": "pcShGyOHlig",
+      "url": "https://www.youtube.com/watch?v=pcShGyOHlig",
+      "title": "Novo Hinário Adventista • Hino 98 • Conta-me a História de Cristo • (Lyrics)",
+      "description": "Veja Também | Ouça em outras plataformas: https://onerpm.link/5413094777 Adquira o Novo Hinário Adventista: ...",
+      "duration": 191,
+      "channel_id": "UCQhkLOO40bmTMeLcbspKW8A",
+      "channel": "Casa Publicadora Brasileira",
+      "channel_url": "https://www.youtube.com/channel/UCQhkLOO40bmTMeLcbspKW8A",
+      "uploader": "Casa Publicadora Brasileira",
+      "uploader_id": "@casapublicadora",
+      "uploader_url": "https://www.youtube.com/@casapublicadora",
+      "thumbnails": [
+        {
+          "url": "https://i.ytimg.com/vi/pcShGyOHlig/hq720.jpg?sqp=-oaymwEgCOgCEMoBSFXyq4qpAxIIARUAAIhCGAFwAcABBrgC9xg=&rs=AOn4CLAmIGvEDRIyY58HBykDGOh96m5HdA",
+          "height": 202,
+          "width": 360
+        },
+        {
+          "url": "https://i.ytimg.com/vi/pcShGyOHlig/hq720.jpg?sqp=-oaymwEgCNAFEJQDSFXyq4qpAxIIARUAAIhCGAFwAcABBrgC9xg=&rs=AOn4CLAI4Yy-bpKDgQomKYOav_dKgUdzmg",
+          "height": 404,
+          "width": 720
+        }
+      ],
+      "timestamp": null,
+      "release_timestamp": null,
+      "availability": null,
+      "view_count": 42309,
+      "live_status": null,
+      "channel_is_verified": true,
+      "__x_forwarded_for_ip": null
+    }
   ],
-  "audioFilters": {
-    "gain": 1.2,
-    "bass": 0,
-    "mid": -5,
-    "treble": 12
+  "webpage_url": "ytsearch1:Himnario Adventista Historia de Cristo",
+  "original_url": "ytsearch1:Himnario Adventista Historia de Cristo",
+  "webpage_url_basename": "Himnario Adventista Historia de Cristo",
+  "webpage_url_domain": null,
+  "extractor": "youtube:search",
+  "extractor_key": "YoutubeSearch",
+  "release_year": null,
+  "playlist_count": 1,
+  "epoch": 1784755152,
+  "__files_to_move": {},
+  "_version": {
+    "version": "2026.07.04",
+    "current_git_head": null,
+    "release_git_head": "997fa140840a08df3938b40da470c78049fef1f6",
+    "repository": "yt-dlp/yt-dlp"
   },
-  "introducao": 0
+  "videos": [
+    {
+      "url": "https://www.youtube.com/watch?v=pcShGyOHlig",
+      "title": "Novo Hinário Adventista • Hino 98 • Conta-me a História de Cristo • (Lyrics)"
+    }
+  ]
 }

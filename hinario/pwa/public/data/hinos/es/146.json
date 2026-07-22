@@ -1,44 +1,58 @@
 {
-  "title": "146 - ¿Cuál es el adorno de esta vida?",
-  "author": "Sarah Poulton Kalley Adaptación de melodía tradicional inglesa. Hubert Platt Principal",
-  "speed": 1,
-  "verses": [
-    [
-      "1. ¿Cuál es el adorno de esta vida? Es amor,",
-      "La alegría la da el amor, el amor",
-      "Es bondadoso, es paciente, no se convierte en maldición",
-      "No se convierte en maldición, este amor tierno."
-    ],
-    [
-      "2. Con sospecha no se puede lograr dulce amor, dulce amor",
-      "Donde hay desconfianza, ¡ay del amor, ay del amor!",
-      "Porque mostremos tolerancia; Muchas veces la soberbia",
-      "Muchas veces la soberbia marchita y mata el amor."
-    ],
-    [
-      "3. Incluso cuando sea difícil, alimenta el amor, alimenta el amor",
-      "A los enojados y muy furiosos, muestra amor, muestra amor",
-      "No te dejes insultar, sino responde con bondad",
-      "Pero responde con bondad, vence a través del amor."
-    ],
-    [
-      "4. No te enfades, sino tolera, con amor, con amor",
-      "Todo sufre, todo espera amor, amor",
-      "Desacuerdos y rencores, no aptos para pecadores",
-      "No aptos para pecadores, salvados por el amor."
-    ],
-    [
-      "5. Pues hermano, muestra amor a tu prójimo, muestra amor",
-      "El valor no es mezquino de este amor, de este amor",
-      "El Dios supremo nos ama, Cristo nos llama a los cielos",
-      "Cristo nos llama a los cielos, donde reina el amor."
-    ]
+  "id": "Himnario Adventista ¿Cuál es el adorno de esta vida?",
+  "title": "Himnario Adventista ¿Cuál es el adorno de esta vida?",
+  "_type": "playlist",
+  "entries": [
+    {
+      "_type": "url",
+      "ie_key": "Youtube",
+      "id": "kkUloNPe7Ac",
+      "url": "https://www.youtube.com/watch?v=kkUloNPe7Ac",
+      "title": "Himnario Adventista 1 al 225 subtitulado 2",
+      "description": "El Sábado, observancia rica en simbolismo, cofre que en cierra los recursos infinito de la omnipotencia, es la mayor bendición ...",
+      "duration": 34626,
+      "channel_id": "UCxMyI1X0CcFiRDQdXZQDkDA",
+      "channel": "elkeeeek",
+      "channel_url": "https://www.youtube.com/channel/UCxMyI1X0CcFiRDQdXZQDkDA",
+      "uploader": "elkeeeek",
+      "uploader_id": "@elkeeeek",
+      "uploader_url": "https://www.youtube.com/@elkeeeek",
+      "thumbnails": [
+        {
+          "url": "https://i.ytimg.com/vi/kkUloNPe7Ac/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDJdLaGyoMQ95FSZQmeF9PJTzdflg",
+          "height": 270,
+          "width": 480
+        }
+      ],
+      "timestamp": null,
+      "release_timestamp": null,
+      "availability": null,
+      "view_count": 4643076,
+      "live_status": null,
+      "channel_is_verified": null,
+      "__x_forwarded_for_ip": null
+    }
   ],
-  "audioFilters": {
-    "gain": 1.2,
-    "bass": 0,
-    "mid": -5,
-    "treble": 12
+  "webpage_url": "ytsearch1:Himnario Adventista ¿Cuál es el adorno de esta vida?",
+  "original_url": "ytsearch1:Himnario Adventista ¿Cuál es el adorno de esta vida?",
+  "webpage_url_basename": "Himnario Adventista ¿Cuál es el adorno de esta vida",
+  "webpage_url_domain": null,
+  "extractor": "youtube:search",
+  "extractor_key": "YoutubeSearch",
+  "release_year": null,
+  "playlist_count": 1,
+  "epoch": 1784755275,
+  "__files_to_move": {},
+  "_version": {
+    "version": "2026.07.04",
+    "current_git_head": null,
+    "release_git_head": "997fa140840a08df3938b40da470c78049fef1f6",
+    "repository": "yt-dlp/yt-dlp"
   },
-  "introducao": 0
+  "videos": [
+    {
+      "url": "https://www.youtube.com/watch?v=kkUloNPe7Ac",
+      "title": "Himnario Adventista 1 al 225 subtitulado 2"
+    }
+  ]
 }

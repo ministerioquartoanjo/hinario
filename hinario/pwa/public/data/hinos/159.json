@@ -32,5 +32,11 @@
     "mid": -5,
     "treble": 12
   },
-  "introducao": 0
+  "introducao": 0,
+  "videos": [
+    {
+      "url": "https://www.youtube.com/watch?v=GAEJzMMk2WQ",
+      "title": "Novo Hinário Adventista • Hino 470 • Rocha Eterna • (Lyrics)"
+    }
+  ]
 }

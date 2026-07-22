@@ -1,56 +1,63 @@
 {
-  "title": "42 - Cristo lo es todo para mí",
-  "author": "Will Lamartine Thompson",
-  "speed": 1,
-  "verses": [
-    [
-      "1. Cristo lo es todo para mí:",
-      "Es vida, paz y luz;",
-      "Tu brazo fuerte me sostiene;",
-      "Sólo Él me guía.",
-      "Cuando tu corazón está triste,",
-      "Él me da consuelo;",
-      "Consuelo Al corazón Dar a Jesús"
-    ],
-    [
-      "2. Cristo lo es todo para mí,",
-      "Amigo incomparable.",
-      "A Él voy en apuros,",
-      "Y líbrame del mal.",
-      "Mi Señor me da todo,",
-      "demostrando tu amor,",
-      "El gran amor,",
-      "De mi Señor,",
-      "De Jesús."
-    ],
-    [
-      "3. Cristo lo es todo para mí,",
-      "Siempre lo amaré.",
-      "no podré abandonar",
-      "Mi Señor y Rey.",
-      "Leal servidor aquí estaré,",
-      "Por la vida serviré",
-      "Yo serviré.",
-      "A mi buen Rey,",
-      "A Jesús."
-    ],
-    [
-      "4. Cristo lo es todo para mí,",
-      "siempre confiaré",
-      "En el gran amor del Salvador",
-      "Hasta que llegue el final.",
-      "Entonces en el cielo cantaré;",
-      "Santa alabanza cantaré;",
-      "Santa alabanza",
-      "A mi Señor,",
-      "A Jesús."
-    ]
+  "id": "Himnario Adventista Cristo lo es todo para mí",
+  "title": "Himnario Adventista Cristo lo es todo para mí",
+  "_type": "playlist",
+  "entries": [
+    {
+      "_type": "url",
+      "ie_key": "Youtube",
+      "id": "S9ZnvZExlwQ",
+      "url": "https://www.youtube.com/watch?v=S9ZnvZExlwQ",
+      "title": "Himno #151 - Cristo es todo para mí",
+      "description": "Himno #151 - Cristo es todo para mí Grupo Vocal - Engrandecido Sea Dios Letra del Himno - Cristo es todo para mí Cristo es ...",
+      "duration": 118,
+      "channel_id": "UCY1rIRxezgph-MT71Wjsf3g",
+      "channel": "Peregrinos y Extranjeros",
+      "channel_url": "https://www.youtube.com/channel/UCY1rIRxezgph-MT71Wjsf3g",
+      "uploader": "Peregrinos y Extranjeros",
+      "uploader_id": "@peregrinosyextranjeros",
+      "uploader_url": "https://www.youtube.com/@peregrinosyextranjeros",
+      "thumbnails": [
+        {
+          "url": "https://i.ytimg.com/vi/S9ZnvZExlwQ/hq720.jpg?sqp=-oaymwEfCOgCEMoBSFXyq4qpAxEIARUAAIhCGAFwAcABBrgCGKLzl_8DCgiPrY6JBhjgqAE=&rs=AOn4CLBbQ76BVbpFBO4OaUxCux1tKURXnQ&usqp=CBg",
+          "height": 202,
+          "width": 360
+        },
+        {
+          "url": "https://i.ytimg.com/vi/S9ZnvZExlwQ/hq720.jpg?sqp=-oaymwEfCNAFEJQDSFXyq4qpAxEIARUAAIhCGAFwAcABBrgCGKLzl_8DCgiPrY6JBhjgqAE=&rs=AOn4CLDxWZiEsksN692kP1h_5bFzoSxiyQ&usqp=CBg",
+          "height": 404,
+          "width": 720
+        }
+      ],
+      "timestamp": null,
+      "release_timestamp": null,
+      "availability": null,
+      "view_count": 6573,
+      "live_status": null,
+      "channel_is_verified": null,
+      "__x_forwarded_for_ip": null
+    }
   ],
-  "audioFilters": {
-    "gain": 1.2,
-    "bass": 0,
-    "mid": -5,
-    "treble": 12
+  "webpage_url": "ytsearch1:Himnario Adventista Cristo lo es todo para mí",
+  "original_url": "ytsearch1:Himnario Adventista Cristo lo es todo para mí",
+  "webpage_url_basename": "Himnario Adventista Cristo lo es todo para mí",
+  "webpage_url_domain": null,
+  "extractor": "youtube:search",
+  "extractor_key": "YoutubeSearch",
+  "release_year": null,
+  "playlist_count": 1,
+  "epoch": 1784755075,
+  "__files_to_move": {},
+  "_version": {
+    "version": "2026.07.04",
+    "current_git_head": null,
+    "release_git_head": "997fa140840a08df3938b40da470c78049fef1f6",
+    "repository": "yt-dlp/yt-dlp"
   },
-  "introducao": 0
+  "videos": [
+    {
+      "url": "https://www.youtube.com/watch?v=S9ZnvZExlwQ",
+      "title": "Himno #151 - Cristo es todo para mí"
+    }
+  ]
 }

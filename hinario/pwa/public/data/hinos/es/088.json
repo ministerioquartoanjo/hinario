@@ -1,46 +1,58 @@
 {
-  "title": "88 - Jesús, el Buen Amigo",
-  "author": "Autor desconocido",
-  "speed": 1,
-  "verses": [
-    [
-      "1. Encontré un buen amigo Jesús, el Salvador",
-      "El elegido entre miles para mí",
-      "De los valles es el lirio; es el fuerte Mediador",
-      "Que me purifica y me guarda para Sí mismo",
-      "Amado consolador, mi protector del mal",
-      "Mi petición lleva a Ti"
-    ],
-    [
-      "2. Él me quitó el dolor y todas mis penas, lo entregué",
-      "Mi fortaleza está, en la tentación",
-      "Todo lo dejé por Él; Quemé los ídolos",
-      "Él santifica mi corazón",
-      "Que el mundo me abandone; perseguir al tentador",
-      "Jesús me guarda hasta el fin de la vida."
-    ],
-    [
-      "3. Él nunca me desamparará ni me desamparará",
-      "Si vivo fiel y obedientemente",
-      "Un muro es de fuego, que me protegerá",
-      "Hasta que llegue el momento de vencer",
-      "Al cielo luego volando, veré su gloria",
-      "Donde el dolor y la muerte nunca llegan."
-    ]
+  "id": "Himnario Adventista Jesús, el Buen Amigo",
+  "title": "Himnario Adventista Jesús, el Buen Amigo",
+  "_type": "playlist",
+  "entries": [
+    {
+      "_type": "url",
+      "ie_key": "Youtube",
+      "id": "7YMDwJdTPhE",
+      "url": "https://www.youtube.com/watch?v=7YMDwJdTPhE",
+      "title": "Himno 110 Cristo es el mejor amigo Nuevo Himnario Adventista",
+      "description": "Himno 110 Cristo es el mejor amigo Nuevo Himnario Adventista.",
+      "duration": 214,
+      "channel_id": "UCUXPcSw5E2t1PGBfLBG44HA",
+      "channel": "Compartiendo Esperanza",
+      "channel_url": "https://www.youtube.com/channel/UCUXPcSw5E2t1PGBfLBG44HA",
+      "uploader": "Compartiendo Esperanza",
+      "uploader_id": "@CompartiendoEsperanza",
+      "uploader_url": "https://www.youtube.com/@CompartiendoEsperanza",
+      "thumbnails": [
+        {
+          "url": "https://i.ytimg.com/vi/7YMDwJdTPhE/hqdefault.jpg?sqp=-oaymwE2COADEI4CSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gSAAuADigIMCAAQARhGIGUoLTAP&rs=AOn4CLAH06gGD2sR2Caqg-579FWx7W2OpQ",
+          "height": 270,
+          "width": 480
+        }
+      ],
+      "timestamp": null,
+      "release_timestamp": null,
+      "availability": null,
+      "view_count": 120342,
+      "live_status": null,
+      "channel_is_verified": null,
+      "__x_forwarded_for_ip": null
+    }
   ],
-  "coro": [
-    "De los valles está el lirio, el lucero de la mañana",
-    "El elegido entre los miles para yo",
-    "Amado consolador, mi protector del mal",
-    "Mi solicitud recae sobre ti",
-    "De los valles es el lirio, el lucero de la mañana",
-    "El elegido entre miles para mí"
-  ],
-  "audioFilters": {
-    "gain": 1.2,
-    "bass": 0,
-    "mid": -5,
-    "treble": 12
+  "webpage_url": "ytsearch1:Himnario Adventista Jesús, el Buen Amigo",
+  "original_url": "ytsearch1:Himnario Adventista Jesús, el Buen Amigo",
+  "webpage_url_basename": "Himnario Adventista Jesús, el Buen Amigo",
+  "webpage_url_domain": null,
+  "extractor": "youtube:search",
+  "extractor_key": "YoutubeSearch",
+  "release_year": null,
+  "playlist_count": 1,
+  "epoch": 1784755160,
+  "__files_to_move": {},
+  "_version": {
+    "version": "2026.07.04",
+    "current_git_head": null,
+    "release_git_head": "997fa140840a08df3938b40da470c78049fef1f6",
+    "repository": "yt-dlp/yt-dlp"
   },
-  "introducao": 0
+  "videos": [
+    {
+      "url": "https://www.youtube.com/watch?v=7YMDwJdTPhE",
+      "title": "Himno 110 Cristo es el mejor amigo Nuevo Himnario Adventista"
+    }
+  ]
 }

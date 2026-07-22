@@ -34,5 +34,11 @@
     "mid": -5,
     "treble": 12
   },
-  "introducao": 0
+  "introducao": 0,
+  "videos": [
+    {
+      "url": "https://www.youtube.com/watch?v=9xNmt3L6D5U",
+      "title": "Novo Hinário Adventista • Hino 425 • Ouço o Clamor do Bom Pastor • (Lyrics)"
+    }
+  ]
 }

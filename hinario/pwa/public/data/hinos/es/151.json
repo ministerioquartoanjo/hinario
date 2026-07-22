@@ -1,44 +1,58 @@
 {
-  "title": "151 - ¿Quién irá?",
-  "author": "Henry Maxwell Wright",
-  "speed": 1,
-  "verses": [
-    [
-      "1. He aquí los millones que en tan espantosa oscuridad",
-      "¡Yacen perdidos, sin el Salvador!",
-      "¿Quién, quién proclamará la noticia?",
-      "¿Que Dios, en Cristo, salva al pecador?"
-    ],
-    [
-      "2. ¡Puertas abiertas, contemplad en todo el mundo!",
-      "¡Cristianos, levántense! ¡Adelante!",
-      "¡Creyentes en Cristo! Une tus fuerzas.",
-      "¡Liberen al pueblo de la esclavitud!"
-    ],
-    [
-      "3.\"¡Oh, venid a mí! La voz divina clama,",
-      "\"¡Venir!\" ¡Llorar! en el nombre de Jesús:",
-      "Para salvarnos de la maldición eterna,",
-      "Su sangre fue derramada por nosotros en la cruz."
-    ],
-    [
-      "4. Oh Dios, apresura el día glorioso,",
-      "En el que todos los redimidos se unirán,",
-      "Y, en un coro exaltado, santo y alegre,",
-      "Por los siglos de los siglos te darán gloria."
-    ]
+  "id": "Himnario Adventista ¿Quién irá?",
+  "title": "Himnario Adventista ¿Quién irá?",
+  "_type": "playlist",
+  "entries": [
+    {
+      "_type": "url",
+      "ie_key": "Youtube",
+      "id": "uOGQNKoic6E",
+      "url": "https://www.youtube.com/watch?v=uOGQNKoic6E",
+      "title": "¿Quién Irá? | Karaoke Adventista |",
+      "description": "Producido y distribuido por Producciones Nuevo Tiempo. Todos los derechos reservados.",
+      "duration": 224,
+      "channel_id": "UCI28PMG1W-DD7g9U1WsDg0w",
+      "channel": "IASD Jose Galvez",
+      "channel_url": "https://www.youtube.com/channel/UCI28PMG1W-DD7g9U1WsDg0w",
+      "uploader": "IASD Jose Galvez",
+      "uploader_id": "@IASDJOSEGALVEZ",
+      "uploader_url": "https://www.youtube.com/@IASDJOSEGALVEZ",
+      "thumbnails": [
+        {
+          "url": "https://i.ytimg.com/vi/uOGQNKoic6E/hqdefault.jpg?sqp=-oaymwE2COADEI4CSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB1AaAAuADigIMCAAQARhkIGUoJjAP&rs=AOn4CLDKghw9pxsbKFJOoatvPD2ccBgkfg",
+          "height": 270,
+          "width": 480
+        }
+      ],
+      "timestamp": null,
+      "release_timestamp": null,
+      "availability": null,
+      "view_count": 2983,
+      "live_status": null,
+      "channel_is_verified": null,
+      "__x_forwarded_for_ip": null
+    }
   ],
-  "coro": [
-    "“Todo poder me ha dado el Padre,",
-    "En la Tierra, como allí en el cielo;",
-    "Id, pues, a proclamar el evangelio,",
-    "¡Y aquí estoy contigo siempre!"
-  ],
-  "audioFilters": {
-    "gain": 1.2,
-    "bass": 0,
-    "mid": -5,
-    "treble": 12
+  "webpage_url": "ytsearch1:Himnario Adventista ¿Quién irá?",
+  "original_url": "ytsearch1:Himnario Adventista ¿Quién irá?",
+  "webpage_url_basename": "Himnario Adventista ¿Quién irá",
+  "webpage_url_domain": null,
+  "extractor": "youtube:search",
+  "extractor_key": "YoutubeSearch",
+  "release_year": null,
+  "playlist_count": 1,
+  "epoch": 1784755285,
+  "__files_to_move": {},
+  "_version": {
+    "version": "2026.07.04",
+    "current_git_head": null,
+    "release_git_head": "997fa140840a08df3938b40da470c78049fef1f6",
+    "repository": "yt-dlp/yt-dlp"
   },
-  "introducao": 0
+  "videos": [
+    {
+      "url": "https://www.youtube.com/watch?v=uOGQNKoic6E",
+      "title": "¿Quién Irá? | Karaoke Adventista |"
+    }
+  ]
 }

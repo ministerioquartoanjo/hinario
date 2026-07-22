@@ -1,53 +1,63 @@
 {
-  "title": "77 - Hay tales canciones en el cielo",
-  "author": "Johnson Oatman, Jr John Robson Sydney",
-  "speed": 1,
-  "verses": [
-    [
-      "1. Hay tales canciones allí en el cielo,",
-      "¡Que aquí nadie ha oído jamás!",
-      "Siempre los ángeles cantan alabanzas",
-      "Al Cordero del Señor. Arpas siempre en armonía,",
-      "Siempre la voz en tonos claros.",
-      "Si tan solo pudiéramos ser así,",
-      "¡Sirviendo al Rey y Salvador!"
-    ],
-    [
-      "2. Aunque no sea un ángel,",
-      "En el cielo cantaré.",
-      "Me uniré al gran coro",
-      "De los redimidos del Señor",
-      "Alabaré a mi Salvador",
-      "Que murió por mí en la cruz,",
-      "Que pagó mis pecados",
-      "Y me dio libertad."
-    ],
-    [
-      "3. Este cántico de victoria,",
-      "Sí, los ángeles lo oirán.",
-      "Es como la voz de muchas aguas,",
-      "La voz de una gran multitud.",
-      "El universo entero se detiene,",
-      "En asombro y admiración,",
-      "Al cántico de los redimidos",
-      "Al Señor de la redención"
-    ]
+  "id": "Himnario Adventista Hay tales canciones en el cielo",
+  "title": "Himnario Adventista Hay tales canciones en el cielo",
+  "_type": "playlist",
+  "entries": [
+    {
+      "_type": "url",
+      "ie_key": "Youtube",
+      "id": "T7H-VepXINE",
+      "url": "https://www.youtube.com/watch?v=T7H-VepXINE",
+      "title": "Himnos Adventistas Viejitas Pero Bonitas - Mejores Himnario Adventista Del Septimo Dia",
+      "description": "Himnos Adventistas Viejitas Pero Bonitas - Mejores Himnario Adventista Del Septimo Dia https://youtu.be/T7H-VepXINE ...",
+      "duration": 14377,
+      "channel_id": "UCF47kWVqLA5hWmmw8OIszrA",
+      "channel": "Himnario Adventista Selecto",
+      "channel_url": "https://www.youtube.com/channel/UCF47kWVqLA5hWmmw8OIszrA",
+      "uploader": "Himnario Adventista Selecto",
+      "uploader_id": "@HimnarioAdventistaSelecto102",
+      "uploader_url": "https://www.youtube.com/@HimnarioAdventistaSelecto102",
+      "thumbnails": [
+        {
+          "url": "https://i.ytimg.com/vi/T7H-VepXINE/hq720.jpg?sqp=-oaymwEgCOgCEMoBSFXyq4qpAxIIARUAAIhCGAFwAcABBrgC9xg=&rs=AOn4CLCqmXDJUBzOqt2knGqgnlIfUpDN2A",
+          "height": 202,
+          "width": 360
+        },
+        {
+          "url": "https://i.ytimg.com/vi/T7H-VepXINE/hq720.jpg?sqp=-oaymwEgCNAFEJQDSFXyq4qpAxIIARUAAIhCGAFwAcABBrgC9xg=&rs=AOn4CLDxzA2auBa9sDoFSlLIo9CwTBGJxQ",
+          "height": 404,
+          "width": 720
+        }
+      ],
+      "timestamp": null,
+      "release_timestamp": null,
+      "availability": null,
+      "view_count": 1623116,
+      "live_status": null,
+      "channel_is_verified": null,
+      "__x_forwarded_for_ip": null
+    }
   ],
-  "coro": [
-    "¡Santo! ¡Santo!",
-    "Es el canto de los ángeles buenos.",
-    "Un día me uniré",
-    "¡La voz a tales aclamaciones!",
-    "Pero cuando os cuento la historia",
-    "De esta redención: ¡Mudos!",
-    "No pueden entender",
-    "¡Qué salvación tan grande!"
-  ],
-  "audioFilters": {
-    "gain": 1.2,
-    "bass": 0,
-    "mid": -5,
-    "treble": 12
+  "webpage_url": "ytsearch1:Himnario Adventista Hay tales canciones en el cielo",
+  "original_url": "ytsearch1:Himnario Adventista Hay tales canciones en el cielo",
+  "webpage_url_basename": "Himnario Adventista Hay tales canciones en el cielo",
+  "webpage_url_domain": null,
+  "extractor": "youtube:search",
+  "extractor_key": "YoutubeSearch",
+  "release_year": null,
+  "playlist_count": 1,
+  "epoch": 1784755139,
+  "__files_to_move": {},
+  "_version": {
+    "version": "2026.07.04",
+    "current_git_head": null,
+    "release_git_head": "997fa140840a08df3938b40da470c78049fef1f6",
+    "repository": "yt-dlp/yt-dlp"
   },
-  "introducao": 0
+  "videos": [
+    {
+      "url": "https://www.youtube.com/watch?v=T7H-VepXINE",
+      "title": "Himnos Adventistas Viejitas Pero Bonitas - Mejores Himnario Adventista Del Septimo Dia"
+    }
+  ]
 }

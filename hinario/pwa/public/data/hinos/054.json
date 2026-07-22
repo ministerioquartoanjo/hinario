@@ -40,5 +40,11 @@
     "mid": -5,
     "treble": 12
   },
-  "introducao": 0
+  "introducao": 0,
+  "videos": [
+    {
+      "url": "https://www.youtube.com/watch?v=2jxf2XvM7u4",
+      "title": "Hinário Adventista 392 - BEM JUNTO A CRISTO"
+    }
+  ]
 }

@@ -1,38 +1,63 @@
 {
-  "title": "85 - Importa renacido",
-  "author": "William True Sleeper George Coles Stebbins",
-  "speed": 1,
-  "verses": [
-    [
-      "1. Un hombre rico, de noche, vino a Jesús,",
-      "Para conocer el camino de la luz.",
-      "El Maestro, muy claramente, le hizo entender",
-      "¡Es importante renacer!"
-    ],
-    [
-      "2. Hijos del mundo, escuchad al Señor,",
-      "Que siempre os llama con tierno amor.",
-      "Oíd que el Señor no deja de decir:",
-      "¡Es importante renacer!"
-    ],
-    [
-      "3. Oh tú que en el santo reposo de Dios",
-      "Quieres entrar y vivir con los suyos,",
-      "Debes prestar atención a la palabra de Cristo:",
-      "¡Es importante renacer!"
-    ]
+  "id": "Himnario Adventista Importa renacido",
+  "title": "Himnario Adventista Importa renacido",
+  "_type": "playlist",
+  "entries": [
+    {
+      "_type": "url",
+      "ie_key": "Youtube",
+      "id": "_Reb7akjVxQ",
+      "url": "https://www.youtube.com/watch?v=_Reb7akjVxQ",
+      "title": "Hinário Adventista 515 - IMPORTA RENASCER",
+      "description": "Se este material tocou seu coração, considere apoiar o Canal 7: https://apoia.se/canal7 ou via PIX: canaladv7@gmail.com ...",
+      "duration": 218,
+      "channel_id": "UCN73ZgVF-0rZklkpwaj28pA",
+      "channel": "Canal 7",
+      "channel_url": "https://www.youtube.com/channel/UCN73ZgVF-0rZklkpwaj28pA",
+      "uploader": "Canal 7",
+      "uploader_id": "@canal.adventista",
+      "uploader_url": "https://www.youtube.com/@canal.adventista",
+      "thumbnails": [
+        {
+          "url": "https://i.ytimg.com/vi/_Reb7akjVxQ/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAzHOa3y82K1RiVBo54DjGWRKWC7w",
+          "height": 202,
+          "width": 360
+        },
+        {
+          "url": "https://i.ytimg.com/vi/_Reb7akjVxQ/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCSH_qvn6hP7zZEmb6v7Y2s8lCAqA",
+          "height": 404,
+          "width": 720
+        }
+      ],
+      "timestamp": null,
+      "release_timestamp": null,
+      "availability": null,
+      "view_count": 85591,
+      "live_status": null,
+      "channel_is_verified": null,
+      "__x_forwarded_for_ip": null
+    }
   ],
-  "coro": [
-    "¡Es importante renacer!",
-    "¡Es importante renacer!",
-    "Con voz infalible Jesús dijo:",
-    "¡Es importante renacer!"
-  ],
-  "audioFilters": {
-    "gain": 1.2,
-    "bass": 0,
-    "mid": -5,
-    "treble": 12
+  "webpage_url": "ytsearch1:Himnario Adventista Importa renacido",
+  "original_url": "ytsearch1:Himnario Adventista Importa renacido",
+  "webpage_url_basename": "Himnario Adventista Importa renacido",
+  "webpage_url_domain": null,
+  "extractor": "youtube:search",
+  "extractor_key": "YoutubeSearch",
+  "release_year": null,
+  "playlist_count": 1,
+  "epoch": 1784755154,
+  "__files_to_move": {},
+  "_version": {
+    "version": "2026.07.04",
+    "current_git_head": null,
+    "release_git_head": "997fa140840a08df3938b40da470c78049fef1f6",
+    "repository": "yt-dlp/yt-dlp"
   },
-  "introducao": 0
+  "videos": [
+    {
+      "url": "https://www.youtube.com/watch?v=_Reb7akjVxQ",
+      "title": "Hinário Adventista 515 - IMPORTA RENASCER"
+    }
+  ]
 }

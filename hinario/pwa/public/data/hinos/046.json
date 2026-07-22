@@ -50,5 +50,11 @@
     "mid": -5,
     "treble": 12
   },
-  "introducao": 0
+  "introducao": 0,
+  "videos": [
+    {
+      "url": "https://www.youtube.com/watch?v=s99navSSdWM",
+      "title": "Novo Hinário Adventista • Hino 319 • Cristo é Tudo Para Mim • (Lyrics)"
+    }
+  ]
 }

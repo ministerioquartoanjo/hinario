@@ -16,5 +16,11 @@
     "mid": -5,
     "treble": 12
   },
-  "introducao": 0
+  "introducao": 0,
+  "videos": [
+    {
+      "url": "https://www.youtube.com/watch?v=hQVEh5n5svU",
+      "title": "HARPA CRISTÃ - 1 - CHUVAS DE GRAÇA.wmv"
+    }
+  ]
 }

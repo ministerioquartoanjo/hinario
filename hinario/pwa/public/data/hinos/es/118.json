@@ -1,38 +1,63 @@
 {
-  "title": "118 - Descansa en Jesús",
-  "author": "Frida Vingren F. M. Lelunan",
-  "speed": 1,
-  "verses": [
-    [
-      "1. ¿Has encontrado descanso en Jesucristo?",
-      "¿Estás firme en la gracia que Él dio?",
-      "¿Tienes paz con tu bendito Salvador?",
-      "¿Plenitud del Espíritu Dios?"
-    ],
-    [
-      "2. Estarás muy seguro y valiente,",
-      "¿Cuándo te llega la tentación?",
-      "Tienes la gracia de ser Victorioso",
-      "En las terribles pruebas de la vida aquí."
-    ],
-    [
-      "3. Sólo en Cristo encontraréis descanso,",
-      "Que aquí nadie nos lo quitará jamás;",
-      "Con Jesús aprenderás a ser manso,",
-      "Y el mundo contemplará su gloria en ti."
-    ]
+  "id": "Himnario Adventista Descansa en Jesús",
+  "title": "Himnario Adventista Descansa en Jesús",
+  "_type": "playlist",
+  "entries": [
+    {
+      "_type": "url",
+      "ie_key": "Youtube",
+      "id": "7uxsAMxm0PU",
+      "url": "https://www.youtube.com/watch?v=7uxsAMxm0PU",
+      "title": "40 Min de Himnos Adventistas Clásicos Arreglados para Descansar en Dios - Sesión Acústica Vol 02",
+      "description": "Suscríbete para más cantos y reflexiones. ========================= #HimnosAdventistas #MúsicaAdventista ...",
+      "duration": 2497,
+      "channel_id": "UCHn71yR20BNuADkVfUt7R-Q",
+      "channel": "Ptr. Luis E. López",
+      "channel_url": "https://www.youtube.com/channel/UCHn71yR20BNuADkVfUt7R-Q",
+      "uploader": "Ptr. Luis E. López",
+      "uploader_id": "@ptrluiselopez",
+      "uploader_url": "https://www.youtube.com/@ptrluiselopez",
+      "thumbnails": [
+        {
+          "url": "https://i.ytimg.com/vi/7uxsAMxm0PU/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBGtk6EKu3YJgbbWXF-8L-KsJiDhw",
+          "height": 202,
+          "width": 360
+        },
+        {
+          "url": "https://i.ytimg.com/vi/7uxsAMxm0PU/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBJYemsMqSFVTWpjuRBRTpn4Fz21g",
+          "height": 404,
+          "width": 720
+        }
+      ],
+      "timestamp": null,
+      "release_timestamp": null,
+      "availability": null,
+      "view_count": 1052689,
+      "live_status": null,
+      "channel_is_verified": null,
+      "__x_forwarded_for_ip": null
+    }
   ],
-  "coro": [
-    "¿Has encontrado descanso en Jesucristo?",
-    "¿Estás firme en la gracia que Él dio?",
-    "Encontrarás completa paz y consuelo en la oración:",
-    "Entonces Dios concedió la victoria a los santos."
-  ],
-  "audioFilters": {
-    "gain": 1.2,
-    "bass": 0,
-    "mid": -5,
-    "treble": 12
+  "webpage_url": "ytsearch1:Himnario Adventista Descansa en Jesús",
+  "original_url": "ytsearch1:Himnario Adventista Descansa en Jesús",
+  "webpage_url_basename": "Himnario Adventista Descansa en Jesús",
+  "webpage_url_domain": null,
+  "extractor": "youtube:search",
+  "extractor_key": "YoutubeSearch",
+  "release_year": null,
+  "playlist_count": 1,
+  "epoch": 1784755221,
+  "__files_to_move": {},
+  "_version": {
+    "version": "2026.07.04",
+    "current_git_head": null,
+    "release_git_head": "997fa140840a08df3938b40da470c78049fef1f6",
+    "repository": "yt-dlp/yt-dlp"
   },
-  "introducao": 0
+  "videos": [
+    {
+      "url": "https://www.youtube.com/watch?v=7uxsAMxm0PU",
+      "title": "40 Min de Himnos Adventistas Clásicos Arreglados para Descansar en Dios - Sesión Acústica Vol 02"
+    }
+  ]
 }

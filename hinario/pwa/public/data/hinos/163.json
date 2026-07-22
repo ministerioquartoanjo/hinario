@@ -28,5 +28,11 @@
     "mid": -5,
     "treble": 12
   },
-  "introducao": 0
+  "introducao": 0,
+  "videos": [
+    {
+      "url": "https://www.youtube.com/watch?v=ywBO_XQP7F0",
+      "title": "018 Santo! Santo! Santo! - Hinário Adventista HD"
+    }
+  ]
 }

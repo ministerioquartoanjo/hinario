@@ -1,43 +1,63 @@
 {
-  "title": "21 - Amor sin igual",
-  "author": "R. Torrey. Jr. Ernest Gebhardt",
-  "speed": 1,
-  "verses": [
-    [
-      "1. Oh, ¿no has oído hablar del amor incomparable,",
-      "Del amor que tu Dios tiene por ti?",
-      "El amor que lo llevó a entregar a Su Hijo,",
-      "¡Para que los salvos lo tomaran para sí!"
-    ],
-    [
-      "2. No fueron los grandes a quienes Cristo llamó,",
-      "No los justos vino a salvar,",
-      "Sino los pobres y los débiles, los culpables y los malvados",
-      "Envió a buscar a los siervos"
-    ],
-    [
-      "3. El hombre, sin embargo, no pudo alcanzar",
-      "La santa presencia de Dios,",
-      "Porque los pecados de su corazón",
-      "Le prohibieron entrar al cielo"
-    ],
-    [
-      "4. Pero con su sangre Jesús expió",
-      "La culpa de los creyentes, en la cruz;",
-      "Quitando el pecado, mostró el camino,",
-      "Que nos lleva al cielo"
-    ]
+  "id": "Himnario Adventista Amor sin igual",
+  "title": "Himnario Adventista Amor sin igual",
+  "_type": "playlist",
+  "entries": [
+    {
+      "_type": "url",
+      "ie_key": "Youtube",
+      "id": "GSvij2ODdhs",
+      "url": "https://www.youtube.com/watch?v=GSvij2ODdhs",
+      "title": "Himno 362 - Con sin igual amor | Himnario Adventista Nuevo",
+      "description": "En este canal subimos todos los himnos adventistas, puedes apoyarnos, Suscríbete y comparte amor y esperanza.",
+      "duration": 174,
+      "channel_id": "UCQueHIEoaEN0Rr_kyy4BWNw",
+      "channel": "Himnario Adventista",
+      "channel_url": "https://www.youtube.com/channel/UCQueHIEoaEN0Rr_kyy4BWNw",
+      "uploader": "Himnario Adventista",
+      "uploader_id": "@himnarioadventista8688",
+      "uploader_url": "https://www.youtube.com/@himnarioadventista8688",
+      "thumbnails": [
+        {
+          "url": "https://i.ytimg.com/vi/GSvij2ODdhs/hq720.jpg?sqp=-oaymwE6COgCEMoBSFXyq4qpAywIARUAAIhCGAFwAcABBvABAfgBvgeAAtAFigIMCAAQARgjIEkofzAPuAL3GA==&rs=AOn4CLA7t5ta5FxqP3tM3Gjyf89hvkLVmg",
+          "height": 202,
+          "width": 360
+        },
+        {
+          "url": "https://i.ytimg.com/vi/GSvij2ODdhs/hq720.jpg?sqp=-oaymwE6CNAFEJQDSFXyq4qpAywIARUAAIhCGAFwAcABBvABAfgBvgeAAtAFigIMCAAQARgjIEkofzAPuAL3GA==&rs=AOn4CLBgKuLlcBwT7NW-CuzLPZ8k7xY1Bg",
+          "height": 404,
+          "width": 720
+        }
+      ],
+      "timestamp": null,
+      "release_timestamp": null,
+      "availability": null,
+      "view_count": 10167,
+      "live_status": null,
+      "channel_is_verified": null,
+      "__x_forwarded_for_ip": null
+    }
   ],
-  "coro": [
-    "¡Oh, cree! ¡Sí, créeme! ¡Oh, créeme! ¡Sí, créelo!",
-    "La gracia de Dios te llama desde el cielo.",
-    "¡Oh, cree en este amor incomparable!"
-  ],
-  "audioFilters": {
-    "gain": 1.2,
-    "bass": 0,
-    "mid": -5,
-    "treble": 12
+  "webpage_url": "ytsearch1:Himnario Adventista Amor sin igual",
+  "original_url": "ytsearch1:Himnario Adventista Amor sin igual",
+  "webpage_url_basename": "Himnario Adventista Amor sin igual",
+  "webpage_url_domain": null,
+  "extractor": "youtube:search",
+  "extractor_key": "YoutubeSearch",
+  "release_year": null,
+  "playlist_count": 1,
+  "epoch": 1784755034,
+  "__files_to_move": {},
+  "_version": {
+    "version": "2026.07.04",
+    "current_git_head": null,
+    "release_git_head": "997fa140840a08df3938b40da470c78049fef1f6",
+    "repository": "yt-dlp/yt-dlp"
   },
-  "introducao": 0
+  "videos": [
+    {
+      "url": "https://www.youtube.com/watch?v=GSvij2ODdhs",
+      "title": "Himno 362 - Con sin igual amor | Himnario Adventista Nuevo"
+    }
+  ]
 }

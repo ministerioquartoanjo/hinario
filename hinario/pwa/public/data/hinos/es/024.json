@@ -1,32 +1,58 @@
 {
-  "title": "24 - Al ver la cruz",
-  "author": "Isaac Watts/E.M",
-  "speed": 1,
-  "verses": [
-    [
-      "1. Ver morir a mi Jesús en la ruda cruz,",
-      "En dolor y angustia;",
-      "Entendiendo que es pecador,",
-      "Y mi orgullo sin valor."
-    ],
-    [
-      "2. Las manos, los pies y la frente en dolor",
-      "Derramar sangre por amor;",
-      "¡Oh! ¡santa mano! ¡Mano herida!",
-      "Quiere darme salvación."
-    ],
-    [
-      "3. Doy mil gracias a mi Jesús;",
-      "El amor probado en la cruz",
-      "Sostendrá y guiará",
-      "Mi vida en el futuro."
-    ]
+  "id": "Himnario Adventista Al ver la cruz",
+  "title": "Himnario Adventista Al ver la cruz",
+  "_type": "playlist",
+  "entries": [
+    {
+      "_type": "url",
+      "ie_key": "Youtube",
+      "id": "1VIDNLkBnLY",
+      "url": "https://www.youtube.com/watch?v=1VIDNLkBnLY",
+      "title": "HA62 | Himno 285 | Perdido, fui a mi Jesús",
+      "description": "Este vídeo trata de: Salvación y redención.",
+      "duration": 178,
+      "channel_id": "UC2TQFq0vEPs1xn-T70FmoTQ",
+      "channel": "Himnario adventista 62",
+      "channel_url": "https://www.youtube.com/channel/UC2TQFq0vEPs1xn-T70FmoTQ",
+      "uploader": "Himnario adventista 62",
+      "uploader_id": "@himnarioHA62",
+      "uploader_url": "https://www.youtube.com/@himnarioHA62",
+      "thumbnails": [
+        {
+          "url": "https://i.ytimg.com/vi/1VIDNLkBnLY/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAPWZLMOjIuJ5LfRr6yR40wV3RUxw",
+          "height": 270,
+          "width": 480
+        }
+      ],
+      "timestamp": null,
+      "release_timestamp": null,
+      "availability": null,
+      "view_count": 10019339,
+      "live_status": null,
+      "channel_is_verified": null,
+      "__x_forwarded_for_ip": null
+    }
   ],
-  "audioFilters": {
-    "gain": 1.2,
-    "bass": 0,
-    "mid": -5,
-    "treble": 12
+  "webpage_url": "ytsearch1:Himnario Adventista Al ver la cruz",
+  "original_url": "ytsearch1:Himnario Adventista Al ver la cruz",
+  "webpage_url_basename": "Himnario Adventista Al ver la cruz",
+  "webpage_url_domain": null,
+  "extractor": "youtube:search",
+  "extractor_key": "YoutubeSearch",
+  "release_year": null,
+  "playlist_count": 1,
+  "epoch": 1784755040,
+  "__files_to_move": {},
+  "_version": {
+    "version": "2026.07.04",
+    "current_git_head": null,
+    "release_git_head": "997fa140840a08df3938b40da470c78049fef1f6",
+    "repository": "yt-dlp/yt-dlp"
   },
-  "introducao": 0
+  "videos": [
+    {
+      "url": "https://www.youtube.com/watch?v=1VIDNLkBnLY",
+      "title": "HA62 | Himno 285 | Perdido, fui a mi Jesús"
+    }
+  ]
 }

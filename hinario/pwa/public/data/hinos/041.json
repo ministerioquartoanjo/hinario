@@ -32,5 +32,11 @@
     "mid": -5,
     "treble": 12
   },
-  "introducao": 0
+  "introducao": 0,
+  "videos": [
+    {
+      "url": "https://www.youtube.com/watch?v=45uPEUa7qEU",
+      "title": "Hinário Adventista 176 - À TUA PORTA CRISTO ESTÁ"
+    }
+  ]
 }

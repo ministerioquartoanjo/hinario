@@ -48,5 +48,11 @@
     "mid": -5,
     "treble": 12
   },
-  "introducao": 0
+  "introducao": 0,
+  "videos": [
+    {
+      "url": "https://www.youtube.com/watch?v=9IJx6JmXYXw",
+      "title": "Hinário Adventista 346 - CRISTÃOS, DESPERTAI!"
+    }
+  ]
 }

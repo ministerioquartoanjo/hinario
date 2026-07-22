@@ -40,5 +40,11 @@
     "mid": -5,
     "treble": 12
   },
-  "introducao": 0
+  "introducao": 0,
+  "videos": [
+    {
+      "url": "https://www.youtube.com/watch?v=xAzZsKdefi0",
+      "title": "Novo Hinário Adventista • Hino 13  • Louvamos Te, Ó Deus •  (Lyrics)"
+    }
+  ]
 }

@@ -15,6 +15,7 @@ import { applyTranslations, setInterfaceLanguage, setHymnLanguage, getInterfaceL
 // --- Globals ---
 let BACKGROUNDS = [...DEFAULT_BACKGROUNDS];
 let countdownInterval = null;
+let introTransitionTimeout = null;
 let cachedJsonCount = 0;
 let cachedMp3Count = 0;
 let cacheVersion = '1.0.2'; // Atualizado para forçar refresh dos hinos com vídeos e índice ES
@@ -26,6 +27,9 @@ let autoScrollInterval = null;
 let autoScrollStartTime = 0;
 let autoScrollDelay = 0;
 const AUTO_SCROLL_TITLE_DELAY = 2000; // 2 segundos para mostrar título
+
+// Intro transition control
+let userManuallyNavigated = false;
 
 // Playlist timeout tracking
 let playlistTimeouts = [];
@@ -156,6 +160,8 @@ const renderHino = () => hinoRenderer.renderHino(state, { applySettings });
 
 const nextSlide = () => {
     if (!state.currentHino) return;
+    userManuallyNavigated = true;
+    if (introTransitionTimeout) { clearTimeout(introTransitionTimeout); introTransitionTimeout = null; }
     if (state.settings.isCompleto) {
         if (state.currentSlide === 0) { state.currentSlide = 1; renderHino(); }
         return;
@@ -170,6 +176,8 @@ const nextSlide = () => {
 
 const prevSlide = () => {
     if (!state.currentHino || state.currentSlide <= 0) return;
+    userManuallyNavigated = true;
+    if (introTransitionTimeout) { clearTimeout(introTransitionTimeout); introTransitionTimeout = null; }
     state.currentSlide--;
     renderHino();
 };
@@ -291,8 +299,13 @@ const initPlaylistAutoScroll = async () => {
     });
 
     const duration = await waitForDuration();
+    const introSeconds = state.currentHino.introducao || 0;
+    const previewSeconds = state.settings.introPreviewSeconds ?? 3;
 
-    // Passo 1: Aguardar 2 segundos (slide de apresentação do título)
+    // Tempo para mostrar o slide de título: se houver introdução maior que preview, espera preview; senão 2s
+    const titleDelayMs = introSeconds > previewSeconds ? previewSeconds * 1000 : AUTO_SCROLL_TITLE_DELAY;
+
+    // Passo 1: Aguardar o tempo de título
     const titleTimeout = setTimeout(() => {
         if (!state.isPlaylistActive || !state.currentHino) return;
 
@@ -303,12 +316,10 @@ const initPlaylistAutoScroll = async () => {
         applySettings();
 
         // Passo 3: Verificar se há contador de introdução
-        const hasIntroCountdown = state.currentHino.introducao && state.currentHino.introducao > 0;
+        const hasIntroCountdown = introSeconds > 0;
 
         if (hasIntroCountdown) {
-            // Aguardar o contador de introdução terminar
-            const introSeconds = state.currentHino.introducao;
-
+            // Aguardar o contador de introdução terminar para iniciar rolagem
             const checkIntroComplete = setInterval(() => {
                 if (!state.isPlaylistActive) {
                     clearInterval(checkIntroComplete);
@@ -346,8 +357,8 @@ const initPlaylistAutoScroll = async () => {
                 playlistTimeouts.push(scrollTimeout);
             }
         }
-    }, AUTO_SCROLL_TITLE_DELAY);
-    
+    }, titleDelayMs);
+
     playlistTimeouts.push(titleTimeout);
 };
 
@@ -387,6 +398,9 @@ const selectHino = async (hinoOrIndex) => {
 
     state.currentHino = hino;
     state.currentSlide = 0;
+    userManuallyNavigated = false;
+    if (introTransitionTimeout) clearTimeout(introTransitionTimeout);
+    introTransitionTimeout = null;
     renderHino();
     await loadAudio(hino.numero);
     $('#hino-search').val(`${hino.numero} - ${hino.titulo}`).blur();
@@ -893,13 +907,30 @@ const setupEvents = () => {
 
         // Contagem Regressiva da Introdução
         if (countdownInterval) clearInterval(countdownInterval);
+        if (introTransitionTimeout) clearTimeout(introTransitionTimeout);
         const $countdown = $('#intro-countdown');
         if (state.currentHino && state.currentHino.introducao > 0 && player.currentTime < state.currentHino.introducao) {
-            let count = Math.ceil(state.currentHino.introducao - player.currentTime);
+            const introSeconds = state.currentHino.introducao;
+            const previewSeconds = state.settings.introPreviewSeconds ?? 3;
+            let count = Math.ceil(introSeconds - player.currentTime);
             $countdown.removeClass('hidden').find('span').text(count);
-            
+
+            // Transição automática para a letra (slide 1) após previewSeconds,
+            // desde que o usuário não tenha mudado de slide manualmente
+            if (!userManuallyNavigated && state.currentSlide === 0) {
+                const transitionAt = introSeconds > previewSeconds ? previewSeconds : introSeconds;
+                const delayMs = Math.max(0, (transitionAt - player.currentTime) * 1000);
+                introTransitionTimeout = setTimeout(() => {
+                    if (!userManuallyNavigated && state.currentHino && state.currentSlide === 0 && !player.paused) {
+                        state.currentSlide = 1;
+                        renderHino();
+                        broadcast('slideState', state.currentSlide);
+                    }
+                }, delayMs);
+            }
+
             countdownInterval = setInterval(() => {
-                const remaining = state.currentHino.introducao - player.currentTime;
+                const remaining = introSeconds - player.currentTime;
                 if (remaining <= 0 || player.paused) {
                     clearInterval(countdownInterval);
                     $countdown.addClass('hidden');
@@ -916,12 +947,14 @@ const setupEvents = () => {
         $('#btn-play-pause i, #btn-fs-play-pause i').removeClass('fa-pause').addClass('fa-play');
         broadcastState(state, player);
         if (countdownInterval) clearInterval(countdownInterval);
+        if (introTransitionTimeout) clearTimeout(introTransitionTimeout);
         $('#intro-countdown').addClass('hidden');
     };
 
     player.onended = () => {
         $('#btn-play-pause i, #btn-fs-play-pause i').removeClass('fa-pause').addClass('fa-play');
         if (countdownInterval) clearInterval(countdownInterval);
+        if (introTransitionTimeout) clearTimeout(introTransitionTimeout);
         $('#intro-countdown').addClass('hidden');
         stopAutoScroll(); // Parar rolagem automática
 
@@ -935,6 +968,7 @@ const setupEvents = () => {
     player.onstop = () => {
         $('#btn-play-pause i, #btn-fs-play-pause i').removeClass('fa-pause').addClass('fa-play');
         if (countdownInterval) clearInterval(countdownInterval);
+        if (introTransitionTimeout) clearTimeout(introTransitionTimeout);
         $('#intro-countdown').addClass('hidden');
         // Não para a rolagem automática - apenas pausa o áudio
         broadcastState(state, player);
@@ -943,6 +977,7 @@ const setupEvents = () => {
     player.onabort = () => {
         $('#btn-play-pause i, #btn-fs-play-pause i').removeClass('fa-pause').addClass('fa-play');
         if (countdownInterval) clearInterval(countdownInterval);
+        if (introTransitionTimeout) clearTimeout(introTransitionTimeout);
         $('#intro-countdown').addClass('hidden');
         // Não para a rolagem automática - apenas pausa o áudio
         broadcastState(state, player);
@@ -1108,6 +1143,13 @@ const setupEvents = () => {
             current.letras = [];
             await selectHino(current.numero);
         }
+    });
+
+    // Configuração de antecipação da letra
+    $('#input-intro-preview').val(state.settings.introPreviewSeconds ?? 3).on('change', function() {
+        const value = parseInt($(this).val(), 10);
+        state.settings.introPreviewSeconds = isNaN(value) || value < 0 ? 3 : value;
+        saveSettings();
     });
 };
 

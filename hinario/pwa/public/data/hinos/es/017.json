@@ -1,34 +1,63 @@
 {
-  "title": "17 - Altamente proclaman los cielos",
-  "author": "Metrificación del Sal 19, Melodía alemana de Sarah Kalley",
-  "speed": 1,
-  "verses": [
-    [
-      "1. En lo alto los cielos proclaman",
-      "Tu divino Creador;",
-      "El firmamento anuncia",
-      "Tus obras, oh Señor.",
-      "Sin cesar, noche y día,",
-      "Dan señales de tu poder;",
-      "Sin palabras proclamando",
-      "Tu gloria, Tu conocimiento."
-    ],
-    [
-      "2. Majestuoso, el sol camina",
-      "¡Por los cielos, con esplendor!",
-      "Exultante, en su recorrido,",
-      "Llena de calor el mundo.",
-      "El vasto universo entero",
-      "¡Canta, a coro, tu alabanza!",
-      "Y a nosotros llega dulce enseñanza",
-      "De la Palabra del Señor."
-    ]
+  "id": "Himnario Adventista Altamente proclaman los cielos",
+  "title": "Himnario Adventista Altamente proclaman los cielos",
+  "_type": "playlist",
+  "entries": [
+    {
+      "_type": "url",
+      "ie_key": "Youtube",
+      "id": "qKzRuXwzpQI",
+      "url": "https://www.youtube.com/watch?v=qKzRuXwzpQI",
+      "title": "Hinário Adventista 560 - A CIDADE DE OURO E CRISTAL",
+      "description": "Se este material tocou seu coração, considere apoiar o Canal 7: https://apoia.se/canal7 ou via PIX: canaladv7@gmail.com ...",
+      "duration": 300,
+      "channel_id": "UCN73ZgVF-0rZklkpwaj28pA",
+      "channel": "Canal 7",
+      "channel_url": "https://www.youtube.com/channel/UCN73ZgVF-0rZklkpwaj28pA",
+      "uploader": "Canal 7",
+      "uploader_id": "@canal.adventista",
+      "uploader_url": "https://www.youtube.com/@canal.adventista",
+      "thumbnails": [
+        {
+          "url": "https://i.ytimg.com/vi/qKzRuXwzpQI/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBYCk2bL6AleyfGaDhV-X3LamiXIA",
+          "height": 202,
+          "width": 360
+        },
+        {
+          "url": "https://i.ytimg.com/vi/qKzRuXwzpQI/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLA2Go3Yw9rSLKAkY3DaOJEHxQvCfQ",
+          "height": 404,
+          "width": 720
+        }
+      ],
+      "timestamp": null,
+      "release_timestamp": null,
+      "availability": null,
+      "view_count": 2689046,
+      "live_status": null,
+      "channel_is_verified": null,
+      "__x_forwarded_for_ip": null
+    }
   ],
-  "audioFilters": {
-    "gain": 1.2,
-    "bass": 0,
-    "mid": -5,
-    "treble": 12
+  "webpage_url": "ytsearch1:Himnario Adventista Altamente proclaman los cielos",
+  "original_url": "ytsearch1:Himnario Adventista Altamente proclaman los cielos",
+  "webpage_url_basename": "Himnario Adventista Altamente proclaman los cielos",
+  "webpage_url_domain": null,
+  "extractor": "youtube:search",
+  "extractor_key": "YoutubeSearch",
+  "release_year": null,
+  "playlist_count": 1,
+  "epoch": 1784755027,
+  "__files_to_move": {},
+  "_version": {
+    "version": "2026.07.04",
+    "current_git_head": null,
+    "release_git_head": "997fa140840a08df3938b40da470c78049fef1f6",
+    "repository": "yt-dlp/yt-dlp"
   },
-  "introducao": 0
+  "videos": [
+    {
+      "url": "https://www.youtube.com/watch?v=qKzRuXwzpQI",
+      "title": "Hinário Adventista 560 - A CIDADE DE OURO E CRISTAL"
+    }
+  ]
 }

@@ -50,5 +50,11 @@
     "mid": -5,
     "treble": 12
   },
-  "introducao": 0
+  "introducao": 0,
+  "videos": [
+    {
+      "url": "https://www.youtube.com/watch?v=XXC0p8vKS2g",
+      "title": "ADORADORES 4 - MEU PASTOR (LETRA)"
+    }
+  ]
 }

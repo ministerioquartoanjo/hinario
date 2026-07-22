@@ -42,5 +42,11 @@
     "mid": -5,
     "treble": 12
   },
-  "introducao": 0
+  "introducao": 0,
+  "videos": [
+    {
+      "url": "https://www.youtube.com/watch?v=rA5XMgF0hNg",
+      "title": "CASA DE BENÇÃO JA CONGREGACIONAL PARA CANTAR COM IGREJA IASD CD JOVEM"
+    }
+  ]
 }

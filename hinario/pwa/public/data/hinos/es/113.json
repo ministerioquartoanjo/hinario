@@ -1,44 +1,58 @@
 {
-  "title": "113 - Nombre precioso",
-  "author": "William Howard Doane",
-  "speed": 1,
-  "verses": [
-    [
-      "1. Lleva contigo el nombre",
-      "De Jesús el Salvador;",
-      "Este nombre da consuelo",
-      "Hoy, cuando y dondequiera."
-    ],
-    [
-      "2. Este nombre lleva siempre",
-      "Para defender siempre.",
-      "Es un arma a tu alcance,",
-      "Cuando el mal se te aparece."
-    ],
-    [
-      "3. ¡Oh! ¡Qué nombre tan precioso!",
-      "El gozo trae al corazón.",
-      "Siendo aceptado por Jesús,",
-      "Tendrás Su perdón."
-    ],
-    [
-      "4. Santo nombre, y venerable",
-      "Ten a Jesús, tu amado",
-      "“Rey de reyes” “Señor Eterno”",
-      "¡Aclamarás en el cielo!"
-    ]
+  "id": "Himnario Adventista Nombre precioso",
+  "title": "Himnario Adventista Nombre precioso",
+  "_type": "playlist",
+  "entries": [
+    {
+      "_type": "url",
+      "ie_key": "Youtube",
+      "id": "hjodFQtNPII",
+      "url": "https://www.youtube.com/watch?v=hjodFQtNPII",
+      "title": "HA62 Himno 6 | De mi amante Salvador |",
+      "description": null,
+      "duration": 213,
+      "channel_id": "UC2TQFq0vEPs1xn-T70FmoTQ",
+      "channel": "Himnario adventista 62",
+      "channel_url": "https://www.youtube.com/channel/UC2TQFq0vEPs1xn-T70FmoTQ",
+      "uploader": "Himnario adventista 62",
+      "uploader_id": "@himnarioHA62",
+      "uploader_url": "https://www.youtube.com/@himnarioHA62",
+      "thumbnails": [
+        {
+          "url": "https://i.ytimg.com/vi/hjodFQtNPII/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDIKKe0r7H8hzg_sUPysIXykF8s4g",
+          "height": 270,
+          "width": 480
+        }
+      ],
+      "timestamp": null,
+      "release_timestamp": null,
+      "availability": null,
+      "view_count": 12112291,
+      "live_status": null,
+      "channel_is_verified": null,
+      "__x_forwarded_for_ip": null
+    }
   ],
-  "coro": [
-    "¡Buen nombre! Dulce fe.",
-    "¡Esperanza para el futuro!",
-    "¡Buen nombre! Dulce fe.",
-    "¡Esperanza para el futuro!"
-  ],
-  "audioFilters": {
-    "gain": 1.2,
-    "bass": 0,
-    "mid": -5,
-    "treble": 12
+  "webpage_url": "ytsearch1:Himnario Adventista Nombre precioso",
+  "original_url": "ytsearch1:Himnario Adventista Nombre precioso",
+  "webpage_url_basename": "Himnario Adventista Nombre precioso",
+  "webpage_url_domain": null,
+  "extractor": "youtube:search",
+  "extractor_key": "YoutubeSearch",
+  "release_year": null,
+  "playlist_count": 1,
+  "epoch": 1784755211,
+  "__files_to_move": {},
+  "_version": {
+    "version": "2026.07.04",
+    "current_git_head": null,
+    "release_git_head": "997fa140840a08df3938b40da470c78049fef1f6",
+    "repository": "yt-dlp/yt-dlp"
   },
-  "introducao": 0
+  "videos": [
+    {
+      "url": "https://www.youtube.com/watch?v=hjodFQtNPII",
+      "title": "HA62 Himno 6 | De mi amante Salvador |"
+    }
+  ]
 }

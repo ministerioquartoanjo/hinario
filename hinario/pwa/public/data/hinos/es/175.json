@@ -1,44 +1,63 @@
 {
-  "title": "175 - Sí, Cristo me ama",
-  "author": "Anna Barlett Warner William Batchelder Bradbury",
-  "speed": 1,
-  "verses": [
-    [
-      "1. Cristo me ama,",
-      "Ciertamente lo creo;",
-      "Por mí murió,",
-      "Está vivo por mí en el cielo."
-    ],
-    [
-      "2. Sí, Jesús me ama,",
-      "Y se convirtió en mi Salvador;",
-      "Hoy todavía tiene placer,",
-      "Recibir hijos."
-    ],
-    [
-      "3. Al disfrutar de su rico amor,",
-      "amaré a mi Salvador,",
-      "y aquí deseo mostrar,",
-      "su amor tan singular."
-    ],
-    [
-      "4. Mi Jesús está conmigo,",
-      "Y después de todo me llevará,",
-      "Al hermoso cielo de luz,",
-      "Porque me rescató en la cruz."
-    ]
+  "id": "Himnario Adventista Sí, Cristo me ama",
+  "title": "Himnario Adventista Sí, Cristo me ama",
+  "_type": "playlist",
+  "entries": [
+    {
+      "_type": "url",
+      "ie_key": "Youtube",
+      "id": "aoaCs9kh35A",
+      "url": "https://www.youtube.com/watch?v=aoaCs9kh35A",
+      "title": "Hinário Adventista 457 - SIM, CRISTO ME AMA",
+      "description": "Se este material tocou seu coração, considere apoiar o Canal 7: https://apoia.se/canal7 ou via PIX: canaladv7@gmail.com ...",
+      "duration": 226,
+      "channel_id": "UCN73ZgVF-0rZklkpwaj28pA",
+      "channel": "Canal 7",
+      "channel_url": "https://www.youtube.com/channel/UCN73ZgVF-0rZklkpwaj28pA",
+      "uploader": "Canal 7",
+      "uploader_id": "@canal.adventista",
+      "uploader_url": "https://www.youtube.com/@canal.adventista",
+      "thumbnails": [
+        {
+          "url": "https://i.ytimg.com/vi/aoaCs9kh35A/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBRomCWcZUaRxoW2k0m0_Fo-ReLtA",
+          "height": 202,
+          "width": 360
+        },
+        {
+          "url": "https://i.ytimg.com/vi/aoaCs9kh35A/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLA03fOfjxV7yUyM2oA8CyZkfuLYaA",
+          "height": 404,
+          "width": 720
+        }
+      ],
+      "timestamp": null,
+      "release_timestamp": null,
+      "availability": null,
+      "view_count": 73859,
+      "live_status": null,
+      "channel_is_verified": null,
+      "__x_forwarded_for_ip": null
+    }
   ],
-  "coro": [
-    "Sí, Cristo me ama,",
-    "Sí, Cristo me ama,",
-    "Sí, Cristo me ama,",
-    "La Biblia me lo dice."
-  ],
-  "audioFilters": {
-    "gain": 1.2,
-    "bass": 0,
-    "mid": -5,
-    "treble": 12
+  "webpage_url": "ytsearch1:Himnario Adventista Sí, Cristo me ama",
+  "original_url": "ytsearch1:Himnario Adventista Sí, Cristo me ama",
+  "webpage_url_basename": "Himnario Adventista Sí, Cristo me ama",
+  "webpage_url_domain": null,
+  "extractor": "youtube:search",
+  "extractor_key": "YoutubeSearch",
+  "release_year": null,
+  "playlist_count": 1,
+  "epoch": 1784755331,
+  "__files_to_move": {},
+  "_version": {
+    "version": "2026.07.04",
+    "current_git_head": null,
+    "release_git_head": "997fa140840a08df3938b40da470c78049fef1f6",
+    "repository": "yt-dlp/yt-dlp"
   },
-  "introducao": 0
+  "videos": [
+    {
+      "url": "https://www.youtube.com/watch?v=aoaCs9kh35A",
+      "title": "Hinário Adventista 457 - SIM, CRISTO ME AMA"
+    }
+  ]
 }

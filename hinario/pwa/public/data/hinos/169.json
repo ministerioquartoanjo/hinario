@@ -16,5 +16,11 @@
     "mid": -5,
     "treble": 12
   },
-  "introducao": 0
+  "introducao": 0,
+  "videos": [
+    {
+      "url": "https://www.youtube.com/watch?v=6E3a-w35uYw",
+      "title": "Hinário Adventista 510 - MEU JESUS ESTÁ CHAMANDO"
+    }
+  ]
 }

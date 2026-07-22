@@ -34,5 +34,11 @@
     "mid": -5,
     "treble": 12
   },
-  "introducao": 0
+  "introducao": 0,
+  "videos": [
+    {
+      "url": "https://www.youtube.com/watch?v=-WgBM3a_y7E",
+      "title": "Hinário Adventista 219 - SEMPRE ALEGRE"
+    }
+  ]
 }

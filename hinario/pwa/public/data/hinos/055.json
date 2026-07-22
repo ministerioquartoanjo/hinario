@@ -40,5 +40,11 @@
     "mid": -5,
     "treble": 12
   },
-  "introducao": 0
+  "introducao": 0,
+  "videos": [
+    {
+      "url": "https://www.youtube.com/watch?v=Ay1KZNHsu0k",
+      "title": "Eis multidões - HCC 528 (com introdução)"
+    }
+  ]
 }

@@ -1,36 +1,58 @@
 {
-  "title": "41 - Cristo está a la puerta",
-  "author": "Joel Carlson",
-  "speed": 1,
-  "verses": [
-    [
-      "1. Jesucristo está a la puerta:",
-      "Llama siempre para entrar.",
-      "Si escuchas, ¡abre ahora!",
-      "¡Abre tu corazón!"
-    ],
-    [
-      "2. Jesús sigue llamando allí",
-      "Y si no lo abres ahora,",
-      "Volverá triste;",
-      "¡Abre tu corazón!"
-    ],
-    [
-      "3. Jesús llama, abre ahora,",
-      "¡Abre, sí, oh pecador!",
-      "El juicio está a la puerta;",
-      "¡Abre tu corazón!"
-    ]
+  "id": "Himnario Adventista Cristo está a la puerta",
+  "title": "Himnario Adventista Cristo está a la puerta",
+  "_type": "playlist",
+  "entries": [
+    {
+      "_type": "url",
+      "ie_key": "Youtube",
+      "id": "i6SGV3vcmLc",
+      "url": "https://www.youtube.com/watch?v=i6SGV3vcmLc",
+      "title": "Himno 212 A tu puerta Cristo está Nuevo Himnario Adventista",
+      "description": "Himno 212 A tu puerta Cristo está Nuevo Himnario Adventista.",
+      "duration": 149,
+      "channel_id": "UCUXPcSw5E2t1PGBfLBG44HA",
+      "channel": "Compartiendo Esperanza",
+      "channel_url": "https://www.youtube.com/channel/UCUXPcSw5E2t1PGBfLBG44HA",
+      "uploader": "Compartiendo Esperanza",
+      "uploader_id": "@CompartiendoEsperanza",
+      "uploader_url": "https://www.youtube.com/@CompartiendoEsperanza",
+      "thumbnails": [
+        {
+          "url": "https://i.ytimg.com/vi/i6SGV3vcmLc/hqdefault.jpg?sqp=-oaymwE6COADEI4CSFXyq4qpAywIARUAAIhCGAFwAcABBvABAfgB_gSAAuADigIMCAAQARhyIFEoMDAPuAL3GA==&rs=AOn4CLARg2WVvsGozSbtNGhO3ObLtS4x1w",
+          "height": 270,
+          "width": 480
+        }
+      ],
+      "timestamp": null,
+      "release_timestamp": null,
+      "availability": null,
+      "view_count": 60950,
+      "live_status": null,
+      "channel_is_verified": null,
+      "__x_forwarded_for_ip": null
+    }
   ],
-  "coro": [
-    "¡Abre tu corazón!",
-    "¡Abre tu corazón!"
-  ],
-  "audioFilters": {
-    "gain": 1.2,
-    "bass": 0,
-    "mid": -5,
-    "treble": 12
+  "webpage_url": "ytsearch1:Himnario Adventista Cristo está a la puerta",
+  "original_url": "ytsearch1:Himnario Adventista Cristo está a la puerta",
+  "webpage_url_basename": "Himnario Adventista Cristo está a la puerta",
+  "webpage_url_domain": null,
+  "extractor": "youtube:search",
+  "extractor_key": "YoutubeSearch",
+  "release_year": null,
+  "playlist_count": 1,
+  "epoch": 1784755073,
+  "__files_to_move": {},
+  "_version": {
+    "version": "2026.07.04",
+    "current_git_head": null,
+    "release_git_head": "997fa140840a08df3938b40da470c78049fef1f6",
+    "repository": "yt-dlp/yt-dlp"
   },
-  "introducao": 0
+  "videos": [
+    {
+      "url": "https://www.youtube.com/watch?v=i6SGV3vcmLc",
+      "title": "Himno 212 A tu puerta Cristo está Nuevo Himnario Adventista"
+    }
+  ]
 }

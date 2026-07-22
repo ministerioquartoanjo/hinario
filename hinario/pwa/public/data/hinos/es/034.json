@@ -1,38 +1,58 @@
 {
-  "title": "34 - Lluvia de bendiciones",
-  "author": "Daniel Webster Whitle James McGranahan",
-  "speed": 1,
-  "verses": [
-    [
-      "1. Lluvia de bendiciones tendremos",
-      "Es la promesa de Dios;",
-      "Tiempos benditos veremos,",
-      "Lluvia enviada desde los cielos."
-    ],
-    [
-      "2. Tendremos lluvias de bendiciones,",
-      "Vida de paz y perdón.",
-      "Pecadores indignos,",
-      "Gracia del cielo obtendremos."
-    ],
-    [
-      "3. Tendremos lluvias de bendiciones,",
-      "¡Envíanos ahora, oh Señor!",
-      "Que esta bendita promesa,",
-      "Ven y nos traiga vigor."
-    ]
+  "id": "Himnario Adventista Lluvia de bendiciones",
+  "title": "Himnario Adventista Lluvia de bendiciones",
+  "_type": "playlist",
+  "entries": [
+    {
+      "_type": "url",
+      "ie_key": "Youtube",
+      "id": "lbbPH1sQ3S4",
+      "url": "https://www.youtube.com/watch?v=lbbPH1sQ3S4",
+      "title": "Himno Nº 193 LLuvias de gracia",
+      "description": null,
+      "duration": 162,
+      "channel_id": "UCanmAGhHfepZ8cqTYyclEnA",
+      "channel": "Iris Raquel Schumann",
+      "channel_url": "https://www.youtube.com/channel/UCanmAGhHfepZ8cqTYyclEnA",
+      "uploader": "Iris Raquel Schumann",
+      "uploader_id": "@irisraquelschumann9368",
+      "uploader_url": "https://www.youtube.com/@irisraquelschumann9368",
+      "thumbnails": [
+        {
+          "url": "https://i.ytimg.com/vi/lbbPH1sQ3S4/hqdefault.jpg?sqp=-oaymwE2COADEI4CSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gSAAuADigIMCAAQARheIGUoRjAP&rs=AOn4CLAtfQY-QXPKGF4O6yLj804ehYhH5Q",
+          "height": 270,
+          "width": 480
+        }
+      ],
+      "timestamp": null,
+      "release_timestamp": null,
+      "availability": null,
+      "view_count": 738799,
+      "live_status": null,
+      "channel_is_verified": null,
+      "__x_forwarded_for_ip": null
+    }
   ],
-  "coro": [
-    "Lluvias de bendiciones,",
-    "¡Lluvias de bendiciones del cielo!",
-    "Gotas sólo nosotros tenemos;",
-    "¡Lluvias rogamos a Dios!"
-  ],
-  "audioFilters": {
-    "gain": 1.2,
-    "bass": 0,
-    "mid": -5,
-    "treble": 12
+  "webpage_url": "ytsearch1:Himnario Adventista Lluvia de bendiciones",
+  "original_url": "ytsearch1:Himnario Adventista Lluvia de bendiciones",
+  "webpage_url_basename": "Himnario Adventista Lluvia de bendiciones",
+  "webpage_url_domain": null,
+  "extractor": "youtube:search",
+  "extractor_key": "YoutubeSearch",
+  "release_year": null,
+  "playlist_count": 1,
+  "epoch": 1784755060,
+  "__files_to_move": {},
+  "_version": {
+    "version": "2026.07.04",
+    "current_git_head": null,
+    "release_git_head": "997fa140840a08df3938b40da470c78049fef1f6",
+    "repository": "yt-dlp/yt-dlp"
   },
-  "introducao": 0
+  "videos": [
+    {
+      "url": "https://www.youtube.com/watch?v=lbbPH1sQ3S4",
+      "title": "Himno Nº 193 LLuvias de gracia"
+    }
+  ]
 }

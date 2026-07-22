@@ -38,6 +38,7 @@ export const INITIAL_STATE = {
         bgColor: '#000000',
         audioFilters: { ...DEFAULT_AUDIO_FILTERS },
         interfaceLanguage: 'pt',
-        hymnLanguage: 'pt'
+        hymnLanguage: 'pt',
+        introPreviewSeconds: 3
     }
 };

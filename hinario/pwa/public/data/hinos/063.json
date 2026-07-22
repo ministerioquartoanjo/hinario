@@ -49,5 +49,11 @@
     "mid": -5,
     "treble": 12
   },
-  "introducao": 0
+  "introducao": 0,
+  "videos": [
+    {
+      "url": "https://www.youtube.com/watch?v=rDqhjaMUu8I",
+      "title": "Novo Hinário Adventista • Hino 29 • O Amor De Jesus • (Lyrics)"
+    }
+  ]
 }

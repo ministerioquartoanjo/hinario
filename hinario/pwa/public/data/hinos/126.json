@@ -40,5 +40,11 @@
     "mid": -5,
     "treble": 12
   },
-  "introducao": 0
+  "introducao": 0,
+  "videos": [
+    {
+      "url": "https://www.youtube.com/watch?v=lVmDPbFfoKo",
+      "title": "Hinário Adventista 565 - OH! NUNCA SEPARAR!"
+    }
+  ]
 }

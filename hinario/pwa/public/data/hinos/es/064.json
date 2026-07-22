@@ -1,38 +1,63 @@
 {
-  "title": "64 - Fe persistente",
-  "author": "William Hiley Bathurst Justus H. Nelson",
-  "speed": 1,
-  "verses": [
-    [
-      "1. Anhelo una fe que sea fuerte",
-      "Ante el terror;",
-      "Que, con calma, no retroceda",
-      "Del mundo aterrador."
-    ],
-    [
-      "2. La fe que no me hace quejarme",
-      "En el dolor de la corrección,",
-      "Pero cuanto más arde el fuego,",
-      "Más firme es el corazón."
-    ],
-    [
-      "3. La fe que siempre brilla más",
-      "En el huracán negro,",
-      "Que en el peligro siente paz,",
-      "Audaz en la oscuridad."
-    ],
-    [
-      "4. Oh Dios, dame tal fe,",
-      "¡Pase lo que pase!",
-      "Así en la lucha probaré",
-      "El placer celestial."
-    ]
+  "id": "Himnario Adventista Fe persistente",
+  "title": "Himnario Adventista Fe persistente",
+  "_type": "playlist",
+  "entries": [
+    {
+      "_type": "url",
+      "ie_key": "Youtube",
+      "id": "o1u39u8Mm4I",
+      "url": "https://www.youtube.com/watch?v=o1u39u8Mm4I",
+      "title": "Hinário Adventista 594 - OUVE-NOS, SENHOR",
+      "description": "Se este material tocou seu coração, considere apoiar o Canal 7: https://apoia.se/canal7 ou via PIX: canaladv7@gmail.com ...",
+      "duration": 90,
+      "channel_id": "UCN73ZgVF-0rZklkpwaj28pA",
+      "channel": "Canal 7",
+      "channel_url": "https://www.youtube.com/channel/UCN73ZgVF-0rZklkpwaj28pA",
+      "uploader": "Canal 7",
+      "uploader_id": "@canal.adventista",
+      "uploader_url": "https://www.youtube.com/@canal.adventista",
+      "thumbnails": [
+        {
+          "url": "https://i.ytimg.com/vi/o1u39u8Mm4I/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAELQ1AFo2uFrp1tR1tWf3PlrpSbg",
+          "height": 202,
+          "width": 360
+        },
+        {
+          "url": "https://i.ytimg.com/vi/o1u39u8Mm4I/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCfBF2ObYHksf_v4TJ9yltz8Sp8Og",
+          "height": 404,
+          "width": 720
+        }
+      ],
+      "timestamp": null,
+      "release_timestamp": null,
+      "availability": null,
+      "view_count": 19735,
+      "live_status": null,
+      "channel_is_verified": null,
+      "__x_forwarded_for_ip": null
+    }
   ],
-  "audioFilters": {
-    "gain": 1.2,
-    "bass": 0,
-    "mid": -5,
-    "treble": 12
+  "webpage_url": "ytsearch1:Himnario Adventista Fe persistente",
+  "original_url": "ytsearch1:Himnario Adventista Fe persistente",
+  "webpage_url_basename": "Himnario Adventista Fe persistente",
+  "webpage_url_domain": null,
+  "extractor": "youtube:search",
+  "extractor_key": "YoutubeSearch",
+  "release_year": null,
+  "playlist_count": 1,
+  "epoch": 1784755115,
+  "__files_to_move": {},
+  "_version": {
+    "version": "2026.07.04",
+    "current_git_head": null,
+    "release_git_head": "997fa140840a08df3938b40da470c78049fef1f6",
+    "repository": "yt-dlp/yt-dlp"
   },
-  "introducao": 0
+  "videos": [
+    {
+      "url": "https://www.youtube.com/watch?v=o1u39u8Mm4I",
+      "title": "Hinário Adventista 594 - OUVE-NOS, SENHOR"
+    }
+  ]
 }

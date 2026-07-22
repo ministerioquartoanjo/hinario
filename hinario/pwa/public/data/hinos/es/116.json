@@ -1,44 +1,58 @@
 {
-  "title": "116 - El amable amigo",
-  "author": "RH Moreton",
-  "speed": 1,
-  "verses": [
-    [
-      "1. ¡Qué amable amigo es Cristo!",
-      "Él llevó nuestro dolor con nosotros.",
-      "Y nos ordena tomar",
-      "Cuidando al Señor",
-      "Extrañando el corazón dolorido",
-      "¿Alegría, paz, consuelo?",
-      "Esto se debe a que no tomamos",
-      "Todos a Dios en oración."
-    ],
-    [
-      "2. Estás débil y agobiado",
-      "¿De cuidado y miedo?",
-      "A Jesús refugio eterno",
-      "¡Ve con fe a exponer tu maldad!",
-      "¿Tus amigos te desprecian?",
-      "Dile esto en oración.",
-      "Y con su amor tan tierno",
-      "Paz tendrás en tu corazón."
-    ],
-    [
-      "3. Cristo es un verdadero amigo",
-      "De esta evidencia nos mostró",
-      "Cuando llevarlo contigo",
-      "El culpable encarnado",
-      "Derramó su sangre pura",
-      "Nuestra mancha para lavar",
-      "Disfrute en la vida y en el futuro.",
-      "En Él podemos lograr."
-    ]
+  "id": "Himnario Adventista El amable amigo",
+  "title": "Himnario Adventista El amable amigo",
+  "_type": "playlist",
+  "entries": [
+    {
+      "_type": "url",
+      "ie_key": "Youtube",
+      "id": "d1mOy6i_XoI",
+      "url": "https://www.youtube.com/watch?v=d1mOy6i_XoI",
+      "title": "HA62 | Himno 349 | ¡Oh, qué amigo nos es Cristo!",
+      "description": null,
+      "duration": 148,
+      "channel_id": "UC2TQFq0vEPs1xn-T70FmoTQ",
+      "channel": "Himnario adventista 62",
+      "channel_url": "https://www.youtube.com/channel/UC2TQFq0vEPs1xn-T70FmoTQ",
+      "uploader": "Himnario adventista 62",
+      "uploader_id": "@himnarioHA62",
+      "uploader_url": "https://www.youtube.com/@himnarioHA62",
+      "thumbnails": [
+        {
+          "url": "https://i.ytimg.com/vi/d1mOy6i_XoI/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDQRmOKRpnDyMUQB0Z_y0ZPice1Ew",
+          "height": 270,
+          "width": 480
+        }
+      ],
+      "timestamp": null,
+      "release_timestamp": null,
+      "availability": null,
+      "view_count": 4381477,
+      "live_status": null,
+      "channel_is_verified": null,
+      "__x_forwarded_for_ip": null
+    }
   ],
-  "audioFilters": {
-    "gain": 1.2,
-    "bass": 0,
-    "mid": -5,
-    "treble": 12
+  "webpage_url": "ytsearch1:Himnario Adventista El amable amigo",
+  "original_url": "ytsearch1:Himnario Adventista El amable amigo",
+  "webpage_url_basename": "Himnario Adventista El amable amigo",
+  "webpage_url_domain": null,
+  "extractor": "youtube:search",
+  "extractor_key": "YoutubeSearch",
+  "release_year": null,
+  "playlist_count": 1,
+  "epoch": 1784755217,
+  "__files_to_move": {},
+  "_version": {
+    "version": "2026.07.04",
+    "current_git_head": null,
+    "release_git_head": "997fa140840a08df3938b40da470c78049fef1f6",
+    "repository": "yt-dlp/yt-dlp"
   },
-  "introducao": 0
+  "videos": [
+    {
+      "url": "https://www.youtube.com/watch?v=d1mOy6i_XoI",
+      "title": "HA62 | Himno 349 | ¡Oh, qué amigo nos es Cristo!"
+    }
+  ]
 }

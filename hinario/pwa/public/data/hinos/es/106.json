@@ -1,44 +1,63 @@
 {
-  "title": "106 - Mi Redentor",
-  "author": "Frida Vingren J. G. Pie",
-  "speed": 1,
-  "verses": [
-    [
-      "1. En la cruz murió mi Redentor;",
-      "Él tomó todos mis males.",
-      "Si lo recibes, tienes su amor,",
-      "Por tus pecados, Jesús perdonó."
-    ],
-    [
-      "2. Dios quiere salvar al vil malhechor",
-      "Como él promete que siempre lo hará.",
-      "Confía en Él, oh pecador",
-      "Y por la fe tendrás vida nueva"
-    ],
-    [
-      "3. Tu luz pronto se acabará",
-      "Y en el juicio entrarás",
-      "No te contengas, ven a Jesús",
-      "Que tus pecados quieren borrar"
-    ],
-    [
-      "4. Que maravilla, que gran amor",
-      "Si crees hoy serás salvo",
-      "Cristo te llama ven pecador",
-      "Y el gozo eterno en el cielo fluirás"
-    ]
+  "id": "Himnario Adventista Mi Redentor",
+  "title": "Himnario Adventista Mi Redentor",
+  "_type": "playlist",
+  "entries": [
+    {
+      "_type": "url",
+      "ie_key": "Youtube",
+      "id": "WVa_hjg_LQQ",
+      "url": "https://www.youtube.com/watch?v=WVa_hjg_LQQ",
+      "title": "Himno 407 - Muy cerca de mi Redentor | Himnario Adventista Nuevo",
+      "description": "En este canal subimos todos los himnos adventistas, puedes apoyarnos dando un me gusta, Suscríbete y comparte amor y ...",
+      "duration": 168,
+      "channel_id": "UCQueHIEoaEN0Rr_kyy4BWNw",
+      "channel": "Himnario Adventista",
+      "channel_url": "https://www.youtube.com/channel/UCQueHIEoaEN0Rr_kyy4BWNw",
+      "uploader": "Himnario Adventista",
+      "uploader_id": "@himnarioadventista8688",
+      "uploader_url": "https://www.youtube.com/@himnarioadventista8688",
+      "thumbnails": [
+        {
+          "url": "https://i.ytimg.com/vi/WVa_hjg_LQQ/hq720.jpg?sqp=-oaymwE2COgCEMoBSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgBvgeAAtAFigIMCAAQARgTID0ofzAP&rs=AOn4CLA0dzkvZ71cfJ-tedSi5RClbzs9pw",
+          "height": 202,
+          "width": 360
+        },
+        {
+          "url": "https://i.ytimg.com/vi/WVa_hjg_LQQ/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgBvgeAAtAFigIMCAAQARgTID0ofzAP&rs=AOn4CLBf3ykSdDmxdzE2jHSnHM7VQtzAig",
+          "height": 404,
+          "width": 720
+        }
+      ],
+      "timestamp": null,
+      "release_timestamp": null,
+      "availability": null,
+      "view_count": 4134,
+      "live_status": null,
+      "channel_is_verified": null,
+      "__x_forwarded_for_ip": null
+    }
   ],
-  "coro": [
-    "Cuando Dios viene la sangre.",
-    "Que Jesús ya dijo,",
-    "Pasará sin hacerte daño;",
-    "En Egipto esto sucedió."
-  ],
-  "audioFilters": {
-    "gain": 1.2,
-    "bass": 0,
-    "mid": -5,
-    "treble": 12
+  "webpage_url": "ytsearch1:Himnario Adventista Mi Redentor",
+  "original_url": "ytsearch1:Himnario Adventista Mi Redentor",
+  "webpage_url_basename": "Himnario Adventista Mi Redentor",
+  "webpage_url_domain": null,
+  "extractor": "youtube:search",
+  "extractor_key": "YoutubeSearch",
+  "release_year": null,
+  "playlist_count": 1,
+  "epoch": 1784755196,
+  "__files_to_move": {},
+  "_version": {
+    "version": "2026.07.04",
+    "current_git_head": null,
+    "release_git_head": "997fa140840a08df3938b40da470c78049fef1f6",
+    "repository": "yt-dlp/yt-dlp"
   },
-  "introducao": 0
+  "videos": [
+    {
+      "url": "https://www.youtube.com/watch?v=WVa_hjg_LQQ",
+      "title": "Himno 407 - Muy cerca de mi Redentor | Himnario Adventista Nuevo"
+    }
+  ]
 }

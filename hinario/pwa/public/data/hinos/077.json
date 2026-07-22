@@ -49,5 +49,11 @@
     "mid": -5,
     "treble": 12
   },
-  "introducao": 0
+  "introducao": 0,
+  "videos": [
+    {
+      "url": "https://www.youtube.com/watch?v=r7Qi7G09qsg",
+      "title": "Hinário Adventista-80 há tais Cantos Lá no Céu"
+    }
+  ]
 }

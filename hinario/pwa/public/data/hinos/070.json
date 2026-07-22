@@ -40,5 +40,11 @@
     "mid": -5,
     "treble": 12
   },
-  "introducao": 0
+  "introducao": 0,
+  "videos": [
+    {
+      "url": "https://www.youtube.com/watch?v=WvoiijQ79k8",
+      "title": "Hinário Adventista 214 - MANANCIAL DE TODA BENÇÃO"
+    }
+  ]
 }

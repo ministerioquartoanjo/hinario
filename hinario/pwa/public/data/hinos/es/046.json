@@ -1,54 +1,58 @@
 {
-  "title": "46 - ¡Cristo Prá Mim!",
-  "author": "Henry Maxwell Wright",
-  "speed": 1,
-  "verses": [
-    [
-      "1. ¡Oh qué descanso en Jesús encontré!",
-      "¡Cristo para mí! ¡Cristo por mí!",
-      "¡Oh qué tesoros infinitos encontré!",
-      "¡Cristo por mí! ¡Cristo por mí!",
-      "‘Que otros elijan el mundo para sí:",
-      "Buscad aquí riquezas, deleites;",
-      "Yo elegiré, oh Jesús, siempre a Ti!",
-      "¡Cristo por mí! ¡Cristo por mí!"
-    ],
-    [
-      "2. Ya sea en aflicción, enfermedad o dolor:",
-      "¡Cristo por mí! ¡Cristo por mí!",
-      "Ya sea en salud, fuerza o vigor;",
-      "¡Cristo por mí! ¡Cristo por mí!",
-      "Siempre a mi lado para ayudarme,",
-      "Con su amor, sí, y con su poder;",
-      "En cada trance dispuesto a ayudarme;",
-      "¡Cristo por mí! ¡Cristo por mí!"
-    ],
-    [
-      "3. En el amargo día de la persecución:",
-      "¡Cristo por mí! ¡Cristo por mí!",
-      "En las duras pruebas y tentaciones:",
-      "¡Cristo por mí! ¡Cristo por mí!",
-      "Él, el pecado y el mundo vencieron",
-      "Cuando, por mí, en el Calvario murió;",
-      "Y me dio la certeza de la victoria;",
-      "¡Cristo por mí! ¡Cristo por mí!"
-    ],
-    [
-      "4. Y si entro en el valle de la muerte,",
-      "¡Cristo por mí! ¡Cristo por mí!",
-      "Cuando ante mi Dios me encuentre:",
-      "¡Cristo por mí! ¡Cristo por mí!",
-      "Sólo en Tu sangre confío, Señor,",
-      "¡Sólo en Tu amor siempre inmutable!",
-      "Volveré a cantar, Salvador:",
-      "¡Cristo por mí! ¡Cristo para mí!"
-    ]
+  "id": "Himnario Adventista ¡Cristo Prá Mim!",
+  "title": "Himnario Adventista ¡Cristo Prá Mim!",
+  "_type": "playlist",
+  "entries": [
+    {
+      "_type": "url",
+      "ie_key": "Youtube",
+      "id": "o-CET6B4FGM",
+      "url": "https://www.youtube.com/watch?v=o-CET6B4FGM",
+      "title": "Hinário Adventista 93 Precioso é Jesus para Mim",
+      "description": "Hinário Adventista 93 Precioso é Jesus para Mim.",
+      "duration": 169,
+      "channel_id": "UCpVDgJlnkp1dIpn0U44saFA",
+      "channel": "Hinário Adventista IASD",
+      "channel_url": "https://www.youtube.com/channel/UCpVDgJlnkp1dIpn0U44saFA",
+      "uploader": "Hinário Adventista IASD",
+      "uploader_id": "@hinarioadventistaiasd5912",
+      "uploader_url": "https://www.youtube.com/@hinarioadventistaiasd5912",
+      "thumbnails": [
+        {
+          "url": "https://i.ytimg.com/vi/o-CET6B4FGM/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBCLOdAaNI0n7DNSKrZu4VjKqqIaA",
+          "height": 270,
+          "width": 480
+        }
+      ],
+      "timestamp": null,
+      "release_timestamp": null,
+      "availability": null,
+      "view_count": 40232,
+      "live_status": null,
+      "channel_is_verified": null,
+      "__x_forwarded_for_ip": null
+    }
   ],
-  "audioFilters": {
-    "gain": 1.2,
-    "bass": 0,
-    "mid": -5,
-    "treble": 12
+  "webpage_url": "ytsearch1:Himnario Adventista ¡Cristo Prá Mim!",
+  "original_url": "ytsearch1:Himnario Adventista ¡Cristo Prá Mim!",
+  "webpage_url_basename": "Himnario Adventista ¡Cristo Prá Mim!",
+  "webpage_url_domain": null,
+  "extractor": "youtube:search",
+  "extractor_key": "YoutubeSearch",
+  "release_year": null,
+  "playlist_count": 1,
+  "epoch": 1784755082,
+  "__files_to_move": {},
+  "_version": {
+    "version": "2026.07.04",
+    "current_git_head": null,
+    "release_git_head": "997fa140840a08df3938b40da470c78049fef1f6",
+    "repository": "yt-dlp/yt-dlp"
   },
-  "introducao": 0
+  "videos": [
+    {
+      "url": "https://www.youtube.com/watch?v=o-CET6B4FGM",
+      "title": "Hinário Adventista 93 Precioso é Jesus para Mim"
+    }
+  ]
 }

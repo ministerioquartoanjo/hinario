@@ -1,38 +1,63 @@
 {
-  "title": "127 - ¡Ay! Qué hermosos himnos",
-  "author": "William Orcutt Cushing George Frederick Root",
-  "speed": 1,
-  "verses": [
-    [
-      "1. ¡Oh! ¡qué hermosos himnos cantan en los cielos!",
-      "¡El hijo malo ha vuelto a casa!",
-      "Mira a lo lejos el Padre ya abraza",
-      "Este hijo que tanto amó."
-    ],
-    [
-      "2. ¡Oh! ¡Qué hermosos himnos cantan en los cielos!",
-      "¡Porque ha convertido a un pecador!",
-      "Alma rebelde, convertida a Dios,",
-      "Deja el mundo y vuélvete al Padre del amor."
-    ],
-    [
-      "3. ¡Oh! arrepentidos, celebrad hoy,",
-      "¡Como lo hacen los ángeles con fervor!",
-      "Vayan aprisa, ustedes, y anuncien,",
-      "Que un pecador ha sido redimido."
-    ]
+  "id": "Himnario Adventista ¡Ay! Qué hermosos himnos",
+  "title": "Himnario Adventista ¡Ay! Qué hermosos himnos",
+  "_type": "playlist",
+  "entries": [
+    {
+      "_type": "url",
+      "ie_key": "Youtube",
+      "id": "Ww-2OxfT6nU",
+      "url": "https://www.youtube.com/watch?v=Ww-2OxfT6nU",
+      "title": "HA62 | Himno 334 | Gran gozo hay en mi alma hoy",
+      "description": "Qué tal. Brilla el sol de gris en mi alma cada día voy feliz así su paso frente al contemplan cuando posó siento el. Y en mi alma y ...",
+      "duration": 157,
+      "channel_id": "UC2TQFq0vEPs1xn-T70FmoTQ",
+      "channel": "Himnario adventista 62",
+      "channel_url": "https://www.youtube.com/channel/UC2TQFq0vEPs1xn-T70FmoTQ",
+      "uploader": "Himnario adventista 62",
+      "uploader_id": "@himnarioHA62",
+      "uploader_url": "https://www.youtube.com/@himnarioHA62",
+      "thumbnails": [
+        {
+          "url": "https://i.ytimg.com/vi/Ww-2OxfT6nU/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDt6xE69If5hPcejcUmjX8AHCoWUQ",
+          "height": 202,
+          "width": 360
+        },
+        {
+          "url": "https://i.ytimg.com/vi/Ww-2OxfT6nU/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCR20IseSC-AQbWLdgkVeYRd3QPSA",
+          "height": 404,
+          "width": 720
+        }
+      ],
+      "timestamp": null,
+      "release_timestamp": null,
+      "availability": null,
+      "view_count": 6417523,
+      "live_status": null,
+      "channel_is_verified": null,
+      "__x_forwarded_for_ip": null
+    }
   ],
-  "coro": [
-    "¡Gloria, mil ángeles cantan allí!",
-    "¡Gloria, óiganla, las arpas ahora!",
-    "Es el coro santo dando su alabanza,",
-    "Porque se convirtió pecador."
-  ],
-  "audioFilters": {
-    "gain": 1.2,
-    "bass": 0,
-    "mid": -5,
-    "treble": 12
+  "webpage_url": "ytsearch1:Himnario Adventista ¡Ay! Qué hermosos himnos",
+  "original_url": "ytsearch1:Himnario Adventista ¡Ay! Qué hermosos himnos",
+  "webpage_url_basename": "Himnario Adventista ¡Ay! Qué hermosos himnos",
+  "webpage_url_domain": null,
+  "extractor": "youtube:search",
+  "extractor_key": "YoutubeSearch",
+  "release_year": null,
+  "playlist_count": 1,
+  "epoch": 1784755239,
+  "__files_to_move": {},
+  "_version": {
+    "version": "2026.07.04",
+    "current_git_head": null,
+    "release_git_head": "997fa140840a08df3938b40da470c78049fef1f6",
+    "repository": "yt-dlp/yt-dlp"
   },
-  "introducao": 0
+  "videos": [
+    {
+      "url": "https://www.youtube.com/watch?v=Ww-2OxfT6nU",
+      "title": "HA62 | Himno 334 | Gran gozo hay en mi alma hoy"
+    }
+  ]
 }

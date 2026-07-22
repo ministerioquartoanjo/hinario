@@ -50,5 +50,11 @@
     "mid": -5,
     "treble": 12
   },
-  "introducao": 0
+  "introducao": 0,
+  "videos": [
+    {
+      "url": "https://www.youtube.com/watch?v=sQlpUUSCcQY",
+      "title": "Hino 277 - Bem-Aventurança"
+    }
+  ]
 }

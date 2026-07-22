@@ -38,5 +38,11 @@
     "mid": -5,
     "treble": 12
   },
-  "introducao": 0
+  "introducao": 0,
+  "videos": [
+    {
+      "url": "https://www.youtube.com/watch?v=8aj1y2jy3k8",
+      "title": "Hinário Adventista 406 - EM MIM VEM HABITAR"
+    }
+  ]
 }

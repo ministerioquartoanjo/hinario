@@ -95,6 +95,7 @@ export const en = {
     language: 'Language',
     interfaceLanguage: 'Interface Language',
     hymnLanguage: 'Hymn Language',
+    introPreview: 'Preview Lyrics (s)',
     selectLanguage: 'Select language',
     remoteControlTitle: 'Remote Control - Hymnal MQAAF',
     remoteControl: 'Remote Control',

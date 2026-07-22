@@ -1,42 +1,63 @@
 {
-  "title": "92 - Jesús, eres bueno",
-  "author": "Joel Carlson Wendelborg",
-  "speed": 1,
-  "verses": [
-    [
-      "1. Jesús mío, Tú eres bueno;",
-      "¡Tú lo eres todo para mí!",
-      "Estabas muerto, pero vives en mí;",
-      "¡Tú mereces alabanza, oh Cordero de Dios!",
-      "¡Tú eres todo, sí, todo para mí!"
-    ],
-    [
-      "2. Quiero alabarte,",
-      "Porque Tú eres Rey sobre reyes;",
-      "Tú lo eres todo, pero yo nada;",
-      "Llena mi corazón de ternura y paz;",
-      "Honor y gloria eterna te doy."
-    ],
-    [
-      "3. Tu nombre es amor,",
-      "Porque tú me amas,",
-      "Y quiero caminar en este amor;",
-      "Estoy triunfante, confiando en Ti,",
-      "Jesús mío, gran Consolador."
-    ],
-    [
-      "4. Oh Ungido de Dios,",
-      "Traes paz y perdón;",
-      "Salvación, vida, tienes para Tuya;",
-      "¡Qué mensaje del cielo y transformación,",
-      "Enviado desde el trono de Dios!"
-    ]
+  "id": "Himnario Adventista Jesús, eres bueno",
+  "title": "Himnario Adventista Jesús, eres bueno",
+  "_type": "playlist",
+  "entries": [
+    {
+      "_type": "url",
+      "ie_key": "Youtube",
+      "id": "XnVKnAQ4IlA",
+      "url": "https://www.youtube.com/watch?v=XnVKnAQ4IlA",
+      "title": "Tan bueno es Dios - Himno 54 | Himnario Adventista Nuevo",
+      "description": "Tan bueno es Dios - Himno 54 | Himnario Adventista Nuevo.",
+      "duration": 71,
+      "channel_id": "UCQueHIEoaEN0Rr_kyy4BWNw",
+      "channel": "Himnario Adventista",
+      "channel_url": "https://www.youtube.com/channel/UCQueHIEoaEN0Rr_kyy4BWNw",
+      "uploader": "Himnario Adventista",
+      "uploader_id": "@himnarioadventista8688",
+      "uploader_url": "https://www.youtube.com/@himnarioadventista8688",
+      "thumbnails": [
+        {
+          "url": "https://i.ytimg.com/vi/XnVKnAQ4IlA/hq720.jpg?sqp=-oaymwE2COgCEMoBSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgBvgeAAtAFigIMCAAQARgWIFMofzAP&rs=AOn4CLBfhKfKQ2UJharj90DvYcvY2BC5xw",
+          "height": 202,
+          "width": 360
+        },
+        {
+          "url": "https://i.ytimg.com/vi/XnVKnAQ4IlA/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgBvgeAAtAFigIMCAAQARgWIFMofzAP&rs=AOn4CLCmZNzM1KTTgT-4i2yeR5uD74Q0Vw",
+          "height": 404,
+          "width": 720
+        }
+      ],
+      "timestamp": null,
+      "release_timestamp": null,
+      "availability": null,
+      "view_count": 8349,
+      "live_status": null,
+      "channel_is_verified": null,
+      "__x_forwarded_for_ip": null
+    }
   ],
-  "audioFilters": {
-    "gain": 1.2,
-    "bass": 0,
-    "mid": -5,
-    "treble": 12
+  "webpage_url": "ytsearch1:Himnario Adventista Jesús, eres bueno",
+  "original_url": "ytsearch1:Himnario Adventista Jesús, eres bueno",
+  "webpage_url_basename": "Himnario Adventista Jesús, eres bueno",
+  "webpage_url_domain": null,
+  "extractor": "youtube:search",
+  "extractor_key": "YoutubeSearch",
+  "release_year": null,
+  "playlist_count": 1,
+  "epoch": 1784755168,
+  "__files_to_move": {},
+  "_version": {
+    "version": "2026.07.04",
+    "current_git_head": null,
+    "release_git_head": "997fa140840a08df3938b40da470c78049fef1f6",
+    "repository": "yt-dlp/yt-dlp"
   },
-  "introducao": 0
+  "videos": [
+    {
+      "url": "https://www.youtube.com/watch?v=XnVKnAQ4IlA",
+      "title": "Tan bueno es Dios - Himno 54 | Himnario Adventista Nuevo"
+    }
+  ]
 }

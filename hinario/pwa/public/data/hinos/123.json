@@ -35,5 +35,11 @@
     "mid": -5,
     "treble": 12
   },
-  "introducao": 0
+  "introducao": 0,
+  "videos": [
+    {
+      "url": "https://www.youtube.com/watch?v=uZ2pD2W0DXM",
+      "title": "Novo Hinário Adventista • Hino 465 • O Dia Não Sei • (Lyrics)"
+    }
+  ]
 }

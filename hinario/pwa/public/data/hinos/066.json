@@ -34,5 +34,11 @@
     "mid": -5,
     "treble": 12
   },
-  "introducao": 0
+  "introducao": 0,
+  "videos": [
+    {
+      "url": "https://www.youtube.com/watch?v=pM9ncPOJzE8",
+      "title": "Hinário Adventista 261 - FÉ É A VITÓRIA"
+    }
+  ]
 }

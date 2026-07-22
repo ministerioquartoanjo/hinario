@@ -1,39 +1,58 @@
 {
-  "title": "139 - Al cielo por Jesús iré",
-  "author": "Jessie Brown Pounds Charles Hutchison Gabriel",
-  "speed": 1,
-  "verses": [
-    [
-      "1. Fue Jesús quien abrió el camino al cielo",
-      "No encontraré otro.",
-      "Nunca entraré en la mansión de la luz",
-      "Si no es a través de la cruz."
-    ],
-    [
-      "2. Seguramente iré por el camino de la cruz,",
-      "Con resolución de caminar.",
-      "Es mi deseo disfrutar en el cielo,",
-      "Mi herencia que Cristo dio."
-    ],
-    [
-      "3. He dejado los malos caminos del mundo,",
-      "Nunca los seguiré;",
-      "Con Jesús, voy, llevo mi cruz,",
-      "Por el camino que lleva al cielo."
-    ]
+  "id": "Himnario Adventista Al cielo por Jesús iré",
+  "title": "Himnario Adventista Al cielo por Jesús iré",
+  "_type": "playlist",
+  "entries": [
+    {
+      "_type": "url",
+      "ie_key": "Youtube",
+      "id": "1VIDNLkBnLY",
+      "url": "https://www.youtube.com/watch?v=1VIDNLkBnLY",
+      "title": "HA62 | Himno 285 | Perdido, fui a mi Jesús",
+      "description": "Este vídeo trata de: Salvación y redención.",
+      "duration": 178,
+      "channel_id": "UC2TQFq0vEPs1xn-T70FmoTQ",
+      "channel": "Himnario adventista 62",
+      "channel_url": "https://www.youtube.com/channel/UC2TQFq0vEPs1xn-T70FmoTQ",
+      "uploader": "Himnario adventista 62",
+      "uploader_id": "@himnarioHA62",
+      "uploader_url": "https://www.youtube.com/@himnarioHA62",
+      "thumbnails": [
+        {
+          "url": "https://i.ytimg.com/vi/1VIDNLkBnLY/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAPWZLMOjIuJ5LfRr6yR40wV3RUxw",
+          "height": 270,
+          "width": 480
+        }
+      ],
+      "timestamp": null,
+      "release_timestamp": null,
+      "availability": null,
+      "view_count": 10019339,
+      "live_status": null,
+      "channel_is_verified": null,
+      "__x_forwarded_for_ip": null
+    }
   ],
-  "coro": [
-    "Al cielo por Jesús iré;",
-    "Al cielo por Jesús iré.",
-    "Grande es mi placer",
-    "Ciertamente tendré:",
-    "Al cielo por la cruz iré."
-  ],
-  "audioFilters": {
-    "gain": 1.2,
-    "bass": 0,
-    "mid": -5,
-    "treble": 12
+  "webpage_url": "ytsearch1:Himnario Adventista Al cielo por Jesús iré",
+  "original_url": "ytsearch1:Himnario Adventista Al cielo por Jesús iré",
+  "webpage_url_basename": "Himnario Adventista Al cielo por Jesús iré",
+  "webpage_url_domain": null,
+  "extractor": "youtube:search",
+  "extractor_key": "YoutubeSearch",
+  "release_year": null,
+  "playlist_count": 1,
+  "epoch": 1784755262,
+  "__files_to_move": {},
+  "_version": {
+    "version": "2026.07.04",
+    "current_git_head": null,
+    "release_git_head": "997fa140840a08df3938b40da470c78049fef1f6",
+    "repository": "yt-dlp/yt-dlp"
   },
-  "introducao": 0
+  "videos": [
+    {
+      "url": "https://www.youtube.com/watch?v=1VIDNLkBnLY",
+      "title": "HA62 | Himno 285 | Perdido, fui a mi Jesús"
+    }
+  ]
 }

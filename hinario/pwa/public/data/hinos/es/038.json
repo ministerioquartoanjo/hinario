@@ -1,32 +1,58 @@
 {
-  "title": "38 - Contentamiento",
-  "author": "Jane Catherine Bonar Richard Holden",
-  "speed": 1,
-  "verses": [
-    [
-      "1. Ya soy feliz: ¡tengo a Jesús!",
-      "Con alegría voy: ¡tengo a Jesús!",
-      "Alegría que trae el mundo, muy pronto se disuelve:",
-      "¡Tengo perfecta paz, paz en Jesús!"
-    ],
-    [
-      "2. ¡Puedo envejecer, nunca Jesús!",
-      "¡Puedo volverme pobre, nunca Jesús!",
-      "Todo me abastecerá, siempre me valdrá,",
-      "Nada me faltará, teniendo a Jesús."
-    ],
-    [
-      "3. ¡Todo terminará aquí, menos Jesús!",
-      "Cuando llegue el Juez: ¡es mi Jesús!",
-      "Estaré muy agradecido cuando mi Rey baje.",
-      "Por supuesto que dirá: \"¡Soy Jesús!\""
-    ]
+  "id": "Himnario Adventista Contentamiento",
+  "title": "Himnario Adventista Contentamiento",
+  "_type": "playlist",
+  "entries": [
+    {
+      "_type": "url",
+      "ie_key": "Youtube",
+      "id": "WPZ0kNoGUhI",
+      "url": "https://www.youtube.com/watch?v=WPZ0kNoGUhI",
+      "title": "Himno 235 La razón de vivir Nuevo Himnario Adventista",
+      "description": "Himno 235 La razón de vivir Nuevo Himnario Adventista.",
+      "duration": 170,
+      "channel_id": "UCUXPcSw5E2t1PGBfLBG44HA",
+      "channel": "Compartiendo Esperanza",
+      "channel_url": "https://www.youtube.com/channel/UCUXPcSw5E2t1PGBfLBG44HA",
+      "uploader": "Compartiendo Esperanza",
+      "uploader_id": "@CompartiendoEsperanza",
+      "uploader_url": "https://www.youtube.com/@CompartiendoEsperanza",
+      "thumbnails": [
+        {
+          "url": "https://i.ytimg.com/vi/WPZ0kNoGUhI/hqdefault.jpg?sqp=-oaymwE2COADEI4CSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gSAAuADigIMCAAQARhyIFcoOjAP&rs=AOn4CLDW-igUHccubLWp7fNuMT8I7PLxVg",
+          "height": 270,
+          "width": 480
+        }
+      ],
+      "timestamp": null,
+      "release_timestamp": null,
+      "availability": null,
+      "view_count": 1420925,
+      "live_status": null,
+      "channel_is_verified": null,
+      "__x_forwarded_for_ip": null
+    }
   ],
-  "audioFilters": {
-    "gain": 1.2,
-    "bass": 0,
-    "mid": -5,
-    "treble": 12
+  "webpage_url": "ytsearch1:Himnario Adventista Contentamiento",
+  "original_url": "ytsearch1:Himnario Adventista Contentamiento",
+  "webpage_url_basename": "Himnario Adventista Contentamiento",
+  "webpage_url_domain": null,
+  "extractor": "youtube:search",
+  "extractor_key": "YoutubeSearch",
+  "release_year": null,
+  "playlist_count": 1,
+  "epoch": 1784755067,
+  "__files_to_move": {},
+  "_version": {
+    "version": "2026.07.04",
+    "current_git_head": null,
+    "release_git_head": "997fa140840a08df3938b40da470c78049fef1f6",
+    "repository": "yt-dlp/yt-dlp"
   },
-  "introducao": 0
+  "videos": [
+    {
+      "url": "https://www.youtube.com/watch?v=WPZ0kNoGUhI",
+      "title": "Himno 235 La razón de vivir Nuevo Himnario Adventista"
+    }
+  ]
 }

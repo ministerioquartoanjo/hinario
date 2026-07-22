@@ -34,5 +34,11 @@
     "mid": -5,
     "treble": 12
   },
-  "introducao": 0
+  "introducao": 0,
+  "videos": [
+    {
+      "url": "https://www.youtube.com/watch?v=Wa4xD5z63gQ",
+      "title": "Hinário Adventista 537 - CRISTO SALVA O PECADOR"
+    }
+  ]
 }

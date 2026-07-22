@@ -1,53 +1,63 @@
 {
-  "title": "63 - Habla del Amor de Cristo",
-  "author": "Joel Carlson (K. E. S.)",
-  "speed": 1,
-  "verses": [
-    [
-      "1. Habla del amor de Cristo",
-      "Al pecador triste;",
-      "Amor por todos visto",
-      "En la cruz del Redentor.",
-      "Canta con alegría",
-      "La paz que viene del cielo;",
-      "Alza tu voz",
-      "En gloria a Dios."
-    ],
-    [
-      "2. Por los afligidos, cantad,",
-      "Las bendiciones que hay en Dios;",
-      "Desde la cruz se levanta un estandarte",
-      "Porque nos da valor.",
-      "Cantad por los perdidos",
-      "La gracia de Jesús;",
-      "Su sangre ya derramada,",
-      "Que fluye de la cruz!"
-    ],
-    [
-      "3. Canta con esperanza,",
-      "En la oscuridad también,",
-      "Canta con confianza,",
-      "Hay vida más allá;",
-      "Canta al amanecer,",
-      "Y cuando llega la noche;",
-      "En Cristo, la armonía",
-      "¡Con Dios se obtiene!"
-    ]
+  "id": "Himnario Adventista Habla del Amor de Cristo",
+  "title": "Himnario Adventista Habla del Amor de Cristo",
+  "_type": "playlist",
+  "entries": [
+    {
+      "_type": "url",
+      "ie_key": "Youtube",
+      "id": "z2hRKMUgmUc",
+      "url": "https://www.youtube.com/watch?v=z2hRKMUgmUc",
+      "title": "HIMNO #297 YO QUSIERA HABLARTE DEL AMOR DE CRISTO",
+      "description": "Estos cantos pertenecen al Himnario Evangélico Presbiteriano “Sólo a Dios la gloria” © Iglesia Nacional Presbiteriana de México, ...",
+      "duration": 154,
+      "channel_id": "UCMNJPxKEhG9jL_E3CVdPGcg",
+      "channel": "Himnos Presbiterianos",
+      "channel_url": "https://www.youtube.com/channel/UCMNJPxKEhG9jL_E3CVdPGcg",
+      "uploader": "Himnos Presbiterianos",
+      "uploader_id": "@himnospresbiterianos7919",
+      "uploader_url": "https://www.youtube.com/@himnospresbiterianos7919",
+      "thumbnails": [
+        {
+          "url": "https://i.ytimg.com/vi/z2hRKMUgmUc/hq720.jpg?sqp=-oaymwE2COgCEMoBSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhoIGgoaDAP&rs=AOn4CLDjpMYNk5n8xAScWBISqqEQS2PPYQ",
+          "height": 202,
+          "width": 360
+        },
+        {
+          "url": "https://i.ytimg.com/vi/z2hRKMUgmUc/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhoIGgoaDAP&rs=AOn4CLAQCUIuEY9fs89066cgwR3FtS5B1g",
+          "height": 404,
+          "width": 720
+        }
+      ],
+      "timestamp": null,
+      "release_timestamp": null,
+      "availability": null,
+      "view_count": 6177,
+      "live_status": null,
+      "channel_is_verified": null,
+      "__x_forwarded_for_ip": null
+    }
   ],
-  "coro": [
-    "Cristo en la cruz nos ganó la salvación eterna.",
-    "Con Su sangre nos lavó",
-    "El Rey de ¡redención!",
-    "En el templo, el velo se rasgó;",
-    "Jesús abrió el camino;",
-    "Inaugurado en la cruz,",
-    "¡Al cielo de luz!"
-  ],
-  "audioFilters": {
-    "gain": 1.2,
-    "bass": 0,
-    "mid": -5,
-    "treble": 12
+  "webpage_url": "ytsearch1:Himnario Adventista Habla del Amor de Cristo",
+  "original_url": "ytsearch1:Himnario Adventista Habla del Amor de Cristo",
+  "webpage_url_basename": "Himnario Adventista Habla del Amor de Cristo",
+  "webpage_url_domain": null,
+  "extractor": "youtube:search",
+  "extractor_key": "YoutubeSearch",
+  "release_year": null,
+  "playlist_count": 1,
+  "epoch": 1784755113,
+  "__files_to_move": {},
+  "_version": {
+    "version": "2026.07.04",
+    "current_git_head": null,
+    "release_git_head": "997fa140840a08df3938b40da470c78049fef1f6",
+    "repository": "yt-dlp/yt-dlp"
   },
-  "introducao": 0
+  "videos": [
+    {
+      "url": "https://www.youtube.com/watch?v=z2hRKMUgmUc",
+      "title": "HIMNO #297 YO QUSIERA HABLARTE DEL AMOR DE CRISTO"
+    }
+  ]
 }

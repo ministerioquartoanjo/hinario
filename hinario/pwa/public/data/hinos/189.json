@@ -27,5 +27,11 @@
     "mid": -5,
     "treble": 12
   },
-  "introducao": 0
+  "introducao": 0,
+  "videos": [
+    {
+      "url": "https://www.youtube.com/watch?v=NVw_j0O_oW4",
+      "title": "Hinário Adventista-  167 Vem a Cristo"
+    }
+  ]
 }

@@ -37,5 +37,11 @@
     "mid": -5,
     "treble": 12
   },
-  "introducao": 0
+  "introducao": 0,
+  "videos": [
+    {
+      "url": "https://www.youtube.com/watch?v=EUHb7-depCY",
+      "title": "Novo Hinário Adventista • Hino 61 • Vós Criaturas do Senhor • (Lyrics)"
+    }
+  ]
 }

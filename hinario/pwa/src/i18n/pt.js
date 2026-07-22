@@ -95,6 +95,7 @@ export const pt = {
     language: 'Idioma',
     interfaceLanguage: 'Idioma da Interface',
     hymnLanguage: 'Idioma dos Hinos',
+    introPreview: 'Antecipar Letra (s)',
     selectLanguage: 'Selecionar idioma',
     remoteControlTitle: 'Controle Remoto - Hinário MQAAF',
     remoteControl: 'Controle Remoto',
