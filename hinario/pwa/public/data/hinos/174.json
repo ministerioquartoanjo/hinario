@@ -43,8 +43,16 @@
   "introducao": 0,
   "videos": [
     {
+      "url": "https://www.youtube.com/watch?v=IMJRhe3K1EA",
+      "title": "Novo Hinário Adventista • Hino 123 • Seu Sangue Tem Poder (Lyrics)"
+    },
+    {
       "url": "https://www.youtube.com/watch?v=OqNtVUF4-Pw",
       "title": "Hinário Adventista 206 - SEU SANGUE TEM PODER"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=A0t-b9FPF80",
+      "title": "SEU SANGUE TEM PODER  | Hinário Adventista / Hino IASD 206  | MENOS UM"
     }
   ]
 }

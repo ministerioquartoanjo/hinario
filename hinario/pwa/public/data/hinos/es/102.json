@@ -56,8 +56,16 @@
   },
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=irnyqGMdq2w",
-      "title": "Una hora de Música Adventista  - Mensaje TV"
+      "url": "https://www.youtube.com/watch?v=VWEtaj6QVFc",
+      "title": "Himnario Adventista para Jóvenes 330 - Vamos a dar el mensaje"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=xh4I_CjVA34",
+      "title": "Jorge Otamendi - Mensaje al Mundo (letra en la pantalla)"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=gU8PrUvxksE",
+      "title": "Un mensaje daremos al mundo"
     }
   ]
 }

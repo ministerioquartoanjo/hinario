@@ -45,8 +45,16 @@
   "introducao": 0,
   "videos": [
     {
+      "url": "https://www.youtube.com/watch?v=YulJYb0Wsak",
+      "title": "HCC- Instrumental- Hino 513 - Ó Senhor,nos alegramos"
+    },
+    {
       "url": "https://www.youtube.com/watch?v=JfuJyNIsZ3Q",
       "title": "Ó Senhor, nos alegramos - HCC 513 (com introdução)"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=MHnKCZWltbY",
+      "title": "HCC HINO  513 Ó SENHOR,NOS ALEGRAMOS"
     }
   ]
 }

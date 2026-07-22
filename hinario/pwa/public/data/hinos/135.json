@@ -35,8 +35,16 @@
   "introducao": 0,
   "videos": [
     {
+      "url": "https://www.youtube.com/watch?v=ZzFbbopH8Vo",
+      "title": "Novo Hinário Adventista • Hino 228 • Onde Quer Que Seja • (Lyrics)"
+    },
+    {
       "url": "https://www.youtube.com/watch?v=-BTwIgoZ2GI",
       "title": "Hinário Adventista 292 - ONDE QUER QUE SEJA"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=0VxbY4wboBk",
+      "title": "Hinário Adventista • Hino 292 - Onde Quer Que Seja"
     }
   ]
 }

@@ -7,7 +7,7 @@
     "dev": "vite --force",
     "build": "vite build",
     "preview": "vite preview",
-    "deploy": "npm run build && wrangler pages deploy dist --project-name=hinariopwa --branch=production"
+    "deploy": "npm run build && CLOUDFLARE_ACCOUNT_ID=a7c1f2db49b4564b4a3a6faafde08a6f wrangler pages deploy dist --project-name=hinariopwa --branch=production"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.24",

@@ -42,8 +42,16 @@
   "introducao": 0,
   "videos": [
     {
+      "url": "https://www.youtube.com/watch?v=J-LrXdce3BQ",
+      "title": "Novo Hinário Adventista • Hino 151 • Amor Glorioso • (Lyrics)"
+    },
+    {
       "url": "https://www.youtube.com/watch?v=zICggoZHLpU",
       "title": "Hinário Adventista 178 - AMOR SEM IGUAL"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=U5lMYvaoBaE",
+      "title": "Hinário Adventista - 113 Amor Glorioso"
     }
   ]
 }

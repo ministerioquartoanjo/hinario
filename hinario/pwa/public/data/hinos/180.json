@@ -39,8 +39,16 @@
   "introducao": 0,
   "videos": [
     {
+      "url": "https://www.youtube.com/watch?v=QIqkKz8WInQ",
+      "title": "ARAUTOS DO REI - TENHO PAZ (LETRA)"
+    },
+    {
       "url": "https://www.youtube.com/watch?v=lXuRpOU97Ng",
       "title": "ARAUTOS DO REI - TENHO PAZ"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=dFXO-GiubAg",
+      "title": "Tenho Paz - Arautos do Rei"
     }
   ]
 }

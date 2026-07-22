@@ -44,8 +44,16 @@
   "introducao": 0,
   "videos": [
     {
+      "url": "https://www.youtube.com/watch?v=UMLNKf6kctg",
+      "title": "HCC Instrumental/Hino 118 São de Jesus as Histórias"
+    },
+    {
       "url": "https://www.youtube.com/watch?v=pcShGyOHlig",
       "title": "Novo Hinário Adventista • Hino 98 • Conta-me a História de Cristo • (Lyrics)"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=5Kq0hIht7i4",
+      "title": "Só Jesus Cristo Salva - 542 HCC (M. Lobo/W. Kaschel/N. Nunes) - Ministério de Adoração SIB"
     }
   ]
 }

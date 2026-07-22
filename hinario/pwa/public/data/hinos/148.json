@@ -43,8 +43,16 @@
   "introducao": 0,
   "videos": [
     {
+      "url": "https://www.youtube.com/watch?v=gwi_gzBwl98",
+      "title": "Novo Hinário Adventista • Hino 62 • Quão Grande És tu • (Lyrics)"
+    },
+    {
       "url": "https://www.youtube.com/watch?v=VRMUc2pdGag",
       "title": "Hinário Adventista 34 - QUÃO GRANDE ÉS TU"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=83icUrQbSlU",
+      "title": "Hinário Adventista - 034 Quão Grande és Tu"
     }
   ]
 }

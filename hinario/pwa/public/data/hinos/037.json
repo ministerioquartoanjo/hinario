@@ -40,11 +40,19 @@
     "mid": -5,
     "treble": 12
   },
-  "introducao": 0,
+  "introducao": 12,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=st_OeSi5H_o",
-      "title": "Hinário Adventista 244 - CONTA AS BENÇÃOS"
+      "url": "https://www.youtube.com/watch?v=ai_AQ1CwA2A",
+      "title": "Novo Hinário Adventista • Hino 307 • Conta as Bênçãos • (Lyrics)"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=sFEx7-tQbL0",
+      "title": "Conta as Bênçãos (HCC 444) - Grupo Louvor"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=IuNJ9-_zF74",
+      "title": "444 HCC - Conta as bençãos"
     }
   ]
 }

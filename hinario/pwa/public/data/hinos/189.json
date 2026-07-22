@@ -30,8 +30,16 @@
   "introducao": 0,
   "videos": [
     {
+      "url": "https://www.youtube.com/watch?v=lEvc-Vmcyyc",
+      "title": "Novo Hinário Adventista • Hino 446 • Cristo Vem • (Lyrics)"
+    },
+    {
       "url": "https://www.youtube.com/watch?v=NVw_j0O_oW4",
       "title": "Hinário Adventista-  167 Vem a Cristo"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=srGJOoEIxLY",
+      "title": "Hinário Adventista 167 - VEM A CRISTO"
     }
   ]
 }

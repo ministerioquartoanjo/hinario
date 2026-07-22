@@ -51,8 +51,16 @@
   },
   "videos": [
     {
+      "url": "https://www.youtube.com/watch?v=1lnTqlZl9gY",
+      "title": "180 - Sí, lo veremos | Himnario Adventista | Letra Oficial | 4K60fps"
+    },
+    {
       "url": "https://www.youtube.com/watch?v=WfTh_gT5UJE",
       "title": "Himno 180 Sí, lo veremos Nuevo Himnario Adventista"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=_GM8MrzQYe4",
+      "title": "HIMNO 328 - NOS VEREMOS JUNTO AL RÍO | Himnario Adventista Nuevo"
     }
   ]
 }

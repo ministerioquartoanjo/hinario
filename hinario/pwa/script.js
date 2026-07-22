@@ -501,6 +501,8 @@ const setupEvents = () => {
 
     $('#btn-prev').on('click', () => { stopAutoScroll(); prevSlide(); });
     $('#btn-next').on('click', () => { stopAutoScroll(); nextSlide(); });
+    $('#btn-prev-hino-main').on('click', () => { stopAutoScroll(); prevHino(); });
+    $('#btn-next-hino-main').on('click', () => { stopAutoScroll(); nextHino(); });
     $('#btn-random-hino').on('click', () => {
         if (!state.hinos.length) return;
         const randIdx = Math.floor(Math.random() * state.hinos.length);
@@ -1276,6 +1278,8 @@ uiUtils.updateCacheDisplay(cachedJsonCount, cachedMp3Count);
     setupBroadcastListeners({
         prevSlide,
         nextSlide,
+        prevHino,
+        nextHino,
         scrollUp,
         scrollDown,
         toggleFullscreen: () => {

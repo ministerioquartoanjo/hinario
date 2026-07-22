@@ -8,3 +8,4 @@ pages_build_output_dir = "dist"
 # Production environment - custom domain
 [env.production]
 name = "hinariopwa"
+

@@ -47,8 +47,16 @@
   "introducao": 0,
   "videos": [
     {
+      "url": "https://www.youtube.com/watch?v=bzXmFmM4CTM",
+      "title": "Novo Hinário Adventista • Hino 302 • Tudo Entregarei • (Lyrics)"
+    },
+    {
       "url": "https://www.youtube.com/watch?v=pV-_F_vmJOE",
       "title": "Hinário Adventista 295 - TUDO ENTREGAREI"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=KU0FZ3rPST8",
+      "title": "Hino 302 - Tudo Entregarei"
     }
   ]
 }

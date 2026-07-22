@@ -56,8 +56,16 @@
   },
   "videos": [
     {
+      "url": "https://www.youtube.com/watch?v=5W8jwuvl1zg",
+      "title": "Himno Adventista 408 - Cristo me ayuda por él a vivir"
+    },
+    {
       "url": "https://www.youtube.com/watch?v=G34NwqgZMp0",
       "title": "Hinário Adventista 420 - OH! QUE AMIGO EM CRISTO TEMOS!"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=2jxf2XvM7u4",
+      "title": "Hinário Adventista 392 - BEM JUNTO A CRISTO"
     }
   ]
 }

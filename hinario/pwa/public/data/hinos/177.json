@@ -42,8 +42,16 @@
   "introducao": 0,
   "videos": [
     {
+      "url": "https://www.youtube.com/watch?v=Xmna0YjSQ-s",
+      "title": "Novo Hinário Adventista • Hino 197 • Sou Feliz com Jesus • (Lyrics)"
+    },
+    {
       "url": "https://www.youtube.com/watch?v=YBpwVds6uyM",
       "title": "Hinário Adventista 230 - SOU FELIZ COM JESUS"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=aAY71QIUbxs",
+      "title": "SOU FELIZ COM JESUS | Hinário Adventista / Hino IASD 230 | MENOS UM"
     }
   ]
 }
