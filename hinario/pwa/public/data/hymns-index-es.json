@@ -1,0 +1,786 @@
+[
+  {
+    "numero": 1,
+    "titulo": "La Cena del Señor"
+  },
+  {
+    "numero": 2,
+    "titulo": "A Dios le dimos gloria"
+  },
+  {
+    "numero": 3,
+    "titulo": "La esperanza de la Iglesia"
+  },
+  {
+    "numero": 4,
+    "titulo": "La Ley de Mi Señor"
+  },
+  {
+    "numero": 5,
+    "titulo": "¡Aleluya! ¡Aleluya! Cantar himnos de agradecimiento"
+  },
+  {
+    "numero": 6,
+    "titulo": "¡La Mano en el Arado!"
+  },
+  {
+    "numero": 7,
+    "titulo": "El mejor regalo"
+  },
+  {
+    "numero": 8,
+    "titulo": "La Revelación de la Cruz"
+  },
+  {
+    "numero": 9,
+    "titulo": "Mi fe y mi amor"
+  },
+  {
+    "numero": 10,
+    "titulo": "La oveja perdida"
+  },
+  {
+    "numero": 11,
+    "titulo": "A ti sea consagrada mi vida"
+  },
+  {
+    "numero": 12,
+    "titulo": "Encontré a Jesús, Mi Salvador"
+  },
+  {
+    "numero": 13,
+    "titulo": "Despierta, despierta"
+  },
+  {
+    "numero": 14,
+    "titulo": "Adoración reconocida"
+  },
+  {
+    "numero": 15,
+    "titulo": "Anhelo una fe fuerte"
+  },
+  {
+    "numero": 16,
+    "titulo": "¡Aleluya! Ya creo"
+  },
+  {
+    "numero": 17,
+    "titulo": "Altamente proclaman los cielos"
+  },
+  {
+    "numero": 18,
+    "titulo": "Apunte a más que la nieve"
+  },
+  {
+    "numero": 19,
+    "titulo": "¡Amigo sin igual!"
+  },
+  {
+    "numero": 20,
+    "titulo": "El amor que gana"
+  },
+  {
+    "numero": 21,
+    "titulo": "Amor sin igual"
+  },
+  {
+    "numero": 22,
+    "titulo": "Anhelo un lugar de amor"
+  },
+  {
+    "numero": 23,
+    "titulo": "Alabado sea el Dios de Abraham"
+  },
+  {
+    "numero": 24,
+    "titulo": "Al ver la cruz"
+  },
+  {
+    "numero": 25,
+    "titulo": "Las Noticias del Evangelio"
+  },
+  {
+    "numero": 26,
+    "titulo": "Tal como soy"
+  },
+  {
+    "numero": 27,
+    "titulo": "¡Vivifícanos Señor!"
+  },
+  {
+    "numero": 28,
+    "titulo": "Bienaventuranza del creyente"
+  },
+  {
+    "numero": 29,
+    "titulo": "Justo al lado de Cristo"
+  },
+  {
+    "numero": 30,
+    "titulo": "Brilla en medio de tu vida"
+  },
+  {
+    "numero": 31,
+    "titulo": "Jesús regresará pronto"
+  },
+  {
+    "numero": 32,
+    "titulo": "Cada vez más puro"
+  },
+  {
+    "numero": 33,
+    "titulo": "Castillo fuerte"
+  },
+  {
+    "numero": 34,
+    "titulo": "Lluvia de bendiciones"
+  },
+  {
+    "numero": 35,
+    "titulo": "Con tu mano sosteniendo la mía con fuerza"
+  },
+  {
+    "numero": 36,
+    "titulo": "Qué triste es caminar en la oscuridad"
+  },
+  {
+    "numero": 37,
+    "titulo": "Cuenta tus Bendiciones"
+  },
+  {
+    "numero": 38,
+    "titulo": "Contentamiento"
+  },
+  {
+    "numero": 39,
+    "titulo": "Conversión"
+  },
+  {
+    "numero": 40,
+    "titulo": "Creer y observar"
+  },
+  {
+    "numero": 41,
+    "titulo": "Cristo está a la puerta"
+  },
+  {
+    "numero": 42,
+    "titulo": "Cristo lo es todo para mí"
+  },
+  {
+    "numero": 43,
+    "titulo": "Cristo me amó y me libró"
+  },
+  {
+    "numero": 44,
+    "titulo": "Cristo Mi Verdadero Amigo"
+  },
+  {
+    "numero": 45,
+    "titulo": "Cristo fue a prepararnos un lugar"
+  },
+  {
+    "numero": 46,
+    "titulo": "¡Cristo Prá Mim!"
+  },
+  {
+    "numero": 47,
+    "titulo": "Cristo salva al pecador"
+  },
+  {
+    "numero": 48,
+    "titulo": "La Fundación de la Iglesia"
+  },
+  {
+    "numero": 49,
+    "titulo": "Dame la Biblia"
+  },
+  {
+    "numero": 50,
+    "titulo": "De todo el mundo: ¡Aleluya!"
+  },
+  {
+    "numero": 51,
+    "titulo": "Deseo de Santidad"
+  },
+  {
+    "numero": 52,
+    "titulo": "Dios nos dio un mensaje santo"
+  },
+  {
+    "numero": 53,
+    "titulo": "Dios cuidará de ti"
+  },
+  {
+    "numero": 54,
+    "titulo": "Díselo a Cristo"
+  },
+  {
+    "numero": 55,
+    "titulo": "He aquí multitudes"
+  },
+  {
+    "numero": 56,
+    "titulo": "En oración ferviente"
+  },
+  {
+    "numero": 57,
+    "titulo": "En mí viene a morar"
+  },
+  {
+    "numero": 58,
+    "titulo": "Quiero hacer lo que Tú quieras, Señor"
+  },
+  {
+    "numero": 59,
+    "titulo": "Decidí seguirte"
+  },
+  {
+    "numero": 60,
+    "titulo": "Exultación del creyente"
+  },
+  {
+    "numero": 61,
+    "titulo": "Creo, sí"
+  },
+  {
+    "numero": 62,
+    "titulo": "Cara a cara"
+  },
+  {
+    "numero": 63,
+    "titulo": "Habla del Amor de Cristo"
+  },
+  {
+    "numero": 64,
+    "titulo": "Fe persistente"
+  },
+  {
+    "numero": 65,
+    "titulo": "Feliz el día"
+  },
+  {
+    "numero": 66,
+    "titulo": "La fe es victoria"
+  },
+  {
+    "numero": 67,
+    "titulo": "La lucha de Jesús ha terminado"
+  },
+  {
+    "numero": 68,
+    "titulo": "Firme en promesas"
+  },
+  {
+    "numero": 69,
+    "titulo": "Fortalece tu iglesia"
+  },
+  {
+    "numero": 70,
+    "titulo": "Eres la fuente de toda Bendición"
+  },
+  {
+    "numero": 71,
+    "titulo": "Gloria a Jesús"
+  },
+  {
+    "numero": 72,
+    "titulo": "Gloria al Salvador"
+  },
+  {
+    "numero": 73,
+    "titulo": "Gloria a Mi Jesús"
+  },
+  {
+    "numero": 74,
+    "titulo": "Gracias doy por mi vida"
+  },
+  {
+    "numero": 75,
+    "titulo": "Gran comandante"
+  },
+  {
+    "numero": 76,
+    "titulo": "Guía, oh Dios, mi vida"
+  },
+  {
+    "numero": 77,
+    "titulo": "Hay tales canciones en el cielo"
+  },
+  {
+    "numero": 78,
+    "titulo": "Hay trabajo listo"
+  },
+  {
+    "numero": 79,
+    "titulo": "Hay poder en la sangre de Jesús"
+  },
+  {
+    "numero": 80,
+    "titulo": "Hay un Camino Santo"
+  },
+  {
+    "numero": 81,
+    "titulo": "Hay un río cristalino"
+  },
+  {
+    "numero": 82,
+    "titulo": "Cosecharemos"
+  },
+  {
+    "numero": 83,
+    "titulo": "Heredero del Reino"
+  },
+  {
+    "numero": 84,
+    "titulo": "Historia de Cristo"
+  },
+  {
+    "numero": 85,
+    "titulo": "Importa renacido"
+  },
+  {
+    "numero": 86,
+    "titulo": "Gracia Infinita"
+  },
+  {
+    "numero": 87,
+    "titulo": "Se acabó el año viejo"
+  },
+  {
+    "numero": 88,
+    "titulo": "Jesús, el Buen Amigo"
+  },
+  {
+    "numero": 89,
+    "titulo": "Jerusalén Excelsa"
+  },
+  {
+    "numero": 90,
+    "titulo": "Jesús me guía"
+  },
+  {
+    "numero": 91,
+    "titulo": "Jesús, Pastor amado"
+  },
+  {
+    "numero": 92,
+    "titulo": "Jesús, eres bueno"
+  },
+  {
+    "numero": 93,
+    "titulo": "Jesús, siempre te amo"
+  },
+  {
+    "numero": 94,
+    "titulo": "Jesús el mejor amigo"
+  },
+  {
+    "numero": 95,
+    "titulo": "Alegres te adoramos"
+  },
+  {
+    "numero": 96,
+    "titulo": "Justificado"
+  },
+  {
+    "numero": 97,
+    "titulo": "Hermoso país"
+  },
+  {
+    "numero": 98,
+    "titulo": "Te alabamos, oh Dios"
+  },
+  {
+    "numero": 99,
+    "titulo": "Alabanza a Dios y a Jesús"
+  },
+  {
+    "numero": 100,
+    "titulo": "Más cerca quiero estar"
+  },
+  {
+    "numero": 101,
+    "titulo": "Marchai, Soldados de Cristo"
+  },
+  {
+    "numero": 102,
+    "titulo": "Mensaje al mundo"
+  },
+  {
+    "numero": 103,
+    "titulo": "Mi hogar, Jerusalén"
+  },
+  {
+    "numero": 104,
+    "titulo": "Mi Mejor Momento"
+  },
+  {
+    "numero": 105,
+    "titulo": "Mi pastor"
+  },
+  {
+    "numero": 106,
+    "titulo": "Mi Redentor"
+  },
+  {
+    "numero": 107,
+    "titulo": "Milicia de Jesús"
+  },
+  {
+    "numero": 108,
+    "titulo": "Mi entrega"
+  },
+  {
+    "numero": 109,
+    "titulo": "En la cruz morí por ti"
+  },
+  {
+    "numero": 110,
+    "titulo": "No te rindas"
+  },
+  {
+    "numero": 111,
+    "titulo": "No soy mío"
+  },
+  {
+    "numero": 112,
+    "titulo": "Buen nombre, dulce fe"
+  },
+  {
+    "numero": 113,
+    "titulo": "Nombre precioso"
+  },
+  {
+    "numero": 114,
+    "titulo": "Lo veremos"
+  },
+  {
+    "numero": 115,
+    "titulo": "Te adoramos"
+  },
+  {
+    "numero": 116,
+    "titulo": "El amable amigo"
+  },
+  {
+    "numero": 117,
+    "titulo": "La invitación de Cristo"
+  },
+  {
+    "numero": 118,
+    "titulo": "Descansa en Jesús"
+  },
+  {
+    "numero": 119,
+    "titulo": "¡Oh cristianos, adelante!"
+  },
+  {
+    "numero": 120,
+    "titulo": "Oh Dios del Amor"
+  },
+  {
+    "numero": 121,
+    "titulo": "Oh Dios Eterno, ven a concédeme"
+  },
+  {
+    "numero": 122,
+    "titulo": "El día del triunfo de Jesús"
+  },
+  {
+    "numero": 123,
+    "titulo": "El día que no lo sé"
+  },
+  {
+    "numero": 124,
+    "titulo": "El exilio"
+  },
+  {
+    "numero": 125,
+    "titulo": "El gran amor"
+  },
+  {
+    "numero": 126,
+    "titulo": "¡Ay! ¡Nunca se separe!"
+  },
+  {
+    "numero": 127,
+    "titulo": "¡Ay! Qué hermosos himnos"
+  },
+  {
+    "numero": 128,
+    "titulo": "El lugar de bendición y paz"
+  },
+  {
+    "numero": 129,
+    "titulo": "Oh Padre Eterno"
+  },
+  {
+    "numero": 130,
+    "titulo": "El secreto de vivir"
+  },
+  {
+    "numero": 131,
+    "titulo": "Oh Señor, nos regocijamos"
+  },
+  {
+    "numero": 132,
+    "titulo": "¡Ay! Qué gloria"
+  },
+  {
+    "numero": 133,
+    "titulo": "Donde quiera que vaya, iré"
+  },
+  {
+    "numero": 134,
+    "titulo": "Escucho el Clamor del Buen Pastor"
+  },
+  {
+    "numero": 135,
+    "titulo": "Dondequiera que esté"
+  },
+  {
+    "numero": 136,
+    "titulo": "Escúchanos Señor"
+  },
+  {
+    "numero": 137,
+    "titulo": "Escuché al Salvador decir"
+  },
+  {
+    "numero": 138,
+    "titulo": "Pan de Vida"
+  },
+  {
+    "numero": 139,
+    "titulo": "Al cielo por Jesús iré"
+  },
+  {
+    "numero": 140,
+    "titulo": "Pensando en Jesús"
+  },
+  {
+    "numero": 141,
+    "titulo": "Plena Gracia"
+  },
+  {
+    "numero": 142,
+    "titulo": "Por mis pecados sufrió"
+  },
+  {
+    "numero": 143,
+    "titulo": "Oración a Nuestro Dios"
+  },
+  {
+    "numero": 144,
+    "titulo": "Jesús es precioso para mí"
+  },
+  {
+    "numero": 145,
+    "titulo": "Listo para guardar"
+  },
+  {
+    "numero": 146,
+    "titulo": "¿Cuál es el adorno de esta vida?"
+  },
+  {
+    "numero": 147,
+    "titulo": "Cuando Dios llame allí estaré"
+  },
+  {
+    "numero": 148,
+    "titulo": "¿Qué tan genial eres?"
+  },
+  {
+    "numero": 149,
+    "titulo": "Qué gozo es creer en Cristo"
+  },
+  {
+    "numero": 150,
+    "titulo": "¿Qué dice la Biblia?"
+  },
+  {
+    "numero": 151,
+    "titulo": "¿Quién irá?"
+  },
+  {
+    "numero": 152,
+    "titulo": "¡Qué seguridad! Soy de Jesús"
+  },
+  {
+    "numero": 153,
+    "titulo": "Quiero estar al pie de la cruz"
+  },
+  {
+    "numero": 154,
+    "titulo": "Quien escuche la noticia"
+  },
+  {
+    "numero": 155,
+    "titulo": "Quiero ser un recipiente de bendición"
+  },
+  {
+    "numero": 156,
+    "titulo": "Quiero tener a Jesús conmigo"
+  },
+  {
+    "numero": 157,
+    "titulo": "El velo se rasgó"
+  },
+  {
+    "numero": 158,
+    "titulo": "Redimidos por la sangre de Cristo"
+  },
+  {
+    "numero": 159,
+    "titulo": "Roca eterna"
+  },
+  {
+    "numero": 160,
+    "titulo": "Sábado"
+  },
+  {
+    "numero": 161,
+    "titulo": "Salvador Bendito"
+  },
+  {
+    "numero": 162,
+    "titulo": "Salvada soy"
+  },
+  {
+    "numero": 163,
+    "titulo": "¡Santo! ¡Santo! ¡Santo!"
+  },
+  {
+    "numero": 164,
+    "titulo": "Satisfechos con Cristo"
+  },
+  {
+    "numero": 165,
+    "titulo": "Recuerdo anhelante"
+  },
+  {
+    "numero": 166,
+    "titulo": "Si Cristo va conmigo"
+  },
+  {
+    "numero": 167,
+    "titulo": "Si buscas a Jesús"
+  },
+  {
+    "numero": 168,
+    "titulo": "Siguiendo a Cristo"
+  },
+  {
+    "numero": 169,
+    "titulo": "Seguiré a Cristo"
+  },
+  {
+    "numero": 170,
+    "titulo": "Siempre alegre"
+  },
+  {
+    "numero": 171,
+    "titulo": "Siempre fiel"
+  },
+  {
+    "numero": 172,
+    "titulo": "Señor, Tu Divino Amor es Admirable"
+  },
+  {
+    "numero": 173,
+    "titulo": "¿Será por la mañana?"
+  },
+  {
+    "numero": 174,
+    "titulo": "Tu sangre tiene poder"
+  },
+  {
+    "numero": 175,
+    "titulo": "Sí, Cristo me ama"
+  },
+  {
+    "numero": 176,
+    "titulo": "Bajo sus alas"
+  },
+  {
+    "numero": 177,
+    "titulo": "Estoy feliz con Jesús"
+  },
+  {
+    "numero": 178,
+    "titulo": "Estoy muy agradecido por recordarlo"
+  },
+  {
+    "numero": 179,
+    "titulo": "Tu Precioso Nombre"
+  },
+  {
+    "numero": 180,
+    "titulo": "Tengo Paz en Mi Ser"
+  },
+  {
+    "numero": 181,
+    "titulo": "Tu Santo Amor, Jesús"
+  },
+  {
+    "numero": 182,
+    "titulo": "Triste y oscuro era mi vida"
+  },
+  {
+    "numero": 183,
+    "titulo": "Todo está bien"
+  },
+  {
+    "numero": 184,
+    "titulo": "Toma, oh Dios, mi corazón"
+  },
+  {
+    "numero": 185,
+    "titulo": "Lo entregaré todo"
+  },
+  {
+    "numero": 186,
+    "titulo": "Tú eres fiel, Señor"
+  },
+  {
+    "numero": 187,
+    "titulo": "Un estandarte real"
+  },
+  {
+    "numero": 188,
+    "titulo": "Ven entre nosotros a vivir"
+  },
+  {
+    "numero": 189,
+    "titulo": "Ven a Cristo"
+  },
+  {
+    "numero": 190,
+    "titulo": "Jesús vencedor viene"
+  },
+  {
+    "numero": 191,
+    "titulo": "Vengan muchachos"
+  },
+  {
+    "numero": 192,
+    "titulo": "Venid, Pueblo del Señor"
+  },
+  {
+    "numero": 193,
+    "titulo": "Victoria en Cristo"
+  },
+  {
+    "numero": 194,
+    "titulo": "Vitoria Deus me la da"
+  },
+  {
+    "numero": 195,
+    "titulo": "Vivifica Tu Iglesia"
+  },
+  {
+    "numero": 196,
+    "titulo": "Vosotros, criaturas del Señor"
+  }
+]

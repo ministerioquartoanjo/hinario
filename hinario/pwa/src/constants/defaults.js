@@ -36,6 +36,8 @@ export const INITIAL_STATE = {
         bgIndex: 0,
         customBackgrounds: [],
         bgColor: '#000000',
-        audioFilters: { ...DEFAULT_AUDIO_FILTERS }
+        audioFilters: { ...DEFAULT_AUDIO_FILTERS },
+        interfaceLanguage: 'pt',
+        hymnLanguage: 'pt'
     }
 };

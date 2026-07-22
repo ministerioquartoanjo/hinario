@@ -10,13 +10,14 @@ import { hinoRenderer } from './src/components/hinoRenderer.js';
 import { obsService } from './src/services/obsService.js';
 import { state } from './src/state.js';
 import { searchLogic } from './src/utils/searchLogic.js';
+import { applyTranslations, setInterfaceLanguage, setHymnLanguage, getInterfaceLanguage, getHymnLanguage, getHymnPathPrefix, t, LANGUAGES } from './src/utils/i18n.js';
 
 // --- Globals ---
 let BACKGROUNDS = [...DEFAULT_BACKGROUNDS];
 let countdownInterval = null;
 let cachedJsonCount = 0;
 let cachedMp3Count = 0;
-let cacheVersion = '1.0.1'; // Atualizado para forçar refresh dos hinos com vídeos
+let cacheVersion = '1.0.2'; // Atualizado para forçar refresh dos hinos com vídeos e índice ES
 const APP_VERSION = window.APP_VERSION || '2026.04.17.1';
 const fullscreenWarningTimeout = { current: null };
 
@@ -99,7 +100,13 @@ const loadSettings = () => {
     }
     
     BACKGROUNDS = [...DEFAULT_BACKGROUNDS, ...state.settings.customBackgrounds];
+
+    // Sincronizar idiomas com o sistema i18n
+    if (state.settings.interfaceLanguage) setInterfaceLanguage(state.settings.interfaceLanguage);
+    if (state.settings.hymnLanguage) setHymnLanguage(state.settings.hymnLanguage);
+
     applySettings();
+    applyTranslations();
     
     // Atualizar a lista de fundos customizados na UI se o elemento existir
     const $list = $('#custom-bg-list');
@@ -353,7 +360,7 @@ const selectHino = async (hinoOrIndex) => {
     if (!hino.loaded) {
         uiUtils.showDownloadStatus(true);
         const numStr = hino.numero.toString().padStart(3, '0');
-        const url = `data/hinos/${numStr}.json`;
+        const url = `${getHymnPathPrefix()}/${numStr}.json`;
         
         try {
             let res;
@@ -573,7 +580,7 @@ const setupEvents = () => {
 
     const player = document.getElementById('audio-player');
     $('#btn-play-pause, #btn-fs-play-pause').on('click', () => {
-        if (!state.currentHino) return alert("Selecione um hino primeiro.");
+        if (!state.currentHino) return alert(t('selectHinoFirst'));
         initAudio();
         player.paused ? player.play() : player.pause();
     });
@@ -616,18 +623,18 @@ const setupEvents = () => {
 
     // Gerenciamento de Vídeos
     $('#btn-add-video').on('click', () => {
-        if (!state.currentHino) return alert("Selecione um hino primeiro.");
+        if (!state.currentHino) return alert(t('selectHinoFirst'));
         $('#modal-add-video').removeClass('hidden');
     });
 
     $('#btn-save-video').on('click', () => {
         const url = $('#video-url-input').val().trim();
-        if (!url) return alert("Insira uma URL do YouTube.");
+        if (!url) return alert(t('addVideoUrlError'));
 
         const hinoNum = state.currentHino.numero;
         const videos = JSON.parse(localStorage.getItem(`videos_hino_${hinoNum}`) || '[]');
         
-        if (videos.some(v => v.url === url)) return alert("Este vídeo já foi adicionado.");
+        if (videos.some(v => v.url === url)) return alert(t('videoAlreadyAdded'));
 
         videos.push({ url, title: "Vídeo Personalizado" });
         localStorage.setItem(`videos_hino_${hinoNum}`, JSON.stringify(videos));
@@ -1034,7 +1041,7 @@ const setupEvents = () => {
         if ('serviceWorker' in navigator) {
             navigator.serviceWorker.ready.then(reg => {
                 reg.update();
-                alert('Verificando atualizações...');
+                alert(t('checkingUpdates'));
             });
         }
     });
@@ -1074,17 +1081,46 @@ const setupEvents = () => {
         stopAutoScroll(); // Parar rolagem automática
         nextSlide();
     });
+
+    // Seletores de idioma
+    $('#select-interface-language').val(getInterfaceLanguage()).on('change', function() {
+        const lang = $(this).val();
+        setInterfaceLanguage(lang);
+        state.settings.interfaceLanguage = lang;
+        saveSettings();
+        applyTranslations();
+    });
+
+    $('#select-hymn-language').val(getHymnLanguage()).on('change', async function() {
+        const lang = $(this).val();
+        setHymnLanguage(lang);
+        state.settings.hymnLanguage = lang;
+        saveSettings();
+
+        // Recarregar o índice no idioma selecionado
+        await hinoLoader.loadIndex(state, lang);
+        setupSearch();
+
+        // Se houver hino atual, recarregá-lo no novo idioma
+        if (state.currentHino) {
+            const current = state.currentHino;
+            current.loaded = false;
+            current.letras = [];
+            await selectHino(current.numero);
+        }
+    });
 };
 
 // --- Funções de Sincronização (JSON/MP3) ---
 const downloadJSONs = async () => {
     const total = 196;
     const cache = await caches.open('json-cache');
+    const prefix = getHymnPathPrefix();
     uiUtils.showDownloadStatus(true);
     
     for (let i = 1; i <= total; i++) {
         const numStr = i.toString().padStart(3, '0');
-        const url = `data/hinos/${numStr}.json`;
+        const url = `${prefix}/${numStr}.json`;
         try {
             const response = await fetch(url);
             if (response.ok) await cache.put(url, response.clone());
@@ -1094,7 +1130,7 @@ const downloadJSONs = async () => {
     
     await cacheService.updateCacheVersion();
     uiUtils.showDownloadStatus(false);
-    alert('Letras sincronizadas!');
+    alert(t('syncComplete'));
 };
 
 const downloadMP3s = async () => {
@@ -1155,20 +1191,20 @@ const downloadMP3s = async () => {
     uiUtils.showDownloadStatus(false);
     
     if (cachedMp3Count < total) {
-        alert(`Sincronização parcial: ${cachedMp3Count} de ${total} áudios baixados. Tente sincronizar novamente para completar.`);
+        alert(t('partialSync', { count: cachedMp3Count, total }));
     } else {
-        alert(`Sincronização completa! Todos os ${total} áudios estão no cache.`);
+        alert(t('fullSync', { total }));
     }
 };
 
 const handleDownload = async () => {
-    if (!state.currentHino) return alert("Selecione um hino.");
+    if (!state.currentHino) return alert(t('selectHinoForDownload'));
 };
 
 // --- Inicialização ---
 $(document).ready(() => {
 loadSettings();
-hinoLoader.loadIndex(state).then(() => setupSearch());
+hinoLoader.loadIndex(state, getHymnLanguage()).then(() => setupSearch());
 setupEvents();
 uiUtils.setupZoom(() => state.settings.isCompleto);
     
@@ -1389,7 +1425,7 @@ uiUtils.updateCacheDisplay(cachedJsonCount, cachedMp3Count);
         
         if (obsService.connected) {
             $obsIndicator.removeClass('bg-red-500').addClass('bg-green-500');
-            $obsStatusText.text('Conectado');
+            $obsStatusText.text(t('connected'));
             $btnObsConnect.addClass('hidden');
             $btnObsDisconnect.removeClass('hidden');
             $('#btn-obs-stream').addClass('text-blue-500').removeClass('text-gray-500');
@@ -1405,7 +1441,7 @@ uiUtils.updateCacheDisplay(cachedJsonCount, cachedMp3Count);
                 if (status && status.exists) {
                     console.log('Fonte existe. Configurando Switch...');
                     const icon = status.enabled ? 'fa-eye text-white' : 'fa-eye-slash text-gray-400';
-                    const text = status.enabled ? 'FONTE VISÍVEL NO OBS' : 'FONTE OCULTA NO OBS';
+                    const text = status.enabled ? t('sourceVisible') : t('sourceHidden');
                     
                     $btnObsCreateSource.html(`<i class="fas ${icon} mr-2"></i> ${text}`)
                         .removeClass('bg-blue-600 bg-gray-600 bg-green-700 bg-gray-500 hidden')
@@ -1415,7 +1451,7 @@ uiUtils.updateCacheDisplay(cachedJsonCount, cachedMp3Count);
                         .data('enabled', status.enabled);
                 } else {
                     console.log('Fonte não existe. Configurando botão de criação...');
-                    $btnObsCreateSource.html('<i class="fas fa-plus-circle mr-2"></i> CRIAR FONTE NO OBS STUDIO')
+                    $btnObsCreateSource.html(`<i class="fas fa-plus-circle mr-2"></i> ${t('createObsSource')}`)
                         .removeClass('bg-green-600 bg-gray-500 bg-green-700 bg-gray-600 hidden')
                         .addClass('bg-blue-600')
                         .css('display', 'flex')
@@ -1426,7 +1462,7 @@ uiUtils.updateCacheDisplay(cachedJsonCount, cachedMp3Count);
             }
         } else {
             $obsIndicator.removeClass('bg-green-500').addClass('bg-red-500');
-            $obsStatusText.text('Desconectado');
+            $obsStatusText.text(t('disconnected'));
             $btnObsConnect.removeClass('hidden');
             $btnObsDisconnect.addClass('hidden');
             $('#btn-obs-stream').addClass('text-gray-500').removeClass('text-blue-500');
@@ -1501,10 +1537,10 @@ uiUtils.updateCacheDisplay(cachedJsonCount, cachedMp3Count);
         
         if (action === 'create') {
             const originalText = $btnObsCreateSource.html();
-            $btnObsCreateSource.prop('disabled', true).text('Criando...');
+            $btnObsCreateSource.prop('disabled', true).text(t('creating'));
             try {
                 await obsService.createSource();
-                uiUtils.showToast('Fonte criada com sucesso!', 'success');
+                uiUtils.showToast(t('sourceCreated'), 'success');
                 await updateObsUI();
             } catch (e) {
                 uiUtils.showToast(e.message, 'error');
@@ -1530,24 +1566,24 @@ uiUtils.updateCacheDisplay(cachedJsonCount, cachedMp3Count);
         }
 
         obsService.config = { address, password, sourceName };
-        $btnObsConnect.text('Conectando...').prop('disabled', true);
+        $btnObsConnect.text(t('connecting')).prop('disabled', true);
         try {
             await obsService.connect();
-            uiUtils.showToast('Conectado ao OBS!', 'success');
+            uiUtils.showToast(t('connectedObs'), 'success');
             updateObsUI();
         } catch (e) {
             console.error('Erro na UI ao conectar OBS:', e);
             uiUtils.showToast(e.message, 'error');
             $obsStatusText.text(e.message);
         } finally {
-            $btnObsConnect.prop('disabled', false).text('Conectar');
+            $btnObsConnect.prop('disabled', false).text(t('connect'));
         }
     });
 
     $btnObsDisconnect.on('click', async () => {
         await obsService.disconnect();
         updateObsUI();
-        uiUtils.showToast('Desconectado do OBS');
+        uiUtils.showToast(t('disconnectedObs'));
     });
 });
 

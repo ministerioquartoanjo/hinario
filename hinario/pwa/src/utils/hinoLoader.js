@@ -78,9 +78,10 @@ export const hinoLoader = {
         }).filter(h => h !== null);
     },
 
-    async loadIndex(state) {
+    async loadIndex(state, hymnLang = 'pt') {
         try {
-            const response = await fetch('data/hymns-index.json');
+            const indexUrl = hymnLang === 'es' ? 'data/hymns-index-es.json' : 'data/hymns-index.json';
+            const response = await fetch(indexUrl);
             if (!response.ok) throw new Error('Falha ao carregar índice de hinos');
             const indexData = await response.json();
 

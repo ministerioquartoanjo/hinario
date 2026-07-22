@@ -1,4 +1,5 @@
         import { searchLogic } from './searchLogic.js';
+        import { applyTranslations, getInterfaceLanguage, setInterfaceLanguage, t } from './i18n.js';
 
         // Sincronização simples via BroadcastChannel
         const bc = new BroadcastChannel('hinario_remote');
@@ -11,6 +12,9 @@
         };
 
         const defaultObsConfig = () => ({ address: 'localhost:4455', password: '', sourceName: 'Hinario' });
+
+        // Aplicar traduções da interface
+        applyTranslations();
 
         const getObsConfig = () => {
             try {

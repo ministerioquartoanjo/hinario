@@ -68,14 +68,14 @@
         <header class="sticky top-0 z-40 bg-white dark:bg-gray-900 shadow-md p-2">
             <div class="max-w-4xl mx-auto flex flex-wrap items-center justify-between gap-4">
                 <div class="flex items-center gap-2">
-                    <h1 class="text-lg md:text-xl font-bold text-orange-dark">Hinário MQAAF</h1>
+                    <h1 class="text-lg md:text-xl font-bold text-orange-dark" data-i18n="appName">Hinário MQAAF</h1>
                 </div>
             </div>
 
             <div class="max-w-4xl mx-auto mt-2">
                 <div class="relative flex items-center">
                     <i class="fas fa-search absolute left-2 text-gray-400 text-sm"></i>
-                    <input type="text" id="hino-search" placeholder="Número, título ou palavra-chave..."
+                    <input type="text" id="hino-search" data-i18n="searchPlaceholder" placeholder="Número, título ou palavra-chave..."
                         class="w-full pl-8 pr-16 py-2 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 focus:border-orange-dark focus:ring-0 transition-all text-base shadow-sm"
                         autocomplete="off">
                     <button id="btn-random-hino" title="Hino Aleatório"
@@ -121,46 +121,64 @@
                 class="hidden absolute right-0 mt-2 w-56 bg-white dark:bg-gray-800 rounded-lg shadow-xl py-2 z-50 ring-1 ring-black ring-opacity-5 border dark:border-gray-700">
                 <button id="menu-remote-control"
                     class="w-full text-left px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-orange-50 dark:hover:bg-gray-700 hover:text-orange-dark"><i
-                        class="fas fa-mobile-alt mr-2 w-5 text-center"></i> Controle Remoto</button>
+                        class="fas fa-mobile-alt mr-2 w-5 text-center"></i> <span data-i18n="menuRemoteControl">Controle Remoto</span></button>
                 <button id="menu-info"
                     class="w-full text-left px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-orange-50 dark:hover:bg-gray-700 hover:text-orange-dark"><i
-                        class="fas fa-info-circle mr-2 w-5 text-center"></i> Informações</button>
+                        class="fas fa-info-circle mr-2 w-5 text-center"></i> <span data-i18n="menuInfo">Informações</span></button>
+                <div class="border-t border-gray-100 dark:border-gray-700 my-1"></div>
+                <div class="px-4 py-2">
+                    <label class="text-xs text-gray-500 uppercase tracking-wide block mb-1" data-i18n="interfaceLanguage">Idioma da Interface</label>
+                    <select id="select-interface-language"
+                        class="w-full text-sm border border-gray-300 dark:border-gray-600 rounded p-1 dark:bg-gray-700 dark:text-white">
+                        <option value="pt">Português</option>
+                        <option value="es">Español</option>
+                        <option value="en">English</option>
+                    </select>
+                </div>
+                <div class="px-4 py-2">
+                    <label class="text-xs text-gray-500 uppercase tracking-wide block mb-1" data-i18n="hymnLanguage">Idioma dos Hinos</label>
+                    <select id="select-hymn-language"
+                        class="w-full text-sm border border-gray-300 dark:border-gray-600 rounded p-1 dark:bg-gray-700 dark:text-white">
+                        <option value="pt">Português</option>
+                        <option value="es">Español</option>
+                    </select>
+                </div>
                 <div class="border-t border-gray-100 dark:border-gray-700 my-1"></div>
                 <a href="#" id="menu-download-mp3"
                     class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-orange-50 dark:hover:bg-gray-700 hover:text-orange-dark"><i
-                        class="fas fa-download mr-2 w-5 text-center"></i> Download MP3s</a>
+                        class="fas fa-download mr-2 w-5 text-center"></i> <span data-i18n="menuDownloadMp3">Download MP3s</span></a>
                 <a href="#" id="menu-download-json"
                     class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-orange-50 dark:hover:bg-gray-700 hover:text-orange-dark"><i
-                        class="fas fa-file-code mr-2 w-5 text-center"></i> Download Hinos</a>
+                        class="fas fa-file-code mr-2 w-5 text-center"></i> <span data-i18n="menuDownloadHinos">Download Hinos</span></a>
                 <a href="https://github.com/ministerioquartoanjo/hinario/issues" target="_blank"
                     class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-orange-50 dark:hover:bg-gray-700 hover:text-orange-dark"><i
-                        class="fab fa-github mr-2 w-5 text-center"></i> Reportar Problemas</a>
+                        class="fab fa-github mr-2 w-5 text-center"></i> <span data-i18n="menuReportIssues">Reportar Problemas</span></a>
                 <button id="btn-toggle-theme"
                     class="w-full text-left px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-orange-50 dark:hover:bg-gray-700 hover:text-orange-dark"><i
-                        class="fas fa-moon mr-2 w-5 text-center"></i> Alternar Tema</button>
+                        class="fas fa-moon mr-2 w-5 text-center"></i> <span data-i18n="menuToggleTheme">Alternar Tema</span></button>
                 <button id="menu-change-bg" onclick="$('#btn-change-bg').click()"
                     class="w-full text-left px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-orange-50 dark:hover:bg-gray-700 hover:text-orange-dark"><i
-                        class="fas fa-image mr-2 w-5 text-center"></i> Mudar Fundo</button>
+                        class="fas fa-image mr-2 w-5 text-center"></i> <span data-i18n="menuChangeBg">Mudar Fundo</span></button>
                 <button id="menu-custom-backgrounds"
                     class="w-full text-left px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-orange-50 dark:hover:bg-gray-700 hover:text-orange-dark"><i
-                        class="fas fa-images mr-2 w-5 text-center"></i> Gerenciar Fundos</button>
+                        class="fas fa-images mr-2 w-5 text-center"></i> <span data-i18n="menuCustomBackgrounds">Gerenciar Fundos</span></button>
                 <button id="menu-manage-videos" onclick="$('#video-section').toggleClass('hidden')"
                     class="w-full text-left px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-orange-50 dark:hover:bg-gray-700 hover:text-orange-dark"><i
-                        class="fas fa-video mr-2 w-5 text-center"></i> Gerenciar Vídeos</button>
+                        class="fas fa-video mr-2 w-5 text-center"></i> <span data-i18n="menuManageVideos">Gerenciar Vídeos</span></button>
                 <div class="border-t border-gray-100 dark:border-gray-700 my-1"></div>
                 <button id="menu-obs-settings"
                     class="w-full text-left px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-orange-50 dark:hover:bg-gray-700 hover:text-orange-dark"><i
-                        class="fas fa-broadcast-tower mr-2 w-5 text-center"></i> Transmissão OBS</button>
+                        class="fas fa-broadcast-tower mr-2 w-5 text-center"></i> <span data-i18n="menuObsSettings">Transmissão OBS</span></button>
                 <div class="border-t border-gray-100 dark:border-gray-700 my-1"></div>
                 <button id="btn-check-updates"
                     class="w-full text-left px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-orange-50 dark:hover:bg-gray-700 hover:text-orange-dark"><i
-                        class="fas fa-sync-alt mr-2 w-5 text-center"></i> Verificar Atualizações</button>
+                        class="fas fa-sync-alt mr-2 w-5 text-center"></i> <span data-i18n="menuCheckUpdates">Verificar Atualizações</span></button>
                 <button id="btn-export-settings"
                     class="w-full text-left px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-orange-50 dark:hover:bg-gray-700 hover:text-orange-dark"><i
-                        class="fas fa-file-export mr-2 w-5 text-center"></i> Exportar Config</button>
+                        class="fas fa-file-export mr-2 w-5 text-center"></i> <span data-i18n="menuExportSettings">Exportar Config</span></button>
                 <button id="btn-import-settings"
                     class="w-full text-left px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-orange-50 dark:hover:bg-gray-700 hover:text-orange-dark"><i
-                        class="fas fa-file-import mr-2 w-5 text-center"></i> Importar Config</button>
+                        class="fas fa-file-import mr-2 w-5 text-center"></i> <span data-i18n="menuImportSettings">Importar Config</span></button>
                 <input type="file" id="import-file" class="hidden" accept=".json">
             </div>
         </div>
@@ -174,10 +192,10 @@
                     <div id="slide-nav-controls" class="flex gap-1 hidden">
                         <button id="btn-prev" class="btn-orange-dark !p-1.5 rounded-full flex items-center gap-1">
                             <i class="fas fa-chevron-left text-sm"></i>
-                            <span class="hidden md:inline text-sm">Anterior</span>
+                            <span class="hidden md:inline text-sm" data-i18n="previous">Anterior</span>
                         </button>
                         <button id="btn-next" class="btn-orange-dark !p-1.5 rounded-full flex items-center gap-1">
-                            <span class="hidden md:inline text-sm">Próximo</span>
+                            <span class="hidden md:inline text-sm" data-i18n="next">Próximo</span>
                             <i class="fas fa-chevron-right text-sm"></i>
                         </button>
                     </div>
@@ -187,7 +205,7 @@
                             <div
                                 class="w-9 h-5 bg-gray-200 peer-focus:outline-none ring-2 ring-transparent dark:ring-transparent peer-focus:ring-orange-dark dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[1px] after:left-[1px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all dark:border-gray-600 peer-checked:bg-orange-dark relative rounded-full">
                             </div>
-                            <span class="ml-2 text-xs font-medium text-gray-900 dark:text-gray-200">Completo</span>
+                            <span class="ml-2 text-xs font-medium text-gray-900 dark:text-gray-200" data-i18n="complete">Completo</span>
                         </label>
                         <button id="btn-change-bg" class="p-1.5 text-gray-500 hover:text-orange-dark transition-colors"
                             title="Mudar Fundo (B)"><i class="fas fa-image text-lg"></i></button>
@@ -224,7 +242,7 @@
                     <!-- Content -->
                     <div id="slide-content"
                         class="z-20 w-full max-w-2xl flex flex-col justify-start items-center h-full overflow-y-auto py-8">
-                        <p class="text-xl md:text-2xl lg:text-3xl text-white font-semibold leading-relaxed">
+                        <p class="text-xl md:text-2xl lg:text-3xl text-white font-semibold leading-relaxed" data-i18n="selectHino">
                             Selecione um hino para começar</p>
                     </div>
 
@@ -286,7 +304,7 @@
                     <div id="audio-loading"
                         class="absolute inset-0 z-40 bg-black bg-opacity-70 flex flex-col items-center justify-center hidden">
                         <div class="loading-spinner w-12 h-12 mb-4"></div>
-                        <span class="text-white">Carregando áudio...</span>
+                        <span class="text-white" data-i18n="loadingAudio">Carregando áudio...</span>
                     </div>
                 </div>
             </section>
@@ -297,27 +315,27 @@
                 <div class="bg-white dark:bg-gray-800 p-4 rounded-xl shadow-md space-y-4">
                     <div class="flex items-center justify-between cursor-pointer md:cursor-default" id="toggle-appearance">
                         <h3 class="font-bold border-b-0 dark:border-gray-700 flex items-center mb-0 text-gray-900 dark:text-gray-100"><i
-                                class="fas fa-magic mr-2 text-orange-dark"></i> Aparência</h3>
+                                class="fas fa-magic mr-2 text-orange-dark"></i> <span data-i18n="appearance">Aparência</span></h3>
                         <i class="fas fa-chevron-down text-gray-400 transition-transform md:hidden" id="appearance-icon"></i>
                     </div>
                     
                     <div id="appearance-content" class="hidden md:block space-y-4 pt-2 border-t dark:border-gray-700">
                         <div class="flex flex-wrap gap-4 items-center">
                             <div class="flex items-center gap-2 text-gray-700 dark:text-gray-200">
-                                <span class="text-sm">Fonte:</span>
+                                <span class="text-sm" data-i18n="fontSource">Fonte:</span>
                                 <button id="btn-font-dec" class="px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded hover:bg-gray-200 dark:hover:bg-gray-600">-</button>
                                 <span id="font-size-display" class="font-mono text-sm w-12 text-center text-gray-900 dark:text-gray-100">1.2rem</span>
                                 <button id="btn-font-inc" class="px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded hover:bg-gray-200 dark:hover:bg-gray-600">+</button>
                             </div>
                             <div class="flex items-center gap-2 text-gray-700 dark:text-gray-200">
-                                <span class="text-sm">Altura:</span>
+                                <span class="text-sm" data-i18n="fontHeight">Altura:</span>
                                 <button id="btn-line-dec" class="px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded hover:bg-gray-200 dark:hover:bg-gray-600">-</button>
                                 <span id="line-height-display" class="font-mono text-sm w-8 text-center text-gray-900 dark:text-gray-100">1.4</span>
                                 <button id="btn-line-inc" class="px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded hover:bg-gray-200 dark:hover:bg-gray-600">+</button>
                             </div>
                         </div>
                         <div class="space-y-2">
-                            <label class="text-sm block text-gray-700 dark:text-gray-300">Família da Fonte:</label>
+                            <label class="text-sm block text-gray-700 dark:text-gray-300" data-i18n="fontFamily">Família da Fonte:</label>
                             <select id="font-family-select"
                                 class="w-full p-2 rounded border dark:border-gray-700 bg-white dark:bg-gray-700 text-sm text-gray-900 dark:text-gray-100">
                                 <option value="Inter">Inter (Default)</option>
@@ -340,17 +358,17 @@
                         </div>
                         <div class="flex items-center justify-between">
                             <div class="flex items-center gap-2 text-gray-700 dark:text-gray-300">
-                                <span class="text-sm">Texto:</span>
+                                <span class="text-sm" data-i18n="textColor">Texto:</span>
                                 <input type="color" id="font-color-picker" value="#FFFFFF"
                                     class="h-8 w-8 rounded overflow-hidden cursor-pointer border bg-white dark:bg-gray-800 dark:border-gray-600">
                             </div>
                             <div class="flex items-center gap-2 text-gray-700 dark:text-gray-300">
-                                <span class="text-sm">Fundo:</span>
+                                <span class="text-sm" data-i18n="bgColor">Fundo:</span>
                                 <input type="color" id="bg-color-picker" value="#000000"
                                     class="h-8 w-8 rounded overflow-hidden cursor-pointer border dark:border-gray-600">
                             </div>
                             <button id="btn-toggle-bg"
-                                class="text-xs bg-orange-dark text-white px-3 py-1 rounded hover:bg-orange-600 transition-colors">Alternar
+                                class="text-xs bg-orange-dark text-white px-3 py-1 rounded hover:bg-orange-600 transition-colors" data-i18n="changeBg">Alternar
                                 Fundo</button>
                         </div>
                     </div>
@@ -359,7 +377,7 @@
                 <!-- Audio & Playlist -->
                 <div class="bg-white dark:bg-gray-800 p-4 rounded-xl shadow-md space-y-4">
                     <h3 class="font-bold border-b dark:border-gray-700 pb-2 flex items-center text-gray-900 dark:text-gray-100"><i
-                            class="fas fa-volume-up mr-2 text-orange-dark"></i> Áudio & Reprodução</h3>
+                            class="fas fa-volume-up mr-2 text-orange-dark"></i> <span data-i18n="audio">Áudio</span></h3>
 
                     <div id="audio-player-container" class="space-y-4">
                         <audio id="audio-player" class="w-full hidden" crossorigin="anonymous"></audio>
@@ -402,7 +420,7 @@
 
                     <div class="pt-2 border-t dark:border-gray-700">
                         <div class="flex items-center justify-between text-gray-900 dark:text-gray-100">
-                            <span class="text-sm font-semibold">Playlist Automática:</span>
+                            <span class="text-sm font-semibold" data-i18n="autoPlaylist">Playlist Automática:</span>
                             <div class="flex gap-2">
                                 <button id="btn-playlist-toggle" title="Iniciar Playlist" class="text-gray-400 hover:text-green-600 transition-colors"><i class="fas fa-random text-lg"></i></button>
                                 <button id="btn-playlist-next" title="Próximo Hino" class="text-gray-400 hover:text-blue-500 transition-colors"><i class="fas fa-step-forward text-lg"></i></button>
@@ -425,7 +443,7 @@
                 </div>
                 <div id="video-list" class="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <!-- Loading skeleton or empty state -->
-                    <p class="text-sm text-gray-400 italic">Buscando vídeos...</p>
+                    <p class="text-sm text-gray-400 italic" data-i18n="searchingVideos">Buscando vídeos...</p>
                 </div>
             </section>
         </main>
@@ -435,11 +453,11 @@
             <div id="cache-status" class="flex justify-center items-center gap-4 text-[10px] mb-2">
                 <span class="flex items-center gap-1">
                     <i class="fas fa-file-code text-blue-500"></i>
-                    <span id="json-count">Verificando...</span>
+                    <span id="json-count" data-i18n="checkingJson">Verificando...</span>
                 </span>
                 <span class="flex items-center gap-1">
                     <i class="fas fa-music text-green-500"></i>
-                    <span id="mp3-count">Verificando...</span>
+                    <span id="mp3-count" data-i18n="checkingMp3">Verificando...</span>
                 </span>
                 <span id="download-status" class="hidden text-orange-600">
                     <i class="fas fa-download animate-spin"></i> Baixando...
@@ -459,10 +477,10 @@
             class="bg-white dark:bg-gray-800 rounded-2xl shadow-2xl max-w-lg w-full max-h-[90vh] overflow-y-auto p-6 relative">
             <button class="btn-close-modal absolute top-4 right-4 text-gray-400 hover:text-red-500"><i
                     class="fas fa-times text-xl"></i></button>
-            <h2 class="text-2xl font-bold text-orange-dark mb-4">Informações & Atalhos</h2>
+            <h2 class="text-2xl font-bold text-orange-dark mb-4" data-i18n="shortcutsTitle">Informações & Atalhos</h2>
             <div class="space-y-4 text-sm">
                 <section>
-                    <h3 class="font-bold border-b pb-1 mb-2">Atalhos de Teclado</h3>
+                    <h3 class="font-bold border-b pb-1 mb-2" data-i18n="keyboardShortcuts">Atalhos de Teclado</h3>
                     <div class="grid grid-cols-2 gap-2">
                         <div><kbd class="px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded">Setas Esq/Dir</kbd> Navegar
                             slides</div>
@@ -484,7 +502,7 @@
                     </div>
                 </section>
                 <section>
-                    <h3 class="font-bold border-b pb-1 mb-2">Sobre o Projeto</h3>
+                    <h3 class="font-bold border-b pb-1 mb-2" data-i18n="aboutProject">Sobre o Projeto</h3>
                     <p>O Hinário MQAAF PWA é uma ferramenta moderna para louvor e adoração, oferecendo uma experiência
                         premium tanto em desktops para projeção quanto em dispositivos móveis.</p>
                 </section>
@@ -497,15 +515,15 @@
         <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-2xl max-w-md w-full p-6 relative">
             <button class="btn-close-modal absolute top-4 right-4 text-gray-400 hover:text-red-500"><i
                     class="fas fa-times text-xl"></i></button>
-            <h2 class="text-xl font-bold mb-4">Adicionar Vídeo do YouTube</h2>
+            <h2 class="text-xl font-bold mb-4" data-i18n="addVideoTitle">Adicionar Vídeo do YouTube</h2>
             <div class="space-y-4">
                 <div>
-                    <label class="block text-sm mb-1 font-medium">URL do Vídeo:</label>
+                    <label class="block text-sm mb-1 font-medium" data-i18n="videoUrl">URL do Vídeo:</label>
                     <input type="text" id="video-url-input" placeholder="https://www.youtube.com/watch?v=..."
                         class="w-full p-2 border rounded dark:bg-gray-700 dark:border-gray-600">
                 </div>
                 <button id="btn-save-video"
-                    class="w-full bg-blue-600 text-white py-2 rounded font-bold hover:bg-blue-700 transition-colors">Salvar
+                    class="w-full bg-blue-600 text-white py-2 rounded font-bold hover:bg-blue-700 transition-colors"><span data-i18n="save">Salvar</span>
                     Vídeo</button>
             </div>
         </div>
@@ -517,13 +535,13 @@
             <button class="btn-close-modal absolute top-4 right-4 text-gray-400 hover:text-red-500"><i
                     class="fas fa-times text-xl"></i></button>
             <h2 class="text-xl font-bold mb-4 flex items-center">
-                <i class="fas fa-sliders-h mr-2 text-orange-dark"></i> Ajustes de Áudio
+                <i class="fas fa-sliders-h mr-2 text-orange-dark"></i> <span data-i18n="audioSettings">Ajustes de Áudio</span>
             </h2>
             <div class="space-y-6">
                 <!-- Normalização / Gain -->
                 <div class="space-y-2">
                     <div class="flex justify-between items-center">
-                        <label class="text-sm font-medium">Normalização (Volume Extra)</label>
+                        <label class="text-sm font-medium" data-i18n="audioNormalization">Normalização (Volume Extra)</label>
                         <span id="label-gain" class="text-xs font-mono">1.0x</span>
                     </div>
                     <input type="range" id="range-gain" min="0.5" max="2.5" step="0.1" value="1.0"
@@ -534,7 +552,7 @@
 
                 <!-- Equalizer -->
                 <div class="space-y-4">
-                    <h3 class="text-sm font-bold uppercase tracking-wider opacity-50 text-center">Equalizador</h3>
+                    <h3 class="text-sm font-bold uppercase tracking-wider opacity-50 text-center" data-i18n="equalizer">Equalizador</h3>
 
                     <div class="relative bg-gray-50 dark:bg-gray-900/50 rounded-xl p-6 border dark:border-gray-700">
                         <!-- Grid Lines Background -->
@@ -554,7 +572,7 @@
                                 <input type="range" id="eq-bass" min="-12" max="12" step="1" value="0" orient="vertical"
                                     class="w-4 h-full cursor-pointer accent-orange-dark"
                                     style="writing-mode: bt-lr; -webkit-appearance: slider-vertical; appearance: slider-vertical;">
-                                <span class="text-[10px] font-bold uppercase tracking-tighter">Grave</span>
+                                <span class="text-[10px] font-bold uppercase tracking-tighter" data-i18n="bass">Grave</span>
                             </div>
                             <!-- Mid -->
                             <div class="flex flex-col items-center gap-2">
@@ -562,7 +580,7 @@
                                 <input type="range" id="eq-mid" min="-12" max="12" step="1" value="0" orient="vertical"
                                     class="w-4 h-full cursor-pointer accent-orange-dark"
                                     style="writing-mode: bt-lr; -webkit-appearance: slider-vertical; appearance: slider-vertical;">
-                                <span class="text-[10px] font-bold uppercase tracking-tighter">Médio</span>
+                                <span class="text-[10px] font-bold uppercase tracking-tighter" data-i18n="mid">Médio</span>
                             </div>
                             <!-- Treble -->
                             <div class="flex flex-col items-center gap-2">
@@ -570,14 +588,14 @@
                                 <input type="range" id="eq-treble" min="-12" max="12" step="1" value="0"
                                     orient="vertical" class="w-4 h-full cursor-pointer accent-orange-dark"
                                     style="writing-mode: bt-lr; -webkit-appearance: slider-vertical; appearance: slider-vertical;">
-                                <span class="text-[10px] font-bold uppercase tracking-tighter">Agudo</span>
+                                <span class="text-[10px] font-bold uppercase tracking-tighter" data-i18n="treble">Agudo</span>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <button id="btn-reset-audio"
-                    class="w-full bg-gray-100 dark:bg-gray-700 text-xs py-2 rounded font-bold hover:bg-orange-dark hover:text-white transition-all">Resetar
+                    class="w-full bg-gray-100 dark:bg-gray-700 text-xs py-2 rounded font-bold hover:bg-orange-dark hover:text-white transition-all" data-i18n="resetAll">Resetar
                     Tudo</button>
             </div>
         </div>
@@ -589,16 +607,16 @@
         <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-2xl max-w-md w-full p-6 relative">
             <button class="btn-close-modal absolute top-4 right-4 text-gray-400 hover:text-red-500"><i
                     class="fas fa-times text-xl"></i></button>
-            <h2 class="text-xl font-bold mb-4">Meus Fundos Personalizados</h2>
+            <h2 class="text-xl font-bold mb-4" data-i18n="customBackgroundsTitle">Meus Fundos Personalizados</h2>
             <div class="space-y-4">
                 <div>
-                    <p class="text-xs text-gray-500 mb-2">Cole as URLs das suas imagens, uma por linha.</p>
+                    <p class="text-xs text-gray-500 mb-2" data-i18n="customBgHelp">Cole as URLs das suas imagens, uma por linha.</p>
                     <textarea id="custom-bg-textarea" rows="6"
                         placeholder="https://exemplo.com/imagem1.jpg&#10;https://exemplo.com/imagem2.png"
                         class="w-full p-2 border rounded dark:bg-gray-700 dark:border-gray-600 font-mono text-sm"></textarea>
                 </div>
                 <button id="btn-save-custom-bg"
-                    class="w-full bg-orange-dark text-white py-2 rounded font-bold hover:bg-orange-700 transition-colors">Salvar
+                    class="w-full bg-orange-dark text-white py-2 rounded font-bold hover:bg-orange-700 transition-colors" data-i18n="saveBackgrounds">Salvar
                     Fundos</button>
             </div>
         </div>
@@ -610,38 +628,38 @@
             <button class="btn-close-modal absolute top-4 right-4 text-gray-400 hover:text-red-500"><i
                     class="fas fa-times text-xl"></i></button>
             <h2 class="text-xl font-bold mb-4 flex items-center">
-                <i class="fas fa-broadcast-tower mr-2 text-orange-dark"></i> Configurações OBS WebSocket
+                <i class="fas fa-broadcast-tower mr-2 text-orange-dark"></i> <span data-i18n="obsSettings">Configurações OBS WebSocket</span>
             </h2>
             <div class="space-y-4">
                 <div>
-                    <label class="block text-sm mb-1 font-medium">Endereço (Ex: localhost:4455):</label>
+                    <label class="block text-sm mb-1 font-medium" data-i18n="obsAddress">Endereço (Ex: localhost:4455):</label>
                     <input type="text" id="obs-address" placeholder="localhost:4455"
                         class="w-full p-2 border rounded dark:bg-gray-700 dark:border-gray-600">
                 </div>
                 <div>
-                    <label class="block text-sm mb-1 font-medium">Senha:</label>
+                    <label class="block text-sm mb-1 font-medium" data-i18n="obsPassword">Senha:</label>
                     <input type="password" id="obs-password" placeholder="Senha do WebSocket"
                         class="w-full p-2 border rounded dark:bg-gray-700 dark:border-gray-600">
                 </div>
                 <div class="space-y-1">
-                    <label class="text-xs text-gray-400">Nome da Fonte no OBS</label>
+                    <label class="text-xs text-gray-400" data-i18n="obsSourceName">Nome da Fonte no OBS</label>
                     <input type="text" id="obs-source-name" placeholder="Ex: Hinario" value="Hinario"
                         class="w-full bg-gray-700 border border-gray-600 rounded p-2 text-white text-sm focus:outline-none focus:border-blue-500">
                 </div>
-                <p class="text-[10px] text-gray-400 mt-1">Se definido, o app tentará atualizar esta fonte de texto no OBS.</p>
+                <p class="text-[10px] text-gray-400 mt-1" data-i18n="obsSourceHelp">Se definido, o app tentará atualizar esta fonte de texto no OBS.</p>
                 <div class="flex items-center gap-2">
                     <div id="obs-status-indicator" class="w-3 h-3 rounded-full bg-red-500"></div>
-                    <span id="obs-status-text" class="text-sm">Desconectado</span>
+                    <span id="obs-status-text" class="text-sm" data-i18n="disconnected">Desconectado</span>
                 </div>
                 <div class="flex flex-col gap-2">
                     <div class="flex gap-2">
                         <button id="btn-obs-connect"
-                            class="flex-grow bg-orange-dark text-white py-2 rounded font-bold hover:bg-orange-700 transition-colors">Conectar</button>
+                            class="flex-grow bg-orange-dark text-white py-2 rounded font-bold hover:bg-orange-700 transition-colors" data-i18n="connect">Conectar</button>
                         <button id="btn-obs-disconnect"
-                            class="px-4 bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 py-2 rounded font-bold hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors hidden">Desconectar</button>
+                            class="px-4 bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 py-2 rounded font-bold hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors hidden" data-i18n="disconnect">Desconectar</button>
                     </div>
                     <button id="btn-obs-create-source"
-                        class="w-full bg-blue-600 text-white py-3 rounded-lg font-bold hover:bg-blue-700 transition-all shadow-lg flex items-center justify-center gap-2">
+                        class="w-full bg-blue-600 text-white py-3 rounded-lg font-bold hover:bg-blue-700 transition-all shadow-lg flex items-center justify-center gap-2" data-i18n="createObsSource">
                         <i class="fas fa-plus-circle"></i> CRIAR FONTE NO OBS STUDIO
                     </button>
                 </div>
