@@ -32,7 +32,7 @@ export const INITIAL_STATE = {
         fontColor: '#FFFFFF',
         showBackground: true,
         darkMode: false,
-        isCompleto: false,
+        isCompleto: true,
         bgIndex: 0,
         customBackgrounds: [],
         bgColor: '#000000',
