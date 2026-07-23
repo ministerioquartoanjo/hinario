@@ -222,9 +222,9 @@ body.tema-controle-remoto {
 }
 
 #slide-preview-resize-handle {
-    cursor: se-resize;
+    cursor: s-resize;
     touch-action: none;
-    transition: opacity 0.2s ease;
+    transition: opacity 0.2s ease, background-color 0.2s ease;
     pointer-events: auto;
     user-select: none;
     -webkit-user-select: none;
@@ -233,6 +233,12 @@ body.tema-controle-remoto {
 #slide-preview-resize-handle:hover,
 #slide-preview-resize-handle:active {
     opacity: 1 !important;
+}
+
+#slide-preview:fullscreen #slide-preview-resize-handle,
+#slide-preview:-webkit-full-screen #slide-preview-resize-handle,
+#slide-preview:-moz-full-screen #slide-preview-resize-handle {
+    display: none !important;
 }
 
 .custom-scrollbar {

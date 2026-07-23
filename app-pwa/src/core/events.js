@@ -251,17 +251,8 @@ export const setupEvents = (actions) => {
             return { x: ev.clientX, y: ev.clientY };
         };
 
-        const updatePreviewAndHandle = (w, h) => {
-            const handleW = $resizeHandle.outerWidth();
-            const handleH = $resizeHandle.outerHeight();
-            const offset = 4;
-            $preview.css({ width: `${w}px`, height: `${h}px` });
-            $resizeHandle.css({
-                left: `${Math.max(0, w - handleW - offset)}px`,
-                top: `${Math.max(0, h - handleH - offset)}px`,
-                right: 'auto',
-                bottom: 'auto'
-            });
+        const updatePreviewHeight = (h) => {
+            $preview.css({ height: `${h}px` });
         };
 
         let isResizing = false;
@@ -271,24 +262,20 @@ export const setupEvents = (actions) => {
 
             const startPos = getClientPos(e);
             const previewRect = $preview[0].getBoundingClientRect();
-            const startW = previewRect.width;
             const startH = previewRect.height;
 
             const onMove = (ev) => {
                 if (!isResizing) return;
-                const { x, y } = getClientPos(ev);
-                let w = startW + (x - startPos.x);
+                const { y } = getClientPos(ev);
                 let h = startH + (y - startPos.y);
-                w = Math.max(120, Math.min(w, window.innerWidth - previewRect.left));
                 h = Math.max(120, Math.min(h, window.innerHeight - previewRect.top));
-                updatePreviewAndHandle(w, h);
+                updatePreviewHeight(h);
             };
 
             const onEnd = () => {
                 if (!isResizing) return;
                 isResizing = false;
                 $(document).off('mousemove.slide-preview-resize touchmove.slide-preview-resize mouseup.slide-preview-resize touchend.slide-preview-resize');
-                state.settings.slidePreviewWidth = $preview.css('width');
                 state.settings.slidePreviewHeight = $preview.css('height');
                 saveSettings();
             };

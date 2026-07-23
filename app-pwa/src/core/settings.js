@@ -55,24 +55,21 @@ export const createSettings = ({
             const $handle = $('#slide-preview-resize-handle');
             $overlay.removeClass('hidden');
             $handle.removeClass('hidden');
-            if (state.settings.slidePreviewWidth && state.settings.slidePreviewHeight) {
-                const w = parseFloat(state.settings.slidePreviewWidth);
+            if (state.settings.slidePreviewHeight) {
                 const h = parseFloat(state.settings.slidePreviewHeight);
-                $preview.css({ width: state.settings.slidePreviewWidth, height: state.settings.slidePreviewHeight });
+                $preview.css({ height: state.settings.slidePreviewHeight });
                 if ($handle.length) {
-                    const handleW = $handle.outerWidth();
-                    const handleH = $handle.outerHeight();
-                    const offset = 4;
                     $handle.css({
-                        left: `${Math.max(0, w - handleW - offset)}px`,
-                        top: `${Math.max(0, h - handleH - offset)}px`,
+                        left: '50%',
+                        transform: 'translateX(-50%)',
+                        bottom: '0',
                         right: 'auto',
-                        bottom: 'auto'
+                        top: 'auto'
                     });
                 }
             } else {
-                $preview.css({ width: '', height: '' });
-                if ($handle.length) $handle.css({ left: 'auto', top: 'auto', right: '0.25rem', bottom: '0.25rem' });
+                $preview.css({ height: '' });
+                if ($handle.length) $handle.css({ left: '50%', transform: 'translateX(-50%)', bottom: '0', right: 'auto', top: 'auto' });
             }
             $('#slide-content').css('text-shadow', '2px 2px 8px rgba(0,0,0,0.9), 0px 0px 10px rgba(0,0,0,0.5)');
         } else {

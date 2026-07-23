@@ -2,6 +2,9 @@
 // Força atualização quando há nova versão
 
 const CACHE_PREFIX = 'hinario-v';
+const LYRICS_CACHE_VERSION = '1.0.0';
+const AUDIO_CACHE_VERSION = '1.0.0';
+const CONTENT_VERSION_CACHE = 'content-version-cache';
 let currentCache = CACHE_PREFIX + 'unknown';
 
 // BUILD_TIMESTAMP injetado pelo Vite: {{BUILD_TIMESTAMP}}
@@ -29,32 +32,45 @@ self.addEventListener('install', (event) => {
 
 self.addEventListener('activate', (event) => {
     console.log('[SW] Activating');
-    
-    event.waitUntil(
-        caches.keys().then((cacheNames) => {
-            return Promise.all(
-                cacheNames.map((cacheName) => {
-                    // Deletar caches antigos que não são o atual
-                    if (cacheName.startsWith(CACHE_PREFIX) && cacheName !== currentCache) {
-                        console.log('[SW] Deleting old cache:', cacheName);
-                        return caches.delete(cacheName);
-                    }
-                })
-            );
-        }).then(() => {
-            self.clients.claim();
-            
-            // Notificar todos os clients sobre a nova versão
-            return self.clients.matchAll().then((clients) => {
-                clients.forEach((client) => {
-                    client.postMessage({
-                        type: 'SW_ACTIVATED',
-                        cacheName: currentCache
-                    });
-                });
+
+    event.waitUntil((async () => {
+        const contentVersionCache = await caches.open(CONTENT_VERSION_CACHE);
+        const storedLyricsResponse = await contentVersionCache.match('lyrics-version');
+        const storedAudioResponse = await contentVersionCache.match('audio-version');
+        const storedLyricsVersion = storedLyricsResponse ? await storedLyricsResponse.text() : null;
+        const storedAudioVersion = storedAudioResponse ? await storedAudioResponse.text() : null;
+        const lyricsChanged = storedLyricsVersion !== LYRICS_CACHE_VERSION;
+        const audioChanged = storedAudioVersion !== AUDIO_CACHE_VERSION;
+        const cacheNames = await caches.keys();
+        const cachesToDelete = cacheNames.filter((cacheName) =>
+            (cacheName.startsWith(CACHE_PREFIX) && cacheName !== currentCache) ||
+            (lyricsChanged && cacheName === 'json-cache') ||
+            (audioChanged && cacheName === 'mp3-cache')
+        );
+
+        await Promise.all(cachesToDelete.map((cacheName) => {
+            console.log('[SW] Deleting cache:', cacheName);
+            return caches.delete(cacheName);
+        }));
+
+        if (lyricsChanged) {
+            await contentVersionCache.put('lyrics-version', new Response(LYRICS_CACHE_VERSION));
+        }
+
+        if (audioChanged) {
+            await contentVersionCache.put('audio-version', new Response(AUDIO_CACHE_VERSION));
+        }
+
+        await self.clients.claim();
+
+        const clients = await self.clients.matchAll();
+        clients.forEach((client) => {
+            client.postMessage({
+                type: 'SW_ACTIVATED',
+                cacheName: currentCache
             });
-        })
-    );
+        });
+    })());
 });
 
 self.addEventListener('fetch', (event) => {
