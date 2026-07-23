@@ -2,8 +2,8 @@
 // Força atualização quando há nova versão
 
 const CACHE_PREFIX = 'hinario-v';
-const LYRICS_CACHE_VERSION = '1.0.0';
-const AUDIO_CACHE_VERSION = '1.0.0';
+const LYRICS_CACHE_VERSION = '1.0.1';
+const AUDIO_CACHE_VERSION = '1.0.1';
 const CONTENT_VERSION_CACHE = 'content-version-cache';
 let currentCache = CACHE_PREFIX + 'unknown';
 
