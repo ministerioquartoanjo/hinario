@@ -50,11 +50,35 @@ export const createSettings = ({
                 'background-image': `url('${bgUrl}')`,
                 'background-color': 'transparent'
             });
-            $('#slide-bg-overlay').removeClass('hidden');
+            const $overlay = $('#slide-bg-overlay');
+            const $preview = $('#slide-preview');
+            const $handle = $('#slide-preview-resize-handle');
+            $overlay.removeClass('hidden');
+            $handle.removeClass('hidden');
+            if (state.settings.slidePreviewWidth && state.settings.slidePreviewHeight) {
+                const w = parseFloat(state.settings.slidePreviewWidth);
+                const h = parseFloat(state.settings.slidePreviewHeight);
+                $preview.css({ width: state.settings.slidePreviewWidth, height: state.settings.slidePreviewHeight });
+                if ($handle.length) {
+                    const handleW = $handle.outerWidth();
+                    const handleH = $handle.outerHeight();
+                    const offset = 4;
+                    $handle.css({
+                        left: `${Math.max(0, w - handleW - offset)}px`,
+                        top: `${Math.max(0, h - handleH - offset)}px`,
+                        right: 'auto',
+                        bottom: 'auto'
+                    });
+                }
+            } else {
+                $preview.css({ width: '', height: '' });
+                if ($handle.length) $handle.css({ left: 'auto', top: 'auto', right: '0.25rem', bottom: '0.25rem' });
+            }
             $('#slide-content').css('text-shadow', '2px 2px 8px rgba(0,0,0,0.9), 0px 0px 10px rgba(0,0,0,0.5)');
         } else {
             $('#slide-bg').addClass('hidden');
             $('#slide-bg-overlay').addClass('hidden');
+            $('#slide-preview-resize-handle').addClass('hidden');
             $('#slide-preview').css('background-color', state.settings.bgColor || '#000000');
             $('#slide-content').css('text-shadow', 'none');
         }

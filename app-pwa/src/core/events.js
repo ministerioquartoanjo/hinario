@@ -239,4 +239,64 @@ export const setupEvents = (actions) => {
     $('#select-interface-language').val(getInterfaceLanguage()).on('change', function() { const lang = $(this).val(); setInterfaceLanguage(lang); state.settings.interfaceLanguage = lang; saveSettings(); applyTranslations(); });
     $('#select-hymn-language').val(getHymnLanguage()).on('change', async function() { const lang = $(this).val(); setHymnLanguage(lang); state.settings.hymnLanguage = lang; saveSettings(); await hinoLoader.loadIndex(state, lang); setupSearch(); if (state.currentHino) { const current = state.currentHino; current.loaded = false; current.letras = []; await selectHino(current.numero); } });
     $('#input-intro-preview').val(state.settings.introPreviewSeconds ?? 3).on('change', function() { const value = parseInt($(this).val(), 10); state.settings.introPreviewSeconds = isNaN(value) || value < 0 ? 3 : value; saveSettings(); });
+
+    (() => {
+        const $resizeHandle = $('#slide-preview-resize-handle');
+        const $preview = $('#slide-preview');
+        if (!$resizeHandle.length || !$preview.length) return;
+
+        const getClientPos = (ev) => {
+            const oe = ev.originalEvent || ev;
+            if (oe.touches && oe.touches.length) return { x: oe.touches[0].clientX, y: oe.touches[0].clientY };
+            return { x: ev.clientX, y: ev.clientY };
+        };
+
+        const updatePreviewAndHandle = (w, h) => {
+            const handleW = $resizeHandle.outerWidth();
+            const handleH = $resizeHandle.outerHeight();
+            const offset = 4;
+            $preview.css({ width: `${w}px`, height: `${h}px` });
+            $resizeHandle.css({
+                left: `${Math.max(0, w - handleW - offset)}px`,
+                top: `${Math.max(0, h - handleH - offset)}px`,
+                right: 'auto',
+                bottom: 'auto'
+            });
+        };
+
+        let isResizing = false;
+        const startResize = (e) => {
+            isResizing = true;
+            e.preventDefault();
+
+            const startPos = getClientPos(e);
+            const previewRect = $preview[0].getBoundingClientRect();
+            const startW = previewRect.width;
+            const startH = previewRect.height;
+
+            const onMove = (ev) => {
+                if (!isResizing) return;
+                const { x, y } = getClientPos(ev);
+                let w = startW + (x - startPos.x);
+                let h = startH + (y - startPos.y);
+                w = Math.max(120, Math.min(w, window.innerWidth - previewRect.left));
+                h = Math.max(120, Math.min(h, window.innerHeight - previewRect.top));
+                updatePreviewAndHandle(w, h);
+            };
+
+            const onEnd = () => {
+                if (!isResizing) return;
+                isResizing = false;
+                $(document).off('mousemove.slide-preview-resize touchmove.slide-preview-resize mouseup.slide-preview-resize touchend.slide-preview-resize');
+                state.settings.slidePreviewWidth = $preview.css('width');
+                state.settings.slidePreviewHeight = $preview.css('height');
+                saveSettings();
+            };
+
+            $(document).on('mousemove.slide-preview-resize touchmove.slide-preview-resize', onMove);
+            $(document).on('mouseup.slide-preview-resize touchend.slide-preview-resize', onEnd);
+        };
+
+        $resizeHandle.on('mousedown touchstart', startResize);
+    })();
 };

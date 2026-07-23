@@ -2,6 +2,7 @@ import { DEFAULT_BACKGROUNDS } from './src/constants/defaults.js';
 import { broadcast, broadcastState, setupBroadcastListeners, remoteChannel } from './src/services/broadcastService.js';
 import { cacheService } from './src/services/cacheService.js';
 import { settingsService } from './src/services/settingsService.js';
+import { createPlayHistory } from './src/services/playHistoryService.js';
 import { uiUtils } from './src/utils/uiUtils.js';
 import { audioUtils } from './src/utils/audioUtils.js';
 import { audioPlayer } from './src/components/audioPlayer.js';
@@ -59,6 +60,7 @@ navigation = createNavigation({
     stopAutoScroll
 });
 const { nextSlide, prevSlide, nextHino, prevHino, scrollUp, scrollDown, selectHino } = navigation;
+const playHistory = createPlayHistory({ selectHino, initAudio });
 window.__playlistNextRandom = playlistNextRandom;
 
 const sync = createSync({
@@ -148,6 +150,8 @@ $(document).ready(() => {
     loadSettings();
     hinoLoader.loadIndex(state, getHymnLanguage()).then(() => setupSearch());
     setupEvents(actions);
+    playHistory.render();
+    document.getElementById('audio-player')?.addEventListener('play', () => playHistory.record(state.currentHino));
     uiUtils.setupZoom(() => state.settings.isCompleto);
     cacheService.initializeCounters().then(counts => { cachedJsonCount = counts.json; cachedMp3Count = counts.mp3; uiUtils.updateCacheDisplay(cachedJsonCount, cachedMp3Count); });
     cacheService.initializeCounters().then(counts => { cachedJsonCount = counts.json; cachedMp3Count = counts.mp3; uiUtils.updateCacheDisplay(cachedJsonCount, cachedMp3Count); });
