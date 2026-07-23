@@ -74,7 +74,12 @@ export const createNavigation = ({
 
                 const rawData = await res.json();
                 const transformed = hinoLoader.transformHinos([rawData])[0];
-                Object.assign(hino, transformed, { loaded: true });
+                if (transformed) {
+                    const { numero: _, titulo: __, ...rest } = transformed;
+                    Object.assign(hino, rest, { loaded: true });
+                    if (!hino.titulo && transformed.titulo) hino.titulo = transformed.titulo;
+                    if (!hino.numero && transformed.numero) hino.numero = transformed.numero;
+                }
             } catch (e) {
                 console.error('Erro ao carregar hino:', e);
             } finally {
