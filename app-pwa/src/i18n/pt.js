@@ -35,6 +35,8 @@ export const pt = {
     next: 'Próximo',
     complete: 'Completo',
     changeBg: 'Mudar Fundo (B)',
+    changeBgOn: 'Fundo (on)',
+    changeBgOff: 'Fundo (off)',
     obsStream: 'Transmitir para OBS',
     fullscreen: 'Tela Cheia',
     loadingAudio: 'Carregando áudio...',

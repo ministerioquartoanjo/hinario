@@ -26,7 +26,7 @@ const fullscreenWarningTimeout = { current: null };
 const AUTO_SCROLL_TITLE_DELAY = 2000;
 const appState = { countdownInterval: null };
 
-const settings = createSettings({ state, DEFAULT_BACKGROUNDS, broadcast, setInterfaceLanguage, setHymnLanguage, applyTranslations, audioUtils });
+const settings = createSettings({ state, DEFAULT_BACKGROUNDS, broadcast, setInterfaceLanguage, setHymnLanguage, applyTranslations, audioUtils, t });
 const { saveSettings, applySettings, loadSettings, setBackgrounds } = settings;
 const renderHino = () => hinoRenderer.renderHino(state, { applySettings });
 const initAudio = () => {

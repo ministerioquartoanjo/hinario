@@ -35,6 +35,8 @@ export const en = {
     next: 'Next',
     complete: 'Complete',
     changeBg: 'Change Background (B)',
+    changeBgOn: 'Background (on)',
+    changeBgOff: 'Background (off)',
     obsStream: 'Stream to OBS',
     fullscreen: 'Fullscreen',
     loadingAudio: 'Loading audio...',

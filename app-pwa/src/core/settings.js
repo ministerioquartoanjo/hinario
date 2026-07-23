@@ -7,7 +7,8 @@ export const createSettings = ({
     setInterfaceLanguage,
     setHymnLanguage,
     applyTranslations,
-    audioUtils
+    audioUtils,
+    t
 }) => {
     const saveSettings = () => localStorage.setItem('hinario_settings', JSON.stringify(state.settings));
 
@@ -19,6 +20,8 @@ export const createSettings = ({
         broadcast('themeState', state.settings.darkMode);
 
         const $btnToggleBg = $('#btn-toggle-bg');
+        const bgKey = state.settings.showBackground ? 'changeBgOn' : 'changeBgOff';
+        $btnToggleBg.attr('data-i18n', bgKey).text(t(bgKey));
         if (state.settings.showBackground) {
             $btnToggleBg.css('background-color', '').addClass('bg-orange-dark').removeClass('bg-gray-500');
         } else {

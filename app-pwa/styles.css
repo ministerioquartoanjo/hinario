@@ -36,9 +36,26 @@
 
   #slide-preview:fullscreen #fs-controls button,
   #slide-preview:-webkit-full-screen #fs-controls button {
-    width: 2rem !important;
-    height: 2rem !important;
-    font-size: 0.875rem;
+    width: 1.6rem !important;
+    height: 1.6rem !important;
+    font-size: 0.7rem;
+  }
+
+  #slide-preview:fullscreen #fs-controls,
+  #slide-preview:-webkit-full-screen #fs-controls {
+    padding: 0.3rem;
+    gap: 0.4rem;
+  }
+
+  #slide-preview:fullscreen #fs-controls .h-\[1px\],
+  #slide-preview:-webkit-full-screen #fs-controls .h-\[1px\] {
+    margin-left: 0.3rem;
+    margin-right: 0.3rem;
+  }
+
+  #slide-preview:fullscreen #fs-controls #fs-speed-display,
+  #slide-preview:-webkit-full-screen #fs-controls #fs-speed-display {
+    font-size: 7px;
   }
 }
 
@@ -239,6 +256,29 @@ body.tema-controle-remoto {
 #slide-preview:-webkit-full-screen #slide-preview-resize-handle,
 #slide-preview:-moz-full-screen #slide-preview-resize-handle {
     display: none !important;
+}
+
+#fs-controls {
+    padding: 0.3rem;
+    gap: 0.4rem;
+}
+
+#fs-controls button {
+    width: 1.6rem;
+    height: 1.6rem;
+}
+
+#fs-controls .h-\[1px\] {
+    margin-left: 0.3rem;
+    margin-right: 0.3rem;
+}
+
+#fs-controls i {
+    font-size: 0.6rem;
+}
+
+#fs-controls #fs-speed-display {
+    font-size: 7px;
 }
 
 .custom-scrollbar {
