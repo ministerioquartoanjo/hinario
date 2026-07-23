@@ -183,13 +183,19 @@ const prevSlide = () => {
 };
 
 const nextHino = () => {
-    const idx = state.hinos.findIndex(h => h.numero === state.currentHino?.numero);
-    return selectHino(state.hinos[(idx + 1) % state.hinos.length]);
+    if (!state.currentHino || !state.hinos.length) return;
+    const idx = state.hinos.findIndex(h => h.numero === state.currentHino.numero);
+    if (idx === -1) return;
+    const nextIdx = (idx + 1) % state.hinos.length;
+    return selectHino(state.hinos[nextIdx]);
 };
 
 const prevHino = () => {
-    const idx = state.hinos.findIndex(h => h.numero === state.currentHino?.numero);
-    return selectHino(state.hinos[(idx - 1 + state.hinos.length) % state.hinos.length]);
+    if (!state.currentHino || !state.hinos.length) return;
+    const idx = state.hinos.findIndex(h => h.numero === state.currentHino.numero);
+    if (idx === -1) return;
+    const prevIdx = (idx - 1 + state.hinos.length) % state.hinos.length;
+    return selectHino(state.hinos[prevIdx]);
 };
 
 const scrollUp = () => {

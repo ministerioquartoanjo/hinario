@@ -10,6 +10,10 @@ export const audioPlayer = {
         const loading = document.getElementById('audio-loading');
         
         if (!player || !loading) return;
+        if (!numero || Number.isNaN(Number(numero))) {
+            console.warn('[loadAudio] Número de hino inválido:', numero);
+            return;
+        }
 
         // Reset play button immediately when loading new audio
         $('#btn-play-pause i, #btn-fs-play-pause i').removeClass('fa-pause').addClass('fa-play');

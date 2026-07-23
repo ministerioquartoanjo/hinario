@@ -1,2 +1,2 @@
 // Version configuration - read by build process
-window.APP_VERSION = '2026.07.22';
+window.APP_VERSION = '26.07.22.1';

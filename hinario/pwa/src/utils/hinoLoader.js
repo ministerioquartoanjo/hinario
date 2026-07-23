@@ -8,10 +8,10 @@ export const hinoLoader = {
         return rawHymns.map(h => {
             if (!h || !h.title) return null;
             try {
-                // Extrair número e título (ex: "1 - A Ceia do Senhor")
-                const parts = h.title.split(' - ');
-                const numero = parts.length > 0 ? parseInt(parts[0]) : 0;
-                const titulo = parts.length > 1 ? parts[1] : h.title;
+                // Extrair número e título (ex: "1 - A Ceia do Senhor" ou "1 – A Ceia do Senhor")
+                const numMatch = h.title.match(/^\s*(\d+)/);
+                const numero = numMatch ? parseInt(numMatch[1], 10) : 0;
+                const titulo = h.title.replace(/^\s*\d+\s*[-–—]\s*/, '').trim() || h.title;
 
                 const letras = [];
 
