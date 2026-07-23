@@ -1,6 +1,6 @@
 {
-  "id": "Himnario Adventista ¡Cristo Prá Mim!",
-  "title": "Himnario Adventista ¡Cristo Prá Mim!",
+  "id": "¡Cristo Prá Mim!",
+  "title": "¡Cristo Prá Mim!",
   "_type": "playlist",
   "entries": [
     {
@@ -33,9 +33,9 @@
       "__x_forwarded_for_ip": null
     }
   ],
-  "webpage_url": "ytsearch1:Himnario Adventista ¡Cristo Prá Mim!",
-  "original_url": "ytsearch1:Himnario Adventista ¡Cristo Prá Mim!",
-  "webpage_url_basename": "Himnario Adventista ¡Cristo Prá Mim!",
+  "webpage_url": "ytsearch1:¡Cristo Prá Mim!",
+  "original_url": "ytsearch1:¡Cristo Prá Mim!",
+  "webpage_url_basename": "¡Cristo Prá Mim!",
   "webpage_url_domain": null,
   "extractor": "youtube:search",
   "extractor_key": "YoutubeSearch",

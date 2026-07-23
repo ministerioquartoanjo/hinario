@@ -1,6 +1,6 @@
 {
-  "id": "Himnario Adventista Bienaventuranza del creyente",
-  "title": "Himnario Adventista Bienaventuranza del creyente",
+  "id": "Bienaventuranza del creyente",
+  "title": "Bienaventuranza del creyente",
   "_type": "playlist",
   "entries": [
     {
@@ -12,9 +12,9 @@
       "description": "L en su canción que entonces no estás del humor en dulces pastel o las fiestas su nación asienta su mansión. Acción.",
       "duration": 160,
       "channel_id": "UC2TQFq0vEPs1xn-T70FmoTQ",
-      "channel": "Himnario adventista 62",
+      "channel": "62",
       "channel_url": "https://www.youtube.com/channel/UC2TQFq0vEPs1xn-T70FmoTQ",
-      "uploader": "Himnario adventista 62",
+      "uploader": "62",
       "uploader_id": "@himnarioHA62",
       "uploader_url": "https://www.youtube.com/@himnarioHA62",
       "thumbnails": [
@@ -38,9 +38,9 @@
       "__x_forwarded_for_ip": null
     }
   ],
-  "webpage_url": "ytsearch1:Himnario Adventista Bienaventuranza del creyente",
-  "original_url": "ytsearch1:Himnario Adventista Bienaventuranza del creyente",
-  "webpage_url_basename": "Himnario Adventista Bienaventuranza del creyente",
+  "webpage_url": "ytsearch1:Bienaventuranza del creyente",
+  "original_url": "ytsearch1:Bienaventuranza del creyente",
+  "webpage_url_basename": "Bienaventuranza del creyente",
   "webpage_url_domain": null,
   "extractor": "youtube:search",
   "extractor_key": "YoutubeSearch",

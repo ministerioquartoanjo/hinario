@@ -1,6 +1,6 @@
 {
-  "id": "Himnario Adventista ¿Cuál es el adorno de esta vida?",
-  "title": "Himnario Adventista ¿Cuál es el adorno de esta vida?",
+  "id": "¿Cuál es el adorno de esta vida?",
+  "title": "¿Cuál es el adorno de esta vida?",
   "_type": "playlist",
   "entries": [
     {
@@ -8,7 +8,7 @@
       "ie_key": "Youtube",
       "id": "kkUloNPe7Ac",
       "url": "https://www.youtube.com/watch?v=kkUloNPe7Ac",
-      "title": "Himnario Adventista 1 al 225 subtitulado 2",
+      "title": "1 al 225 subtitulado 2",
       "description": "El Sábado, observancia rica en simbolismo, cofre que en cierra los recursos infinito de la omnipotencia, es la mayor bendición ...",
       "duration": 34626,
       "channel_id": "UCxMyI1X0CcFiRDQdXZQDkDA",
@@ -33,9 +33,9 @@
       "__x_forwarded_for_ip": null
     }
   ],
-  "webpage_url": "ytsearch1:Himnario Adventista ¿Cuál es el adorno de esta vida?",
-  "original_url": "ytsearch1:Himnario Adventista ¿Cuál es el adorno de esta vida?",
-  "webpage_url_basename": "Himnario Adventista ¿Cuál es el adorno de esta vida",
+  "webpage_url": "ytsearch1:¿Cuál es el adorno de esta vida?",
+  "original_url": "ytsearch1:¿Cuál es el adorno de esta vida?",
+  "webpage_url_basename": "¿Cuál es el adorno de esta vida",
   "webpage_url_domain": null,
   "extractor": "youtube:search",
   "extractor_key": "YoutubeSearch",
@@ -52,7 +52,7 @@
   "videos": [
     {
       "url": "https://www.youtube.com/watch?v=kkUloNPe7Ac",
-      "title": "Himnario Adventista 1 al 225 subtitulado 2"
+      "title": "1 al 225 subtitulado 2"
     },
     {
       "url": "https://www.youtube.com/watch?v=YxVB7Cgg2Mg",

@@ -1,6 +1,6 @@
 {
-  "id": "Himnario Adventista Dios nos dio un mensaje santo",
-  "title": "Himnario Adventista Dios nos dio un mensaje santo",
+  "id": "Dios nos dio un mensaje santo",
+  "title": "Dios nos dio un mensaje santo",
   "_type": "playlist",
   "entries": [
     {
@@ -12,9 +12,9 @@
       "description": null,
       "duration": 187,
       "channel_id": "UC2TQFq0vEPs1xn-T70FmoTQ",
-      "channel": "Himnario adventista 62",
+      "channel": "62",
       "channel_url": "https://www.youtube.com/channel/UC2TQFq0vEPs1xn-T70FmoTQ",
-      "uploader": "Himnario adventista 62",
+      "uploader": "62",
       "uploader_id": "@himnarioHA62",
       "uploader_url": "https://www.youtube.com/@himnarioHA62",
       "thumbnails": [
@@ -33,9 +33,9 @@
       "__x_forwarded_for_ip": null
     }
   ],
-  "webpage_url": "ytsearch1:Himnario Adventista Dios nos dio un mensaje santo",
-  "original_url": "ytsearch1:Himnario Adventista Dios nos dio un mensaje santo",
-  "webpage_url_basename": "Himnario Adventista Dios nos dio un mensaje santo",
+  "webpage_url": "ytsearch1:Dios nos dio un mensaje santo",
+  "original_url": "ytsearch1:Dios nos dio un mensaje santo",
+  "webpage_url_basename": "Dios nos dio un mensaje santo",
   "webpage_url_domain": null,
   "extractor": "youtube:search",
   "extractor_key": "YoutubeSearch",

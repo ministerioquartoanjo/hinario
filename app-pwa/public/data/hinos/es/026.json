@@ -1,6 +1,6 @@
 {
-  "id": "Himnario Adventista Tal como soy",
-  "title": "Himnario Adventista Tal como soy",
+  "id": "Tal como soy",
+  "title": "Tal como soy",
   "_type": "playlist",
   "entries": [
     {
@@ -33,9 +33,9 @@
       "__x_forwarded_for_ip": null
     }
   ],
-  "webpage_url": "ytsearch1:Himnario Adventista Tal como soy",
-  "original_url": "ytsearch1:Himnario Adventista Tal como soy",
-  "webpage_url_basename": "Himnario Adventista Tal como soy",
+  "webpage_url": "ytsearch1:Tal como soy",
+  "original_url": "ytsearch1:Tal como soy",
+  "webpage_url_basename": "Tal como soy",
   "webpage_url_domain": null,
   "extractor": "youtube:search",
   "extractor_key": "YoutubeSearch",
@@ -56,7 +56,7 @@
     },
     {
       "url": "https://www.youtube.com/watch?v=QV2ZMrTH3y0",
-      "title": "HIMNO 249 - Tal como soy - NUEVO HIMNARIO ADVENTISTA - HIMNOS PISTA PIANO"
+      "title": "HIMNO 249 - Tal como soy - NUEVO - HIMNOS PISTA PIANO"
     },
     {
       "url": "https://www.youtube.com/watch?v=YCVmTpGaZ_E",

@@ -1,6 +1,6 @@
 {
-  "id": "Himnario Adventista Buen nombre, dulce fe",
-  "title": "Himnario Adventista Buen nombre, dulce fe",
+  "id": "Buen nombre, dulce fe",
+  "title": "Buen nombre, dulce fe",
   "_type": "playlist",
   "entries": [
     {
@@ -33,9 +33,9 @@
       "__x_forwarded_for_ip": null
     }
   ],
-  "webpage_url": "ytsearch1:Himnario Adventista Buen nombre, dulce fe",
-  "original_url": "ytsearch1:Himnario Adventista Buen nombre, dulce fe",
-  "webpage_url_basename": "Himnario Adventista Buen nombre, dulce fe",
+  "webpage_url": "ytsearch1:Buen nombre, dulce fe",
+  "original_url": "ytsearch1:Buen nombre, dulce fe",
+  "webpage_url_basename": "Buen nombre, dulce fe",
   "webpage_url_domain": null,
   "extractor": "youtube:search",
   "extractor_key": "YoutubeSearch",
@@ -60,7 +60,7 @@
     },
     {
       "url": "https://www.youtube.com/watch?v=FlS9geiNGAo",
-      "title": "Himno 12 - ¡Tu nombre es dulce, buen Jesús! | Himnario Adventista Antiguo"
+      "title": "Himno 12 - ¡Tu nombre es dulce, buen Jesús! | Antiguo"
     }
   ]
 }

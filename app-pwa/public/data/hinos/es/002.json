@@ -1,6 +1,6 @@
 {
-  "id": "Himnario Adventista A Dios le dimos gloria",
-  "title": "Himnario Adventista A Dios le dimos gloria",
+  "id": "A Dios le dimos gloria",
+  "title": "A Dios le dimos gloria",
   "_type": "playlist",
   "entries": [
     {
@@ -12,9 +12,9 @@
       "description": null,
       "duration": 187,
       "channel_id": "UC2TQFq0vEPs1xn-T70FmoTQ",
-      "channel": "Himnario adventista 62",
+      "channel": "62",
       "channel_url": "https://www.youtube.com/channel/UC2TQFq0vEPs1xn-T70FmoTQ",
-      "uploader": "Himnario adventista 62",
+      "uploader": "62",
       "uploader_id": "@himnarioHA62",
       "uploader_url": "https://www.youtube.com/@himnarioHA62",
       "thumbnails": [
@@ -33,9 +33,9 @@
       "__x_forwarded_for_ip": null
     }
   ],
-  "webpage_url": "ytsearch1:Himnario Adventista A Dios le dimos gloria",
-  "original_url": "ytsearch1:Himnario Adventista A Dios le dimos gloria",
-  "webpage_url_basename": "Himnario Adventista A Dios le dimos gloria",
+  "webpage_url": "ytsearch1:A Dios le dimos gloria",
+  "original_url": "ytsearch1:A Dios le dimos gloria",
+  "webpage_url_basename": "A Dios le dimos gloria",
   "webpage_url_domain": null,
   "extractor": "youtube:search",
   "extractor_key": "YoutubeSearch",
@@ -52,15 +52,15 @@
   "videos": [
     {
       "url": "https://www.youtube.com/watch?v=tNUZopRl4gI",
-      "title": "Himno 439 - ¡Oh!, quién pudiera andar con Dios | Himnario Adventista Nuevo"
+      "title": "Himno 439 - ¡Oh!, quién pudiera andar con Dios | Nuevo"
     },
     {
       "url": "https://www.youtube.com/watch?v=aEx45EUIxhY",
-      "title": "¡Oh amor de Dios! - Himno 53 | Himnario Adventista Nuevo"
+      "title": "¡Oh amor de Dios! - Himno 53 | Nuevo"
     },
     {
       "url": "https://www.youtube.com/watch?v=490_vbhw7Gc",
-      "title": "Sangró mi soberano Dios - Himno 94 | Himnario Adventista Nuevo"
+      "title": "Sangró mi soberano Dios - Himno 94 | Nuevo"
     }
   ]
 }

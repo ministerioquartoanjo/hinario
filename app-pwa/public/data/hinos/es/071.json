@@ -1,6 +1,6 @@
 {
-  "id": "Himnario Adventista Gloria a Jesús",
-  "title": "Himnario Adventista Gloria a Jesús",
+  "id": "Gloria a Jesús",
+  "title": "Gloria a Jesús",
   "_type": "playlist",
   "entries": [
     {
@@ -33,9 +33,9 @@
       "__x_forwarded_for_ip": null
     }
   ],
-  "webpage_url": "ytsearch1:Himnario Adventista Gloria a Jesús",
-  "original_url": "ytsearch1:Himnario Adventista Gloria a Jesús",
-  "webpage_url_basename": "Himnario Adventista Gloria a Jesús",
+  "webpage_url": "ytsearch1:Gloria a Jesús",
+  "original_url": "ytsearch1:Gloria a Jesús",
+  "webpage_url_basename": "Gloria a Jesús",
   "webpage_url_domain": null,
   "extractor": "youtube:search",
   "extractor_key": "YoutubeSearch",
@@ -52,7 +52,7 @@
   "videos": [
     {
       "url": "https://www.youtube.com/watch?v=V276Mb6HKlw",
-      "title": "Himnario Adventista   2   Da Gloria al Senor"
+      "title": "  2   Da Gloria al Senor"
     },
     {
       "url": "https://www.youtube.com/watch?v=PPrZzQ7bL0I",

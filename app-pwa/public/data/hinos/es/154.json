@@ -1,6 +1,6 @@
 {
-  "id": "Himnario Adventista Quien escuche la noticia",
-  "title": "Himnario Adventista Quien escuche la noticia",
+  "id": "Quien escuche la noticia",
+  "title": "Quien escuche la noticia",
   "_type": "playlist",
   "entries": [
     {
@@ -38,9 +38,9 @@
       "__x_forwarded_for_ip": null
     }
   ],
-  "webpage_url": "ytsearch1:Himnario Adventista Quien escuche la noticia",
-  "original_url": "ytsearch1:Himnario Adventista Quien escuche la noticia",
-  "webpage_url_basename": "Himnario Adventista Quien escuche la noticia",
+  "webpage_url": "ytsearch1:Quien escuche la noticia",
+  "original_url": "ytsearch1:Quien escuche la noticia",
+  "webpage_url_basename": "Quien escuche la noticia",
   "webpage_url_domain": null,
   "extractor": "youtube:search",
   "extractor_key": "YoutubeSearch",

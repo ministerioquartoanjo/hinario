@@ -1,6 +1,6 @@
 {
-  "id": "Himnario Adventista ¡Qué seguridad! Soy de Jesús",
-  "title": "Himnario Adventista ¡Qué seguridad! Soy de Jesús",
+  "id": "¡Qué seguridad! Soy de Jesús",
+  "title": "¡Qué seguridad! Soy de Jesús",
   "_type": "playlist",
   "entries": [
     {
@@ -33,9 +33,9 @@
       "__x_forwarded_for_ip": null
     }
   ],
-  "webpage_url": "ytsearch1:Himnario Adventista ¡Qué seguridad! Soy de Jesús",
-  "original_url": "ytsearch1:Himnario Adventista ¡Qué seguridad! Soy de Jesús",
-  "webpage_url_basename": "Himnario Adventista ¡Qué seguridad! Soy de Jesús",
+  "webpage_url": "ytsearch1:¡Qué seguridad! Soy de Jesús",
+  "original_url": "ytsearch1:¡Qué seguridad! Soy de Jesús",
+  "webpage_url_basename": "¡Qué seguridad! Soy de Jesús",
   "webpage_url_domain": null,
   "extractor": "youtube:search",
   "extractor_key": "YoutubeSearch",

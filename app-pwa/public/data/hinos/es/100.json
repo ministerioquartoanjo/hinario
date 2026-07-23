@@ -1,6 +1,6 @@
 {
-  "id": "Himnario Adventista Más cerca quiero estar",
-  "title": "Himnario Adventista Más cerca quiero estar",
+  "id": "Más cerca quiero estar",
+  "title": "Más cerca quiero estar",
   "_type": "playlist",
   "entries": [
     {
@@ -12,9 +12,9 @@
       "description": "Más cerca, oh Dios de ti.",
       "duration": 226,
       "channel_id": "UC2TQFq0vEPs1xn-T70FmoTQ",
-      "channel": "Himnario adventista 62",
+      "channel": "62",
       "channel_url": "https://www.youtube.com/channel/UC2TQFq0vEPs1xn-T70FmoTQ",
-      "uploader": "Himnario adventista 62",
+      "uploader": "62",
       "uploader_id": "@himnarioHA62",
       "uploader_url": "https://www.youtube.com/@himnarioHA62",
       "thumbnails": [
@@ -33,9 +33,9 @@
       "__x_forwarded_for_ip": null
     }
   ],
-  "webpage_url": "ytsearch1:Himnario Adventista Más cerca quiero estar",
-  "original_url": "ytsearch1:Himnario Adventista Más cerca quiero estar",
-  "webpage_url_basename": "Himnario Adventista Más cerca quiero estar",
+  "webpage_url": "ytsearch1:Más cerca quiero estar",
+  "original_url": "ytsearch1:Más cerca quiero estar",
+  "webpage_url_basename": "Más cerca quiero estar",
   "webpage_url_domain": null,
   "extractor": "youtube:search",
   "extractor_key": "YoutubeSearch",
@@ -52,7 +52,7 @@
   "videos": [
     {
       "url": "https://www.youtube.com/watch?v=76fcXdTSeFw",
-      "title": "Himnario adventista 446 Más cerca, oh Dios, de ti (-)"
+      "title": "446 Más cerca, oh Dios, de ti (-)"
     },
     {
       "url": "https://www.youtube.com/watch?v=Y6PR5eHSCZ8",

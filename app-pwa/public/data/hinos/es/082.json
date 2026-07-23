@@ -1,6 +1,6 @@
 {
-  "id": "Himnario Adventista Cosecharemos",
-  "title": "Himnario Adventista Cosecharemos",
+  "id": "Cosecharemos",
+  "title": "Cosecharemos",
   "_type": "playlist",
   "entries": [
     {
@@ -38,9 +38,9 @@
       "__x_forwarded_for_ip": null
     }
   ],
-  "webpage_url": "ytsearch1:Himnario Adventista Cosecharemos",
-  "original_url": "ytsearch1:Himnario Adventista Cosecharemos",
-  "webpage_url_basename": "Himnario Adventista Cosecharemos",
+  "webpage_url": "ytsearch1:Cosecharemos",
+  "original_url": "ytsearch1:Cosecharemos",
+  "webpage_url_basename": "Cosecharemos",
   "webpage_url_domain": null,
   "extractor": "youtube:search",
   "extractor_key": "YoutubeSearch",

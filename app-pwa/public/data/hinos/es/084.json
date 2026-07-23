@@ -1,6 +1,6 @@
 {
-  "id": "Himnario Adventista Historia de Cristo",
-  "title": "Himnario Adventista Historia de Cristo",
+  "id": "Historia de Cristo",
+  "title": "Historia de Cristo",
   "_type": "playlist",
   "entries": [
     {
@@ -38,9 +38,9 @@
       "__x_forwarded_for_ip": null
     }
   ],
-  "webpage_url": "ytsearch1:Himnario Adventista Historia de Cristo",
-  "original_url": "ytsearch1:Himnario Adventista Historia de Cristo",
-  "webpage_url_basename": "Himnario Adventista Historia de Cristo",
+  "webpage_url": "ytsearch1:Historia de Cristo",
+  "original_url": "ytsearch1:Historia de Cristo",
+  "webpage_url_basename": "Historia de Cristo",
   "webpage_url_domain": null,
   "extractor": "youtube:search",
   "extractor_key": "YoutubeSearch",
@@ -57,7 +57,7 @@
   "videos": [
     {
       "url": "https://www.youtube.com/watch?v=J_z3ApaJ2xA",
-      "title": "Himno 571 - La historia de Cristo contemos | Himnario Adventista Nuevo"
+      "title": "Himno 571 - La historia de Cristo contemos | Nuevo"
     },
     {
       "url": "https://www.youtube.com/watch?v=Nfzjctytkxc",
@@ -65,7 +65,7 @@
     },
     {
       "url": "https://www.youtube.com/watch?v=6LPeigxcKqo",
-      "title": "Himno 571 - La historia de Cristo contemos - Pista | Himnario Adventista Instrumental"
+      "title": "Himno 571 - La historia de Cristo contemos - Pista | Instrumental"
     }
   ]
 }

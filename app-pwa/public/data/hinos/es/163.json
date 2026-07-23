@@ -1,6 +1,6 @@
 {
-  "id": "Himnario Adventista ¡Santo! ¡Santo! ¡Santo!",
-  "title": "Himnario Adventista ¡Santo! ¡Santo! ¡Santo!",
+  "id": "¡Santo! ¡Santo! ¡Santo!",
+  "title": "¡Santo! ¡Santo! ¡Santo!",
   "_type": "playlist",
   "entries": [
     {
@@ -12,9 +12,9 @@
       "description": "70 | Santo, Santo, Santo. 1⠀⠀⠀⠀ Santo, Santo, Santo; Dios Omnipotente; canto de mañana tu excelsa majestad; Santo, Santo, ...",
       "duration": 141,
       "channel_id": "UC2TQFq0vEPs1xn-T70FmoTQ",
-      "channel": "Himnario adventista 62",
+      "channel": "62",
       "channel_url": "https://www.youtube.com/channel/UC2TQFq0vEPs1xn-T70FmoTQ",
-      "uploader": "Himnario adventista 62",
+      "uploader": "62",
       "uploader_id": "@himnarioHA62",
       "uploader_url": "https://www.youtube.com/@himnarioHA62",
       "thumbnails": [
@@ -33,9 +33,9 @@
       "__x_forwarded_for_ip": null
     }
   ],
-  "webpage_url": "ytsearch1:Himnario Adventista ¡Santo! ¡Santo! ¡Santo!",
-  "original_url": "ytsearch1:Himnario Adventista ¡Santo! ¡Santo! ¡Santo!",
-  "webpage_url_basename": "Himnario Adventista ¡Santo! ¡Santo! ¡Santo!",
+  "webpage_url": "ytsearch1:¡Santo! ¡Santo! ¡Santo!",
+  "original_url": "ytsearch1:¡Santo! ¡Santo! ¡Santo!",
+  "webpage_url_basename": "¡Santo! ¡Santo! ¡Santo!",
   "webpage_url_domain": null,
   "extractor": "youtube:search",
   "extractor_key": "YoutubeSearch",

@@ -1,6 +1,6 @@
 {
-  "id": "Himnario Adventista Amor sin igual",
-  "title": "Himnario Adventista Amor sin igual",
+  "id": "Amor sin igual",
+  "title": "Amor sin igual",
   "_type": "playlist",
   "entries": [
     {
@@ -8,7 +8,7 @@
       "ie_key": "Youtube",
       "id": "GSvij2ODdhs",
       "url": "https://www.youtube.com/watch?v=GSvij2ODdhs",
-      "title": "Himno 362 - Con sin igual amor | Himnario Adventista Nuevo",
+      "title": "Himno 362 - Con sin igual amor | Nuevo",
       "description": "En este canal subimos todos los himnos adventistas, puedes apoyarnos, Suscríbete y comparte amor y esperanza.",
       "duration": 174,
       "channel_id": "UCQueHIEoaEN0Rr_kyy4BWNw",
@@ -38,9 +38,9 @@
       "__x_forwarded_for_ip": null
     }
   ],
-  "webpage_url": "ytsearch1:Himnario Adventista Amor sin igual",
-  "original_url": "ytsearch1:Himnario Adventista Amor sin igual",
-  "webpage_url_basename": "Himnario Adventista Amor sin igual",
+  "webpage_url": "ytsearch1:Amor sin igual",
+  "original_url": "ytsearch1:Amor sin igual",
+  "webpage_url_basename": "Amor sin igual",
   "webpage_url_domain": null,
   "extractor": "youtube:search",
   "extractor_key": "YoutubeSearch",

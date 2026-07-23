@@ -1,6 +1,6 @@
 {
-  "id": "Himnario Adventista ¡Ay! ¡Nunca se separe!",
-  "title": "Himnario Adventista ¡Ay! ¡Nunca se separe!",
+  "id": "¡Ay! ¡Nunca se separe!",
+  "title": "¡Ay! ¡Nunca se separe!",
   "_type": "playlist",
   "entries": [
     {
@@ -38,9 +38,9 @@
       "__x_forwarded_for_ip": null
     }
   ],
-  "webpage_url": "ytsearch1:Himnario Adventista ¡Ay! ¡Nunca se separe!",
-  "original_url": "ytsearch1:Himnario Adventista ¡Ay! ¡Nunca se separe!",
-  "webpage_url_basename": "Himnario Adventista ¡Ay! ¡Nunca se separe!",
+  "webpage_url": "ytsearch1:¡Ay! ¡Nunca se separe!",
+  "original_url": "ytsearch1:¡Ay! ¡Nunca se separe!",
+  "webpage_url_basename": "¡Ay! ¡Nunca se separe!",
   "webpage_url_domain": null,
   "extractor": "youtube:search",
   "extractor_key": "YoutubeSearch",

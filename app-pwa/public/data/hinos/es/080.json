@@ -1,6 +1,6 @@
 {
-  "id": "Himnario Adventista Hay un Camino Santo",
-  "title": "Himnario Adventista Hay un Camino Santo",
+  "id": "Hay un Camino Santo",
+  "title": "Hay un Camino Santo",
   "_type": "playlist",
   "entries": [
     {
@@ -12,9 +12,9 @@
       "description": "HA62.",
       "duration": 159,
       "channel_id": "UC2TQFq0vEPs1xn-T70FmoTQ",
-      "channel": "Himnario adventista 62",
+      "channel": "62",
       "channel_url": "https://www.youtube.com/channel/UC2TQFq0vEPs1xn-T70FmoTQ",
-      "uploader": "Himnario adventista 62",
+      "uploader": "62",
       "uploader_id": "@himnarioHA62",
       "uploader_url": "https://www.youtube.com/@himnarioHA62",
       "thumbnails": [
@@ -33,9 +33,9 @@
       "__x_forwarded_for_ip": null
     }
   ],
-  "webpage_url": "ytsearch1:Himnario Adventista Hay un Camino Santo",
-  "original_url": "ytsearch1:Himnario Adventista Hay un Camino Santo",
-  "webpage_url_basename": "Himnario Adventista Hay un Camino Santo",
+  "webpage_url": "ytsearch1:Hay un Camino Santo",
+  "original_url": "ytsearch1:Hay un Camino Santo",
+  "webpage_url_basename": "Hay un Camino Santo",
   "webpage_url_domain": null,
   "extractor": "youtube:search",
   "extractor_key": "YoutubeSearch",
@@ -52,7 +52,7 @@
   "videos": [
     {
       "url": "https://www.youtube.com/watch?v=1fwWqzU3LVk",
-      "title": "Himno 475 - El camino es escabroso | Himnario Adventista Nuevo"
+      "title": "Himno 475 - El camino es escabroso | Nuevo"
     },
     {
       "url": "https://www.youtube.com/watch?v=KpoyeCTvP5Q",

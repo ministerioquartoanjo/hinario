@@ -1,6 +1,6 @@
 {
-  "id": "Himnario Adventista En oración ferviente",
-  "title": "Himnario Adventista En oración ferviente",
+  "id": "En oración ferviente",
+  "title": "En oración ferviente",
   "_type": "playlist",
   "entries": [
     {
@@ -33,9 +33,9 @@
       "__x_forwarded_for_ip": null
     }
   ],
-  "webpage_url": "ytsearch1:Himnario Adventista En oración ferviente",
-  "original_url": "ytsearch1:Himnario Adventista En oración ferviente",
-  "webpage_url_basename": "Himnario Adventista En oración ferviente",
+  "webpage_url": "ytsearch1:En oración ferviente",
+  "original_url": "ytsearch1:En oración ferviente",
+  "webpage_url_basename": "En oración ferviente",
   "webpage_url_domain": null,
   "extractor": "youtube:search",
   "extractor_key": "YoutubeSearch",

@@ -1,6 +1,6 @@
 {
-  "id": "Himnario Adventista Sábado",
-  "title": "Himnario Adventista Sábado",
+  "id": "Sábado",
+  "title": "Sábado",
   "_type": "playlist",
   "entries": [
     {
@@ -38,9 +38,9 @@
       "__x_forwarded_for_ip": null
     }
   ],
-  "webpage_url": "ytsearch1:Himnario Adventista Sábado",
-  "original_url": "ytsearch1:Himnario Adventista Sábado",
-  "webpage_url_basename": "Himnario Adventista Sábado",
+  "webpage_url": "ytsearch1:Sábado",
+  "original_url": "ytsearch1:Sábado",
+  "webpage_url_basename": "Sábado",
   "webpage_url_domain": null,
   "extractor": "youtube:search",
   "extractor_key": "YoutubeSearch",
@@ -61,11 +61,11 @@
     },
     {
       "url": "https://www.youtube.com/watch?v=ltS1-DhKshY",
-      "title": "547 Nuevo Himnario Adventista - Sábado es"
+      "title": "547 Nuevo - Sábado es"
     },
     {
       "url": "https://www.youtube.com/watch?v=gKWgMF2LqNE",
-      "title": "542 Nuevo Himnario Adventista - Amo tu sábado"
+      "title": "542 Nuevo - Amo tu sábado"
     }
   ]
 }

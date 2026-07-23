@@ -1,6 +1,6 @@
 {
-  "id": "Himnario Adventista Mi entrega",
-  "title": "Himnario Adventista Mi entrega",
+  "id": "Mi entrega",
+  "title": "Mi entrega",
   "_type": "playlist",
   "entries": [
     {
@@ -38,9 +38,9 @@
       "__x_forwarded_for_ip": null
     }
   ],
-  "webpage_url": "ytsearch1:Himnario Adventista Mi entrega",
-  "original_url": "ytsearch1:Himnario Adventista Mi entrega",
-  "webpage_url_basename": "Himnario Adventista Mi entrega",
+  "webpage_url": "ytsearch1:Mi entrega",
+  "original_url": "ytsearch1:Mi entrega",
+  "webpage_url_basename": "Mi entrega",
   "webpage_url_domain": null,
   "extractor": "youtube:search",
   "extractor_key": "YoutubeSearch",

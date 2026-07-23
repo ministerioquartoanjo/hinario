@@ -1,6 +1,6 @@
 {
-  "id": "Himnario Adventista Pensando en Jesús",
-  "title": "Himnario Adventista Pensando en Jesús",
+  "id": "Pensando en Jesús",
+  "title": "Pensando en Jesús",
   "_type": "playlist",
   "entries": [
     {
@@ -33,9 +33,9 @@
       "__x_forwarded_for_ip": null
     }
   ],
-  "webpage_url": "ytsearch1:Himnario Adventista Pensando en Jesús",
-  "original_url": "ytsearch1:Himnario Adventista Pensando en Jesús",
-  "webpage_url_basename": "Himnario Adventista Pensando en Jesús",
+  "webpage_url": "ytsearch1:Pensando en Jesús",
+  "original_url": "ytsearch1:Pensando en Jesús",
+  "webpage_url_basename": "Pensando en Jesús",
   "webpage_url_domain": null,
   "extractor": "youtube:search",
   "extractor_key": "YoutubeSearch",
@@ -60,7 +60,7 @@
     },
     {
       "url": "https://www.youtube.com/watch?v=AreOEQROY_g",
-      "title": "Himno 280 - Ser semejante a Jesús | Himnario Adventista Nuevo"
+      "title": "Himno 280 - Ser semejante a Jesús | Nuevo"
     }
   ]
 }

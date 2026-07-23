@@ -1,6 +1,6 @@
 {
-  "id": "Himnario Adventista ¡Amigo sin igual!",
-  "title": "Himnario Adventista ¡Amigo sin igual!",
+  "id": "¡Amigo sin igual!",
+  "title": "¡Amigo sin igual!",
   "_type": "playlist",
   "entries": [
     {
@@ -12,9 +12,9 @@
       "description": null,
       "duration": 143,
       "channel_id": "UC2TQFq0vEPs1xn-T70FmoTQ",
-      "channel": "Himnario adventista 62",
+      "channel": "62",
       "channel_url": "https://www.youtube.com/channel/UC2TQFq0vEPs1xn-T70FmoTQ",
-      "uploader": "Himnario adventista 62",
+      "uploader": "62",
       "uploader_id": "@himnarioHA62",
       "uploader_url": "https://www.youtube.com/@himnarioHA62",
       "thumbnails": [
@@ -33,9 +33,9 @@
       "__x_forwarded_for_ip": null
     }
   ],
-  "webpage_url": "ytsearch1:Himnario Adventista ¡Amigo sin igual!",
-  "original_url": "ytsearch1:Himnario Adventista ¡Amigo sin igual!",
-  "webpage_url_basename": "Himnario Adventista ¡Amigo sin igual!",
+  "webpage_url": "ytsearch1:¡Amigo sin igual!",
+  "original_url": "ytsearch1:¡Amigo sin igual!",
+  "webpage_url_basename": "¡Amigo sin igual!",
   "webpage_url_domain": null,
   "extractor": "youtube:search",
   "extractor_key": "YoutubeSearch",
@@ -52,11 +52,11 @@
   "videos": [
     {
       "url": "https://www.youtube.com/watch?v=T0z0jeySOfA",
-      "title": "Himno 286 - Hay una fuente sin igual | Himnario Adventista Nuevo"
+      "title": "Himno 286 - Hay una fuente sin igual | Nuevo"
     },
     {
       "url": "https://www.youtube.com/watch?v=GSvij2ODdhs",
-      "title": "Himno 362 - Con sin igual amor | Himnario Adventista Nuevo"
+      "title": "Himno 362 - Con sin igual amor | Nuevo"
     },
     {
       "url": "https://www.youtube.com/watch?v=Txu6BzlLfN8",

@@ -1,6 +1,6 @@
 {
-  "id": "Himnario Adventista Quiero hacer lo que Tú quieras, Señor",
-  "title": "Himnario Adventista Quiero hacer lo que Tú quieras, Señor",
+  "id": "Quiero hacer lo que Tú quieras, Señor",
+  "title": "Quiero hacer lo que Tú quieras, Señor",
   "_type": "playlist",
   "entries": [
     {
@@ -38,9 +38,9 @@
       "__x_forwarded_for_ip": null
     }
   ],
-  "webpage_url": "ytsearch1:Himnario Adventista Quiero hacer lo que Tú quieras, Señor",
-  "original_url": "ytsearch1:Himnario Adventista Quiero hacer lo que Tú quieras, Señor",
-  "webpage_url_basename": "Himnario Adventista Quiero hacer lo que Tú quieras, Señor",
+  "webpage_url": "ytsearch1:Quiero hacer lo que Tú quieras, Señor",
+  "original_url": "ytsearch1:Quiero hacer lo que Tú quieras, Señor",
+  "webpage_url_basename": "Quiero hacer lo que Tú quieras, Señor",
   "webpage_url_domain": null,
   "extractor": "youtube:search",
   "extractor_key": "YoutubeSearch",

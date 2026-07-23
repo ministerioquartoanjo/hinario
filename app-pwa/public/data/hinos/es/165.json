@@ -1,6 +1,6 @@
 {
-  "id": "Himnario Adventista Recuerdo anhelante",
-  "title": "Himnario Adventista Recuerdo anhelante",
+  "id": "Recuerdo anhelante",
+  "title": "Recuerdo anhelante",
   "_type": "playlist",
   "entries": [
     {
@@ -38,9 +38,9 @@
       "__x_forwarded_for_ip": null
     }
   ],
-  "webpage_url": "ytsearch1:Himnario Adventista Recuerdo anhelante",
-  "original_url": "ytsearch1:Himnario Adventista Recuerdo anhelante",
-  "webpage_url_basename": "Himnario Adventista Recuerdo anhelante",
+  "webpage_url": "ytsearch1:Recuerdo anhelante",
+  "original_url": "ytsearch1:Recuerdo anhelante",
+  "webpage_url_basename": "Recuerdo anhelante",
   "webpage_url_domain": null,
   "extractor": "youtube:search",
   "extractor_key": "YoutubeSearch",
@@ -61,7 +61,7 @@
     },
     {
       "url": "https://www.youtube.com/watch?v=2WUnQkRiNiU",
-      "title": "Himno 593 - Hogar de mis recuerdos - Pista | Himnario Adventista Instrumental"
+      "title": "Himno 593 - Hogar de mis recuerdos - Pista | Instrumental"
     },
     {
       "url": "https://www.youtube.com/watch?v=2JUP7Zi3Pe0",

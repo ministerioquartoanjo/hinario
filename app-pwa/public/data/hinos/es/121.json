@@ -1,6 +1,6 @@
 {
-  "id": "Himnario Adventista Oh Dios Eterno, ven a concédeme",
-  "title": "Himnario Adventista Oh Dios Eterno, ven a concédeme",
+  "id": "Oh Dios Eterno, ven a concédeme",
+  "title": "Oh Dios Eterno, ven a concédeme",
   "_type": "playlist",
   "entries": [
     {
@@ -12,9 +12,9 @@
       "description": null,
       "duration": 137,
       "channel_id": "UC2TQFq0vEPs1xn-T70FmoTQ",
-      "channel": "Himnario adventista 62",
+      "channel": "62",
       "channel_url": "https://www.youtube.com/channel/UC2TQFq0vEPs1xn-T70FmoTQ",
-      "uploader": "Himnario adventista 62",
+      "uploader": "62",
       "uploader_id": "@himnarioHA62",
       "uploader_url": "https://www.youtube.com/@himnarioHA62",
       "thumbnails": [
@@ -38,9 +38,9 @@
       "__x_forwarded_for_ip": null
     }
   ],
-  "webpage_url": "ytsearch1:Himnario Adventista Oh Dios Eterno, ven a concédeme",
-  "original_url": "ytsearch1:Himnario Adventista Oh Dios Eterno, ven a concédeme",
-  "webpage_url_basename": "Himnario Adventista Oh Dios Eterno, ven a concédeme",
+  "webpage_url": "ytsearch1:Oh Dios Eterno, ven a concédeme",
+  "original_url": "ytsearch1:Oh Dios Eterno, ven a concédeme",
+  "webpage_url_basename": "Oh Dios Eterno, ven a concédeme",
   "webpage_url_domain": null,
   "extractor": "youtube:search",
   "extractor_key": "YoutubeSearch",
@@ -57,15 +57,15 @@
   "videos": [
     {
       "url": "https://www.youtube.com/watch?v=N34NAHH2aR8",
-      "title": "Himnario Adventista Antiguo... Himno # 297 Oh Jesus Señor divino"
+      "title": "Antiguo... Himno # 297 Oh Jesus Señor divino"
     },
     {
       "url": "https://www.youtube.com/watch?v=5JEtGhdG1QU",
-      "title": "Antiguo Himnario Adventista 384 Voy al cielo"
+      "title": "Antiguo 384 Voy al cielo"
     },
     {
       "url": "https://www.youtube.com/watch?v=whj-WePs2Ho",
-      "title": "Antiguo Himnario Adventista #297 - ¡Oh Jesús, Señor Divino!"
+      "title": "Antiguo #297 - ¡Oh Jesús, Señor Divino!"
     }
   ]
 }

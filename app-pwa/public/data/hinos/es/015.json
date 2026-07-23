@@ -1,6 +1,6 @@
 {
-  "id": "Himnario Adventista Anhelo una fe fuerte",
-  "title": "Himnario Adventista Anhelo una fe fuerte",
+  "id": "Anhelo una fe fuerte",
+  "title": "Anhelo una fe fuerte",
   "_type": "playlist",
   "entries": [
     {
@@ -9,12 +9,12 @@
       "id": "I6vsRhc_Igc",
       "url": "https://www.youtube.com/watch?v=I6vsRhc_Igc",
       "title": "Himnos Adventistas para para hacerte más fuerte que nunca - Hermosa Himnario Adventista",
-      "description": "Himnos Adventistas para para hacerte más fuerte que nunca - Hermosa Himnario Adventista https://youtu.be/I6vsRhc_Igc ...",
+      "description": "Himnos Adventistas para para hacerte más fuerte que nunca - Hermosa https://youtu.be/I6vsRhc_Igc ...",
       "duration": 6725,
       "channel_id": "UCF47kWVqLA5hWmmw8OIszrA",
-      "channel": "Himnario Adventista Selecto",
+      "channel": "Selecto",
       "channel_url": "https://www.youtube.com/channel/UCF47kWVqLA5hWmmw8OIszrA",
-      "uploader": "Himnario Adventista Selecto",
+      "uploader": "Selecto",
       "uploader_id": "@HimnarioAdventistaSelecto102",
       "uploader_url": "https://www.youtube.com/@HimnarioAdventistaSelecto102",
       "thumbnails": [
@@ -38,9 +38,9 @@
       "__x_forwarded_for_ip": null
     }
   ],
-  "webpage_url": "ytsearch1:Himnario Adventista Anhelo una fe fuerte",
-  "original_url": "ytsearch1:Himnario Adventista Anhelo una fe fuerte",
-  "webpage_url_basename": "Himnario Adventista Anhelo una fe fuerte",
+  "webpage_url": "ytsearch1:Anhelo una fe fuerte",
+  "original_url": "ytsearch1:Anhelo una fe fuerte",
+  "webpage_url_basename": "Anhelo una fe fuerte",
   "webpage_url_domain": null,
   "extractor": "youtube:search",
   "extractor_key": "YoutubeSearch",
@@ -57,7 +57,7 @@
   "videos": [
     {
       "url": "https://www.youtube.com/watch?v=P1U8QqTeNJo",
-      "title": "Himno # 316 Cuanto anhelo llegar... Himnario Adventista Antiguo"
+      "title": "Himno # 316 Cuanto anhelo llegar... Antiguo"
     },
     {
       "url": "https://www.youtube.com/watch?v=I6vsRhc_Igc",

@@ -1,6 +1,6 @@
 {
-  "id": "Himnario Adventista Adoración reconocida",
-  "title": "Himnario Adventista Adoración reconocida",
+  "id": "Adoración reconocida",
+  "title": "Adoración reconocida",
   "_type": "playlist",
   "entries": [
     {
@@ -12,9 +12,9 @@
       "description": "Himnos Adventistas para expulsar todos mal de tu vida - Música Cristiana Adventista por la mañana ...",
       "duration": 7001,
       "channel_id": "UCF47kWVqLA5hWmmw8OIszrA",
-      "channel": "Himnario Adventista Selecto",
+      "channel": "Selecto",
       "channel_url": "https://www.youtube.com/channel/UCF47kWVqLA5hWmmw8OIszrA",
-      "uploader": "Himnario Adventista Selecto",
+      "uploader": "Selecto",
       "uploader_id": "@HimnarioAdventistaSelecto102",
       "uploader_url": "https://www.youtube.com/@HimnarioAdventistaSelecto102",
       "thumbnails": [
@@ -38,9 +38,9 @@
       "__x_forwarded_for_ip": null
     }
   ],
-  "webpage_url": "ytsearch1:Himnario Adventista Adoración reconocida",
-  "original_url": "ytsearch1:Himnario Adventista Adoración reconocida",
-  "webpage_url_basename": "Himnario Adventista Adoración reconocida",
+  "webpage_url": "ytsearch1:Adoración reconocida",
+  "original_url": "ytsearch1:Adoración reconocida",
+  "webpage_url_basename": "Adoración reconocida",
   "webpage_url_domain": null,
   "extractor": "youtube:search",
   "extractor_key": "YoutubeSearch",

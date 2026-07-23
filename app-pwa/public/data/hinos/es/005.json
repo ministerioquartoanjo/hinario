@@ -1,6 +1,6 @@
 {
-  "id": "Himnario Adventista ¡Aleluya! ¡Aleluya! Cantar himnos de agradecimiento",
-  "title": "Himnario Adventista ¡Aleluya! ¡Aleluya! Cantar himnos de agradecimiento",
+  "id": "¡Aleluya! ¡Aleluya! Cantar himnos de agradecimiento",
+  "title": "¡Aleluya! ¡Aleluya! Cantar himnos de agradecimiento",
   "_type": "playlist",
   "entries": [
     {
@@ -33,9 +33,9 @@
       "__x_forwarded_for_ip": null
     }
   ],
-  "webpage_url": "ytsearch1:Himnario Adventista ¡Aleluya! ¡Aleluya! Cantar himnos de agradecimiento",
-  "original_url": "ytsearch1:Himnario Adventista ¡Aleluya! ¡Aleluya! Cantar himnos de agradecimiento",
-  "webpage_url_basename": "Himnario Adventista ¡Aleluya! ¡Aleluya! Cantar himnos de agradecimiento",
+  "webpage_url": "ytsearch1:¡Aleluya! ¡Aleluya! Cantar himnos de agradecimiento",
+  "original_url": "ytsearch1:¡Aleluya! ¡Aleluya! Cantar himnos de agradecimiento",
+  "webpage_url_basename": "¡Aleluya! ¡Aleluya! Cantar himnos de agradecimiento",
   "webpage_url_domain": null,
   "extractor": "youtube:search",
   "extractor_key": "YoutubeSearch",

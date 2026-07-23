@@ -1,6 +1,6 @@
 {
-  "id": "Himnario Adventista Hay tales canciones en el cielo",
-  "title": "Himnario Adventista Hay tales canciones en el cielo",
+  "id": "Hay tales canciones en el cielo",
+  "title": "Hay tales canciones en el cielo",
   "_type": "playlist",
   "entries": [
     {
@@ -8,13 +8,13 @@
       "ie_key": "Youtube",
       "id": "T7H-VepXINE",
       "url": "https://www.youtube.com/watch?v=T7H-VepXINE",
-      "title": "Himnos Adventistas Viejitas Pero Bonitas - Mejores Himnario Adventista Del Septimo Dia",
-      "description": "Himnos Adventistas Viejitas Pero Bonitas - Mejores Himnario Adventista Del Septimo Dia https://youtu.be/T7H-VepXINE ...",
+      "title": "Himnos Adventistas Viejitas Pero Bonitas - Mejores Del Septimo Dia",
+      "description": "Himnos Adventistas Viejitas Pero Bonitas - Mejores Del Septimo Dia https://youtu.be/T7H-VepXINE ...",
       "duration": 14377,
       "channel_id": "UCF47kWVqLA5hWmmw8OIszrA",
-      "channel": "Himnario Adventista Selecto",
+      "channel": "Selecto",
       "channel_url": "https://www.youtube.com/channel/UCF47kWVqLA5hWmmw8OIszrA",
-      "uploader": "Himnario Adventista Selecto",
+      "uploader": "Selecto",
       "uploader_id": "@HimnarioAdventistaSelecto102",
       "uploader_url": "https://www.youtube.com/@HimnarioAdventistaSelecto102",
       "thumbnails": [
@@ -38,9 +38,9 @@
       "__x_forwarded_for_ip": null
     }
   ],
-  "webpage_url": "ytsearch1:Himnario Adventista Hay tales canciones en el cielo",
-  "original_url": "ytsearch1:Himnario Adventista Hay tales canciones en el cielo",
-  "webpage_url_basename": "Himnario Adventista Hay tales canciones en el cielo",
+  "webpage_url": "ytsearch1:Hay tales canciones en el cielo",
+  "original_url": "ytsearch1:Hay tales canciones en el cielo",
+  "webpage_url_basename": "Hay tales canciones en el cielo",
   "webpage_url_domain": null,
   "extractor": "youtube:search",
   "extractor_key": "YoutubeSearch",
@@ -57,11 +57,11 @@
   "videos": [
     {
       "url": "https://www.youtube.com/watch?v=T7H-VepXINE",
-      "title": "Himnos Adventistas Viejitas Pero Bonitas - Mejores Himnario Adventista Del Septimo Dia"
+      "title": "Himnos Adventistas Viejitas Pero Bonitas - Mejores Del Septimo Dia"
     },
     {
       "url": "https://www.youtube.com/watch?v=l7eQjw9QzLg",
-      "title": "Antiguo Himnario Adventista #189 - Danos El Fuego"
+      "title": "Antiguo #189 - Danos El Fuego"
     },
     {
       "url": "https://www.youtube.com/watch?v=lQHcfddwIqY",
