@@ -1,0 +1,106 @@
+export let BACKGROUNDS = [];
+
+export const createSettings = ({
+    state,
+    DEFAULT_BACKGROUNDS,
+    broadcast,
+    setInterfaceLanguage,
+    setHymnLanguage,
+    applyTranslations,
+    audioUtils
+}) => {
+    const saveSettings = () => localStorage.setItem('hinario_settings', JSON.stringify(state.settings));
+
+    const applySettings = () => {
+        const body = document.body;
+        body.classList.toggle('dark', state.settings.darkMode);
+
+        // Broadcast tema para controle remoto
+        broadcast('themeState', state.settings.darkMode);
+
+        const $btnToggleBg = $('#btn-toggle-bg');
+        if (state.settings.showBackground) {
+            $btnToggleBg.css('background-color', '').addClass('bg-orange-dark').removeClass('bg-gray-500');
+        } else {
+            $btnToggleBg.css('background-color', '#6b7280').addClass('bg-gray-500').removeClass('bg-orange-dark');
+        }
+
+        $('#slide-content').css({
+            'font-family': state.settings.fontFamily,
+            'font-size': `${state.settings.fontSize}rem`,
+            'line-height': state.settings.lineHeight,
+            'color': state.settings.fontColor,
+            'font-weight': 600
+        });
+
+        $('#slide-content h1').css({
+            'font-size': `${(state.settings.fontSize || 1.5) * 1.3}rem`
+        });
+
+        $('#font-size-display').text(`${(Number(state.settings.fontSize) || 1.5).toFixed(2)}rem`);
+        $('#line-height-display').text(state.settings.lineHeight || 1.4);
+        $('#font-family-select').val(state.settings.fontFamily);
+        $('#font-color-picker').val(state.settings.fontColor);
+        $('#bg-color-picker').val(state.settings.bgColor || '#000000');
+        $('#check-completo').prop('checked', state.settings.isCompleto);
+
+        if (state.settings.showBackground) {
+            const bgUrl = BACKGROUNDS[state.settings.bgIndex || 0];
+            $('#slide-bg').removeClass('hidden').css({
+                'background-image': `url('${bgUrl}')`,
+                'background-color': 'transparent'
+            });
+            $('#slide-bg-overlay').removeClass('hidden');
+            $('#slide-content').css('text-shadow', '2px 2px 8px rgba(0,0,0,0.9), 0px 0px 10px rgba(0,0,0,0.5)');
+        } else {
+            $('#slide-bg').addClass('hidden');
+            $('#slide-bg-overlay').addClass('hidden');
+            $('#slide-preview').css('background-color', state.settings.bgColor || '#000000');
+            $('#slide-content').css('text-shadow', 'none');
+        }
+    };
+
+    const loadSettings = () => {
+        const saved = localStorage.getItem('hinario_settings');
+        if (saved) {
+            const parsed = JSON.parse(saved);
+            Object.assign(state.settings, parsed);
+        }
+
+        if (!Array.isArray(state.settings.customBackgrounds)) {
+            state.settings.customBackgrounds = [];
+        }
+
+        BACKGROUNDS = [...DEFAULT_BACKGROUNDS, ...state.settings.customBackgrounds];
+
+        if (state.settings.interfaceLanguage) setInterfaceLanguage(state.settings.interfaceLanguage);
+        if (state.settings.hymnLanguage) setHymnLanguage(state.settings.hymnLanguage);
+
+        applySettings();
+        applyTranslations();
+
+        const $list = $('#custom-bg-list');
+        if ($list.length) {
+            $list.empty();
+            state.settings.customBackgrounds.forEach((bg, index) => {
+                const $item = $(`
+                    <div class="flex items-center justify-between bg-gray-100 p-2 rounded-lg group">
+                        <span class="truncate text-xs flex-1 mr-2">${bg}</span>
+                        <button class="text-red-500 opacity-0 group-hover:opacity-100 transition-opacity p-1" onclick="window.removeCustomBg(${index})">
+                            <i class="fas fa-trash-alt"></i>
+                        </button>
+                    </div>
+                `);
+                $list.append($item);
+            });
+        }
+
+        if (state.audioCtx) audioUtils.applyAudioFilters(state.audioCtx, state, state.settings.audioFilters);
+    };
+
+    const setBackgrounds = (backgrounds) => {
+        BACKGROUNDS = backgrounds;
+    };
+
+    return { saveSettings, applySettings, loadSettings, setBackgrounds };
+};
