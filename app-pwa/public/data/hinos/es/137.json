@@ -1,28 +1,57 @@
 {
   "title": "137 - Escuché al Salvador decir",
-  "author": "",
+  "author": "Horatius Bonar John Bacchus Dykes",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. Escuché al Salvador decir: “Ven y descansa en mí,",
+      "Y en mis brazos tendrás",
+      "¡Consuelo sin fin”!",
+      "Así que fui y se lo di.",
+      "Mi corazón triste;",
+      "Encontré refugio, paz y gracia,",
+      "Encontré consuelo."
+    ],
+    [
+      "2. Escuché al Salvador decir:",
+      "Soy de la fuente de la vida,",
+      "De las aguas vivas, ven y bebe,",
+      "siempre doy gratis",
+      "Fui a Jesús y caí,",
+      "De las aguas bebí.",
+      "nunca tendré sed",
+      "Mientras estoy aquí."
+    ],
+    [
+      "3. Escuché al Salvador decir:",
+      "Yo soy la luz de la vida;",
+      "A cualquiera que me reciba con fe.",
+      "Doy vida eterna.",
+      "Fui a Jesús y lo encontré",
+      "El sol que brilla sobre mí;",
+      "Y en esa luz camino",
+      "Hasta que se acabe la vida."
+    ]
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=CBZ48XLDlQM",
-      "title": "HA62 | Himno 124 | La tierna voz del Salvador"
+      "url": "https://www.youtube.com/watch?v=3B_hjBLjdrQ",
+      "title": "Ouvi o Salvador Dizer - Arautos do Rei 1970"
     },
     {
-      "url": "https://www.youtube.com/watch?v=yakBxoo87rA",
-      "title": "Himno 149 Junto a la cruz do Jesús murió Nuevo Himnario Adventista"
+      "url": "https://www.youtube.com/watch?v=pmgTKqbJD2I",
+      "title": "Ouvi o Salvador Dizer - Baixo"
     },
     {
-      "url": "https://www.youtube.com/watch?v=SmQs2RdlOP4",
-      "title": "Himno 345 - Canta, y tus penas se irán | Nuevo"
+      "url": "https://www.youtube.com/watch?v=Vw4a5eeOjNM",
+      "title": "Ouvi o Salvador Dizer"
     }
   ]
 }

@@ -1,21 +1,47 @@
 {
   "title": "8 - La Revelación de la Cruz",
-  "author": "",
+  "author": "Isaac Watts e Ralph. E. Hudson Ralph E. Hudson",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. ¡Qué ciego anduve una vez!",
+      "Lejos del Señor,",
+      "Que vino de los altos cielos",
+      "Salva al pecador."
+    ],
+    [
+      "2. Escuché del gran amor incomparable,",
+      "El amor de mi Jesús,",
+      "Pero yo estaba sordo así que me hice",
+      "Y desprecié la luz."
+    ],
+    [
+      "3. Ya he sentido miedo a la muerte,",
+      "Flotando sobre mí;",
+      "A los pies de Cristo entonces corrí",
+      "Y finalmente encontré refugio."
+    ],
+    [
+      "4. Redimido, oh Cristo, el corazón",
+      "Lo pongo a Tu disposición;",
+      "Siempre quiero honrar tu nombre,",
+      "Honra tu santo amor."
+    ]
+  ],
+  "coro": [
+    "Foi na cruz, foi na cruz, em que ao fim percebi;",
+    "Meu pecado recaiu em Jesus!",
+    "Foi então pela fé que meus olhos abri;",
+    "Que prazer sinto agora em Sua luz."
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
-    {
-      "url": "https://www.youtube.com/watch?v=PMspEqaQ7T0",
-      "title": "Enero 20 - La revelación de la cruz - #DeclaracionesDeEsperanza"
-    },
     {
       "url": "https://www.youtube.com/watch?v=WS_H7e-JRoo",
       "title": "Quero estar ao pé da cruz (4 estrofes)"
@@ -23,6 +49,10 @@
     {
       "url": "https://www.youtube.com/watch?v=0apUI3Qayh4",
       "title": "Quero estar ao pé da cruz (com introdução)"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=Jxr4l1rb47Q",
+      "title": "Novo Hinário Adventista • Hino 143 • Ao Olhar pra Cruz • (lyrics)"
     }
   ]
 }

@@ -1,28 +1,58 @@
 {
   "title": "45 - Cristo fue a prepararnos un lugar",
-  "author": "",
+  "author": "Dewitt C. Huntington Tullius Clinton O'Katne",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. Cristo fue a preparar un lugar para nosotros",
+      "En la morada celestial del Padre,",
+      "¿A dónde llegaremos pronto?",
+      "Y donde el pecado nunca nos traiciona.",
+      "Arriba en el cielo, arriba en el cielo,",
+      "Cristo fue a prepararnos un lugar;",
+      "Arriba en el cielo, arriba en el cielo,",
+      "En el hogar celestial del Padre."
+    ],
+    [
+      "2. Allí estaremos con Jesús,",
+      "Disfrutando sin cesar de tu amor,",
+      "En la morada perenne de la luz,",
+      "Jardín inefable del Señor.",
+      "Arriba en el cielo, arriba en el cielo,",
+      "Allí estaremos con Jesús;",
+      "Arriba en el cielo, arriba en el cielo,",
+      "Disfrutando infinitamente de su amor."
+    ],
+    [
+      "3. En este hogar feliz y eterno,",
+      "El pecado nunca entrará;",
+      "Sólo hay gloria, pureza y placer;",
+      "Allí estarán los salvos con Cristo.",
+      "Arriba en el cielo, arriba en el cielo,",
+      "En este hogar feliz y eterno;",
+      "Arriba en el cielo, arriba en el cielo,",
+      "Después de todo, encontraremos descanso."
+    ]
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=lMrGN_FmRbg",
-      "title": "Himno 557 - ¿Qué estás haciendo por Cristo? | Nuevo"
+      "url": "https://www.youtube.com/watch?v=jAxb3hDo4x8",
+      "title": "Novo Hinário Adventista • Hino 489 • Cristo Foi Preparar Um Lugar • (Lyrics)"
     },
     {
-      "url": "https://www.youtube.com/watch?v=IWPrl_Qb6hc",
-      "title": "Himno Adventista 395 - ¡Oh, cuán dulce es fiar en Cristo!"
+      "url": "https://www.youtube.com/watch?v=UDfpIBo4FgY",
+      "title": "Novo Hinário Adventista • Hino 489 • Cristo Foi Preparar Um Lugar • Playback"
     },
     {
-      "url": "https://www.youtube.com/watch?v=p0iREXG_tQg",
-      "title": "Un mensaje de dios para ti (Cristo fue a prepararnos un lugar en el cielo) parte 185 🙏❤"
+      "url": "https://www.youtube.com/watch?v=VaFuNKcQqF8",
+      "title": "Hinário Adventista 552 - CRISTO FOI PREPARAR-NOS LUGAR"
     }
   ]
 }

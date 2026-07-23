@@ -1,28 +1,56 @@
 {
   "title": "31 - Jesús regresará pronto",
-  "author": "",
+  "author": "Jessie E. Strout George E Lee",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. Siervos de Dios, suena la trompeta:",
+      "¡Jesús pronto regresará!",
+      "Lleve el mensaje a todos:",
+      "¡Jesús pronto regresará!"
+    ],
+    [
+      "2. Id a las naciones y anunciad rápidamente:",
+      "¡Jesús pronto regresará!",
+      "Agradecidos, alegres, cantad la noticia:",
+      "¡Jesús pronto regresará!"
+    ],
+    [
+      "3. Colinas y valles, el sonido resuena:",
+      "¡Jesús pronto regresará!",
+      "Las olas del mar cantan la canción:",
+      "¡Jesús pronto regresará!"
+    ],
+    [
+      "4. Las guerras y el hambre nos hacen comprender:",
+      "¡Jesús pronto regresará!",
+      "Señales graves ya nos lo hacen saber:",
+      "¡Jesús pronto regresará!"
+    ]
+  ],
+  "coro": [
+    "Breve virá! Breve virá!",
+    "Breve Jesus voltará."
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=JWUNq6Kt1j4",
-      "title": "164 - Jesús pronto volverá | | Letra Oficial | 4K60fps"
+      "url": "https://www.youtube.com/watch?v=VuxpSoj5eGA",
+      "title": "Novo Hinário Adventista • Hino 440 • Breve Jesus Voltará • (Lyrics)"
     },
     {
-      "url": "https://www.youtube.com/watch?v=s6_Z-YCuHYE",
-      "title": "El Regreso Del Señor: Jesús Regresará Pronto I Jentezen Franklin"
+      "url": "https://www.youtube.com/watch?v=6YUUvkXZc_8",
+      "title": "Novo Hinário Adventista • Hino 440 • Breve Jesus Voltará • Playback"
     },
     {
-      "url": "https://www.youtube.com/watch?v=MCrw0DlLyn0",
-      "title": "HA62 | Himno 170 | Jesús pronto volverá"
+      "url": "https://www.youtube.com/watch?v=WTJ71cQUpFY",
+      "title": "BREVE JESUS VOLTARÁ | Hinário Adventista / Hino IASD 134  | MENOS UM"
     }
   ]
 }

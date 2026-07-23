@@ -1,28 +1,46 @@
 {
   "title": "103 - Mi hogar, Jerusalén",
-  "author": "",
+  "author": "Joseph Bromehead",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. ¡Feliz Jerusalén, mi hogar!",
+      "¡Anhelo estar en ti!",
+      "Siente la calma en la gloria allí,",
+      "Y disfruta de tu placer."
+    ],
+    [
+      "2. ¡Ah! ¡Feliz hogar de amor y paz!",
+      "¡Jardín como ningún otro!",
+      "Tu brillo de gloria y luz,",
+      "Nunca lo vio mortal."
+    ],
+    [
+      "3. Jesús pronto regresará,",
+      "Y la paz del hogar más allá",
+      "Entonces él reinará en ti,",
+      "Mi hogar – Jerusalén"
+    ]
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=NmiPoD0UQy0",
-      "title": "Himno 327 - Jerusalén, mi amado hogar - Pista | Instrumental"
+      "url": "https://www.youtube.com/watch?v=BFYI_oXWKXA",
+      "title": "Querido lar, ali no céu - Hinário Aleluia 449"
     },
     {
-      "url": "https://www.youtube.com/watch?v=5HPEuyH9D_U",
-      "title": "Himno 327 Jerusalén, mi amado hogar Nuevo Himnario Adventista"
+      "url": "https://www.youtube.com/watch?v=3oi4D5TvV_w",
+      "title": "Oh! Pensai nesse lar - Hinário Aleluia 444"
     },
     {
-      "url": "https://www.youtube.com/watch?v=NdDpS0vnCps",
-      "title": "Himno 327 - Jerusalén, mi amado hogar | Nuevo"
+      "url": "https://www.youtube.com/watch?v=Cuqm6-x-gNk",
+      "title": "Jerusalém excelsa! - Hinário Aleluia 437"
     }
   ]
 }

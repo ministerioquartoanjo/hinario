@@ -1,28 +1,52 @@
 {
   "title": "30 - Brilla en medio de tu vida",
-  "author": "",
+  "author": "Ina Duley Ogden, 1913 Chales Hutchison Gabriel, 1913",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. No sólo para realizar una hazaña singular",
+      "Hay que actuar con mucho ardor;",
+      "Pero las cosas más humildes que hacer",
+      "Debes hacerlos con todo amor."
+    ],
+    [
+      "2. Oh, tal vez puedas alegrar algo de vida.",
+      "Con palabras llenas de calidez,",
+      "O tal vez algunas almas tristes lleguen",
+      "Con el mensaje del Señor."
+    ],
+    [
+      "3. Incluso si tu vida aquí es agitada,",
+      "Sed más firmes en vuestra devoción.",
+      "Mira a tu alrededor que hay gente triste que perece,",
+      "Sin estar seguro de la salvación."
+    ]
+  ],
+  "coro": [
+    "Brilha no meio do teu viver.",
+    "Brilha no meio do teu viver,",
+    "Pois talvez algum aflito possas socorrer!",
+    "Brilha no meio do teu viver."
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=376SUp5-Wxg",
-      "title": "Himno Adventista 502 - Brilla en el sitio donde estés"
+      "url": "https://www.youtube.com/watch?v=D54EDlUpa5c",
+      "title": "488 HCC - Brilha no meio do teu viver"
     },
     {
-      "url": "https://www.youtube.com/watch?v=CvReWVC9YvA",
-      "title": "BRILLAR POR TI | Ministerio Joven Adventista- HD"
+      "url": "https://www.youtube.com/watch?v=s8nEm0RjysI",
+      "title": "Novo Hinário Adventista • Hino 233 • Brilha Por Cristo em Teu Viver • (Lyrics)"
     },
     {
-      "url": "https://www.youtube.com/watch?v=43wZnoQPppA",
-      "title": "Brilla con toda tu vida: Una vida ejemplar - Pastor Miguel Núñez (JPSC 2019)"
+      "url": "https://www.youtube.com/watch?v=Ueda_PLQkL4",
+      "title": "Hinário Adventista 308 - BRILHA NO MEIO DO TEU VIVER"
     }
   ]
 }

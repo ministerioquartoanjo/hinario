@@ -1,14 +1,44 @@
 {
   "title": "181 - Tu Santo Amor, Jesús",
-  "author": "",
+  "author": "Sylvaus Dryden Phelps Robert Lowry",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. Tu Santo Amor, Jesús,",
+      "Vino a alcanzarme;",
+      "Mi ser, al pie de la cruz,",
+      "Quiero consagrarme.",
+      "Acepta, oh Salvador,",
+      "De un pecador agradecido,",
+      "Homenaje de alabanza,",
+      "Dado con fervor."
+    ],
+    [
+      "2. Responde, Jesús mío,",
+      "Esta petición;",
+      "Tuyo y solo tuyo",
+      "Es mi corazón.",
+      "Tu nombre enaltece,",
+      "hablaré con los demás",
+      "De Tu amor incomparable;",
+      "ven habilítame"
+    ],
+    [
+      "3. Dame, Señor, más fe",
+      "Y amor verdadero.",
+      "Para servirte y ser",
+      "Mucho más leal",
+      "almas para ganar",
+      "Camina siempre en la luz",
+      "Y mis hermanos aman;",
+      "¡Ven a habilitarme! Amén"
+    ]
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
@@ -17,12 +47,12 @@
       "title": "Novo Hinário Adventista • Hino 29 • O Amor De Jesus • (Lyrics)"
     },
     {
-      "url": "https://www.youtube.com/watch?v=avFgH_Dztpk",
-      "title": "Himno 371 - Jesús te ama | Nuevo"
+      "url": "https://www.youtube.com/watch?v=ijpd2mFf5co",
+      "title": "Do amor de Jesus - Hinário Aleluia 272"
     },
     {
-      "url": "https://www.youtube.com/watch?v=dnARjjuL4xY",
-      "title": "Himno 280 Ser semejante a Jesús Nuevo Himnario Adventista"
+      "url": "https://www.youtube.com/watch?v=JDV4c_weCmE",
+      "title": "Teu Santo Amor, Jesus (434) Playback c/ letra - HCC Batista -  Por Joãozinho Camargo (Tyros 4)"
     }
   ]
 }

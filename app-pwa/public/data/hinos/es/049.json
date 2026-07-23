@@ -1,6 +1,6 @@
 {
   "title": "49 - Dame la Biblia",
-  "author": "Priscilla Jane Owens Edmund Simon Lorenz",
+  "author": "Priscila Jane Owens Edmund Simon Lorenz",
   "speed": 1,
   "verses": [
     [
@@ -23,10 +23,10 @@
     ]
   ],
   "coro": [
-    "Dame la Biblia, que libro tan precioso;",
-    "Santa doctrina, fuente es de luz.",
-    "Sus enseñanzas son un gozo sublime;",
-    "Conducen al buen Jesús."
+    "Dá-me a Bíblia, livro tão precioso;",
+    "Santa doutrina, fonte é de luz.",
+    "São seus ensinos um sublime gozo;",
+    "Eles conduzem para o bom Jesus."
   ],
   "audioFilters": {
     "gain": 1.2,
@@ -37,16 +37,16 @@
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=ZP-9Uc6cLII",
-      "title": "205 - Dadme la Biblia | | Letra Oficial | 4K50fps"
+      "url": "https://www.youtube.com/watch?v=k-O7d-lvwtE",
+      "title": "Novo Hinário Adventista • Hino 51 • Dá-me a Bíblia • (Lyrics)"
     },
     {
-      "url": "https://www.youtube.com/watch?v=-71p8HKp4w4",
-      "title": "Himno 205 Dadme la Biblia Nuevo Himnario Adventista"
+      "url": "https://www.youtube.com/watch?v=SEW19M21u98",
+      "title": "Novo Hinário Adventista • Hino 51 • Dá me a Bíblia • Playback"
     },
     {
-      "url": "https://www.youtube.com/watch?v=WSNopp1ocnI",
-      "title": "Antiguo... Himno # 197 Dadme la Biblia"
+      "url": "https://www.youtube.com/watch?v=JerRz6cTsQM",
+      "title": "Novo Hinário Adventista • Hino 53 • Que Diz a Bíblia • Playback"
     }
   ]
 }

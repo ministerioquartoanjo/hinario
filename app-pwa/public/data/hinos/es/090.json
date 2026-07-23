@@ -1,28 +1,58 @@
 {
   "title": "90 - Jesús me guía",
-  "author": "",
+  "author": "Joseph Henry Gilmore William Batchelder Bradbury",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. Jesús me guía: ¡qué placer!",
+      "¡Palabra de consuelo!",
+      "Dondequiera que vaya, en mi vida,",
+      "Tu mano siempre me guía."
+    ],
+    [
+      "2. En tiempos tristes y de angustia",
+      "Que la vida siempre da a todos,",
+      "O cuando tu corazón está feliz,",
+      "Mi Jesús me guiará."
+    ],
+    [
+      "3. Ayúdame a no murmurar,",
+      "Cualquiera que sea la condición.",
+      "Me alegro que me orientes",
+      "Por tu bondadosa mano."
+    ],
+    [
+      "4. Y cuando la muerte venga dentro de mí,",
+      "Mi vida aquí cosecha,",
+      "Guardado por ti mi Señor,",
+      "Entonces viviré contigo."
+    ]
+  ],
+  "coro": [
+    "Jesus me guia: que prazer!",
+    "É Sua mão que me conduz.",
+    "Em cada passo do viver",
+    "Quem me dirige é meu Jesus."
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=K09nFFGnUYQ",
-      "title": "Himno 469 - Jesús me guía | Nuevo"
+      "url": "https://www.youtube.com/watch?v=qZOhAYH8GpI",
+      "title": "Meu Jesus me guia sempre - Hinário Aleluia 333"
     },
     {
-      "url": "https://www.youtube.com/watch?v=IjSuTixsSTs",
-      "title": "Jesús me guía | Himno Adventista 469 | Versión renovada"
+      "url": "https://www.youtube.com/watch?v=EhiYoJKuMvg",
+      "title": "Dá teu coração a Jesus - Hinário Adventista 183"
     },
     {
-      "url": "https://www.youtube.com/watch?v=EJidfdBFHIs",
-      "title": "HA62 | Himno 423 | Jesús me guía"
+      "url": "https://www.youtube.com/watch?v=LBktRMFhOqI",
+      "title": "I'd Rather Have Jesus - Baptist Hymnal 530"
     }
   ]
 }

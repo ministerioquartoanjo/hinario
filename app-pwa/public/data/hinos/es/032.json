@@ -1,14 +1,32 @@
 {
   "title": "32 - Cada vez más puro",
-  "author": "",
+  "author": "Autor desconhecido",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. Haz tu corazón cada vez más puro,",
+      "Cada vez más buscando Tu dirección;",
+      "Estando siempre confiados en Ti, Señor;",
+      "Mantente firme en Tu fuerza, seguro en Tu amor."
+    ],
+    [
+      "2. Cada vez más tranquilo a medida que el dolor me rodea,",
+      "Lleno de paciencia dondequiera que vayas;",
+      "Dame más bondad, más resignación.",
+      "A los planes divinos, bajo Tu mano."
+    ],
+    [
+      "3. Cada vez más santos, siempre más leales,",
+      "Hazme firme y fuerte siempre contra el mal.",
+      "Quiero heredar la vida de bondad y luz,",
+      "En tu hogar eterno, oh mi buen Jesús."
+    ]
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
@@ -17,12 +35,12 @@
       "title": "Novo Hinário Adventista • Hino 371 • Cada Vez Mais Puro  • (Lyrics)"
     },
     {
-      "url": "https://www.youtube.com/watch?v=cWUF5IRnEPE",
-      "title": "CADA VEZ MAS PURO."
+      "url": "https://www.youtube.com/watch?v=pfdrd70WF7Q",
+      "title": "Novo Hinário Adventista • Hino 371 • Cada Vez Mais Puro • Lyrics"
     },
     {
-      "url": "https://www.youtube.com/watch?v=cXqkOA-69zw",
-      "title": "KHAAY - CADA VEZ MÁS PURO"
+      "url": "https://www.youtube.com/watch?v=13isOhb6C-w",
+      "title": "Hinário Adventista 391 - CADA VEZ MAIS PURO"
     }
   ]
 }

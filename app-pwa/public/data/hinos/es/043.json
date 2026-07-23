@@ -1,28 +1,54 @@
 {
   "title": "43 - Cristo me amó y me libró",
-  "author": "",
+  "author": "James Rowe",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. Perdí pecador,",
+      "Lejos de mi Jesús,",
+      "Ya sentí que no tenía energía,",
+      "Perecer sin luz;",
+      "Mi estado Cristo vio,",
+      "Y me tendió la mano,",
+      "Y logró salvarme,",
+      "De perdición."
+    ],
+    [
+      "2. Mi vida, todo ser,",
+      "Quiero consagrarte.",
+      "A tu lado viviré,",
+      "Tu amor canta,",
+      "Y el mensaje transmite,",
+      "A los que están perdidos,",
+      "Serviré a mi Señor,",
+      "Con gratitud."
+    ]
+  ],
+  "coro": [
+    "Cristo me amou e me livrou.",
+    "O Seu imenso amor me transformou.",
+    "Por Seu poder e Seu querer,",
+    "Cristo meu Salvador, me libertou"
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=jQGjOtZ-pGU",
-      "title": "Himno 112 Ningún otro me amó cual Cristo Nuevo Himnario Adventista"
+      "url": "https://www.youtube.com/watch?v=YRFRRu06ADc",
+      "title": "CRISTO ME AMOU E ME LIVROU - HCC 462 Letra e música: James Rowe e Howard E. Smith"
     },
     {
-      "url": "https://www.youtube.com/watch?v=tdALirGkgSo",
-      "title": "Cristo Me Libró │ Saúl Nájera Ft. Jesús Urbina  │ EN VIVO"
+      "url": "https://www.youtube.com/watch?v=8NhcTwQXcuk",
+      "title": "PLAYBACK HINO 462 (HCC) - CRISTO ME AMOU E ME LIVROU"
     },
     {
-      "url": "https://www.youtube.com/watch?v=0v0Tn9Cd-N0",
-      "title": "Himno 151 Por eso lo amo Nuevo Himnario Adventista"
+      "url": "https://www.youtube.com/watch?v=wmt6w8an5io",
+      "title": "HCC/Instrumental/Hino 462/Cristo Me Amou e Me Livrou"
     }
   ]
 }

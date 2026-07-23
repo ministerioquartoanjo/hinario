@@ -1,28 +1,52 @@
 {
   "title": "150 - ¿Qué dice la Biblia?",
-  "author": "",
+  "author": "Franklin Edson Belden",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. “¿Qué dice la Biblia, el libro sagrado”?",
+      "¡Para los fieles, esa es la cuestión!",
+      "Las enseñanzas de los hombres son defectuosas;",
+      "¿Qué dice entonces el libro acerca de Dios?"
+    ],
+    [
+      "2. Pocos consideran estas enseñanzas;",
+      "Quieren escapar del cumplimiento de la ley;",
+      "Otros afirman, en términos de descanso,",
+      "Tener la facultad de revocarlo."
+    ],
+    [
+      "3. Cuando venga el maestro, os saludará,",
+      "¿Tú que pisoteas su ley?",
+      "¿Te encontrará justificado?",
+      "¡Oh, medita y responde!"
+    ]
+  ],
+  "coro": [
+    "“Que diz a Bíblia”? Poucos dirão.",
+    "“Que diz a Bíblia”? Cumpre saber.",
+    "Seus mandamentos guardemos todos,",
+    "Breve Jesus iremos ver."
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=DNfLSnkkNVs",
-      "title": "Himno 209 La Biblia nos habla de Cristo Nuevo Himnario Adventista"
+      "url": "https://www.youtube.com/watch?v=hNdx9bWb_0s",
+      "title": "Novo Hinário Adventista • Hino 53 • Que Diz a Bíblia • (Lyrics)"
     },
     {
-      "url": "https://www.youtube.com/watch?v=cDL8vKE_Oeo",
-      "title": "HA62 | Himno 197 | Dadme la Biblia"
+      "url": "https://www.youtube.com/watch?v=DNqLR5yzPJk",
+      "title": "Hinário Adventista 162 - QUE DIZ A BÍBLIA"
     },
     {
-      "url": "https://www.youtube.com/watch?v=oQL73CHJ_WI",
-      "title": "HA62 | Himno 518 | Cuando leo en la Biblia"
+      "url": "https://www.youtube.com/watch?v=9i3kMWjlTNw",
+      "title": "Hinário Adventista -162 Que Diz a Bíblia"
     }
   ]
 }

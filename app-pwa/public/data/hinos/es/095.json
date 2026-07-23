@@ -1,28 +1,46 @@
 {
   "title": "95 - Alegres te adoramos",
-  "author": "",
+  "author": "Henry van Dyke Ludwig van Beethoven, c",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. ¡Te adoramos con alegría, Dios de gloria, Dios de amor!",
+      "Nuestro corazón rebosa de alabanza a Ti, Señor.",
+      "Rompe las nubes de tristeza, pecado y miedo.",
+      "¡Dador de gracia eterna, llénanos de Tu amor!"
+    ],
+    [
+      "2. Tus obras anuncian tu poder y esplendor.",
+      "El Cielo y la Tierra cantan himnos en alabanza a Ti, Señor.",
+      "Valles, colinas y prados, hermosos prados, mar verde,",
+      "Pájaros, manantiales de aguas cristalinas, todos quieren adorarte."
+    ],
+    [
+      "3. ¡Aleluya, aleluya, a Jesús Redentor!",
+      "Aleluya eternamente en alabanza a Ti, Señor",
+      "Quien nos trajo la gloria eterna al morir por nosotros en la cruz.",
+      "¡Aleluya al Padre y al Hijo, que nos guía a todos!"
+    ]
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
-    {
-      "url": "https://www.youtube.com/watch?v=WYu2UilkixU",
-      "title": "Novo Hinário Adventista do Sétimo Dia - 005 - Jubilosos Te Adoramos | Lyric video (com letra)"
-    },
     {
       "url": "https://www.youtube.com/watch?v=e6r1kYZJ1hg",
       "title": "Novo Hinário Adventista • Hino 5 • Jubilosos Te Adoramos  • (Lyrics)"
     },
     {
-      "url": "https://www.youtube.com/watch?v=52dNQb2hCdc",
-      "title": "Alegres alegres te adoramos"
+      "url": "https://www.youtube.com/watch?v=oTVIeHmb5nE",
+      "title": "Novo Hinário Adventista • Hino 5 • Jubilosos Te Adoramos • Playback"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=NmIul9Ze0As",
+      "title": "Jubilosos te Adoramos - 014 Hinário Adventista (PLAYBACK)"
     }
   ]
 }

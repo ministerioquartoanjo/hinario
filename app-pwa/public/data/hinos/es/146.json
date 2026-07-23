@@ -1,28 +1,58 @@
 {
   "title": "146 - ¿Cuál es el adorno de esta vida?",
-  "author": "",
+  "author": "Sarah Poulton Kalley Melodia Tradicional Inglesa Adapt. Hubert Platt Main",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. ¿Cuál es el adorno de esta vida? es amor,",
+      "La alegría la da el amor, el amor.",
+      "Es amable, es paciente, no se vuelve calumniador.",
+      "No te conviertas en una maldición, este dulce amor."
+    ],
+    [
+      "2. Con sospecha no se puede lograr el dulce amor, dulce amor",
+      "Donde hay desconfianza, ¡ay del amor, ay del amor!",
+      "Porque mostremos tolerancia; a menudo arrogancia",
+      "La arrogancia muchas veces marchita y mata el amor."
+    ],
+    [
+      "3. Incluso cuando sea difícil, cultiva el amor, cultiva el amor.",
+      "Al enojado y muy furioso, muestra amor, muestra amor.",
+      "No te dejes insultar, sino responde con amabilidad.",
+      "Pero él responde con placer, vence por amor."
+    ],
+    [
+      "4. No te enojes, sino tolera, con amor, con amor",
+      "Todo sufre, todo espera amor, amor.",
+      "Los desacuerdos y los rencores no son aptos para los pecadores.",
+      "No es apto para pecadores, salvados por el amor."
+    ],
+    [
+      "5. Bueno, hermano, muéstrale amor a tu prójimo, muéstrale amor.",
+      "El valor no es mezquino de este amor, de este amor.",
+      "El Dios supremo nos ama, Cristo al cielo nos llama",
+      "Cristo nos llama al cielo, donde reina el amor."
+    ]
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=kkUloNPe7Ac",
-      "title": "1 al 225 subtitulado 2"
+      "url": "https://www.youtube.com/watch?v=GZHieRffv2w",
+      "title": "HINO 569 (HCC) - QUAL ADORNO DESTA VIDA?"
     },
     {
-      "url": "https://www.youtube.com/watch?v=YxVB7Cgg2Mg",
-      "title": "O adorno desta vida - Cantor Cristão 569"
+      "url": "https://www.youtube.com/watch?v=1euBvJ6FG8Q",
+      "title": "Qual o adorno desta vida? É o amor!"
     },
     {
-      "url": "https://www.youtube.com/watch?v=q99aGxSA6Gg",
-      "title": "Qual o adorno desta vida? - Hinário Aleluia 381"
+      "url": "https://www.youtube.com/watch?v=Yq24i6DLP5I",
+      "title": "N. 178 Qual o Adorno Desta Vida"
     }
   ]
 }

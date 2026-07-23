@@ -1,28 +1,36 @@
 {
   "title": "195 - Vivifica Tu Iglesia",
-  "author": "",
+  "author": "Henry Maxwell Wright",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. Aviva Tu iglesia, oh bendito Salvador;",
+      "Sin tu gracia se marchitará y quedará sin vigor."
+    ]
+  ],
+  "coro": [
+    "Vivifica, vivifica nossas almas, oh Senhor!",
+    "Vivifica, vivifica nossas almas, oh Senhor!"
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=ddnROB-Iagk",
-      "title": "Novo Hinário Adventista • Hino 220 • Fortalece Tua Igreja • (Lyrics)"
+      "url": "https://www.youtube.com/watch?v=ICJlgZvh37I",
+      "title": "Vivifica a tua Igreja 530 HC - Pr. Luiz Gonzaga (versão UAADERB)"
     },
     {
-      "url": "https://www.youtube.com/watch?v=0yPfbQD35v8",
-      "title": "VIVIFICA TU PUEBLO SEÑOR - Alabanza Adventista Del Séptimo Día"
+      "url": "https://www.youtube.com/watch?v=Zuw17uzgpHo",
+      "title": "Harpa Cristã - Hino 530 (Vivifica a Tua Igreja) - Orquestra AD Lapa | #adoração #louvor #hinos"
     },
     {
-      "url": "https://www.youtube.com/watch?v=ER9ul5F46oo",
-      "title": "HL 821- Fortalece a tu iglesia - con VOZ"
+      "url": "https://www.youtube.com/watch?v=MzeiOxpidkk",
+      "title": "Da Igreja o fundamento - HCC 504"
     }
   ]
 }

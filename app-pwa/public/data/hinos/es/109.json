@@ -1,28 +1,58 @@
 {
   "title": "109 - En la cruz morí por ti",
-  "author": "",
+  "author": "Frances Ridley Haverga",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. En la cruz morí por ti,",
+      "¡Por ti, oh pecador!",
+      "Mi sangre se derramó allí,",
+      "Saborear un dolor amargo.",
+      "Pongo mi vida en la cruz,",
+      "Por eso vine del cielo.",
+      "Desde las tinieblas te llamé a la luz'",
+      "¿Qué haces por Mí?"
+    ],
+    [
+      "2. En vano no me fui",
+      "El trono allí en la luz;",
+      "En vano no cambié",
+      "Gloria a través de la cruz.",
+      "Por ti dejé mi hogar en el cielo,",
+      "Yo fui un peregrino aquí.",
+      "Por tanto, no querrás poner excusas;",
+      "¿Qué haces por Mí?"
+    ],
+    [
+      "3. Inmenso fue el dolor,",
+      "¡La angustia que sufrí!",
+      "¡No puede haber nada mayor!",
+      "Sucumbí a ello.",
+      "Pero incluso la muerte desprecié,",
+      "Para salvarte, así;",
+      "Por ti di mi vida;",
+      "¿Qué haces por Mí?"
+    ]
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=1LBGWEG23uc",
-      "title": "Novo Hinário Adventista • Hino 107  • Na Cruz Morri Por Ti • (Lyrics)"
+      "url": "https://www.youtube.com/watch?v=WS_H7e-JRoo",
+      "title": "Quero estar ao pé da cruz (4 estrofes)"
     },
     {
-      "url": "https://www.youtube.com/watch?v=zkNfhU80XV4",
-      "title": "Hinário Adventista 172 - NA CRUZ MORRI POR TI"
+      "url": "https://www.youtube.com/watch?v=0apUI3Qayh4",
+      "title": "Quero estar ao pé da cruz (com introdução)"
     },
     {
-      "url": "https://www.youtube.com/watch?v=809VVoXJpB0",
-      "title": "morí por ti en la cruz"
+      "url": "https://www.youtube.com/watch?v=kFoG2FYEb2k",
+      "title": "PLAYBACK - Harpa Cristã - 569 - Morri na Cruz por ti - Com letra"
     }
   ]
 }

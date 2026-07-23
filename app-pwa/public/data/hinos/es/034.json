@@ -1,28 +1,52 @@
 {
   "title": "34 - Lluvia de bendiciones",
-  "author": "",
+  "author": "Daniel Webster Whhitle James Mcgranahan",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. Tendremos una lluvia de bendiciones",
+      "Es la promesa de Dios;",
+      "Benditos tiempos ya veremos,",
+      "Lluvia enviada desde los cielos."
+    ],
+    [
+      "2. Tendremos lluvias de bendiciones,",
+      "Vida de paz y perdón.",
+      "Los pecadores indignos,",
+      "Gracia del cielo obtendrán."
+    ],
+    [
+      "3. Tendremos lluvias de bendiciones,",
+      "¡Envíanos ahora, oh Señor!",
+      "Que esta bendita promesa,",
+      "Ven y tráenos vigor."
+    ]
+  ],
+  "coro": [
+    "Chuvas de bênçãos,",
+    "Chuvas de bênçãos dos céus!",
+    "Gotas somente nós temos;",
+    "Chuvas rogamos a Deus!"
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=-56j9c9CUAg",
-      "title": "Imnario lluvia de bendiciones"
+      "url": "https://www.youtube.com/watch?v=NJnk8JysxVE",
+      "title": "Chuvas de graça - Harpa Cristã 01"
     },
     {
-      "url": "https://www.youtube.com/watch?v=MsYv1R4vPB8",
-      "title": "EN VIVO | Lluvia De Bendiciones | Emisión 155"
+      "url": "https://www.youtube.com/watch?v=BaJF1Tg3CJM",
+      "title": "Novo Hinário Adventista • Hino 41 • Chuvas de Bênçãos • (Lyrics)"
     },
     {
-      "url": "https://www.youtube.com/watch?v=LbJZLRf6M-M",
-      "title": "67. A Jesucristo ven sin tardar - Himnario Lluvias de Bendición IPUIC Castilla"
+      "url": "https://www.youtube.com/watch?v=jF7wAM2mrl4",
+      "title": "HNC 172 - Chuva de bênçãos - Hinário Presbiteriano Novo Cântico - (Letra)"
     }
   ]
 }

@@ -1,28 +1,52 @@
 {
   "title": "44 - Cristo Mi Verdadero Amigo",
-  "author": "",
+  "author": "F.V. Gordon H. Clark",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. Antes no conocía a Jesús el Salvador,",
+      "Porque vivía en pecados y miedo;",
+      "Pero pensé que mi culpa sobre Jesús tomó",
+      "Y mi disfrute nunca cesó aquí."
+    ],
+    [
+      "2. Antes no sabía de esta purificación.",
+      "Y el poder que el corazón deseaba.",
+      "Pero la fuerza de las promesas transformó mi alma.",
+      "Y Jesús la fuente viva me llevó."
+    ],
+    [
+      "3. Estoy dispuesto a proclamar el mensaje con Cristo,",
+      "Por los viñedos donde voy a trabajar;",
+      "Bueno, sé que es poderoso;",
+      "Tu gracia me dará; y concédeme la victoria plena."
+    ]
+  ],
+  "coro": [
+    "É Jesus Cristo meu vero amigo,",
+    "Que minhas culpas perdoou.",
+    "É Jesus Cristo meu vero amigo,",
+    "Pois a minh’alma libertou."
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=1oUt-te7OGs",
-      "title": "Himno Adventista 356 - Gozo es conocer a Cristo"
+      "url": "https://www.youtube.com/watch?v=xzSkm8DDrbs",
+      "title": "Quão bondoso amigo é Cristo - Hinário Aleluia 364"
     },
     {
-      "url": "https://www.youtube.com/watch?v=h4FUEtZbd7I",
-      "title": "Himno Adventista 366 - En Cristo hallo amigo"
+      "url": "https://www.youtube.com/watch?v=QP5sHN7qbLY",
+      "title": "Harpa Cristã - 516 - Cristo, Meu Vero Amigo - Levi - com letra"
     },
     {
-      "url": "https://www.youtube.com/watch?v=IWPrl_Qb6hc",
-      "title": "Himno Adventista 395 - ¡Oh, cuán dulce es fiar en Cristo!"
+      "url": "https://www.youtube.com/watch?v=mFjjEB9iqoE",
+      "title": "CRISTO MEU VERO AMIGO - 516. HARPA CRISTÃ - (CIFRADO) - Carlos José"
     }
   ]
 }

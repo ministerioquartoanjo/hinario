@@ -1,28 +1,50 @@
 {
   "title": "135 - Dondequiera que esté",
-  "author": "",
+  "author": "Jessie Brown Pounds Kurt Frederic Kaiser",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. Dondequiera que vaya con Jesús;",
+      "Él es mi bendito Salvador y Rey.",
+      "Ya sea para la guerra, para la batalla,",
+      "Sea para los campos, para sembrar."
+    ],
+    [
+      "2.\"Siempre seguiré a Cristo mi Señor\"",
+      "Dice el corazón que siente su amor.",
+      "Cerca de Él siempre estaré a salvo",
+      "Donde quiera que esté, soy muy feliz."
+    ],
+    [
+      "3. Así que dondequiera que me lleves,",
+      "Allí encontraré mi dulce hogar.",
+      "Donde quiera que esté, siempre cantaré:",
+      "Tú, Señor, estás conmigo; No temeré."
+    ]
+  ],
+  "coro": [
+    "Onde quer, onde quer que Jesus mandar",
+    "Sempre junto dEle eu irei andar."
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=376SUp5-Wxg",
-      "title": "Himno Adventista 502 - Brilla en el sitio donde estés"
+      "url": "https://www.youtube.com/watch?v=WS_H7e-JRoo",
+      "title": "Quero estar ao pé da cruz (4 estrofes)"
     },
     {
-      "url": "https://www.youtube.com/watch?v=WPZ0kNoGUhI",
-      "title": "Himno 235 La razón de vivir Nuevo Himnario Adventista"
+      "url": "https://www.youtube.com/watch?v=x4W2d3bwOow",
+      "title": "Mais perto quero estar - 3 estrofes"
     },
     {
-      "url": "https://www.youtube.com/watch?v=7_ZYzNJfYjQ",
-      "title": "Himno 502 - Brilla en el sitio donde estés | Nuevo"
+      "url": "https://www.youtube.com/watch?v=BFYI_oXWKXA",
+      "title": "Querido lar, ali no céu - Hinário Aleluia 449"
     }
   ]
 }

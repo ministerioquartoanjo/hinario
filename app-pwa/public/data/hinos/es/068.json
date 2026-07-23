@@ -1,28 +1,53 @@
 {
   "title": "68 - Firme en promesas",
-  "author": "",
+  "author": "Russell Kelso Carter",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. Manteneos firmes en las promesas de mi Salvador,",
+      "Cantaré alabanzas a mi Creador.",
+      "Siempre permanezco por Tu amor,",
+      "Firmes en las promesas de Jesús."
+    ],
+    [
+      "2. Firmes en promesas que no fallarán,",
+      "Supero las tormentas del mar embravecido;",
+      "Todo miedo y todo mal lo derrotaré,",
+      "Firmes en las promesas de Jesús."
+    ],
+    [
+      "3. Firmes en las promesas de Jesús Señor,",
+      "Estoy agradecido por tu favor;",
+      "Por Su Espíritu soy victorioso;",
+      "Firmes en las promesas de Jesús."
+    ]
+  ],
+  "coro": [
+    "Firme, firme,",
+    "Firme, firme,",
+    "Firme nas promessas de Jesus, meu Mestre.",
+    "Firme, firme,",
+    "Firme nas promessas de Jesus."
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=brBu12czbz8",
-      "title": "Himno Adventista 412 - Todas las promesas"
+      "url": "https://www.youtube.com/watch?v=zhBFcvbWSEs",
+      "title": "Firme nas promessas - Hinário Aleluia 406"
     },
     {
-      "url": "https://www.youtube.com/watch?v=0QqmaJAVCss",
-      "title": "Novo Hinário Adventista • Hino 72 • Firme Nas Promessas • (Lyrics)"
+      "url": "https://www.youtube.com/watch?v=Mzf8rZ0mZaA",
+      "title": "Firme na rocha - Cantor Cristão 367"
     },
     {
-      "url": "https://www.youtube.com/watch?v=3Ys21lyfLgo",
-      "title": "🎼 Firme en las promesas | Himno con letra"
+      "url": "https://www.youtube.com/watch?v=MDVhujGifHY",
+      "title": "Firmes e Adelante - Himnos de Gloria 15"
     }
   ]
 }

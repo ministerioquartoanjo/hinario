@@ -1,28 +1,48 @@
 {
   "title": "5 - ¡Aleluya! ¡Aleluya! Cantar himnos de agradecimiento",
-  "author": "",
+  "author": "Christopher Wordsworth, Ludwig van Beethoven",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. ¡Aleluya! ¡Aleluya!",
+      "Se cantan himnos de agradecimiento.",
+      "Jubilosos y felices,",
+      "Se cantan himnos a Jesús.",
+      "Para liberarnos del pecado,",
+      "Sufrió una muerte triste;",
+      "Triunfando de esta muerte,",
+      "El dio vida eterna"
+    ],
+    [
+      "2. Cristo, divino Redentor",
+      "Pecado aniquilado",
+      "Y logró la misma bendición",
+      "Para aquellos a quienes rescató.",
+      "Aquí hay miles de miles",
+      "Para rendirle adoración,",
+      "Descubriendo en su obra",
+      "Vida, luz y salvación."
+    ]
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=yVIBD9tOTdM",
-      "title": "Alelu Aleluya | Corito Adventista"
+      "url": "https://www.youtube.com/watch?v=dWMqzVBM0FA",
+      "title": "Oh! Vinde crentes e entoai - Hinário Aleluia 341"
     },
     {
-      "url": "https://www.youtube.com/watch?v=V8GjNvAKPgM",
-      "title": "Los HIMNOS ADVENTISTAS Más Bellos - Vol. 2 (Selección Especial)"
+      "url": "https://www.youtube.com/watch?v=pB_CRTmsNf4",
+      "title": "060 HCC - Aleluia, Aleluia, Gratos hinos entoai"
     },
     {
-      "url": "https://www.youtube.com/watch?v=WHCdCfv-vbc",
-      "title": "Himno 68 Todo lo que ha creado Dios Nuevo himnario Adventista"
+      "url": "https://www.youtube.com/watch?v=4wBqvdA2BQM",
+      "title": "060   ALELUIA, ALELUIA GRATOS HINOS ENTOAI HCC"
     }
   ]
 }

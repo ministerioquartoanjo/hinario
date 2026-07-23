@@ -1,28 +1,60 @@
 {
   "title": "190 - Jesús vencedor viene",
-  "author": "",
+  "author": "Júlia Ward Howe Melodia Tradicional Ameri",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. La gloria eterna de Jesús, el Rey de reyes, brilla ahora:",
+      "¡Pronto los reinos de este mundo escucharán Su Ley!",
+      "Las señales de su venida aparecen cada vez más;",
+      "¡Vencedor viene Jesús!"
+    ],
+    [
+      "2. Ha sonado la corneta que llama a los creyentes a la batalla",
+      "Cristo, a la cabeza de su pueblo, ya ha conquistado multitudes",
+      "El enemigo, en retirada, demostró su furia.",
+      "Venciendo viene Jesús"
+    ],
+    [
+      "3. Y finalmente, entronizadas, las naciones juzgarán",
+      "Todos, grandes y pequeños, el Juez se enfrentará",
+      "Y los redimidos triunfantes cantarán brillantemente",
+      "El rey Jesús ganó"
+    ]
+  ],
+  "coro": [
+    [
+      "Glória! Glória! Aleluia! (3x)",
+      "Vencendo vem Jesus!"
+    ],
+    [
+      "Glória! Glória! Aleluia! (3x)",
+      "Vencendo vem Jesus!"
+    ],
+    [
+      "Glória! Glória! Aleluia! (3x)",
+      "Venceu o Rei Jesus!"
+    ]
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=u6bGnuHp09s",
-      "title": "Himno 178 Contemplé la gloria Nuevo Himnario Adventista"
+      "url": "https://www.youtube.com/watch?v=U4ym16En8xc",
+      "title": "Novo Hinário Adventista • Hino 441 • Vencendo Vem Jesus • (Lyrics)"
     },
     {
-      "url": "https://www.youtube.com/watch?v=df6Ka62lH8o",
-      "title": "HA62 | Himno 169 | Cristo viene"
+      "url": "https://www.youtube.com/watch?v=jQmzK_XLUJg",
+      "title": "Novo Hinário Adventista • Hino 441 • Vencendo Vem Jesus • PLayback"
     },
     {
-      "url": "https://www.youtube.com/watch?v=I5nmgFrd940",
-      "title": "Himno Adventista 184 - Nunca te rindas"
+      "url": "https://www.youtube.com/watch?v=lRc6G1n4Iko",
+      "title": "Hinário Adventista - 152 Vencendo Vem Jesus"
     }
   ]
 }

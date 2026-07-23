@@ -1,28 +1,34 @@
 {
   "title": "169 - Seguiré a Cristo",
-  "author": "",
+  "author": "Henry Maxwell Wright",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. ¡Siempre! ¡Siempre! ¡Seguiré a Cristo!",
+      "Dondequiera que vaya, lo seguiré,",
+      "¡Siempre! ¡Siempre! ¡Seguiré a Cristo!",
+      "¡Dondequiera que vaya, lo seguiré!"
+    ]
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=dOY9S0leApI",
-      "title": "Himno Adventista 281 - He decidido seguir a Cristo"
+      "url": "https://www.youtube.com/watch?v=Tlz7aU1XIMI",
+      "title": "SEGUIREI A CRISTO - 452. HARPA CRISTÃ- (CIFRADO) - Carlos josé"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=8YAp95jm9DA",
+      "title": "Seguirei a Cristo"
     },
     {
       "url": "https://www.youtube.com/watch?v=OjmA-XlCfmA",
       "title": "Vem a Cristo! - Hinário Evangélico 217"
-    },
-    {
-      "url": "https://www.youtube.com/watch?v=ug2mPpht16w",
-      "title": "Cristo Quiere Limpios Corazones - Himnos de Gloria 10"
     }
   ]
 }

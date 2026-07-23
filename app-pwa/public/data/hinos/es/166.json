@@ -1,28 +1,58 @@
 {
   "title": "166 - Si Cristo va conmigo",
-  "author": "",
+  "author": "Frida Vingren C. Austin Miles",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. Si peregrino por los valles, caminaré,",
+      "O habitar en la gloriosa luz de Cristo;",
+      "Iré con mi Señor a donde quiera que Él vaya;",
+      "Confiando en la gracia de Mi Salvador."
+    ],
+    [
+      "2. Si Jesús quiere enviarme al desierto;",
+      "Trayendo buenas noticias de Salvación sin igual;",
+      "Entonces me ocuparé de la paz en mi corazón.",
+      "Siguiendo a Cristo, sin más demora."
+    ],
+    [
+      "3. Será mi suerte llevar la dura cruz",
+      "Siempre quiero hablarles de Su gracia y Su poder.",
+      "Feliz con Jesús, cargando mi cruz.",
+      "Hablo de Cristo que es mi luz."
+    ],
+    [
+      "4. Al Salvador Jesús deseo obedecer,",
+      "Porque en Su Palabra encuentro mi conocimiento;",
+      "Fiel a Dios seré, el mundo vencerá,",
+      "Jesús va conmigo, ya no temeré."
+    ]
+  ],
+  "coro": [
+    "Se Cristo comigo vai, eu irei;",
+    "E não temerei, com gozo irei; comigo vai;",
+    "É grato servir a Jesus, levar a cruz;",
+    "Se Cristo comigo vai, eu irei."
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=HbDez34qav8",
-      "title": "Hinário Adventista 303 - SE CRISTO FOR COMIGO"
+      "url": "https://www.youtube.com/watch?v=PL6v8ZKhypM",
+      "title": "SE CRISTO COMIGO VAI - 515 - HARPA CRISTÃ - Carlos José (LEGENDADO)"
     },
     {
-      "url": "https://www.youtube.com/watch?v=OjmA-XlCfmA",
-      "title": "Vem a Cristo! - Hinário Evangélico 217"
+      "url": "https://www.youtube.com/watch?v=vSOlS7r9AVc",
+      "title": "SE CRISTO COMIGO VAI (515) HARPA CRISTÃ"
     },
     {
-      "url": "https://www.youtube.com/watch?v=ug2mPpht16w",
-      "title": "Cristo Quiere Limpios Corazones - Himnos de Gloria 10"
+      "url": "https://www.youtube.com/watch?v=IfM3j1Zbkh0",
+      "title": "Novo Hinário Adventista • Hino 227 • Se Cristo For Comigo • (Lyrics)"
     }
   ]
 }

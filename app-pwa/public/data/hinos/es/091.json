@@ -1,28 +1,52 @@
 {
   "title": "91 - Jesús, Pastor amado",
-  "author": "",
+  "author": "Sarah Poulton Kalley George James Webb",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. Jesús, amado Pastor, nos contempla aquí;",
+      "Concédenos que seamos un solo cuerpo en Ti.",
+      "Las disputas y la malicia de nuestra parte se van muy lejos;",
+      "Que ningún dolor obstaculice nuestra comunión."
+    ],
+    [
+      "2. Por haber sido rescatados por un Salvador,",
+      "Debemos estar unidos por un amor santo y fuerte;",
+      "Mirando con simpatía los errores de un hermano",
+      "Y todos le ayudan con tierna compasión."
+    ],
+    [
+      "3. Jesús, suave y gentil, nos enseña a amar,",
+      "Y también nos hace más dispuestos a perdonar.",
+      "¡Oh! ¡Cuánto necesitamos la ayuda del Señor!",
+      "Unidos, supliquemos ante Ti por este amor."
+    ],
+    [
+      "4. Señor, si toda la iglesia camina en santa unidad,",
+      "Entonces el nombre de Christian será bendito.",
+      "Así se cumplirá lo que pediste en nosotros,",
+      "Y el mundo, en nosotros, vuestros hijos, entonces distinguirá."
+    ]
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=ZHK2rdtAjTs",
-      "title": "Novo Hinário Adventista • Hino 243 • Jesus, Pastor Amado • (Lyrics)"
+      "url": "https://www.youtube.com/watch?v=S4g5wIP8VM0",
+      "title": "Jesus! Pastor Amado! - Hinário Aleluia 380"
     },
     {
-      "url": "https://www.youtube.com/watch?v=S_j5y1Zf5aA",
-      "title": "HCC 566 JESUS PASTOR AMADO com letra (por: JETRO ARAÚJO)"
+      "url": "https://www.youtube.com/watch?v=bDR3PzvVjGM",
+      "title": "Jesus, o bom Pastor - Maranata CIA 115"
     },
     {
-      "url": "https://www.youtube.com/watch?v=UYFWkBEXhoQ",
-      "title": "Hinário Adventista 395 - JESUS, PASTOR AMADO"
+      "url": "https://www.youtube.com/watch?v=Btcfy2Hg8Lc",
+      "title": "Sirvo a Jesus amado - Hinário Aleluia 301"
     }
   ]
 }

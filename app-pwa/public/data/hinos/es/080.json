@@ -1,28 +1,53 @@
 {
   "title": "80 - Hay un Camino Santo",
-  "author": "",
+  "author": "Emil Peterson P.V",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. Hay un camino santo, hacia el cielo de plena luz,",
+      "A veces espinosa, nos lleva a la gloria;",
+      "Es el camino correcto para todo pecador;",
+      "Jesús es el Salvador, Jesús es el Salvador."
+    ],
+    [
+      "2. Hay paz inquebrantable para quienes están en la luz;",
+      "Por un precio incomparable",
+      "Me compré Jesús",
+      "El don del Padre amado satisface mi alma,",
+      "Jesús es mi paz, Jesús es mi paz."
+    ],
+    [
+      "3. Hay un poder que cura el corazón triste,",
+      "Que da alivio al alma, paz y consuelo,",
+      "Y guarda también mi vestido a la luz de la nieve;",
+      "¡Poder de mi Jesús, poder de mi Jesús!"
+    ],
+    [
+      "4. Hay un final glorioso, más allá del velo oscuro;",
+      "Al final del camino espinoso está el cielo;",
+      "Y cuando se quite el velo de la oscuridad,",
+      "Entonces veré a Jesús, entonces veré a Jesús"
+    ]
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=1fwWqzU3LVk",
-      "title": "Himno 475 - El camino es escabroso | Nuevo"
+      "url": "https://www.youtube.com/watch?v=vHFYQNsFbEs",
+      "title": "Plena paz e santo gozo - Hinário Aleluia 374"
     },
     {
-      "url": "https://www.youtube.com/watch?v=KpoyeCTvP5Q",
-      "title": "Himno 62 Santo Santo Santo Es El Señor Nuevo himnario Adventista"
+      "url": "https://www.youtube.com/watch?v=D9F7omDKL7w",
+      "title": "No caminho eu quero estar - Maranata CIA 158"
     },
     {
-      "url": "https://www.youtube.com/watch?v=Rn8aXa5Tb6k",
-      "title": "HA62 | Himno 389 | El camino es escabroso"
+      "url": "https://www.youtube.com/watch?v=tztW4_Rxoeo",
+      "title": "Dons do Espírito Santo - Maranata CIA 139 II"
     }
   ]
 }

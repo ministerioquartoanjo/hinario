@@ -1,28 +1,52 @@
 {
   "title": "171 - Siempre fiel",
-  "author": "",
+  "author": "Henry Maxwell Wright",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. Siempre fieles, sí, a Ti seremos,",
+      "¡Por tu gracia, oh Cristo, Señor!",
+      "Siempre fieles, sí, por Ti lucharemos,",
+      "¡Bajo tu estandarte, oh Jesús, Salvador!"
+    ],
+    [
+      "2. Porque vives, oh Cordero bendito,",
+      "¿Quién no quiere conocerte?",
+      "Quien, que se llama a sí mismo un verdadero cristiano,",
+      "¿No estás preparado para sufrir?"
+    ],
+    [
+      "3. Pero, Salvador, qué débiles somos,",
+      "¿Cómo podemos dejar de caer?",
+      "¿Si no somos guardados por ti mismo?",
+      "¿Quién, incluso hasta la muerte, podrá seguirte?"
+    ]
+  ],
+  "coro": [
+    "Sempre fiéis, irmãos! Irmãos sejamos.",
+    "Sempre fiéis a Cristo Jesus.",
+    "Que até à morte, por nós prosseguiu,",
+    "E libertou-nos, morrendo na cruz!"
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=kOUteeDb_QI",
-      "title": "Himno 478 - Sé fiel siempre, hermano | Nuevo"
+      "url": "https://www.youtube.com/watch?v=GKvoC5JT_5Y",
+      "title": "326 - Sempre a Cristo fiéis nós seremos (hino CCB)"
     },
     {
-      "url": "https://www.youtube.com/watch?v=eyjlEa4qXuI",
-      "title": "Teu és fiel, Senhor"
+      "url": "https://www.youtube.com/watch?v=Klz5ms7aQYA",
+      "title": "Ensaio CCB Cabreúva Bomfim Hino 326 Sempre a Cristo Fiéis"
     },
     {
-      "url": "https://www.youtube.com/watch?v=q7YkI4KGx4k",
-      "title": "Quero ser fiel - Maranata CIA 180"
+      "url": "https://www.youtube.com/watch?v=jX8_gNK_A1k",
+      "title": "Harpa Cristã - 50 - Sempre Fiéis - Levi - com letra"
     }
   ]
 }

@@ -1,28 +1,54 @@
 {
   "title": "180 - Tengo Paz en Mi Ser",
-  "author": "",
+  "author": "Will L. Murphy/ João Pereira",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. Tengo paz en mi ser,",
+      "Una paz perfecta;",
+      "Que el mundo no puede dar.",
+      "Y en la prueba fatal,",
+      "O en combate mortal,",
+      "Tengo paz para consolarme."
+    ],
+    [
+      "2. Cuando llegué a Jesús, encontré plena luz,",
+      "Mi alma se llenó de paz.",
+      "Cada noche pasaba: amanecía un nuevo día,",
+      "Porque Cristo Jesús me salvó."
+    ],
+    [
+      "3. Esta paz única, que me libra del mal,",
+      "Sublime, incomparable, eterna,",
+      "No quiero dejarla: ella me ayudará,",
+      "Hasta llegar a la mansión celestial."
+    ]
+  ],
+  "coro": [
+    "Em meu ser habita Cristo, o Senhor.",
+    "Em meu ser habita profundo amor!",
+    "Sim, não me desampara: Ele é fiel;",
+    "Estará comigo, meu Salvador."
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=Z4vtAd2ddAk",
-      "title": "Tengo paz  | Himno Adventista 426 | Versión renovada"
+      "url": "https://www.youtube.com/watch?v=QIqkKz8WInQ",
+      "title": "ARAUTOS DO REI - TENHO PAZ (LETRA)"
     },
     {
-      "url": "https://www.youtube.com/watch?v=efUs8_wYVog",
-      "title": "Bendita Paz - Coros Sacros 58 (com introdução)"
+      "url": "https://www.youtube.com/watch?v=lXuRpOU97Ng",
+      "title": "ARAUTOS DO REI - TENHO PAZ"
     },
     {
-      "url": "https://www.youtube.com/watch?v=WL2vdxFjbv8",
-      "title": "¡Paz! ¡Paz! ¡Cuán Dulce Paz! - Himnos de Gloria 27"
+      "url": "https://www.youtube.com/watch?v=dFXO-GiubAg",
+      "title": "Tenho Paz - Arautos do Rei"
     }
   ]
 }

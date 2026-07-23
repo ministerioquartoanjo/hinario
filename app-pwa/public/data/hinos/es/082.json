@@ -1,28 +1,52 @@
 {
   "title": "82 - Cosecharemos",
-  "author": "",
+  "author": "Knowles Shaw George A. Minor",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. Sembremos todos la semilla santa,",
+      "Desde el amanecer hasta el anochecer;",
+      "Tranquilo, esperando el tiempo de la cosecha,",
+      "Cuando felizmente cosecharemos."
+    ],
+    [
+      "2. Incluso cuando seres malvados y perniciosos",
+      "Quieren que la buena semilla destruya,",
+      "Sembremos, siempre satisfechos,",
+      "Por una cosecha santa que disfrutaremos."
+    ],
+    [
+      "3. Id, pues, trabajadores, sembrad con valentía,",
+      "La semilla viva de la verdad y la luz;",
+      "Proclamando a Cristo, su poder y gloria,",
+      "¡Salvación perfecta que logró en la cruz!"
+    ]
+  ],
+  "coro": [
+    "Havemos de colher! Havemos de colher!",
+    "Oh quão jubilosos, havemos de colher!",
+    "Havemos de colher! Havemos de colher!",
+    "Messes abundantes, havemos de trazer!"
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=ql2B2iVXg0M",
-      "title": "La Chancha Muda - Cosecharemos (AUDIO)"
+      "url": "https://www.youtube.com/watch?v=c8a_2FgXizo",
+      "title": "Hinário Adventista 312 - HAVEMOS DE COLHER"
     },
     {
-      "url": "https://www.youtube.com/watch?v=i9eFJIM0nLU",
-      "title": "mostrándole mis siembra y pronto cosecharemos"
+      "url": "https://www.youtube.com/watch?v=VD-yUm_Kf04",
+      "title": "312 Hinário Adventista - Havemos de Colher"
     },
     {
-      "url": "https://www.youtube.com/watch?v=YyIcu2SychA",
-      "title": "Episodio 96. Todo lo que sembremos cosecharemos."
+      "url": "https://www.youtube.com/watch?v=2Y4WLJJznxw",
+      "title": "Hinário Adventista • Hino 312 - Havemos de Colher"
     }
   ]
 }

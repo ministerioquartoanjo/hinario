@@ -1,28 +1,58 @@
 {
   "title": "62 - Cara a cara",
-  "author": "",
+  "author": "Carrie Ellis Breck Grant Colfaxtullar",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. ¡Cuánto anhelo ver a Cristo!",
+      "Ver Su rostro, ¡qué placer!",
+      "Cuando, por fin, en el hogar eterno,",
+      "¡Siempre puedo verlo!"
+    ],
+    [
+      "2. Ya lo veo muy lejos,",
+      "Veo como a través de un velo,",
+      "Pero quiero verlo pronto",
+      "¡Cara a cara en el cielo!"
+    ],
+    [
+      "3. ¡Ah! Que delicia estar con Cristo,",
+      "¡Donde ya no hay dolor!",
+      "Libre de cualquier peligro,",
+      "¡Disfrutando de su amor!"
+    ],
+    [
+      "4. Cara a cara, que alegría",
+      "Tienes que vivir así",
+      "Ver la cara tan querida",
+      "¡Quien murió por mí!"
+    ]
+  ],
+  "coro": [
+    "Face a face eu hei de vê-lo,",
+    "Quando vier em glória em luz;",
+    "Face a face lá na glória,",
+    "Hei de ver meu bom Jesus!"
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=xsSWHLZ1tbI",
-      "title": "CARA A CARA l HIMNOS Y COROS l BETHEL TELEVISIÓN"
+      "url": "https://www.youtube.com/watch?v=MpyvNWg5bAc",
+      "title": "Face a face - Cantor Cristão 503 (com introdução)"
     },
     {
-      "url": "https://www.youtube.com/watch?v=LnS6z-kfmyU",
-      "title": "Cara a Cara Himno Página 57 | Ministerio Gloria Celestial"
+      "url": "https://www.youtube.com/watch?v=4zeJehRh790",
+      "title": "Novo Hinário Adventista • Hino 477 • Face a Face • (Lyrics)"
     },
     {
-      "url": "https://www.youtube.com/watch?v=KpbL1sR4EHE",
-      "title": "Cara a cara espero verle"
+      "url": "https://www.youtube.com/watch?v=tS9hFgt1gGU",
+      "title": "Hinário Adventista 444 - FACE A FACE"
     }
   ]
 }

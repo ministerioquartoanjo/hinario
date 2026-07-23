@@ -1,28 +1,51 @@
 {
   "title": "72 - Gloria al Salvador",
-  "author": "",
+  "author": "Henry Maxwell Wright",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. Al llegar a la cruz de mi buen Señor,",
+      "Postrados a los pies del Redentor,",
+      "Él escuchó cada uno de mis gritos,",
+      "Gloria al Salvador."
+    ],
+    [
+      "2. ¡Qué maravilloso! Jesús me amó,",
+      "Todo lo gratis me perdonó;",
+      "Rompió mis ataduras y me liberó;",
+      "¡Gloria al Salvador!"
+    ],
+    [
+      "3. Junto a la cruz todavía hay lugar,",
+      "Ven, oh afligido, sin demora,",
+      "Cristo está listo para salvarte,",
+      "¡Ven al Salvador!"
+    ]
+  ],
+  "coro": [
+    "Glória ao Salvador! (2x)",
+    "Agora sei que Ele me salvou",
+    "Glória ao Salvador!"
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=VTtsVQGQD-w",
-      "title": "Himno 30   Gloria Demos al Salvador   Himnario Bautista"
+      "url": "https://www.youtube.com/watch?v=BGrlN9xY3ZE",
+      "title": "Guia-me, meu Salvador (com introdução)"
     },
     {
-      "url": "https://www.youtube.com/watch?v=4SOFkKNf50w",
-      "title": "Gloria Demos al Salvador"
+      "url": "https://www.youtube.com/watch?v=WPOg-YQeUuc",
+      "title": "Glória pra mim - Arautos do Rei (com introdução)"
     },
     {
-      "url": "https://www.youtube.com/watch?v=oe9gjYCfobE",
-      "title": "Gloria demos al salvador"
+      "url": "https://www.youtube.com/watch?v=QGSD1SYv3f4",
+      "title": "Em breve estaremos na glória - Maranata CIA 195"
     }
   ]
 }

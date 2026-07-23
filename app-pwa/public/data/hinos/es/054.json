@@ -1,28 +1,58 @@
 {
   "title": "54 - Díselo a Cristo",
-  "author": "",
+  "author": "Joel Carlson E. S. Lorenz",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. Si estás cansado y agotado,",
+      "Díselo a Cristo; díselo a Cristo.",
+      "Si te sientes débil, confundido,",
+      "Díselo a tu Salvador."
+    ],
+    [
+      "2. Cuando estés rodeado de tentación,",
+      "Mira a Cristo; mira a Cristo;",
+      "Cuando las huestes del pecado rugen,",
+      "Mira a tu Salvador."
+    ],
+    [
+      "3. Si otros ya se han apartado del camino,",
+      "Sigue a Cristo; seguir a Cristo;",
+      "Si la lucha aumenta alrededor,",
+      "Sigue a tu Salvador."
+    ],
+    [
+      "4. Cuando llegues al final del viaje,",
+      "Confía en Cristo; confianza en Cristo;",
+      "Él te dará una feliz entrada al cielo,",
+      "Confía en tu Salvador."
+    ]
+  ],
+  "coro": [
+    "Dize-o a Cristo; Dize-o a Cristo;",
+    "Que é o Amigo mais fiel;",
+    "Não há outro amigo como Cristo,",
+    "Dize-o ao Emanuel."
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=EIJec-d95yA",
-      "title": "Harpa Cristã - 460 - Dize-o a Cristo - Levi - com letra"
-    },
-    {
-      "url": "https://www.youtube.com/watch?v=h_ZY-OP0FrE",
-      "title": "DIZE-O A CRISTO - 460. HARPA CRISTÃ- (CIFRADO) - Carlos José"
-    },
-    {
       "url": "https://www.youtube.com/watch?v=OjmA-XlCfmA",
       "title": "Vem a Cristo! - Hinário Evangélico 217"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=ug2mPpht16w",
+      "title": "Cristo Quiere Limpios Corazones - Himnos de Gloria 10"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=VeuibgEN0GM",
+      "title": "Cristo satisfaz - Cantor Cristão 395"
     }
   ]
 }

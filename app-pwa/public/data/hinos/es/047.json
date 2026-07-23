@@ -1,28 +1,52 @@
 {
   "title": "47 - Cristo salva al pecador",
-  "author": "",
+  "author": "Erdmann Neumeister James McGranahan",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. Cristo salva al pecador,",
+      "Lava el corazón rudo;",
+      "Contrito de amor,",
+      "Ofrece salvación."
+    ],
+    [
+      "2. Cristo salva al pecador",
+      "Y concédele el perdón.",
+      "Acepta al buen Señor,",
+      "Acéptalo de corazón."
+    ],
+    [
+      "3. Venid todos y encontraréis",
+      "Paz y luz en el Redentor,",
+      "Ven, entonces recibirás",
+      "Vida eterna, del Señor."
+    ]
+  ],
+  "coro": [
+    "Confiai em Seu poder;",
+    "Confiai em Seu amor;",
+    "Crede sim que Cristo quer",
+    "Libertar o pecador."
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=3wKYcRmM5RQ",
-      "title": "480 Solo Cristo salva, pista karaoke con letra"
+      "url": "https://www.youtube.com/watch?v=j8zW5uE17eo",
+      "title": "PLAYBACK - Harpa Cristã - 419 - Vinde, Pecadores - (com letra)"
     },
     {
-      "url": "https://www.youtube.com/watch?v=_rZwQpSfZAw",
-      "title": "Himno No.205: Cristo salva al pecador - Himnario Corazón y Vida"
+      "url": "https://www.youtube.com/watch?v=MdKiJnY3mbQ",
+      "title": "Harpa Cristã - 419   Vinde, Pecadores Karaoke/playback"
     },
     {
-      "url": "https://www.youtube.com/watch?v=gESs5RN0suc",
-      "title": "Cristo salva al pecador  #191 - HIMNOS ESCOGIDOS"
+      "url": "https://www.youtube.com/watch?v=xC2OSDAaTwQ",
+      "title": "VINDE PECADORES - 419 - HARPA CRISTÃ - Carlos José (PLAYBACK)"
     }
   ]
 }

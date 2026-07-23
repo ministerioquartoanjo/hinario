@@ -1,28 +1,55 @@
 {
   "title": "102 - Mensaje al mundo",
-  "author": "",
+  "author": "H. Ernest Nichol",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. Demos el mensaje al mundo,",
+      "Proclamad la historia de la cruz;",
+      "Historia de amor y gracia,",
+      "Historia de paz y luz,",
+      "Historia de paz y luz."
+    ],
+    [
+      "2. Una voz de advertencia para el mundo",
+      "Debe ser nuestro canto;",
+      "Un himno de fe que habla",
+      "De las bendiciones del amor incomparable,",
+      "De las bendiciones del amor incomparable."
+    ],
+    [
+      "3. Un deber es llevar a Cristo al mundo",
+      "Como quien puede salvar;",
+      "Eso puede ahuyentar los pecados",
+      "Y la gloria de Dios muestra,",
+      "Y la gloria de Dios se mostrará."
+    ]
+  ],
+  "coro": [
+    "Pois Jesus, nosso Rei, em breve",
+    "Voltará Rei dos reis, Senhor;",
+    "Virá Seu reino de luz fundar,",
+    "Um reino de paz e amor."
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=VWEtaj6QVFc",
-      "title": "para Jóvenes 330 - Vamos a dar el mensaje"
+      "url": "https://www.youtube.com/watch?v=CuEvE-LA_ac",
+      "title": "O mundo é Teu, Senhor"
     },
     {
-      "url": "https://www.youtube.com/watch?v=xh4I_CjVA34",
-      "title": "Jorge Otamendi - Mensaje al Mundo (letra en la pantalla)"
+      "url": "https://www.youtube.com/watch?v=Ofwu7n8W568",
+      "title": "Queres neste mundo ser - Hinário Aleluia 408"
     },
     {
-      "url": "https://www.youtube.com/watch?v=gU8PrUvxksE",
-      "title": "Un mensaje daremos al mundo"
+      "url": "https://www.youtube.com/watch?v=ulRsMTUDukM",
+      "title": "Este mundo não é meu lugar - Maranata CIA 157"
     }
   ]
 }

@@ -1,28 +1,34 @@
 {
   "title": "71 - Gloria a Jesús",
-  "author": "",
+  "author": "Henry Maxwell Wright",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. ¡Gloria! ¡Gloria! ¡Aleluya!",
+      "¡Gloria! ¡Gloria! A nuestro Salvador.",
+      "¡Gloria a Jesús! ¡Gloria a Jesús!",
+      "Nuestro gran Redentor."
+    ]
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=V276Mb6HKlw",
-      "title": "  2   Da Gloria al Senor"
+      "url": "https://www.youtube.com/watch?v=EhiYoJKuMvg",
+      "title": "Dá teu coração a Jesus - Hinário Adventista 183"
     },
     {
-      "url": "https://www.youtube.com/watch?v=PPrZzQ7bL0I",
-      "title": "¡Gloria! ¡Gloria! a Jesús Salvador nuestro / Praise Him! Praise Him! / himno con letra / piano"
+      "url": "https://www.youtube.com/watch?v=LBktRMFhOqI",
+      "title": "I'd Rather Have Jesus - Baptist Hymnal 530"
     },
     {
-      "url": "https://www.youtube.com/watch?v=TZ-Ny1CiL6Y",
-      "title": "Gloria a Jesús"
+      "url": "https://www.youtube.com/watch?v=eSaRb9fvSrw",
+      "title": "Em Jesus confiar - Cantor Cristão 301"
     }
   ]
 }

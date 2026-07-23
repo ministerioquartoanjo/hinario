@@ -1,28 +1,48 @@
 {
   "title": "17 - Altamente proclaman los cielos",
-  "author": "",
+  "author": "Metrificação do Sl 19, Sarah Kalley Melodia Alema",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. Altamente proclaman los cielos",
+      "Tu divino Creador;",
+      "Anuncia el firmamento",
+      "Tus obras, oh Señor.",
+      "Incesante, noche y día,",
+      "Dan señales de tu poder;",
+      "Sin palabras proclamando",
+      "Tu gloria, Tu conocimiento."
+    ],
+    [
+      "2. Majestuoso el sol camina",
+      "¡Por los cielos, con resplandor!",
+      "Exultante, en su camino,",
+      "Llena el mundo de calidez.",
+      "Todo el vasto universo",
+      "¡Cantad a coro vuestras alabanzas!",
+      "Y a nosotros nos llega una dulce enseñanza.",
+      "De la Palabra del Señor."
+    ]
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=ocJEgiUwLUc",
-      "title": "Los Cielos Proclaman Tu Gloria || Doriana Goins (GRABADO EN VIVO) con Lyrics"
+      "url": "https://www.youtube.com/watch?v=Emfy2fr5ZLE",
+      "title": "Altamente os céus proclamam - Novo Cântico 22"
     },
     {
-      "url": "https://www.youtube.com/watch?v=tD8JBlNE8Bw",
-      "title": "Los Cielos Proclaman La Gloria De Dios"
+      "url": "https://www.youtube.com/watch?v=-WF4mNLnfKo",
+      "title": "Hinário adventista do 7° dia: Hino 1 - Altamente os Céus Proclamam"
     },
     {
-      "url": "https://www.youtube.com/watch?v=XqzI2QT3Hwk",
-      "title": "Los Cielos proclaman la gloria de Dios | Música con los Heraldos"
+      "url": "https://www.youtube.com/watch?v=yGrlOjBZZ4E",
+      "title": "001 Altamente os Céus Proclamam | Novo Hinário Louvores ao Rei | Hinário Reformista"
     }
   ]
 }

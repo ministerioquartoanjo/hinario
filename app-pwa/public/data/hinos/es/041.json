@@ -1,28 +1,50 @@
 {
   "title": "41 - Cristo está a la puerta",
-  "author": "",
+  "author": "Joel Carlson",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. Jesucristo está a la puerta:",
+      "Toca siempre para entrar.",
+      "Si lo escuchas, ¡ábrelo ahora!",
+      "¡Abre tu corazón!"
+    ],
+    [
+      "2. Jesús todavía llama allí",
+      "Y si no lo abres ahora,",
+      "Volverá triste;",
+      "¡Abre tu corazón!"
+    ],
+    [
+      "3. Jesús llama, abre ahora,",
+      "¡Abre, sí, oh pecador!",
+      "El juicio está a la puerta;",
+      "¡Abre tu corazón!"
+    ]
+  ],
+  "coro": [
+    "Abre o coração!",
+    "Abre o coração!"
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=f7wxtcLDmVA",
-      "title": "212 A tu puerta Cristo está Nuevo Himnario Adventista"
+      "url": "https://www.youtube.com/watch?v=OjmA-XlCfmA",
+      "title": "Vem a Cristo! - Hinário Evangélico 217"
     },
     {
-      "url": "https://www.youtube.com/watch?v=Dgom6eY8BTs",
-      "title": "Video Adventistas:: Cristo a la Puerta Esta"
+      "url": "https://www.youtube.com/watch?v=ug2mPpht16w",
+      "title": "Cristo Quiere Limpios Corazones - Himnos de Gloria 10"
     },
     {
-      "url": "https://www.youtube.com/watch?v=G4_4EED1fRI",
-      "title": "CRISTO ESTA A LA PUERTA"
+      "url": "https://www.youtube.com/watch?v=VeuibgEN0GM",
+      "title": "Cristo satisfaz - Cantor Cristão 395"
     }
   ]
 }

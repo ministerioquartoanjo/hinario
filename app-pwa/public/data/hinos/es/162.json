@@ -1,28 +1,58 @@
 {
   "title": "162 - Salvada soy",
-  "author": "",
+  "author": "Frida Vingren Jno.R. Sweney",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. Soy salvo, Jesús me compró",
+      "Del pecado y la perdición;",
+      "Con su espíritu ya me ha sellado,",
+      "Me dio paz en mi corazón."
+    ],
+    [
+      "2. Cantaré con alegría,",
+      "Sonido alegre del cielo.",
+      "alabaré con armonía",
+      "A Jesús, mi amado."
+    ],
+    [
+      "3. El mensaje glorioso",
+      "De la salvación eterna,",
+      "Fuerte, sí, y poderosa,",
+      "Es digno de aceptación."
+    ],
+    [
+      "4. Cuando llegue el final de la obra,",
+      "Tú me recibes, Salvador;",
+      "Concédeme la vida eterna,",
+      "En Tu reino de amor."
+    ]
+  ],
+  "coro": [
+    "Glória, glória, aleluia,",
+    "Já achei a salvação!",
+    "Glória, glória, aleluia,",
+    "Cristo deu-me redenção!"
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=JOLGJ7prpns",
-      "title": "Himno Adventista 253 - Tuyo soy, Jesús"
+      "url": "https://www.youtube.com/watch?v=Y-YkJE-9ouw",
+      "title": "Harpa Cristã - 177 - Salvo Estou - Levi - (com letra)"
     },
     {
-      "url": "https://www.youtube.com/watch?v=r-F3A2aR8m8",
-      "title": "Himno 253 Tuyo soy, Jesús Nuevo Himnario Adventista"
+      "url": "https://www.youtube.com/watch?v=qyuzI01axLw",
+      "title": "SALVO ESTOU - 177. HARPA CRISTÃ - (CIFRADO) - Carlos José"
     },
     {
-      "url": "https://www.youtube.com/watch?v=3hZchDcs1nw",
-      "title": "Himno No.263: Desde que salvo soy - Himnario Corazón y Vida"
+      "url": "https://www.youtube.com/watch?v=A7g0KDlWATI",
+      "title": "CANTOR CRISTAO  HINO  372    SALVO ESTOU"
     }
   ]
 }

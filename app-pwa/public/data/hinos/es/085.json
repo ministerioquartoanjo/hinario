@@ -1,28 +1,52 @@
 {
   "title": "85 - Importa renacido",
-  "author": "",
+  "author": "William True Sleeper George Coles Stebbins",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. Un hombre rico vino a Jesús de noche,",
+      "Para conocer el camino de la luz.",
+      "El Maestro claramente le hizo entender",
+      "¡Es importante renacer!"
+    ],
+    [
+      "2. Hijos del mundo, escuchad al Señor,",
+      "Quien siempre te llama con tierno amor.",
+      "He oído que el Señor nunca deja de decir:",
+      "¡Es importante renacer!"
+    ],
+    [
+      "3. ¡Oh vosotros que en el santo reposo de Dios",
+      "¿Quieres entrar y vivir con los suyos,",
+      "Debes prestar atención a las palabras de Cristo:",
+      "¡Es importante renacer!"
+    ]
+  ],
+  "coro": [
+    "Importa renascer!",
+    "Importa renascer!",
+    "Com voz infalível o disse Jesus:",
+    "Importa renascer!"
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
+      "url": "https://www.youtube.com/watch?v=7Ci4QNv-pKA",
+      "title": "Novo Hinário Adventista • Hino 253 • Importa Renascer • (Lyrics)"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=sigbJ6qgtnQ",
+      "title": "Novo Hinário Adventista • Hino 253 • Importa Renascer • Playback"
+    },
+    {
       "url": "https://www.youtube.com/watch?v=_Reb7akjVxQ",
       "title": "Hinário Adventista 515 - IMPORTA RENASCER"
-    },
-    {
-      "url": "https://www.youtube.com/watch?v=HVSY-WeqIGQ",
-      "title": "LMayster - QUÉ IMPORTA [RENACIDO Álbum] (Video Oficial)"
-    },
-    {
-      "url": "https://www.youtube.com/watch?v=XXYw9TpZTvI",
-      "title": "CD Jovem 2012 Renascer   A grande esperança"
     }
   ]
 }

@@ -1,28 +1,52 @@
 {
   "title": "66 - La fe es victoria",
-  "author": "",
+  "author": "John Henry Yates",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. Soldados de Jesús, Señor, cristianos, despertad.",
+      "La oscuridad viene de la noche, ¡lucha rápidamente!",
+      "¡Y contra los viles enemigos salí a luchar!",
+      "Nuestra fe es victoria, el mundo ganará."
+    ],
+    [
+      "2. Bajo la bandera de que para nosotros es el santo amor de Dios,",
+      "Caminemos aquí por el camino que conduce a los cielos.",
+      "Los santos creyentes, por la fe, vencerán a Satanás.",
+      "Nuestra fe es victoria y trae paz a todos."
+    ],
+    [
+      "3. Quien vive en la fe alcanzará la justicia;",
+      "Tendrás un nuevo nombre, recibirás el perdón.",
+      "Así, firmes en la fe, unidos en el amor,",
+      "Venceremos con el poder que viene del Salvador."
+    ]
+  ],
+  "coro": [
+    "Fé é a vitória,",
+    "Sim, fé sempre tem poder.",
+    "Fé é a vitória:",
+    "Ao mundo irá vencer."
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=BqbMGcP9OiU",
-      "title": "Himno de Victoria"
+      "url": "https://www.youtube.com/watch?v=1k3ayNZz8jQ",
+      "title": "Novo Hinário Adventista • Hino 75 • Fé é a Vitória • (Lyrics)"
     },
     {
-      "url": "https://www.youtube.com/watch?v=HhJBEMIoojs",
-      "title": "382  Fe la victoria es"
+      "url": "https://www.youtube.com/watch?v=pM9ncPOJzE8",
+      "title": "Hinário Adventista 261 - FÉ É A VITÓRIA"
     },
     {
-      "url": "https://www.youtube.com/watch?v=LvVo75Wkvjc",
-      "title": "La fe es victoria  - Pr Priebe"
+      "url": "https://www.youtube.com/watch?v=j7vMsfhnjaE",
+      "title": "Novo Hinário Adventista • Hino 75 • Fé é a Vitória"
     }
   ]
 }

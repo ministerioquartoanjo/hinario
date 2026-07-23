@@ -1,28 +1,46 @@
 {
   "title": "99 - Alabanza a Dios y a Jesús",
-  "author": "",
+  "author": "Elizabeth Rundle Charles Friedinand Flemming",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. Oh ángeles y hombres, alabad a Dios,",
+      "Porque su gracia da a los pecadores.",
+      "Oh firmamento, cielos, mar y tierra,",
+      "Sí, alaba a Dios."
+    ],
+    [
+      "2. Vosotros, oh redimidos, alabad a Cristo,",
+      "¡Qué sacrificio, oh! nunca ha sido visto!",
+      "Su muerte revela su amor,",
+      "¡Sí, adora a Jesús!"
+    ],
+    [
+      "3. ¡Cuán insondable es el amor divino!",
+      "Jesús Tu Hijo, es la luz del mundo.",
+      "Es tan sublime, luz para el peregrino,",
+      "¡Luz que conduce al Padre!"
+    ]
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=QHidm9Dll-I",
-      "title": "Himno 207 Dios nos habla Nuevo Himnario Adventista"
+      "url": "https://www.youtube.com/watch?v=O1q3TqkAh0s",
+      "title": "Disse Jesus aos judeus - Maranata CIA 178"
     },
     {
-      "url": "https://www.youtube.com/watch?v=Jn3qSVB0X48",
-      "title": "🔴HIMNOS ADVENTISTAS - Para volver a Dios | himnario adventista"
+      "url": "https://www.youtube.com/watch?v=hhcuX_p1qEQ",
+      "title": "Disse Jesus aos judeus - Maranata CIA 178"
     },
     {
-      "url": "https://www.youtube.com/watch?v=nZU-xZwdhZw",
-      "title": "Himno 152 A ti, Jesús Nuevo Himnario Adventista"
+      "url": "https://www.youtube.com/watch?v=rDqhjaMUu8I",
+      "title": "Novo Hinário Adventista • Hino 29 • O Amor De Jesus • (Lyrics)"
     }
   ]
 }

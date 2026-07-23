@@ -1,28 +1,46 @@
 {
   "title": "192 - Venid, Pueblo del Señor",
-  "author": "",
+  "author": "Henry Alford George Job Elvery",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. Venid, pueblo del Señor, adóralo con alabanza.",
+      "Sólo exáltalos; a Jesús y a Dios Padre,",
+      "Al Cordero que murió, y al cual el Hijo dio.",
+      "Venid, pueblo del Señor, adóralos con amor."
+    ],
+    [
+      "2. Celebremos con fervor este día del Señor,",
+      "Por las bendiciones del cielo que prometió a los fieles.",
+      "Prestamos atención a Su voz que con amor nos habla.",
+      "Venid, pueblo del Señor, ensalzad al Creador."
+    ],
+    [
+      "3. Cuando la Iglesia encuentra a su marido y se desposa con él,",
+      "Nuestras luchas terminarán y llegará la redención.",
+      "Dejando atrás el mal y el dolor, reinarán el amor y la paz.",
+      "Venid, pueblo del Señor, aclamad al Redentor."
+    ]
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=HY4wy4lz0E8",
-      "title": "HA62 | Himno 156 | Venid, cantad de gozo en plenitud"
+      "url": "https://www.youtube.com/watch?v=2WLfNPD0uhw",
+      "title": "Novo Hinário Adventista • Hino 12 • Vinde, Povo do Senhor • (Lyrics)"
     },
     {
-      "url": "https://www.youtube.com/watch?v=Q3qmtsXFyhw",
-      "title": "Himno 142 Venid, cantad, de gozo en plenitud Nuevo Himnario Adventista"
+      "url": "https://www.youtube.com/watch?v=skrurk3XPLQ",
+      "title": "Hinário Adventista-12 Vinde, Povo do Senhor"
     },
     {
-      "url": "https://www.youtube.com/watch?v=IbIJX_7afVw",
-      "title": "Himno 524 - Traían en silencio presentes al Señor | Nuevo"
+      "url": "https://www.youtube.com/watch?v=iQ-E3WcgtYE",
+      "title": "Vinde Povo do Senhor Hinário Adventista Acústico"
     }
   ]
 }

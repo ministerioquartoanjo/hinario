@@ -1,28 +1,50 @@
 {
   "title": "9 - Mi fe y mi amor",
-  "author": "",
+  "author": "Edward Mote William Batchelder Bradbury",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. Mi esperanza hasta el fin,",
+      "Es Cristo quien murió por mí.",
+      "Sólo creo en mi Señor,",
+      "En nombre del buen Redentor."
+    ],
+    [
+      "2. Si no puedo ver tu cara,",
+      "En su gracia viviré. En cada crisis,",
+      "sin falta, siempre confiaré en Él."
+    ],
+    [
+      "3. Nunca dejé de prometer;",
+      "En las peleas, ven y ayúdame.",
+      "Cuando surge la tentación,",
+      "cristo es mi salvación"
+    ]
+  ],
+  "coro": [
+    "A minha fé e o meu amor",
+    "Estão firmados no Senhor,",
+    "Estão firmados no Senhor."
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=MoaRUtQ0aaY",
-      "title": "059  - - Mirad Que Amor"
+      "url": "https://www.youtube.com/watch?v=A33Q1CXj96I",
+      "title": "Teu divinal amor - Cantor Cristão 305"
     },
     {
-      "url": "https://www.youtube.com/watch?v=nTy2ztfSTYI",
-      "title": "Alabanza y Adoración: Sólo en Jesús mi Fe y mi Amor"
+      "url": "https://www.youtube.com/watch?v=m8V-tM67aYY",
+      "title": "Fonte de amor perene - Hinário Aleluia 434"
     },
     {
-      "url": "https://www.youtube.com/watch?v=s94JAmEOFVw",
-      "title": "HA62 | Himno 62 | ¡Oh amor de Dios!"
+      "url": "https://www.youtube.com/watch?v=lcr2PhBZkZ4",
+      "title": "Trabalhai, jovens, com amor - Hinário Aleluia 425"
     }
   ]
 }

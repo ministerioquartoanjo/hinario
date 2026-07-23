@@ -1,28 +1,78 @@
 {
   "title": "183 - Todo está bien",
-  "author": "",
+  "author": "Henry Maxwell Wright",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. Por amor del Dios bendito,",
+      "¡Va bien!",
+      "Tu amor es infinito:",
+      "¡Todo está bien!",
+      "Este amor nos ha probado,",
+      "En su amado Hijo,",
+      "Quien fue sacrificado por nosotros.",
+      "Sí, sí, ¡vale!"
+    ],
+    [
+      "2. Cristo ahora empuña el cetro:",
+      "¡Va bien!",
+      "El que murió es el que gobierna:",
+      "¡Todo está bien!",
+      "Tu amor es inmutable,",
+      "Tu poder inquebrantable,",
+      "Tu cuidado es incansable,",
+      "¡Sí, sí, está bien!"
+    ],
+    [
+      "3. La fe canta en la tristeza:",
+      "¡Va bien!",
+      "Canta, sí, y con firmeza:",
+      "¡Todo está bien!",
+      "Porque si Dios es quien nos guía,",
+      "Nos cuida tiernamente,",
+      "Con amabilidad, noche y día.",
+      "Sí, sí, ¡vale!"
+    ],
+    [
+      "4. Por caminos difíciles,",
+      "¡Va bien!",
+      "O a través de mares tormentosos,",
+      "¡Todo está bien!",
+      "Todo obedece a Jesús;",
+      "¡Siempre queda lo mismo!",
+      "¡Nadie de su pueblo lo olvida!",
+      "Sí, sí, ¡vale!"
+    ],
+    [
+      "5. Ya sea en vida o en muerte,",
+      "¡Va bien!",
+      "¡Qué feliz es nuestra suerte!",
+      "¡Todo está bien!",
+      "Redimido por la sangre,",
+      "Y del mundo aparte.",
+      "Siempre custodiado por Jesús.",
+      "¡Sí, sí, está bien!"
+    ]
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=FJYJktwqwQg",
-      "title": "17. ¡Oh, está todo bien!"
+      "url": "https://www.youtube.com/watch?v=7UlUMa8dlBg",
+      "title": "Novo Hinário Adventista • Hino 11 • Maior que Tudo • (Lyrics)"
     },
     {
-      "url": "https://www.youtube.com/watch?v=ftDpTrEcw8o",
-      "title": "TODO ESTÁ BIEN - SANTA LEY  Ft. Adoradores Adventistas - alabanzas cristianas - musica Cristiana"
+      "url": "https://www.youtube.com/watch?v=bzXmFmM4CTM",
+      "title": "Novo Hinário Adventista • Hino 302 • Tudo Entregarei • (Lyrics)"
     },
     {
-      "url": "https://www.youtube.com/watch?v=9lnGGUjf_T0",
-      "title": "Todo está bien"
+      "url": "https://www.youtube.com/watch?v=pV-_F_vmJOE",
+      "title": "Hinário Adventista 295 - TUDO ENTREGAREI"
     }
   ]
 }

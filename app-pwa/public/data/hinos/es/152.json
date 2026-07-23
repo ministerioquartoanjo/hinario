@@ -1,28 +1,52 @@
 {
   "title": "152 - ¡Qué seguridad! Soy de Jesús",
-  "author": "",
+  "author": "Fanny Jane CrosbY Phoebe Palmer Knapp",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. ¡Qué seguridad! ¡Pertenezco a Jesús!",
+      "¡Ya disfruto de las bendiciones de la luz!",
+      "Soy heredero de Dios por medio de Jesús;",
+      "Él me lleva a la gloria del cielo."
+    ],
+    [
+      "2. A Tu amor me sometí",
+      "Y luego me sentí extasiado",
+      "Ángeles cantando en lo alto del cielo",
+      "Alabado sea la excelente gracia de Dios."
+    ],
+    [
+      "3. Viviendo siempre en Su gran amor,",
+      "Me regocijo en mi Salvador;",
+      "Esperanzado, vivo en la luz;",
+      "¡Por la bondad de mi Jesús!"
+    ]
+  ],
+  "coro": [
+    "Canta minh’alma! Canta ao Senhor!",
+    "Rende-Lhe sempre ardente louvor!",
+    "Canta minh’alma! Canta ao Senhor!",
+    "Rende-Lhe sempre ardente louvor!"
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=WPZ0kNoGUhI",
-      "title": "Himno 235 La razón de vivir Nuevo Himnario Adventista"
+      "url": "https://www.youtube.com/watch?v=FJwrudffy70",
+      "title": "QUE SEGURANÇA SOU DE JESUS"
     },
     {
-      "url": "https://www.youtube.com/watch?v=K_ebxvKUos4",
-      "title": "Soy de Jesús - Canto Adventista HD"
+      "url": "https://www.youtube.com/watch?v=RBITvekM5Ew",
+      "title": "QUE SEGURANÇA SOU DE JESUS  (FANNY CROSBY) - CORO E ORQUESTRA FILARMÔNICA UNICESUMAR"
     },
     {
-      "url": "https://www.youtube.com/watch?v=E6yzGqzl2qQ",
-      "title": "Himno a Sàngrar en Huaros"
+      "url": "https://www.youtube.com/watch?v=lNnC4Lj998s",
+      "title": "Novo Hinário Adventista • Hino 162 • Sou de Jesus • (Lyrics)"
     }
   ]
 }

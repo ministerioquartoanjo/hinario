@@ -1,28 +1,54 @@
 {
   "title": "65 - Feliz el día",
-  "author": "",
+  "author": "Philip Doddridge, estrofes Atribuída a Edward Francis Rimbault, estribrilho Melodia americana",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. Feliz el día que acepté",
+      "Salvación de mi Señor.",
+      "Paz completa que logré",
+      "Y mi corazón está feliz."
+    ],
+    [
+      "2. Tomé esta decisión",
+      "Ser fiel al Salvador",
+      "Y cada día me rendiré",
+      "Sólo a Él mi alabanza"
+    ],
+    [
+      "3. Alégrate, corazón mío,",
+      "En el Hijo del Dios supremo",
+      "Porque él te dio redención",
+      "Y concedió el perdón del cielo."
+    ]
+  ],
+  "coro": [
+    "Que prazer eu senti",
+    "No dia em que me converti!",
+    "Agora sinto seu amor",
+    "E segurança paz fervor.",
+    "Sou feliz, sou feliz,",
+    "Pois em Jesus, me satisfiz."
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=VaGYrZQxWvc",
-      "title": "HIMNO 346 - FELIZ EL DÍA  | Nuevo"
+      "url": "https://www.youtube.com/watch?v=PU7L7b0Yh6U",
+      "title": "Eu avisto uma terra feliz - Cantor Cristão 508"
     },
     {
-      "url": "https://www.youtube.com/watch?v=iiCG8MpdH9E",
-      "title": "Himno 346 Feliz el día - #Hedjusan,"
+      "url": "https://www.youtube.com/watch?v=vAKSUbR5Uf4",
+      "title": "Eu avisto uma terra feliz - Hinário Aleluia 432"
     },
     {
-      "url": "https://www.youtube.com/watch?v=O960wFQiZDA",
-      "title": "Himno 346 Feliz el día - del séptimo día #Hedjusan,"
+      "url": "https://www.youtube.com/watch?v=9jY1lorN2gw",
+      "title": "Com Jesus há morada feliz - HInário Aleluia 430"
     }
   ]
 }

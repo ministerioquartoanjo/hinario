@@ -1,28 +1,68 @@
 {
   "title": "179 - Tu Precioso Nombre",
-  "author": "",
+  "author": "Ja. S.",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. Jesucristo, tu nombre",
+      "¡Es tan dulce para mí!",
+      "Tu dulzura incomparable",
+      "Lléname de amor infinito.",
+      "Tu dulzura incomparable",
+      "Lléname de amor infinito."
+    ],
+    [
+      "2. Tú eres la estrella brillante,",
+      "Que brilla intensamente,",
+      "Y dirige mis pasos,",
+      "En este mundo de horror.",
+      "Y dirige mis pasos,",
+      "En este mundo de horror."
+    ],
+    [
+      "3. Tuyos son los brazos eternos,",
+      "Protegiendo al seguidor,",
+      "No te enredes",
+      "Para el malvado tentador.",
+      "No te enredes",
+      "Para el malvado tentador."
+    ],
+    [
+      "4. Con mi amado Salvador",
+      "Puedo continuar felizmente,",
+      "Y con él la alegría eterna",
+      "Lo tendré allí en el futuro.",
+      "Y con él la alegría eterna",
+      "Lo tendré allí en el futuro."
+    ],
+    [
+      "5. ¡Ah! Tu precioso nombre",
+      "sigue sonando",
+      "Para el mundo del pecado,",
+      "¡Para que las almas despierten!",
+      "Para el mundo del pecado,",
+      "¡Para que las almas despierten!"
+    ]
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=9RKPjULJEDs",
-      "title": "Himno 138 - De mi amante Salvador - Himnario Adventista"
+      "url": "https://www.youtube.com/watch?v=ol-pFzHphIQ",
+      "title": "Novo Hinário Adventista • Hino 331• Nome Precioso • (Lyrics)"
     },
     {
-      "url": "https://www.youtube.com/watch?v=RcgPstu2UME",
-      "title": "Precioso é Jesus - Cantor Cristão 487"
+      "url": "https://www.youtube.com/watch?v=i_1znegpxLI",
+      "title": "Novo Hinário Adventista • Hino  34 • Precioso Nome • (Lyrics)"
     },
     {
-      "url": "https://www.youtube.com/watch?v=fvtPd5sU4hc",
-      "title": "Himno 127 Cristo, nombre dulce Nuevo Himnario Adventista"
+      "url": "https://www.youtube.com/watch?v=QlZxhmPpLwk",
+      "title": "Hinário Adventista • Hino 103 - Nome Precioso"
     }
   ]
 }

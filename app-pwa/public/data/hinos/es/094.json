@@ -1,28 +1,62 @@
 {
   "title": "94 - Jesús el mejor amigo",
-  "author": "",
+  "author": "Autor desconhecido",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. Mi Jesús es el mejor Amigo,",
+      "En Él pongo toda mi fe;",
+      "Mis heridas quieren sanar,",
+      "Y mi alma consuela.",
+      "¡Oh, Jesús es el mejor amigo!"
+    ],
+    [
+      "2. Mi Jesús es el amigo fiel,",
+      "Y dame su fuerza y ​​poder;",
+      "Convierte mi dolor en alegría,",
+      "Me inspira, da valor;",
+      "¡Oh! ¡Jesús es el mejor amigo!"
+    ],
+    [
+      "3. Cuando las olas rugen,",
+      "Y mi barco se quiere hundir,",
+      "Él me da calma y paz,",
+      "Y los buenos tiempos siempre traen,",
+      "¡Sí, Jesús es el mejor amigo!"
+    ],
+    [
+      "4. Él dio su propia vida",
+      "Para salvar al malvado pecador;",
+      "¡Oh! nunca querrás dejarme,",
+      "¡Nunca me abandones!",
+      "¡Sí, Jesús es el mejor amigo!"
+    ]
+  ],
+  "coro": [
+    "Jesus é o melhor Amigo! (2x)",
+    "Sempre prestes a ajudar,",
+    "Ele a todos quer salvar;",
+    "Sim, Jesus é o melhor Amigo."
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=w235zJl4b_c",
-      "title": "110 - - Cristo es el mejor amigo"
+      "url": "https://www.youtube.com/watch?v=eqmX5iD93Ac",
+      "title": "Meu Jesus é o melhor amigo - Hinário Aleluia 294"
     },
     {
-      "url": "https://www.youtube.com/watch?v=RQ_88rMrQJ4",
-      "title": "Como Jesús no hay otro amigo - Himno 111 - Nuevo 🎶"
+      "url": "https://www.youtube.com/watch?v=NE9o224Up3U",
+      "title": "Sei que o amigo melhor - Hinário Aleluia 403"
     },
     {
-      "url": "https://www.youtube.com/watch?v=H7QNGiHrP4Y",
-      "title": "03 Jesús mi Mejor Amigo - 1992 (Sub. Esp)"
+      "url": "https://www.youtube.com/watch?v=NXY5F5vw3fs",
+      "title": "Em Jesus amigo temos - Hinário Aleluia 356"
     }
   ]
 }

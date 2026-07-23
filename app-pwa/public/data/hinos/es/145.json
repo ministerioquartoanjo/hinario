@@ -1,28 +1,46 @@
 {
   "title": "145 - Listo para guardar",
-  "author": "",
+  "author": "Henry Maxwell Wright",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. Todo aquel que cree en el Hijo de Dios,",
+      "Quien para redimirnos descendió del cielo;",
+      "Todo aquel que contrito se acerca a Dios;",
+      "Jesús ahora está listo para salvar."
+    ],
+    [
+      "2. Quien, arrepentido, busca el perdón,",
+      "Abriendo tu corazón a Jesús,",
+      "La paz se puede disfrutar hoy,",
+      "Porque ahora está listo para salvar"
+    ]
+  ],
+  "coro": [
+    "Sim, Jesus te chama ó meu irmão!",
+    "A ti Ele oferece pleno perdão.",
+    "Seu sangue verteu para te resgatar,",
+    "E Ele é quem quer e pode salvar."
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=iVn8zH0nbqk",
-      "title": "Hinário Adventista 450 - ABENÇOA ESTE LAR"
+      "url": "https://www.youtube.com/watch?v=OeWq5HxUNbw",
+      "title": "PRONTO A SALVAR - 66. HARPA CRISTÃ- (CIFRADO) - Carlos José"
     },
     {
-      "url": "https://www.youtube.com/watch?v=Eyquiek7M1s",
-      "title": "Himno Adventista 254 - Anhelo ser limpio"
+      "url": "https://www.youtube.com/watch?v=64xe6b2YP8A",
+      "title": "Harpa Cristã 066 - Pronto A Salvar"
     },
     {
-      "url": "https://www.youtube.com/watch?v=2Vn2mOy_8k0",
-      "title": "Himno Adventista 241 - Perdón te ruego, mi Señor y Dios"
+      "url": "https://www.youtube.com/watch?v=FcIOMR8Tt0k",
+      "title": "Pronto a Salvar"
     }
   ]
 }

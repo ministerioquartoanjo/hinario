@@ -1,28 +1,46 @@
 {
   "title": "120 - Oh Dios del Amor",
-  "author": "",
+  "author": "Isaac Watts John Hatton",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. Oh Dios de amor, venimos a adorarte.",
+      "¡Vosotros, oh nación, alabad!",
+      "Eres Tú, Señor, el Poderoso Vencedor;",
+      "¡Eres Creador y Rey sin igual!"
+    ],
+    [
+      "2. Con tu poder nos creaste, Señor,",
+      "Nos diste vida y perfección;",
+      "Y a medida que nos desviamos de Tu plan de amor,",
+      "La salvación vino en Jesús."
+    ],
+    [
+      "3. Tuyo es el poder y la alabanza, Dios nuestro;",
+      "Vuestro, nuestro amor, fervor también.",
+      "¡Qué roca firme se mantendrá la verdad,",
+      "Dios eterno, Señor. Amén."
+    ]
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=MPVoFD8sxUM",
-      "title": "Himno 53 - ¡Oh amor de Dios! - Himnario Adventista"
+      "url": "https://www.youtube.com/watch?v=GyrKzalK1_o",
+      "title": "Maravilha é o amor de Deus - Maranata CIA 66"
     },
     {
-      "url": "https://www.youtube.com/watch?v=aEx45EUIxhY",
-      "title": "¡Oh amor de Dios! - Himno 53 | Nuevo"
+      "url": "https://www.youtube.com/watch?v=A33Q1CXj96I",
+      "title": "Teu divinal amor - Cantor Cristão 305"
     },
     {
-      "url": "https://www.youtube.com/watch?v=LF46t2Q4B5g",
-      "title": "Antiguo #19 - Loámoste, ¡Oh Dios!"
+      "url": "https://www.youtube.com/watch?v=4G5b_q0RBeI",
+      "title": "A Deus Supremo - Hinário Aleluia 42"
     }
   ]
 }

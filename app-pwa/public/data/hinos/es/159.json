@@ -1,28 +1,50 @@
 {
   "title": "159 - Roca eterna",
-  "author": "",
+  "author": "Augustus Montague Toplady Thomas Hastings",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. Roca eterna, estaba en la cruz,",
+      "Que moriste, Tú, Jesús.",
+      "Esa sangre viene de ti",
+      "Eso me limpia de todo mal.",
+      "Trae las bendiciones del perdón,",
+      "Da pureza y salvación."
+    ],
+    [
+      "2. Ni trabajo ni dolor",
+      "¿Puede el pecador salvar?",
+      "Sólo tú puedes, buen Jesús,",
+      "Dame vida, paz y luz.",
+      "Te pido perdón, Señor,",
+      "Porque confío en tu amor."
+    ],
+    [
+      "3. Cuando finalmente llega la muerte,",
+      "Y mis ojos los cierro,",
+      "Cuando tu rostro en gloria ascienda al cielo,",
+      "Roca eterna, ¡qué placer tendré en ti viviendo!"
+    ]
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=3usOTKsgi3Q",
-      "title": "HA62 | Himno 242 | Eterna Roca es mi Jesús"
+      "url": "https://www.youtube.com/watch?v=GAEJzMMk2WQ",
+      "title": "Novo Hinário Adventista • Hino 470 • Rocha Eterna • (Lyrics)"
     },
     {
-      "url": "https://www.youtube.com/watch?v=Nq-nVlFaduY",
-      "title": "Rocha eterna! Meu Jesus! - Hinário Aleluia 376"
+      "url": "https://www.youtube.com/watch?v=PFdwIYTXqr8",
+      "title": "Hinário Adventista 195 - ROCHA ETERNA"
     },
     {
-      "url": "https://www.youtube.com/watch?v=UCQKNPNrq4A",
-      "title": "401 | Eternal Rock Is My Jesus (With Lyrics) - Adventist Hymns | Growing in Christ"
+      "url": "https://www.youtube.com/watch?v=JmX-FbjsUBU",
+      "title": "Rocha Eterna"
     }
   ]
 }

@@ -1,28 +1,58 @@
 {
   "title": "148 - ¿Qué tan genial eres?",
-  "author": "",
+  "author": "Carl Boberg",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. Señor Dios mío, cuando yo, asombrado,",
+      "Sigo pensando en las obras de tus manos,",
+      "Miles de estrellas titilando en el espacio,",
+      "De Tu poder, en manifestación,"
+    ],
+    [
+      "2. Si al caminar por campos y bosques,",
+      "Oigo cantar a los hermosos pájaros;",
+      "Si miro desde lo alto de la montaña,",
+      "Y la fuente más allá escucho murmurar,"
+    ],
+    [
+      "3. Si pienso, entonces, que sin perdonar a tu Hijo,",
+      "Lo enviaste a morir por mí,",
+      "Llevando todos mis pecados a la cruz,",
+      "Para que yo viva para siempre así,"
+    ],
+    [
+      "4. Cuando Jesús vino en resplandor y gloria,",
+      "Para llevarme a casa con sus hijos,",
+      "Me postraré en gratitud infinita,",
+      "Y exclamaré: ¡Cuán grande eres Tú, Dios mío!"
+    ]
+  ],
+  "coro": [
+    "Então minh\"alma canta a Ti, Senhor:",
+    "Quão grande és Tu! Quão grande és Tu!",
+    "Então minh\"alma canta a Ti, Senhor:",
+    "Quão grande és Tu! Quão grande és Tu!"
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=5MBokIcKOM4",
-      "title": "Himno Adventista 143 DIGNO ERES TÚ - Nuevo Himnario Adventista"
+      "url": "https://www.youtube.com/watch?v=gwi_gzBwl98",
+      "title": "Novo Hinário Adventista • Hino 62 • Quão Grande És tu • (Lyrics)"
     },
     {
-      "url": "https://www.youtube.com/watch?v=6jVlW-sy7uw",
-      "title": "Himno Adventista 069 - Señor mi Dios"
+      "url": "https://www.youtube.com/watch?v=VRMUc2pdGag",
+      "title": "Hinário Adventista 34 - QUÃO GRANDE ÉS TU"
     },
     {
-      "url": "https://www.youtube.com/watch?v=S9_Zr4YtxXY",
-      "title": "Cuán Grande Eres Tú - Letra"
+      "url": "https://www.youtube.com/watch?v=83icUrQbSlU",
+      "title": "Hinário Adventista - 034 Quão Grande és Tu"
     }
   ]
 }

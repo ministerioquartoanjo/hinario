@@ -1,28 +1,58 @@
 {
   "title": "125 - El gran amor",
-  "author": "",
+  "author": "Henry Maxwell Wright",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. El gran amor de mi Jesús",
+      "Para mí, morir en la cruz;",
+      "Dame condenación para salvarme,",
+      "¿Quién puede decirlo?"
+    ],
+    [
+      "2. La copa que bebió Jesús",
+      "La maldición que sufrió",
+      "Todo por mi, para salvarme.",
+      "¿Quién puede decirlo?"
+    ],
+    [
+      "3. Una burla tan cruel",
+      "La cruz sangrienta, la hiel amarga",
+      "Que sufrió para salvarme",
+      "¿Quién puede decirlo?"
+    ],
+    [
+      "4. ¡Salvador incomparable!",
+      "¡Qué inefable Tu amor!",
+      "¡Qué imposible de comprender!",
+      "Inmenso y único"
+    ]
+  ],
+  "coro": [
+    "Quem pode o Seu amor contar?",
+    "Quem pode o Seu amor contar?",
+    "O grande amor do Salvador,",
+    "Quem poderá contar?"
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=1Vnsj20-AlA",
-      "title": "Canto el gran amor - Himno 107 | Nuevo"
+      "url": "https://www.youtube.com/watch?v=A33Q1CXj96I",
+      "title": "Teu divinal amor - Cantor Cristão 305"
     },
     {
-      "url": "https://www.youtube.com/watch?v=RtjZkvbqpp8",
-      "title": "HIMNO 107 - CANTO EL GRAN AMOR | Nuevo"
+      "url": "https://www.youtube.com/watch?v=rJQ2kKqKBX4",
+      "title": "Que grande reunião - Hinário Aleluia 448"
     },
     {
-      "url": "https://www.youtube.com/watch?v=JCL76ysrB-s",
-      "title": "Canto el gran amor | Himno Adventista 107  | Versión renovada"
+      "url": "https://www.youtube.com/watch?v=m8V-tM67aYY",
+      "title": "Fonte de amor perene - Hinário Aleluia 434"
     }
   ]
 }

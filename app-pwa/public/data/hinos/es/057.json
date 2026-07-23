@@ -1,28 +1,56 @@
 {
   "title": "57 - En mí viene a morar",
-  "author": "",
+  "author": "João Corrêa da Costa William Howard Doane",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. Ven a habitar en mí,",
+      "Oh, ven Jesús;",
+      "Y hazme brillar",
+      "¡Tu luz!",
+      "Aquí está mi ambición:",
+      "Ten y siente, Señor,",
+      "Más gratitud",
+      "Y más amor."
+    ],
+    [
+      "2. Sigue tus pasos que sí quiero,",
+      "Para servirte y amarte hasta el final.",
+      "Este es mi deseo, mi mayor ideal,",
+      "Camina contigo, oh Salvador."
+    ],
+    [
+      "3. Dentro de mí, ven y brilla.",
+      "Me hace hablar más ardientemente de la cruz.",
+      "Cubre el corazón y tu exaltado amor,",
+      "De justicia y de fervor."
+    ],
+    [
+      "4. ¡Ah! que consuelo amar a Cristo,",
+      "¡Porque con tanto amor quisiste salvarme!",
+      "Nada me hace más feliz, no hay mayor alegría.",
+      "Que Tu paz, oh Salvador. Amén."
+    ]
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=SDGaFbb3o3Q",
-      "title": "ME VIENE A BUSCAR LETRA- HOREB COLLECTIVE, ALONDRA LANED Y DINEIRY ENID"
+      "url": "https://www.youtube.com/watch?v=2ywRv_VMJ5E",
+      "title": "Em Mim Vem Habitar (366) HCC - Playback c/ letra - Por Joãozinho Camargo (Tyros 4)"
     },
     {
-      "url": "https://www.youtube.com/watch?v=2LbPeKsSekw",
-      "title": "Me Voy A Morar __ Grupo Jehová Es Mi Luz"
+      "url": "https://www.youtube.com/watch?v=_Y7x4rwunTM",
+      "title": "Novo Hinário Adventista • Hino 383 • Em Mim Vem Habitar • (Lyrics)"
     },
     {
-      "url": "https://www.youtube.com/watch?v=ADN-AlQgAIE",
-      "title": "Me Voy a Morar"
+      "url": "https://www.youtube.com/watch?v=wVWHCtL-irk",
+      "title": "Novo Hinário Adventista • Hino 383 • Em Mim Vem Habitar • Lyrics"
     }
   ]
 }

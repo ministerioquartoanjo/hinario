@@ -1,28 +1,58 @@
 {
   "title": "51 - Deseo de Santidad",
-  "author": "",
+  "author": "Salomão Luiz Ginsburg Josiah Booth",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. Deseo la santidad",
+      "Del amor de mi Jesús;",
+      "Vive para su gloria",
+      "Y caminar en Su luz.",
+      "aprendo el deseo",
+      "La ley justa y santa;",
+      "las ordenes de mi maestro",
+      "Obedeceré."
+    ],
+    [
+      "2. Sigue todo lo que quieras",
+      "El ejemplo de Jesús,",
+      "Caminando por el buen camino",
+      "Que conduce al santo hogar.",
+      "Es Cristo, mi buen Maestro,",
+      "También me enseña a orar.",
+      "solo en la montaña",
+      "Hablaré con Dios."
+    ],
+    [
+      "3. Amar y obedecer",
+      "Deseo, Jesús mío,",
+      "Porque moriste por mi",
+      "Clavado en una cruz.",
+      "Oh Salvador, concede",
+      "Tu favor para mí.",
+      "Déjame mostrarles a todos",
+      "Tu inmenso amor."
+    ]
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=TNvF4iJhVUM",
-      "title": "Deseos de santidad. Sed perfectos como mi Padre es perfecto. Vive tu Fe Católica 🙏"
+      "url": "https://www.youtube.com/watch?v=yXE1XLnU1Zk",
+      "title": "Oh! Quanto desejo te amar - Hinário Aleluia 412"
     },
     {
-      "url": "https://www.youtube.com/watch?v=LgySfScnFOI",
-      "title": "Dios anima tu deseo de santidad pero no anula tu responsabilidad"
+      "url": "https://www.youtube.com/watch?v=ZrcE7-Ijg6E",
+      "title": "Desejo estar num lugar - Hinário Aleluia 409"
     },
     {
-      "url": "https://www.youtube.com/watch?v=4neuqjqJtUs",
-      "title": "El deseo de Santidad"
+      "url": "https://www.youtube.com/watch?v=A43N9_uljdQ",
+      "title": "Desejo a Santidade -Hino 362- HCC - (Coro Virtual)"
     }
   ]
 }

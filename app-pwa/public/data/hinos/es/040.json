@@ -1,28 +1,63 @@
 {
   "title": "40 - Creer y observar",
-  "author": "",
+  "author": "John H. Sammis Daniel Brink Towner",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. En Jesús confía, observa su ley,",
+      "Y recorrer un camino de paz.",
+      "Satisfecho, guarda lo que Él manda,",
+      "La alegría perenne nos trae."
+    ],
+    [
+      "2. Mientras caminamos con Dios,",
+      "Recibimos de los cielos",
+      "Dirección y comodidad inigualables.",
+      "Ni tristeza ni dolor,",
+      "No es la mejor prueba",
+      "Nuestra fe puede verse sacudida."
+    ],
+    [
+      "3. Placer inefable es conocer a Jesús,",
+      "Es ser un creyente celoso y leal,",
+      "Tu voz siempre escucha,",
+      "Cumplir con tus pedidos,",
+      "Es tener bendiciones constantes y reales."
+    ],
+    [
+      "4. Resuelto, Señor,",
+      "Y con todo fervor,",
+      "Queremos seguir tus pasos,",
+      "Guarda tus preceptos,",
+      "Tu nombre será exaltado,",
+      "Siente siempre tu presencia"
+    ]
+  ],
+  "coro": [
+    "Crer e observar",
+    "Tudo quanto ordenar;",
+    "O fiel obedece",
+    "Ao que Cristo mandar."
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=AKo6konSTvg",
-      "title": "Cantor Cristão e Hinário Adventista nº 301 - Crer e Observar, Marinho Oliveira"
+      "url": "https://www.youtube.com/watch?v=lXpmeNNeztI",
+      "title": "Novo Hinário Adventista • Hino 283 • Crer e Observar • (Lyrics)"
     },
     {
-      "url": "https://www.youtube.com/watch?v=K4CM9L1Kn8Q",
-      "title": "Creer y observar - Brazilian voices 4"
+      "url": "https://www.youtube.com/watch?v=8qCJnQI_EbI",
+      "title": "Novo Hinário Adventista • Hino 283 • Crer e Observar • Playback"
     },
     {
-      "url": "https://www.youtube.com/watch?v=tQL1-9_SMxc",
-      "title": "la diferencia entre creer y observar con claridad | sadhguru"
+      "url": "https://www.youtube.com/watch?v=APD-H5x6wpk",
+      "title": "Hinário Adventista 301 - CRER E OBSERVAR"
     }
   ]
 }

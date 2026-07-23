@@ -1,28 +1,52 @@
 {
   "title": "2 - A Dios le dimos gloria",
-  "author": "",
+  "author": "Fanny Jane Crosby William Howard Doane",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. A Dios dimos gloria, con gran fervor;",
+      "Su bendito Hijo nos dio a todos.",
+      "La gracia concede a cualquier pecador,",
+      "Abriendo la puerta al cielo para ti."
+    ],
+    [
+      "2. ¡Ah! verdadera gracia! Así es como Jesús,",
+      "¡Moriendo, su sangre derramada por nosotros!",
+      "Herencia en los cielos, con los santos en la luz,",
+      "Jesús nos compró, porque él pagó el precio."
+    ],
+    [
+      "3. Creer nos invita a tal prueba de amor,",
+      "En los méritos del Hijo de Dios.",
+      "Y quien confía en su Salvador,",
+      "Lo veréis exaltado en la gloria del cielo."
+    ]
+  ],
+  "coro": [
+    "Exultai! Exultai! Vinde todos louvar!",
+    "A Jesus Salvador, a Jesus Redentor!",
+    "A Deus demos glória porquanto do céu",
+    "Seu Filho bendito por nós todos deu."
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=tNUZopRl4gI",
-      "title": "Himno 439 - ¡Oh!, quién pudiera andar con Dios | Nuevo"
+      "url": "https://www.youtube.com/watch?v=MnBH-e_BpZQ",
+      "title": "Novo Hinário Adventista • Hino 19 • A Deus Demos Glória • (Lyrics)"
     },
     {
-      "url": "https://www.youtube.com/watch?v=aEx45EUIxhY",
-      "title": "¡Oh amor de Dios! - Himno 53 | Nuevo"
+      "url": "https://www.youtube.com/watch?v=svXDJc5MKI4",
+      "title": "Novo Hinário Adventista • Hino 19 • A Deus Demos Glória • Playback"
     },
     {
-      "url": "https://www.youtube.com/watch?v=490_vbhw7Gc",
-      "title": "Sangró mi soberano Dios - Himno 94 | Nuevo"
+      "url": "https://www.youtube.com/watch?v=GCaieJSqrZo",
+      "title": "Hinário Adventista 16 - A DEUS DEMOS GLÓRIA"
     }
   ]
 }

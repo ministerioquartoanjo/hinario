@@ -1,28 +1,66 @@
 {
   "title": "10 - La oveja perdida",
-  "author": "",
+  "author": "Rev. J. A. Gordon, D.D.",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. El buen Pastor me buscó",
+      "Ya lejos del redil;",
+      "Y con ternura me encontró,",
+      "Caído, triste, ¡mira!",
+      "Sanó las heridas con amor,",
+      "Y a casa en sus brazos me llevó."
+    ],
+    [
+      "2. Heridos, abandonados,",
+      "Jesús me ayudó;",
+      "Y me susurró: \"Te encontré;",
+      "De ahora en adelante eres mía.\"",
+      "Nunca escuché una voz tan dulce.",
+      "Mayor placer que nunca he sentido."
+    ],
+    [
+      "3. Jesús me mostró las heridas",
+      "Quien sufrió en mi lugar,",
+      "Corona, pero con espinas,",
+      "La cruz que sufrió.",
+      "¿Qué podría encontrar en mí mismo?",
+      "¿Para soportar tales afrentas?"
+    ],
+    [
+      "4. A medida que pasan las horas,",
+      "tengo alegría y paz,",
+      "Y espero, mi buen maestro,",
+      "¡Qué feliz me haces!",
+      "Jesús, vendrás a buscarme,",
+      "¡Y luego lo disfrutaré para siempre!"
+    ]
+  ],
+  "coro": [
+    "Sim, Jesus amou-me,",
+    "Com amor buscou-me.",
+    "Ele mesmo restaurou-me a Deus;",
+    "Por Seu sangue restaurou-me a Deus."
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=adsKA4wLG4Q",
-      "title": "Himno 124 Ama el pastor sus ovejas Nuevo Himnario Adventista"
+      "url": "https://www.youtube.com/watch?v=olLZDg76Bvg",
+      "title": "Noventa e nove Ovelhas Hinário Adventista  nº 99"
     },
     {
-      "url": "https://www.youtube.com/watch?v=pGezmxJo8yM",
-      "title": "HIMNO OVEJA PERDIDA, WENDY APAZA"
+      "url": "https://www.youtube.com/watch?v=gBRMqPzDpaA",
+      "title": "Hinário Novo Cântico, Hino 255   \"A ovelha perdida\""
     },
     {
-      "url": "https://www.youtube.com/watch?v=IqNwv9bqirM",
-      "title": "La Oveja Perdida + 4 Más Canciones Bíblicas"
+      "url": "https://www.youtube.com/watch?v=LFD08VRaQII",
+      "title": "Hino 34 | A Ovelha Perdida | Louvores ao Rei"
     }
   ]
 }

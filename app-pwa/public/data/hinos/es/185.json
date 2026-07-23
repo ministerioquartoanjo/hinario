@@ -1,28 +1,62 @@
 {
   "title": "185 - Lo entregaré todo",
-  "author": "",
+  "author": "Judson Van Venter Wifield Scott Weeden",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. Todo, oh Cristo, te lo encomiendo,",
+      "Todo, sí, por Ti lo daré.",
+      "Resuelta pero sumisa,",
+      "Siempre te seguiré."
+    ],
+    [
+      "2. Todo, oh Cristo, te lo encomiendo,",
+      "Cuerpo y alma, ¡aquí está!",
+      "Niego este mal mundo,",
+      "¡Oh Jesús, acéptame!"
+    ],
+    [
+      "3. Todo, oh Cristo, te lo encomiendo,",
+      "¡Quiero ser sólo tuyo!",
+      "Tan sumiso a tu voluntad",
+      "¡Como los ángeles en el cielo!"
+    ],
+    [
+      "4. Todo, oh Cristo, te lo encomiendo;",
+      "Oh, siento tu amor",
+      "transforma mi vida",
+      "¡Y mi corazón, Señor!"
+    ],
+    [
+      "5. Todo, oh Cristo, te lo encomiendo;",
+      "¡Oh, qué alegría, Señor mío!",
+      "¡Paz perfecta, paz completa!",
+      "¡Gloria, gloria al Salvador!"
+    ]
+  ],
+  "coro": [
+    "Tudo entregarei! (2x)",
+    "Sim, por Ti, Jesus bendito, tudo deixarei!"
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=tS9hFgt1gGU",
-      "title": "Hinário Adventista 444 - FACE A FACE"
+      "url": "https://www.youtube.com/watch?v=bzXmFmM4CTM",
+      "title": "Novo Hinário Adventista • Hino 302 • Tudo Entregarei • (Lyrics)"
     },
     {
-      "url": "https://www.youtube.com/watch?v=Bxb__G0VDRw",
-      "title": "Me entregaré - La Única Esperanza 10/10 | Iglesia Adventista"
+      "url": "https://www.youtube.com/watch?v=pV-_F_vmJOE",
+      "title": "Hinário Adventista 295 - TUDO ENTREGAREI"
     },
     {
-      "url": "https://www.youtube.com/watch?v=rseQNzTlHa8",
-      "title": "Hinário Adventista 88 - ACHEI UM GRANDE AMIGO"
+      "url": "https://www.youtube.com/watch?v=KU0FZ3rPST8",
+      "title": "Hino 302 - Tudo Entregarei"
     }
   ]
 }

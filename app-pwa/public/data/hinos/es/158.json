@@ -1,28 +1,58 @@
 {
   "title": "158 - Redimidos por la sangre de Cristo",
-  "author": "",
+  "author": "Frida Vingren",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. No fui redimido con oro y plata,",
+      "Tesoro terrenal, nunca me salvó;",
+      "El precio fue la sangre de Cristo,",
+      "¡Rebaño en la cruz del Calvario donde amaneció la vida!"
+    ],
+    [
+      "2. Valor del oro y la plata, ¡oh! ellos no tenían",
+      "Para satisfacer la justicia de Dios.",
+      "Pero Cristo pagó toda mi deuda;",
+      "Me llenó de amor y paz del cielo."
+    ],
+    [
+      "3. No pude alcanzar el oro y la plata.",
+      "Ante Dios y obtener el perdón;",
+      "Por la sangre de Cristo pude arrojarme",
+      "En gracia y favor divinos recibe."
+    ],
+    [
+      "4. No he sido redimido con oro ni con plata;",
+      "La entrada al cielo no se puede comprar;",
+      "Pero sólo por la sangre de Cristo derramada",
+      "En la cruz podremos alcanzar la gloria."
+    ]
+  ],
+  "coro": [
+    "Por prata e ouro não fui remido,",
+    "Nem por tesouro de muito valor;",
+    "Mas pelo sangue que foi vertido,",
+    "Por Jesus, meu Salvador."
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=m7H4EKRZbUg",
-      "title": "HA62 | Himno 294 | Comprado con sangre por Cristo"
+      "url": "https://www.youtube.com/watch?v=S9ER7mWNLvw",
+      "title": "Pelo Sangue  -  Renascer Praise LEGENDADO"
     },
     {
-      "url": "https://www.youtube.com/watch?v=nRWYXeIFCqw",
-      "title": "Himno 297 - Salvado con sangre por Cristo | Nuevo"
+      "url": "https://www.youtube.com/watch?v=voVCOqZ59og",
+      "title": "Renascer Praise - Pelo Sangue (Ao Vivo)"
     },
     {
-      "url": "https://www.youtube.com/watch?v=uGSjQ_v_dp4",
-      "title": "Himno Adventista 156 - A Cristo coronad"
+      "url": "https://www.youtube.com/watch?v=_OfMSTTZyug",
+      "title": "Fomos resgatados pelo sangue de Cristo -  Mauriceia Silva (23/07/2020)"
     }
   ]
 }

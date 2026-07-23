@@ -1,28 +1,64 @@
 {
   "title": "117 - La invitación de Cristo",
-  "author": "",
+  "author": "Henry Maxwell Wright",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. He aquí, la voz de Cristo clama,",
+      "Sobre el mar repugnante;",
+      "De esta vida peligrosa:",
+      "¡“Ven y refúgiate en Mí”!"
+    ],
+    [
+      "2. Una vez en Galilea,",
+      "Esa dulce voz sonó,",
+      "Por tanto, el corazón que escucha,",
+      "Todo, listo, abandonado."
+    ],
+    [
+      "3. Sobre las voces seductoras,",
+      "De atracciones mundanas,",
+      "La suave voz de Cristo clama:",
+      "\"¡Dadme vuestros corazones!\""
+    ],
+    [
+      "4. Querer en medio de los placeres,",
+      "Ya sea en el día de la aflicción,",
+      "Sigue gritando, paciente:",
+      "\"¿Me amas, oh cristiano?\""
+    ],
+    [
+      "5. Por el camino estrecho y santo,",
+      "Ya pisoteado por Jesús,",
+      "Siguiéndolo, Él os llama:",
+      "\"¡Ven, cristiano, camina en la luz!\""
+    ],
+    [
+      "6. Desde esta cruz angustiada,",
+      "Donde brilla su amor,",
+      "Escucha la voz que te invita,",
+      "¡Escucha y sigue, pecador!"
+    ]
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=RxX8IbmMgYQ",
-      "title": "canto Comprado con sangre por Cristo iglesia adventista del séptimo día Nortwood"
+      "url": "https://www.youtube.com/watch?v=OjmA-XlCfmA",
+      "title": "Vem a Cristo! - Hinário Evangélico 217"
     },
     {
-      "url": "https://www.youtube.com/watch?v=jSBecCgS4io",
-      "title": "Los efectos de la invitación de Cristo. Pastor Adrián Andrada"
+      "url": "https://www.youtube.com/watch?v=ug2mPpht16w",
+      "title": "Cristo Quiere Limpios Corazones - Himnos de Gloria 10"
     },
     {
-      "url": "https://www.youtube.com/watch?v=jx4VW6aTWvQ",
-      "title": "La Invitación de Cristo"
+      "url": "https://www.youtube.com/watch?v=VeuibgEN0GM",
+      "title": "Cristo satisfaz - Cantor Cristão 395"
     }
   ]
 }

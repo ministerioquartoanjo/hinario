@@ -1,28 +1,46 @@
 {
   "title": "67 - La lucha de Jesús ha terminado",
-  "author": "",
+  "author": "Giovanni Pierluigi da Palestrina Hino latino",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. La lucha de Jesús ha terminado,",
+      "El Salvador venció en la cruz.",
+      "Y en este mundo amanece la luz.",
+      "¡Aleluya!"
+    ],
+    [
+      "2. La muerte y su terror vencidos,",
+      "El Redentor ascendió a la gloria.",
+      "Canten alabanzas al Señor.",
+      "Aleluya."
+    ],
+    [
+      "3. Con incomparable majestad,",
+      "Estableció el reino divino.",
+      "Canta un himno triunfal.",
+      "Aleluya."
+    ]
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=NwosA-kGQkE",
-      "title": "Predica: Tu lucha ha terminado"
+      "url": "https://www.youtube.com/watch?v=oknT6AhU83c",
+      "title": "HCC 142 - Findou-se a luta de Jesus"
     },
     {
-      "url": "https://www.youtube.com/watch?v=RzXMphBOXTg",
-      "title": "HA62 | Himno 48 | Señor Jesús, el día ya se fue"
+      "url": "https://www.youtube.com/watch?v=a_RiZBhz1NU",
+      "title": "HCC HINO 144 FINDOU-SE A LUTA DE JESUS."
     },
     {
-      "url": "https://www.youtube.com/watch?v=Ca5umERwM-Y",
-      "title": "HIMNO N.152 LA LUCHA SIGUE"
+      "url": "https://www.youtube.com/watch?v=nMvPcsaJdsw",
+      "title": "Findou-se a luta de Jesus! (1ª música)"
     }
   ]
 }

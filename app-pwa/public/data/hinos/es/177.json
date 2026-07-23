@@ -1,28 +1,57 @@
 {
   "title": "177 - Estoy feliz con Jesús",
-  "author": "",
+  "author": "Horatio Gates Spafford Philip Paul Bliss",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. Si la paz, la más dulce, me da alegría,",
+      "Si sufre el dolor más fuerte;",
+      "Oh, sea lo que sea, házmelo saber.",
+      "¡Qué feliz soy siempre con Jesús!"
+    ],
+    [
+      "2. Aunque el cruel Satán me asalte,",
+      "Y atacar con viles tentaciones,",
+      "Oh, sí, tengo razón, incluso en tales pruebas,",
+      "En Jesús encontraré fuerza y ​​paz."
+    ],
+    [
+      "3. Jesús, mi Señor, cuando murió en la cruz",
+      "Él me liberó de la culpa y del mal;",
+      "Jesús me salvó, ¡oh misericordia incomparable!",
+      "Soy feliz y hoy vivo en la luz."
+    ],
+    [
+      "4. La venida que anhelo de mi Salvador;",
+      "Él vendrá a buscarme pronto;",
+      "Y luego allí en el cielo viviré para siempre,",
+      "Con redención, a la luz del Señor."
+    ]
+  ],
+  "coro": [
+    "Sou feliz com Jesus!",
+    "Sou feliz com Jesus,",
+    "Meu Senhor!"
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=CiuAN24BhBg",
-      "title": "HA62 | Himno 326 | En Cristo feliz es mi alma"
+      "url": "https://www.youtube.com/watch?v=Xmna0YjSQ-s",
+      "title": "Novo Hinário Adventista • Hino 197 • Sou Feliz com Jesus • (Lyrics)"
     },
     {
-      "url": "https://www.youtube.com/watch?v=rYVnVMTmLVE",
-      "title": "Yo soy feliz - Himno 355 - Nuevo 🎶"
+      "url": "https://www.youtube.com/watch?v=YBpwVds6uyM",
+      "title": "Hinário Adventista 230 - SOU FELIZ COM JESUS"
     },
     {
-      "url": "https://www.youtube.com/watch?v=esJBX4zTidA",
-      "title": "Feliz Con Jesús"
+      "url": "https://www.youtube.com/watch?v=aAY71QIUbxs",
+      "title": "SOU FELIZ COM JESUS | Hinário Adventista / Hino IASD 230 | MENOS UM"
     }
   ]
 }

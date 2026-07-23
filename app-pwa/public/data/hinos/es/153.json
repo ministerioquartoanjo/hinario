@@ -1,28 +1,52 @@
 {
   "title": "153 - Quiero estar al pie de la cruz",
-  "author": "",
+  "author": "Fancy Jane Crosby William Howard Doane",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. Quiero estar al pie de la cruz,",
+      "De donde rica fuente",
+      "Corre libre y saludablemente,",
+      "Sobre la montaña áspera."
+    ],
+    [
+      "2. Temblando al pie de la cruz,",
+      "La gracia eterna me encontró;",
+      "Allí la estrella de la mañana",
+      "Maldita sea, tú me enviaste."
+    ],
+    [
+      "3. Siempre la cruz, Jesús mi Rey,",
+      "Por favor recuérdame;",
+      "A su sombra, oh Salvador,",
+      "Quieres protegerme."
+    ]
+  ],
+  "coro": [
+    "Sim, na cruz, sim, na cruz,",
+    "Sempre me glorio;",
+    "Té que ao fim vá descansar,",
+    "Salvo além do rio."
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=6_w3DxOOiKE",
-      "title": "Himno 267 - A la cruz de Cristo voy | Nuevo"
+      "url": "https://www.youtube.com/watch?v=20XieWKvvvA",
+      "title": "Novo Hinário Adventista • Hino 136 • Quero Estar ao Pé da Cruz • (Lyrics)"
     },
     {
-      "url": "https://www.youtube.com/watch?v=WS_H7e-JRoo",
-      "title": "Quero estar ao pé da cruz (4 estrofes)"
+      "url": "https://www.youtube.com/watch?v=RQDK13vWUyw",
+      "title": "Hinário Adventista 191 - QUERO ESTAR AO PÉ DA CRUZ"
     },
     {
-      "url": "https://www.youtube.com/watch?v=0apUI3Qayh4",
-      "title": "Quero estar ao pé da cruz (com introdução)"
+      "url": "https://www.youtube.com/watch?v=pQvJJdPpy9c",
+      "title": "Hino 136 - Quero Estar ao Pé da Cruz"
     }
   ]
 }

@@ -1,28 +1,52 @@
 {
   "title": "25 - Las Noticias del Evangelio",
-  "author": "",
+  "author": "Samuel Wesley Martin Joseph Jones",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. La noticia del evangelio, resonante, está aquí",
+      "Buenas noticias tan alegres, es para mí y para ti.",
+      "Así nos amó Dios, sí a todo pecador.",
+      "Quien nos dio a su Hijo amado, para sufrir nuestro dolor."
+    ],
+    [
+      "2. La noticia del evangelio anuncia vida y paz;",
+      "Porque Jesús trae la salvación eterna a los pecadores,",
+      "Es hora de aceptar lo glorioso.",
+      "Salvador poderoso y muy bondadoso, que perdona al pecador."
+    ],
+    [
+      "3. La noticia del evangelio hace que todos lo sepan",
+      "Que el perdón y la vida eterna, todos pueden recibir",
+      "Simplemente cree en Jesús y confía en su amor.",
+      "Porque en la cruz derramó su sangre, para ser el Salvador"
+    ]
+  ],
+  "coro": [
+    "Santa paz e perdão",
+    "São as novas lá dos céus",
+    "Santa paz e perdão",
+    "Demos glória ao nosso Deus"
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=s5rjmZlCIOw",
-      "title": "Mira las noticias del evangelio "
+      "url": "https://www.youtube.com/watch?v=-RNhGPH5hUk",
+      "title": "HCC HINO 299 AS NOVAS DO EVANGELHO"
     },
     {
-      "url": "https://www.youtube.com/watch?v=KtkQNvJcNE8",
-      "title": "204 - Oh, cantádmelas otra vez | | Letra Oficial | 4K50fps"
+      "url": "https://www.youtube.com/watch?v=XxCR2wy4IXw",
+      "title": "Hinário Adventista 325 - AS NOVAS DO EVANGELHO"
     },
     {
-      "url": "https://www.youtube.com/watch?v=QHidm9Dll-I",
-      "title": "Himno 207 Dios nos habla Nuevo Himnario Adventista"
+      "url": "https://www.youtube.com/watch?v=jmvci4W_nUQ",
+      "title": "As Novas do Evangelho, Hinario Adventista Nº 325.wmv"
     }
   ]
 }

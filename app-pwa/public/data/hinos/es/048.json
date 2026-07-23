@@ -1,28 +1,46 @@
 {
   "title": "48 - La Fundación de la Iglesia",
-  "author": "",
+  "author": "Samuel John Stone Samuel Sebastian Wesley",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. El fundamento de la iglesia es Cristo, el Salvador;",
+      "Y en Él ella descansa, es fuerte en Su amor.",
+      "Construida sobre Cristo, se mantendrá firme;",
+      "Porque sobre la Roca Eterna nunca será sacudida."
+    ],
+    [
+      "2. La Piedra más preciosa que Dios proveyó,",
+      "Sostiene piedras vivas que la gracia ha trabajado;",
+      "Estemos siempre unidos, viviendo en plena luz,",
+      "Y la gloria de esta Iglesia será del Rey Jesús."
+    ],
+    [
+      "3. En medio de las difíciles luchas que debes afrontar,",
+      "La Iglesia espera, en Cristo, triunfar algún día,",
+      "Porque la visión gloriosa finalmente se cumplirá,",
+      "Y la Iglesia victoriosa descansará en paz."
+    ]
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=urU6wHONUuo",
-      "title": "#01 Fundación de la Iglesia"
+      "url": "https://www.youtube.com/watch?v=MzeiOxpidkk",
+      "title": "Da Igreja o fundamento - HCC 504"
     },
     {
-      "url": "https://www.youtube.com/watch?v=QeDzyjetL4k",
-      "title": "El católico responde: Conoce la verdad sobre la fundación de la Iglesia de Jesucristo"
+      "url": "https://www.youtube.com/watch?v=J3zCHMrmgrY",
+      "title": "Vem, Visita Tua Igreja (com introdução)"
     },
     {
-      "url": "https://www.youtube.com/watch?v=tPD0Z8w46bI",
-      "title": "FUNDACIÓN DE LA IGLESIA"
+      "url": "https://www.youtube.com/watch?v=jl0r4X7_m-U",
+      "title": "Há uma Igreja - Maranata CIA 193"
     }
   ]
 }

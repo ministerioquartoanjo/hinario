@@ -1,28 +1,58 @@
 {
   "title": "113 - Nombre precioso",
-  "author": "",
+  "author": "William Howard Doane",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. Lleva el nombre contigo",
+      "De Jesús el Salvador;",
+      "Este nombre da consuelo.",
+      "Hoy, cuando sea y donde sea."
+    ],
+    [
+      "2. Este nombre siempre lleva",
+      "Para defender siempre.",
+      "Él es un arma a tu alcance,",
+      "Cuando el mal se te aparece."
+    ],
+    [
+      "3. ¡Ah! ¡Qué nombre tan precioso!",
+      "La alegría trae al corazón.",
+      "Siendo aceptado por Jesús,",
+      "Tendrás Su perdón."
+    ],
+    [
+      "4. Santo nombre y venerable",
+      "Ten a Jesús, tu amado",
+      "“Rey de reyes” “Señor Eterno”",
+      "¡Gritarás en el cielo!"
+    ]
+  ],
+  "coro": [
+    "Nome bom! Doce a fé.",
+    "A esperança no porvir!",
+    "Nome bom! Doce a fé.",
+    "A esperança no porvir!"
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=Yt_Ud9vTOtA",
-      "title": "🎶NOMBRE PRECIOSO🎶 (CUMBIA) | Con letra"
+      "url": "https://www.youtube.com/watch?v=RcgPstu2UME",
+      "title": "Precioso é Jesus - Cantor Cristão 487"
     },
     {
-      "url": "https://www.youtube.com/watch?v=uBDqUNaHUSU",
-      "title": "Alabando el precioso nombre de Jesús"
+      "url": "https://www.youtube.com/watch?v=CnyUA21MDS4",
+      "title": "O nome do meu Senhor! - Maranata CIA 59"
     },
     {
-      "url": "https://www.youtube.com/watch?v=3WE67tfzrUk",
-      "title": "CUAN PRECIOSO ES EL NOMBRE DE JESUS"
+      "url": "https://www.youtube.com/watch?v=ol-pFzHphIQ",
+      "title": "Novo Hinário Adventista • Hino 331• Nome Precioso • (Lyrics)"
     }
   ]
 }

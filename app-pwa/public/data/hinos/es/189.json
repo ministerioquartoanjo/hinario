@@ -1,28 +1,45 @@
 {
   "title": "189 - Ven a Cristo",
-  "author": "",
+  "author": "John Fawcet",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. Ven a Cristo, ven ahora,"
+    ],
+    [
+      "2. Sí, Cristo puede salvarte,"
+    ],
+    [
+      "3. Él anhela perdonarte,"
+    ],
+    [
+      "4. Tu entrega no rechaza,"
+    ]
+  ],
+  "coro": [
+    "Vem, ó vem pecador!",
+    "Vem, vem, confiadamente,",
+    "A Jesus o Senhor!"
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=F93uC8htD_E",
-      "title": "HA62 | Himno 126 | Ven a Cristo"
+      "url": "https://www.youtube.com/watch?v=lEvc-Vmcyyc",
+      "title": "Novo Hinário Adventista • Hino 446 • Cristo Vem • (Lyrics)"
     },
     {
-      "url": "https://www.youtube.com/watch?v=OjmA-XlCfmA",
-      "title": "Vem a Cristo! - Hinário Evangélico 217"
+      "url": "https://www.youtube.com/watch?v=NVw_j0O_oW4",
+      "title": "Hinário Adventista-  167 Vem a Cristo"
     },
     {
-      "url": "https://www.youtube.com/watch?v=4itUZyxpYJQ",
-      "title": "Jovens Lutadores - Hinos e Cânticos 404"
+      "url": "https://www.youtube.com/watch?v=srGJOoEIxLY",
+      "title": "Hinário Adventista 167 - VEM A CRISTO"
     }
   ]
 }

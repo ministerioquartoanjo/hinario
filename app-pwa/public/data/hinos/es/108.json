@@ -1,28 +1,46 @@
 {
   "title": "108 - Mi entrega",
-  "author": "",
+  "author": "Adelaide Addison Pollard George Coles Stebbins",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. Cristo, Maestro bueno, ésta es mi voluntad;",
+      "Tu voluntad siempre se cumplirá.",
+      "Hazme fuerte para ganar",
+      "Duras debilidades que pueden venir."
+    ],
+    [
+      "2. Cristo, buen maestro, he aquí mi deseo:",
+      "Buscad siempre más santidad;",
+      "Hazme firme, dame poder",
+      "Por la verdad nunca te vayas."
+    ],
+    [
+      "3. Cristo, buen maestro, he aquí mi deseo:",
+      "Todas mis faltas vencen;",
+      "Hazme fuerte para luchar,",
+      "Para la victoria siempre gana."
+    ]
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=vylQz82zkKE",
-      "title": "Novo Hinário Adventista • Hino 310 • Entrega • (Lyrics)"
+      "url": "https://www.youtube.com/watch?v=aThi3Ltffg4",
+      "title": "Tudo entregarei - Salmos e Hinos 335"
     },
     {
-      "url": "https://www.youtube.com/watch?v=-FZ1eNf4bfc",
-      "title": "Mi Entrega * Canto Adventista"
+      "url": "https://www.youtube.com/watch?v=VHH4Oa2DjRc",
+      "title": "Tudo entregarei (3 estrofes)"
     },
     {
-      "url": "https://www.youtube.com/watch?v=Bxb__G0VDRw",
-      "title": "Me entregaré - La Única Esperanza 10/10 | Iglesia Adventista"
+      "url": "https://www.youtube.com/watch?v=VWJjDh9zySA",
+      "title": "Tudo entregarei - Cantor Cristão 295"
     }
   ]
 }

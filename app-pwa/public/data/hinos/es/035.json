@@ -1,28 +1,57 @@
 {
   "title": "35 - Con tu mano sosteniendo la mía con fuerza",
-  "author": "",
+  "author": "Julie Katlharina von Hausmann, Hubert Platt Main",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. Sostén la mía fuerte con tu mano.",
+      "¡Porque soy tan frágil, oh Salvador!",
+      "Que nunca me atreva a dar un paso",
+      "¡Sin tu apoyo, mi Jesús Señor!"
+    ],
+    [
+      "2. Con tu mano, toma la mía con fuerza,",
+      "Y cada vez más unidos a Ti, Jesús.",
+      "Oh, tráeme, que nunca me extravíe",
+      "¡De Ti, Señor, mi vida y luz!"
+    ],
+    [
+      "3. Con tu mano, sostén la mía con fuerza,",
+      "Y, por el mundo, felizmente seguiré:",
+      "Incluso donde las sombras son más oscuras",
+      "Al ver tu rostro, nada temeré."
+    ],
+    [
+      "4. Y si llegas a la orilla de ese río,",
+      "Que quisiste cruzar por mí, Con tu mano sostiene fuerte la mía,",
+      "Y sobre la muerte triunfaré."
+    ],
+    [
+      "5. Cuando regreses esos cielos rotos,",
+      "Sostén mi mano fuerte, Señor,",
+      "Y, Jesús mío, oh llévame contigo,",
+      "Donde puedo disfrutar de Tu amor eterno."
+    ]
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=DMzd775oKjM",
-      "title": "COM TUA MÃO - 33 | CARLOS JOSÉ E A HARPA CRISTÃ"
-    },
-    {
-      "url": "https://www.youtube.com/watch?v=rDqhjaMUu8I",
-      "title": "Novo Hinário Adventista • Hino 29 • O Amor De Jesus • (Lyrics)"
-    },
-    {
       "url": "https://www.youtube.com/watch?v=SCv98KeQbXo",
       "title": "Harpa Cristã - 33 - Com Tua Mão Segura - Levi - (com letra)"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=DRCwtmgmmcY",
+      "title": "Hino da Harpa Cristã n° 33 - Com Tua Mão Segura - Violão Instrumental"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=fxuVel74sgE",
+      "title": "COM TUA MÃO SEGURA A MINHA | Harpa Cristã 33 em Country Blues 🔥 Sinta a Presença de Deus!"
     }
   ]
 }

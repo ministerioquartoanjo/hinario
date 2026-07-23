@@ -1,28 +1,52 @@
 {
   "title": "134 - Escucho el Clamor del Buen Pastor",
-  "author": "",
+  "author": "Alexcenah Thomas William Augustine Ogden",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. Oigo el clamor del buen Pastor,",
+      "Por el desierto desolado;",
+      "Tus corderitos llamando,",
+      "Muchas ganas de salvarlos."
+    ],
+    [
+      "2. Ay, el que no quiera ayudar,",
+      "Tus corderitos se refugian,",
+      "Y dirígelos a Jesús,",
+      "¿Fuente de vida, amor y luz?"
+    ],
+    [
+      "3. En el desierto para sufrir,",
+      "A lo largo de los caminos moribundos,",
+      "Tus corderitos te traerán,",
+      "Para poder bendecirlos."
+    ]
+  ],
+  "coro": [
+    "“Vai buscar, vai buscar",
+    "Esses Meus cordeirinhos já!",
+    "Vai buscar, vai buscar,",
+    "Para que os possa abençoar”!"
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=X_FTsrZ3Vj0",
-      "title": "El Clamor Final | Junior Kelly Marchena (En Vivo y Orquestado)"
+      "url": "https://www.youtube.com/watch?v=4uRtPq4EgC8",
+      "title": "Ouço o clamor do Bom Pastor - Maranata CIA 173"
     },
     {
-      "url": "https://www.youtube.com/watch?v=I5nmgFrd940",
-      "title": "Himno Adventista 184 - Nunca te rindas"
+      "url": "https://www.youtube.com/watch?v=bDR3PzvVjGM",
+      "title": "Jesus, o bom Pastor - Maranata CIA 115"
     },
     {
-      "url": "https://www.youtube.com/watch?v=2YUzT2NEaZQ",
-      "title": "Himno Adventista 342 - Después del río"
+      "url": "https://www.youtube.com/watch?v=aZFs9babxpY",
+      "title": "O Senhor é o Bom Pastor - Maranata CIA 87"
     }
   ]
 }

@@ -1,28 +1,46 @@
 {
   "title": "110 - No te rindas",
-  "author": "",
+  "author": "Chuck Fulmore",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. Hay días, lo sé, en los que te sientes triste;",
+      "Sin tener esperanza y placer;",
+      "Pero hay alguien que promete ayudarte.",
+      "Y trae fuerza al alma."
+    ],
+    [
+      "2. Este mundo, lo sé, no va muy lejos,",
+      "Y el mal pronto terminará.",
+      "Mi fe en Dios, sí, está bien establecida:",
+      "Jesús pronto regresará."
+    ]
+  ],
+  "coro": [
+    "Não desistir, Cristo vem logo!",
+    "Breve a aurora há de raiar!",
+    "Não desistir, Cristo vem logo!",
+    "Não desistir, Ele virá!"
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=7yaFRPd-d0Y",
-      "title": "184-Nunca Te Rindas-himnario Adventista"
+      "url": "https://www.youtube.com/watch?v=c9JfsHZ5Ark",
+      "title": "Novo Hinário Adventista • Hino 464 • Não Desistir • (Lyrics)"
     },
     {
-      "url": "https://www.youtube.com/watch?v=muJmVhsOM68",
-      "title": "🔴¡NUEVO! Himno Adventista 184 - Nunca te rindas Cantado 2025"
+      "url": "https://www.youtube.com/watch?v=8eqrHXeHvAM",
+      "title": "NÃO DESISTIR | Hinário Adventista / Hino IASD 150 | MENOS UM"
     },
     {
-      "url": "https://www.youtube.com/watch?v=bZbg5j-aJZM",
-      "title": "Nunca te rindas | No me olvidé de ti LIVE | Unión Interoceánica"
+      "url": "https://www.youtube.com/watch?v=4spOzFXwCq4",
+      "title": "150- Não Desistir. Hinário Adventista"
     }
   ]
 }

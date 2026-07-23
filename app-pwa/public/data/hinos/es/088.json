@@ -1,28 +1,60 @@
 {
   "title": "88 - Jesús, el Buen Amigo",
-  "author": "",
+  "author": "Autor desconhecido",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. Encontré un buen amigo en Jesús el Salvador",
+      "El elegido de miles para mi.",
+      "De los valles es el lirio; es el mediador fuerte",
+      "Quien me purifica y me guarda para sí",
+      "Amado consolador, mi protector del mal.",
+      "Mi petición toma de Ti"
+    ],
+    [
+      "2. Me quitó el dolor, todas las penas que le di",
+      "Mi fuerza está, en la tentación.",
+      "Dejé todo por Él; quemé los ídolos",
+      "Él mantiene mi corazón santo",
+      "Que el mundo me abandone; perseguir al tentador",
+      "Jesús me guarda hasta el final de la vida."
+    ],
+    [
+      "3. Nunca me desampararás ni me abandonarás",
+      "Si fiel y obediente vivo",
+      "Un muro es de fuego, que me protegerá.",
+      "El momento de ganar debe llegar a mí.",
+      "Al cielo entonces volando, Tu gloria veré",
+      "Donde el dolor y la muerte nunca llegan."
+    ]
+  ],
+  "coro": [
+    "Dos vales é o lírio, a estrela da manhã",
+    "O escolhido dos milhares para mim",
+    "Consolador amado, meu protetor do mal",
+    "Solicitude minha toma a Si",
+    "Dos vales é o lírio, a estrela da manhã",
+    "O escolhido dos milhares para mim"
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=7YMDwJdTPhE",
-      "title": "Himno 110 Cristo es el mejor amigo Nuevo Himnario Adventista"
+      "url": "https://www.youtube.com/watch?v=NXY5F5vw3fs",
+      "title": "Em Jesus amigo temos - Hinário Aleluia 356"
     },
     {
-      "url": "https://www.youtube.com/watch?v=1yyoAqk96Oc",
-      "title": "Himno 109 Un buen amigo tengo yo Nuevo Himnario Adventista"
+      "url": "https://www.youtube.com/watch?v=bDR3PzvVjGM",
+      "title": "Jesus, o bom Pastor - Maranata CIA 115"
     },
     {
-      "url": "https://www.youtube.com/watch?v=HPL_JygPE-Q",
-      "title": "Cristo es el mejor amigo | Himno #110 Himnario Adventista"
+      "url": "https://www.youtube.com/watch?v=eqmX5iD93Ac",
+      "title": "Meu Jesus é o melhor amigo - Hinário Aleluia 294"
     }
   ]
 }

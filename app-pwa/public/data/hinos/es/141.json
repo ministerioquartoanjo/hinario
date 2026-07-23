@@ -1,28 +1,34 @@
 {
   "title": "141 - Plena Gracia",
-  "author": "",
+  "author": "Henry Maxwell Wright",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. Gracia plena para salvarme,",
+      "Sangre pura para salvarme",
+      "Y poder conservarme siempre,",
+      "Ahí está mi Señor."
+    ]
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=4s_J4yTZ2p8",
-      "title": "SUBLIME GRACIA | Misión Vida ft. Jhosselyn C. | Cover Blest"
+      "url": "https://www.youtube.com/watch?v=OX-XzSPDbXI",
+      "title": "PLENA GRAÇA - 464. HARPA CRISTÃ- (CIFRADO) - Carlos José"
     },
     {
-      "url": "https://www.youtube.com/watch?v=ZKGM3HzpOZo",
-      "title": "Novo Hinário Adventista • Hino 52 • Novas de Amor e Vida • (Lyrics)"
+      "url": "https://www.youtube.com/watch?v=0WEcypvzK_8",
+      "title": "Hino 34 do Cantor Cristão - Plena graça (Memória Musical)"
     },
     {
-      "url": "https://www.youtube.com/watch?v=IN0WMRcnYq4",
-      "title": "Novo Hinário Adventista • Hino 67 • Restaura Em Mim • (Lyrics)"
+      "url": "https://www.youtube.com/watch?v=8ElWjTvJTkQ",
+      "title": "Plena Graça"
     }
   ]
 }

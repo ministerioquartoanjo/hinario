@@ -1,28 +1,58 @@
 {
   "title": "96 - Justificado",
-  "author": "",
+  "author": "Harold Graham e Wayne Hooper",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. ¿Puedo ser justificado?",
+      "¿Con mi mal pasado pecaminoso?",
+      "Mi Jesús crucificado fue",
+      "Y entonces soy salvo, por su amor.",
+      "¡Qué gracia sublime y amor infinito!",
+      "¡Regalos que Cristo nos da a ti y a mí!",
+      "Con Jesús estoy muy seguro,",
+      "Porque tu gracia ya me ha liberado"
+    ],
+    [
+      "2. Por la fe soy justificado,",
+      "En Cristo mi Señor y Salvador;",
+      "Que así sea santificado,",
+      "Y siempre camina bien dondequiera que vayas.",
+      "Sé que mi frágil fuerza es,",
+      "Clamo a Dios si me siento débil en la fe;",
+      "Sí, Jesús me dice que puedo entonces.",
+      "Justificado para ser, por su perdón"
+    ],
+    [
+      "3. Gloria a Dios, estoy justificado,",
+      "¡Porque Cristo ya limpió mi corazón!",
+      "Y por siempre exaltaré a Jesús,",
+      "Alabanzas cantaré, en agradecimiento",
+      "Sé que la vida eterna me dará,",
+      "Sé que Cristo pronto regresará;",
+      "Y porque fui justificado,",
+      "Con El allá en el cielo tendré mi hogar"
+    ]
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=CO9Ri58mCMQ",
-      "title": "Novo tom - Justificado ( Letra e Voz)"
+      "url": "https://www.youtube.com/watch?v=a_jMXYJQyCg",
+      "title": "Hinário Adventista 539 - JUSTIFICADO"
     },
     {
-      "url": "https://www.youtube.com/watch?v=fHowMeF0f9Q",
-      "title": "Justificado Pela Graça - Coral Resgate Para Vida - [ COM LETRA ]"
+      "url": "https://www.youtube.com/watch?v=UsAPMiNfOMc",
+      "title": "539  Justificado Hinário Adventista com legenda"
     },
     {
-      "url": "https://www.youtube.com/watch?v=STKprqd7w-4",
-      "title": "Justificado Pelo Sangue - Ministério Pedras Vivas. (Letra)"
+      "url": "https://www.youtube.com/watch?v=DEzomivAs3s",
+      "title": "Justificado"
     }
   ]
 }

@@ -1,28 +1,52 @@
 {
   "title": "100 - Más cerca quiero estar",
-  "author": "",
+  "author": "Sarah Fuller Flower Adams Lowel Mason",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. Quiero estar más cerca,",
+      "Dios mío, de Ti,",
+      "Incluso si es el dolor,",
+      "Que pueda unirme a Ti."
+    ],
+    [
+      "2. Caminando triste por aquí,",
+      "En soledad,",
+      "Paz y descanso para mí,",
+      "Tus brazos dan."
+    ],
+    [
+      "3. Mi alma cantará,",
+      "A ti, Señor,",
+      "Lleno de gratitud,",
+      "Por tu amor."
+    ]
+  ],
+  "coro": [
+    "Eis meu constante orar:",
+    "Mais perto quero estar,",
+    "Mais perto quero estar,",
+    "Meu Deus, de Ti."
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=76fcXdTSeFw",
-      "title": "446 Más cerca, oh Dios, de ti (-)"
+      "url": "https://www.youtube.com/watch?v=x4W2d3bwOow",
+      "title": "Mais perto quero estar - 3 estrofes"
     },
     {
-      "url": "https://www.youtube.com/watch?v=Y6PR5eHSCZ8",
-      "title": "Más cerca quiero estar _ Canciones de la IURD con letra"
+      "url": "https://www.youtube.com/watch?v=WS_H7e-JRoo",
+      "title": "Quero estar ao pé da cruz (4 estrofes)"
     },
     {
-      "url": "https://www.youtube.com/watch?v=IUEgvNi-znA",
-      "title": "🔵 MÁS CERCA QUIERO ESTAR (con Letra) Cosme Silva"
+      "url": "https://www.youtube.com/watch?v=0apUI3Qayh4",
+      "title": "Quero estar ao pé da cruz (com introdução)"
     }
   ]
 }

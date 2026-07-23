@@ -1,28 +1,61 @@
 {
   "title": "33 - Castillo fuerte",
-  "author": "",
+  "author": "Martinho Lutero",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. Jehová es un castillo fuerte;",
+      "El Dios leal y protector.",
+      "Y si nuestra fe flaquea,",
+      "El poder nos da en su amor.",
+      "Destruye lo perspicaz",
+      "El truco de Satanás,",
+      "Para poder derrotarlo",
+      "Con su poder incomparable.",
+      "Y a los suyos les proporciona descanso y paz."
+    ],
+    [
+      "2. Si quieren derrotarnos",
+      "Los demonios viles más crueles;",
+      "Nunca podrá sacudirnos",
+      "Qué poder con sus artimañas.",
+      "Satanás, el tentador,",
+      "Y vil acusador,",
+      "Él nunca nos derrotará;",
+      "Bueno, ya está ganado.",
+      "Allí en la cruz del Salvador."
+    ],
+    [
+      "3. Nuestro poder no hace nada;",
+      "Sin Dios, vendrá la perdición.",
+      "El Padre a través de Cristo trae fuerza",
+      "Y así viene la protección.",
+      "Y si la muerte atroz",
+      "Finalmente contáctanos,",
+      "Jesús nos salvará.",
+      "En el cielo entonces será",
+      "Alabado sea Dios nuestra voz."
+    ]
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=GR5zP02xG3g",
-      "title": "Himno 400 - Castillo fuerte es nuestro Dios | Nuevo"
+      "url": "https://www.youtube.com/watch?v=rLhVEcxewFs",
+      "title": "Castelo Forte - Hinário Aleluia 312"
     },
     {
-      "url": "https://www.youtube.com/watch?v=Nxi9IwgswHA",
-      "title": "Castillo Fuerte - Grupo Shalom (Himno 400 del himnario adventista)"
+      "url": "https://www.youtube.com/watch?v=9vJD67M0uaM",
+      "title": "Jovens fortes, unidos na luta - Hinário Aleluia 419"
     },
     {
-      "url": "https://www.youtube.com/watch?v=KG8T7xNNVCU",
-      "title": "Antiguo... Himno # 255 Castillo Fuerte es nuestro Dios"
+      "url": "https://www.youtube.com/watch?v=TZgfCTorWKU",
+      "title": "Rochedo forte é o Senhor - Hinário Aleluia 366"
     }
   ]
 }

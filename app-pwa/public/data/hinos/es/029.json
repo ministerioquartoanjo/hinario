@@ -1,24 +1,45 @@
 {
   "title": "29 - Justo al lado de Cristo",
-  "author": "",
+  "author": "Leila Maylor Morris",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. Al lado de Cristo quiero estar,",
+      "Justo al lado de la cruz, disfruta de la dulce paz.",
+      "Sí, en Tu pecho busco la paz.",
+      "¡Porque Tu divino amor satisface!",
+      "¡Porque Tu divino amor satisface!"
+    ],
+    [
+      "2. No traigo nada más al Señor,",
+      "Sólo este corazón pecaminoso mío,",
+      "Pero os suplico en contrición,",
+      "¡Oh Salvador, dame paz y perdón!",
+      "¡Oh Salvador, dame paz y perdón!"
+    ],
+    [
+      "3. Sí, quiero que Cristo esté conmigo,",
+      "Hasta entonces, puedo aterrizar allí.",
+      "¡Oh, hogar eterno, hogar de esplendor!",
+      "Allí estaré al lado de mi Salvador.",
+      "Allí cantaré todo Su gran amor."
+    ]
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=5W8jwuvl1zg",
-      "title": "Himno Adventista 408 - Cristo me ayuda por él a vivir"
+      "url": "https://www.youtube.com/watch?v=WW-CwdrG7Zo",
+      "title": "Novo Hinário Adventista • Hino 370 • Bem Junto a Cristo  • (Lyrics)"
     },
     {
-      "url": "https://www.youtube.com/watch?v=G34NwqgZMp0",
-      "title": "Hinário Adventista 420 - OH! QUE AMIGO EM CRISTO TEMOS!"
+      "url": "https://www.youtube.com/watch?v=ws9DwP3P4jU",
+      "title": "Novo Hinário Adventista • Hino 370 • Bem Junto a Cristo • Playback"
     },
     {
       "url": "https://www.youtube.com/watch?v=2jxf2XvM7u4",

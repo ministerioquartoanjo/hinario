@@ -1,28 +1,53 @@
 {
   "title": "123 - El día que no lo sé",
-  "author": "",
+  "author": "Franklis Edson Belden",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. No sé el día del regreso del Esposo;",
+      "Pero las señales vienen a llenarme de alegría;",
+      "Porque pronto llegará este glorioso acontecimiento,",
+      "Pero el día no lo sé."
+    ],
+    [
+      "2. Los creyentes verán, en la Sagrada Escritura,",
+      "Que nuestra felicidad eterna no tardará.",
+      "Miremos, pues, a la gloria futura,",
+      "Pero el día no lo sé."
+    ],
+    [
+      "3. Orad, velad, ésta es la necesidad;",
+      "Firme sus pies en la bendita verdad.",
+      "Habrá descanso en la ciudad celestial,",
+      "Pero el día no lo sé."
+    ]
+  ],
+  "coro": [
+    "Cristo vem!",
+    "Vigiemos, oremos, Ele vem!",
+    "Aleluia! Aleluia! Sobre nuvens virá,",
+    "Com os anjos da glória,",
+    "Mas o dia não sei."
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=Zz2L0HCKMPk",
-      "title": "Himno 52 Señor Jesùs, El Día Ya Se Fue Nuevo himnario Adventista"
+      "url": "https://www.youtube.com/watch?v=KpVECORh2-A",
+      "title": "Jesus, agora eu bem sei - Hinário Aleluia 327"
     },
     {
-      "url": "https://www.youtube.com/watch?v=RzXMphBOXTg",
-      "title": "HA62 | Himno 48 | Señor Jesús, el día ya se fue"
+      "url": "https://www.youtube.com/watch?v=RWwQWh9SUWo",
+      "title": "Rompe a aurora - HInário Aleluia 429 (melodia 2)"
     },
     {
-      "url": "https://www.youtube.com/watch?v=6Str5CQGvVY",
-      "title": "yo sé que algún día nos volveremos a ver⭐| La Young - Como Estrellas"
+      "url": "https://www.youtube.com/watch?v=I_1mLHlz6_w",
+      "title": "Rompe a aurora - Hinário Aleluia 429 (melodia 1)"
     }
   ]
 }

@@ -1,28 +1,58 @@
 {
   "title": "111 - No soy mío",
-  "author": "",
+  "author": "Henry Maxwell Wright",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. ¡No soy mío! Por Cristo salvado,",
+      "Quien murió por mí en la cruz.",
+      "lo confieso felizmente,",
+      "Que pertenezco al buen Jesús."
+    ],
+    [
+      "2. ¡No soy mío! Por Él redimido,",
+      "Cuando la sangre se derramó;",
+      "Confiando en su gracia,",
+      "Que mi alma rescató."
+    ],
+    [
+      "3. ¡Nunca el mío! confío en ti",
+      "Todo lo que llamo mío;",
+      "Entrego todo en Tus manos;",
+      "¡Señor mío, soy todo tuyo!"
+    ],
+    [
+      "4. ¡Nunca el mío! Oh santifica",
+      "¡Todo lo que soy, Señor!",
+      "De la vanidad y el orgullo,",
+      "Ven y libérame, Salvador."
+    ]
+  ],
+  "coro": [
+    "Não sou meu! Oh! Não sou meu!",
+    "Bom Jesus, sou todo Teu!",
+    "Hoje mesmo e para sempre,",
+    "Bom Jesus, sou todo Teu!"
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=s3b7C16uyrY",
-      "title": "Me amó con un amor/ himno 137/ Suyo soy y mío es Él/"
+      "url": "https://www.youtube.com/watch?v=ZM-34RGZBGw",
+      "title": "Set My Soul Afire - Baptist Hymnal 533"
     },
     {
-      "url": "https://www.youtube.com/watch?v=cU2usKiuBHE",
-      "title": "NO SOY MÍO, SUYO SOY"
+      "url": "https://www.youtube.com/watch?v=INselM1avIA",
+      "title": "Não sou meu!"
     },
     {
-      "url": "https://www.youtube.com/watch?v=7Xed78C_NAM",
-      "title": "Canción: No soy mío"
+      "url": "https://www.youtube.com/watch?v=8ycxJqsH904",
+      "title": "Be Still, My Soul - Baptist Hymnal 514"
     }
   ]
 }

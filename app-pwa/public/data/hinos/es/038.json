@@ -1,28 +1,46 @@
 {
   "title": "38 - Contentamiento",
-  "author": "",
+  "author": "Jane Catherine Bonar Richard Holden",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. Ya soy feliz: ¡tengo a Jesús!",
+      "Con alegría voy: ¡tengo a Jesús!",
+      "La alegría que trae el mundo pronto se deshace:",
+      "¡Tengo paz perfecta, paz en Jesús!"
+    ],
+    [
+      "2. ¡Puedo envejecer, nunca Jesús!",
+      "¡Puedo volverme pobre, nunca Jesús!",
+      "Todo me proveerá, siempre me valdrá,",
+      "Nada me faltará teniendo a Jesús."
+    ],
+    [
+      "3. ¡Todo terminará aquí, excepto Jesús!",
+      "Cuando llega el Juez: ¡es mi Jesús!",
+      "Estaré muy agradecido cuando mi Rey baje.",
+      "Seguro que dirá: \"¡Yo soy Jesús!\""
+    ]
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=MHS3RhSj8mA",
-      "title": "Contentamiento (Hno. Wil Morán) - Verdad Adventista"
+      "url": "https://www.youtube.com/watch?v=Uxj1_G_CU5k",
+      "title": "Contentamento (590) Playback sem intervalos - Harpa Cristã  - Joãozinho Camargo (Tyros 4)"
     },
     {
-      "url": "https://www.youtube.com/watch?v=JZBx45mtj8U",
-      "title": "Marzo 15 - Contentamiento, - Pr. Hugo Gambetta"
+      "url": "https://www.youtube.com/watch?v=X22mHHjFHp0",
+      "title": "GANÂNCIA, AMBIÇÃO E CONTENTAMENTO | LUÍS ASSIS | 04.03.26 | LIMEIRA CENTRAL"
     },
     {
-      "url": "https://www.youtube.com/watch?v=h59FuSTsQos",
-      "title": "Oraciones Puritanas - 13 Contentamiento (El Valle de la Visión)"
+      "url": "https://www.youtube.com/watch?v=kVgFLOWQcZ0",
+      "title": "Hino 387 cc Contentamento (Teclado e voz)"
     }
   ]
 }

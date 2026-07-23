@@ -1,28 +1,46 @@
 {
   "title": "24 - Al ver la cruz",
-  "author": "",
+  "author": "Isaac Watts/E.M",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. Al verlo morir en la cruz ruda,",
+      "En dolor y angustia Jesús mío;",
+      "Entendiendo ser pecador,",
+      "Y mi orgullo inútil."
+    ],
+    [
+      "2. Dolor en manos, pies y frente.",
+      "Derramaron sangre por amor;",
+      "¡Oh! ¡santa mano! ¡Mano herida!",
+      "Quieres darme la salvación."
+    ],
+    [
+      "3. Doy mil gracias a mi Jesús;",
+      "Amor probado en la cruz",
+      "Sostendrá y liderará",
+      "Mi vida en el futuro."
+    ]
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=D711PoxOPxk",
-      "title": "Antiguo... Himno # 258 A la cruz de Cristo voy"
+      "url": "https://www.youtube.com/watch?v=Rn9DiHkY5fQ",
+      "title": "Once to Every Man and Nation - Baptist Hymnal 538"
     },
     {
-      "url": "https://www.youtube.com/watch?v=MI6v8pSvGAI",
-      "title": "AL VER LA CRUZ INSTRUMENTAL"
+      "url": "https://www.youtube.com/watch?v=WS_H7e-JRoo",
+      "title": "Quero estar ao pé da cruz (4 estrofes)"
     },
     {
-      "url": "https://www.youtube.com/watch?v=-clnpLM6rzg",
-      "title": "\"Alcanza al mundo\" {#67 Himnario IBG\"} cover"
+      "url": "https://www.youtube.com/watch?v=56aAC1_ZHtc",
+      "title": "Like a River Glorious - Baptist Hymnal 516"
     }
   ]
 }

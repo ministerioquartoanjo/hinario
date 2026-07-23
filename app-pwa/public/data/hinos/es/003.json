@@ -1,28 +1,68 @@
 {
   "title": "3 - La esperanza de la Iglesia",
-  "author": "",
+  "author": "Henry Maxwell Wright",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. Hasta que regrese el Salvador",
+      "Rodeando la mesa del Señor,",
+      "Vinimos a celebrar la cena,",
+      "Se anuncia la muerte de Cristo,",
+      "Y con humilde devoción",
+      "Dar adoración a Dios."
+    ],
+    [
+      "2. Hasta que regrese el Salvador,",
+      "Aquí mostremos Su amor;",
+      "Con fe viva y gratitud,",
+      "Participemos de este pan,",
+      "Obediente a Jesús,",
+      "¡Recordando así su cruz!"
+    ],
+    [
+      "3. Hasta que regrese el Salvador,",
+      "Bebiendo la copa del Señor,",
+      "Queremos bendecir tu nombre,",
+      "Y crecer más y más,",
+      "La sangre que derramó,",
+      "¡La sangre que nos rescató!"
+    ],
+    [
+      "4. Si las pruebas son duras,",
+      "Si las persecuciones son fuertes,",
+      "Si las luchas se hacen sentir,",
+      "Y nos cuesta resistirnos",
+      "No nos dejemos perturbar:",
+      "¡Es sólo hasta que Jesús regrese!"
+    ],
+    [
+      "5. Listos para recibirlo,",
+      "Siempre debemos vivir aquí;",
+      "El tiempo corre, llega el día,",
+      "La gloria espera más allá,",
+      "Así que trabajemos, con fervor,",
+      "Hasta que regrese el Salvador."
+    ]
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=fM4IqB5yhSM",
-      "title": "Himno Evangélico: -   La Esperanza de la Iglesia.-  Mensajes Musicales"
+      "url": "https://www.youtube.com/watch?v=MzeiOxpidkk",
+      "title": "Da Igreja o fundamento - HCC 504"
     },
     {
-      "url": "https://www.youtube.com/watch?v=zd-pnZfe98g",
-      "title": "La Esperanza de la Iglesia de Dios"
+      "url": "https://www.youtube.com/watch?v=J3zCHMrmgrY",
+      "title": "Vem, Visita Tua Igreja (com introdução)"
     },
     {
-      "url": "https://www.youtube.com/watch?v=XR1rLmVTSiQ",
-      "title": "CORO EVANGÉLICO: LA ESPERANZA DE LA IGLESIA"
+      "url": "https://www.youtube.com/watch?v=uCqo27H3cw0",
+      "title": "Tu és minha esperança - Hinário Aleluia 390"
     }
   ]
 }

@@ -1,28 +1,52 @@
 {
   "title": "115 - Te adoramos",
-  "author": "",
+  "author": "Edond Louis BuBudrynFranz Joseph Haydn",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. Te adoramos, Dios infinito,",
+      "Y a Tu Hijo, Rey, Salvador;",
+      "Tu nombre eterno es siempre bendito;",
+      "Tu espíritu nos trae amor.",
+      "Gloria rendimos, honor, alabanza;",
+      "¡Y adorarte, oh Señor!"
+    ],
+    [
+      "2. Estábamos atados por el pecado,",
+      "Tú nos liberaste de esta prisión;",
+      "Y por tu Hijo inmaculado,",
+      "Nos ofreciste la salvación.",
+      "Gloria rendimos, honor, alabanza,",
+      "¡Y te adoro, Redentor!"
+    ],
+    [
+      "3. Nos convences de pecados viles,",
+      "Y de justicia, tú nos das luz,",
+      "Y a la verdad nos guiamos,",
+      "Oh Espíritu que nos da...",
+      "Gloria rendimos, honor, alabanza,",
+      "¡Y adora, oh Jesús!"
+    ]
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
-    {
-      "url": "https://www.youtube.com/watch?v=e6r1kYZJ1hg",
-      "title": "Novo Hinário Adventista • Hino 5 • Jubilosos Te Adoramos  • (Lyrics)"
-    },
     {
       "url": "https://www.youtube.com/watch?v=gUX4rONKdeI",
       "title": "Novo Hinário Adventista • Hino 6 • Nós Te Adoramos • (Lyrics)"
     },
     {
-      "url": "https://www.youtube.com/watch?v=LKrXXUNPoTY",
-      "title": "Te Adoramos, Cristo te adoramos - Grupo Inspiración... con letra x Johana Toloza S."
+      "url": "https://www.youtube.com/watch?v=ZqaC7fprrZ4",
+      "title": "Hinário Adventista 17 Nós Te Adoramos"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=l_IAGUGIxFg",
+      "title": "Hino 17: NÓS TE ADORAMOS. Hinário Adventista do Sétimo Dia (Hinário IASD)"
     }
   ]
 }

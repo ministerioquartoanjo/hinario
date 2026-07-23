@@ -1,28 +1,64 @@
 {
   "title": "172 - Señor, Tu Divino Amor es Admirable",
-  "author": "",
+  "author": "James George Deck Arthur Henry Mann",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. Señor, es admirable",
+      "Tu amor divino.",
+      "Eterno incomparable,",
+      "Motivo de elogio.",
+      "Amándonos llegaste",
+      "A este mundo aquí",
+      "Y así nos rescataste",
+      "Llamándonos hacia Ti."
+    ],
+    [
+      "2. Lo intentaste, humillado,",
+      "Nuestra condición;",
+      "Lo tomaste sin pecado.",
+      "Nuestra transgresión.",
+      "Sufriste crueldad,",
+      "Sufriste insulto y dolor",
+      "para liberarnos",
+      "Salvador eterno."
+    ],
+    [
+      "3. Te sacrificaste por nosotros",
+      "Vida en la cruz;",
+      "Nos libraste de la muerte,",
+      "¡Señor y Rey Jesús!",
+      "Por eso te adoramos",
+      "Con corazón agradecido",
+      "Y humildemente te ofrecemos",
+      "Nuestra devoción."
+    ],
+    [
+      "4. Ahora, transformado,",
+      "queremos servirte",
+      "Y unidos, hermanos,",
+      "Sigue tu ejemplo."
+    ]
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=1fDwTBMX1Bk",
-      "title": "Himno 279 Transfórmame a tu imagen Nuevo Himnario Adventista"
+      "url": "https://www.youtube.com/watch?v=IZsKF7Y-fBY",
+      "title": "Senhor, é admirável o teu divino amor - HCC 166 (com introdução)"
     },
     {
-      "url": "https://www.youtube.com/watch?v=Ksa47jsc9K8",
-      "title": "Himno 602 - Es el amor divino | Nuevo"
+      "url": "https://www.youtube.com/watch?v=ptmblRna7ww",
+      "title": "Cantor Cristão n. 45 Senhor, quão admirável é teu divino amor"
     },
     {
-      "url": "https://www.youtube.com/watch?v=4H_kzkmNcdM",
-      "title": "Himno 58 - Grande es el amor divino - Himnario Adventista"
+      "url": "https://www.youtube.com/watch?v=kP4HUwCB5Bs",
+      "title": "Perdoa-me, Senhor, segundo o Seu amor - Maranata CIA 12"
     }
   ]
 }

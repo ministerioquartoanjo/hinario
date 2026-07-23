@@ -1,28 +1,52 @@
 {
   "title": "149 - Qué gozo es creer en Cristo",
-  "author": "",
+  "author": "Louisa M. R. Stead William James Kirkpatrick",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. ¡Qué gozo es creer en Cristo,",
+      "En su nombre confía;",
+      "Observa sus enseñanzas,",
+      "¡Descansa en las promesas!"
+    ],
+    [
+      "2. ¡Qué alegría es creer en Cristo,",
+      "¡Asegúrate del perdón!",
+      "Recibe de Cristo mismo",
+      "Vida, paz y salvación."
+    ],
+    [
+      "3. ¡Qué alegría es creer en Cristo,",
+      "¡Mi amigo y Salvador!",
+      "Siempre estaré a salvo,",
+      "Muy feliz en su amor."
+    ]
+  ],
+  "coro": [
+    "Cristo! Cristo! Eu confio",
+    "Em Teu nome e Teu poder;",
+    "Cristo, meu Senhor amado,",
+    "Faze minha fé crescer."
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=IWPrl_Qb6hc",
-      "title": "Himno Adventista 395 - ¡Oh, cuán dulce es fiar en Cristo!"
+      "url": "https://www.youtube.com/watch?v=6BLQEeEp3jg",
+      "title": "318 HCC - Que alegria é crer em Cristo"
     },
     {
-      "url": "https://www.youtube.com/watch?v=WPZ0kNoGUhI",
-      "title": "Himno 235 La razón de vivir Nuevo Himnario Adventista"
+      "url": "https://www.youtube.com/watch?v=C9AC_o1cXZA",
+      "title": "318 HCC - QUE ALEGRIA É CRER EM CRISTO"
     },
     {
-      "url": "https://www.youtube.com/watch?v=GClT67S12Uk",
-      "title": "HA62 | Himno 254 | ¡Oh, cuán dulce es fiar en Cristo!"
+      "url": "https://www.youtube.com/watch?v=dm_eiJj8xXo",
+      "title": "Hino - 'Que Alegria é Crer em Cristo' - Culto Noturno - 31/08/2014"
     }
   ]
 }

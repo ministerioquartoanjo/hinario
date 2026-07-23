@@ -1,28 +1,42 @@
 {
   "title": "19 - ¡Amigo sin igual!",
-  "author": "",
+  "author": "Henry Maxwell Wright",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. ¡Amigo único! (2x)",
+      "Jesús murió en mi lugar.",
+      "Para salvarme.",
+      "¡Amigo único! (2x)",
+      "Tu gran amor no cambiará",
+      "Y nunca fallará."
+    ],
+    [
+      "2. ¡Amigo único! (2x)",
+      "Está muy cerca y quiere salvar.",
+      "¡Quien confía en Él es un Amigo único! (2x)",
+      "Invita con inmenso amor A todo pecador."
+    ]
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=T0z0jeySOfA",
-      "title": "Himno 286 - Hay una fuente sin igual | Nuevo"
+      "url": "https://www.youtube.com/watch?v=NE9o224Up3U",
+      "title": "Sei que o amigo melhor - Hinário Aleluia 403"
     },
     {
-      "url": "https://www.youtube.com/watch?v=GSvij2ODdhs",
-      "title": "Himno 362 - Con sin igual amor | Nuevo"
+      "url": "https://www.youtube.com/watch?v=xzSkm8DDrbs",
+      "title": "Quão bondoso amigo é Cristo - Hinário Aleluia 364"
     },
     {
-      "url": "https://www.youtube.com/watch?v=Txu6BzlLfN8",
-      "title": "Himno 371 Halle un amigo sin igual"
+      "url": "https://www.youtube.com/watch?v=NXY5F5vw3fs",
+      "title": "Em Jesus amigo temos - Hinário Aleluia 356"
     }
   ]
 }

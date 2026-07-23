@@ -1,28 +1,58 @@
 {
   "title": "122 - El día del triunfo de Jesús",
-  "author": "",
+  "author": "James Milton Black",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. Cuando desde el cielo descendió para que Jesús regresara,",
+      "Y el clarín de Dios proclama a todos;",
+      "Que ha llegado el gran día del triunfo de mi Rey;",
+      "Por Su inmensa gracia estaré allí."
+    ],
+    [
+      "2. Aquel día en que los muertos oirán la voz de Cristo,",
+      "Y de sus tumbas resucitarán,",
+      "Los redimidos reunidos pronto aclamarán a su Rey,",
+      "Y, por Su inmensa gracia, allí estaré."
+    ],
+    [
+      "3. Jesús, mi Salvador, fue rechazado por el mundo.",
+      "Despreciaron, insultaron a mi Señor,",
+      "Pero, oh, se acerca el día del triunfo de mi Rey,",
+      "Y, por Su inmensa gracia, allí estaré."
+    ],
+    [
+      "4. En mí mismo no tengo nada en qué confiar,",
+      "Pero Jesús murió en la cruz para salvarme;",
+      "Espero sólo en Él, sí, y siempre esperaré.",
+      "Porque, por Su inmensa gracia, allí estaré."
+    ]
+  ],
+  "coro": [
+    "Quando enfim, chegar o dia",
+    "Do triunfar do meu Rei",
+    "Quando enfim, chegar o dia,",
+    "Pela graça de Jesus eu lá estarei."
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=r-F3A2aR8m8",
-      "title": "Himno 253 Tuyo soy, Jesús Nuevo Himnario Adventista"
+      "url": "https://www.youtube.com/watch?v=BnmtrySeIWo",
+      "title": "Um dia Jesus achou-me - Hinário Aleluia 377"
     },
     {
       "url": "https://www.youtube.com/watch?v=0jSPSiVA5PM",
       "title": "Harpa Cristã - 48 - O Dia do Triunfo de Jesus - Levi - com letra"
     },
     {
-      "url": "https://www.youtube.com/watch?v=Gayh2T1j5bk",
-      "title": "DIA DO TRIUNFO DE JESUS - 48 | CARLOS JOSÉ E A HARPA CRISTÃ"
+      "url": "https://www.youtube.com/watch?v=J4V-64P6_CA",
+      "title": "Harpa Cristã 048 - O Dia Do Triunfo De Jesus"
     }
   ]
 }

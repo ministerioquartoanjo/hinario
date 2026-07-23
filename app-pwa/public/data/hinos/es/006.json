@@ -1,28 +1,68 @@
 {
   "title": "6 - ¡La Mano en el Arado!",
-  "author": "",
+  "author": "Frida Vingren",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1.Quien ya puso su mano en el arado,",
+      "Es necesario que sea constante;",
+      "El sol se pone y poco después,",
+      "Oscurecerá.",
+      "Adelante en el pensamiento de Cristo,",
+      "En oración velando;",
+      "Con alegría y amor trabajando,",
+      "A tu Señor."
+    ],
+    [
+      "2.No te desanimes, ya que es tu cruz",
+      "Mayor que el de tu hermano;",
+      "El más pesado se llevó a tu Jesús,",
+      "Consolaos, pues;",
+      "Tu cruz lleva,",
+      "Como Jesús perdonando.",
+      "caminando felizmente",
+      "Al hermoso cielo."
+    ],
+    [
+      "3. Sé buen soldado de Cristo Jesús,",
+      "Sufriendo aflicciones,",
+      "No sofocar el mensaje de la cruz,",
+      "En persecuciones;",
+      "Vaya proclamando su amor,",
+      "Noticias de paz, sí, tomando.",
+      "A los que estan esperando",
+      "Salvación."
+    ],
+    [
+      "4. Cuando finalmente dejes ir la cruz,",
+      "Jesús te coronará;",
+      "Con santo gozo en gloria y luz",
+      "Te consolará.",
+      "Olvidarás tus preocupaciones.",
+      "Tribulaciones y dolores,",
+      "Cuando disfrutas del cielo,",
+      "Paz perfecta."
+    ]
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=RgNtEhAHW3E",
-      "title": "Tu Mano en el Arado"
+      "url": "https://www.youtube.com/watch?v=HJACrxoi4L8",
+      "title": "Mãos ao trabalho - Cantor Cristão 419"
     },
     {
-      "url": "https://www.youtube.com/watch?v=Ex6EuwH7nTI",
-      "title": "Qué significa poner la mano en el arado? | Pastor Alfonso Jiménez"
+      "url": "https://www.youtube.com/watch?v=3BMGhl5KvLg",
+      "title": "Mãos ao trabalho, jovens - Hinário Aleluia 421"
     },
     {
-      "url": "https://www.youtube.com/watch?v=EpL5aeNAgBM",
-      "title": "La mano en el arado"
+      "url": "https://www.youtube.com/watch?v=_bCiWCG_z-Q",
+      "title": "Saudamo-vos, irmãos - Hinario Aleluia 383"
     }
   ]
 }

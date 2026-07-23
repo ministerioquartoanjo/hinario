@@ -1,28 +1,67 @@
 {
   "title": "63 - Habla del Amor de Cristo",
-  "author": "",
+  "author": "Joel Carlson (K. E. S.)",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. Habla del amor de Cristo",
+      "Al triste pecador;",
+      "Amor por todo lo visto",
+      "En la cruz del Redentor.",
+      "canta con alegria",
+      "La paz que viene del cielo;",
+      "tu voz se eleva",
+      "En gloria a Dios."
+    ],
+    [
+      "2. Por los afligidos, canten,",
+      "Las bendiciones que hay en Dios;",
+      "Desde la cruz se levanta el estandarte",
+      "Porque nos da coraje.",
+      "Canta por los perdidos",
+      "La gracia de Jesús;",
+      "Tu sangre ya se ha derramado",
+      "¡Eso brota de la cruz!"
+    ],
+    [
+      "3. Canta con esperanza,",
+      "En la oscuridad también",
+      "Canta con confianza,",
+      "Hay vida en el más allá;",
+      "Canta al amanecer del día,",
+      "Y cuando llegue la noche;",
+      "En Cristo, armonía",
+      "¡Con Dios se obtiene!"
+    ]
+  ],
+  "coro": [
+    "Cristo na cruz ganhou-nos eterna salvação.",
+    "Com Seu sangue lavou-nos",
+    "O Rei da redenção!",
+    "No templo, o véu rasgado;",
+    "Caminho abriu Jesus;",
+    "Na cruz inaugurado,",
+    "P’ro céu de luz!"
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=DNfLSnkkNVs",
-      "title": "Himno 209 La Biblia nos habla de Cristo Nuevo Himnario Adventista"
+      "url": "https://www.youtube.com/watch?v=kpDcegZvTW0",
+      "title": "Fala à minha alma, ó Cristo - Salmos e Hinos 344"
     },
     {
-      "url": "https://www.youtube.com/watch?v=eAWi3QBOg14",
-      "title": "Himno 388 - Debo decir a Cristo | Nuevo"
+      "url": "https://www.youtube.com/watch?v=H_d5xA6DXSg",
+      "title": "Harpa Cristã 355 - Fala do Amor De Cristo"
     },
     {
-      "url": "https://www.youtube.com/watch?v=cpSSkQN7XwE",
-      "title": "Rammy Pérez Reflexiones Bíblicas nos habla del amor de Cristo"
+      "url": "https://www.youtube.com/watch?v=_Xx2oJwNUts",
+      "title": "FALA DO AMOR DE CRISTO - 355. HARPA CRISTÃ - (CIFRADO) - Carlos José"
     }
   ]
 }

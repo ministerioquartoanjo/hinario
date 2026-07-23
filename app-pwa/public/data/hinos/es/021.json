@@ -1,28 +1,57 @@
 {
   "title": "21 - Amor sin igual",
-  "author": "",
+  "author": "R. Torrey. Jr Ernest Gebhardt",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. ¡Oh, no has oído hablar del amor incomparable,",
+      "¿Del amor que tu Dios tiene por ti?",
+      "El amor que le llevó a entregar a su Hijo,",
+      "¡Para que los salvos se lo lleven ellos mismos!"
+    ],
+    [
+      "2. No fueron los grandes a los que Cristo llamó,",
+      "Ni siquiera los justos vinieron a salvar,",
+      "Pero pobres y débiles, culpables y malvados.",
+      "Envió a los sirvientes a buscar"
+    ],
+    [
+      "3. El hombre, sin embargo, no pudo llegar.",
+      "A la santa presencia de Dios,",
+      "Porque los pecados de tu corazón",
+      "Le impidieron entrar a los cielos."
+    ],
+    [
+      "4. Pero con su sangre Jesús expió",
+      "La culpa de los creyentes, en la cruz;",
+      "Quitando el pecado, el camino mostró,",
+      "Que nos lleva a los cielos"
+    ]
+  ],
+  "coro": [
+    "Oh, crê! Sim crê! Oh crê! Sim crê!",
+    "A graça de Deus te chama dos céus.",
+    "Oh, crê nesse amor sem igual!"
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=DyNvEgSh9fA",
-      "title": "Alabanza Con sin igual amor Himnario Adventista"
+      "url": "https://www.youtube.com/watch?v=A33Q1CXj96I",
+      "title": "Teu divinal amor - Cantor Cristão 305"
     },
     {
-      "url": "https://www.youtube.com/watch?v=G3KKLoywjKU",
-      "title": "Amor Sem Igual (Amor sin igual) Canción letra español"
+      "url": "https://www.youtube.com/watch?v=m8V-tM67aYY",
+      "title": "Fonte de amor perene - Hinário Aleluia 434"
     },
     {
-      "url": "https://www.youtube.com/watch?v=fCydVoCAsa8",
-      "title": "CON SIN IGUAL AMOR....mpg"
+      "url": "https://www.youtube.com/watch?v=lcr2PhBZkZ4",
+      "title": "Trabalhai, jovens, com amor - Hinário Aleluia 425"
     }
   ]
 }

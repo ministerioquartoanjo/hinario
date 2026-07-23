@@ -1,28 +1,52 @@
 {
   "title": "118 - Descansa en Jesús",
-  "author": "",
+  "author": "Frida Vingren F. M. Lelunan",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. ¿Has encontrado descanso en Jesucristo?",
+      "¿Estás firme en la gracia que Él dio?",
+      "¿Tienes paz con tu bendito Salvador?",
+      "¿Plenitud del Espíritu Dios?"
+    ],
+    [
+      "2. Estarás muy seguro y valiente,",
+      "¿Cuándo te llega la tentación?",
+      "Tienes la gracia de ser Victorioso",
+      "En las terribles pruebas de la vida aquí."
+    ],
+    [
+      "3. Sólo en Cristo encontraréis descanso,",
+      "Que aquí nadie nos lo quitará jamás;",
+      "Con Jesús aprenderás a ser manso,",
+      "Y el mundo contemplará su gloria en ti."
+    ]
+  ],
+  "coro": [
+    "Tens descanso encontrado em Jesus Cristo?",
+    "Permaneces pela graça que Ele deu?",
+    "Plena paz, consolação, acharás na oração:",
+    "Deus aí vitória aos santos concedeu."
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=W4RSZidogh4",
-      "title": "Mi fe descansa en Jesús - 08.14.2022"
+      "url": "https://www.youtube.com/watch?v=hUQ_1YZSodE",
+      "title": "Oh! Que descanso em Jesus encontrei - Hinário Aleluia 280"
     },
     {
-      "url": "https://www.youtube.com/watch?v=ooEmYaovpgg",
-      "title": "#345 Mi fe descansa en Jesús"
+      "url": "https://www.youtube.com/watch?v=EhiYoJKuMvg",
+      "title": "Dá teu coração a Jesus - Hinário Adventista 183"
     },
     {
-      "url": "https://www.youtube.com/watch?v=Rc_DTKtPGI0",
-      "title": "Descansa en Jesús |  David Acosta"
+      "url": "https://www.youtube.com/watch?v=LBktRMFhOqI",
+      "title": "I'd Rather Have Jesus - Baptist Hymnal 530"
     }
   ]
 }

@@ -1,28 +1,52 @@
 {
   "title": "154 - Quien escuche la noticia",
-  "author": "",
+  "author": "Philip Paul Bliss",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. Cualquiera que oiga la noticia, vaya y proclame;",
+      "¡Salvación gratis, ven y disfruta!",
+      "¡Oh! Deja que todo el mundo te escuche anunciar:",
+      "“¡Lo que quieras está por venir”!"
+    ],
+    [
+      "2. El que lo quiera ahora, venga y acéptelo;",
+      "Aquí está la puerta abierta, ya podéis entrar;",
+      "Jesús es el camino para llegar al cielo;",
+      "¡Todo lo que quieras está por venir!"
+    ],
+    [
+      "3. ¡Qué promesa tan fiel tienes, pecador!",
+      "¿Quieres tener vida? ¡Ven al Salvador!",
+      "A todos les habla con gran ternura y amor:",
+      "¡Todo lo que quieras está por venir!"
+    ]
+  ],
+  "coro": [
+    "Todo o que quiser, venha receber!",
+    "Possam todos essa boa nova ouvir!",
+    "É o Pai celeste quem convida assim:",
+    "Todo o que quiser é vir!"
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=Ga7m8hDL1us",
-      "title": "Himno Adventista 186 - Hace años escuché"
+      "url": "https://www.youtube.com/watch?v=1A4LrJtneYw",
+      "title": "Hinário Adventista 186 - QUEM OUVIR AS NOVAS"
     },
     {
-      "url": "https://www.youtube.com/watch?v=dciMBBvN-hI",
-      "title": "Himno De Agradecimiento- Dominga Mora Cruz"
+      "url": "https://www.youtube.com/watch?v=oetEa01zhws",
+      "title": "Quero ouvir - Maranata CIA 40"
     },
     {
-      "url": "https://www.youtube.com/watch?v=N07B1XPed-g",
-      "title": "Hace años escuché  | Himno Adventista 186 | Versión Renovada"
+      "url": "https://www.youtube.com/watch?v=uU9qP66iEKE",
+      "title": "Hinário Adventista • Hino 186 - Quem Ouvir as Novas"
     }
   ]
 }

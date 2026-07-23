@@ -1,28 +1,52 @@
 {
   "title": "155 - Quiero ser un recipiente de bendición",
-  "author": "",
+  "author": "Harper G. Smyth",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. Quiero ser vaso de bendición,",
+      "Sí, un vaso elegido por Dios.",
+      "Para que las noticias lleguen a los perdidos,",
+      "Buenas noticias que vienen del cielo."
+    ],
+    [
+      "2. Quiero ser vaso de bendición,",
+      "Cada día quiero hacer,",
+      "Todo aquel que vive culpable,",
+      "El perdón de Jesús para saber."
+    ],
+    [
+      "3. Ser un vaso de bendición",
+      "Siempre debes ser leal,",
+      "Necesitas tener fe y pureza,",
+      "Eso nos viene del poder divino."
+    ]
+  ],
+  "coro": [
+    "Tudo consagro-Te agora Senhor;",
+    "Vou proclamar a mensagem de amor.",
+    "Meu compromisso no Teu serviço",
+    "É ser um vaso de bênção Senhor."
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=WvHkB0jK-ko",
-      "title": "Himno 343 Quiero llegar a ser parte del cielo Nuevo Himnario Adventista"
+      "url": "https://www.youtube.com/watch?v=79XrQTtd7zI",
+      "title": "Hinário Adventista 108 - UM VASO DE BÊNÇÃO"
     },
     {
-      "url": "https://www.youtube.com/watch?v=6hojqgz7jkE",
-      "title": "HA62 | Himno 261 | Tuyo quiero ser"
+      "url": "https://www.youtube.com/watch?v=O9SHLEyUM7U",
+      "title": "Hinário Adventista - 108 Um Vaso de Benção"
     },
     {
-      "url": "https://www.youtube.com/watch?v=OxkjYOfSero",
-      "title": "YO QUIERO SER UN VASO DE HONRA  SEÑOR (Alabanzas A Dios)"
+      "url": "https://www.youtube.com/watch?v=jfmfOYTge1I",
+      "title": "HCC HINO 438 QUERO SER UM VASO DE BENÇAO.wmv"
     }
   ]
 }

@@ -1,28 +1,46 @@
 {
   "title": "129 - Oh Padre Eterno",
-  "author": "",
+  "author": "Katharine L. Bates",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. Oh Padre eterno que habitas en los cielos,",
+      "Nosotros, tus hijos, vinimos a pedirte",
+      "Que Tus benditas manos nos sostengan,",
+      "En nuestras luchas, hoy y en el futuro."
+    ],
+    [
+      "2. No nos imputes nuestros viles pecados.",
+      "Tuyos, seamos, siempre más y más;",
+      "Porque, confiados, somos fuertes.",
+      "En tus brazos divinos paternales."
+    ],
+    [
+      "3. Oh Padre, transforma nuestra naturaleza,",
+      "Ven y enséñanos a hacer el bien.",
+      "En nuestra mente nos da más pureza,",
+      "Más santidad, para Jesús. Amén"
+    ]
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=D3Cit-e2GZI",
-      "title": "Himno 17 Oh Padre, eterno Dios Nuevo himnario Adventista"
+      "url": "https://www.youtube.com/watch?v=i_q5uGiEHuw",
+      "title": "Clamo a Ti, Meu Senhor e Pai - Maranata CIa 11"
     },
     {
-      "url": "https://www.youtube.com/watch?v=YjeqHKCqUKs",
-      "title": "017 - Oh Padre, eterno Dios | | Letra Oficial | 4K30fps"
+      "url": "https://www.youtube.com/watch?v=uVOLGLe2r1w",
+      "title": "Harpa Cristã 612 - Ó Pai Eterno"
     },
     {
-      "url": "https://www.youtube.com/watch?v=6K2ejjB72OY",
-      "title": "Oh Padre, eterno Dios - Himno 17 | Nuevo"
+      "url": "https://www.youtube.com/watch?v=OglYyxIr16c",
+      "title": "612 - Ó PAI ETERNO"
     }
   ]
 }

@@ -1,28 +1,58 @@
 {
   "title": "157 - El velo se rasgó",
-  "author": "",
+  "author": "Autor desconhecido",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. El velo se rasgó, la entrada quedó abierta;",
+      "Tenemos confianza para entrar allí;",
+      "Donde la gloria divina reveló, una vez,",
+      "No pudimos apuntar.",
+      "Por Cristo, entrando, nada tememos allí;",
+      "La gloria brilla sin deslumbrarnos;",
+      "En la luz somos y permanecemos",
+      "Firme, tranquila, sin vacilar más."
+    ],
+    [
+      "2. Contigo allí, Señor, nos encontramos,",
+      "Porque ya nos habéis llevado ante el Santo Padre,",
+      "En cuya gracia aceptados, siempre estamos,",
+      "En cuyo amor tan grande nos atrae",
+      "¡A ti, oh Hijo, en ti, oh amado!",
+      "Y sólo en Ti tenemos aceptación;",
+      "Y quien, ya lavado en sangre,",
+      "Confiado está en Tu salvación."
+    ],
+    [
+      "3. Oh Dios, te alabamos con todo nuestro corazón,",
+      "Porque querías acercarnos,",
+      "Cuando estamos separados de Ti,",
+      "Por tu divina ley, viola,",
+      "Tus santos seguidores, consagrados,",
+      "En la sangre del bendito Salvador,",
+      "Adoración y adoración te presentamos,",
+      "¡Por qué nos llamaste, oh buen Señor!"
+    ]
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=YoOQXfr-k9Q",
-      "title": "Rasgose el Velo ya no más - Cantado y con letra"
+      "url": "https://www.youtube.com/watch?v=WKUgDRHXzG0",
+      "title": "Harpa Cristã - 72 - Rasgou se o Véu - Levi - (com letra)"
     },
     {
-      "url": "https://www.youtube.com/watch?v=tF0x-EdViAU",
-      "title": "274 Rasgóse el Velo"
+      "url": "https://www.youtube.com/watch?v=6PsFiecLT1I",
+      "title": "Hinos e Cânticos - 553 - Rasgou-se o Véu"
     },
     {
-      "url": "https://www.youtube.com/watch?v=_o4lUbzXw4M",
-      "title": "122  Rasgose el Velo"
+      "url": "https://www.youtube.com/watch?v=qAGJAsLY1fc",
+      "title": "Rasgou-se o véu - Hinos e Cânticos 553 (com introdução)"
     }
   ]
 }

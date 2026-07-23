@@ -1,28 +1,52 @@
 {
   "title": "191 - Vengan muchachos",
-  "author": "",
+  "author": "George Frederick Root",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. ¡Venid, hijos, venid a Jesús!",
+      "¡Él te ganó bendiciones en la cruz!",
+      "A los pequeños los guía;",
+      "¡Oh, ven al Salvador!"
+    ],
+    [
+      "2. Ahora, sin demora, es muy conveniente",
+      "Caminando hacia la gloria más allá",
+      "Cristo te llama, quiere tu bien",
+      "Oh, ven al Salvador"
+    ],
+    [
+      "3. Quien ama a los niños, te lo dice Cristo",
+      "Quiere darle la bienvenida a este país.",
+      "Él quiere darte una vida feliz.",
+      "Oh, venid al Salvador."
+    ]
+  ],
+  "coro": [
+    "Que alegria, sem pecado ou mal,",
+    "Reunir-nos todos afinal;",
+    "Juntos na pátria celestial,",
+    "Perto do Salvador"
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=32QSOIZ-174",
-      "title": "HA62 | Himno 516 | Cuando venga Jesucristo"
+      "url": "https://www.youtube.com/watch?v=qFFTPlRjzgY",
+      "title": "Hinário Adventista 458 - VINDE, MENINOS"
     },
     {
-      "url": "https://www.youtube.com/watch?v=WfTh_gT5UJE",
-      "title": "Himno 180 Sí, lo veremos Nuevo Himnario Adventista"
+      "url": "https://www.youtube.com/watch?v=7Jdab6xiHUY",
+      "title": "Vinde, Meninos, Hinario Adventista Nº  458"
     },
     {
-      "url": "https://www.youtube.com/watch?v=FOvDS51XfG0",
-      "title": "Himnos Adventistas para expulsar todos mal de tu vida - Música Cristiana Adventista por la mañana"
+      "url": "https://www.youtube.com/watch?v=gtNdKWRLxLk",
+      "title": "458 VINDE, MENINOS   Hinário Adventista1"
     }
   ]
 }

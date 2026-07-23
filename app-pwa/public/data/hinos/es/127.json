@@ -1,28 +1,52 @@
 {
   "title": "127 - ¡Ay! Qué hermosos himnos",
-  "author": "",
+  "author": "William Orcutt Cushing  George Frederick Root",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. ¡Ah! ¡Qué hermosos himnos cantan allá en los cielos!",
+      "¡El hijo malo ha vuelto a casa!",
+      "Mira a lo lejos el Padre ya abraza",
+      "Este hijo que Él amaba tanto."
+    ],
+    [
+      "2. ¡Ah! ¡Qué hermosos himnos cantan allá en los cielos!",
+      "¡Porque ha convertido a un pecador!",
+      "Alma rebelde, convertida a Dios,",
+      "Dejad el mundo y volved al Padre del amor."
+    ],
+    [
+      "3. ¡Ah! arrepentidos, celebrad hoy,",
+      "¡Como lo hacen los ángeles con fervor!",
+      "Ve rápido, tú, y anuncia,",
+      "Que un pecador fue redimido."
+    ]
+  ],
+  "coro": [
+    "Glória, anjos mil entoam lá!",
+    "Glória, ouvem-se, as harpas já!",
+    "É o santo coro dando o seu louvor,",
+    "Pois se converteu um pecador."
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=TWXAYTyUfn0",
-      "title": "2021 - 60 Hermosos Himnos Traen Alegría Al Nuevo Día - Viejitas Pero Bonitas"
+      "url": "https://www.youtube.com/watch?v=4itUZyxpYJQ",
+      "title": "Jovens Lutadores - Hinos e Cânticos 404"
     },
     {
-      "url": "https://www.youtube.com/watch?v=XwlinEFnLu4",
-      "title": "Música Adventista  - Himnos Clásicos y  Cantos Inéditos"
+      "url": "https://www.youtube.com/watch?v=aThi3Ltffg4",
+      "title": "Tudo entregarei - Salmos e Hinos 335"
     },
     {
-      "url": "https://www.youtube.com/watch?v=7uxsAMxm0PU",
-      "title": "40 Min de Himnos Adventistas Clásicos Arreglados para Descansar en Dios - Sesión Acústica Vol 02"
+      "url": "https://www.youtube.com/watch?v=-KBEkonvIq0",
+      "title": "Não vos Demoreis - Salmos e Hinos 293"
     }
   ]
 }

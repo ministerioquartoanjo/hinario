@@ -1,28 +1,62 @@
 {
   "title": "132 - ¡Ay! Qué gloria",
-  "author": "",
+  "author": "Henry Maxwell Wright",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. Señor mío, que me salvó,",
+      "Tuyo y sólo tuyo soy;",
+      "Con tu sangre me sanaste;",
+      "¡Gloria! ¡Gloria a Ti te doy!"
+    ],
+    [
+      "2. Para obtener tan gran disfrute,",
+      "Trabajé mucho y duro;",
+      "Pero todo esfuerzo es en vano,",
+      "Creo que lo acabo de encontrar."
+    ],
+    [
+      "3. Confiar, confiar,",
+      "Siempre y solo, Jesús, en Ti,",
+      "Tu poder y Tu gracia,",
+      "También podrías salvarme."
+    ],
+    [
+      "4. Consagrados a Tu servicio,",
+      "Quiero que vivas;",
+      "Siempre dando testimonio",
+      "De Tu gracia y Tu poder."
+    ]
+  ],
+  "coro": [
+    "Oh! Que Glória! (2x)",
+    "Gozo em meu coração!",
+    "Eu confio em Jesus,",
+    "E, crendo, tenho salvação!",
+    "Oh! Que Glória! (2x)",
+    "Gozo em meu coração!",
+    "Eu confio em Jesus,",
+    "E em Seu sangue achei perdão"
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=Y5nddM1Ojrs",
-      "title": "HA62 | Himno 141| A Dios sea gloria"
+      "url": "https://www.youtube.com/watch?v=WPOg-YQeUuc",
+      "title": "Glória pra mim - Arautos do Rei (com introdução)"
     },
     {
-      "url": "https://www.youtube.com/watch?v=Dj1UnjnBbrM",
-      "title": "Himno 2 Da Gloria al Señor Nuevo himnario Adventista"
+      "url": "https://www.youtube.com/watch?v=QGSD1SYv3f4",
+      "title": "Em breve estaremos na glória - Maranata CIA 195"
     },
     {
-      "url": "https://www.youtube.com/watch?v=7uxsAMxm0PU",
-      "title": "40 Min de Himnos Adventistas Clásicos Arreglados para Descansar en Dios - Sesión Acústica Vol 02"
+      "url": "https://www.youtube.com/watch?v=ld7eYdsWA_g",
+      "title": "Em breve estaremos na glória - Maranata CIA 195"
     }
   ]
 }

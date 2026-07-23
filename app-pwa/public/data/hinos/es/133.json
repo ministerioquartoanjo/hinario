@@ -1,28 +1,58 @@
 {
   "title": "133 - Donde quiera que vaya, iré",
-  "author": "",
+  "author": "Fanny Jane Crosby John Samuel Norri Estribrilho Ira David Sankey",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. Si tengo a Jesús a mi lado,",
+      "Y ayudado por Él;",
+      "Si es enviado por Él,",
+      "Iré a cualquier parte."
+    ],
+    [
+      "2. Sé mi camino difícil,",
+      "Espinoso o inseguro,",
+      "En sus brazos seguros,",
+      "Donde me envíes iré."
+    ],
+    [
+      "3. Los males pueden rodearme,",
+      "O los peligros me asustan,",
+      "Pero si Cristo me sostiene,",
+      "A donde me envíen iré."
+    ],
+    [
+      "4. Cuando la vida termina,",
+      "La batalla está ganada",
+      "tengo la gloria prometida,",
+      "Iré a mi Señor."
+    ]
+  ],
+  "coro": [
+    "Seguirei a meu bom Mestre!",
+    "Seguirei a meu bom Mestre!",
+    "Seguirei a meu bom Mestre!",
+    "Onde quer que for irei!"
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=KiRfILApqNM",
-      "title": "HA62 | Himno 265 | Yo te seguiré"
+      "url": "https://www.youtube.com/watch?v=OXMee9gU2Pg",
+      "title": "Para onde for, irei - Cantor Cristão 308"
     },
     {
-      "url": "https://www.youtube.com/watch?v=yer9lSKAMDA",
-      "title": "Himno Adventista 485 - Unidos en verdad"
+      "url": "https://www.youtube.com/watch?v=PSmmgC4pPZo",
+      "title": "484 HCC Onde quer que for, irei"
     },
     {
-      "url": "https://www.youtube.com/watch?v=WOx31RkfVbA",
-      "title": "Himno Adventista 488 - Al andar con Jesús"
+      "url": "https://www.youtube.com/watch?v=2Gn2ijBtFrU",
+      "title": "Seguirei ao Meu Bom Mestre (Onde Quer Que For Irei) | Louvor - PIBFortaleza"
     }
   ]
 }

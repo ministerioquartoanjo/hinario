@@ -1,28 +1,51 @@
 {
   "title": "178 - Estoy muy agradecido por recordarlo",
-  "author": "",
+  "author": "Phoebe Cary",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. Muy agradecido de recordar",
+      "que todos los dias estoy",
+      "Más cerca del hogar celestial",
+      "¿Dónde voy a vivir?"
+    ],
+    [
+      "2. Pronto me iré",
+      "A donde no hay dolor.",
+      "Delicias en el cielo disfrutaré",
+      "En ese hogar de amor."
+    ],
+    [
+      "3. Oh Maestro, qué leal",
+      "¡Siempre estaré aquí!",
+      "Porque quiero estar con los mil salvados",
+      "Contigo estando allí."
+    ]
+  ],
+  "coro": [
+    "Cada vez mais, perto do lar,",
+    "Perto do meu eterno lar",
+    "Em que morar eu vou."
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=WIgHotdemZg",
-      "title": "FELIPE GARIBO - Himno de Agradecimiento"
+      "url": "https://www.youtube.com/watch?v=8A0dsuOgLyg",
+      "title": "Novo Hinário Adventista • Hino 490 • Tão Grato Me é Lembrar • (Lyrics)"
     },
     {
-      "url": "https://www.youtube.com/watch?v=HLiGs3uaDhw",
-      "title": "Himno Adventista 303 SUBLIME GRACIA - Nuevo Himnario Adventista"
+      "url": "https://www.youtube.com/watch?v=HTaIrYizek8",
+      "title": "Novo Hinário Adventista • Hino 490 • Tão Grato Me é Lembrar • Lyrics"
     },
     {
-      "url": "https://www.youtube.com/watch?v=-erm2ED0iUI",
-      "title": "Gracias, Dios - Himno 367 - Nuevo 🎶"
+      "url": "https://www.youtube.com/watch?v=CKAAoDLmnSw",
+      "title": "Hinário Adventista 442 - TÃO GRATO ME É LEMBRAR"
     }
   ]
 }

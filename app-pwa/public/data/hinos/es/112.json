@@ -1,28 +1,58 @@
 {
   "title": "112 - Buen nombre, dulce fe",
-  "author": "",
+  "author": "Lydia Baxter William Howard Doane",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. Santo y venerable nombre",
+      "Jesús es tu amado.",
+      "Rey de reyes, Señor eterno,",
+      "Lo aclamarás en el cielo."
+    ],
+    [
+      "2. ¡Ah! que nombre tan precioso,",
+      "Porque alegra el corazón,",
+      "Siendo aceptado por Jesús,",
+      "Tendrás tu perdón."
+    ],
+    [
+      "3. Este nombre lleva siempre,",
+      "Para defenderte bien.",
+      "Él es un arma a tu alcance,",
+      "Cuando el mal se te aparece."
+    ],
+    [
+      "4. Lleva tu nombre contigo,",
+      "De Jesús el Salvador.",
+      "Este nombre da consuelo,",
+      "Sea cual sea el lugar."
+    ]
+  ],
+  "coro": [
+    "Nome bom, doce a fé,",
+    "A esperança do porvir!",
+    "Nome bom, doce a fé,",
+    "A esperança do porvir!"
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=fvtPd5sU4hc",
-      "title": "Himno 127 Cristo, nombre dulce Nuevo Himnario Adventista"
+      "url": "https://www.youtube.com/watch?v=FO8oUTEO_T8",
+      "title": "Nome bom, doce à fé - HCC 174 - (Eri jr bass)"
     },
     {
-      "url": "https://www.youtube.com/watch?v=AS9FPS6hudU",
-      "title": "Himno 128 ¡Tu nombre es dulce, buen Jesús! Nuevo Himnario Adventista"
+      "url": "https://www.youtube.com/watch?v=ol-pFzHphIQ",
+      "title": "Novo Hinário Adventista • Hino 331• Nome Precioso • (Lyrics)"
     },
     {
-      "url": "https://www.youtube.com/watch?v=FlS9geiNGAo",
-      "title": "Himno 12 - ¡Tu nombre es dulce, buen Jesús! | Antiguo"
+      "url": "https://www.youtube.com/watch?v=i_1znegpxLI",
+      "title": "Novo Hinário Adventista • Hino  34 • Precioso Nome • (Lyrics)"
     }
   ]
 }

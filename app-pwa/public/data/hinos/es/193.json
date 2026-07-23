@@ -1,28 +1,68 @@
 {
   "title": "193 - Victoria en Cristo",
-  "author": "",
+  "author": "Eugene Monroe Barlett",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. Escuché la hermosa historia.",
+      "¡Que Jesús bajó de la gloria!",
+      "Y en el Gólgota finalmente murió",
+      "Para cuantos como yo.",
+      "Escuché sus gemidos,",
+      "De su sangre y de los redimidos;",
+      "Y al final, arrepentido, me postré;",
+      "Encontré la victoria en Él."
+    ],
+    [
+      "2. Escuche que Él sana,",
+      "Sí, a todo aquel que le busca;",
+      "Que el cojo hizo caminar, entonces,",
+      "Y le dio la vista al ciego.",
+      "Recé, grité: “Maestro mío,",
+      "Ven a restaurar mi vida”.",
+      "Y entonces Cristo me respondió,",
+      "Y me dio la victoria."
+    ],
+    [
+      "3. Escuché sobre la gloria.",
+      "Eso vendrá después de la victoria,",
+      "Por los redimidos por Jesús,",
+      "En la luz resplandeciente;",
+      "De ángeles allí cantando,",
+      "Y mansiones ya me esperan;",
+      "Será glorioso llegar allí,",
+      "Y luego poder cantar:"
+    ]
+  ],
+  "coro": [
+    "Vitória em Cristo",
+    "Eterna vitória!",
+    "Buscou-me, salvou-me,",
+    "Na cruz por mim morreu!",
+    "Que paz e alegria,",
+    "Raiou um novo dia!",
+    "Vitória Jesus me deu,",
+    "No sangue que verteu!"
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
+    {
+      "url": "https://www.youtube.com/watch?v=wQFi-aVjuo0",
+      "title": "Novo Hinário Adventista • Hino 71 • Vitória em Cristo • (Lyrics)"
+    },
     {
       "url": "https://www.youtube.com/watch?v=if3RAOGUS3c",
       "title": "Hinário Adventista 437 - VITÓRIA EM CRISTO"
     },
     {
-      "url": "https://www.youtube.com/watch?v=OjmA-XlCfmA",
-      "title": "Vem a Cristo! - Hinário Evangélico 217"
-    },
-    {
-      "url": "https://www.youtube.com/watch?v=ug2mPpht16w",
-      "title": "Cristo Quiere Limpios Corazones - Himnos de Gloria 10"
+      "url": "https://www.youtube.com/watch?v=6T6m4hH2vPY",
+      "title": "Vitória em Cristo"
     }
   ]
 }

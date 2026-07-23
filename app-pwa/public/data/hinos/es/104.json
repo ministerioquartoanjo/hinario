@@ -1,28 +1,44 @@
 {
   "title": "104 - Mi Mejor Momento",
-  "author": "",
+  "author": "Jairo Pablo A. de Carvalho",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "Mi mejor momento fue cuando con Cristo",
+      "Tuve un encuentro que nunca olvidaré.",
+      "De la vida cansada en el mundo perdido",
+      "Entonces tu dulce voz escuché",
+      "Con tanto amor me llamó",
+      "Amor que nunca merecí",
+      "Cuando me lo dijo",
+      "Ven a Mí si estás cansado",
+      "¡Yo te aliviaré!",
+      "Con tanto amor me atrajiste",
+      "Con tanto amor que no pude resistir",
+      "Llorando mi vida le di",
+      "Mi mejor momento fue cuando lo encontré.",
+      "mi mejor momento"
+    ]
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
-  "introducao": 0,
+  "introducao": 30,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=EYc1RiXSeJM",
-      "title": "¡Dulces momentos! - Himno 100 | Nuevo"
+      "url": "https://www.youtube.com/watch?v=64HPc-gDPHU",
+      "title": "momento Come, Let us Worship and Bow Down - The Celebration Hymnal 227"
     },
     {
-      "url": "https://www.youtube.com/watch?v=7hkHCL0RKtI",
-      "title": "Mi Mejor Momento es Ahora"
+      "url": "https://www.youtube.com/watch?v=NE9o224Up3U",
+      "title": "Sei que o amigo melhor - Hinário Aleluia 403"
     },
     {
-      "url": "https://www.youtube.com/watch?v=LX8nrBrcIV0",
-      "title": "Mi mejor momento"
+      "url": "https://www.youtube.com/watch?v=uXyi09WRNV0",
+      "title": "Jesus é melhor - Hinário Aleluia 328"
     }
   ]
 }

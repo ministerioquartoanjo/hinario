@@ -1,28 +1,46 @@
 {
   "title": "22 - Anhelo un lugar de amor",
-  "author": "",
+  "author": "John G. Whittier",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. ¡Anhelo la paz, un lugar de amor!",
+      "Extraño este hogar feliz;",
+      "Levántate con túnicas de brillantez",
+      "Por siempre, buen país."
+    ],
+    [
+      "2. Los pecados viles nunca vendrán",
+      "Penetrando los portales de luz;",
+      "Será en el centro del país.",
+      "El trono eterno de Jesús."
+    ],
+    [
+      "3. Allí podrás disfrutar de una paz infinita,",
+      "Viviendo allí están mis sueños;",
+      "Y el dulce éxtasis que me trae,",
+      "Se vuelve real, si Dios quiere."
+    ]
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=Eyquiek7M1s",
-      "title": "Himno Adventista 254 - Anhelo ser limpio"
+      "url": "https://www.youtube.com/watch?v=1e-ZHih4ARE",
+      "title": "Harpa Cristã - 624 - Anseio um Lugar de Amor - Levi - com letra"
     },
     {
-      "url": "https://www.youtube.com/watch?v=oCMCT8aKoCw",
-      "title": "Himno 386 - Hay un lugar de paz | Nuevo"
+      "url": "https://www.youtube.com/watch?v=gDslm1itFtI",
+      "title": "Hino 624 da Harpa cristã.Anseio um lugar de amor. letra e cifras"
     },
     {
-      "url": "https://www.youtube.com/watch?v=wVtlk1MIopc",
-      "title": "Anhelo conocerte   Espiritu Santo  canto adventista"
+      "url": "https://www.youtube.com/watch?v=frBtYiSd560",
+      "title": "Harpa Cristã 624 - Anseios Um Lugar De Amor"
     }
   ]
 }

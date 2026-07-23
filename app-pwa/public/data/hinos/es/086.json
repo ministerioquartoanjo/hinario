@@ -1,28 +1,46 @@
 {
   "title": "86 - Gracia Infinita",
-  "author": "",
+  "author": "Melodia Tradicional Cubana",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. Según tu infinita gracia,",
+      "Oh Padre, perdona mi transgresión.",
+      "Hazme sentir tu amor infinito,",
+      "Dame alegría en tu salvación."
+    ],
+    [
+      "2. Mi corazón te entrego, contrito,",
+      "Perdón te pido, mi Señor y Rey.",
+      "Según Tu infinita gracia,",
+      "Misericordia, sí, la lograré."
+    ]
+  ],
+  "coro": [
+    "Mas uma vez eu sinto o meu pecado,",
+    "Que é contra Ti, ó Pai de amor;",
+    "Concede, ó Deus, a mim, misericórdia,",
+    "E entoarei a Ti o meu louvor."
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=uOAx70NRlaM",
-      "title": "Gracia Infinita"
+      "url": "https://www.youtube.com/watch?v=NJnk8JysxVE",
+      "title": "Chuvas de graça - Harpa Cristã 01"
     },
     {
-      "url": "https://www.youtube.com/watch?v=5I7xtWyKlVg",
-      "title": "Gracia Infinita, Tan Singular - Heraldos del Rey"
+      "url": "https://www.youtube.com/watch?v=kQbEAjwxHXU",
+      "title": "Novo Hinário Adventista • Hino 117 • Infinita Graça • (Lyrics)"
     },
     {
-      "url": "https://www.youtube.com/watch?v=r1MLhvyzw3M",
-      "title": "Gracia Infinita"
+      "url": "https://www.youtube.com/watch?v=EBzFwrKqWFQ",
+      "title": "Infinita Graça - 192 Hinário Adventista (PLAYBACK)"
     }
   ]
 }

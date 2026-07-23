@@ -1,28 +1,58 @@
 {
   "title": "55 - He aquí multitudes",
-  "author": "",
+  "author": "James McGranahan",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. He aquí multitudes, en tan espantosa oscuridad,",
+      "¡Viven perdidos, sin el Salvador!",
+      "¿Quién les dará la noticia proclamando",
+      "¿Que Dios, en Cristo, salva al pecador?"
+    ],
+    [
+      "2. Puertas abiertas, he aquí para todos;",
+      "Épocas de cosecha, ahora aprovecha.",
+      "Siervos de Cristo, unid vuestras fuerzas,",
+      "De personas libres de esclavitud."
+    ],
+    [
+      "3. \"¡Oh, ven a mí!\" La voz divina clama.",
+      "Ve y clama en el nombre de Jesús,",
+      "Que para salvarnos del castigo eterno,",
+      "Su sangre fue derramada por nosotros en la cruz."
+    ],
+    [
+      "4. Oh Dios, apresura el día glorioso",
+      "En el que todos los redimidos se unirán",
+      "Y en un gran coro, santo alegre,",
+      "Ellos te darán gloria por los siglos de los siglos."
+    ]
+  ],
+  "coro": [
+    "“Todo o poder o Pai Me deu,",
+    "Na Terra, bem assim no céu;",
+    "Ide, pois, anunciar o evangelho,",
+    "E sempre Eu estou convosco"
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=PJUPb0pEOVc",
-      "title": "Himno 499 - Jesús anduvo por aquí | Nuevo"
+      "url": "https://www.youtube.com/watch?v=-KBEkonvIq0",
+      "title": "Não vos Demoreis - Salmos e Hinos 293"
     },
     {
-      "url": "https://www.youtube.com/watch?v=T2QsVVPudss",
-      "title": "Hay un mundo feliz más allá - Himno 185 - Himnario Adventista"
+      "url": "https://www.youtube.com/watch?v=nrxD24u8loE",
+      "title": "Eis os milhões (com introdução)"
     },
     {
-      "url": "https://www.youtube.com/watch?v=JCuJeKuZPAg",
-      "title": "Himno 185 I Al Cielo Voy I Himnario Adventista"
+      "url": "https://www.youtube.com/watch?v=cA65dubFK_g",
+      "title": "Eis-me aqui, Senhor, em Teu altar - Maranata CIA 51"
     }
   ]
 }

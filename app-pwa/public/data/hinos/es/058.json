@@ -1,28 +1,64 @@
 {
   "title": "58 - Quiero hacer lo que Tú quieras, Señor",
-  "author": "",
+  "author": "Mary Browwn, estrofe 1 Charles Edwin Prior, estrofes 2 e 3 Carrie Esther Rounsefell",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. No siempre irá a donde quiero",
+      "Que el Maestro me enviará.",
+      "La cosecha es tan grande, lista para ser cosechada,",
+      "Del cual me encargaré de trabajar.",
+      "Y si por caminos que nunca seguí,",
+      "He escuchado tu llamado;",
+      "Feliz, ciertamente seré guiado por Ti,",
+      "Cumple Tu voluntad."
+    ],
+    [
+      "2. Hay tantas palabras de amor y perdón.",
+      "Que puedo llevar a los demás,",
+      "Porque en los caminos de los vicios hay",
+      "Perdido que debo ir a buscar.",
+      "Señor, si con tu presencia real",
+      "Eres para fortalecer,",
+      "Daré el mensaje de un servidor leal.",
+      "Con celo, fervor y placer."
+    ],
+    [
+      "3. Quiero encontrar un lugar oscuro",
+      "En Tu cosecha, Señor.",
+      "Mientras viva, trabajaré",
+      "Con fe, coraje y amor.",
+      "Sé que de ti vendrá mi sustento,",
+      "Y no hay nada que deba temer",
+      "Tu voluntad, sí la mía será;",
+      "Un fiel servidor quiero ser"
+    ]
+  ],
+  "coro": [
+    "Eu quero fazer o que queres, Senhor;",
+    "Por Ti sustentado serei.",
+    "E quero dizer o que queres, Senhor;",
+    "E assim o meu dever cumprirei."
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=tqpEiJbVk2k",
-      "title": "Himno Adventista 524 - Traían en silencio presentes al Señor"
+      "url": "https://www.youtube.com/watch?v=ecYhdRJtRBs",
+      "title": "Eu quero fazer o que queres, Senhor - HCC 482"
     },
     {
-      "url": "https://www.youtube.com/watch?v=wwT6NslUwRY",
-      "title": "Haz lo que quieras de mi Señor...Himno con letra"
+      "url": "https://www.youtube.com/watch?v=6yikroeafvQ",
+      "title": "Quero ser santo para o Senhor -  Maranata CIA 165"
     },
     {
-      "url": "https://www.youtube.com/watch?v=LM_oYKtphxQ",
-      "title": "YO QUIERO LO QUE QUIERAS TÚ   SM"
+      "url": "https://www.youtube.com/watch?v=1Q1VaugoJdQ",
+      "title": "HCC/Instrumental/Hino 482/Eu quero fazer o que queres Senhor"
     }
   ]
 }

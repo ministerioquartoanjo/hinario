@@ -1,28 +1,52 @@
 {
   "title": "119 - ¡Oh cristianos, adelante!",
-  "author": "",
+  "author": "Sabine Baring Gould Arthur Seymour Sullivan",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. ¡Oh cristianos, adelante! ¡Sin miedo marchando!",
+      "Por la cruz de Cristo, luchad ardientemente.",
+      "Cristo nuestro Maestro, guía el batallón;",
+      "En el fragor de la guerra, alzad Su estandarte."
+    ],
+    [
+      "2. ¡Oh cristianos, avanzad contra Satanás!",
+      "Siguiendo a Jesús, príncipe de la paz.",
+      "¡El enemigo nunca prevalecerá!",
+      "¡Con las santas hostias Cristo vencerá!"
+    ],
+    [
+      "3. Perecieron reinos, tronos y naciones,",
+      "Pero la Iglesia vence, incluso en las aflicciones.",
+      "Marchemos, pues, hacia adelante, con fervor,",
+      "Hacia la gloria, nuestro hogar eterno."
+    ]
+  ],
+  "coro": [
+    "Ó cristãos, avante!",
+    "Marchar, marchar, marchar!",
+    "Pela cruz de Cristo,",
+    "Com ardor lutar!"
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=ESJ-K5tzp-Q",
-      "title": "Himno 520 - ¡Adelante! manda el Señor | Nuevo"
+      "url": "https://www.youtube.com/watch?v=SVKEBhaF8V4",
+      "title": "Vinde, cristãos, cantai  - HCC 235"
     },
     {
-      "url": "https://www.youtube.com/watch?v=MDVhujGifHY",
-      "title": "Firmes e Adelante - Himnos de Gloria 15"
+      "url": "https://www.youtube.com/watch?v=g8Q6diIrEy4",
+      "title": "Avante, avante, ó crentes"
     },
     {
-      "url": "https://www.youtube.com/watch?v=--1kPBb5x2I",
-      "title": "HA62 | Himno 378 | ¡Firmes y adelante!"
+      "url": "https://www.youtube.com/watch?v=TlRUarQxMMM",
+      "title": "Mocidade cristã, eia avante! - Hinário Aleluia 422"
     }
   ]
 }

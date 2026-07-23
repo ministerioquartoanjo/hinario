@@ -1,28 +1,52 @@
 {
   "title": "121 - Oh Dios Eterno, ven a concédeme",
-  "author": "",
+  "author": "John Ellerton Edward John Hopkins",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. Oh Dios eterno, ven y concédeme",
+      "La plenitud del Consolador.",
+      "Desde los altos cielos concédeme tu poder,",
+      "Que me renueva y me llena de fervor"
+    ],
+    [
+      "2. Ven y hazlo en mi habitación.",
+      "Un templo santo anhelo ser, Señor.",
+      "Quiero seguir tu dirección,",
+      "Viviendo en el Espíritu renovado."
+    ],
+    [
+      "3. Dame valor para testificar",
+      "En mi pensar, hablar y actuar.",
+      "Que tenga una vida santa y ejemplar,",
+      "También lleno de fervor y poder."
+    ],
+    [
+      "4. Oh Dios, aumenta mi compasión",
+      "Por los perdidos, sin amor, sin luz.",
+      "Que muestre a todos tu salvación,",
+      "Aquí está mi oración, en el nombre de Jesús. Amén."
+    ]
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=N34NAHH2aR8",
-      "title": "Antiguo... Himno # 297 Oh Jesus Señor divino"
+      "url": "https://www.youtube.com/watch?v=gl4fc7ro98c",
+      "title": "hcc/instrumental/hino 383,/Deus Eterno,Vem Me Conceder"
     },
     {
-      "url": "https://www.youtube.com/watch?v=5JEtGhdG1QU",
-      "title": "Antiguo 384 Voy al cielo"
+      "url": "https://www.youtube.com/watch?v=biHxfF3UUAM",
+      "title": "Hino do HCC n° 383 - Ó Deus eterno, vem me conceder - Violão Instrumental"
     },
     {
-      "url": "https://www.youtube.com/watch?v=whj-WePs2Ho",
-      "title": "Antiguo #297 - ¡Oh Jesús, Señor Divino!"
+      "url": "https://www.youtube.com/watch?v=EA-XxiGBskA",
+      "title": "HCC HINO 383 Ó DEUS ETERNO,VEM ME CONCEDER.wmv"
     }
   ]
 }

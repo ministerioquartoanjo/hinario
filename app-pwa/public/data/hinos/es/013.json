@@ -1,28 +1,66 @@
 {
   "title": "13 - Despierta, despierta",
-  "author": "",
+  "author": "Henry Maxwell Wright",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. He aquí que marchamos hacia esa buena patria.",
+      "Donde el creyente (sí, es Cristo quien lo dice);",
+      "Con tu Salvador siempre allí feliz,",
+      "Ve con Él a descansar.",
+      "Trabajemos, pues, con celo y vigor,",
+      "Constreñido por su inmenso amor;",
+      "Trabajemos por nuestro Salvador;",
+      "¡He aquí que la vida se acabará!"
+    ],
+    [
+      "2. Aquí con nosotros está nuestro distinguido Capitán.",
+      "Que nos garantiza la salvación eterna.",
+      "He aquí la santa fe, el pabellón invicto",
+      "vamos, trabajemos",
+      "¡Aquí vamos! No tenemos nada que temer",
+      "A través de Jesús, siempre venceremos",
+      "Trabajemos, hasta el amanecer.",
+      "Y el trabajo aquí termina"
+    ],
+    [
+      "3. Vestidos con la coraza de Jesús",
+      "Como sus siervos e hijos, sí, de la luz.",
+      "Gloriarse en Cristo y su cruz",
+      "vamos, trabajemos",
+      "A los perdidos, busquemos con amor",
+      "A los desesperados, declararemos",
+      "Que Jesús está dispuesto a salvar a todos.",
+      "Oh si, trabajemos"
+    ]
+  ],
+  "coro": [
+    "Acordai! Acordai! Despertai! Despertai!",
+    "E cantai, sim cantai! O Senhor não tardará.",
+    "Eis marchamos para aquele bom País",
+    "Onde o crente (sim é Cristo quem o diz);",
+    "Com seu Salvador prá sempre ali feliz,",
+    "Vai com Ele descansar."
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=bcETGcCoNoI",
-      "title": "Anáhuac Despierta — Citlāli Anáhuac (Letra Oficial)"
+      "url": "https://www.youtube.com/watch?v=Y2hJgwn_kE8",
+      "title": "Harpa Cristã - 63 - Acordai, acordai - Levi - com letra"
     },
     {
-      "url": "https://www.youtube.com/watch?v=zrBoc3hwf1U",
-      "title": "Antonio Orozco - Despierta (Lyric Video)"
+      "url": "https://www.youtube.com/watch?v=vwTPdFrLL-A",
+      "title": "🎵 Acordai, Despertai! – Hino 63 da Harpa Cristã | Gospel Groove Alegre | Com Grupo Vocal Feminino"
     },
     {
-      "url": "https://www.youtube.com/watch?v=aXFQUbjkGm4",
-      "title": "¡DESPIERTA! ¡NO ES REAL! // letra"
+      "url": "https://www.youtube.com/watch?v=czOPT-1zDIw",
+      "title": "Harpa Cristã 063 - Acordai! Acordai"
     }
   ]
 }

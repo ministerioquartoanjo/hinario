@@ -1,28 +1,60 @@
 {
   "title": "131 - Oh Señor, nos regocijamos",
-  "author": "",
+  "author": "Leônidas Philadelpho da Siva William Lewis Rayner McCluer",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. Oh Señor, nos alegramos,",
+      "Aquí obedecerte,",
+      "Porque tú fuiste quien envió,",
+      "Recibir el bautismo.",
+      "Ven ahora y bendice,",
+      "¡Los que vienen a alabarte así!"
+    ],
+    [
+      "2. Tal celebración revela,",
+      "Obediencia a Ti Señor;",
+      "Es una figura que recuerda,",
+      "Tu poder renovador.",
+      "Ven a que se una a la iglesia,",
+      "¿Quién quiere que Tú, Señor, sigas?"
+    ],
+    [
+      "3. Muerte al mundo que declaramos,",
+      "Al pecado y su poder,",
+      "Y contigo a nuestro lado,",
+      "Por supuesto que ganaremos.",
+      "Oh Señor, ven y consagra",
+      "¡A los que vienen a bautizarse!"
+    ],
+    [
+      "4. Muertos para el mundo estamos,",
+      "Deseamos servirle,",
+      "Vivos en Jesús queremos,",
+      "Tu imagen refleja.",
+      "Ven, Señor, aquí para hacer,",
+      "Tu gracia en nosotros crece. Amén."
+    ]
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=e6r1kYZJ1hg",
-      "title": "Novo Hinário Adventista • Hino 5 • Jubilosos Te Adoramos  • (Lyrics)"
+      "url": "https://www.youtube.com/watch?v=CuEvE-LA_ac",
+      "title": "O mundo é Teu, Senhor"
     },
     {
-      "url": "https://www.youtube.com/watch?v=DyltrM-08xk",
-      "title": "NUEVO 047 Por La Mañana"
+      "url": "https://www.youtube.com/watch?v=eyjlEa4qXuI",
+      "title": "Teu és fiel, Senhor"
     },
     {
-      "url": "https://www.youtube.com/watch?v=kkUloNPe7Ac",
-      "title": "1 al 225 subtitulado 2"
+      "url": "https://www.youtube.com/watch?v=0OWfcxzR2oE",
+      "title": "Aviva-nos, Senhor - Cantor Cristão 171"
     }
   ]
 }

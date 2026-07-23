@@ -1,28 +1,46 @@
 {
   "title": "160 - Sábado",
-  "author": "",
+  "author": "Eduard Eyth U.B. Oyen",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. ¡Qué felices están nuestros corazones!",
+      "Libre de cuidados, luchas y aflicciones.",
+      "Te alabamos, nuestro Creador,",
+      "En este día santo, el día del Señor."
+    ],
+    [
+      "2. Nos sentimos atraídos por Tu amor,",
+      "En estas horas santas, llenas de dulzura.",
+      "Este amor habla bien a nuestro corazón,",
+      "Sobre la gracia eterna, nuestra redención."
+    ],
+    [
+      "3. Sé amable con nuestro corazón,",
+      "Tu día sagrado, Tu creación.",
+      "Echad atrás nuestros viles pecados;",
+      "¡Danos en este día Tu exaltada paz!"
+    ]
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=YjOih0XmvOE",
-      "title": "Himno Adventista 547 - Sábado es"
+      "url": "https://www.youtube.com/watch?v=diMJD80zr30",
+      "title": "Novo Hinário Adventista • Hino 298 • Deus Fez o Sábado Para Mim • (Lyrics)"
     },
     {
-      "url": "https://www.youtube.com/watch?v=ltS1-DhKshY",
-      "title": "547 Nuevo - Sábado es"
+      "url": "https://www.youtube.com/watch?v=mdZdVbcfvS8",
+      "title": "Hinário Adventista 530 - O SÁBADO CHEGOU"
     },
     {
-      "url": "https://www.youtube.com/watch?v=gKWgMF2LqNE",
-      "title": "542 Nuevo - Amo tu sábado"
+      "url": "https://www.youtube.com/watch?v=pN1jZiLY9z0",
+      "title": "Hinário Adventista 531 - DO SANTO SÁBADO ÉS SENHOR"
     }
   ]
 }

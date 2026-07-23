@@ -1,28 +1,52 @@
 {
   "title": "64 - Fe persistente",
-  "author": "",
+  "author": "William Hiley Bathurst Justus H. Nelson",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. Anhelo una fe fuerte",
+      "Ante el terror;",
+      "Que, con calma, no retrocederá.",
+      "Del mundo aterrador."
+    ],
+    [
+      "2. La fe que no me hace quejarme",
+      "En el dolor de la corrección,",
+      "Pero cuanto más arde el fuego,",
+      "Más firme el corazón."
+    ],
+    [
+      "3. La fe que siempre brilla más",
+      "En el huracán negro,",
+      "Quien siente la paz en peligro,",
+      "Audaz en la oscuridad."
+    ],
+    [
+      "4. Oh Dios, dame tal fe,",
+      "¡Lo que venga!",
+      "Entonces en la pelea lo demostraré.",
+      "Placer celestial."
+    ]
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=ZS77ivlu2vM",
-      "title": "Fé persistente - Harpa Cristã 594 (com introdução)"
+      "url": "https://www.youtube.com/watch?v=weN7LaPdkLU",
+      "title": "Harpa Cristã - 594 - Fé Persistente - Levi - com letra"
     },
     {
-      "url": "https://www.youtube.com/watch?v=NBI_MxrWoK0",
-      "title": "594-  FÉ  PERSISTENTE  -  BAIXO"
+      "url": "https://www.youtube.com/watch?v=gbYg25390jY",
+      "title": "FÉ PERSISTENTE - 594. HARPA CRISTÃ - (CIFRADO) - CARLOS JOSÉ"
     },
     {
-      "url": "https://www.youtube.com/watch?v=l2C9VLLpAGM",
-      "title": "594- FÉ PERSISTENTE -  4  NAIPES"
+      "url": "https://www.youtube.com/watch?v=miBPo7WJK_A",
+      "title": "Harpa Cristã 594 - Fé Persistente"
     }
   ]
 }

@@ -1,28 +1,58 @@
 {
   "title": "73 - Gloria a Mi Jesús",
-  "author": "",
+  "author": "Henry Maxwell Wright",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. El Salvador sufrió por mí,",
+      "¡Gloria! ¡Gloria a mi Jesús!",
+      "¡Alabado sea conmigo, el Redentor!",
+      "¡Gloria! ¡Gloria a mi Jesús!"
+    ],
+    [
+      "2. Él cargó con mis pecados,",
+      "¡Gloria! ¡Gloria a mi Jesús!",
+      "Y en la cruz me rescató.",
+      "¡Gloria! ¡Gloria a mi Jesús!"
+    ],
+    [
+      "3. Sé que estoy perdonado,",
+      "¡Gloria! ¡Gloria a mi Jesús!",
+      "Y, por supuesto, ¡me voy al cielo!",
+      "¡Gloria! ¡Gloria a mi Jesús!"
+    ],
+    [
+      "4. Y cuando aquí termine la guerra,",
+      "¡Gloria! ¡Gloria a mi Jesús!",
+      "En el cielo mejor cantaré,",
+      "¡Gloria! ¡Gloria a mi Jesús!"
+    ]
+  ],
+  "coro": [
+    "Jesus! Jesus! Ó Salvador!",
+    "É doce o nome do Senhor.",
+    "Abrasa-me com santo amor,",
+    "Glória! Glória! Ao meu Senhor."
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=SDOQRLWaZcM",
-      "title": "Himno, ¡Gloria a mi Jesús! ♪(Instrumental con Letra)♪"
+      "url": "https://www.youtube.com/watch?v=EhiYoJKuMvg",
+      "title": "Dá teu coração a Jesus - Hinário Adventista 183"
     },
     {
-      "url": "https://www.youtube.com/watch?v=GfNcR3c5oG8",
-      "title": "054 Doy Gloria A Jesús PISTA"
+      "url": "https://www.youtube.com/watch?v=LBktRMFhOqI",
+      "title": "I'd Rather Have Jesus - Baptist Hymnal 530"
     },
     {
-      "url": "https://www.youtube.com/watch?v=8rTOoXDpB9Y",
-      "title": "Himnos de Gloria Nº 238 - Gloria a mi Jesús"
+      "url": "https://www.youtube.com/watch?v=eSaRb9fvSrw",
+      "title": "Em Jesus confiar - Cantor Cristão 301"
     }
   ]
 }

@@ -1,28 +1,67 @@
 {
   "title": "77 - Hay tales canciones en el cielo",
-  "author": "",
+  "author": "Johnson Oatman, Jr John Robson Sydney",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. Hay canciones así en el cielo,",
+      "¡Eso aquí nadie lo ha oído nunca!",
+      "Siempre los ángeles cantan alabanzas",
+      "Al Cordero del Señor. Arpas siempre en armonía,",
+      "Siempre la voz en tonos claros.",
+      "Ojalá fuéramos así,",
+      "¡Sirviendo al Rey y Salvador!"
+    ],
+    [
+      "2. Aunque no soy un ángel,",
+      "Allá en el cielo cantaré.",
+      "Me uniré al gran coro",
+      "De los redimidos del Señor",
+      "Alabaré a mi Salvador",
+      "Quien murió en la cruz por mí,",
+      "¿Quién pagó por mi culpa?",
+      "Y la liberación me dio."
+    ],
+    [
+      "3. Este canto de victoria,",
+      "Sí, los ángeles escucharán.",
+      "Es como una voz de muchas aguas,",
+      "Voz de una gran multitud.",
+      "El universo entero se detiene,",
+      "Con asombro y admiración,",
+      "Antes del cántico de los redimidos",
+      "Al Señor de la redención"
+    ]
+  ],
+  "coro": [
+    "Santo! Santo!",
+    "É o canto de anjos bons.",
+    "Eu hei de um dia unir",
+    "A voz a tais aclamações!",
+    "Mas quando eu lhes contar a história",
+    "Desta redenção: Mudez!",
+    "Não podem compreender",
+    "Tão grande salvação!"
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=T7H-VepXINE",
-      "title": "Himnos Adventistas Viejitas Pero Bonitas - Mejores Del Septimo Dia"
+      "url": "https://www.youtube.com/watch?v=r7Qi7G09qsg",
+      "title": "Hinário Adventista-80 há tais Cantos Lá no Céu"
     },
     {
-      "url": "https://www.youtube.com/watch?v=l7eQjw9QzLg",
-      "title": "Antiguo #189 - Danos El Fuego"
+      "url": "https://www.youtube.com/watch?v=eHRlnMg_a9o",
+      "title": "Hino IASD 80 - Há Tais Cantos Lá no Céu (Playback)"
     },
     {
-      "url": "https://www.youtube.com/watch?v=lQHcfddwIqY",
-      "title": "Himno Adventista 226 - Buscad primero"
+      "url": "https://www.youtube.com/watch?v=uStvGjBC4Z0",
+      "title": "Há Tais Cantos Lá No Céu (Instrumental)"
     }
   ]
 }

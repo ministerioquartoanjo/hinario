@@ -1,28 +1,52 @@
 {
   "title": "176 - Bajo sus alas",
-  "author": "",
+  "author": "William Orclt Cushing Ira David Sankey",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. Bajo tus alas estoy descansando,",
+      "Incluso esa noche tengo confianza;",
+      "Bajo tus alas siempre estaré cobijado,",
+      "He sido redimido y ya soy su hijo."
+    ],
+    [
+      "2. Bajo tus alas encuentro refugio,",
+      "Mi corazón podrá descansar.",
+      "Y si este mundo no ayuda,",
+      "Bajo sus alas encontraré la paz."
+    ],
+    [
+      "3. ¡Bajo Sus alas preciosa promesa!",
+      "Siempre puedo esconderme del mal.",
+      "Salvados en Jesús y confiados en la gracia,",
+      "Nada en el mundo puede sacudirme."
+    ]
+  ],
+  "coro": [
+    "Descansarei, descansarei",
+    "Sob Suas asas benditas,",
+    "Ao Seu abrigo, pois, gozarei",
+    "Paz e alegria infinitas."
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=WUJlP0p_PaY",
-      "title": "HA62 | Himno 248 | Bajo sus alas"
+      "url": "https://www.youtube.com/watch?v=pheGcnEq8p8",
+      "title": "Novo Hinário Adventista • Hino 193 • Sob Suas Asas • (Lyrics)"
     },
     {
-      "url": "https://www.youtube.com/watch?v=Jknif-Gw9GU",
-      "title": "411 Nuevo - Bajo sus alas"
+      "url": "https://www.youtube.com/watch?v=lfTUEAX04ys",
+      "title": "Hinário Adventista 357 - SOB SUAS ASAS"
     },
     {
-      "url": "https://www.youtube.com/watch?v=_YpxPrjQfzs",
-      "title": "Leobardo Herrera \"Bajo Sus Alas\" (Musica Adventista)"
+      "url": "https://www.youtube.com/watch?v=wFikWC7mPic",
+      "title": "Hino 193 - Sob Suas Asas"
     }
   ]
 }

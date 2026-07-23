@@ -1,28 +1,68 @@
 {
   "title": "46 - ¡Cristo Prá Mim!",
-  "author": "",
+  "author": "Henry Maxwell Wright",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. ¡Oh qué descanso en Jesús he encontrado!",
+      "¡Cristo para mí! ¡Cristo para mí!",
+      "¡Oh qué tesoros infinitos encontré!",
+      "¡Cristo para mí! ¡Cristo para mí!",
+      "“Otros eligen el mundo por sí mismos:",
+      "Buscad aquí riquezas, deleites;",
+      "¡Yo elegiré, oh Jesús, siempre a Ti!",
+      "¡Cristo para mí! ¡Cristo para mí!"
+    ],
+    [
+      "2. Ya sea en aflicción, enfermedad o dolor:",
+      "¡Cristo para mí! ¡Cristo para mí!",
+      "Ya sea en salud, fuerza o vigor;",
+      "¡Cristo para mí! ¡Cristo para mí!",
+      "Siempre a mi lado para ayudarme,",
+      "Con Su amor, sí, y con Su poder;",
+      "En cada trance dispuesto a ayudarme;",
+      "¡Cristo para mí! ¡Cristo para mí!"
+    ],
+    [
+      "3. En el amargo día de la persecución:",
+      "¡Cristo para mí! ¡Cristo para mí!",
+      "En duras pruebas y tentaciones:",
+      "¡Cristo para mí! ¡Cristo para mí!",
+      "Él, el pecado y el mundo ganaron.",
+      "Cuando, para mí, en el Calvario murió;",
+      "Y estaba seguro de la victoria;",
+      "¡Cristo para mí! ¡Cristo para mí!"
+    ],
+    [
+      "4. Y si entro en el valle de la muerte,",
+      "¡Cristo para mí! ¡Cristo para mí!",
+      "Cuando ante mi Dios me encuentro:",
+      "¡Cristo para mí! ¡Cristo para mí!",
+      "Sólo en tu sangre confío, Señor,",
+      "¡Sólo en Tu amor siempre inmutable!",
+      "Volveré a cantar, Salvador:",
+      "¡Cristo para mí! ¡Cristo para mí!"
+    ]
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=Ha9ikc4i8X0",
-      "title": "37 CRISTO PRA MIM"
-    },
-    {
-      "url": "https://www.youtube.com/watch?v=rECwxab6yx0",
-      "title": "CRISTO PRA MIM - 37 H.C."
+      "url": "https://www.youtube.com/watch?v=jMiYaS-CNzs",
+      "title": "Harpa Cristã - 37 - Cristo P'ra Mim - Levi - com letra"
     },
     {
       "url": "https://www.youtube.com/watch?v=pZ6TMGjMlIk",
       "title": "CRISTO PRA MIM  -  HARPA CRISTÃ 37"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=ZrFVGpjPMWQ",
+      "title": "CRISTO PRA MIM [Hino da Harpa Cristã]"
     }
   ]
 }

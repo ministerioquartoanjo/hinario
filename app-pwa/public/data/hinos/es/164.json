@@ -1,28 +1,52 @@
 {
   "title": "164 - Satisfechos con Cristo",
-  "author": "",
+  "author": "Autor desconhecido",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. ¡Ah! \"Estoy satisfecho con Cristo,",
+      "Porque Él salvó mi alma;",
+      "Y en el árbol, sufriendo,",
+      "Su amor de sangre se reveló."
+    ],
+    [
+      "2. ¡Ah! 'Estoy satisfecho con Cristo,",
+      "De estar triste pasé a ser feliz,",
+      "Al escuchar su santo evangelio,",
+      "Y creer en lo que Él me dice."
+    ],
+    [
+      "3. ¡Ah! 'Estoy satisfecho con Cristo,",
+      "Y sé que volverás pronto;",
+      "Vendrá con poder glorioso,",
+      "Para que Su pueblo pueda tomar."
+    ]
+  ],
+  "coro": [
+    "Oh! 'stou satisfeito com Cristo,",
+    "Confesso-O por meu Salvador:",
+    "Embora de nada ser digno,",
+    "Desfruto do Seu grande amor."
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=LjWVDHTWofI",
-      "title": "Himno 274 Experiencia de Cristo    Satisfechos Con El"
+      "url": "https://www.youtube.com/watch?v=GGkBCCYkJjg",
+      "title": "Hinário Adventista 224 - SATISFEITO ESTOU COM CRISTO"
     },
     {
-      "url": "https://www.youtube.com/watch?v=lchTqhuaG50",
-      "title": "2021 - Por Sanidad y Liberación en nombre de Jesucristo - Himnos Adventista"
+      "url": "https://www.youtube.com/watch?v=J0X378HlcvA",
+      "title": "Satisfeito Estou Com Cristo | Hinário Adventista, 224"
     },
     {
-      "url": "https://www.youtube.com/watch?v=lQh8Yeuqh8E",
-      "title": "HIMNO TITULADO SATISFECHO ESTOY CON CRISTO"
+      "url": "https://www.youtube.com/watch?v=YYURj8AfTt8",
+      "title": "Hinário Adventista • Hino 224 - Satisfeito Estou com Cristo"
     }
   ]
 }

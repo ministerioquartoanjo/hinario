@@ -1,28 +1,46 @@
 {
   "title": "1 - La Cena del Señor",
-  "author": "",
+  "author": "Philip Paul Bliss",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. Como hermanos, vayamos a la fiesta del Salvador;",
+      "Esta es la Santa Cena, memoria del amor eterno.",
+      "Los emblemas que tenemos hoy simbolizan la redención,",
+      "Porque el sacrificio de Cristo limpia el mal y trae el perdón."
+    ],
+    [
+      "2. Nuestro malvado y vil pecado, trajo dolor y perdición,",
+      "Pero el profundo amor de Dios nos liberó de la esclavitud.",
+      "Cuando pensamos que esta Cena recuerda la muerte de Jesús,",
+      "Sí, vemos nuestra culpa; Murió por nosotros en la cruz."
+    ],
+    [
+      "3. Todo, finalmente, lo grosero y lo triste, se deshace en esta cruz;",
+      "Para nosotros sólo hay alegría en Dios, que perdurará.",
+      "Damos gracias y alabanzas, homenajes al Señor;",
+      "Tenemos fe en Su venida, Su amor real y eterno."
+    ]
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=xJb4Fm-roeo",
-      "title": "Himno 583 - La Cena de la Comunión | Nuevo"
+      "url": "https://www.youtube.com/watch?v=CuEvE-LA_ac",
+      "title": "O mundo é Teu, Senhor"
     },
     {
-      "url": "https://www.youtube.com/watch?v=hBay25cvNhc",
-      "title": "para Jóvenes 351 - La Cena del Señor"
+      "url": "https://www.youtube.com/watch?v=eyjlEa4qXuI",
+      "title": "Teu és fiel, Senhor"
     },
     {
-      "url": "https://www.youtube.com/watch?v=Chl4ziMbhtc",
-      "title": "La Cena del Señor, Heme Aquí."
+      "url": "https://www.youtube.com/watch?v=0OWfcxzR2oE",
+      "title": "Aviva-nos, Senhor - Cantor Cristão 171"
     }
   ]
 }

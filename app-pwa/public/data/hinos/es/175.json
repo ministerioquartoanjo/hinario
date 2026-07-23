@@ -1,28 +1,58 @@
 {
   "title": "175 - Sí, Cristo me ama",
-  "author": "",
+  "author": "Anna Barlett Warner William Batchelder Bradbury",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. Cristo me ama,",
+      "Ciertamente lo creo;",
+      "Por mí murió,",
+      "Él está vivo para mí en el cielo."
+    ],
+    [
+      "2. Sí, Jesús me ama,",
+      "Y se convirtió en mi Salvador;",
+      "Hoy todavía hay placer,",
+      "De los niños reciben."
+    ],
+    [
+      "3. Al disfrutar de su rico amor,",
+      "Amaré a mi Salvador,",
+      "Y quiero mostrar aquí,",
+      "Tu amor tan único."
+    ],
+    [
+      "4. Mi Jesús está conmigo,",
+      "Y después de todo me llevará,",
+      "Al hermoso cielo de luz,",
+      "Porque él me rescató en la cruz."
+    ]
+  ],
+  "coro": [
+    "Sim, Cristo me ama,",
+    "Sim, Cristo me ama,",
+    "Sim, Cristo me ama,",
+    "A Bíblia assim me diz."
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
+      "url": "https://www.youtube.com/watch?v=70R4mbhB-y4",
+      "title": "Novo Hinário Adventista • Hino 426 • Cristo Ama as Criancinhas • (Lyrics)"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=7lR9ngghlhs",
+      "title": "Novo Hinário Adventista • Hino 523 • Sim, Cristo Me Ama • (Lyrics) • Infantil"
+    },
+    {
       "url": "https://www.youtube.com/watch?v=aoaCs9kh35A",
       "title": "Hinário Adventista 457 - SIM, CRISTO ME AMA"
-    },
-    {
-      "url": "https://www.youtube.com/watch?v=OjmA-XlCfmA",
-      "title": "Vem a Cristo! - Hinário Evangélico 217"
-    },
-    {
-      "url": "https://www.youtube.com/watch?v=ug2mPpht16w",
-      "title": "Cristo Quiere Limpios Corazones - Himnos de Gloria 10"
     }
   ]
 }

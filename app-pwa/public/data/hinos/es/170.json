@@ -1,28 +1,52 @@
 {
   "title": "170 - Siempre alegre",
-  "author": "",
+  "author": "Fanny Jane Croby Robert Lowry",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. Alégrate de corazón,",
+      "Siempre rebosante de elogios,",
+      "Por nuestro Padre celestial,",
+      "Muéstranos tu amor."
+    ],
+    [
+      "2. Tenemos protección en las peleas,",
+      "Dios nos toma de la mano;",
+      "Tu gracia eterna,",
+      "Danos fuerza en la aflicción."
+    ],
+    [
+      "3. Él siempre guiará a los justos,",
+      "Con amor, en Su luz;",
+      "Juntos serviremos a todos,",
+      "Al amado y buen Jesús."
+    ]
+  ],
+  "coro": [
+    "Sempre alegre, sempre alegre,",
+    "É o viver do bom cristão;",
+    "Oh! que regozijo pleno,",
+    "Brota-lhe da salvação!"
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
+      "url": "https://www.youtube.com/watch?v=rL9g1Vr1jWs",
+      "title": "Novo Hinário Adventista • Hino 355   Sempre Alegre • (Lyrics)"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=qY07MGsAkZ0",
+      "title": "Novo Hinário Adventista • Hino 172 • Ando Sempre Alegre • (Lyrics)"
+    },
+    {
       "url": "https://www.youtube.com/watch?v=-WgBM3a_y7E",
       "title": "Hinário Adventista 219 - SEMPRE ALEGRE"
-    },
-    {
-      "url": "https://www.youtube.com/watch?v=32CRuOJew3o",
-      "title": "Eu alegre vou na Sua luz - Cantor Cristão 403"
-    },
-    {
-      "url": "https://www.youtube.com/watch?v=cZE2dsDRDHw",
-      "title": "Canta Alegrementem ó Filha de Sião - Maranata CIA 109"
     }
   ]
 }

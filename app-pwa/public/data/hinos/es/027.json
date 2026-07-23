@@ -1,28 +1,51 @@
 {
   "title": "27 - ¡Vivifícanos Señor!",
-  "author": "",
+  "author": "Albert Midlane William Howard Doane",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. ¡Vivifícanos Señor!",
+      "¡Oh, danos tu poder!",
+      "De santidad, fe y amor,",
+      "Cubre nuestro ser."
+    ],
+    [
+      "2. ¡Despiértanos Señor!",
+      "Oh, fluyen las ricas bendiciones divinas,",
+      "¡Primicias del futuro!"
+    ],
+    [
+      "3. ¡Renuévanos, Señor!",
+      "Inspira más fervor,",
+      "Aumenta nuestra compasión",
+      "Por cada pecador."
+    ]
+  ],
+  "coro": [
+    "Aviva-nos Senhor!",
+    "Eis nossa petição.",
+    "Acende o fogo divinal",
+    "Em cada coração."
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=0TvKEF5HMn0",
-      "title": "¡Vivifícanos Señor! | Hna. Dunia Dubón"
+      "url": "https://www.youtube.com/watch?v=0OWfcxzR2oE",
+      "title": "Aviva-nos, Senhor - Cantor Cristão 171"
     },
     {
-      "url": "https://www.youtube.com/watch?v=UqZSG021snM",
-      "title": "Himno: Avivanos Señor"
+      "url": "https://www.youtube.com/watch?v=CuEvE-LA_ac",
+      "title": "O mundo é Teu, Senhor"
     },
     {
-      "url": "https://www.youtube.com/watch?v=OJOc4eqN2ks",
-      "title": "Avívanos Señor - Himno pista"
+      "url": "https://www.youtube.com/watch?v=eyjlEa4qXuI",
+      "title": "Teu és fiel, Senhor"
     }
   ]
 }

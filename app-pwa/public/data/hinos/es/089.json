@@ -1,28 +1,58 @@
 {
   "title": "89 - Jerusalén Excelsa",
-  "author": "",
+  "author": "Bernard de Cluny Alexander Ewing",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. Jerusalén exaltada,",
+      "Nos gloriamos en ti,",
+      "esperanza afable",
+      "De cada creyente aquí.",
+      "Radiante es tu puerta,",
+      "Eso ya se ve a lo lejos,",
+      "donde esta la entrada",
+      "¿En qué cree Cristo?"
+    ],
+    [
+      "2. La cruz y su gloria",
+      "Y nuestro Redentor",
+      "En ti son exaltados",
+      "Con himnos de alabanza.",
+      "Que alegría me inspiras,",
+      "Habitación eterna,",
+      "Porque sé que en ti termina",
+      "¡La peregrinación!"
+    ],
+    [
+      "3. ¡Oh, dulce y amado hogar!",
+      "Tu serás mi descanso,",
+      "cuando he heredado",
+      "tu bien y tu paz",
+      "Oh corazón que gime,",
+      "En el dolor que te sacia,",
+      "Con Dios que redime,",
+      "Feliz entonces serás."
+    ]
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=n7ggJ2QtzeE",
-      "title": "Antiguo #497 - Jerusalén, La Excelsa"
+      "url": "https://www.youtube.com/watch?v=Cuqm6-x-gNk",
+      "title": "Jerusalém excelsa! - Hinário Aleluia 437"
     },
     {
-      "url": "https://www.youtube.com/watch?v=EuXDrm9fhYU",
-      "title": "497 (1962) - Jerusalén, la excelsa"
+      "url": "https://www.youtube.com/watch?v=ij6m_zvq1Uc",
+      "title": "Jerusalém anseio ver - Maranata CIA 188"
     },
     {
-      "url": "https://www.youtube.com/watch?v=520_7bpU6eY",
-      "title": "HA62 | Himno 497 | Jerusalén, la excelsa"
+      "url": "https://www.youtube.com/watch?v=IDRuXSJNjz8",
+      "title": "Na nova Jerusalém - Maranata CIA 194"
     }
   ]
 }

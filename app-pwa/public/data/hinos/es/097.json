@@ -1,28 +1,48 @@
 {
   "title": "97 - Hermoso país",
-  "author": "",
+  "author": "Melodia Tradicional Irlandesa",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. Hay un País en las tierras más allá del río,",
+      "Llena de flores, placer y luz;",
+      "Está destinado a almas rescatadas;",
+      "No habrá más peleas ni cruces.",
+      "Porque allí es donde ya no entra la muerte,",
+      "No más pecado te quitará el brillo.",
+      "Jesús, el Rey de estas hermosas mansiones",
+      "Los salvos, todos, abrazarán con gusto."
+    ],
+    [
+      "2. ¡Hermoso país! veo la suave brisa",
+      "Acaricia prados y jardines,",
+      "Y acunar las palmas plateadas",
+      "De los valles fragantes de jazmines.",
+      "Y cuando el sol se pone en el horizonte,",
+      "Creo que veo esta casa en sueños;",
+      "Veo amigos ya resucitados,",
+      "Y todos alabamos a nuestro buen Jesús."
+    ]
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
+    {
+      "url": "https://www.youtube.com/watch?v=hrmrpeF-G84",
+      "title": "Eu ouvi de um país - Hinário Aleluia 433"
+    },
     {
       "url": "https://www.youtube.com/watch?v=OV4K75Rb-OI",
       "title": "Novo Hinário Adventista • Hino 498 • Lindo País • (Lyrics)"
     },
     {
-      "url": "https://www.youtube.com/watch?v=9cccAGY2Yzw",
-      "title": "HERMOSO PAÍS - Coral Adventista SHEKINÁH"
-    },
-    {
-      "url": "https://www.youtube.com/watch?v=e1CO3gTXxuU",
-      "title": "Himno IEP - Cantaré, Cantaré Del Hermoso País [Himnario IEP 065]"
+      "url": "https://www.youtube.com/watch?v=C8uyD7iMqS8",
+      "title": "Novo Hinário Adventista • Hino 498 • Lindo País • Playback"
     }
   ]
 }

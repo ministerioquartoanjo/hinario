@@ -1,28 +1,52 @@
 {
   "title": "147 - Cuando Dios llame allí estaré",
-  "author": "",
+  "author": "James Milton Black",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. Cuando Cristo toca la trompeta en el cielo,",
+      "Cuando amanece el día majestuoso;",
+      "Y los redimidos de esta Tierra, mi Jesús, vendrán a buscar",
+      "Y si llamas, estaré allí."
+    ],
+    [
+      "2. En ese día glorioso cuando el creyente resucita",
+      "Y participar de la gloria de Jesús.",
+      "Cuando los salvados triunfantes lo saluden en el futuro",
+      "Y si llamas ahí estaré"
+    ],
+    [
+      "3. Entonces viviré para Cristo, hasta que acabe el día,",
+      "Hablaré aquí de su amor por nosotros.",
+      "Cuando termine la lucha y cese el trabajo aquí",
+      "¡Y si llamas, estaré allí!"
+    ]
+  ],
+  "coro": [
+    "Quando Deus fizer chamada,",
+    "Quando Deus fizer chamada,",
+    "Quando Deus fizer chamada,",
+    "Quando Deus fizer chamada lá estarei!"
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
-  "introducao": 0,
+  "introducao": 10,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=y9uGnlxd4Lw",
-      "title": "HA62 | Himno 176 | Cuando suene la trompeta"
+      "url": "https://www.youtube.com/watch?v=aMEZCGynCn0",
+      "title": "Novo Hinário Adventista • Hino 439 • Quando Deus Fizer Chamada • (Lyrics)"
     },
     {
-      "url": "https://www.youtube.com/watch?v=gfPdre5tVpE",
-      "title": "Himno 216 Dios al pródigo llama Nuevo Himnario Adventista"
+      "url": "https://www.youtube.com/watch?v=e2vB-Yn3MR8",
+      "title": "Hinário Adventista - 127 Quando Deus Fizer Chamada"
     },
     {
-      "url": "https://www.youtube.com/watch?v=oQL73CHJ_WI",
-      "title": "HA62 | Himno 518 | Cuando leo en la Biblia"
+      "url": "https://www.youtube.com/watch?v=Nozsy1Ywpbk",
+      "title": "Quando Deus Fizer Chamada"
     }
   ]
 }

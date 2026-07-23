@@ -1,28 +1,52 @@
 {
   "title": "81 - Hay un río cristalino",
-  "author": "",
+  "author": "Robert Lowry George Henry Day",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. Junto al río cristalino,",
+      "En la ciudad del Señor,",
+      "Nacido del trono divino,",
+      "Puro y lleno de resplandor."
+    ],
+    [
+      "2. A lo largo de las orillas de este río",
+      "Los redimidos vivirán,",
+      "Siempre Cristo ahí sirviendo",
+      "Con total devoción."
+    ],
+    [
+      "3.Al lado de ese hermoso río",
+      "Como un cristal siempre brillando,",
+      "Bueno unidos estaremos",
+      "Para que nuestro Dios alabe."
+    ]
+  ],
+  "coro": [
+    "Breve iremos ver o rio,",
+    "Finda a peregrinação,",
+    "E louvor ao Deus eterno",
+    "Nossos lábios cantarão"
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=J8JNhbAcD4Q",
-      "title": "DE UN RÍO CRISTALINO (Antiguo cántico evangélico 3 x 4)"
+      "url": "https://www.youtube.com/watch?v=OjmA-XlCfmA",
+      "title": "Vem a Cristo! - Hinário Evangélico 217"
     },
     {
-      "url": "https://www.youtube.com/watch?v=r4p63F9GHgs",
-      "title": "HAY UN RÍO CRISTALINO🌿🎶ESTA ALABANZA TRAE ALEGRÍA Y COMUNIÓN PERFECTA CON CRISTO."
+      "url": "https://www.youtube.com/watch?v=EhiYoJKuMvg",
+      "title": "Dá teu coração a Jesus - Hinário Adventista 183"
     },
     {
-      "url": "https://www.youtube.com/watch?v=q-rhhRl8EFs",
-      "title": "Hay un río- Alabanza cristiana"
+      "url": "https://www.youtube.com/watch?v=vnBjhIHTUtg",
+      "title": "O celeste porvir - Hinário Evangélico 449"
     }
   ]
 }

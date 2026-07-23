@@ -1,28 +1,64 @@
 {
   "title": "53 - Dios cuidará de ti",
-  "author": "",
+  "author": "Autor desconhecido W.S. Martin",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. No te desanimes, Dios proveerá;",
+      "Dios cuidará de ti.",
+      "Bajo sus alas os acogerá;",
+      "Dios cuidará de ti."
+    ],
+    [
+      "2. Si tu corazón palpita de dolor,",
+      "Dios cuidará de ti.",
+      "Ya has probado tu tierno amor,",
+      "Dios cuidará de ti."
+    ],
+    [
+      "3. En los desalientos durante las pruebas,",
+      "Dios cuidará de ti.",
+      "Acuérdate de él en las tentaciones,",
+      "Dios cuidará de ti."
+    ],
+    [
+      "4. Todo lo que le pidas, él te lo hará;",
+      "Dios cuidará de ti.",
+      "Lo que necesitas no lo negarás,",
+      "Dios cuidará de ti."
+    ],
+    [
+      "5. Seas lo que seas, no tengas miedo, ¡ven!",
+      "Dios cuidará de ti.",
+      "¡Él te entiende y te ama bien!",
+      "Dios te cuidará"
+    ]
+  ],
+  "coro": [
+    "Deus cuidará de ti;",
+    "No teu viver, no teu sofrer.",
+    "Seu olhar te acompanhará;",
+    "Deus velará por ti."
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=h5UbyVwqgLM",
-      "title": "Dios Cuidará De Ti   Himno   Inglés  Adventista"
+      "url": "https://www.youtube.com/watch?v=4G5b_q0RBeI",
+      "title": "A Deus Supremo - Hinário Aleluia 42"
     },
     {
-      "url": "https://www.youtube.com/watch?v=_my8gUDpzP0",
-      "title": "Dios te cuidará"
+      "url": "https://www.youtube.com/watch?v=jrMtiF8k-a4",
+      "title": "Fala, Deus"
     },
     {
-      "url": "https://www.youtube.com/watch?v=BHAZ78VwyIA",
-      "title": "339. Dios cuidará de ti"
+      "url": "https://www.youtube.com/watch?v=4zNt-J5Cqvk",
+      "title": "Na Pátria Celeste de Deus - Hinário Aleluia 440"
     }
   ]
 }

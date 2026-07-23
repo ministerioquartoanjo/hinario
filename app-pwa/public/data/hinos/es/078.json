@@ -1,28 +1,58 @@
 {
   "title": "78 - Hay trabajo listo",
-  "author": "",
+  "author": "Henry Maxwell Wright",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. Hay trabajo listo para ti, cristiano;",
+      "Eso exige toda vuestra devoción;",
+      "Venid gozosamente a obedecer a Cristo,",
+      "¡Porque sólo tú, oh creyente, puedes hacerlo!"
+    ],
+    [
+      "2. Para cada creyente el Maestro ha preparado",
+      "Un trabajo seguro, cuando lo rescató,",
+      "La obra a la que Jesús os llama aquí.",
+      "¿Cómo se hará si no es por ti?"
+    ],
+    [
+      "3. Podrás ser humilde, pero si eres de Dios,",
+      "Se le ve desde lo alto de los cielos.",
+      "Y el esfuerzo realizado no será en vano",
+      "Si tienes a Cristo, ¡plena aprobación!"
+    ],
+    [
+      "4. ¡Cuántos se pierden sin salvación!",
+      "¡Cuántos necesitan consuelo!",
+      "Cómo Cristo los ama, les hace comprender,",
+      "¡Porque sólo tú, oh creyente, puedes hacerlo!"
+    ]
+  ],
+  "coro": [
+    "Por Jesus a trabalhar,",
+    "Prontamente, fielmente, trabalhar!",
+    "Em Servi-Lo, que prazer!",
+    "E só tu, ó crente, o poderás fazer."
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=dRRcXPBxY2Y",
-      "title": "Trabajo En Un Parque De Diversiones, Hay una Lista De Reglas Extrañas -Historias terror Reddit"
+      "url": "https://www.youtube.com/watch?v=n7HHqH-7KFo",
+      "title": "Estou pronto - Cantor Cristão 298"
     },
     {
-      "url": "https://www.youtube.com/watch?v=CVLOHZbIMJg",
-      "title": "HA62 | Himno 450 | Hay lugar en la amplia viña"
+      "url": "https://www.youtube.com/watch?v=HJACrxoi4L8",
+      "title": "Mãos ao trabalho - Cantor Cristão 419"
     },
     {
-      "url": "https://www.youtube.com/watch?v=DGNMz1CYmeo",
-      "title": "HA62 | Himno 359 | ¡Trabajad! ¡Trabajad!"
+      "url": "https://www.youtube.com/watch?v=3BMGhl5KvLg",
+      "title": "Mãos ao trabalho, jovens - Hinário Aleluia 421"
     }
   ]
 }

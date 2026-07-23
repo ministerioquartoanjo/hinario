@@ -1,28 +1,48 @@
 {
   "title": "16 - ¡Aleluya! Ya creo",
-  "author": "",
+  "author": "Henry Maxwell Wright",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. Dios ha prometido dar la salvación,",
+      "Quien confía en su Hijo Jesús."
+    ],
+    [
+      "2. Tal fue su amor, que me reemplazó,",
+      "¡Y en el Calvario mi alma fue redimida!"
+    ],
+    [
+      "3. Nunca podré dudar de este amor;",
+      "Sólo puedo postrarme a Sus pies."
+    ],
+    [
+      "4. Y cuando vea a mi buen Rey en gloria,",
+      "Con todos los santos allí cantaré."
+    ]
+  ],
+  "coro": [
+    "Aleluia! Já creio em Cristo Jesus.",
+    "E salvo sou pelo sangue da cruz."
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=tE7tHx1lokY",
-      "title": "Reik, Manuel Turizo - Aleluya (Video Oficial)"
+      "url": "https://www.youtube.com/watch?v=KpVECORh2-A",
+      "title": "Jesus, agora eu bem sei - Hinário Aleluia 327"
     },
     {
-      "url": "https://www.youtube.com/watch?v=Pz2Xk3L9zNk",
-      "title": "Haleluya (En Vivo)"
+      "url": "https://www.youtube.com/watch?v=4G5b_q0RBeI",
+      "title": "A Deus Supremo - Hinário Aleluia 42"
     },
     {
-      "url": "https://www.youtube.com/watch?v=WHCdCfv-vbc",
-      "title": "Himno 68 Todo lo que ha creado Dios Nuevo himnario Adventista"
+      "url": "https://www.youtube.com/watch?v=MjYJcZnuTjk",
+      "title": "Vou à Pátria - Hinário Aleluia 450"
     }
   ]
 }

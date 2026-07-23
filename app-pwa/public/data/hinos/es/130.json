@@ -1,28 +1,58 @@
 {
   "title": "130 - El secreto de vivir",
-  "author": "",
+  "author": "Henry Maxwell Wright John J. Richardson",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. Cuando el mal me rodea",
+      "Cuando ruge la tormenta,",
+      "En Jesús confiaré,",
+      "Porque nunca fallará."
+    ],
+    [
+      "2. Cuando el dolor o la angustia",
+      "perturba mi corazón,",
+      "Tienes que confiar,",
+      "Y entregárselo todo a Jesús."
+    ],
+    [
+      "3. Cuando me siento débil,",
+      "Cuando el mundo me oprime,",
+      "Y pesa mi cruz,",
+      "'¡Sólo cree!' - Dice Jesús."
+    ],
+    [
+      "4. Ya sea en la oscuridad o en la luz,",
+      "Siempre cerca de Jesús,",
+      "Cerrar y listo para guardar",
+      "Quien sólo confía."
+    ]
+  ],
+  "coro": [
+    "O segredo do viver,",
+    "O segredo do vencer,",
+    "É em Cristo confiar,",
+    "Pois jamais irá falhar."
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=f3CC0x6ClYQ",
-      "title": "HA62 | Himno 393 | Aprendí el gran secreto"
+      "url": "https://www.youtube.com/watch?v=aVVMK6RoKqs",
+      "title": "Quero viver para sempre com Jesus - Maranata CIA 182"
     },
     {
-      "url": "https://www.youtube.com/watch?v=ErCLkwoRYD8",
-      "title": "🔴¡NUEVO! Que Mi Vida Entera Esté con Letra - Himno 248 | Himnos Adventistas Cantados 2025"
+      "url": "https://www.youtube.com/watch?v=-45OfX2vBbQ",
+      "title": "Quero viver para sempre com Jesus - Maranata CIA 182"
     },
     {
-      "url": "https://www.youtube.com/watch?v=WPZ0kNoGUhI",
-      "title": "Himno 235 La razón de vivir Nuevo Himnario Adventista"
+      "url": "https://www.youtube.com/watch?v=2O3rDJsVP6I",
+      "title": "O Segredo do Viver"
     }
   ]
 }

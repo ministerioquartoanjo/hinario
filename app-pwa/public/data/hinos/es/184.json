@@ -1,28 +1,49 @@
 {
   "title": "184 - Toma, oh Dios, mi corazón",
-  "author": "",
+  "author": "Frances Ridley Havegal Henri Abraham Cesar Malan",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. Toma, oh Dios, en tu mano,",
+      "¿Cómo está mi corazón?",
+      "Incluso sin ningún valor,",
+      "Hazlo puro, santo y bueno,",
+      "Finalmente lleno de Tu amor."
+    ],
+    [
+      "2. Toma mis manos, oh Dios,",
+      "Mis pies y mis labios;",
+      "Y a favor de mis hermanos",
+      "Actúa siempre con amor,",
+      "Con mucho gusto dondequiera que vayas"
+    ],
+    [
+      "3. Cuando Jesús finalmente regresa",
+      "Con poder, en gloria y luz.",
+      "Toma, oh Dios, mi pobre ser",
+      "Siempre vive",
+      "Con Jesús en el dulce hogar"
+    ]
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=eM31dy1BLy8",
-      "title": "Tú Dejaste Tu Trono - Himno 258 con Letra | Ven a Mi Corazón Oh Cristo | Himnos Adventistas 2025"
+      "url": "https://www.youtube.com/watch?v=X6AAFwBkfEM",
+      "title": "Novo Hinário Adventista • Hino 301 • Toma, Ó Deus, Meu Coração • (Lyrics)"
     },
     {
-      "url": "https://www.youtube.com/watch?v=nEmsboj3OXQ",
-      "title": "Himno 230 Abre tu corazón Nuevo Himnario Adventista"
+      "url": "https://www.youtube.com/watch?v=-_o4SaENbl0",
+      "title": "Hinário Adventista 298 - TOMA, Ó DEUS, MEU CORAÇÃO"
     },
     {
-      "url": "https://www.youtube.com/watch?v=pBTS2He2boQ",
-      "title": "Ha62 | Himno 267 | Mi espíritu, alma y cuerpo"
+      "url": "https://www.youtube.com/watch?v=MtygBgJuXYQ",
+      "title": "Hino 301 - Toma, Ó Deus, Meu Coração"
     }
   ]
 }

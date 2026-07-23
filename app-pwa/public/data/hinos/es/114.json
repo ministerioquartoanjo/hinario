@@ -1,28 +1,47 @@
 {
   "title": "114 - Lo veremos",
-  "author": "",
+  "author": "Mariane Scriven",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. Lo veremos regresar en gloria;",
+      "¡Contemplaremos al Rey Salvador!",
+      "Con muchos ángeles lo alabaremos,",
+      "Cantando a coro: ¡Hosanna! ¡Amén!"
+    ],
+    [
+      "2. Lo veremos en la mañana gloriosa;",
+      "Contemplaremos su resplandor.",
+      "Cantaremos himnos de victoria,",
+      "¡Cantando a coro, Hosanna! ¡Amén!"
+    ],
+    [
+      "3. Lo veremos en un brillo radiante;",
+      "Nuestra alabanza se elevará al cielo",
+      "Con santos ángeles lo exaltaremos,",
+      "¡Cantando a coro, Hosanna! ¡Amén!",
+      "¡Hosana! ¡Amén!"
+    ]
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=1lnTqlZl9gY",
-      "title": "180 - Sí, lo veremos | | Letra Oficial | 4K60fps"
+      "url": "https://www.youtube.com/watch?v=wHq55SJU4ZE",
+      "title": "Novo Hinário Adventista • Hino 448 • Nós o Veremos • (Lyrics)"
     },
     {
-      "url": "https://www.youtube.com/watch?v=WfTh_gT5UJE",
-      "title": "Himno 180 Sí, lo veremos Nuevo Himnario Adventista"
+      "url": "https://www.youtube.com/watch?v=mq71-54fyVc",
+      "title": "Novo Hinário Adventista • Hino 448 • Nós o Veremos • Playback"
     },
     {
-      "url": "https://www.youtube.com/watch?v=_GM8MrzQYe4",
-      "title": "HIMNO 328 - NOS VEREMOS JUNTO AL RÍO | Nuevo"
+      "url": "https://www.youtube.com/watch?v=vQLJijevhd0",
+      "title": "Hinário Adventista - 147 Nós o Veremos"
     }
   ]
 }

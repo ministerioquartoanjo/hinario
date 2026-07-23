@@ -1,28 +1,59 @@
 {
   "title": "12 - Encontré a Jesús, Mi Salvador",
-  "author": "",
+  "author": "Autor desconhecido",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. Encontré a Jesús, Mi Salvador,",
+      "De amor fiel y veraz;",
+      "No dejaré de alabarlo,",
+      "Porque tengo salvación y paz."
+    ],
+    [
+      "2. Ven y mantén tu mano fuerte sobre mí,",
+      "De todo vicio y maldad;",
+      "Superaré toda tentación;",
+      "Sostén mi brazo divino."
+    ],
+    [
+      "3. Jesús me encontró tan afligido y en problemas,",
+      "Sin tener consuelo;",
+      "Me llamó a sí mismo con verdadero amor;",
+      "Llegué y encontré la salvación."
+    ],
+    [
+      "4. Él me rescató de la muerte eterna,",
+      "De la dura esclavitud;",
+      "Estoy seguro sobre la roca eterna;",
+      "Cantaré con gratitud."
+    ]
+  ],
+  "coro": [
+    "Salvo por Cristo sou,",
+    "Salvo por quem me amou!",
+    "Salvo por quem me amou!",
+    "Perfeita paz Ele agora me traz,",
+    "Porque salvo sou!"
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=w6YAJzm__uY",
-      "title": "Himno Adventista 288 - Al contemplarte, mi Salvador"
+      "url": "https://www.youtube.com/watch?v=HhoaOf_xw7Q",
+      "title": "Senhor Jesus, meu Salvador - Hinário Aleluia 349"
     },
     {
-      "url": "https://www.youtube.com/watch?v=JOLGJ7prpns",
-      "title": "Himno Adventista 253 - Tuyo soy, Jesús"
+      "url": "https://www.youtube.com/watch?v=_bNzbdSVWWU",
+      "title": "#ACHEI JESUS, MEU SALVADOR   HINO 519 HARPA CRISTÃ#"
     },
     {
-      "url": "https://www.youtube.com/watch?v=oMFGZDDOWWQ",
-      "title": "ENCONTRÉ A JESÚS | Canción de Avivamiento Explosiva 2025 | Lyric Video Oficial"
+      "url": "https://www.youtube.com/watch?v=5w149r9Y6e4",
+      "title": "ACHEI JESUS MEU SALVADOR (Reggae Gospel) - Harpa Cristã Hino 519"
     }
   ]
 }

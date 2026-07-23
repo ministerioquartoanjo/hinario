@@ -1,28 +1,57 @@
 {
   "title": "20 - El amor que gana",
-  "author": "",
+  "author": "Henry Maxwell Wright",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. ¡Amor, por amor bajaste!",
+      "¡Amor, que por amor moriste!",
+      "¡Oh! Cuanto dolor no sufriste,",
+      "Mi corazón para conquistar,",
+      "¡Y mi amor gana!"
+    ],
+    [
+      "2. Amor, que seguiste con amor",
+      "¡Yo, que sin amor, viste!",
+      "¡Oh! Cuanto amor sentiste por mi,",
+      "Salvador mío, mi buen Jesús,",
+      "¡Sufrimiento en la cruz!"
+    ],
+    [
+      "3. Amor, ¡me perdonas todo!",
+      "Amor, que hasta bendigas",
+      "¡Un acusado que le tiene cariño!",
+      "¡Un acusado que le tiene cariño!",
+      "Conquistada, oh Salvador, por ti,",
+      "¡Sentí tu gran amor!"
+    ],
+    [
+      "4. Amor sublime que perdura,",
+      "Que en tu gracia me sostienes,",
+      "¡Rodeándome de mil bienaventuranzas!",
+      "Acepta ahora, oh Salvador,",
+      "¡Mi humilde amor!"
+    ]
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=T5CF89DC_fQ",
-      "title": "VOLVER A SOÑAR | EL AMOR QUE GANA A LOS ENEMIGOS"
+      "url": "https://www.youtube.com/watch?v=A33Q1CXj96I",
+      "title": "Teu divinal amor - Cantor Cristão 305"
     },
     {
-      "url": "https://www.youtube.com/watch?v=qJY2NcLQFB0",
-      "title": "Reto de Parejas: El amor que Gana las Batallas"
+      "url": "https://www.youtube.com/watch?v=m8V-tM67aYY",
+      "title": "Fonte de amor perene - Hinário Aleluia 434"
     },
     {
-      "url": "https://www.youtube.com/watch?v=CP4MuvSDDuE",
-      "title": "07 - El Amor que gana para Dios | Juan Pablo Duque"
+      "url": "https://www.youtube.com/watch?v=lcr2PhBZkZ4",
+      "title": "Trabalhai, jovens, com amor - Hinário Aleluia 425"
     }
   ]
 }

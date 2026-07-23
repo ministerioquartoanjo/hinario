@@ -1,28 +1,52 @@
 {
   "title": "173 - ¿Será por la mañana?",
-  "author": "",
+  "author": "H. L. Tuner XIX James McGranahan",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. ¿Será por la mañana, al comienzo del día?",
+      "Será cuando la luz brille,",
+      "Que Cristo vendrá con los ángeles de gloria,",
+      "¿Recibir de este mundo lo suyo?"
+    ],
+    [
+      "2. ¿Será por la mañana o por la tarde?",
+      "También podría ser que la oscuridad de la noche",
+      "Conviértete en la luz de esta gloria brillante,",
+      "Cuando Cristo recibe lo suyo."
+    ],
+    [
+      "3. ¡Ah! Gracia infinita, cuando la muerte venció,",
+      "Cristo Jesús nos reviste de vida,",
+      "Y entonces moraremos allí en gloria,",
+      "¡En este hogar que Jesús preparó!"
+    ]
+  ],
+  "coro": [
+    "Oh, Jesus, Salvador, Senhor!",
+    "Quando vamos cantar:",
+    "Cristo volta, aleluia, aleluia, amém!",
+    "Aleluia, amém?"
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=VBHGS5BVLEo",
-      "title": "HA62 | Himno 171 | Yo espero la mañana"
+      "url": "https://www.youtube.com/watch?v=7GMgx-h-vCw",
+      "title": "Novo Hinário Adventista • Hino 462 • Será de Manhã • (Lyrics)"
     },
     {
-      "url": "https://www.youtube.com/watch?v=GB_GPpNnzQw",
-      "title": "Quão Glorioso será o amanhã"
+      "url": "https://www.youtube.com/watch?v=CUUklATvExo",
+      "title": "Hinário Adventista 143 - SERÁ DE MANHÃ?"
     },
     {
-      "url": "https://www.youtube.com/watch?v=FAmHtBvlIps",
-      "title": "Quão glorioso será o amanhã - Hinário Aleluia 386"
+      "url": "https://www.youtube.com/watch?v=FdOoEbreWuA",
+      "title": "Será de Manhã?"
     }
   ]
 }

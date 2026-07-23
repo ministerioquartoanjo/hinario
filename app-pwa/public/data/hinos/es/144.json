@@ -1,28 +1,51 @@
 {
   "title": "144 - Jesús es precioso para mí",
-  "author": "",
+  "author": "Charles Hutchison Gabriel",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. Precioso es Jesús mi Rey, Salvador;",
+      "Sólo a Él daré mi alabanza.",
+      "Es una fuente divina de fuerza y ​​vigor;",
+      "Precioso es Jesús para mí."
+    ],
+    [
+      "2. Jesús llama a la puerta de mi corazón,",
+      "Y espera pacientemente, quieres perdonarme.",
+      "Que Tu sacrificio no sea en vano;",
+      "Precioso es Jesús para mí."
+    ],
+    [
+      "3. Preciosas promesas tengo del Rey;",
+      "Con Él viviré en un hogar eterno;",
+      "En un reino de luz veré su rostro;",
+      "Precioso es Jesús para mí."
+    ]
+  ],
+  "coro": [
+    "Precioso é Jesus para mim! (2X)",
+    "É meu Redentor, meu Fiel protetor;",
+    "Precioso é Jesus para mim."
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=us-B2UgQaDc",
-      "title": "Himno No.270: Precioso es Jesús - Himnario Corazón y Vida"
+      "url": "https://www.youtube.com/watch?v=WOpYIxGYvK0",
+      "title": "Novo Hinário Adventista • Hino 335 • Precioso e Jesus Para Mim • (Lyrics)"
     },
     {
-      "url": "https://www.youtube.com/watch?v=sBWEVUKL7pc",
-      "title": "Himno 135 Cristo, nombre sublime Nuevo Himnario Adventista"
+      "url": "https://www.youtube.com/watch?v=o-CET6B4FGM",
+      "title": "Hinário Adventista 93 Precioso é Jesus para Mim"
     },
     {
-      "url": "https://www.youtube.com/watch?v=JMSRbDbBaE4",
-      "title": "Himno 119 De su trono, mi Jesús Nuevo Himnario Adventista"
+      "url": "https://www.youtube.com/watch?v=w9yASbJiVLI",
+      "title": "Precioso É Jesus para Mim"
     }
   ]
 }

@@ -1,28 +1,51 @@
 {
   "title": "7 - El mejor regalo",
-  "author": "",
+  "author": "Eben Eugene Rexford Joseph Garrison",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. Trajeron ofrendas a los pies del Salvador;",
+      "Y cada sacrificio resultó ser de amor.",
+      "Ninguna ofrenda fue inútil;",
+      "Aceptó al gentil Salvador para todos ellos."
+    ],
+    [
+      "2. A lo lejos, retirado, está un pecador;",
+      "Cuando ve las donaciones, su alma sufre en dolor.",
+      "¡No hay ningún regalo que darle al Salvador!",
+      "Con ojos llorosos, suplica fervientemente:"
+    ],
+    [
+      "3. \"Oh Maestro\", exclama angustiado, \"sé lo malo que soy;",
+      "Pero toma la pobre ofrenda: Mi corazón te doy.",
+      "Jesús responde dócilmente: \"Acepté el regalo\";",
+      "¡De todas las ofertas, la tuya me encantó más!"
+    ]
+  ],
+  "coro": [
+    "Também Senhor eu quero trazer-te este dom,",
+    "Indigno, mas sincero;",
+    "O impuro coração."
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=mDSEUiX-7NU",
-      "title": "El Mejor Regalo - Probad y Ved 16 de Abril 2022"
+      "url": "https://www.youtube.com/watch?v=NE9o224Up3U",
+      "title": "Sei que o amigo melhor - Hinário Aleluia 403"
     },
     {
-      "url": "https://www.youtube.com/watch?v=pF_YGxmzCRo",
-      "title": "EL MEJOR REGALO MLT"
+      "url": "https://www.youtube.com/watch?v=uXyi09WRNV0",
+      "title": "Jesus é melhor - Hinário Aleluia 328"
     },
     {
-      "url": "https://www.youtube.com/watch?v=ir82SeS-jw4",
-      "title": "MATUTINA JÓVENES - LUNES 24 DE DICIEMBRE 2012 - MEJOR REGALO, ¡IMPOSIBLE!"
+      "url": "https://www.youtube.com/watch?v=eqmX5iD93Ac",
+      "title": "Meu Jesus é o melhor amigo - Hinário Aleluia 294"
     }
   ]
 }

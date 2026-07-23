@@ -1,28 +1,46 @@
 {
   "title": "83 - Heredero del Reino",
-  "author": "",
+  "author": "Autor desconhecido L. M",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. ¡Oh heredero del reino celestial!",
+      "No, no duermas, el fin llegará;",
+      "¡Oh! Cíñan sus armas y únanse a la lucha,",
+      "Para la victoria deseas ganar."
+    ],
+    [
+      "2. No dejéis que los placeres terrenales os detengan,",
+      "Pues tendrán que pasar rápido;",
+      "¡Oh! Deja ir la vida que te detiene,",
+      "¡Ven, ven a Cristo que te salvará!"
+    ],
+    [
+      "3. Aquí están las potencias dispuestas a luchar;",
+      "Sé ferviente, fiel, buen cristiano;",
+      "Las glorias brillan en el horizonte",
+      "¡Oh! noble heredero, estalla en canción"
+    ]
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=3Z81MGc-pNU",
-      "title": "Canto tema HEREDEROS DEL REINO - Ministerio JA La Trinitaria"
+      "url": "https://www.youtube.com/watch?v=BAvInDYbfUM",
+      "title": "Tu deixaste, Jesus, o teu reino de luz - Cantor Cristão 31"
     },
     {
-      "url": "https://www.youtube.com/watch?v=LdHVt3BbcuA",
-      "title": "Nestor Ortega - Heredero del Reino - Video Clip Oficial - @NestorOrtegaRd"
+      "url": "https://www.youtube.com/watch?v=1p34cF7xJo0",
+      "title": "Novo Hinário Adventista • Hino 479 • Herdeiro do Reino • (Lyrics)"
     },
     {
-      "url": "https://www.youtube.com/watch?v=GXDYIvolrl4",
-      "title": "Heredero Del Reino"
+      "url": "https://www.youtube.com/watch?v=plxlhSUo55c",
+      "title": "Hinário Adventista 300 - HERDEIRO DO REINO"
     }
   ]
 }

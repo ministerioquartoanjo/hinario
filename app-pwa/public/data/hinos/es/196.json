@@ -1,28 +1,55 @@
 {
   "title": "196 - Vosotros, criaturas del Señor",
-  "author": "",
+  "author": "Francisco de Assis",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. Vosotros, criaturas del Señor,",
+      "¡Oh, alabad a Dios!",
+      "¡Oh, alábalo! ¡Aleluya!",
+      "Tú, brillante Sol dorado;",
+      "¡Tú, brillante luna plateada!",
+      "¡Oh, alábalo! ¡Oh, alábalo!",
+      "¡Aleluya! ¡Aleluya! ¡Aleluya!"
+    ],
+    [
+      "2. Oh tierra y cielo, honrad a Dios;",
+      "¡Rezo por amor y gracias dan!",
+      "¡Oh, alábalo! ¡Aleluya!",
+      "Flores, levántate en la canción",
+      "¡Al gran Dios de la creación!",
+      "¡Oh, alábalo! ¡Oh, alábalo!",
+      "¡Aleluya! ¡Aleluya! ¡Aleluya!"
+    ],
+    [
+      "3. Vosotros, hombres sabios y buenos,",
+      "¡Alabad al Señor también!",
+      "¡Oh, alábalo! ¡Aleluya!",
+      "Dad gloria al Hijo, gloria al Padre,",
+      "¡Y saludos a todos!",
+      "¡Oh, alábalo! ¡Oh, alábalo!",
+      "¡Aleluya! ¡Aleluya! ¡Aleluya!"
+    ]
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=GtZcbpFiXmA",
-      "title": "Himno Adventista 236 - A Jesus entrega todo"
+      "url": "https://www.youtube.com/watch?v=EUHb7-depCY",
+      "title": "Novo Hinário Adventista • Hino 61 • Vós Criaturas do Senhor • (Lyrics)"
     },
     {
-      "url": "https://www.youtube.com/watch?v=5-PCVhz6uzg",
-      "title": "Novo Hinário Adventista • Hino 56 • Nossa Inspiração • (Lyrics)"
+      "url": "https://www.youtube.com/watch?v=l0O88UI6M9s",
+      "title": "Novo Hinário Adventista • Hino 61 • Vós Criaturas do Senhor • Lyrics"
     },
     {
-      "url": "https://www.youtube.com/watch?v=oVWCPrlwywA",
-      "title": "Hinário Adventista 22 Bem de Manhã"
+      "url": "https://www.youtube.com/watch?v=gmntSu7amao",
+      "title": "Hinário Adventista 15 Vós, Criaturas do Senhor"
     }
   ]
 }

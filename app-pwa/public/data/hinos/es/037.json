@@ -1,28 +1,58 @@
 {
   "title": "37 - Cuenta tus Bendiciones",
-  "author": "",
+  "author": "Johnson Oatman Jr Edwin Othello Excel",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. Si las olas son turbulentas en la vida;",
+      "Si estás desanimado, piensas que todo es vano,",
+      "Cuente las muchas bendiciones, cuente cada vez,",
+      "Y te sorprenderá ver cuánto ha hecho Dios ya."
+    ],
+    [
+      "2. ¿Alguna vez ha sentido sentimientos heridos? ¿Le resulta difícil lidiar con ellos?",
+      "¿Es una cruz pesada la que tienes que llevar?",
+      "Cuenta las muchas bendiciones, no dudarás,",
+      "Y cantando alegremente pasarán los días."
+    ],
+    [
+      "3. Cuando veas a otros con riquezas y posesiones,",
+      "Recuerda qué tesoros prometidos tienes",
+      "Los bienes de la tierra nunca podrán comprarse,",
+      "La mansión celestial en la que vivirás."
+    ],
+    [
+      "4. Ya sea que su conflicto sea débil o fuerte aquí,",
+      "No te desanimes, Dios será por ti,",
+      "Su ayuda divina, venciendo el mal,",
+      "Te dará consuelo y paz celestial."
+    ]
+  ],
+  "coro": [
+    "Conta as bênçãos, dize quantas são,",
+    "Recebidas da divina mão.",
+    "Uma a uma conta cada vez;",
+    "Há de ver, surpreso, quanto Deus já fez."
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
-  "introducao": 0,
+  "introducao": 12,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=Xl49RSvvv78",
-      "title": "  340   Bendiciones ricas"
+      "url": "https://www.youtube.com/watch?v=fGPO9-azjnc",
+      "title": "Conta-me a velha história - Cantor  Cristão 50"
     },
     {
-      "url": "https://www.youtube.com/watch?v=JWw7QMJ-VGQ",
-      "title": "\"Cuenta Tus Bendiciones\" con letra (Himno SUD) (HD)"
+      "url": "https://www.youtube.com/watch?v=MJTPttbw1zI",
+      "title": "Conta-me - Cantor Cristão 196 (com introdução)"
     },
     {
-      "url": "https://www.youtube.com/watch?v=_z-fF_YNpKI",
-      "title": "Cuenta tus bendiciones -letra- Himnos Sud"
+      "url": "https://www.youtube.com/watch?v=xvtvVnzNuYs",
+      "title": "Vou contar-vos de Jesus - Maranata CIA 77"
     }
   ]
 }

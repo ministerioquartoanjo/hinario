@@ -1,28 +1,73 @@
 {
   "title": "50 - De todo el mundo: ¡Aleluya!",
-  "author": "",
+  "author": "Henry Maxwell Wright",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. De todo el mundo, aquí estamos",
+      "Sólo confiando en Ti,",
+      "Permaneciendo en Tu amor.",
+      "Tu reino sólo busca,",
+      "Nuestras vidas, nuestro amor,",
+      "A Ti traemos, Salvador,",
+      "Canto: ¡Aleluya!"
+    ],
+    [
+      "2. Vivir para Ti, morir en Ti,",
+      "Nuestros padres apuntaban;",
+      "Sólo haz tu voluntad,",
+      "Esto es lo que querían.",
+      "Y nosotros, que somos tuyos también",
+      "Decimos con firmeza: Sí, Amén.",
+      "Y: \"¡Gloria! ¡Aleluya!\""
+    ],
+    [
+      "3. Al Evangelio salvador,",
+      "Tan puro y glorioso,",
+      "Las leyes más santas que Tú",
+      "Tú nos das, bondadoso Señor,",
+      "¡Amén! Decimos con fervor,",
+      "Y, por Tu inmenso amor,",
+      "Gritamos: \"¡Aleluya!\""
+    ],
+    [
+      "4. Sí, constreñidos por el amor,",
+      "Perdidos buscamos",
+      "Salva, gana para Ti, Señor:",
+      "Esto es a lo que aspiramos,",
+      "Siguiendo siempre tu ley,",
+      "Leal a Ti, bendito Rey,",
+      "Cantamos: \"¡Aleluya!\""
+    ],
+    [
+      "5. Ni el trabajo será en vano,",
+      "Porque he aquí qué glorioso,",
+      "Llega el día en que Jesús",
+      "Él saldrá victorioso;",
+      "Y todos cantarán",
+      "Y con alegría lo exaltará,",
+      "Con:\"Amén\",\"¡Aleluya!\""
+    ]
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=Jxim-KyuzMw",
-      "title": "Novo Hinário Adventista • Hino 114 • CRISTO JÁ RESSUSCITOU • (Lyrics)"
+      "url": "https://www.youtube.com/watch?v=Ofwu7n8W568",
+      "title": "Queres neste mundo ser - Hinário Aleluia 408"
     },
     {
-      "url": "https://www.youtube.com/watch?v=7UlUMa8dlBg",
-      "title": "Novo Hinário Adventista • Hino 11 • Maior que Tudo • (Lyrics)"
+      "url": "https://www.youtube.com/watch?v=kMWH6oXzt64",
+      "title": "Neste mundo sozinho - Hinário Aleluia 359"
     },
     {
-      "url": "https://www.youtube.com/watch?v=mdZdVbcfvS8",
-      "title": "Hinário Adventista 530 - O SÁBADO CHEGOU"
+      "url": "https://www.youtube.com/watch?v=eLEMSvqag3U",
+      "title": "Eu tenho de andar neste mundo - Hinário aleluia 325"
     }
   ]
 }

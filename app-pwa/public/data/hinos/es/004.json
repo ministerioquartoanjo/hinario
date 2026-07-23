@@ -1,28 +1,48 @@
 {
   "title": "4 - La Ley de Mi Señor",
-  "author": "",
+  "author": "Lowell Mason",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. Sabio, justo, santo y puro",
+      "Es la ley de mi Señor,",
+      "Que corrige la vida impura.",
+      "Del pecador perdido.",
+      "La enseñanza del Señor",
+      "Siempre ahí está lo perfecto;",
+      "Es tan rico en sus preceptos",
+      "Y da santos consejos."
+    ],
+    [
+      "2. Buen consejo del Señor,",
+      "Justos y benignos son ellos;",
+      "Veo en ellos, como espejos,",
+      "Que mal está mi corazón.",
+      "Más que el sol brillante,",
+      "Los preceptos del Señor",
+      "Ilumina nuestra mente,",
+      "Con resplandor divino."
+    ]
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=2Vn2mOy_8k0",
-      "title": "Himno Adventista 241 - Perdón te ruego, mi Señor y Dios"
+      "url": "https://www.youtube.com/watch?v=CuEvE-LA_ac",
+      "title": "O mundo é Teu, Senhor"
     },
     {
-      "url": "https://www.youtube.com/watch?v=rwNP5zzKAFI",
-      "title": "Medley Mestre, o mar se revolta & Meu barco é pequeno"
+      "url": "https://www.youtube.com/watch?v=eyjlEa4qXuI",
+      "title": "Teu és fiel, Senhor"
     },
     {
-      "url": "https://www.youtube.com/watch?v=KmfALsYHxSo",
-      "title": "MEJORES HIMNOS ADVENTISTAS   SELECTOS      SANTA LEY"
+      "url": "https://www.youtube.com/watch?v=0OWfcxzR2oE",
+      "title": "Aviva-nos, Senhor - Cantor Cristão 171"
     }
   ]
 }

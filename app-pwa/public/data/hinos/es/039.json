@@ -1,28 +1,58 @@
 {
   "title": "39 - Conversión",
-  "author": "",
+  "author": "Henry Maxwell Wright",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. ¡Ah! que ciego caminé y perdido vagué,",
+      "¡Lejos, lejos de mi Salvador!",
+      "Pero descendió del cielo y derramó su sangre.",
+      "Para salvar a un pecador tan pobre."
+    ],
+    [
+      "2. Escuché acerca de esta gracia única,",
+      "Quien trajo a nuestro Jesús del cielo;",
+      "Pero me hice sordo, no quise convertirme,",
+      "Al Señor, que murió por mí en la cruz."
+    ],
+    [
+      "3. Pero un día sentí mi pecado y vi",
+      "Sobre mí la espada de la ley;",
+      "Huí a toda prisa, en Jesús me escondí,",
+      "Y refugio seguro en Él encontré"
+    ],
+    [
+      "4. ¡Qué bienaventurado, pues, este corazón mío,",
+      "Conociendo el amor exaltado,",
+      "Eso llevó a mi Jesús a sufrir en la cruz;",
+      "Para salvar a un pecador tan pobre"
+    ]
+  ],
+  "coro": [
+    "Foi na cruz, foi na cruz, onde um dia eu vi",
+    "Meus pecados castigados em Jesus;",
+    "Foi ali, pela fé, que os olhos abri,",
+    "E agora me alegro em Sua luz."
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=73OTuKy2t4s",
-      "title": "LA VERDADERA CONVERSIÓN ES ESENCIAL  El Conflicto De Los Siglos"
+      "url": "https://www.youtube.com/watch?v=bHearZt4Z8k",
+      "title": "Conversão - ( foi na cruz); Hino da harpa cristã. / legendado"
     },
     {
-      "url": "https://www.youtube.com/watch?v=EllZQMi8ic0",
-      "title": "Testimonio de conversión | Campaña Nacional 2023"
+      "url": "https://www.youtube.com/watch?v=DS0AmztRPCk",
+      "title": "FOI NA CRUZ \"CONVERSÃO\" - 15 - HARPA CRISTÃ - Carlos José"
     },
     {
-      "url": "https://www.youtube.com/watch?v=n5pWQngzeFY",
-      "title": "LA CONVERSIÓN, paso a paso - Parte 1 de 2"
+      "url": "https://www.youtube.com/watch?v=YbZl-1Rp2Fs",
+      "title": "Hino 15 - Conversão (Foi na Cruz) | Coral e Orquestra | Harpa Cristã"
     }
   ]
 }

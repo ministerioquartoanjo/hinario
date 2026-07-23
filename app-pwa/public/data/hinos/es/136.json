@@ -1,28 +1,34 @@
 {
   "title": "136 - Escúchanos Señor",
-  "author": "",
+  "author": "George Whelpton",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. Escúchanos,",
+      "Señor, Santo Salvador;",
+      "Inclínate y escucha",
+      "Y danos tu paz. Amén."
+    ]
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=XKm8-i8dwWo",
-      "title": "ESCUCHA SEÑOR MI ORACIÓN"
+      "url": "https://www.youtube.com/watch?v=CuEvE-LA_ac",
+      "title": "O mundo é Teu, Senhor"
     },
     {
-      "url": "https://www.youtube.com/watch?v=riu-Y1MByo8",
-      "title": "Himno Adventista 610 - Escuchamos tu llamada"
+      "url": "https://www.youtube.com/watch?v=eyjlEa4qXuI",
+      "title": "Teu és fiel, Senhor"
     },
     {
-      "url": "https://www.youtube.com/watch?v=xJxh9_ui2sY",
-      "title": "Himno Adventista 31 - ¡Oh, Señor! Al orar"
+      "url": "https://www.youtube.com/watch?v=0OWfcxzR2oE",
+      "title": "Aviva-nos, Senhor - Cantor Cristão 171"
     }
   ]
 }

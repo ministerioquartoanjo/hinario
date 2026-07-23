@@ -1,28 +1,58 @@
 {
   "title": "174 - Tu sangre tiene poder",
-  "author": "",
+  "author": "Lewis Edgar Jones",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. ¿Quieres liberarte de tu pecado?",
+      "La sangre de Jesús da el poder.",
+      "¿Es tu deseo escapar del maligno?",
+      "Tendrás poder en Su sangre."
+    ],
+    [
+      "2. ¿No quieres que desaparezca la vanidad?",
+      "La sangre de Jesús da el poder.",
+      "¿Quieres que tus pasiones dominen?",
+      "Tendrás poder en Su sangre."
+    ],
+    [
+      "3. ¿Quieres purificar tu corazón?",
+      "La sangre de Jesús da el poder.",
+      "Todas las manchas se te pueden quitar;",
+      "Tu sangre tiene este poder."
+    ],
+    [
+      "4. ¿Quieres entrar al servicio real?",
+      "La sangre de Jesús da el poder.",
+      "¿Tú también quieres ser un servidor leal?",
+      "Tu sangre tiene este poder."
+    ]
+  ],
+  "coro": [
+    "Há poder, sim, força sem igual",
+    "Só no sangue de Jesus.",
+    "Há poder, sim, vem, ó pecador,",
+    "E aceita o dom de Jesus."
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=m7H4EKRZbUg",
-      "title": "HA62 | Himno 294 | Comprado con sangre por Cristo"
+      "url": "https://www.youtube.com/watch?v=IMJRhe3K1EA",
+      "title": "Novo Hinário Adventista • Hino 123 • Seu Sangue Tem Poder (Lyrics)"
     },
     {
-      "url": "https://www.youtube.com/watch?v=VHEIW9e_srM",
-      "title": "Himno Adventista 296 - Comprado con sangre por Cristo"
+      "url": "https://www.youtube.com/watch?v=OqNtVUF4-Pw",
+      "title": "Hinário Adventista 206 - SEU SANGUE TEM PODER"
     },
     {
-      "url": "https://www.youtube.com/watch?v=nRWYXeIFCqw",
-      "title": "Himno 297 - Salvado con sangre por Cristo | Nuevo"
+      "url": "https://www.youtube.com/watch?v=A0t-b9FPF80",
+      "title": "SEU SANGUE TEM PODER  | Hinário Adventista / Hino IASD 206  | MENOS UM"
     }
   ]
 }

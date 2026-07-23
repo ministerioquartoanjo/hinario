@@ -1,28 +1,55 @@
 {
   "title": "76 - Guía, oh Dios, mi vida",
-  "author": "",
+  "author": "William Willians John Hughes",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. Guía, oh Dios, mi vida",
+      "En este mundo de aflicción;",
+      "Soy frágil en mi trabajo,",
+      "Pero tu mano es fuerte.",
+      "Mi ser se cubre de paz.",
+      "¡Libérame de la tentación!",
+      "¡Libérame de la tentación!"
+    ],
+    [
+      "2. Abre las fuentes de la verdad,",
+      "De donde vienen las aguas puras,",
+      "En este mundo de maldad,",
+      "Hazme aprovecharlos al máximo.",
+      "Sé el fuego, sé la nube,",
+      "Sé liberador también,",
+      "Sea liberador también."
+    ],
+    [
+      "3. Está llegando al final del camino,",
+      "cruzaré el Jordán,",
+      "Y encontré un hogar en el cielo,",
+      "Que Jesús fue a preparar.",
+      "Y en alabanza del Dios eterno,",
+      "Por siempre cantaré,",
+      "Cantaré por siempre."
+    ]
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=2pN-7IRDHvc",
-      "title": "Himno 468 - Paso a paso Dios me guía | Nuevo"
+      "url": "https://www.youtube.com/watch?v=y4tu4ehV7nw",
+      "title": "42 HCC Guia, ó Deus a minha vida (W. Williams/J. Hughes)"
     },
     {
-      "url": "https://www.youtube.com/watch?v=eyXSeIQZ1Jc",
-      "title": "Himno 434 - Jesús es mi vida | Nuevo"
+      "url": "https://www.youtube.com/watch?v=mqUZ1PBubyQ",
+      "title": "GUIA, Ó DEUS, A MINHA VIDA (HINO 42 DO HCC)"
     },
     {
-      "url": "https://www.youtube.com/watch?v=wLAvTNTe6YA",
-      "title": "Himno 470 - Guíame, Dios | Nuevo"
+      "url": "https://www.youtube.com/watch?v=mO0C9cuFDJ4",
+      "title": "042 HCC - Guia, ó Deus, a minha vida"
     }
   ]
 }

@@ -1,28 +1,52 @@
 {
   "title": "75 - Gran comandante",
-  "author": "",
+  "author": "Carrie Ellis Breck Grant Colfax Tullar",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. Cristo será un gran comandante para nosotros,",
+      "En esta guerra santa él marchará hacia adelante;",
+      "Sus huestes nunca abandonarán;",
+      "Hay que luchar hasta el final."
+    ],
+    [
+      "2. Tu glorioso estandarte defenderemos,",
+      "Las huestes enemigas siempre luchan;",
+      "Nuestro general ciertamente ganará.",
+      "Seguiremos a Jesús."
+    ],
+    [
+      "3. En la batalla feroz tenemos protección,",
+      "Y finalmente, a coro, con la multitud,",
+      "Todos cantaremos la canción real,",
+      "cuando lleguemos allí"
+    ]
+  ],
+  "coro": [
+    "Sempre avante! Manda o General.",
+    "Sempre avante! Guerra contra o mal!",
+    "Firmes, fortes, nunca vacilar!",
+    "Com Jesus havemos de ganhar!"
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
+      "url": "https://www.youtube.com/watch?v=rJQ2kKqKBX4",
+      "title": "Que grande reunião - Hinário Aleluia 448"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=7GC48wxLUTI",
+      "title": "Breve vem o grande dia - Hinário Aleluia 394"
+    },
+    {
       "url": "https://www.youtube.com/watch?v=pDF_yaObO8M",
       "title": "Novo Hinário Adventista • Hino 74 • Grande Comandante • (Lyrics)"
-    },
-    {
-      "url": "https://www.youtube.com/watch?v=SRcgXW3fg7I",
-      "title": "Novo Hinário Adventista • Hino 451 • Grande Alegria • (Lyrics)"
-    },
-    {
-      "url": "https://www.youtube.com/watch?v=gwi_gzBwl98",
-      "title": "Novo Hinário Adventista • Hino 62 • Quão Grande És tu • (Lyrics)"
     }
   ]
 }

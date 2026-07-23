@@ -1,28 +1,52 @@
 {
   "title": "26 - Tal como soy",
-  "author": "",
+  "author": "R.R.Kalley",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. Tal como soy: sin decir nada,",
+      "Pero por mí viniste a morir,",
+      "Y me invitaste a recurrir a ti:",
+      "¡Bendito Jesús, vengo a Ti!"
+    ],
+    [
+      "2. Tal como soy: sin más dilación,",
+      "Mi alma malvada queriendo limpiar,",
+      "A ti, que puedes lavarme de todo:",
+      "¡Bendito Jesús, vengo a ti!"
+    ],
+    [
+      "3. Tal como estoy: en gran angustia.",
+      "Tan digno de muerte y perdición,",
+      "Te pido por la vida, con paz y perdón:",
+      "¡Bendito Jesús, vengo a ti!"
+    ],
+    [
+      "4. Tal como soy: Tu gran amor",
+      "Vénceme: y creyendo en Ti, sin miedo,",
+      "¡Quiero servirte, divino Señor!",
+      "¡Bendito Jesús, vengo a Ti!"
+    ]
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=YD3SVXPHQz0",
-      "title": "Himno 249. Tal como soy Nuevo Himnario Adventista"
+      "url": "https://www.youtube.com/watch?v=i1v-l2k2yZU",
+      "title": "TAL COMO SOY- (ASSIM COMO SOU)  - (Versão) JESUS A. ROMERO"
     },
     {
-      "url": "https://www.youtube.com/watch?v=QV2ZMrTH3y0",
-      "title": "HIMNO 249 - Tal como soy - NUEVO - HIMNOS PISTA PIANO"
+      "url": "https://www.youtube.com/watch?v=wV2qRJ2yGvY",
+      "title": "Trio da Vitória - Assim Como Sou"
     },
     {
-      "url": "https://www.youtube.com/watch?v=YCVmTpGaZ_E",
-      "title": "Tal como Soy con letra   Jesus Adrian Romero"
+      "url": "https://www.youtube.com/watch?v=NukYO_ulq5A",
+      "title": "Assim como sou"
     }
   ]
 }

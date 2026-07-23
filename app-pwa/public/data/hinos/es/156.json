@@ -1,28 +1,52 @@
 {
   "title": "156 - Quiero tener a Jesús conmigo",
-  "author": "",
+  "author": "Lizzie Edwards John Robson Sweney",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. Quiero tener a Jesús conmigo,",
+      "Quiero caminar a solas con Él.",
+      "Quiero ver tu hermoso rostro,",
+      "En sus brazos descansa."
+    ],
+    [
+      "2. Quiero tener a Jesús conmigo;",
+      "Soy frágil en mi fe.",
+      "Tu voz me da consuelo",
+      "Cuando mi pie se tambalea."
+    ],
+    [
+      "3. Quiero tener a Jesús conmigo,",
+      "Siempre aquí en mi vida,",
+      "En el tiempo libre y en el trabajo,",
+      "En pena y placer"
+    ]
+  ],
+  "coro": [
+    "Tendo fé no Salvador,",
+    "Descansando em Seu amor,",
+    "Seguirei no meu caminho,",
+    "Sem tristeza sem temor."
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=GtZcbpFiXmA",
-      "title": "Himno Adventista 236 - A Jesus entrega todo"
+      "url": "https://www.youtube.com/watch?v=z3FtUwqdEU4",
+      "title": "Novo Hinário Adventista • Hino 184 • Quero Ter Jesus Comigo • (Lyrics)"
     },
     {
-      "url": "https://www.youtube.com/watch?v=nBovfv3tv1c",
-      "title": "47 Minutos: Himnario IASD - Himnos + Salmos Vol. 3 (Karaoke para Culto y Adoración) Sin Batería 2026"
+      "url": "https://www.youtube.com/watch?v=k4dZuNRyL94",
+      "title": "Hinário Adventista 400 - QUERO TER JESUS COMIGO"
     },
     {
-      "url": "https://www.youtube.com/watch?v=QTwPSHzK6-Q",
-      "title": "A Jesús entrega todo"
+      "url": "https://www.youtube.com/watch?v=OTQx3UQChso",
+      "title": "Hinário Adventista • Hino 400 - Quero Ter Jesus Comigo"
     }
   ]
 }

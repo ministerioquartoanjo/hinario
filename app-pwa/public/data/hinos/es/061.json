@@ -1,28 +1,58 @@
 {
   "title": "61 - Creo, sí",
-  "author": "",
+  "author": "Frida Vingren",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. Para conocer el amor sin fin,",
+      "Un pecador era yo;",
+      "En mi pensamiento no había lugar",
+      "Por Cristo y el cielo."
+    ],
+    [
+      "2. Porque cuando vi a Jesús por mí mismo,",
+      "Sufriendo en la cruz,",
+      "Mi corazón, sin dudarlo,",
+      "Recibió amor y luz."
+    ],
+    [
+      "3. Con lágrimas pedí perdón,",
+      "Y dolor, también lo sentí;",
+      "Entonces vino Jesús y me dijo:",
+      "\"Fue por ti que morí\"."
+    ],
+    [
+      "4. Sé que Dios, en su Hijo,",
+      "Mírame perfecto y saludable;",
+      "Ya no hay miedo, sólo amor bendito,",
+      "Lo disfruto en mi corazón."
+    ]
+  ],
+  "coro": [
+    "Eu creio, sim, já creio, sim,",
+    "Jesus morreu por mim;",
+    "Pelo sangue Seu, que Ele verteu,",
+    "Libertado fui por fim."
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=wWXKglRj2Vk",
-      "title": "Creo, Sí!"
+      "url": "https://www.youtube.com/watch?v=tA4BbhaEKeA",
+      "title": "Novo Hinário Adventista • Hino 179 • Eu Sei Em Quem Eu Creio • (lyrics)"
     },
     {
-      "url": "https://www.youtube.com/watch?v=3hZNzIVR-Mw",
-      "title": "Creo, sí PLAYBACK | Débora Miranda"
+      "url": "https://www.youtube.com/watch?v=qZGfWnmJhA0",
+      "title": "Eu Creio, SIM! - Hino 59 da Harpa Cristã | Uma Declaração de Fé em Deus"
     },
     {
-      "url": "https://www.youtube.com/watch?v=WfOSKnq5Fk8",
-      "title": "Débora - Creo si - 2007"
+      "url": "https://www.youtube.com/watch?v=Hi2BcWC27ac",
+      "title": "Hinário Adventista 265 - EU CREIO"
     }
   ]
 }

@@ -1,14 +1,44 @@
 {
   "title": "101 - Marchai, Soldados de Cristo",
-  "author": "",
+  "author": "Autor desconhecido Wm.J.Kirkpatrick",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. Marchad, soldados de Cristo Jesús,",
+      "Marcha, marcha y enfréntate,",
+      "El enemigo del bien y de la luz;",
+      "¡Soldados, avancen!"
+    ],
+    [
+      "2. Marchen, soldados, levántense alto.",
+      "El pabellón de la salvación;",
+      "A Belial, firme, audaz, vencido;",
+      "Derroté la corrupción."
+    ],
+    [
+      "3. Toma tu armadura de guerra,",
+      "El casco, sí, de la salvación:",
+      "Y la espada: toma la Biblia,",
+      "Y entonces ganarás."
+    ],
+    [
+      "4. Adelante, adelante, confiando en Jesús,",
+      "Serás fuerte por su amor,",
+      "Marchad invictos, soldados de la luz,",
+      "Jesús es el ganador."
+    ]
+  ],
+  "coro": [
+    "Sim avançar, não recuar;",
+    "Sem temor, com valor,",
+    "Marchai, lutai, pois Cristo vai;",
+    "Na vanguarda avançai!"
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
@@ -17,12 +47,12 @@
       "title": "Harpa Cristã - 09 - Marchai, Soldados de Cristo - Levi - com letra"
     },
     {
-      "url": "https://www.youtube.com/watch?v=WM9q9RTtNm4",
-      "title": "Harpa de Ouro - Marchai, Soldados de Cristo (Com Letra)"
+      "url": "https://www.youtube.com/watch?v=MRLRQyY5zY8",
+      "title": "Marchai Soldados de Cristo - Nº 9 Harpa Cristã"
     },
     {
-      "url": "https://www.youtube.com/watch?v=8m2f8KWoJfA",
-      "title": "MARCHAI SOLDADOS DE CRISTO - Hino da Harpa"
+      "url": "https://www.youtube.com/watch?v=dEMvxo5cf0c",
+      "title": "09 - MARCHAI, SOLDADOS DE CRISTO (LEGENDADO) HARPA CRISTÃ"
     }
   ]
 }

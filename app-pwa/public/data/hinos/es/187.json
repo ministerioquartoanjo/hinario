@@ -1,14 +1,44 @@
 {
   "title": "187 - Un estandarte real",
-  "author": "",
+  "author": "Henry Maxwell Wright",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. Un estandarte real te dio el Rey",
+      "A vosotros, sus soldados.",
+      "Valientes, pues, defendedlo en todo;",
+      "Marchando hacia los cielos."
+    ],
+    [
+      "2. Aquí están los batallones negros formados.",
+      "¡Del gran usurpador!",
+      "Declaraos hoy valientes campeones;",
+      "Adelante sin miedo."
+    ],
+    [
+      "3. Quien temo siente en su corazón,",
+      "Y débil para mostrar,",
+      "No recibirás recompensa eterna,",
+      "Lo que Cristo tiene para dar."
+    ],
+    [
+      "4. Seamos, pues, todos leales a Jesús,",
+      "Y a su estandarte real;",
+      "Los que siempre son fieles en la batalla,",
+      "Con Él reinarán."
+    ]
+  ],
+  "coro": [
+    "Com valor! Sem temor!",
+    "Por Cristo prontos a sofrer!",
+    "Bem alto erguei o Seu pendão,",
+    "Firmes sempre até vencer!"
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
@@ -17,12 +47,12 @@
       "title": "Hinário Adventista 347 - O PENDÃO REAL"
     },
     {
-      "url": "https://www.youtube.com/watch?v=WtEYQqsfeWA",
-      "title": "Finda a lida terreal - Hinário Aleluia 397"
+      "url": "https://www.youtube.com/watch?v=wlC6eOyOC-8",
+      "title": "Hinário Adventista • Hino 347 - O Pendão Real"
     },
     {
-      "url": "https://www.youtube.com/watch?v=tz3dbkIX6nI",
-      "title": "Canal: El Estandarte Adventista"
+      "url": "https://www.youtube.com/watch?v=sKA1GfBLx74",
+      "title": "253 O Pendão Real | Novo Hinário Louvores ao Rei | Hinário Reformista"
     }
   ]
 }

@@ -1,28 +1,58 @@
 {
   "title": "70 - Eres la fuente de toda Bendición",
-  "author": "",
+  "author": "Robert Robinson Hinário americano",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. Tú eres la fuente de toda bendición;",
+      "La canción viene a inspirarme;",
+      "tu misericordia",
+      "Quiero alabar en voz alta.",
+      "Oh, enseña la nueva canción.",
+      "De los redimidos del cielo;",
+      "A tus siervos pueblo santo",
+      "Para que podamos alabarte, buen Dios."
+    ],
+    [
+      "2. Al Señor doy gracias",
+      "Porque Jesús me ayudó",
+      "Y, por tu gracia, un día",
+      "Me llevará al cielo",
+      "Me perdí, me busqué",
+      "Lejos de mi Dios, sin luz",
+      "Él me lavó de mis pecados",
+      "Con su sangre el buen Jesús"
+    ],
+    [
+      "3. Deudor de Tu gracia",
+      "Cada día y hora estoy",
+      "Tu cuidado siempre lo hace",
+      "Que te ame Señor",
+      "mi ser esta vacilando",
+      "Tómalo, sostenlo con amor",
+      "Para que yo, en todo momento",
+      "Glorificarte, Señor"
+    ]
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=7pdO5fE3rXk",
-      "title": "Himno 233 Ven a la Fuente de vida Nuevo Himnario Adventista"
+      "url": "https://www.youtube.com/watch?v=nmv6OqhA9eE",
+      "title": "Fonte Tu de toda benção"
     },
     {
-      "url": "https://www.youtube.com/watch?v=5MBokIcKOM4",
-      "title": "Himno Adventista 143 DIGNO ERES TÚ - Nuevo Himnario Adventista"
+      "url": "https://www.youtube.com/watch?v=m8V-tM67aYY",
+      "title": "Fonte de amor perene - Hinário Aleluia 434"
     },
     {
-      "url": "https://www.youtube.com/watch?v=Wg3K7CUn434",
-      "title": "Fuente de Bendición | Velo de la Gracia"
+      "url": "https://www.youtube.com/watch?v=bDYMEydkf10",
+      "title": "Oh, vem me encontrar à fonte (com introdução)"
     }
   ]
 }

@@ -1,28 +1,53 @@
 {
   "title": "139 - Al cielo por Jesús iré",
-  "author": "",
+  "author": "Jessie Brown Pounds Charles Hutchison Gabriel",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. Fue Jesús quien abrió el camino al cielo",
+      "No encontraré ningún otro.",
+      "Nunca entraré a la mansión de la luz.",
+      "Si no a través de la cruz."
+    ],
+    [
+      "2. Ciertamente voy por el camino de la cruz,",
+      "Con resolución camina.",
+      "Es mi deseo disfrutar del cielo,",
+      "Mi herencia que Cristo dio."
+    ],
+    [
+      "3. Los malos caminos del mundo los he dejado,",
+      "Nunca los seguiré;",
+      "Con Jesús voy, cargo mi cruz,",
+      "En el camino que lleva al cielo."
+    ]
+  ],
+  "coro": [
+    "Para o céu por Jesus irei;",
+    "Para o céu por Jesus irei.",
+    "Grande é meu prazer",
+    "De certeza ter:",
+    "Para o céu pela cruz irei."
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=1VIDNLkBnLY",
-      "title": "HA62 | Himno 285 | Perdido, fui a mi Jesús"
+      "url": "https://www.youtube.com/watch?v=_G5qqB7zbx4",
+      "title": "Novo Hinário Adventista • Hino 163 •  Para o Céu Por Jesus Irei  (lyrics)"
     },
     {
-      "url": "https://www.youtube.com/watch?v=WOx31RkfVbA",
-      "title": "Himno Adventista 488 - Al andar con Jesús"
+      "url": "https://www.youtube.com/watch?v=P0TZX42KNjc",
+      "title": "Hinário Adventista 535 - PARA O CÉU POR JESUS IREI"
     },
     {
-      "url": "https://www.youtube.com/watch?v=Vjh9YJFuw18",
-      "title": "Himno 341 Más cerca del hogar Nuevo Himnario Adventista"
+      "url": "https://www.youtube.com/watch?v=cXRzAGvGPY4",
+      "title": "535 Hinário Adventista - Para o Céu Por Jesus Irei"
     }
   ]
 }

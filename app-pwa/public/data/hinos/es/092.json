@@ -1,28 +1,56 @@
 {
   "title": "92 - Jesús, eres bueno",
-  "author": "",
+  "author": "Joel Carlson Wendelborg",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. Jesús mío, tú eres bueno;",
+      "¡Lo eres todo para mí!",
+      "Estabas muerto, pero vives en mí;",
+      "¡Mereces alabanza, oh Cordero de Dios!",
+      "¡Lo eres todo, sí, todo para mí!"
+    ],
+    [
+      "2. Quiero alabarte,",
+      "Porque tú eres Rey sobre reyes;",
+      "Tú lo eres todo, pero yo nada;",
+      "Llena mi corazón de ternura y paz;",
+      "Honor y gloria eterna te doy."
+    ],
+    [
+      "3. Tu nombre es amor,",
+      "Porque me amas,",
+      "Y quiero caminar en este amor;",
+      "Estoy triunfante, confiando en Ti,",
+      "Jesús mío, gran Consolador."
+    ],
+    [
+      "4. Oh Ungido de Dios,",
+      "Traes paz y perdón;",
+      "La salvación, la vida, la tienes para la Tuya;",
+      "Que mensaje del cielo y de transformación,",
+      "¡Enviado desde el trono de Dios!"
+    ]
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=XnVKnAQ4IlA",
-      "title": "Tan bueno es Dios - Himno 54 | Nuevo"
+      "url": "https://www.youtube.com/watch?v=bDR3PzvVjGM",
+      "title": "Jesus, o bom Pastor - Maranata CIA 115"
     },
     {
-      "url": "https://www.youtube.com/watch?v=FlS9geiNGAo",
-      "title": "Himno 12 - ¡Tu nombre es dulce, buen Jesús! | Antiguo"
+      "url": "https://www.youtube.com/watch?v=pNPfYuz0DgU",
+      "title": "Jesus, o bom Pastor - Hinário Aleluia 293"
     },
     {
-      "url": "https://www.youtube.com/watch?v=GqJaerkJ1eI",
-      "title": "Eres Bueno"
+      "url": "https://www.youtube.com/watch?v=EhiYoJKuMvg",
+      "title": "Dá teu coração a Jesus - Hinário Adventista 183"
     }
   ]
 }

@@ -1,28 +1,55 @@
 {
   "title": "56 - En oración ferviente",
-  "author": "",
+  "author": "James McGranahan",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. En oración ferviente,",
+      "ven tu corazon",
+      "¡En presencia de Dios derrama!",
+      "Pero solo puedes disfrutar",
+      "¿Qué estás pidiendo?",
+      "Cuando dejas todo en el altar."
+    ],
+    [
+      "2. Maravillas de amor que el Señor hará por ti",
+      "Respondiendo a la oración que aceptas",
+      "Su inmenso poder vendrá en tu ayuda.",
+      "¡Cuando dejas todo en el altar!"
+    ],
+    [
+      "3. Sin embargo, si oras sin el corazón",
+      "Ten la paz que el Señor te puede dar.",
+      "Fue porque Dios no sintió que tu alma se abrió.",
+      "Todo, todo, dejándolo en el altar."
+    ]
+  ],
+  "coro": [
+    "Quando tudo perante o Senhor estiver,",
+    "E todo o teu ser Ele controlar,",
+    "Só então hás de ver,",
+    "Que o Senhor tem poder,",
+    "Quando tudo deixares no altar."
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=JsTlFL63wz0",
-      "title": "Cánticos Y Arpas En Oración Ferviente A Adonai Eterno – En Jerusalén De David Fluyen Shofar Y"
+      "url": "https://www.youtube.com/watch?v=EhiYoJKuMvg",
+      "title": "Dá teu coração a Jesus - Hinário Adventista 183"
     },
     {
-      "url": "https://www.youtube.com/watch?v=3hZJ13ddKHo",
-      "title": "Fondo Musical para la Predicación y Oración - En Oración Ferviente - Arpa Cristiana"
+      "url": "https://www.youtube.com/watch?v=2Zay4JxgTdI",
+      "title": "O meu coração sofredor - Hinário Aleluia 400"
     },
     {
-      "url": "https://www.youtube.com/watch?v=0_WcTlBxcHg",
-      "title": "En Sión Se Levanta El Shofar Junto A Cantos Y Arpas En Oración Ferviente A Adonai"
+      "url": "https://www.youtube.com/watch?v=J1gpOpkTSnw",
+      "title": "Cada coração procura - Hinário Aleluia 355"
     }
   ]
 }

@@ -1,28 +1,52 @@
 {
   "title": "87 - Se acabó el año viejo",
-  "author": "",
+  "author": "Maria da Glória Loureiro de Andrade Melodia Tradicional leta",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. Se acabó el año viejo;",
+      "Alabamos a Jesús,",
+      "Porque él nos guardó del maligno",
+      "Todo el año con amor."
+    ],
+    [
+      "2. Mantennos alejados del pecado,",
+      "Nuestros pasos vienen a guiar",
+      "Reanimar nuestra fuerza",
+      "Y se nos viene un buen año."
+    ],
+    [
+      "3. La verdad nos preserva;",
+      "Danos tu protección;",
+      "De doctrina falsa e impía",
+      "Libera nuestros corazones."
+    ],
+    [
+      "4. Cristo eterno te adoramos,",
+      "Porque en la gloria del esplendor,",
+      "A tu lado, para siempre",
+      "Viviremos, oh Señor. Amén"
+    ]
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=kIG-5-aKtj8",
-      "title": "Se acabo el año viejo"
+      "url": "https://www.youtube.com/watch?v=FH7bL_VII6s",
+      "title": "Ano velho já findado - Hinário Aleluia 427"
     },
     {
-      "url": "https://www.youtube.com/watch?v=-s0fKyS8ABk",
-      "title": "Marquihno music Se acabo el año viejo"
+      "url": "https://www.youtube.com/watch?v=ngEkVhMMaNo",
+      "title": "HCC-Instrumental-585-Já termina o ano velho"
     },
     {
-      "url": "https://www.youtube.com/watch?v=a_YyNPEjhS0",
-      "title": "se acabó el año viejo iaora vino el año nuevo que alegría ❤️❤️"
+      "url": "https://www.youtube.com/watch?v=rTe6-DMVEiE",
+      "title": "HCC N.585 - Já termina o Ano Velho - Letra"
     }
   ]
 }

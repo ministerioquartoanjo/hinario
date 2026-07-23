@@ -1,28 +1,58 @@
 {
   "title": "128 - El lugar de bendición y paz",
-  "author": "",
+  "author": "Sarah Poulton Kalley",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. Estoy en el lugar donde hay bendición y paz,",
+      "Donde siento a Jesús conmigo.",
+      "A los humildes Su sangre asegura el perdón:",
+      "Su espíritu los llena de luz."
+    ],
+    [
+      "2. ¡Qué alegría estar donde hay bendición y paz!",
+      "¡Qué incomparable riqueza de amor!",
+      "Los cansados ​​reciben alimento y vigor:",
+      "¡Para los tristes hay un verdadero consuelo!"
+    ],
+    [
+      "3. Qué tierno estar donde hay bendición y paz,",
+      "¡Y un perdón de valor inefable!",
+      "Pero sólo los fieles pueden contar",
+      "Esta gracia del buen Salvador."
+    ],
+    [
+      "4. ¡Hay alabanza incomparable donde hay bendición y paz!",
+      "Y he aquí, los ángeles quieren cantar",
+      "Con los hombres, a coro, la bendita misericordia",
+      "¡De Jesús, que vino a salvarnos!"
+    ]
+  ],
+  "coro": [
+    "Estou no lugar onde há bênção e paz,",
+    "Onde Cristo nos mostra afeição.",
+    "Descansai! Exultai! Confessai-O!",
+    "Publicai que nEle há salvação."
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=C-K9qp_mSmQ",
-      "title": "Himno 44 Despídenos con tu bendición Nuevo himnario Adventista"
+      "url": "https://www.youtube.com/watch?v=wV02TCrR070",
+      "title": "Hino 592  - O lugar de bênção e paz - Harpa Cristã - Pr. José Carlos de Lima"
     },
     {
-      "url": "https://www.youtube.com/watch?v=Vjh9YJFuw18",
-      "title": "Himno 341 Más cerca del hogar Nuevo Himnario Adventista"
+      "url": "https://www.youtube.com/watch?v=WpiVffO6LEM",
+      "title": "O LUGAR DE BENÇÃOS E PAZ - HARPA CRISTÃ 592 E HINÁRIO EVANGÉLICO 392"
     },
     {
-      "url": "https://www.youtube.com/watch?v=-mcqNq5z4fU",
-      "title": "HA62 | Himno 187 | Santo Espíritu de Cristo"
+      "url": "https://www.youtube.com/watch?v=BzJ3qBsBGwI",
+      "title": "O LUGAR DE BENÇÃO E PAZ - 592. HARPA CRISTÃ - (CIFRADO) - Carlos José"
     }
   ]
 }

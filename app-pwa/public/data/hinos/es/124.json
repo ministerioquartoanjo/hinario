@@ -1,28 +1,68 @@
 {
   "title": "124 - El exilio",
-  "author": "",
+  "author": "Justos H. Nelson",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. Estoy muy lejos de mi hermosa patria;",
+      "Estoy cansado.",
+      "extraño a Jesús,",
+      "Ah, ¿cuándo me voy?",
+      "Pajaritos, hermosas flores,",
+      "Quieren encantarme;",
+      "Son esplendores terrenales,",
+      "Pero contemplo mi hogar."
+    ],
+    [
+      "2. Jesús me dio su promesa;",
+      "Ven a buscarme;",
+      "Mi corazón tiene prisa",
+      "Quiero volar ahora.",
+      "Mis pecados fueron muchos,",
+      "Soy muy culpable;",
+      "Pero su sangre me limpia;",
+      "Me voy a casa."
+    ],
+    [
+      "3. Como hijo de su hogar nostálgico,",
+      "Yo quiero ir;",
+      "¿Qué pájaro para el nido?",
+      "Huir a sus brazos;",
+      "Es fiel - Su venida es segura,",
+      "Cuando... no lo sé.",
+      "Pero Él nos dice que estemos alerta;",
+      "Del exilio volveré."
+    ],
+    [
+      "4. Espero tu venida, cantando;",
+      "Mi hogar en el cielo;",
+      "Escucharé tus pasos sonar",
+      "Más allá del velo oscuro.",
+      "Pajaritos, hermosas flores,",
+      "Quieren encantarme;",
+      "Son esplendores terrenales,",
+      "Pero contemplo mi hogar."
+    ]
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=XadM3c2CZNo",
-      "title": "Adoración infantil / En el Exilio / Sábado 19 de septiembre Daniel y sus amigos"
+      "url": "https://www.youtube.com/watch?v=dFbllPp_VoI",
+      "title": "Linda Pátria (passarinhos belas flores) - Exilado Harpa Cristã 36"
     },
     {
-      "url": "https://www.youtube.com/watch?v=f80zlfQIbvk",
-      "title": "Tema 6 - El Desierto del Exilio"
+      "url": "https://www.youtube.com/watch?v=ySN1gknzYJE",
+      "title": "Rafael Oliveira | O Exilado [Harpa Cristã 36]"
     },
     {
-      "url": "https://www.youtube.com/watch?v=HVMt05ujwn8",
-      "title": "LA REDENCIÓN DEL EXILIO"
+      "url": "https://www.youtube.com/watch?v=4ygASZpoO5Y",
+      "title": "Exilado-Harpa Cristã- by Anna"
     }
   ]
 }

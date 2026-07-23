@@ -1,28 +1,58 @@
 {
   "title": "182 - Triste y oscuro era mi vida",
-  "author": "",
+  "author": "William True Sleeper George Coles Stebbins",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. Mi vida era triste y oscura.",
+      "Lejos de Ti mi Redentor.",
+      "Pero la alegría vine a encontrarme,",
+      "A tu lado, Señor.",
+      "La lucha y la tentación fueron grandes;",
+      "He sufrido mucha angustia.",
+      "Para consolar mi corazón,",
+      "A ti vengo, Señor."
+    ],
+    [
+      "2. Tiraré mis vanidades",
+      "Lejos de mí, oh Salvador;",
+      "Porque tu voluntad será mi ley;",
+      "Yo te serviré, Señor.",
+      "Quiero probar tu gran amor,",
+      "Y tu gracia manifiesta;",
+      "Contigo deseo quedarme;",
+      "A ti vengo, Señor."
+    ],
+    [
+      "3. Nunca temeré a la muerte,",
+      "Siempre estarás cerca de mí;",
+      "Por un día iré a tu casa,",
+      "Me recibirás.",
+      "quiero vivir contigo,",
+      "Junto a Ti pelearé;",
+      "Junto a Ti, vencer o morir;",
+      "A ti vengo, Señor"
+    ]
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=WUJlP0p_PaY",
-      "title": "HA62 | Himno 248 | Bajo sus alas"
+      "url": "https://www.youtube.com/watch?v=CiAq57pe7xY",
+      "title": "HCC HINO 450 TRISTE E SOMBRIO FOI MEU VIVER.wmv"
     },
     {
-      "url": "https://www.youtube.com/watch?v=R7NhysHAs8c",
-      "title": "A vida tem tristezas mil - Hinário Aleluia 307"
+      "url": "https://www.youtube.com/watch?v=ebbYsvvUQMQ",
+      "title": "Triste e Sombrio Foi Meu Viver"
     },
     {
-      "url": "https://www.youtube.com/watch?v=LL5Pak4zcuA",
-      "title": "Novo Hinário Adventista • Hino 31 • Jesus Tu És A Minha Vida • (Lyrics)"
+      "url": "https://www.youtube.com/watch?v=fPryy-cU6pY",
+      "title": "Triste e Sombrio foi meu viver"
     }
   ]
 }

@@ -1,28 +1,46 @@
 {
   "title": "163 - ¡Santo! ¡Santo! ¡Santo!",
-  "author": "",
+  "author": "Reginald Heber John Bacchus Dykes",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. ¡Santo!, ¡Santo! ¡Santo! ¡Dios omnipotente!",
+      "Temprano en la mañana cantaremos tus alabanzas.",
+      "¡Santo!, ¡Santo! ¡Santo! ¡Jehová Dios infinito!",
+      "¡Tú eres el Dios exaltado, nuestro Creador!"
+    ],
+    [
+      "2. ¡Santo! ¡Santo! ¡Santo! Nosotros, los pecadores,",
+      "No podemos ver Tu gloria sin temblar.",
+      "Sólo tú eres Santo, justo y compasivo,",
+      "Puro y perfecto, nuestro Rey del amor."
+    ],
+    [
+      "3. ¡Santo! ¡Santo! ¡Santo! dios omnipotente",
+      "Tu creación manifiesta Tu amor.",
+      "Antes de que crearas todo el cielo y la tierra,",
+      "Fuiste y siempre serás, Señor."
+    ]
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=X57AnzP5xDw",
-      "title": "HA62 Himno 70 | Santo, Santo, Santo |"
+      "url": "https://www.youtube.com/watch?v=_1_iOOKdTP4",
+      "title": "HINO 374 CCB - Santo! Santo! Santo! - HINÁRIO 5 COM LETRAS"
     },
     {
-      "url": "https://www.youtube.com/watch?v=vHFYQNsFbEs",
-      "title": "Plena paz e santo gozo - Hinário Aleluia 374"
+      "url": "https://www.youtube.com/watch?v=FDpludwY46U",
+      "title": "Novo Hinário Adventista • Hino 1  • Santo Santo Santo! • (Lyrics)"
     },
     {
-      "url": "https://www.youtube.com/watch?v=tztW4_Rxoeo",
-      "title": "Dons do Espírito Santo - Maranata CIA 139 II"
+      "url": "https://www.youtube.com/watch?v=7PCyZUfniNI",
+      "title": "Novo Hinário Adventista • Hino 561 • Santo Somente é o Senhor • (Lyrics)"
     }
   ]
 }

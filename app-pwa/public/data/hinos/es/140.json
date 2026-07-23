@@ -1,28 +1,52 @@
 {
   "title": "140 - Pensando en Jesús",
-  "author": "",
+  "author": "Autor desconhecido",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. En las horas que paso pensando en Jesús",
+      "Deshago las tinieblas, buscando la luz;",
+      "¡Qué dulces horas de vida para mí;",
+      "¡Jesús me invita a acercarme a Él!"
+    ],
+    [
+      "2. De la vida volando, sin miedo alguno;",
+      "Arriba buscando el amor desde el velo;",
+      "¡Qué dulce aventura, qué aspecto tan feliz!",
+      "Qué nueva naturaleza bendice mi alma."
+    ],
+    [
+      "3. Del mar el rugido, de la brisa la languidez",
+      "Del pájaro el grito del dulce amor,",
+      "Las cuerdas del cielo me hablan,",
+      "¡Los himnos de Dios traen a mis oídos!"
+    ],
+    [
+      "4. Mi alma ansiosa ya quiere viajar",
+      "El camino glorioso veré;",
+      "Que cosa tan hermosa; ¡Vaya! ¡Qué luz sin velo!",
+      "Jesús me revela los misterios del cielo."
+    ]
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=WPZ0kNoGUhI",
-      "title": "Himno 235 La razón de vivir Nuevo Himnario Adventista"
+      "url": "https://www.youtube.com/watch?v=Oq6t8F-zswY",
+      "title": "PENSANDO EM JESUS-17 HARPA CRISTÃ- Carlos José"
     },
     {
-      "url": "https://www.youtube.com/watch?v=WOx31RkfVbA",
-      "title": "Himno Adventista 488 - Al andar con Jesús"
+      "url": "https://www.youtube.com/watch?v=gMzNvV7Ylpg",
+      "title": "Hino 17 - Harpa Cristã - Pensando Em Jesus"
     },
     {
-      "url": "https://www.youtube.com/watch?v=AreOEQROY_g",
-      "title": "Himno 280 - Ser semejante a Jesús | Nuevo"
+      "url": "https://www.youtube.com/watch?v=EhiYoJKuMvg",
+      "title": "Dá teu coração a Jesus - Hinário Adventista 183"
     }
   ]
 }

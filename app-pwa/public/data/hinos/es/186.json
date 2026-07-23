@@ -1,28 +1,52 @@
 {
   "title": "186 - Tú eres fiel, Señor",
-  "author": "",
+  "author": "Thomas Obediah Chislm William Marion Runyan",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. ¡Tú eres fiel, Señor, oh Dios eterno!",
+      "¡Tus hijos saben que no fallarás!",
+      "Nunca cambiaste, nunca te faltó;",
+      "Tal como eras, sí, siempre lo serás."
+    ],
+    [
+      "2. Nubes en el cielo azul, sol brillante.",
+      "Colinas y valles en flor:",
+      "Tú creaste todo lo que hay en la tierra y en el aire, Y todos te alaban, Señor fiel."
+    ],
+    [
+      "3. Perdón total Tú das: ¡qué, seguridad!",
+      "Guíanos siempre por el camino del bien;",
+      "Y en el futuro, ¡oh! ¡Qué dulce esperanza!",
+      "Nos recibirás en el hogar más allá."
+    ]
+  ],
+  "coro": [
+    "Tu és fiel, Senhor!",
+    "Tu és fiel, Senhor!",
+    "Dia após dia Tuas bênçãos nos dás!",
+    "Tua mercê nos sustenta e nos guarda;",
+    "Sim, para sempre, ó Deus, fiel serás."
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=gadupryofo8",
-      "title": "Himno 55 Grande Señor, Es tu Misericordia Nuevo himnario Adventista"
+      "url": "https://www.youtube.com/watch?v=lVBzxAcXTVk",
+      "title": "Novo Hinário Adventista • Hino 15 • Tu És fiel, Senhor • (Lyrics)"
     },
     {
-      "url": "https://www.youtube.com/watch?v=wievOUx_aP8",
-      "title": "Himno 480 - Digno eres, oh Señor | Nuevo"
+      "url": "https://www.youtube.com/watch?v=aHdxpnWYMt4",
+      "title": "TU ÉS FIEL SENHOR  | Hinário Adventista / Hino IASD 35 | MENOS UM"
     },
     {
-      "url": "https://www.youtube.com/watch?v=RQen0zR0WR8",
-      "title": "Himno 55 - Grande, Señor, es tu misericordia – Himnario Adventista"
+      "url": "https://www.youtube.com/watch?v=16mpuxnLv8c",
+      "title": "Hinário Adventista - 035 Tu és Fiel, Senhor"
     }
   ]
 }

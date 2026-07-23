@@ -1,28 +1,58 @@
 {
   "title": "126 - ¡Ay! ¡Nunca se separe!",
-  "author": "",
+  "author": "Isaac Watts Timbrel Of Zion",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. Hay un País de alegría y de luz",
+      "Donde sólo hay santos;",
+      "Los placeres allí son el flujo;",
+      "Allí siempre es de día."
+    ],
+    [
+      "2. Allí siempre hay primavera,",
+      "Las flores no se marchitarán;",
+      "Tan cerca, sí, para nosotros lo está.",
+      "La mansión eterna."
+    ],
+    [
+      "3. Ahora somos como Moisés,",
+      "Ver el futuro hogar;",
+      "Y nos dividimos por la fe",
+      "La dirección única."
+    ]
+  ],
+  "coro": [
+    "Marchamos para a terra além",
+    "E vamos à Jerusalém:",
+    "Iremos com Jesus reinar",
+    "E nunca mais nos separar.",
+    "Oh! Nunca separar?",
+    "Não, nunca separar!",
+    "Oh! Nunca separar?",
+    "Não, nunca separar,",
+    "Iremos com Jesus reinar",
+    "E nunca mais nos separar."
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=ssg0jK7fIDU",
-      "title": "Hinário Adventista 518 - A JESUS SEGUIR EU QUERO"
+      "url": "https://www.youtube.com/watch?v=Ua3zsO9-2X8",
+      "title": "Novo Hinário Adventista • Hino 500 • Oh! Nunca Separar • (Lyrics)"
     },
     {
-      "url": "https://www.youtube.com/watch?v=FSO3qRqLISs",
-      "title": "Hinário Adventista 427 - MAIS PERTO QUERO ESTAR"
+      "url": "https://www.youtube.com/watch?v=PwGYAQydGD0",
+      "title": "Hinario Adventista-565-Oh nunca Separar-playback"
     },
     {
-      "url": "https://www.youtube.com/watch?v=LQgpM6XTSUM",
-      "title": "HA62 | Himno 500 | Aunque en esta vida"
+      "url": "https://www.youtube.com/watch?v=WKZ5ssBKIvk",
+      "title": "Novo Hinário Adventista • Hino 500 • Oh! Nunca Separar • Playback"
     }
   ]
 }

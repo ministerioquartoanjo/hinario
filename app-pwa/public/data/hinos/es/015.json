@@ -1,28 +1,49 @@
 {
   "title": "15 - Anhelo una fe fuerte",
-  "author": "",
+  "author": "William Hiley Bathurst William Henry Havergal",
   "speed": 1,
-  "verses": [],
-  "coro": [],
+  "verses": [
+    [
+      "1. Anhelo una fe fuerte",
+      "En el mundo tentador;",
+      "Que, con calma, no retrocederá.",
+      "Y no tendrás miedo.  2. La fe que no me hace quejarme",
+      "Si llega la corrección,",
+      "Y cuando es más grave,",
+      "Más firme el corazón."
+    ],
+    [
+      "3. La fe que siempre brilla más",
+      "En medio del huracán,",
+      "Quien siente la paz en peligro,",
+      "En una densa oscuridad."
+    ],
+    [
+      "4. Tan fuerte sea mi fe,",
+      "Que, pase lo que pase,",
+      "Incluso puedo probarlo aquí.",
+      "Placer celestial."
+    ]
+  ],
   "audioFilters": {
-    "gain": 1,
+    "gain": 1.2,
     "bass": 0,
-    "mid": 0,
-    "treble": 0
+    "mid": -5,
+    "treble": 12
   },
   "introducao": 0,
   "videos": [
     {
-      "url": "https://www.youtube.com/watch?v=P1U8QqTeNJo",
-      "title": "Himno # 316 Cuanto anhelo llegar... Antiguo"
+      "url": "https://www.youtube.com/watch?v=9vJD67M0uaM",
+      "title": "Jovens fortes, unidos na luta - Hinário Aleluia 419"
     },
     {
-      "url": "https://www.youtube.com/watch?v=I6vsRhc_Igc",
-      "title": "Himnos Adventistas para para hacerte más fuerte que nunca - Hermosa Himnario Adventista"
+      "url": "https://www.youtube.com/watch?v=TZgfCTorWKU",
+      "title": "Rochedo forte é o Senhor - Hinário Aleluia 366"
     },
     {
-      "url": "https://www.youtube.com/watch?v=2lC1T5Ydzhk",
-      "title": "HA62 | Himno 152 | Hay una fuente sin igual"
+      "url": "https://www.youtube.com/watch?v=rLhVEcxewFs",
+      "title": "Castelo Forte - Hinário Aleluia 312"
     }
   ]
 }
