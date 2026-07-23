@@ -1,59 +1,16 @@
 {
-  "id": "Mensaje al mundo",
-  "title": "Mensaje al mundo",
-  "_type": "playlist",
-  "entries": [
-    {
-      "_type": "url",
-      "ie_key": "Youtube",
-      "id": "irnyqGMdq2w",
-      "url": "https://www.youtube.com/watch?v=irnyqGMdq2w",
-      "title": "Una hora de Música Adventista  - Mensaje TV",
-      "description": "Esperamos que estos cantos puedan ser de bendición para tu vida. Dios te bendiga y gracias por escuchar. #adventistas.",
-      "duration": 3534,
-      "channel_id": "UCG0Vpb1XJli9jC_cPmoSC5w",
-      "channel": "MENSAJE MUSIC",
-      "channel_url": "https://www.youtube.com/channel/UCG0Vpb1XJli9jC_cPmoSC5w",
-      "uploader": "MENSAJE MUSIC",
-      "uploader_id": "@MensajeMusic",
-      "uploader_url": "https://www.youtube.com/@MensajeMusic",
-      "thumbnails": [
-        {
-          "url": "https://i.ytimg.com/vi/irnyqGMdq2w/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB6QscSS1kJ5jNKcs-oMGII_rYbrA",
-          "height": 202,
-          "width": 360
-        },
-        {
-          "url": "https://i.ytimg.com/vi/irnyqGMdq2w/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAzqhRE1NNBEu7kG4a6pgfEII5aKw",
-          "height": 404,
-          "width": 720
-        }
-      ],
-      "timestamp": null,
-      "release_timestamp": null,
-      "availability": null,
-      "view_count": 553168,
-      "live_status": null,
-      "channel_is_verified": null,
-      "__x_forwarded_for_ip": null
-    }
-  ],
-  "webpage_url": "ytsearch1:Mensaje al mundo",
-  "original_url": "ytsearch1:Mensaje al mundo",
-  "webpage_url_basename": "Mensaje al mundo",
-  "webpage_url_domain": null,
-  "extractor": "youtube:search",
-  "extractor_key": "YoutubeSearch",
-  "release_year": null,
-  "playlist_count": 1,
-  "epoch": 1784755188,
-  "__files_to_move": {},
-  "_version": {
-    "version": "2026.07.04",
-    "current_git_head": null,
-    "release_git_head": "997fa140840a08df3938b40da470c78049fef1f6",
-    "repository": "yt-dlp/yt-dlp"
+  "title": "102 - Mensaje al mundo",
+  "author": "",
+  "speed": 1,
+  "verses": [],
+  "coro": [],
+  "audioFilters": {
+    "gain": 1,
+    "bass": 0,
+    "mid": 0,
+    "treble": 0
   },
+  "introducao": 0,
   "videos": [
     {
       "url": "https://www.youtube.com/watch?v=VWEtaj6QVFc",

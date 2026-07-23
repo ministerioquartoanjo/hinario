@@ -1,54 +1,16 @@
 {
-  "id": "¡Santo! ¡Santo! ¡Santo!",
-  "title": "¡Santo! ¡Santo! ¡Santo!",
-  "_type": "playlist",
-  "entries": [
-    {
-      "_type": "url",
-      "ie_key": "Youtube",
-      "id": "X57AnzP5xDw",
-      "url": "https://www.youtube.com/watch?v=X57AnzP5xDw",
-      "title": "HA62 Himno 70 | Santo, Santo, Santo |",
-      "description": "70 | Santo, Santo, Santo. 1⠀⠀⠀⠀ Santo, Santo, Santo; Dios Omnipotente; canto de mañana tu excelsa majestad; Santo, Santo, ...",
-      "duration": 141,
-      "channel_id": "UC2TQFq0vEPs1xn-T70FmoTQ",
-      "channel": "62",
-      "channel_url": "https://www.youtube.com/channel/UC2TQFq0vEPs1xn-T70FmoTQ",
-      "uploader": "62",
-      "uploader_id": "@himnarioHA62",
-      "uploader_url": "https://www.youtube.com/@himnarioHA62",
-      "thumbnails": [
-        {
-          "url": "https://i.ytimg.com/vi/X57AnzP5xDw/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLARl12PoheFhKV-grABBn9vADd8Bg",
-          "height": 270,
-          "width": 480
-        }
-      ],
-      "timestamp": null,
-      "release_timestamp": null,
-      "availability": null,
-      "view_count": 608361,
-      "live_status": null,
-      "channel_is_verified": null,
-      "__x_forwarded_for_ip": null
-    }
-  ],
-  "webpage_url": "ytsearch1:¡Santo! ¡Santo! ¡Santo!",
-  "original_url": "ytsearch1:¡Santo! ¡Santo! ¡Santo!",
-  "webpage_url_basename": "¡Santo! ¡Santo! ¡Santo!",
-  "webpage_url_domain": null,
-  "extractor": "youtube:search",
-  "extractor_key": "YoutubeSearch",
-  "release_year": null,
-  "playlist_count": 1,
-  "epoch": 1784755308,
-  "__files_to_move": {},
-  "_version": {
-    "version": "2026.07.04",
-    "current_git_head": null,
-    "release_git_head": "997fa140840a08df3938b40da470c78049fef1f6",
-    "repository": "yt-dlp/yt-dlp"
+  "title": "163 - ¡Santo! ¡Santo! ¡Santo!",
+  "author": "",
+  "speed": 1,
+  "verses": [],
+  "coro": [],
+  "audioFilters": {
+    "gain": 1,
+    "bass": 0,
+    "mid": 0,
+    "treble": 0
   },
+  "introducao": 0,
   "videos": [
     {
       "url": "https://www.youtube.com/watch?v=X57AnzP5xDw",

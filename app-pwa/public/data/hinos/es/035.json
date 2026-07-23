@@ -1,59 +1,16 @@
 {
-  "id": "Con tu mano sosteniendo la mía con fuerza",
-  "title": "Con tu mano sosteniendo la mía con fuerza",
-  "_type": "playlist",
-  "entries": [
-    {
-      "_type": "url",
-      "ie_key": "Youtube",
-      "id": "_MiVbhKaSBE",
-      "url": "https://www.youtube.com/watch?v=_MiVbhKaSBE",
-      "title": "MI REFUGIO ( Feat. Josh Morales & Sam Rivera ) DIOS EN CASA - MIEL SAN MARCOS",
-      "description": "Bienvenido (a) a nuestro canal oficial en Youtube, no olvides suscribirte y activar las notificaciones para disfrutar de todo el ...",
-      "duration": 582,
-      "channel_id": "UC0KvzOWr83tdsdQWUsuf3Hw",
-      "channel": "MIEL SAN MARCOS",
-      "channel_url": "https://www.youtube.com/channel/UC0KvzOWr83tdsdQWUsuf3Hw",
-      "uploader": "MIEL SAN MARCOS",
-      "uploader_id": null,
-      "uploader_url": null,
-      "thumbnails": [
-        {
-          "url": "https://i.ytimg.com/vi/_MiVbhKaSBE/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCXp2I-UuOEBymKJlftpxEz7NUoCg",
-          "height": 202,
-          "width": 360
-        },
-        {
-          "url": "https://i.ytimg.com/vi/_MiVbhKaSBE/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB-A3ui7fgzNoGYUdC6m0LQMYSq7g",
-          "height": 404,
-          "width": 720
-        }
-      ],
-      "timestamp": null,
-      "release_timestamp": null,
-      "availability": null,
-      "view_count": 16737301,
-      "live_status": null,
-      "channel_is_verified": true,
-      "__x_forwarded_for_ip": null
-    }
-  ],
-  "webpage_url": "ytsearch1:Con tu mano sosteniendo la mía con fuerza",
-  "original_url": "ytsearch1:Con tu mano sosteniendo la mía con fuerza",
-  "webpage_url_basename": "Con tu mano sosteniendo la mía con fuerza",
-  "webpage_url_domain": null,
-  "extractor": "youtube:search",
-  "extractor_key": "YoutubeSearch",
-  "release_year": null,
-  "playlist_count": 1,
-  "epoch": 1784755061,
-  "__files_to_move": {},
-  "_version": {
-    "version": "2026.07.04",
-    "current_git_head": null,
-    "release_git_head": "997fa140840a08df3938b40da470c78049fef1f6",
-    "repository": "yt-dlp/yt-dlp"
+  "title": "35 - Con tu mano sosteniendo la mía con fuerza",
+  "author": "",
+  "speed": 1,
+  "verses": [],
+  "coro": [],
+  "audioFilters": {
+    "gain": 1,
+    "bass": 0,
+    "mid": 0,
+    "treble": 0
   },
+  "introducao": 0,
   "videos": [
     {
       "url": "https://www.youtube.com/watch?v=DMzd775oKjM",

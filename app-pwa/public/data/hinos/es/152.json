@@ -1,54 +1,16 @@
 {
-  "id": "¡Qué seguridad! Soy de Jesús",
-  "title": "¡Qué seguridad! Soy de Jesús",
-  "_type": "playlist",
-  "entries": [
-    {
-      "_type": "url",
-      "ie_key": "Youtube",
-      "id": "WPZ0kNoGUhI",
-      "url": "https://www.youtube.com/watch?v=WPZ0kNoGUhI",
-      "title": "Himno 235 La razón de vivir Nuevo Himnario Adventista",
-      "description": "Himno 235 La razón de vivir Nuevo Himnario Adventista.",
-      "duration": 170,
-      "channel_id": "UCUXPcSw5E2t1PGBfLBG44HA",
-      "channel": "Compartiendo Esperanza",
-      "channel_url": "https://www.youtube.com/channel/UCUXPcSw5E2t1PGBfLBG44HA",
-      "uploader": "Compartiendo Esperanza",
-      "uploader_id": "@CompartiendoEsperanza",
-      "uploader_url": "https://www.youtube.com/@CompartiendoEsperanza",
-      "thumbnails": [
-        {
-          "url": "https://i.ytimg.com/vi/WPZ0kNoGUhI/hqdefault.jpg?sqp=-oaymwE2COADEI4CSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gSAAuADigIMCAAQARhyIFcoOjAP&rs=AOn4CLDW-igUHccubLWp7fNuMT8I7PLxVg",
-          "height": 270,
-          "width": 480
-        }
-      ],
-      "timestamp": null,
-      "release_timestamp": null,
-      "availability": null,
-      "view_count": 1420925,
-      "live_status": null,
-      "channel_is_verified": null,
-      "__x_forwarded_for_ip": null
-    }
-  ],
-  "webpage_url": "ytsearch1:¡Qué seguridad! Soy de Jesús",
-  "original_url": "ytsearch1:¡Qué seguridad! Soy de Jesús",
-  "webpage_url_basename": "¡Qué seguridad! Soy de Jesús",
-  "webpage_url_domain": null,
-  "extractor": "youtube:search",
-  "extractor_key": "YoutubeSearch",
-  "release_year": null,
-  "playlist_count": 1,
-  "epoch": 1784755287,
-  "__files_to_move": {},
-  "_version": {
-    "version": "2026.07.04",
-    "current_git_head": null,
-    "release_git_head": "997fa140840a08df3938b40da470c78049fef1f6",
-    "repository": "yt-dlp/yt-dlp"
+  "title": "152 - ¡Qué seguridad! Soy de Jesús",
+  "author": "",
+  "speed": 1,
+  "verses": [],
+  "coro": [],
+  "audioFilters": {
+    "gain": 1,
+    "bass": 0,
+    "mid": 0,
+    "treble": 0
   },
+  "introducao": 0,
   "videos": [
     {
       "url": "https://www.youtube.com/watch?v=WPZ0kNoGUhI",

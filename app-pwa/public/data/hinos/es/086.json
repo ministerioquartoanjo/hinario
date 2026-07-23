@@ -1,54 +1,16 @@
 {
-  "id": "Gracia Infinita",
-  "title": "Gracia Infinita",
-  "_type": "playlist",
-  "entries": [
-    {
-      "_type": "url",
-      "ie_key": "Youtube",
-      "id": "P9chzSukzVA",
-      "url": "https://www.youtube.com/watch?v=P9chzSukzVA",
-      "title": "Infinita graça - 192 Hinário Adventista",
-      "description": null,
-      "duration": 147,
-      "channel_id": "UCdIaQO0PR19Uss5W7QVw6xw",
-      "channel": "Hinário Adventista com PLAYBACK",
-      "channel_url": "https://www.youtube.com/channel/UCdIaQO0PR19Uss5W7QVw6xw",
-      "uploader": "Hinário Adventista com PLAYBACK",
-      "uploader_id": "@hinarioadventistacomplayba9503",
-      "uploader_url": "https://www.youtube.com/@hinarioadventistacomplayba9503",
-      "thumbnails": [
-        {
-          "url": "https://i.ytimg.com/vi/P9chzSukzVA/hqdefault.jpg?sqp=-oaymwE2COADEI4CSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gSAAugCigIMCAAQARhXIFYoZTAP&rs=AOn4CLCHKjdG64yhIuq8jdkCqU5qcFuxPQ",
-          "height": 270,
-          "width": 480
-        }
-      ],
-      "timestamp": null,
-      "release_timestamp": null,
-      "availability": null,
-      "view_count": 1408459,
-      "live_status": null,
-      "channel_is_verified": null,
-      "__x_forwarded_for_ip": null
-    }
-  ],
-  "webpage_url": "ytsearch1:Gracia Infinita",
-  "original_url": "ytsearch1:Gracia Infinita",
-  "webpage_url_basename": "Gracia Infinita",
-  "webpage_url_domain": null,
-  "extractor": "youtube:search",
-  "extractor_key": "YoutubeSearch",
-  "release_year": null,
-  "playlist_count": 1,
-  "epoch": 1784755156,
-  "__files_to_move": {},
-  "_version": {
-    "version": "2026.07.04",
-    "current_git_head": null,
-    "release_git_head": "997fa140840a08df3938b40da470c78049fef1f6",
-    "repository": "yt-dlp/yt-dlp"
+  "title": "86 - Gracia Infinita",
+  "author": "",
+  "speed": 1,
+  "verses": [],
+  "coro": [],
+  "audioFilters": {
+    "gain": 1,
+    "bass": 0,
+    "mid": 0,
+    "treble": 0
   },
+  "introducao": 0,
   "videos": [
     {
       "url": "https://www.youtube.com/watch?v=uOAx70NRlaM",

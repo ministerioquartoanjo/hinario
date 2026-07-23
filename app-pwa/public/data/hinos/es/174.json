@@ -1,59 +1,16 @@
 {
-  "id": "Tu sangre tiene poder",
-  "title": "Tu sangre tiene poder",
-  "_type": "playlist",
-  "entries": [
-    {
-      "_type": "url",
-      "ie_key": "Youtube",
-      "id": "m7H4EKRZbUg",
-      "url": "https://www.youtube.com/watch?v=m7H4EKRZbUg",
-      "title": "HA62 | Himno 294 | Comprado con sangre por Cristo",
-      "description": null,
-      "duration": 139,
-      "channel_id": "UC2TQFq0vEPs1xn-T70FmoTQ",
-      "channel": "62",
-      "channel_url": "https://www.youtube.com/channel/UC2TQFq0vEPs1xn-T70FmoTQ",
-      "uploader": "62",
-      "uploader_id": "@himnarioHA62",
-      "uploader_url": "https://www.youtube.com/@himnarioHA62",
-      "thumbnails": [
-        {
-          "url": "https://i.ytimg.com/vi/m7H4EKRZbUg/hq720.jpg?sqp=-oaymwE2COgCEMoBSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhhIGUoRTAP&rs=AOn4CLBP26V7-R3ApzRqZ1TmpLtZR9rscw",
-          "height": 202,
-          "width": 360
-        },
-        {
-          "url": "https://i.ytimg.com/vi/m7H4EKRZbUg/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhhIGUoRTAP&rs=AOn4CLBeg6FBP3jj3sJwh99nrgKdvfHhgQ",
-          "height": 404,
-          "width": 720
-        }
-      ],
-      "timestamp": null,
-      "release_timestamp": null,
-      "availability": null,
-      "view_count": 2588921,
-      "live_status": null,
-      "channel_is_verified": null,
-      "__x_forwarded_for_ip": null
-    }
-  ],
-  "webpage_url": "ytsearch1:Tu sangre tiene poder",
-  "original_url": "ytsearch1:Tu sangre tiene poder",
-  "webpage_url_basename": "Tu sangre tiene poder",
-  "webpage_url_domain": null,
-  "extractor": "youtube:search",
-  "extractor_key": "YoutubeSearch",
-  "release_year": null,
-  "playlist_count": 1,
-  "epoch": 1784755329,
-  "__files_to_move": {},
-  "_version": {
-    "version": "2026.07.04",
-    "current_git_head": null,
-    "release_git_head": "997fa140840a08df3938b40da470c78049fef1f6",
-    "repository": "yt-dlp/yt-dlp"
+  "title": "174 - Tu sangre tiene poder",
+  "author": "",
+  "speed": 1,
+  "verses": [],
+  "coro": [],
+  "audioFilters": {
+    "gain": 1,
+    "bass": 0,
+    "mid": 0,
+    "treble": 0
   },
+  "introducao": 0,
   "videos": [
     {
       "url": "https://www.youtube.com/watch?v=m7H4EKRZbUg",

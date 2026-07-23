@@ -1,59 +1,16 @@
 {
-  "id": "Si Cristo va conmigo",
-  "title": "Si Cristo va conmigo",
-  "_type": "playlist",
-  "entries": [
-    {
-      "_type": "url",
-      "ie_key": "Youtube",
-      "id": "HbDez34qav8",
-      "url": "https://www.youtube.com/watch?v=HbDez34qav8",
-      "title": "Hinário Adventista 303 - SE CRISTO FOR COMIGO",
-      "description": "Se este material tocou seu coração, considere apoiar o Canal 7: https://apoia.se/canal7 ou via PIX: canaladv7@gmail.com ...",
-      "duration": 301,
-      "channel_id": "UCN73ZgVF-0rZklkpwaj28pA",
-      "channel": "Canal 7",
-      "channel_url": "https://www.youtube.com/channel/UCN73ZgVF-0rZklkpwaj28pA",
-      "uploader": "Canal 7",
-      "uploader_id": "@canal.adventista",
-      "uploader_url": "https://www.youtube.com/@canal.adventista",
-      "thumbnails": [
-        {
-          "url": "https://i.ytimg.com/vi/HbDez34qav8/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBA2x2vGhlW06UHKMUHKXh0PvhSxw",
-          "height": 202,
-          "width": 360
-        },
-        {
-          "url": "https://i.ytimg.com/vi/HbDez34qav8/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBo1_F5cTuLedXJ-aBGnjs3a7tB6w",
-          "height": 404,
-          "width": 720
-        }
-      ],
-      "timestamp": null,
-      "release_timestamp": null,
-      "availability": null,
-      "view_count": 3144354,
-      "live_status": null,
-      "channel_is_verified": null,
-      "__x_forwarded_for_ip": null
-    }
-  ],
-  "webpage_url": "ytsearch1:Si Cristo va conmigo",
-  "original_url": "ytsearch1:Si Cristo va conmigo",
-  "webpage_url_basename": "Si Cristo va conmigo",
-  "webpage_url_domain": null,
-  "extractor": "youtube:search",
-  "extractor_key": "YoutubeSearch",
-  "release_year": null,
-  "playlist_count": 1,
-  "epoch": 1784755314,
-  "__files_to_move": {},
-  "_version": {
-    "version": "2026.07.04",
-    "current_git_head": null,
-    "release_git_head": "997fa140840a08df3938b40da470c78049fef1f6",
-    "repository": "yt-dlp/yt-dlp"
+  "title": "166 - Si Cristo va conmigo",
+  "author": "",
+  "speed": 1,
+  "verses": [],
+  "coro": [],
+  "audioFilters": {
+    "gain": 1,
+    "bass": 0,
+    "mid": 0,
+    "treble": 0
   },
+  "introducao": 0,
   "videos": [
     {
       "url": "https://www.youtube.com/watch?v=HbDez34qav8",

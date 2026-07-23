@@ -1,59 +1,16 @@
 {
-  "id": "Dondequiera que esté",
-  "title": "Dondequiera que esté",
-  "_type": "playlist",
-  "entries": [
-    {
-      "_type": "url",
-      "ie_key": "Youtube",
-      "id": "376SUp5-Wxg",
-      "url": "https://www.youtube.com/watch?v=376SUp5-Wxg",
-      "title": "Himno Adventista 502 - Brilla en el sitio donde estés",
-      "description": "Himno Adventista 502 - Brilla en el sitio donde estés Ahora podrás encontrar tus himnos favoritos   en un sólo lugar y en alta ...",
-      "duration": 139,
-      "channel_id": "UCTMOmWVVXbTX0sQ7WAIChrw",
-      "channel": "Iglesia Adventista del Séptimo Día - Perú (UPN)",
-      "channel_url": "https://www.youtube.com/channel/UCTMOmWVVXbTX0sQ7WAIChrw",
-      "uploader": "Iglesia Adventista del Séptimo Día - Perú (UPN)",
-      "uploader_id": "@AdventistasUPN",
-      "uploader_url": "https://www.youtube.com/@AdventistasUPN",
-      "thumbnails": [
-        {
-          "url": "https://i.ytimg.com/vi/376SUp5-Wxg/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCrEL7PFfvlk9MM3C_j3oKxR1voDg",
-          "height": 202,
-          "width": 360
-        },
-        {
-          "url": "https://i.ytimg.com/vi/376SUp5-Wxg/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBO3n7duTA4uMG7gD7dMQ3r0NXaIg",
-          "height": 404,
-          "width": 720
-        }
-      ],
-      "timestamp": null,
-      "release_timestamp": null,
-      "availability": null,
-      "view_count": 155155,
-      "live_status": null,
-      "channel_is_verified": null,
-      "__x_forwarded_for_ip": null
-    }
-  ],
-  "webpage_url": "ytsearch1:Dondequiera que esté",
-  "original_url": "ytsearch1:Dondequiera que esté",
-  "webpage_url_basename": "Dondequiera que esté",
-  "webpage_url_domain": null,
-  "extractor": "youtube:search",
-  "extractor_key": "YoutubeSearch",
-  "release_year": null,
-  "playlist_count": 1,
-  "epoch": 1784755254,
-  "__files_to_move": {},
-  "_version": {
-    "version": "2026.07.04",
-    "current_git_head": null,
-    "release_git_head": "997fa140840a08df3938b40da470c78049fef1f6",
-    "repository": "yt-dlp/yt-dlp"
+  "title": "135 - Dondequiera que esté",
+  "author": "",
+  "speed": 1,
+  "verses": [],
+  "coro": [],
+  "audioFilters": {
+    "gain": 1,
+    "bass": 0,
+    "mid": 0,
+    "treble": 0
   },
+  "introducao": 0,
   "videos": [
     {
       "url": "https://www.youtube.com/watch?v=376SUp5-Wxg",

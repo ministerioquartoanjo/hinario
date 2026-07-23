@@ -1,59 +1,16 @@
 {
-  "id": "Anhelo un lugar de amor",
-  "title": "Anhelo un lugar de amor",
-  "_type": "playlist",
-  "entries": [
-    {
-      "_type": "url",
-      "ie_key": "Youtube",
-      "id": "Eyquiek7M1s",
-      "url": "https://www.youtube.com/watch?v=Eyquiek7M1s",
-      "title": "Himno Adventista 254 - Anhelo ser limpio",
-      "description": "Himno Adventista 254 - Anhelo ser limpio Ahora podrás encontrar tus himnos favoritos   en un sólo lugar y en alta calidad ...",
-      "duration": 204,
-      "channel_id": "UCTMOmWVVXbTX0sQ7WAIChrw",
-      "channel": "Iglesia Adventista del Séptimo Día - Perú (UPN)",
-      "channel_url": "https://www.youtube.com/channel/UCTMOmWVVXbTX0sQ7WAIChrw",
-      "uploader": "Iglesia Adventista del Séptimo Día - Perú (UPN)",
-      "uploader_id": "@AdventistasUPN",
-      "uploader_url": "https://www.youtube.com/@AdventistasUPN",
-      "thumbnails": [
-        {
-          "url": "https://i.ytimg.com/vi/Eyquiek7M1s/hq720.jpg?sqp=-oaymwEgCOgCEMoBSFXyq4qpAxIIARUAAIhCGAFwAcABBrgC8xg=&rs=AOn4CLDRJmj2WmX3iNkA2W09ZmVSEreyLQ",
-          "height": 202,
-          "width": 360
-        },
-        {
-          "url": "https://i.ytimg.com/vi/Eyquiek7M1s/hq720.jpg?sqp=-oaymwEgCNAFEJQDSFXyq4qpAxIIARUAAIhCGAFwAcABBrgC8xg=&rs=AOn4CLDVPi1lDBbP-dFjf98NeEzDIHY2VQ",
-          "height": 404,
-          "width": 720
-        }
-      ],
-      "timestamp": null,
-      "release_timestamp": null,
-      "availability": null,
-      "view_count": 1069961,
-      "live_status": null,
-      "channel_is_verified": null,
-      "__x_forwarded_for_ip": null
-    }
-  ],
-  "webpage_url": "ytsearch1:Anhelo un lugar de amor",
-  "original_url": "ytsearch1:Anhelo un lugar de amor",
-  "webpage_url_basename": "Anhelo un lugar de amor",
-  "webpage_url_domain": null,
-  "extractor": "youtube:search",
-  "extractor_key": "YoutubeSearch",
-  "release_year": null,
-  "playlist_count": 1,
-  "epoch": 1784755036,
-  "__files_to_move": {},
-  "_version": {
-    "version": "2026.07.04",
-    "current_git_head": null,
-    "release_git_head": "997fa140840a08df3938b40da470c78049fef1f6",
-    "repository": "yt-dlp/yt-dlp"
+  "title": "22 - Anhelo un lugar de amor",
+  "author": "",
+  "speed": 1,
+  "verses": [],
+  "coro": [],
+  "audioFilters": {
+    "gain": 1,
+    "bass": 0,
+    "mid": 0,
+    "treble": 0
   },
+  "introducao": 0,
   "videos": [
     {
       "url": "https://www.youtube.com/watch?v=Eyquiek7M1s",

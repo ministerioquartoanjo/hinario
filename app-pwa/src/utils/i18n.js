@@ -48,10 +48,10 @@ export function getHymnLanguage() {
 }
 
 export function getHymnPathPrefix() {
-    if (currentHymnLang === 'pt') return 'data/hinos';
+    if (currentHymnLang === 'pt') return 'data/hinos/pt';
     if (currentHymnLang === 'es') return 'data/hinos/es';
     if (currentHymnLang === 'en') return 'data/hinos/en';
-    return 'data/hinos';
+    return 'data/hinos/pt';
 }
 
 export function applyTranslations(scope = document) {

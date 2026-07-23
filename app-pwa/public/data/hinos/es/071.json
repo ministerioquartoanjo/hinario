@@ -1,54 +1,16 @@
 {
-  "id": "Gloria a Jesús",
-  "title": "Gloria a Jesús",
-  "_type": "playlist",
-  "entries": [
-    {
-      "_type": "url",
-      "ie_key": "Youtube",
-      "id": "lRc6G1n4Iko",
-      "url": "https://www.youtube.com/watch?v=lRc6G1n4Iko",
-      "title": "Hinário Adventista - 152 Vencendo Vem Jesus",
-      "description": "Venha participar do grupo de estudos Bíblia e a Ciência no WhasApp!Envie mensagem para +55 54 96132421.",
-      "duration": 160,
-      "channel_id": "UCTkHM6j6ZsgA398AdpEDpFQ",
-      "channel": "Bíblia e a Ciência",
-      "channel_url": "https://www.youtube.com/channel/UCTkHM6j6ZsgA398AdpEDpFQ",
-      "uploader": "Bíblia e a Ciência",
-      "uploader_id": "@BíbliaeaCiência",
-      "uploader_url": "https://www.youtube.com/@BíbliaeaCiência",
-      "thumbnails": [
-        {
-          "url": "https://i.ytimg.com/vi/lRc6G1n4Iko/hqdefault.jpg?sqp=-oaymwE2COADEI4CSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gSAAuADigIMCAAQARhlIGUoZTAP&rs=AOn4CLD6Ddk__Ni84J_u5h0owsxBrzQhjA",
-          "height": 270,
-          "width": 480
-        }
-      ],
-      "timestamp": null,
-      "release_timestamp": null,
-      "availability": null,
-      "view_count": 3365775,
-      "live_status": null,
-      "channel_is_verified": null,
-      "__x_forwarded_for_ip": null
-    }
-  ],
-  "webpage_url": "ytsearch1:Gloria a Jesús",
-  "original_url": "ytsearch1:Gloria a Jesús",
-  "webpage_url_basename": "Gloria a Jesús",
-  "webpage_url_domain": null,
-  "extractor": "youtube:search",
-  "extractor_key": "YoutubeSearch",
-  "release_year": null,
-  "playlist_count": 1,
-  "epoch": 1784755127,
-  "__files_to_move": {},
-  "_version": {
-    "version": "2026.07.04",
-    "current_git_head": null,
-    "release_git_head": "997fa140840a08df3938b40da470c78049fef1f6",
-    "repository": "yt-dlp/yt-dlp"
+  "title": "71 - Gloria a Jesús",
+  "author": "",
+  "speed": 1,
+  "verses": [],
+  "coro": [],
+  "audioFilters": {
+    "gain": 1,
+    "bass": 0,
+    "mid": 0,
+    "treble": 0
   },
+  "introducao": 0,
   "videos": [
     {
       "url": "https://www.youtube.com/watch?v=V276Mb6HKlw",

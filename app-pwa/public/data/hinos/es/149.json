@@ -1,59 +1,16 @@
 {
-  "id": "Qué gozo es creer en Cristo",
-  "title": "Qué gozo es creer en Cristo",
-  "_type": "playlist",
-  "entries": [
-    {
-      "_type": "url",
-      "ie_key": "Youtube",
-      "id": "IWPrl_Qb6hc",
-      "url": "https://www.youtube.com/watch?v=IWPrl_Qb6hc",
-      "title": "Himno Adventista 395 - ¡Oh, cuán dulce es fiar en Cristo!",
-      "description": "Himno Adventista 395 - ¡Oh, cuán dulce es fiar en Cristo! Ahora podrás encontrar tus himnos favoritos   en un sólo lugar y en ...",
-      "duration": 159,
-      "channel_id": "UCTMOmWVVXbTX0sQ7WAIChrw",
-      "channel": "Iglesia Adventista del Séptimo Día - Perú (UPN)",
-      "channel_url": "https://www.youtube.com/channel/UCTMOmWVVXbTX0sQ7WAIChrw",
-      "uploader": "Iglesia Adventista del Séptimo Día - Perú (UPN)",
-      "uploader_id": "@AdventistasUPN",
-      "uploader_url": "https://www.youtube.com/@AdventistasUPN",
-      "thumbnails": [
-        {
-          "url": "https://i.ytimg.com/vi/IWPrl_Qb6hc/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB1RvDlP7Ca6MhPCppkklU4CSYnmA",
-          "height": 202,
-          "width": 360
-        },
-        {
-          "url": "https://i.ytimg.com/vi/IWPrl_Qb6hc/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLASQoaw8TcseEF89sQIhhqasDDPRQ",
-          "height": 404,
-          "width": 720
-        }
-      ],
-      "timestamp": null,
-      "release_timestamp": null,
-      "availability": null,
-      "view_count": 221334,
-      "live_status": null,
-      "channel_is_verified": null,
-      "__x_forwarded_for_ip": null
-    }
-  ],
-  "webpage_url": "ytsearch1:Qué gozo es creer en Cristo",
-  "original_url": "ytsearch1:Qué gozo es creer en Cristo",
-  "webpage_url_basename": "Qué gozo es creer en Cristo",
-  "webpage_url_domain": null,
-  "extractor": "youtube:search",
-  "extractor_key": "YoutubeSearch",
-  "release_year": null,
-  "playlist_count": 1,
-  "epoch": 1784755281,
-  "__files_to_move": {},
-  "_version": {
-    "version": "2026.07.04",
-    "current_git_head": null,
-    "release_git_head": "997fa140840a08df3938b40da470c78049fef1f6",
-    "repository": "yt-dlp/yt-dlp"
+  "title": "149 - Qué gozo es creer en Cristo",
+  "author": "",
+  "speed": 1,
+  "verses": [],
+  "coro": [],
+  "audioFilters": {
+    "gain": 1,
+    "bass": 0,
+    "mid": 0,
+    "treble": 0
   },
+  "introducao": 0,
   "videos": [
     {
       "url": "https://www.youtube.com/watch?v=IWPrl_Qb6hc",

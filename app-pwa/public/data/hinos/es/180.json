@@ -1,59 +1,16 @@
 {
-  "id": "Tengo Paz en Mi Ser",
-  "title": "Tengo Paz en Mi Ser",
-  "_type": "playlist",
-  "entries": [
-    {
-      "_type": "url",
-      "ie_key": "Youtube",
-      "id": "Z4vtAd2ddAk",
-      "url": "https://www.youtube.com/watch?v=Z4vtAd2ddAk",
-      "title": "Tengo paz  | Himno Adventista 426 | Versión renovada",
-      "description": "himno #adventistas #musicaadventista #musicacristiana #felizsabado Tengo paz Si paz como un río inunda mi ser, o pruebas ...",
-      "duration": 235,
-      "channel_id": "UC52sN9AdAl1pILVH2eaD3dQ",
-      "channel": "Melodías y Esperanza",
-      "channel_url": "https://www.youtube.com/channel/UC52sN9AdAl1pILVH2eaD3dQ",
-      "uploader": "Melodías y Esperanza",
-      "uploader_id": null,
-      "uploader_url": null,
-      "thumbnails": [
-        {
-          "url": "https://i.ytimg.com/vi/Z4vtAd2ddAk/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBXnWxtksffVac9cptcnCFloT9g2Q",
-          "height": 202,
-          "width": 360
-        },
-        {
-          "url": "https://i.ytimg.com/vi/Z4vtAd2ddAk/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBkO4R6pYQHLh3XbZDoqs0eZPAO0A",
-          "height": 404,
-          "width": 720
-        }
-      ],
-      "timestamp": null,
-      "release_timestamp": null,
-      "availability": null,
-      "view_count": 12397,
-      "live_status": null,
-      "channel_is_verified": true,
-      "__x_forwarded_for_ip": null
-    }
-  ],
-  "webpage_url": "ytsearch1:Tengo Paz en Mi Ser",
-  "original_url": "ytsearch1:Tengo Paz en Mi Ser",
-  "webpage_url_basename": "Tengo Paz en Mi Ser",
-  "webpage_url_domain": null,
-  "extractor": "youtube:search",
-  "extractor_key": "YoutubeSearch",
-  "release_year": null,
-  "playlist_count": 1,
-  "epoch": 1784755341,
-  "__files_to_move": {},
-  "_version": {
-    "version": "2026.07.04",
-    "current_git_head": null,
-    "release_git_head": "997fa140840a08df3938b40da470c78049fef1f6",
-    "repository": "yt-dlp/yt-dlp"
+  "title": "180 - Tengo Paz en Mi Ser",
+  "author": "",
+  "speed": 1,
+  "verses": [],
+  "coro": [],
+  "audioFilters": {
+    "gain": 1,
+    "bass": 0,
+    "mid": 0,
+    "treble": 0
   },
+  "introducao": 0,
   "videos": [
     {
       "url": "https://www.youtube.com/watch?v=Z4vtAd2ddAk",

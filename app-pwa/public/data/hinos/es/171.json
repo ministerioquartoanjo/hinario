@@ -1,59 +1,16 @@
 {
-  "id": "Siempre fiel",
-  "title": "Siempre fiel",
-  "_type": "playlist",
-  "entries": [
-    {
-      "_type": "url",
-      "ie_key": "Youtube",
-      "id": "kOUteeDb_QI",
-      "url": "https://www.youtube.com/watch?v=kOUteeDb_QI",
-      "title": "Himno 478 - Sé fiel siempre, hermano | Nuevo",
-      "description": "En este canal subimos todos los himnos adventistas, puedes apoyarnos dando un me gusta, Suscríbete y comparte amor y ...",
-      "duration": 141,
-      "channel_id": "UCQueHIEoaEN0Rr_kyy4BWNw",
-      "channel": "Himnario Adventista",
-      "channel_url": "https://www.youtube.com/channel/UCQueHIEoaEN0Rr_kyy4BWNw",
-      "uploader": "Himnario Adventista",
-      "uploader_id": "@himnarioadventista8688",
-      "uploader_url": "https://www.youtube.com/@himnarioadventista8688",
-      "thumbnails": [
-        {
-          "url": "https://i.ytimg.com/vi/kOUteeDb_QI/hq720.jpg?sqp=-oaymwE6COgCEMoBSFXyq4qpAywIARUAAIhCGAFwAcABBvABAfgBvgeAAtAFigIMCAAQARh_IDsoFzAPuAL3GA==&rs=AOn4CLAifu0Y8wbLaF-HCxtZBpYSeYX05A",
-          "height": 202,
-          "width": 360
-        },
-        {
-          "url": "https://i.ytimg.com/vi/kOUteeDb_QI/hq720.jpg?sqp=-oaymwE6CNAFEJQDSFXyq4qpAywIARUAAIhCGAFwAcABBvABAfgBvgeAAtAFigIMCAAQARh_IDsoFzAPuAL3GA==&rs=AOn4CLDEe1FvQNftG9i2OD3sJT6dDKP75w",
-          "height": 404,
-          "width": 720
-        }
-      ],
-      "timestamp": null,
-      "release_timestamp": null,
-      "availability": null,
-      "view_count": 12132,
-      "live_status": null,
-      "channel_is_verified": null,
-      "__x_forwarded_for_ip": null
-    }
-  ],
-  "webpage_url": "ytsearch1:Siempre fiel",
-  "original_url": "ytsearch1:Siempre fiel",
-  "webpage_url_basename": "Siempre fiel",
-  "webpage_url_domain": null,
-  "extractor": "youtube:search",
-  "extractor_key": "YoutubeSearch",
-  "release_year": null,
-  "playlist_count": 1,
-  "epoch": 1784755324,
-  "__files_to_move": {},
-  "_version": {
-    "version": "2026.07.04",
-    "current_git_head": null,
-    "release_git_head": "997fa140840a08df3938b40da470c78049fef1f6",
-    "repository": "yt-dlp/yt-dlp"
+  "title": "171 - Siempre fiel",
+  "author": "",
+  "speed": 1,
+  "verses": [],
+  "coro": [],
+  "audioFilters": {
+    "gain": 1,
+    "bass": 0,
+    "mid": 0,
+    "treble": 0
   },
+  "introducao": 0,
   "videos": [
     {
       "url": "https://www.youtube.com/watch?v=kOUteeDb_QI",

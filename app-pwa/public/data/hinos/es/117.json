@@ -1,59 +1,16 @@
 {
-  "id": "La invitación de Cristo",
-  "title": "La invitación de Cristo",
-  "_type": "playlist",
-  "entries": [
-    {
-      "_type": "url",
-      "ie_key": "Youtube",
-      "id": "gKnkRULb4_E",
-      "url": "https://www.youtube.com/watch?v=gKnkRULb4_E",
-      "title": "201 - Canción del Espíritu | | Letra Oficial | 4K50fps",
-      "description": "Un himno de invitación a la entrega y a la plenitud, clamando que el Espíritu de Cristo nos envuelva! Continuando con la ...",
-      "duration": 196,
-      "channel_id": "UCmNp5eUFj3FtxKZAcVBYapg",
-      "channel": "Craftjy Seventh-Day Adventist",
-      "channel_url": "https://www.youtube.com/channel/UCmNp5eUFj3FtxKZAcVBYapg",
-      "uploader": "Craftjy Seventh-Day Adventist",
-      "uploader_id": "@CraftjySeventh-DayAdventist",
-      "uploader_url": "https://www.youtube.com/@CraftjySeventh-DayAdventist",
-      "thumbnails": [
-        {
-          "url": "https://i.ytimg.com/vi/gKnkRULb4_E/hq720.jpg?sqp=-oaymwEgCOgCEMoBSFXyq4qpAxIIARUAAIhCGAFwAcABBrgC9xg=&rs=AOn4CLA4BY5hHq50HDywsa11ZoY36yqFlA",
-          "height": 202,
-          "width": 360
-        },
-        {
-          "url": "https://i.ytimg.com/vi/gKnkRULb4_E/hq720.jpg?sqp=-oaymwEgCNAFEJQDSFXyq4qpAxIIARUAAIhCGAFwAcABBrgC9xg=&rs=AOn4CLDfBoVCIx0tCzfGP5oA1AVTrDUdAQ",
-          "height": 404,
-          "width": 720
-        }
-      ],
-      "timestamp": null,
-      "release_timestamp": null,
-      "availability": null,
-      "view_count": 4228,
-      "live_status": null,
-      "channel_is_verified": null,
-      "__x_forwarded_for_ip": null
-    }
-  ],
-  "webpage_url": "ytsearch1:La invitación de Cristo",
-  "original_url": "ytsearch1:La invitación de Cristo",
-  "webpage_url_basename": "La invitación de Cristo",
-  "webpage_url_domain": null,
-  "extractor": "youtube:search",
-  "extractor_key": "YoutubeSearch",
-  "release_year": null,
-  "playlist_count": 1,
-  "epoch": 1784755219,
-  "__files_to_move": {},
-  "_version": {
-    "version": "2026.07.04",
-    "current_git_head": null,
-    "release_git_head": "997fa140840a08df3938b40da470c78049fef1f6",
-    "repository": "yt-dlp/yt-dlp"
+  "title": "117 - La invitación de Cristo",
+  "author": "",
+  "speed": 1,
+  "verses": [],
+  "coro": [],
+  "audioFilters": {
+    "gain": 1,
+    "bass": 0,
+    "mid": 0,
+    "treble": 0
   },
+  "introducao": 0,
   "videos": [
     {
       "url": "https://www.youtube.com/watch?v=RxX8IbmMgYQ",

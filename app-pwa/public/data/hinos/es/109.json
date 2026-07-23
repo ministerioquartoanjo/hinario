@@ -1,59 +1,16 @@
 {
-  "id": "En la cruz morí por ti",
-  "title": "En la cruz morí por ti",
-  "_type": "playlist",
-  "entries": [
-    {
-      "_type": "url",
-      "ie_key": "Youtube",
-      "id": "1LBGWEG23uc",
-      "url": "https://www.youtube.com/watch?v=1LBGWEG23uc",
-      "title": "Novo Hinário Adventista • Hino 107  • Na Cruz Morri Por Ti • (Lyrics)",
-      "description": "Veja Também | Ouça em outras plataformas: https://onerpm.link/5413094777 Adquira o Novo Hinário Adventista: ...",
-      "duration": 140,
-      "channel_id": "UCQhkLOO40bmTMeLcbspKW8A",
-      "channel": "Casa Publicadora Brasileira",
-      "channel_url": "https://www.youtube.com/channel/UCQhkLOO40bmTMeLcbspKW8A",
-      "uploader": "Casa Publicadora Brasileira",
-      "uploader_id": "@casapublicadora",
-      "uploader_url": "https://www.youtube.com/@casapublicadora",
-      "thumbnails": [
-        {
-          "url": "https://i.ytimg.com/vi/1LBGWEG23uc/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDzrzn3ogFuFJkHUOvL3OmSij9xtg",
-          "height": 202,
-          "width": 360
-        },
-        {
-          "url": "https://i.ytimg.com/vi/1LBGWEG23uc/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCdwVWHpIGjp3h7cS_TRQOjrh0b7Q",
-          "height": 404,
-          "width": 720
-        }
-      ],
-      "timestamp": null,
-      "release_timestamp": null,
-      "availability": null,
-      "view_count": 193106,
-      "live_status": null,
-      "channel_is_verified": true,
-      "__x_forwarded_for_ip": null
-    }
-  ],
-  "webpage_url": "ytsearch1:En la cruz morí por ti",
-  "original_url": "ytsearch1:En la cruz morí por ti",
-  "webpage_url_basename": "En la cruz morí por ti",
-  "webpage_url_domain": null,
-  "extractor": "youtube:search",
-  "extractor_key": "YoutubeSearch",
-  "release_year": null,
-  "playlist_count": 1,
-  "epoch": 1784755202,
-  "__files_to_move": {},
-  "_version": {
-    "version": "2026.07.04",
-    "current_git_head": null,
-    "release_git_head": "997fa140840a08df3938b40da470c78049fef1f6",
-    "repository": "yt-dlp/yt-dlp"
+  "title": "109 - En la cruz morí por ti",
+  "author": "",
+  "speed": 1,
+  "verses": [],
+  "coro": [],
+  "audioFilters": {
+    "gain": 1,
+    "bass": 0,
+    "mid": 0,
+    "treble": 0
   },
+  "introducao": 0,
   "videos": [
     {
       "url": "https://www.youtube.com/watch?v=1LBGWEG23uc",

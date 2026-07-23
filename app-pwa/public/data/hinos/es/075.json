@@ -1,59 +1,16 @@
 {
-  "id": "Gran comandante",
-  "title": "Gran comandante",
-  "_type": "playlist",
-  "entries": [
-    {
-      "_type": "url",
-      "ie_key": "Youtube",
-      "id": "pDF_yaObO8M",
-      "url": "https://www.youtube.com/watch?v=pDF_yaObO8M",
-      "title": "Novo Hinário Adventista • Hino 74 • Grande Comandante • (Lyrics)",
-      "description": "Veja Também | Ouça em outras plataformas: https://onerpm.link/5413094777 Adquira o Novo Hinário Adventista: ...",
-      "duration": 144,
-      "channel_id": "UCQhkLOO40bmTMeLcbspKW8A",
-      "channel": "Casa Publicadora Brasileira",
-      "channel_url": "https://www.youtube.com/channel/UCQhkLOO40bmTMeLcbspKW8A",
-      "uploader": "Casa Publicadora Brasileira",
-      "uploader_id": "@casapublicadora",
-      "uploader_url": "https://www.youtube.com/@casapublicadora",
-      "thumbnails": [
-        {
-          "url": "https://i.ytimg.com/vi/pDF_yaObO8M/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAk2gXhLbx3Ua_kAu6MH8IdrFfahA",
-          "height": 202,
-          "width": 360
-        },
-        {
-          "url": "https://i.ytimg.com/vi/pDF_yaObO8M/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCiO9bZ2uGfrgHCXtLUKlrqZjZ6dQ",
-          "height": 404,
-          "width": 720
-        }
-      ],
-      "timestamp": null,
-      "release_timestamp": null,
-      "availability": null,
-      "view_count": 247306,
-      "live_status": null,
-      "channel_is_verified": true,
-      "__x_forwarded_for_ip": null
-    }
-  ],
-  "webpage_url": "ytsearch1:Gran comandante",
-  "original_url": "ytsearch1:Gran comandante",
-  "webpage_url_basename": "Gran comandante",
-  "webpage_url_domain": null,
-  "extractor": "youtube:search",
-  "extractor_key": "YoutubeSearch",
-  "release_year": null,
-  "playlist_count": 1,
-  "epoch": 1784755135,
-  "__files_to_move": {},
-  "_version": {
-    "version": "2026.07.04",
-    "current_git_head": null,
-    "release_git_head": "997fa140840a08df3938b40da470c78049fef1f6",
-    "repository": "yt-dlp/yt-dlp"
+  "title": "75 - Gran comandante",
+  "author": "",
+  "speed": 1,
+  "verses": [],
+  "coro": [],
+  "audioFilters": {
+    "gain": 1,
+    "bass": 0,
+    "mid": 0,
+    "treble": 0
   },
+  "introducao": 0,
   "videos": [
     {
       "url": "https://www.youtube.com/watch?v=pDF_yaObO8M",

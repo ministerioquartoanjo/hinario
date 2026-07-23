@@ -1,54 +1,16 @@
 {
-  "id": "La Cena del Señor",
-  "title": "La Cena del Señor",
-  "_type": "playlist",
-  "entries": [
-    {
-      "_type": "url",
-      "ie_key": "Youtube",
-      "id": "Chl4ziMbhtc",
-      "url": "https://www.youtube.com/watch?v=Chl4ziMbhtc",
-      "title": "La Cena del Señor, Heme Aquí.",
-      "description": "Hermoso Videocanto de la creencia #16 de la IASD. Canto entonado por el grupo Heme Aquí. Letra: Hemos llegado a este lugar ...",
-      "duration": 192,
-      "channel_id": "UCEwtUBhdlU2xKz643fxkdUQ",
-      "channel": "Iglesia Adventista Chaimal",
-      "channel_url": "https://www.youtube.com/channel/UCEwtUBhdlU2xKz643fxkdUQ",
-      "uploader": "Iglesia Adventista Chaimal",
-      "uploader_id": "@iglesiaadventistachaimal7075",
-      "uploader_url": "https://www.youtube.com/@iglesiaadventistachaimal7075",
-      "thumbnails": [
-        {
-          "url": "https://i.ytimg.com/vi/Chl4ziMbhtc/hqdefault.jpg?sqp=-oaymwEfCOADEI4CSFXyq4qpAxEIARUAAIhCGAFwAcABBrgCGaLzl_8DDgjPn4KLBhjg6gQg4KgB&rs=AOn4CLCstZZFv2P2B4-frs46PWdMy9nsHg&usqp=CBk",
-          "height": 270,
-          "width": 480
-        }
-      ],
-      "timestamp": null,
-      "release_timestamp": null,
-      "availability": null,
-      "view_count": 89378,
-      "live_status": null,
-      "channel_is_verified": null,
-      "__x_forwarded_for_ip": null
-    }
-  ],
-  "webpage_url": "ytsearch1:La Cena del Señor",
-  "original_url": "ytsearch1:La Cena del Señor",
-  "webpage_url_basename": "La Cena del Señor",
-  "webpage_url_domain": null,
-  "extractor": "youtube:search",
-  "extractor_key": "YoutubeSearch",
-  "release_year": null,
-  "playlist_count": 1,
-  "epoch": 1784754994,
-  "__files_to_move": {},
-  "_version": {
-    "version": "2026.07.04",
-    "current_git_head": null,
-    "release_git_head": "997fa140840a08df3938b40da470c78049fef1f6",
-    "repository": "yt-dlp/yt-dlp"
+  "title": "1 - La Cena del Señor",
+  "author": "",
+  "speed": 1,
+  "verses": [],
+  "coro": [],
+  "audioFilters": {
+    "gain": 1,
+    "bass": 0,
+    "mid": 0,
+    "treble": 0
   },
+  "introducao": 0,
   "videos": [
     {
       "url": "https://www.youtube.com/watch?v=xJb4Fm-roeo",

@@ -1,59 +1,16 @@
 {
-  "id": "Quiero estar al pie de la cruz",
-  "title": "Quiero estar al pie de la cruz",
-  "_type": "playlist",
-  "entries": [
-    {
-      "_type": "url",
-      "ie_key": "Youtube",
-      "id": "6_w3DxOOiKE",
-      "url": "https://www.youtube.com/watch?v=6_w3DxOOiKE",
-      "title": "Himno 267 - A la cruz de Cristo voy | Nuevo",
-      "description": "Himno 267 - A la cruz de Cristo voy | Nuevo.",
-      "duration": 122,
-      "channel_id": "UCQueHIEoaEN0Rr_kyy4BWNw",
-      "channel": "Himnario Adventista",
-      "channel_url": "https://www.youtube.com/channel/UCQueHIEoaEN0Rr_kyy4BWNw",
-      "uploader": "Himnario Adventista",
-      "uploader_id": "@himnarioadventista8688",
-      "uploader_url": "https://www.youtube.com/@himnarioadventista8688",
-      "thumbnails": [
-        {
-          "url": "https://i.ytimg.com/vi/6_w3DxOOiKE/hq720.jpg?sqp=-oaymwE2COgCEMoBSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgBvgeAAtAFigIMCAAQARhlIGUoZTAP&rs=AOn4CLC-xP3PaZvT0iBuVXBP6rSGI0e2lw",
-          "height": 202,
-          "width": 360
-        },
-        {
-          "url": "https://i.ytimg.com/vi/6_w3DxOOiKE/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgBvgeAAtAFigIMCAAQARhlIGUoZTAP&rs=AOn4CLDF2MmWRk1ePUZWaHXry0-g5NqEMA",
-          "height": 404,
-          "width": 720
-        }
-      ],
-      "timestamp": null,
-      "release_timestamp": null,
-      "availability": null,
-      "view_count": 1064,
-      "live_status": null,
-      "channel_is_verified": null,
-      "__x_forwarded_for_ip": null
-    }
-  ],
-  "webpage_url": "ytsearch1:Quiero estar al pie de la cruz",
-  "original_url": "ytsearch1:Quiero estar al pie de la cruz",
-  "webpage_url_basename": "Quiero estar al pie de la cruz",
-  "webpage_url_domain": null,
-  "extractor": "youtube:search",
-  "extractor_key": "YoutubeSearch",
-  "release_year": null,
-  "playlist_count": 1,
-  "epoch": 1784755289,
-  "__files_to_move": {},
-  "_version": {
-    "version": "2026.07.04",
-    "current_git_head": null,
-    "release_git_head": "997fa140840a08df3938b40da470c78049fef1f6",
-    "repository": "yt-dlp/yt-dlp"
+  "title": "153 - Quiero estar al pie de la cruz",
+  "author": "",
+  "speed": 1,
+  "verses": [],
+  "coro": [],
+  "audioFilters": {
+    "gain": 1,
+    "bass": 0,
+    "mid": 0,
+    "treble": 0
   },
+  "introducao": 0,
   "videos": [
     {
       "url": "https://www.youtube.com/watch?v=6_w3DxOOiKE",
